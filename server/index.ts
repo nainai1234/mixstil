@@ -225,7 +225,7 @@ const buildDiscoverSections = (config: DiscoverFeedConfig, mixes: any[]) => conf
       prompt: section.prompt,
       icon: section.icon,
       mixIds: section.mixIds,
-      mixes: matches.length > 0 ? matches : mixes.slice(0, section.limit),
+      mixes: matches,
     };
   });
 
