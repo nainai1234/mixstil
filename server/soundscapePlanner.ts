@@ -74,6 +74,7 @@ export type QuickCreatePlan = {
   selected: Array<{ stemId: string; role: CandidateRole; reason: string }>;
   candidates: AssetCandidate[];
   rejected: Array<{ stemId: string; reasons: string[] }>;
+  catalogSelectionDeferred?: boolean;
 };
 
 export class SupplyGapError extends Error {
@@ -607,6 +608,7 @@ export const planQuickCreateSoundscape = async (input: {
   voiceIntensity?: number;
   stableExcludedSounds?: string[];
   stableLikedSounds?: string[];
+  allowDeferredCatalogSelection?: boolean;
 }): Promise<QuickCreatePlan> => {
   const requestId = `qcp_${deterministicRecipeSeed([input.prompt, Date.now()]).toString(36)}`;
   const fallbackGoal = explicitGoalFromPrompt(input.prompt) ?? input.requestedGoal;
@@ -830,11 +832,13 @@ export const planQuickCreateSoundscape = async (input: {
       return priority(right) - priority(left);
     })
     .slice(0, 3);
-  if (!selected.length) {
+  const catalogSelectionDeferred = Boolean(input.allowDeferredCatalogSelection)
+    && (!selected.length || (!allowSingleSource && selected.length < 2));
+  if (!selected.length && !catalogSelectionDeferred) {
     await recordTrace({ requestId, candidates: eligible, rejected, selected: [], unmet: ['approved_asset_combination'], seed, provider: aiResult?.provider ?? 'rules' });
     throw new SupplyGapError(requestId, ['approved_asset_combination']);
   }
-  if (!allowSingleSource && selected.length < 2) {
+  if (!allowSingleSource && selected.length < 2 && !catalogSelectionDeferred) {
     await recordTrace({ requestId, candidates: eligible, rejected, selected, unmet: ['layered_soundscape'], seed, provider: aiResult?.provider ?? 'rules' });
     throw new SupplyGapError(requestId, ['layered_soundscape']);
   }
@@ -880,5 +884,5 @@ export const planQuickCreateSoundscape = async (input: {
     explicitStructure: explicitStructureFromPrompt(input.prompt),
   });
   await recordTrace({ requestId, candidates: eligible, rejected, selected, unmet: [], recipeId: recipe.id, seed, provider: aiResult?.provider ?? 'rules' });
-  return { requestId, audioIntent, recipe, selected, candidates: eligible, rejected };
+  return { requestId, audioIntent, recipe, selected, candidates: eligible, rejected, catalogSelectionDeferred };
 };

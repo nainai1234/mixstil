@@ -3666,6 +3666,7 @@ app.post('/api/quick-create', async (req, res, next) => {
       voiceIntensity: req.body.voiceIntensity,
       stableExcludedSounds: soundProfile.excludedSounds,
       stableLikedSounds: soundProfile.likedSounds,
+      allowDeferredCatalogSelection: runtimeConfig.production,
     }));
     // A negative constraint such as "no voice" must not disable the music
     // composition path. Only an explicit positive voice request is downgraded
@@ -3685,6 +3686,9 @@ app.post('/api/quick-create', async (req, res, next) => {
       durationSeconds,
       savedBaselinePreferences,
     });
+    if (planning.catalogSelectionDeferred && !baselineSelection) {
+      throw new SupplyGapError(planning.requestId, ['approved_asset_combination']);
+    }
     const foundationalExcludedSounds = reconcileFoundationalExcludedSounds(prompt, planning.audioIntent.excludedSounds);
     // Foundational composer material is internal review content. Production
     // must route only to finished, owner-approved baseline soundscapes.
