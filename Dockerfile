@@ -27,4 +27,4 @@ RUN mkdir -p ./public /tmp/audio-baseline-parts && \
   tar -xzf /tmp/audio-baseline-v1.tar.gz -C ./public && \
   rm -rf /tmp/audio-baseline-parts /tmp/audio-baseline-v1.tar.gz
 EXPOSE 8788
-CMD ["pnpm", "dev:api"]
+CMD ["node", "node_modules/tsx/dist/cli.mjs", "server/index.ts"]
