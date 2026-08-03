@@ -39,6 +39,8 @@ requireText(primarySurfaces.sounds, "t('sounds.loadMore')", 'My Sounds paginatio
 requireText(primarySurfaces.explore, "t('explore.noMatch.title')", 'Explore empty search state');
 requireText(primarySurfaces.explore, "t('explore.noMatch.action')", 'Explore empty search creation path');
 requireText(primarySurfaces.explore, 'resultCount', 'Explore exact result count');
+requireText(primarySurfaces.explore, "section.mixes.length > 0 ?", 'Explore empty production feed fallback');
+requireText(primarySurfaces.explore, 'createFromPrompt(section.prompt)', 'Explore empty section creation path');
 forbidText(primarySurfaces.player, "navigate('/creator/save'", 'Consumer player');
 
 for (const [surface, source] of Object.entries(primarySurfaces)) {

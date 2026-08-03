@@ -110,8 +110,9 @@ const PlayerPage: React.FC = () => {
   const resumePositionSeconds = Number(state?.resumePositionSeconds ?? searchParams.get('resume'));
   const playbackStorageKey = `snooze:playback:${mixId}`;
   const isMobileBrowser = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-  const useNativeMobilePlayback = isMobileBrowser && Boolean(nativeAudioUrl);
-  const useNativeAudioPlayback = hasNativeAudioPlayback() && Boolean(nativeAudioUrl);
+  const isNativeRuntime = hasNativeAudioPlayback();
+  const useNativeMobilePlayback = (isMobileBrowser || isNativeRuntime) && Boolean(nativeAudioUrl);
+  const useNativeAudioPlayback = isNativeRuntime && Boolean(nativeAudioUrl);
   const fullDuration = sessionDuration || mix?.recipeData.durationSeconds || 1800;
   const duration = playbackMaxSeconds ? Math.min(fullDuration, playbackMaxSeconds) : fullDuration;
   const progress = useNativeMobilePlayback
@@ -290,7 +291,7 @@ const PlayerPage: React.FC = () => {
   }, [isPreviewPlayback, playbackMaxSeconds, playerIsPlaying, progress, stopAll]);
 
   useEffect(() => {
-    if (!mix || !isMobileBrowser || offlineMode) return;
+    if (!mix || (!isMobileBrowser && !isNativeRuntime) || offlineMode) return;
     let cancelled = false;
     const existingUrl = mix.renderStatus === 'ready' && mix.renderedAudioUrl
       ? resolveServiceUrl(mix.renderedAudioUrl)
@@ -298,6 +299,10 @@ const PlayerPage: React.FC = () => {
     if (existingUrl) {
       setMobileRenderPending(false);
       setNativeAudioUrl(existingUrl);
+      return;
+    }
+    if (!isNativeRuntime) {
+      setMobileRenderPending(false);
       return;
     }
     setMobileRenderPending(true);
@@ -318,7 +323,7 @@ const PlayerPage: React.FC = () => {
     return () => {
       cancelled = true;
     };
-  }, [isMobileBrowser, mix, mixId, offlineMode, t]);
+  }, [isMobileBrowser, isNativeRuntime, mix, mixId, offlineMode, t]);
 
   useEffect(() => {
     if (!mix || duration <= 0) return;

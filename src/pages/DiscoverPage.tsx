@@ -331,7 +331,6 @@ const DiscoverPage: React.FC = () => {
     description: t('explore.subtitle'),
   };
   const visibleSections = sections
-    .filter((section) => section.mixes.length > 0)
     .map((section) => localizeDiscoverSection(locale, section, genericSectionCopy));
   const visibleTags = localizeDiscoverTags(locale, [`#${t('home.need.sleep.tag')}`, `#${t('home.need.calm.tag')}`, `#${t('home.need.focus.tag')}`]);
   const visibleHeroLabel = localizeHeroLabel(locale, t('explore.kicker'));
@@ -424,24 +423,30 @@ const DiscoverPage: React.FC = () => {
                 </button>
               </div>
               <p className="text-sm text-secondary" style={{ marginBottom: 14 }}>{section.description}</p>
-              <div style={{ display: 'grid', gridAutoFlow: 'column', gridAutoColumns: 'minmax(196px, 74%)', gap: 14, overflowX: 'auto', paddingBottom: 6, scrollbarWidth: 'none' }}>
-                {section.mixes.map((item) => (
-                  <article key={`${section.id}-${item.id}`} className="glass-panel interactive-card" style={{ minHeight: 190, overflow: 'hidden', borderRadius: 'var(--radius-md)', position: 'relative' }}>
-                    <div style={{ position: 'absolute', top: 10, right: 10, zIndex: 2 }}>
-                      <SaveToMySoundsButton mix={item} compact />
-                    </div>
-                    <button type="button" onClick={() => openPlayer(item)} style={{ width: '100%', minHeight: 130, padding: 14, border: 0, background: `linear-gradient(to top, rgba(6,6,9,0.88), rgba(6,6,9,0.1)), url(${item.coverImageUrl}) center/cover`, color: 'var(--text-primary)', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 10, textAlign: 'left', cursor: 'pointer' }}>
-                      <strong style={{ minWidth: 0, fontSize: 16, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>{item.title}</strong>
-                      <span style={{ width: 36, height: 36, flexShrink: 0, borderRadius: '50%', background: 'rgba(255,255,255,0.95)', color: '#060609', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
-                        <Play size={16} fill="currentColor" style={{ marginLeft: 2 }} />
-                      </span>
-                    </button>
-                    <div style={{ padding: 14 }}>
-                      <p className="text-xs text-secondary" style={{ minHeight: 36, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', lineHeight: 1.4 }}>{mixDescriptionForUi(item)}</p>
-                    </div>
-                  </article>
-                ))}
-              </div>
+              {section.mixes.length > 0 ? (
+                <div style={{ display: 'grid', gridAutoFlow: 'column', gridAutoColumns: 'minmax(196px, 74%)', gap: 14, overflowX: 'auto', paddingBottom: 6, scrollbarWidth: 'none' }}>
+                  {section.mixes.map((item) => (
+                    <article key={`${section.id}-${item.id}`} className="glass-panel interactive-card" style={{ minHeight: 190, overflow: 'hidden', borderRadius: 'var(--radius-md)', position: 'relative' }}>
+                      <div style={{ position: 'absolute', top: 10, right: 10, zIndex: 2 }}>
+                        <SaveToMySoundsButton mix={item} compact />
+                      </div>
+                      <button type="button" onClick={() => openPlayer(item)} style={{ width: '100%', minHeight: 130, padding: 14, border: 0, background: `linear-gradient(to top, rgba(6,6,9,0.88), rgba(6,6,9,0.1)), url(${item.coverImageUrl}) center/cover`, color: 'var(--text-primary)', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 10, textAlign: 'left', cursor: 'pointer' }}>
+                        <strong style={{ minWidth: 0, fontSize: 16, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>{item.title}</strong>
+                        <span style={{ width: 36, height: 36, flexShrink: 0, borderRadius: '50%', background: 'rgba(255,255,255,0.95)', color: '#060609', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
+                          <Play size={16} fill="currentColor" style={{ marginLeft: 2 }} />
+                        </span>
+                      </button>
+                      <div style={{ padding: 14 }}>
+                        <p className="text-xs text-secondary" style={{ minHeight: 36, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', lineHeight: 1.4 }}>{mixDescriptionForUi(item)}</p>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              ) : (
+                <button type="button" className="btn btn-secondary" onClick={() => createFromPrompt(section.prompt)} style={{ minHeight: 44 }}>
+                  <Sparkles size={17} /> {t('explore.createVersion')}
+                </button>
+              )}
             </section>
           );
         })}

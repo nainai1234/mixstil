@@ -19,6 +19,8 @@ const requiredContracts = [
   [player, 'isMobileBrowser', 'Player detects mobile browsers'],
   [player, 'useNativeMobilePlayback', 'Player has a native mobile playback branch'],
   [player, 'api.renderMix(mixId)', 'Player prepares rendered audio for mobile playback'],
+  [player, 'const isNativeRuntime = hasNativeAudioPlayback()', 'Player distinguishes native apps from mobile browsers'],
+  [player, 'if (!isNativeRuntime) {', 'Mobile browsers do not wait for a full server render before playback'],
   [player, "if (existingUrl) {\n      setMobileRenderPending(false);", 'A completed mobile render always releases the pending playback state'],
   [player, "searchParams.get('mixId')", 'Player can load QA mix IDs from a direct URL'],
   [player, "searchParams.get('journeyId')", 'Player can load QA journey IDs from a direct URL'],
