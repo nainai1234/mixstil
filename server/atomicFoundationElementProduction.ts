@@ -117,7 +117,15 @@ const foundationalMaterialDecisionPath = path.join(root, 'config/foundational-ma
 
 const readJson = <T>(filePath: string): T => JSON.parse(readFileSync(filePath, 'utf8')) as T;
 
-const manifest = readJson<AtomicManifest>(manifestPath);
+const manifest = existsSync(manifestPath)
+  ? readJson<AtomicManifest>(manifestPath)
+  : {
+      batchId: 'atomic-foundation-elements-v1',
+      status: 'atomic_foundation_elements_pending_human_review',
+      productionAllowed: false,
+      audioElements: [],
+      symbolicElements: [],
+    } satisfies AtomicManifest;
 const ownerDecision = readJson<OwnerDecision>(ownerDecisionPath);
 const eligibilityMap = readJson<EligibilityMap>(eligibilityMapPath);
 const foundationalMaterialDecision = readJson<FoundationalMaterialOwnerDecision>(foundationalMaterialDecisionPath);
