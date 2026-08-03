@@ -22,6 +22,7 @@ if (requireDeployment) {
   const iosProject = readFileSync(new URL('../ios/App/App.xcodeproj/project.pbxproj', import.meta.url), 'utf8');
   const iosReleaseInfo = readFileSync(new URL('../ios/App/App/Info-Release.plist', import.meta.url), 'utf8');
   const releaseBuilder = readFileSync(new URL('./buildMobileRelease.ts', import.meta.url), 'utf8');
+  const capacitorConfig = readFileSync(new URL('../capacitor.config.ts', import.meta.url), 'utf8');
   const contracts: Array<[boolean, string]> = [
     [envTemplate.includes('VITE_API_BASE_URL=https://api.example.com'), 'Mobile environment template uses an explicit placeholder HTTPS origin'],
     [envTemplate.includes('SNOOZE_VERSION=') && envTemplate.includes('SNOOZE_BUILD_NUMBER='), 'Mobile environment template documents version inputs'],
@@ -29,6 +30,7 @@ if (requireDeployment) {
     [envTemplate.includes('ANDROID_KEYSTORE_PATH=') && envTemplate.includes('ANDROID_KEY_ALIAS='), 'Mobile environment template documents Android signing inputs'],
     [String(packageJson.scripts['mobile:sync']).includes('validate:mobile-release'), 'Store sync validates release configuration'],
     [String(packageJson.scripts['mobile:sync:android:local']).includes('CAPACITOR_LOCAL_DEV=1'), 'Local Android sync remains explicitly debug-only'],
+    [capacitorConfig.includes('CapacitorHttp: {') && capacitorConfig.includes('enabled: true'), 'Native builds route API requests through the platform HTTP stack'],
     [packageJson.scripts['mobile:release:android'] === 'tsx server/buildMobileRelease.ts android', 'Android release uses the validated native builder'],
     [packageJson.scripts['mobile:release:ios'] === 'tsx server/buildMobileRelease.ts ios', 'iOS release uses the validated native builder'],
     [gradle.includes('SNOOZE_BUILD_NUMBER') && gradle.includes('SNOOZE_VERSION'), 'Android release metadata comes from validated environment'],

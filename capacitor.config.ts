@@ -11,6 +11,11 @@ const config: CapacitorConfig = {
     androidScheme: localDeviceDebug ? 'http' : 'https',
     cleartext: localDeviceDebug,
   },
+  plugins: {
+    CapacitorHttp: {
+      enabled: true,
+    },
+  },
   ios: {
     contentInset: 'automatic',
   },
