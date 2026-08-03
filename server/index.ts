@@ -4720,9 +4720,12 @@ app.patch('/api/mixes/:id', async (req, res, next) => {
         [req.params.id],
       );
     }
-    if ((effectiveStatus === 'published' || effectiveStatus === 'private') && recipeData) {
-      await freezeRecipeVersion(req.params.id, recipeData);
-      await recordSavedInternalBaselinePreference(owned.user.id, req.params.id, recipeData);
+    const becameSaved = (effectiveStatus === 'published' || effectiveStatus === 'private')
+      && mix.status !== 'published'
+      && mix.status !== 'private';
+    if ((effectiveStatus === 'published' || effectiveStatus === 'private') && (recipeData || becameSaved)) {
+      await freezeRecipeVersion(req.params.id, effectiveRecipeData);
+      await recordSavedInternalBaselinePreference(owned.user.id, req.params.id, effectiveRecipeData);
       updatedMix = await getMixById(req.params.id) ?? updatedMix;
     }
     res.json(updatedMix);
