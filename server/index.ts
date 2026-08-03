@@ -5764,7 +5764,14 @@ prepareDatabase
   })
   .catch((error: unknown) => {
     setMetricGauge('snooze_database_ready', 0);
-    logEvent('error', 'server_start_failed', { error_class: classifyError(error), error_name: error instanceof Error ? error.name : 'UnknownError' });
+    const errorMessage = error instanceof Error
+      ? error.message.replace(/(?:postgres(?:ql)?:\/\/)[^\s]+/gi, 'postgresql://[redacted]').slice(0, 240)
+      : 'Unknown startup error';
+    logEvent('error', 'server_start_failed', {
+      error_class: classifyError(error),
+      error_name: error instanceof Error ? error.name : 'UnknownError',
+      error_message: errorMessage,
+    });
     pool.end();
     process.exit(1);
   });
