@@ -15,6 +15,19 @@ const release = JSON.parse(fs.readFileSync(path.join(root, 'reports/content-base
   items: ReleaseItem[];
 };
 
+const uploadWithRetry = async (storage: ExportStorage, key: string, filePath: string) => {
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= 4; attempt += 1) {
+    try {
+      return await storage.putFile(key, filePath, 'audio/mpeg');
+    } catch (error) {
+      lastError = error;
+      if (attempt < 4) await new Promise((resolve) => setTimeout(resolve, attempt * 1_000));
+    }
+  }
+  throw lastError;
+};
+
 const run = async () => {
   if (release.status !== 'ready_to_publish' || release.items.length !== 30) {
     throw new Error('Long-form release manifest is incomplete.');
@@ -24,8 +37,8 @@ const run = async () => {
   const storage = new ExportStorage(config);
   const uploaded = new Map<string, string>();
 
-  for (let offset = 0; offset < release.items.length; offset += 6) {
-    const batch = release.items.slice(offset, offset + 6);
+  for (let offset = 0; offset < release.items.length; offset += 4) {
+    const batch = release.items.slice(offset, offset + 4);
     const results = await Promise.all(batch.map(async (item) => {
       const filePath = path.join(root, item.releasePath);
       if (!fs.existsSync(filePath)) throw new Error(`Missing long-form master: ${item.releasePath}`);
@@ -34,7 +47,7 @@ const run = async () => {
       const url = `${config.publicBaseUrl}/${key}`;
       const stored = await storage.hasObject(key, bytes)
         ? { key, bytes, url }
-        : await storage.putFile(key, filePath, 'audio/mpeg');
+        : await uploadWithRetry(storage, key, filePath);
       const response = await fetch(stored.url, { headers: { Range: 'bytes=0-1023' } });
       if (response.status !== 200 && response.status !== 206) {
         throw new Error(`Public master verification failed (${response.status}): ${stored.url}`);
