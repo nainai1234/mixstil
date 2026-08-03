@@ -1,6 +1,7 @@
 import type express from 'express';
 
 const DEFAULT_SHARE_SECRET = 'snooze-local-creator-preview-v1';
+const NATIVE_APP_ORIGINS = new Set(['capacitor://localhost', 'http://localhost']);
 
 export type RuntimeConfig = {
   production: boolean;
@@ -96,7 +97,7 @@ export const createCorsOptions = (config: RuntimeConfig) => ({
       return;
     }
     const normalized = origin.replace(/\/$/, '');
-    if (!config.production || config.corsAllowedOrigins.has(normalized)) {
+    if (!config.production || config.corsAllowedOrigins.has(normalized) || NATIVE_APP_ORIGINS.has(normalized)) {
       callback(null, true);
       return;
     }

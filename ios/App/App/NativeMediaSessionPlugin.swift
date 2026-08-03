@@ -21,6 +21,9 @@ public class NativeMediaSessionPlugin: CAPPlugin, CAPBridgedPlugin {
     private var timeObserver: Any?
     private var notificationObservers: [NSObjectProtocol] = []
     private var playerNotificationObservers: [NSObjectProtocol] = []
+    private var playerItemStatusObserver: NSKeyValueObservation?
+    private var prepareTimeoutWorkItem: DispatchWorkItem?
+    private var prepareGeneration = 0
     private var audioSessionConfigured = false
     private var audioSessionActive = false
     private var currentAudioURL = ""
@@ -52,22 +55,80 @@ public class NativeMediaSessionPlugin: CAPPlugin, CAPBridgedPlugin {
         do {
             try activateAudioSession()
             removePlayerObservers()
-            player = AVPlayer(playerItem: AVPlayerItem(url: audioURL))
-            prepared = true
+            cancelPendingPrepare()
+            prepareGeneration += 1
+            let generation = prepareGeneration
+            let item = AVPlayerItem(url: audioURL)
+            player = AVPlayer(playerItem: item)
+            prepared = false
             installPlayerObservers()
-            seekPlayer(to: position) { [weak self] in
-                guard let self else { return }
-                if shouldPlay {
-                    self.player?.play()
+
+            playerItemStatusObserver = item.observe(\.status, options: [.initial, .new]) { [weak self] item, _ in
+                DispatchQueue.main.async {
+                    guard let self, generation == self.prepareGeneration else { return }
+                    switch item.status {
+                    case .readyToPlay:
+                        self.finishPrepare(call, position: position, shouldPlay: shouldPlay)
+                    case .failed:
+                        self.failPrepare(call, error: item.error ?? NSError(
+                            domain: "MixStilPlayback",
+                            code: -2,
+                            userInfo: [NSLocalizedDescriptionKey: "The audio resource could not be loaded"]
+                        ))
+                    case .unknown:
+                        break
+                    @unknown default:
+                        break
+                    }
                 }
-                self.publishState(action: "state")
             }
-            updateNowPlaying(position: position, playing: shouldPlay)
-            call.resolve()
+
+            let timeout = DispatchWorkItem { [weak self] in
+                guard let self, generation == self.prepareGeneration, !self.prepared else { return }
+                self.failPrepare(call, error: NSError(
+                    domain: "MixStilPlayback",
+                    code: -3,
+                    userInfo: [NSLocalizedDescriptionKey: "Audio took too long to become ready"]
+                ))
+            }
+            prepareTimeoutWorkItem = timeout
+            DispatchQueue.main.asyncAfter(deadline: .now() + 15, execute: timeout)
         } catch {
             prepared = false
             call.rejectPlayback(error)
         }
+    }
+
+    private func finishPrepare(_ call: CAPPluginCall, position: Double, shouldPlay: Bool) {
+        guard !prepared else { return }
+        prepared = true
+        cancelPendingPrepare()
+        seekPlayer(to: position) { [weak self] in
+            guard let self else { return }
+            if shouldPlay {
+                self.player?.play()
+            }
+            self.publishState(action: shouldPlay ? "play" : "state")
+        }
+        updateNowPlaying(position: position, playing: shouldPlay)
+        call.resolve()
+    }
+
+    private func failPrepare(_ call: CAPPluginCall, error: Error) {
+        guard !prepared else { return }
+        cancelPendingPrepare()
+        player?.pause()
+        player = nil
+        currentAudioURL = ""
+        call.rejectPlayback(error)
+        publishError(error)
+    }
+
+    private func cancelPendingPrepare() {
+        playerItemStatusObserver?.invalidate()
+        playerItemStatusObserver = nil
+        prepareTimeoutWorkItem?.cancel()
+        prepareTimeoutWorkItem = nil
     }
 
     @objc func play(_ call: CAPPluginCall) {
@@ -362,6 +423,7 @@ public class NativeMediaSessionPlugin: CAPPlugin, CAPBridgedPlugin {
 
     private func stopAndClearPlayer() {
         player?.pause()
+        cancelPendingPrepare()
         removePlayerObservers()
         player = nil
         prepared = false

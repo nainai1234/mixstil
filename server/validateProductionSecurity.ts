@@ -66,6 +66,13 @@ assert(valid.corsAllowedOrigins.size === 2, 'Production CORS origins were not pa
 assert(valid.trustProxy === 1, 'Production proxy trust was not parsed.');
 assert(valid.monitoringUrls.metrics.endsWith('/internal/metrics'), 'Production monitoring targets were not parsed.');
 
+const corsOptions = (await import('./runtimeSecurity')).createCorsOptions(valid);
+const checkOrigin = (origin: string) => new Promise<boolean>((resolve, reject) => {
+  corsOptions.origin(origin, (error, allowed) => error ? reject(error) : resolve(Boolean(allowed)));
+});
+assert(await checkOrigin('capacitor://localhost'), 'Production CORS must always allow the fixed iOS app origin.');
+assert(await checkOrigin('http://localhost'), 'Production CORS must always allow the fixed Android app origin.');
+
 const contracts: Array<[boolean, string]> = [
   [server.includes("app.disable('x-powered-by')"), 'Express identity header is disabled'],
   [server.includes('securityHeaders'), 'Security headers are installed'],
