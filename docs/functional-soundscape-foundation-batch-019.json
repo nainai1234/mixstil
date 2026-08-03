@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "batchId": "functional_soundscape_foundation_batch_019_2026_07_17",
+  "title": "Functional Soundscape Foundation Batch 019",
+  "generator": "scripts/generate-procedural-foundation-pads.py",
+  "python": ".venv-audio/bin/python",
+  "outputDirectory": "public/audio/music/local-candidates/batch-019-functional-foundations",
+  "previewDirectory": "public/audio/music/local-review/batch-019-functional-foundations",
+  "reviewDate": "2026-07-17",
+  "reportBaseName": "functional-soundscape-foundation-batch-019-machine-qa",
+  "status": "candidate_only",
+  "commercialPolicy": "Deterministic project-owned synthesis. Retain generator, profile, seed, measurements, and listening QA before promotion.",
+  "positioning": "Functional voice-free soundscape foundations for meditation, sleep, and focus; not generic music, cinematic scoring, or songs.",
+  "hardRejects": [
+    "human voice",
+    "fake voice",
+    "vowel-like pad",
+    "choir",
+    "humming",
+    "chanting",
+    "whisper",
+    "lyric-like artifact",
+    "cinematic emotion",
+    "film-score feeling",
+    "song structure",
+    "foreground melody",
+    "beat",
+    "pulse",
+    "arpeggio",
+    "drop or climax",
+    "medical or guaranteed-outcome claim"
+  ],
+  "candidates": [
+    {
+      "id": "functional_sleep_blanket_019_001",
+      "profile": "deep_sleep_low",
+      "seed": 919001,
+      "goal": "sleep",
+      "scene": "bedtime",
+      "targetLufs": -27,
+      "contentUse": "sleep foundation, not music",
+      "rootFrequenciesHz": [65.41, 98.12, 130.81, 196.24]
+    },
+    {
+      "id": "functional_sleep_blanket_019_002",
+      "profile": "deep_sleep_low",
+      "seed": 919002,
+      "goal": "sleep",
+      "scene": "bedtime",
+      "targetLufs": -27,
+      "contentUse": "sleep foundation, not music",
+      "rootFrequenciesHz": [65.41, 98.12, 130.81, 196.24]
+    },
+    {
+      "id": "functional_return_sleep_019_003",
+      "profile": "return_to_sleep_soft",
+      "seed": 919003,
+      "goal": "sleep",
+      "scene": "return_to_sleep",
+      "targetLufs": -27,
+      "contentUse": "return-to-sleep foundation, not music",
+      "rootFrequenciesHz": [82.41, 123.62, 164.81, 247.23]
+    },
+    {
+      "id": "functional_return_sleep_019_004",
+      "profile": "night_neutral",
+      "seed": 919004,
+      "goal": "sleep",
+      "scene": "return_to_sleep",
+      "contentUse": "neutral night continuity, not music",
+      "rootFrequenciesHz": [73.42, 110.13, 146.84, 220.25]
+    },
+    {
+      "id": "functional_meditation_open_019_005",
+      "profile": "meditation_open",
+      "seed": 919005,
+      "goal": "calm",
+      "scene": "voice_free_meditation",
+      "contentUse": "voice-free meditation foundation, not guided voice",
+      "rootFrequenciesHz": [98.0, 146.83, 196.0, 293.66]
+    },
+    {
+      "id": "functional_meditation_open_019_006",
+      "profile": "meditation_open",
+      "seed": 919006,
+      "goal": "calm",
+      "scene": "voice_free_meditation",
+      "contentUse": "voice-free meditation foundation, not guided voice",
+      "rootFrequenciesHz": [98.0, 146.83, 196.0, 293.66]
+    },
+    {
+      "id": "functional_meditation_ground_019_007",
+      "profile": "calm_grounded",
+      "seed": 919007,
+      "goal": "calm",
+      "scene": "grounding_meditation",
+      "contentUse": "grounding meditation foundation, not cinematic music",
+      "rootFrequenciesHz": [87.31, 130.81, 174.62, 261.63]
+    },
+    {
+      "id": "functional_meditation_ground_019_008",
+      "profile": "calm_grounded",
+      "seed": 919008,
+      "goal": "calm",
+      "scene": "grounding_meditation",
+      "contentUse": "grounding meditation foundation, not cinematic music",
+      "rootFrequenciesHz": [87.31, 130.81, 174.62, 261.63]
+    },
+    {
+      "id": "functional_focus_neutral_019_009",
+      "profile": "focus_neutral",
+      "seed": 919009,
+      "goal": "focus",
+      "scene": "deep_focus",
+      "contentUse": "low-distraction focus foundation, not a track",
+      "rootFrequenciesHz": [110.0, 165.0, 220.0, 330.0]
+    },
+    {
+      "id": "functional_focus_neutral_019_010",
+      "profile": "focus_neutral",
+      "seed": 919010,
+      "goal": "focus",
+      "scene": "deep_focus",
+      "contentUse": "low-distraction focus foundation, not a track",
+      "rootFrequenciesHz": [110.0, 165.0, 220.0, 330.0]
+    },
+    {
+      "id": "functional_focus_low_anchor_019_011",
+      "profile": "focus_low_anchor",
+      "seed": 919011,
+      "goal": "focus",
+      "scene": "reading_focus",
+      "contentUse": "reading focus foundation, not active music",
+      "rootFrequenciesHz": [82.41, 123.62, 164.81, 247.23]
+    },
+    {
+      "id": "functional_focus_warm_mid_019_012",
+      "profile": "focus_warm_mid",
+      "seed": 919012,
+      "goal": "focus",
+      "scene": "work_session",
+      "contentUse": "work-session focus foundation, not active music",
+      "rootFrequenciesHz": [123.47, 185.0, 246.94, 369.99]
+    }
+  ],
+  "requiredGates": [
+    "decode",
+    "duration",
+    "sample_rate",
+    "channels",
+    "lufs",
+    "peak",
+    "opening_20s",
+    "no_voice_or_fake_voice",
+    "no_beat",
+    "no_cinematic_emotion",
+    "loop_30m",
+    "scene_fit",
+    "recipe_v2_combination_qa"
+  ]
+}

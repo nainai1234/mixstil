@@ -1,0 +1,207 @@
+{
+  "version": "2026-07-16.batch-004-quiet-entry-state-entry",
+  "generatedAt": "2026-07-16T22:18:57.054Z",
+  "purpose": "Correct Batch 003 feedback: it had a process, but opened too loudly, felt forced, and did not help the listener enter sleep, meditation, calm, or focus.",
+  "hardGates": [
+    "Reject if the first 20-30 seconds feel like a loud arrival instead of a quiet invitation.",
+    "Reject if the noise layer becomes the content identity.",
+    "Reject if music and environment feel glued together rather than slowly revealed.",
+    "Reject if the result is merely listenable music and not a state-entry soundscape."
+  ],
+  "selection": {
+    "sleep": 2,
+    "calm": 1,
+    "focus": 1
+  },
+  "candidates": [
+    {
+      "id": "sleep_001_quiet_room_cocoon",
+      "title": "Quiet Room Cocoon — Slow Entry",
+      "goal": "sleep",
+      "scene": "bedtime",
+      "sourceBriefDurationMinutes": 30,
+      "previewDurationSeconds": 180,
+      "targetLufs": -29,
+      "openingMaxGain": 0.026,
+      "outputPath": "public/audio/content-baseline/batch-004/sleep_001_quiet_room_cocoon.mp3",
+      "outputUrl": "/audio/content-baseline/batch-004/sleep_001_quiet_room_cocoon.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_003_process_better_but_opening_too_loud_and_not_state_inducing",
+      "stateArc": "near-silence room -> low shelter appears -> pad warms the space -> small music memory -> everything lowers again",
+      "listeningQuestion": "First judge only the first 30 seconds: does it invite you in quietly, or does it still announce itself too loudly?",
+      "sources": [
+        {
+          "role": "barely_there_bedroom_air",
+          "path": "public/audio/supply-gap-batch-01-loop-qa/2026-07-15/room_bedroom_night.mp3",
+          "note": "the first layer is room air, not noise"
+        },
+        {
+          "role": "low_shelter_only_after_entry",
+          "path": "generated://brown-noise-4001",
+          "note": "brown support waits until the room is established"
+        },
+        {
+          "role": "warm_pad_below_attention",
+          "path": "public/audio/production-remediated-2026-07-13/music/nap_time_pad.mp3",
+          "note": "pad rises slowly and never becomes a foreground song"
+        },
+        {
+          "role": "short_piano_memory",
+          "path": "public/audio/production-remediated-2026-07-13/music/dreaming_soft_piano.mp3",
+          "note": "the piano appears late as a memory, then leaves"
+        }
+      ],
+      "limitations": [
+        "Quiet-entry arrangement preview; not a final commercial master.",
+        "Noise layers are intentionally delayed and low; reject if they still feel like the main content.",
+        "Human listening must confirm state entry, softness, fatigue, and replay value before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "sleep_006_return_to_sleep_cabin",
+      "title": "Return-to-Sleep Cabin — No-Startle Return",
+      "goal": "sleep",
+      "scene": "return_to_sleep",
+      "sourceBriefDurationMinutes": 20,
+      "previewDurationSeconds": 180,
+      "targetLufs": -29,
+      "openingMaxGain": 0.024,
+      "outputPath": "public/audio/content-baseline/batch-004/sleep_006_return_to_sleep_cabin.mp3",
+      "outputUrl": "/audio/content-baseline/batch-004/sleep_006_return_to_sleep_cabin.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_003_process_better_but_opening_too_loud_and_not_state_inducing",
+      "stateArc": "dark room first -> fan-like warmth enters under hearing -> one soft harmonic lift -> stable low room for returning to sleep",
+      "listeningQuestion": "Does this feel safe enough for waking at night, when any sudden brightness would make you stop listening?",
+      "sources": [
+        {
+          "role": "dark_room_floor",
+          "path": "public/audio/music/revised-collection-qa/2026-07-14/dry_quiet_room.mp3",
+          "note": "dry room keeps the opening soft and non-scenic"
+        },
+        {
+          "role": "low_fan_warmth",
+          "path": "public/audio/music/revised-collection-qa/2026-07-14/low_fan_night.mp3",
+          "note": "fan warmth replaces obvious white noise"
+        },
+        {
+          "role": "distant_soft_pad",
+          "path": "public/audio/music/reviewed-2026-07-11/rest_now_pad.mp3",
+          "note": "one slow harmonic lift, then it drops behind the room"
+        },
+        {
+          "role": "subtle_body_anchor",
+          "path": "generated://sine-82.41",
+          "note": "barely audible low anchor for continuity"
+        }
+      ],
+      "limitations": [
+        "Quiet-entry arrangement preview; not a final commercial master.",
+        "Noise layers are intentionally delayed and low; reject if they still feel like the main content.",
+        "Human listening must confirm state entry, softness, fatigue, and replay value before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "calm_005_open_room_meditation",
+      "title": "Open Room Meditation — Quiet Breath Space",
+      "goal": "calm",
+      "scene": "meditation",
+      "sourceBriefDurationMinutes": 20,
+      "previewDurationSeconds": 180,
+      "targetLufs": -31,
+      "openingMaxGain": 0.03,
+      "outputPath": "public/audio/content-baseline/batch-004/calm_005_open_room_meditation.mp3",
+      "outputUrl": "/audio/content-baseline/batch-004/calm_005_open_room_meditation.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_003_process_better_but_opening_too_loud_and_not_state_inducing",
+      "stateArc": "empty room -> breath-space air -> warm harmonic floor -> one resonant cue -> long quiet tail",
+      "listeningQuestion": "Without any voice, does the timing still suggest a slower breath instead of just ambient music with effects?",
+      "sources": [
+        {
+          "role": "open_room_start",
+          "path": "public/audio/authentic-indoor-review/2026-07-14/room_apartment_small.mp3",
+          "note": "room opens gently before any musical signal"
+        },
+        {
+          "role": "soft_exhale_air",
+          "path": "generated://pink-noise-4003",
+          "note": "air is used as exhale texture, not a blanket hiss"
+        },
+        {
+          "role": "meditation_floor",
+          "path": "public/audio/music/local-review/2026-07-14/procedural_meditation_open_a.mp3",
+          "note": "warm floor enters only after the room feels settled"
+        },
+        {
+          "role": "single_resonant_cue",
+          "path": "public/audio/production-remediated-2026-07-13/music/crystal_meditation.mp3",
+          "note": "one late cue, not repeated bell decoration"
+        }
+      ],
+      "limitations": [
+        "Quiet-entry arrangement preview; not a final commercial master.",
+        "Noise layers are intentionally delayed and low; reject if they still feel like the main content.",
+        "Human listening must confirm state entry, softness, fatigue, and replay value before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 179.930938,
+        "sizeBytes": 4320045
+      }
+    },
+    {
+      "id": "focus_002_neutral_office_flow",
+      "title": "Neutral Office Flow — Soft Start Work Bed",
+      "goal": "focus",
+      "scene": "deep_work",
+      "sourceBriefDurationMinutes": 45,
+      "previewDurationSeconds": 180,
+      "targetLufs": -29,
+      "openingMaxGain": 0.035,
+      "outputPath": "public/audio/content-baseline/batch-004/focus_002_neutral_office_flow.mp3",
+      "outputUrl": "/audio/content-baseline/batch-004/focus_002_neutral_office_flow.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_003_process_better_but_opening_too_loud_and_not_state_inducing",
+      "stateArc": "quiet office distance -> low focus anchor -> light harmonic contour -> stable work bed without foreground events",
+      "listeningQuestion": "Does it make starting work easier without making you listen to the composition itself?",
+      "sources": [
+        {
+          "role": "quiet_office_distance",
+          "path": "public/audio/supply-gap-batch-01-loop-qa/2026-07-15/room_office_distant_traffic.mp3",
+          "note": "opening layer: real distant room/traffic texture replaces synthetic hiss"
+        },
+        {
+          "role": "low_focus_anchor",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_low_anchor.mp3",
+          "note": "anchor rises after the office texture, not at play start"
+        },
+        {
+          "role": "restrained_work_contour",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_warm_mid.mp3",
+          "note": "small harmonic contour gives identity without melody attention"
+        },
+        {
+          "role": "almost_invisible_masking",
+          "path": "generated://pink-noise-4004",
+          "note": "masking comes late and low, never as the content identity"
+        }
+      ],
+      "limitations": [
+        "Quiet-entry arrangement preview; not a final commercial master.",
+        "Noise layers are intentionally delayed and low; reject if they still feel like the main content.",
+        "Human listening must confirm state entry, softness, fatigue, and replay value before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321197
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-004/index.html"
+}

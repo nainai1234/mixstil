@@ -1,0 +1,316 @@
+{
+  "version": "2026-07-16.batch-002-music-forward",
+  "generatedAt": "2026-07-16T21:41:48.769Z",
+  "purpose": "Replacement candidate set after Batch 001 failed for white-noise/noise-bed feel.",
+  "hardGates": [
+    "Reject if it primarily feels like white/pink/brown noise.",
+    "Reject if no melody, chord change, or resonant musical event is audible within the first 30 seconds.",
+    "Environment layers may support space only; they must not become the identity."
+  ],
+  "selection": {
+    "sleep": 3,
+    "calm": 3,
+    "focus": 3
+  },
+  "candidates": [
+    {
+      "id": "sleep_007_no_water_bedtime_pad",
+      "title": "No-Water Bedtime Pad",
+      "goal": "sleep",
+      "scene": "bedtime_with_music",
+      "sourceBriefDurationMinutes": 45,
+      "previewDurationSeconds": 120,
+      "targetLufs": -25,
+      "outputPath": "public/audio/content-baseline/batch-002/sleep_007_no_water_bedtime_pad.mp3",
+      "outputUrl": "/audio/content-baseline/batch-002/sleep_007_no_water_bedtime_pad.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_001_noise_bed_rejected_batch_002_music_forward",
+      "intent": "Replace the old noise-bed idea with a slow, clearly musical bedtime identity.",
+      "musicalGate": "Piano phrases must be audible in the first 30 seconds; no white/pink/brown noise source is used.",
+      "sources": [
+        {
+          "role": "music_main",
+          "path": "public/audio/production-remediated-2026-07-13/music/possible_dreams_piano.mp3"
+        },
+        {
+          "role": "environment_support",
+          "path": "public/audio/nature/batch-04/night_forest_insects.wav"
+        }
+      ],
+      "limitations": [
+        "Music-forward correction preview; not a final commercial master.",
+        "No generated white, pink, or brown noise source is used in this batch.",
+        "Requires human listening for melody fit, fatigue, scene differentiation, and Content ID/licensing readiness before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 120,
+        "sizeBytes": 2881452
+      }
+    },
+    {
+      "id": "sleep_009_gentle_train_night",
+      "title": "Gentle Train Night",
+      "goal": "sleep",
+      "scene": "travel_like_sleep",
+      "sourceBriefDurationMinutes": 60,
+      "previewDurationSeconds": 120,
+      "targetLufs": -25,
+      "outputPath": "public/audio/content-baseline/batch-002/sleep_009_gentle_train_night.mp3",
+      "outputUrl": "/audio/content-baseline/batch-002/sleep_009_gentle_train_night.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_001_noise_bed_rejected_batch_002_music_forward",
+      "intent": "Make the train feel like a low sleeping carriage while piano carries the emotional contour.",
+      "musicalGate": "A repeating piano motif must remain identifiable above the carriage bed.",
+      "sources": [
+        {
+          "role": "music_main",
+          "path": "public/audio/production-remediated-2026-07-13/music/dreaming_soft_piano.mp3"
+        },
+        {
+          "role": "environment_support",
+          "path": "public/audio/music/revised-collection-qa/2026-07-14/quiet_train_focus.mp3"
+        }
+      ],
+      "limitations": [
+        "Music-forward correction preview; not a final commercial master.",
+        "No generated white, pink, or brown noise source is used in this batch.",
+        "Requires human listening for melody fit, fatigue, scene differentiation, and Content ID/licensing readiness before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 119.976979,
+        "sizeBytes": 2881197
+      }
+    },
+    {
+      "id": "sleep_006_return_to_sleep_cabin",
+      "title": "Return-to-Sleep Cabin",
+      "goal": "sleep",
+      "scene": "return_to_sleep",
+      "sourceBriefDurationMinutes": 20,
+      "previewDurationSeconds": 120,
+      "targetLufs": -26,
+      "outputPath": "public/audio/content-baseline/batch-002/sleep_006_return_to_sleep_cabin.mp3",
+      "outputUrl": "/audio/content-baseline/batch-002/sleep_006_return_to_sleep_cabin.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_001_noise_bed_rejected_batch_002_music_forward",
+      "intent": "A low-arousal return-to-sleep piece with melody present but softened.",
+      "musicalGate": "Soft guitar movement must be hearable; fire texture is only a quiet spatial cue.",
+      "sources": [
+        {
+          "role": "music_main",
+          "path": "public/audio/production-remediated-2026-07-13/music/soft_evening_guitar.mp3"
+        },
+        {
+          "role": "environment_support",
+          "path": "public/audio/nature/batch-04/campfire_night_wind.wav"
+        }
+      ],
+      "limitations": [
+        "Music-forward correction preview; not a final commercial master.",
+        "No generated white, pink, or brown noise source is used in this batch.",
+        "Requires human listening for melody fit, fatigue, scene differentiation, and Content ID/licensing readiness before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 119.976979,
+        "sizeBytes": 2881197
+      }
+    },
+    {
+      "id": "calm_004_soft_bell_exhale",
+      "title": "Soft Bell Exhale",
+      "goal": "calm",
+      "scene": "short_reset",
+      "sourceBriefDurationMinutes": 10,
+      "previewDurationSeconds": 120,
+      "targetLufs": -23,
+      "outputPath": "public/audio/content-baseline/batch-002/calm_004_soft_bell_exhale.mp3",
+      "outputUrl": "/audio/content-baseline/batch-002/calm_004_soft_bell_exhale.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_001_noise_bed_rejected_batch_002_music_forward",
+      "intent": "Use resonant musical bell movement as the exhale cue instead of a static pad.",
+      "musicalGate": "Bowl/bell pitch events must be the foreground identity.",
+      "sources": [
+        {
+          "role": "music_main",
+          "path": "public/audio/production-remediated-2026-07-13/music/crystal_meditation.mp3"
+        }
+      ],
+      "limitations": [
+        "Music-forward correction preview; not a final commercial master.",
+        "No generated white, pink, or brown noise source is used in this batch.",
+        "Requires human listening for melody fit, fatigue, scene differentiation, and Content ID/licensing readiness before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 120,
+        "sizeBytes": 2881452
+      }
+    },
+    {
+      "id": "calm_006_gentle_guitar_horizon",
+      "title": "Gentle Guitar Horizon",
+      "goal": "calm",
+      "scene": "emotional_unwind",
+      "sourceBriefDurationMinutes": 20,
+      "previewDurationSeconds": 120,
+      "targetLufs": -23,
+      "outputPath": "public/audio/content-baseline/batch-002/calm_006_gentle_guitar_horizon.mp3",
+      "outputUrl": "/audio/content-baseline/batch-002/calm_006_gentle_guitar_horizon.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_001_noise_bed_rejected_batch_002_music_forward",
+      "intent": "Human warmth through guitar phrasing, with nature only widening the room.",
+      "musicalGate": "Guitar line must read as a real piece, not ambience.",
+      "sources": [
+        {
+          "role": "music_main",
+          "path": "public/audio/music/batch-03/relaxing_nature_guitar.mp3"
+        },
+        {
+          "role": "environment_support",
+          "path": "public/audio/nature/batch-04/forest_river_birds.wav"
+        }
+      ],
+      "limitations": [
+        "Music-forward correction preview; not a final commercial master.",
+        "No generated white, pink, or brown noise source is used in this batch.",
+        "Requires human listening for melody fit, fatigue, scene differentiation, and Content ID/licensing readiness before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 119.974938,
+        "sizeBytes": 2880621
+      }
+    },
+    {
+      "id": "calm_007_low_piano_reflection",
+      "title": "Low Piano Reflection",
+      "goal": "calm",
+      "scene": "reflection",
+      "sourceBriefDurationMinutes": 15,
+      "previewDurationSeconds": 120,
+      "targetLufs": -24,
+      "outputPath": "public/audio/content-baseline/batch-002/calm_007_low_piano_reflection.mp3",
+      "outputUrl": "/audio/content-baseline/batch-002/calm_007_low_piano_reflection.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_001_noise_bed_rejected_batch_002_music_forward",
+      "intent": "Reflective piano with clear harmonic changes and no masking-noise bed.",
+      "musicalGate": "Chord changes must be clear enough to remember after the clip stops.",
+      "sources": [
+        {
+          "role": "music_main",
+          "path": "public/audio/production-remediated-2026-07-13/music/piano_reflections.mp3"
+        }
+      ],
+      "limitations": [
+        "Music-forward correction preview; not a final commercial master.",
+        "No generated white, pink, or brown noise source is used in this batch.",
+        "Requires human listening for melody fit, fatigue, scene differentiation, and Content ID/licensing readiness before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 120,
+        "sizeBytes": 2881226
+      }
+    },
+    {
+      "id": "focus_004_low_anchor_pad",
+      "title": "Low Anchor Pad",
+      "goal": "focus",
+      "scene": "music_supported_focus",
+      "sourceBriefDurationMinutes": 40,
+      "previewDurationSeconds": 120,
+      "targetLufs": -24,
+      "outputPath": "public/audio/content-baseline/batch-002/focus_004_low_anchor_pad.mp3",
+      "outputUrl": "/audio/content-baseline/batch-002/focus_004_low_anchor_pad.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_001_noise_bed_rejected_batch_002_music_forward",
+      "intent": "A stable focus bed that still has harmonic movement rather than clean pink noise.",
+      "musicalGate": "Pad harmony must move over time; there is no noise generator in the render graph.",
+      "sources": [
+        {
+          "role": "music_main",
+          "path": "public/audio/production-remediated-2026-07-13/music/vastness_ambient_pad.mp3"
+        },
+        {
+          "role": "music_main",
+          "path": "public/audio/music/batch-03/opalescent_pad.mp3"
+        }
+      ],
+      "limitations": [
+        "Music-forward correction preview; not a final commercial master.",
+        "No generated white, pink, or brown noise source is used in this batch.",
+        "Requires human listening for melody fit, fatigue, scene differentiation, and Content ID/licensing readiness before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 120,
+        "sizeBytes": 2881197
+      }
+    },
+    {
+      "id": "focus_001_quiet_train_focus",
+      "title": "Quiet Train Focus",
+      "goal": "focus",
+      "scene": "deep_work",
+      "sourceBriefDurationMinutes": 45,
+      "previewDurationSeconds": 120,
+      "targetLufs": -23,
+      "outputPath": "public/audio/content-baseline/batch-002/focus_001_quiet_train_focus.mp3",
+      "outputUrl": "/audio/content-baseline/batch-002/focus_001_quiet_train_focus.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_001_noise_bed_rejected_batch_002_music_forward",
+      "intent": "Keep the productive-travel identity but let light music, not noise, hold attention.",
+      "musicalGate": "The musical layer must stay audible at low volume and not disappear into the train texture.",
+      "sources": [
+        {
+          "role": "music_main",
+          "path": "public/audio/production-remediated-2026-07-13/music/nap_time_pad.mp3"
+        },
+        {
+          "role": "environment_support",
+          "path": "public/audio/music/revised-collection-qa/2026-07-14/quiet_train_focus.mp3"
+        }
+      ],
+      "limitations": [
+        "Music-forward correction preview; not a final commercial master.",
+        "No generated white, pink, or brown noise source is used in this batch.",
+        "Requires human listening for melody fit, fatigue, scene differentiation, and Content ID/licensing readiness before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 119.976979,
+        "sizeBytes": 2881197
+      }
+    },
+    {
+      "id": "focus_010_open_air_concentration",
+      "title": "Open Air Concentration",
+      "goal": "focus",
+      "scene": "lighter_focus",
+      "sourceBriefDurationMinutes": 40,
+      "previewDurationSeconds": 120,
+      "targetLufs": -23,
+      "outputPath": "public/audio/content-baseline/batch-002/focus_010_open_air_concentration.mp3",
+      "outputUrl": "/audio/content-baseline/batch-002/focus_010_open_air_concentration.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_001_noise_bed_rejected_batch_002_music_forward",
+      "intent": "A brighter open-air concentration cue with repeating guitar contour instead of static masking.",
+      "musicalGate": "Plucked guitar motion must be the main perceived layer.",
+      "sources": [
+        {
+          "role": "music_main",
+          "path": "public/audio/music/batch-03/relaxing_nature_guitar.mp3"
+        },
+        {
+          "role": "environment_support",
+          "path": "public/audio/nature/batch-04/river_shore_crickets.wav"
+        }
+      ],
+      "limitations": [
+        "Music-forward correction preview; not a final commercial master.",
+        "No generated white, pink, or brown noise source is used in this batch.",
+        "Requires human listening for melody fit, fatigue, scene differentiation, and Content ID/licensing readiness before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 119.974938,
+        "sizeBytes": 2880621
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-002/index.html"
+}

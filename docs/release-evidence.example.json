@@ -1,0 +1,54 @@
+{
+  "evidence": [
+    {
+      "id": "physical_device_playback_matrix",
+      "status": "pending",
+      "evidence": "Reference the completed iOS and Android 30/60/90/120 minute matrix, interruption checks, Bluetooth/headphone checks, and audible-continuity confirmation."
+    },
+    {
+      "id": "production_https_origin",
+      "status": "pending",
+      "evidence": "Record the deployed HTTPS API origin and successful live/readiness probes."
+    },
+    {
+      "id": "managed_database_backup_restore",
+      "status": "pending",
+      "evidence": "Reference a managed PostgreSQL backup and disposable-environment restore drill."
+    },
+    {
+      "id": "object_storage_cdn",
+      "status": "pending",
+      "evidence": "Reference a production render upload, CDN playback/download, deletion, and retention cleanup result."
+    },
+    {
+      "id": "monitoring_alert_delivery",
+      "status": "pending",
+      "evidence": "Reference metrics scraping, JSON log ingestion, and a delivered test alert."
+    },
+    {
+      "id": "ios_store_signing",
+      "status": "pending",
+      "evidence": "Reference the signed archive, bundle ID, version/build, and release channel."
+    },
+    {
+      "id": "android_store_signing",
+      "status": "pending",
+      "evidence": "Reference the signed AAB, application ID, version code/name, and internal test channel."
+    },
+    {
+      "id": "store_listing_assets",
+      "status": "pending",
+      "evidence": "Reference a passing validate:mobile-store-listing:submission report plus approved icons, native screenshots, listing copy, support URL, and public privacy URL."
+    },
+    {
+      "id": "privacy_data_safety_forms",
+      "status": "pending",
+      "evidence": "Reference completed Apple App Privacy and Google Play Data Safety disclosures."
+    },
+    {
+      "id": "production_account_deletion",
+      "status": "pending",
+      "evidence": "Reference production-like account creation, sign-in, deletion, reauthentication, and data-removal verification."
+    }
+  ]
+}

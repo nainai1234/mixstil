@@ -1,0 +1,94 @@
+{
+  "date": "2026-07-17",
+  "purpose": "Choose the next SNOOZE content-production route after rejecting paid-cloud-as-core and song-prior local music models.",
+  "benchmarkOnly": [
+    {
+      "name": "Gemini reference output",
+      "status": "benchmark_only",
+      "reason": "User-approved relaxation target, but using the paid provider as the product core would remove SNOOZE differentiation."
+    },
+    {
+      "name": "Stability Audio API",
+      "status": "benchmark_only",
+      "reason": "Commercial cloud API can compare quality, but must not become the default paid-product production route."
+    }
+  ],
+  "candidates": [
+    {
+      "name": "AudioCraft / MusicGen / MusicGen-Style",
+      "status": "rejected",
+      "licenseGate": "fail",
+      "listeningGate": "fail",
+      "evidence": [
+        ".local-models/audiocraft/LICENSE_weights is CC-BY-NC 4.0.",
+        "Local reference-conditioned tests still produced busy, hurried, chaotic, and rock-like musical priors."
+      ],
+      "decision": "Research evidence only; do not use for commercial SNOOZE assets."
+    },
+    {
+      "name": "AudioLDM2",
+      "status": "rejected",
+      "licenseGate": "fail",
+      "listeningGate": "not_reached",
+      "evidence": [
+        ".local-models/AudioLDM2/LICENSE is CC-BY-NC-SA 4.0."
+      ],
+      "decision": "Research reference only; non-commercial/share-alike terms conflict with paid SNOOZE assets."
+    },
+    {
+      "name": "Tango / TangoFlux",
+      "status": "rejected",
+      "licenseGate": "fail",
+      "listeningGate": "not_reached",
+      "evidence": [
+        ".local-models/TangoFlux/LICENSE.md says non-commercial, research-only and references dataset restrictions."
+      ],
+      "decision": "Research reference only; do not use for commercial SNOOZE assets."
+    },
+    {
+      "name": "ACE-Step",
+      "status": "rejected_for_core",
+      "licenseGate": "pass_for_code_snapshot",
+      "listeningGate": "fail",
+      "evidence": [
+        ".local-models/ACE-Step/LICENSE is Apache-2.0.",
+        "User listening tests rejected repeated batches as bar/lounge/excited/strong melody and not sleep, meditation, or focus."
+      ],
+      "decision": "Do not run more SNOOZE sleep/calm/focus batches from ACE-Step unless explicitly doing model-comparison research."
+    },
+    {
+      "name": "Stable Audio Open / stable-audio-tools self-hosted",
+      "status": "blocked_pending_terms",
+      "licenseGate": "unknown_gated",
+      "listeningGate": "not_reached",
+      "evidence": [
+        "Hugging Face API reports stabilityai/stable-audio-open-1.0 and stable-audio-open-small as gated with license:other.",
+        "Unauthenticated README/LICENSE fetch returns 401 restricted access."
+      ],
+      "decision": "Next external-model candidate only after authenticated terms are reviewed and confirmed commercial-compatible."
+    },
+    {
+      "name": "SNOOZE controlled stem factory",
+      "status": "active_next_route",
+      "licenseGate": "pass_if_project_original_or_verified_cc0_ccby",
+      "listeningGate": "must_pass",
+      "evidence": [
+        "Avoids full-song priors by producing dry sparse components: soft keys, warm support tones, room textures, tiny accents.",
+        "Lets Recipe V2 own duration, arrangement, fades, loop behavior, loudness, and foreground/background balance."
+      ],
+      "decision": "Use as the immediate next implementation route while external self-hosted model terms are unresolved."
+    }
+  ],
+  "activeNextRoute": {
+    "name": "SNOOZE controlled stem factory",
+    "firstBatch": "controlled-stem-factory-001",
+    "deliverable": "A review page with dry sparse musical stems and simple Recipe V2 combinations, not a full AI song batch.",
+    "acceptance": [
+      "No buzzing/mechanical drone as the main sound.",
+      "No bar, jazz, lounge, rock, celebratory, cinematic, or rapper/pop prior.",
+      "No vocals or human-like artifacts.",
+      "Noise and environment remain below attention, normally under 10 percent perceptual prominence.",
+      "Music bed stays sparse, low-energy, non-climactic, and replayable."
+    ]
+  }
+}

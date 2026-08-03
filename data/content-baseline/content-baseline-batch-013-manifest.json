@@ -1,0 +1,195 @@
+{
+  "version": "2026-07-17.batch-013-scale-saveable-formula",
+  "generatedAt": "2026-07-17T08:44:26.336Z",
+  "purpose": "Scale the promoted Batch 012 save/replay formula from 3 seeds to 6 nearby finished soundscape candidates.",
+  "inheritedPromotion": "data/content-baseline/content-baseline-batch-012-promotion.json",
+  "hardGates": [
+    "Reject if any candidate sounds like noise-bed content rather than music-led soundscape.",
+    "Reject if any candidate reintroduces mechanical, hellish, horror-like, oppressive, or physically uncomfortable semantics.",
+    "Reject if added support layers become foreground or exceed roughly 5 percent perceived share.",
+    "Reject if candidates feel like trivial duplicates rather than useful nearby variants."
+  ],
+  "candidates": [
+    {
+      "id": "sleep_019_soft_descent_deeper",
+      "title": "Soft Descent Deeper — Sleep",
+      "goal": "sleep",
+      "scene": "bedtime_sleep",
+      "outputPath": "public/audio/content-baseline/batch-013/sleep_019_soft_descent_deeper.mp3",
+      "outputUrl": "/audio/content-baseline/batch-013/sleep_019_soft_descent_deeper.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_save_replay_formula",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "A slightly deeper variant of the promoted Sleep seed, keeping the same saveable formula.",
+      "sources": [
+        {
+          "role": "promoted_sleep_seed",
+          "path": "public/audio/content-baseline/batch-012/sleep_018_saveable_soft_descent.mp3",
+          "note": "Batch 012 promoted sleep seed remains the body",
+          "intendedPerceivedShare": "92-96%"
+        },
+        {
+          "role": "deeper_sleep_shadow",
+          "path": "public/audio/music/procedural-approved-2026-07-13/procedural_return_to_sleep_soft.mp3",
+          "note": "late soft musical shadow only",
+          "intendedPerceivedShare": "2-4%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321526
+      }
+    },
+    {
+      "id": "sleep_020_return_sleep_soft_floor",
+      "title": "Return Sleep Soft Floor — Sleep",
+      "goal": "sleep",
+      "scene": "return_to_sleep",
+      "outputPath": "public/audio/content-baseline/batch-013/sleep_020_return_sleep_soft_floor.mp3",
+      "outputUrl": "/audio/content-baseline/batch-013/sleep_020_return_sleep_soft_floor.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_save_replay_formula",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "A lower-arousal return-to-sleep sibling: less movement, still music-led and saveable.",
+      "sources": [
+        {
+          "role": "promoted_sleep_seed_lower",
+          "path": "public/audio/content-baseline/batch-012/sleep_018_saveable_soft_descent.mp3",
+          "note": "same accepted sleep language, lower and slower",
+          "intendedPerceivedShare": "94-97%"
+        },
+        {
+          "role": "minimal_rest_release",
+          "path": "public/audio/music/reviewed-2026-07-11/rest_now_pad.mp3",
+          "note": "tiny release, no noise",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321526
+      }
+    },
+    {
+      "id": "calm_015_warm_room_extended",
+      "title": "Warm Room Extended — Calm",
+      "goal": "calm",
+      "scene": "quiet_relaxation",
+      "outputPath": "public/audio/content-baseline/batch-013/calm_015_warm_room_extended.mp3",
+      "outputUrl": "/audio/content-baseline/batch-013/calm_015_warm_room_extended.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_save_replay_formula",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "A warmer continuation of the promoted Calm seed without bowl, dark resonance, or ritual feel.",
+      "sources": [
+        {
+          "role": "promoted_calm_seed",
+          "path": "public/audio/content-baseline/batch-012/calm_014_saveable_warm_room.mp3",
+          "note": "Batch 012 promoted calm seed remains the body",
+          "intendedPerceivedShare": "92-96%"
+        },
+        {
+          "role": "warm_width_only",
+          "path": "public/audio/music/reviewed-2026-07-11/valley_sunset_pad.mp3",
+          "note": "small safe width, no dark resonance",
+          "intendedPerceivedShare": "2-4%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321452
+      }
+    },
+    {
+      "id": "calm_016_after_work_settle",
+      "title": "After Work Settle — Calm",
+      "goal": "calm",
+      "scene": "after_work_settling",
+      "outputPath": "public/audio/content-baseline/batch-013/calm_016_after_work_settle.mp3",
+      "outputUrl": "/audio/content-baseline/batch-013/calm_016_after_work_settle.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_save_replay_formula",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "A calmer day-to-evening variant: still music-led, safe, and non-dramatic.",
+      "sources": [
+        {
+          "role": "promoted_calm_seed_softer",
+          "path": "public/audio/content-baseline/batch-012/calm_014_saveable_warm_room.mp3",
+          "note": "accepted calm language, slightly softer entry",
+          "intendedPerceivedShare": "92-96%"
+        },
+        {
+          "role": "grounded_calm_body",
+          "path": "public/audio/music/local-review/2026-07-14/procedural_calm_grounded_a.mp3",
+          "note": "tiny grounded musical support",
+          "intendedPerceivedShare": "2-4%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321452
+      }
+    },
+    {
+      "id": "focus_018_low_workbed_clear",
+      "title": "Low Workbed Clear — Focus",
+      "goal": "focus",
+      "scene": "deep_work",
+      "outputPath": "public/audio/content-baseline/batch-013/focus_018_low_workbed_clear.mp3",
+      "outputUrl": "/audio/content-baseline/batch-013/focus_018_low_workbed_clear.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_save_replay_formula",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "thesis": "A clearer focus sibling of the promoted Focus seed, still low and non-distracting.",
+      "sources": [
+        {
+          "role": "promoted_focus_seed",
+          "path": "public/audio/content-baseline/batch-012/focus_017_saveable_low_workbed.mp3",
+          "note": "Batch 012 promoted focus seed remains the body",
+          "intendedPerceivedShare": "94-97%"
+        },
+        {
+          "role": "clean_focus_hint",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_neutral_clean.mp3",
+          "note": "barely-there clean support, not a lead",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "focus_019_open_low_attention",
+      "title": "Open Low Attention — Focus",
+      "goal": "focus",
+      "scene": "light_focus",
+      "outputPath": "public/audio/content-baseline/batch-013/focus_019_open_low_attention.mp3",
+      "outputUrl": "/audio/content-baseline/batch-013/focus_019_open_low_attention.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_save_replay_formula",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "thesis": "A slightly more open focus version for lighter work, avoiding noise masks and busy music.",
+      "sources": [
+        {
+          "role": "promoted_focus_seed_open",
+          "path": "public/audio/content-baseline/batch-012/focus_017_saveable_low_workbed.mp3",
+          "note": "accepted focus language with a more open offset",
+          "intendedPerceivedShare": "94-97%"
+        },
+        {
+          "role": "tiny_warm_mid_support",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_warm_mid.mp3",
+          "note": "tiny musical warmth, not a melody",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321197
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-013/index.html"
+}

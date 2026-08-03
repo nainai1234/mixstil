@@ -1,0 +1,91 @@
+{
+  "batchId": "meditation_sleep_focus_music_batch_021_2026_07_17",
+  "purpose": "Correct Batch 020 listening feedback: the sleep candidate felt unexpectedly exciting, and the focus candidate had too much reverb. Generate flatter, drier, lower-arousal functional music candidates. Candidate-only; not approved for product use.",
+  "model": {
+    "provider": "ACE-Step",
+    "repository": "https://github.com/ace-step/ACE-Step",
+    "checkpoint": "ACE-Step/ACE-Step-v1-3.5B",
+    "codeLicense": "Apache-2.0",
+    "checkpointLicense": "Apache-2.0",
+    "generationLocation": "local-mac-backend",
+    "commercialOutputReview": "required",
+    "productBoundary": "candidate-only; generated files must not enter approved assets, public playback, offline playback, or rendered works until promoted"
+  },
+  "defaults": {
+    "durationSeconds": 60,
+    "inferenceSteps": 27,
+    "guidanceScale": 5,
+    "format": "wav",
+    "lyrics": "",
+    "negativeRequirements": [
+      "no vocals",
+      "no spoken voice",
+      "no fake voice",
+      "no choir",
+      "no humming",
+      "no chanting",
+      "no lyrics",
+      "no cinematic score",
+      "no emotional lift",
+      "no exciting chord progression",
+      "no bright lead instrument",
+      "no shimmer",
+      "no large reverb",
+      "no long reverb tail",
+      "no cathedral space",
+      "no washed-out ambience",
+      "no suspense",
+      "no dramatic climax",
+      "no buzzing drone as the main sound",
+      "no harsh resonance",
+      "no alarm-like tone",
+      "no drums",
+      "no beat",
+      "no pulse",
+      "no arpeggio",
+      "no strong melody hook"
+    ]
+  },
+  "listeningTarget": {
+    "sleep": "flat, sleepy, low-arousal music-like background with no emotional lift and no sense of momentum",
+    "focus": "dry, close, low-distraction background for reading or work, with very short room decay and no ambient wash"
+  },
+  "candidates": [
+    {
+      "id": "sleep_matte_low_motion_021_001",
+      "family": "matte_low_motion_sleep",
+      "goal": "sleep",
+      "scene": "bedtime",
+      "seed": 821001,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental bedtime sleep background, matte warm low-motion tones, very slow and flat harmony, sleepy neutral mood, close dry mix, minimal room sound, no emotional lift, no excitement, no lullaby melody, no bright instruments, no vocals, no fake voice, no choir, no humming, no lyrics, no cinematic score, no shimmer, no large reverb, no long reverb tail, no drums, no beat, no pulse, no arpeggio, no strong melody hook"
+    },
+    {
+      "id": "sleep_plain_warm_blanket_021_002",
+      "family": "plain_warm_blanket",
+      "goal": "sleep",
+      "scene": "return_to_sleep",
+      "seed": 821002,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental return-to-sleep background, plain warm blanket texture, soft sustained low keys and dull warm pad, stable sleepy harmony with almost no movement, low arousal, close and dry, short decay, no emotional lift, no exciting progression, no sparkly top end, no vocals, no fake voice, no choir, no humming, no lyrics, no cinematic score, no large reverb, no wash, no drums, no beat, no pulse, no arpeggio, no melody hook"
+    },
+    {
+      "id": "focus_dry_close_keys_021_003",
+      "family": "dry_close_keys",
+      "goal": "focus",
+      "scene": "deep_focus",
+      "seed": 821003,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental low-distraction focus background for reading and deep work, dry close soft keys, very short room decay, neutral steady harmony, low cognitive load, no reverb wash, no spacious ambient tail, no active melody, no emotional lift, no vocals, no fake voice, no choir, no humming, no lyrics, no drums, no beat, no pulse, no arpeggio, no buzzing drone, no cinematic score, no strong melody hook"
+    },
+    {
+      "id": "focus_matte_near_room_021_004",
+      "family": "matte_near_room",
+      "goal": "focus",
+      "scene": "reading_focus",
+      "seed": 821004,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental reading focus background, matte near-room texture, soft muted electric piano and quiet warm support tone, dry intimate mix, short room only, steady and unexciting, no reverb tail, no ambient wash, no shimmer, no active melody, no vocals, no fake voice, no choir, no humming, no lyrics, no drums, no beat, no pulse, no arpeggio, no cinematic feeling, no strong melody hook"
+    }
+  ]
+}

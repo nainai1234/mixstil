@@ -1,0 +1,183 @@
+{
+  "version": "2026-07-16.batch-005-music-led-no-noise-lead",
+  "generatedAt": "2026-07-16T22:36:06.428Z",
+  "purpose": "Correct Batch 004 feedback: most openings were nearly inaudible, later support/noise became too dominant, and the pieces had form without state-entry soul.",
+  "hardGates": [
+    "Reject if the first 20-30 seconds are almost inaudible.",
+    "Reject if any white/pink/brown noise or noise-like room layer becomes the main melody or occupies roughly half the perceived attention.",
+    "Reject if the content feels like assembled elements instead of a state-entry piece.",
+    "Reject if music is pleasant but does not support sleep, meditation, calm, or focus."
+  ],
+  "selection": {
+    "sleep": 2,
+    "calm": 1,
+    "focus": 1
+  },
+  "candidates": [
+    {
+      "id": "sleep_007_no_water_bedtime_pad",
+      "title": "No-Water Bedtime Pad — Music-Led Descent",
+      "goal": "sleep",
+      "scene": "bedtime_with_music",
+      "sourceBriefDurationMinutes": 45,
+      "previewDurationSeconds": 180,
+      "outputPath": "public/audio/content-baseline/batch-005/sleep_007_no_water_bedtime_pad.mp3",
+      "outputUrl": "/audio/content-baseline/batch-005/sleep_007_no_water_bedtime_pad.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_004_quiet_but_empty_opening_and_noise_support_too_dominant",
+      "designRule": "no white/pink/brown noise; music carries the descent; room is only spatial glue",
+      "stateArc": "soft piano already present -> pad arrives underneath -> piano thins out -> room shadow remains",
+      "listeningQuestion": "Does the first 30 seconds give you a gentle musical handrail without becoming a normal piano track?",
+      "sources": [
+        {
+          "role": "primary_music_handrail",
+          "path": "public/audio/production-remediated-2026-07-13/music/dreaming_soft_piano.mp3",
+          "note": "audible from the start; this replaces the silent opening"
+        },
+        {
+          "role": "warm_harmonic_bed",
+          "path": "public/audio/production-remediated-2026-07-13/music/nap_time_pad.mp3",
+          "note": "pad follows the music instead of announcing itself first"
+        },
+        {
+          "role": "room_shadow",
+          "path": "public/audio/music/revised-collection-qa/2026-07-14/dry_quiet_room.mp3",
+          "note": "spatial glue only; not a noise bed"
+        }
+      ],
+      "limitations": [
+        "Music-led state-entry preview; not a final commercial master.",
+        "No generated white, pink, or brown noise is used in this batch.",
+        "Reject if the result still feels like elements placed together without a state-entry soul."
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "sleep_006_return_to_sleep_cabin",
+      "title": "Return-to-Sleep Cabin — Harmonic Shelter",
+      "goal": "sleep",
+      "scene": "return_to_sleep",
+      "sourceBriefDurationMinutes": 20,
+      "previewDurationSeconds": 180,
+      "outputPath": "public/audio/content-baseline/batch-005/sleep_006_return_to_sleep_cabin.mp3",
+      "outputUrl": "/audio/content-baseline/batch-005/sleep_006_return_to_sleep_cabin.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_004_quiet_but_empty_opening_and_noise_support_too_dominant",
+      "designRule": "return-to-sleep should be audible but non-startling; no synthetic noise support",
+      "stateArc": "low pad breathes in -> one soft piano contour -> fan-like room warmth stays below music -> music dissolves",
+      "listeningQuestion": "Would this be safe to restart at 3 a.m., or does any layer still pull attention forward?",
+      "sources": [
+        {
+          "role": "low_harmonic_shelter",
+          "path": "public/audio/music/reviewed-2026-07-11/rest_now_pad.mp3",
+          "note": "audible harmonic shelter starts immediately, softly"
+        },
+        {
+          "role": "brief_piano_contour",
+          "path": "public/audio/production-remediated-2026-07-13/music/piano_reflections.mp3",
+          "note": "short contour, then it steps away"
+        },
+        {
+          "role": "low_room_warmth",
+          "path": "public/audio/music/revised-collection-qa/2026-07-14/low_fan_night.mp3",
+          "note": "late low warmth below the harmonic layers; not a white-noise lead"
+        }
+      ],
+      "limitations": [
+        "Music-led state-entry preview; not a final commercial master.",
+        "No generated white, pink, or brown noise is used in this batch.",
+        "Reject if the result still feels like elements placed together without a state-entry soul."
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321452
+      }
+    },
+    {
+      "id": "calm_005_open_room_meditation",
+      "title": "Open Room Meditation — Breath Without Hiss",
+      "goal": "calm",
+      "scene": "meditation",
+      "sourceBriefDurationMinutes": 20,
+      "previewDurationSeconds": 180,
+      "outputPath": "public/audio/content-baseline/batch-005/calm_005_open_room_meditation.mp3",
+      "outputUrl": "/audio/content-baseline/batch-005/calm_005_open_room_meditation.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_004_quiet_but_empty_opening_and_noise_support_too_dominant",
+      "designRule": "breath-like timing must come from harmonic phrasing and resonant tail, not pink-noise exhale",
+      "stateArc": "small bell color -> warm open drone -> room becomes wider -> second resonance falls away into space",
+      "listeningQuestion": "Does the timing imply exhale/settling without using a hiss layer as the breath?",
+      "sources": [
+        {
+          "role": "opening_resonance",
+          "path": "public/audio/production-remediated-2026-07-13/music/crystal_meditation.mp3",
+          "note": "resonance is audible immediately, but controlled"
+        },
+        {
+          "role": "open_harmonic_floor",
+          "path": "public/audio/music/local-review/2026-07-14/procedural_meditation_open_b.mp3",
+          "note": "floor rises under the resonance and gives the meditation body"
+        },
+        {
+          "role": "real_room_width",
+          "path": "public/audio/authentic-indoor-review/2026-07-14/room_apartment_small.mp3",
+          "note": "barely-there room width only"
+        }
+      ],
+      "limitations": [
+        "Music-led state-entry preview; not a final commercial master.",
+        "No generated white, pink, or brown noise is used in this batch.",
+        "Reject if the result still feels like elements placed together without a state-entry soul."
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321452
+      }
+    },
+    {
+      "id": "focus_004_low_anchor_pad",
+      "title": "Low Anchor Pad — Music-First Attention",
+      "goal": "focus",
+      "scene": "music_supported_focus",
+      "sourceBriefDurationMinutes": 40,
+      "previewDurationSeconds": 180,
+      "outputPath": "public/audio/content-baseline/batch-005/focus_004_low_anchor_pad.mp3",
+      "outputUrl": "/audio/content-baseline/batch-005/focus_004_low_anchor_pad.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_004_quiet_but_empty_opening_and_noise_support_too_dominant",
+      "designRule": "focus uses low harmonic repetition and distant room movement; no noise blanket",
+      "stateArc": "low anchor audible at start -> restrained harmonic motion -> distant room line enters below -> stable attention bed",
+      "listeningQuestion": "Does the repeated low music help you begin working without turning into background hiss?",
+      "sources": [
+        {
+          "role": "primary_low_anchor",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_low_anchor.mp3",
+          "note": "audible focus identity from the start"
+        },
+        {
+          "role": "restrained_mid_motion",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_warm_mid.mp3",
+          "note": "small harmonic movement, not a lead melody"
+        },
+        {
+          "role": "distant_work_room",
+          "path": "public/audio/supply-gap-batch-01-loop-qa/2026-07-15/room_office_distant_traffic.mp3",
+          "note": "distant room enters late as context, not a noise layer"
+        }
+      ],
+      "limitations": [
+        "Music-led state-entry preview; not a final commercial master.",
+        "No generated white, pink, or brown noise is used in this batch.",
+        "Reject if the result still feels like elements placed together without a state-entry soul."
+      ],
+      "probe": {
+        "durationSeconds": 179.953958,
+        "sizeBytes": 4320621
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-005/index.html"
+}

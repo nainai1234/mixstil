@@ -1,0 +1,91 @@
+{
+  "batchId": "local_music_foundation_2026_07_13",
+  "purpose": "Replace frightening or overly dramatic music candidates with low-stimulation foundation layers.",
+  "model": {
+    "provider": "ACE-Step",
+    "repository": "https://github.com/ace-step/ACE-Step",
+    "sourceCommit": "1bee4c9f5b43e30995f8d4d33b3919197ce1bd68",
+    "checkpoint": "ACE-Step/ACE-Step-v1-3.5B",
+    "codeLicense": "Apache-2.0",
+    "generationLocation": "local-mac-backend",
+    "commercialOutputReview": "required"
+  },
+  "defaults": {
+    "durationSeconds": 60,
+    "inferenceSteps": 27,
+    "guidanceScale": 7,
+    "format": "wav",
+    "lyrics": "",
+    "negativeRequirements": [
+      "no vocals",
+      "no spoken voice",
+      "no drums",
+      "no beat",
+      "no sudden impact",
+      "no horror",
+      "no suspense",
+      "no ominous tension",
+      "no dissonance",
+      "no bright alarm-like tones"
+    ]
+  },
+  "candidates": [
+    {
+      "id": "local_warm_sleep_pad",
+      "family": "warm_pad",
+      "goal": "sleep",
+      "scene": "bedtime",
+      "seed": 73101,
+      "reviewStatus": "rejected",
+      "reviewNotes": "Rejected 2026-07-13 after project-owner listening: cheerful and celebratory rather than sleepy or low-arousal.",
+      "prompt": "instrumental warm felt-synth pad for bedtime, very slow evolving consonant harmony, soft rounded low mids, gentle intimate room, stable sustained texture, soothing and safe, low stimulation, no vocals, no spoken voice, no drums, no beat, no sudden impact, no horror, no suspense, no ominous tension, no dissonance"
+    },
+    {
+      "id": "local_neutral_sleep_drone",
+      "family": "neutral_sleep_drone",
+      "goal": "sleep",
+      "scene": "bedtime",
+      "seed": 73103,
+      "guidanceScale": 12,
+      "reviewStatus": "rejected",
+      "reviewNotes": "Rejected by automatic constraint QA: beat analysis detected approximately 129 BPM and 126 beat events despite an explicit no-pulse sleep-drone request.",
+      "prompt": "deep sleep ambient drone, non-rhythmic sustained low-register sine pad, nearly static single-harmony texture, muted neutral timbre, very low arousal, sleepy and motionless, extremely slow breathing-like amplitude, no chord progression, no melody, no arpeggio, no bright major harmony, no plucked notes, no piano, no bells, no percussion, no pulse, no celebratory mood, no cinematic tension, no vocals, no spoken voice"
+    },
+    {
+      "id": "local_neutral_focus_pad",
+      "family": "neutral_pad",
+      "goal": "focus",
+      "scene": "deep_focus",
+      "seed": 73201,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental neutral concentration pad, soft transparent midrange, smooth consonant sustained harmony, minimal movement, calm indoor studio atmosphere, unobtrusive background music, no melody hook, no vocals, no spoken voice, no drums, no beat, no sudden impact, no horror, no suspense, no ominous tension, no dissonance"
+    },
+    {
+      "id": "local_neutral_focus_pad_2",
+      "family": "neutral_pad",
+      "goal": "focus",
+      "scene": "deep_focus",
+      "seed": 73202,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental quiet focus drone with a gentle warm pad, stable consonant chords, slow predictable evolution, soft and non-distracting, no cinematic climax, no tension, no dark atmosphere, no melody hook, no vocals, no spoken voice, no drums, no beat, no sudden impact, no horror, no suspense, no dissonance"
+    },
+    {
+      "id": "local_gentle_calm_drone",
+      "family": "gentle_drone",
+      "goal": "calm",
+      "scene": "emotional_settling",
+      "seed": 73301,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental gentle calming drone, warm soft sine and felt textures, consonant open fifths, very slow gradual change, grounded and reassuring, quiet meditation background, low brightness, no vocals, no spoken voice, no drums, no beat, no sudden impact, no horror, no suspense, no ominous tension, no dissonance"
+    },
+    {
+      "id": "local_gentle_calm_drone_2",
+      "family": "gentle_drone",
+      "goal": "calm",
+      "scene": "breathing",
+      "seed": 73302,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental soft breathing meditation drone, very gentle warm pad, long smooth attack and release, stable peaceful harmony, spacious but intimate, supports slow breathing without drawing attention, no vocals, no spoken voice, no drums, no beat, no sudden impact, no horror, no suspense, no ominous tension, no dissonance"
+    }
+  ]
+}

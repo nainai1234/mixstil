@@ -1,0 +1,153 @@
+{
+  "batchId": "meditation_sleep_focus_music_batch_023_2026_07_17",
+  "purpose": "Prompt-pack V1 smoke test after Batch 020/021 listening failures and external prompt-structure research. Use complete functional music production briefs instead of short vibe prompts. Candidate-only; not approved for product use.",
+  "researchNotes": [
+    "docs/functional-music-prompt-research-2026-07-17.md",
+    "docs/functional-music-prompt-pack-v1-2026-07-17.md"
+  ],
+  "model": {
+    "provider": "ACE-Step",
+    "repository": "https://github.com/ace-step/ACE-Step",
+    "checkpoint": "ACE-Step/ACE-Step-v1-3.5B",
+    "codeLicense": "Apache-2.0",
+    "checkpointLicense": "Apache-2.0",
+    "generationLocation": "local-mac-backend",
+    "commercialOutputReview": "required",
+    "productBoundary": "candidate-only; generated files must not enter approved assets, public playback, offline playback, or rendered works until promoted"
+  },
+  "defaults": {
+    "durationSeconds": 60,
+    "inferenceSteps": 27,
+    "guidanceScale": 4.2,
+    "format": "wav",
+    "lyrics": "",
+    "negativeRequirements": [
+      "no vocals",
+      "no spoken voice",
+      "no fake voice",
+      "no choir",
+      "no humming",
+      "no chanting",
+      "no mantra",
+      "no lyrics",
+      "no drums",
+      "no beat",
+      "no percussion",
+      "no pulse",
+      "no arpeggio",
+      "no bass line",
+      "no lead melody",
+      "no strong tune",
+      "no memorable hook",
+      "no song structure",
+      "no intro",
+      "no verse",
+      "no chorus",
+      "no bridge",
+      "no build",
+      "no drop",
+      "no climax",
+      "no emotional lift",
+      "no exciting chord progression",
+      "no cinematic score",
+      "no suspense",
+      "no large reverb",
+      "no long reverb tail",
+      "no spacious reverb",
+      "no cavern reverb",
+      "no ambient wash",
+      "no shimmer",
+      "no bright bells",
+      "no buzzing drone as the main sound",
+      "no harsh resonance",
+      "no alarm-like tone"
+    ]
+  },
+  "listeningTarget": {
+    "sleep": "plain, almost boring, sleepy, low-arousal background bed with no tune to follow and no room wash",
+    "meditation": "stable, grounded, low-stimulation support for breath attention with no chant, no new-age gloss, and no cinematic movement",
+    "focus": "dry, close, low-distraction reading/deep-work background with no beat, no hook, and no space-bath wash"
+  },
+  "promptContract": {
+    "requiredOrder": [
+      "functional use case",
+      "style boundary",
+      "tempo and key",
+      "energy",
+      "instrumentation",
+      "performance",
+      "arrangement",
+      "production",
+      "exclude"
+    ],
+    "maximumMusicalSources": 2,
+    "rejectIf": [
+      "exciting",
+      "emotional lift",
+      "strong tune",
+      "memorable melody",
+      "large reverb",
+      "long tail",
+      "space-bath wash",
+      "beat or implied beat",
+      "cinematic movement",
+      "fake vocals or choir-like vowels"
+    ]
+  },
+  "candidates": [
+    {
+      "id": "sleep_dry_low_ep_023_001",
+      "family": "dry_low_electric_piano",
+      "goal": "sleep",
+      "scene": "bedtime",
+      "seed": 823001,
+      "reviewStatus": "candidate",
+      "prompt": "Functional sleep instrumental bed for bedtime. Style: minimal non-song background music, not a lullaby, not cinematic. Tempo and key: 46 BPM, F major, 4/4. Energy: 1/10, low arousal, sleepy, plain, emotionally neutral. Instrumentation: soft low electric piano as the only primary instrument, faint low warm organ support, no more than two musical sources. Performance: very sparse single notes, long gaps, soft attack, low register, almost no chord movement, no lead melody. Arrangement: single continuous section, no intro, no verse, no chorus, no bridge, no build, no drop, no climax. Production: dry tight close mix, short room only, narrow natural stereo, rolled-off highs, no shimmer, no large space. Exclude vocals, spoken voice, choir, humming, chanting, lyrics, drums, beat, percussion, pulse, arpeggio, bass line, lead melody, memorable hook, emotional lift, exciting chord progression, cinematic score, lullaby tune, large reverb, long reverb tail, ambient wash, bright bells, alarm-like tone."
+    },
+    {
+      "id": "sleep_plain_organ_hold_023_002",
+      "family": "plain_organ_hold",
+      "goal": "sleep",
+      "scene": "return_to_sleep",
+      "seed": 823002,
+      "reviewStatus": "candidate",
+      "prompt": "Functional sleep instrumental bed for returning to sleep after waking. Style: plain minimal non-song background, not a lullaby, not ambient wash. Tempo and key: 44 BPM, C major, 4/4. Energy: 1/10, very low arousal, sleepy, dull, emotionally flat. Instrumentation: dull low warm organ support as the main body, sparse soft low electric piano accents, no more than two musical sources. Performance: sustained quiet tones, rare low notes, soft attack, long gaps, almost no chord changes, no foreground melody. Arrangement: single continuous section, no intro, no verse, no chorus, no bridge, no build, no drop, no climax. Production: dry tight close mix, short room only, narrow natural stereo, rolled-off highs, no shimmer, no large space. Exclude vocals, spoken voice, choir, humming, chanting, lyrics, drums, beat, percussion, pulse, arpeggio, bass line, lead melody, memorable hook, emotional lift, exciting progression, cinematic score, new age gloss, large reverb, long reverb tail, ambient wash, bright bells, alarm-like tone."
+    },
+    {
+      "id": "meditation_grounded_organ_023_003",
+      "family": "grounded_organ_support",
+      "goal": "calm",
+      "scene": "voice_free_meditation",
+      "seed": 823003,
+      "reviewStatus": "candidate",
+      "prompt": "Functional meditation instrumental support for quiet breath attention. Style: minimal non-song support tone, not new age, not cinematic, not chant music. Tempo and key: 54 BPM, D major, 4/4. Energy: 2/10, stable, grounded, neutral, non-dramatic. Instrumentation: soft organ-like sustained tone as support, sparse muted electric piano accents, no more than two musical sources. Performance: extremely slow harmonic movement, no foreground tune, no call-and-response, no rhythmic phrase, no emotional cadence. Arrangement: single continuous section, no intro, no verse, no chorus, no bridge, no build, no drop, no climax. Production: close dry mix, short room only, low shimmer, gentle low-mid warmth, no cavern or temple reverb. Exclude vocals, spoken voice, choir, humming, chanting, mantra, lyrics, drums, beat, percussion, pulse, arpeggio, lead melody, memorable hook, emotional lift, cinematic score, new age gloss, large reverb, long reverb tail, ambient wash, buzzing drone, bright bell strike."
+    },
+    {
+      "id": "meditation_muted_low_keys_023_004",
+      "family": "muted_low_keys",
+      "goal": "calm",
+      "scene": "voice_free_meditation",
+      "seed": 823004,
+      "reviewStatus": "candidate",
+      "prompt": "Functional meditation instrumental support for quiet sitting. Style: minimal dry non-song background bed, not new age, not cinematic, not ambient wash. Tempo and key: 56 BPM, A minor, 4/4. Energy: 2/10, grounded, neutral, low stimulation, emotionally restrained. Instrumentation: muted low electric piano as the primary instrument, very faint warm analog support tone, no more than two musical sources. Performance: sparse low notes, soft attack, irregular long spacing, no lead line, no arpeggio loop, no rhythmic motif, no emotional cadence. Arrangement: single continuous section, no intro, no verse, no chorus, no bridge, no build, no drop, no climax. Production: dry tight close mix, very short room, narrow natural stereo, low high-frequency sparkle, no wide stereo wash. Exclude vocals, spoken voice, choir, humming, chanting, mantra, lyrics, drums, beat, percussion, pulse, bass line, arpeggio, lead melody, strong tune, memorable hook, emotional lift, cinematic score, large reverb, long reverb tail, spacious reverb, ambient wash, shimmer, bright bells."
+    },
+    {
+      "id": "focus_dry_muted_rhodes_023_005",
+      "family": "dry_muted_rhodes",
+      "goal": "focus",
+      "scene": "deep_focus",
+      "seed": 823005,
+      "reviewStatus": "candidate",
+      "prompt": "Functional focus instrumental bed for reading and deep work. Style: minimal dry study background, non-song, not lo-fi hip hop, not ambient wash. Tempo and key: 64 BPM, A minor, 4/4. Energy: 3/10, steady, neutral, low-distraction, non-emotional. Instrumentation: muted Rhodes electric piano as the only primary instrument, faint tape-noise support texture, no more than two musical sources. Performance: sparse broken chords with irregular spacing, no lead line, no arpeggio loop, no rhythmic motif, no hook. Arrangement: single continuous section, no intro, no verse, no chorus, no bridge, no build, no drop, no climax. Production: dry tight close mix, very short room, narrow natural stereo, low high-frequency sparkle, no wide stereo wash. Exclude vocals, spoken voice, choir, humming, lyrics, drums, beat, percussion, pulse, bass line, arpeggio, lead melody, strong tune, memorable hook, emotional lift, exciting progression, cinematic score, large reverb, long reverb tail, spacious reverb, ambient wash, shimmer, bright bells."
+    },
+    {
+      "id": "focus_close_tape_keys_023_006",
+      "family": "close_tape_keys",
+      "goal": "focus",
+      "scene": "reading_focus",
+      "seed": 823006,
+      "reviewStatus": "candidate",
+      "prompt": "Functional focus instrumental bed for quiet reading. Style: close dry minimal study background, non-song, not lo-fi hip hop, not dream pop, not ambient. Tempo and key: 68 BPM, D minor, 4/4. Energy: 3/10, steady, neutral, low-distraction, low arousal. Instrumentation: soft muted electric piano as the only primary instrument, faint warm tape texture, no more than two musical sources. Performance: low-density notes, soft attack, no lead melody, no arpeggio, no repeated rhythmic phrase, no memorable hook. Arrangement: single continuous section, no intro, no verse, no chorus, no bridge, no build, no drop, no climax. Production: dry tight close mix, very short room, narrow natural stereo, rolled-off highs, no wide stereo wash, no space bath. Exclude vocals, spoken voice, choir, humming, lyrics, drums, beat, percussion, pulse, bass line, arpeggio, lead melody, strong tune, memorable hook, emotional lift, exciting progression, cinematic score, large reverb, long reverb tail, spacious reverb, ambient wash, shimmer, bright bells."
+    }
+  ]
+}

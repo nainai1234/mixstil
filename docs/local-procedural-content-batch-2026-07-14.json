@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "batchId": "local_procedural_content_2026_07_14",
+  "generator": "scripts/generate-procedural-foundation-pads.py",
+  "python": ".venv-audio/bin/python",
+  "outputDirectory": "public/audio/music/local-candidates/2026-07-14",
+  "status": "candidate_only",
+  "commercialPolicy": "Deterministic project-owned synthesis; retain code, profile, seed, measurements, and listening QA before promotion.",
+  "candidates": [
+    {"id":"procedural_calm_grounded_a","profile":"calm_grounded","seed":74101,"goal":"calm","scene":"emotional_settling","rootFrequenciesHz":[87.31,130.81,174.62,261.63]},
+    {"id":"procedural_calm_grounded_b","profile":"calm_grounded","seed":74102,"goal":"calm","scene":"breathing","rootFrequenciesHz":[87.31,130.81,174.62,261.63]},
+    {"id":"procedural_meditation_open_a","profile":"meditation_open","seed":74201,"goal":"calm","scene":"breathing","rootFrequenciesHz":[98.0,146.83,196.0,293.66]},
+    {"id":"procedural_meditation_open_b","profile":"meditation_open","seed":74202,"goal":"calm","scene":"breathing","rootFrequenciesHz":[98.0,146.83,196.0,293.66]},
+    {"id":"procedural_focus_neutral_a","profile":"focus_neutral","seed":74301,"goal":"focus","scene":"deep_focus","rootFrequenciesHz":[110.0,165.0,220.0,330.0]},
+    {"id":"procedural_focus_neutral_b","profile":"focus_neutral","seed":74302,"goal":"focus","scene":"deep_focus","rootFrequenciesHz":[110.0,165.0,220.0,330.0]}
+  ],
+  "requiredGates":["decode","duration","sample_rate","channels","lufs","peak","opening_20s","no_voice","no_beat","no_fright","loop_30m","scene_fit","combination_qa"]
+}

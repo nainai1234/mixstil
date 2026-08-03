@@ -1,0 +1,100 @@
+{
+  "version": "2026-07-16.batch-010-quieter-safe-music-beds",
+  "generatedAt": "2026-07-16T23:08:00.267Z",
+  "purpose": "Correct Batch 009 feedback: Sleep and Focus were music beds but too loud/noisy; Calm resonance felt hellish and uncomfortable. Batch 010 lowers music-bed intensity and replaces Calm with a safe warm bed.",
+  "hardGates": [
+    "Reject if Sleep or Focus still feels too loud, busy, or noisy as music.",
+    "Reject Calm immediately if it feels hellish, horror-like, ritualistic, ominous, oppressive, or physically uncomfortable.",
+    "No singing bowl, dark resonance, insect, room, fan, traffic, or white/pink/brown noise is used in this batch.",
+    "All candidates are music-bed candidates, not foundational basic sounds."
+  ],
+  "candidates": [
+    {
+      "id": "sleep_016_quieter_music_bed",
+      "title": "Quieter Music Bed — Sleep",
+      "goal": "sleep",
+      "scene": "bedtime_sleep",
+      "outputPath": "public/audio/content-baseline/batch-010/sleep_016_quieter_music_bed.mp3",
+      "outputUrl": "/audio/content-baseline/batch-010/sleep_016_quieter_music_bed.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "batch_009_sleep_music_bed_too_forward_and_noisy",
+      "contentClass": "quiet_finished_music_bed_candidate",
+      "thesis": "Keep the music-bed direction, but lower the intensity and remove the sense of loud foreground music.",
+      "rejectedFromPreviousBatch": [],
+      "sources": [
+        {
+          "role": "quiet_sleep_descent",
+          "path": "public/audio/music/reviewed-2026-07-11/silent_descent.mp3",
+          "note": "same sleep direction, quieter and less forward"
+        },
+        {
+          "role": "soft_rest_pad_shadow",
+          "path": "public/audio/music/reviewed-2026-07-11/rest_now_pad.mp3",
+          "note": "barely-there musical shadow, not a drone or noise bed"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321452
+      }
+    },
+    {
+      "id": "calm_012_safe_warm_music_bed",
+      "title": "Safe Warm Music Bed — Calm",
+      "goal": "calm",
+      "scene": "quiet_relaxation",
+      "outputPath": "public/audio/content-baseline/batch-010/calm_012_safe_warm_music_bed.mp3",
+      "outputUrl": "/audio/content-baseline/batch-010/calm_012_safe_warm_music_bed.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "batch_009_calm_resonance_hellish_uncomfortable",
+      "contentClass": "safe_finished_music_bed_candidate",
+      "thesis": "Replace hellish resonance with a warmer, simpler, non-ritual calm music bed; no bowls, no dark resonance, no horror-like pad.",
+      "rejectedFromPreviousBatch": [
+        "dark/open resonance that feels hellish or horror-like",
+        "singing bowl cue used before the core emotional safety is established",
+        "procedural meditation resonance if it creates oppressive semantics"
+      ],
+      "sources": [
+        {
+          "role": "safe_warm_calm_body",
+          "path": "public/audio/music/reviewed-2026-07-11/rest_now_pad.mp3",
+          "note": "warm safe pad, no dark ritual resonance"
+        },
+        {
+          "role": "soft_open_warmth",
+          "path": "public/audio/music/reviewed-2026-07-11/valley_sunset_pad.mp3",
+          "note": "late gentle width, still safe and musical"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321452
+      }
+    },
+    {
+      "id": "focus_015_quieter_music_bed",
+      "title": "Quieter Music Bed — Focus",
+      "goal": "focus",
+      "scene": "deep_work",
+      "outputPath": "public/audio/content-baseline/batch-010/focus_015_quieter_music_bed.mp3",
+      "outputUrl": "/audio/content-baseline/batch-010/focus_015_quieter_music_bed.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "batch_009_focus_music_bed_good_but_too_loud",
+      "contentClass": "quiet_focus_music_bed_candidate",
+      "thesis": "Keep the accepted Focus music-bed direction, but make it sit further back so it supports work instead of becoming noisy music.",
+      "rejectedFromPreviousBatch": [],
+      "sources": [
+        {
+          "role": "quiet_organic_focus_music_bed",
+          "path": "public/audio/organic-structured-sound-factory/batch-002/focus_organic_clear_bed_001.mp3",
+          "note": "same liked focus music bed, lowered and softened"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321197
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-010/index.html"
+}

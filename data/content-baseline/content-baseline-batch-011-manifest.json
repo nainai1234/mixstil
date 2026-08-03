@@ -1,0 +1,104 @@
+{
+  "version": "2026-07-16.batch-011-micro-organic-texture",
+  "generatedAt": "2026-07-17T06:59:14.658Z",
+  "purpose": "Correct Batch 010 feedback: the pieces were good, likely because the music was good, but they sounded like only music. Batch 011 keeps music as the main content and adds micro organic texture below attention.",
+  "hardGates": [
+    "Reject if Sleep, Calm, or Focus again sounds like obvious noise/air texture rather than music-led soundscape.",
+    "Reject if the non-music layer is clearly foreground or exceeds roughly 5 percent perceived share.",
+    "Reject if the added natural layer makes Sleep/Calm less natural or Focus distracting.",
+    "These remain finished soundscape candidates, not basic foundational sounds."
+  ],
+  "candidates": [
+    {
+      "id": "sleep_017_music_bed_with_soft_air",
+      "title": "Music Bed with Soft Air — Sleep",
+      "goal": "sleep",
+      "scene": "bedtime_sleep",
+      "outputPath": "public/audio/content-baseline/batch-011/sleep_017_music_bed_with_soft_air.mp3",
+      "outputUrl": "/audio/content-baseline/batch-011/sleep_017_music_bed_with_soft_air.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "batch_010_good_music_beds_but_too_pure_music",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "Batch 010 was a good quiet music bed; this adds only a barely-there natural air layer so it stops feeling like pure music.",
+      "sources": [
+        {
+          "role": "primary_quiet_music_bed",
+          "path": "public/audio/content-baseline/batch-010/sleep_016_quieter_music_bed.mp3",
+          "note": "accepted Batch 010 music bed remains the main content",
+          "intendedPerceivedShare": "85-92%"
+        },
+        {
+          "role": "micro_soft_rain_air",
+          "path": "public/audio/nature/batch-02/soft_rain_loop.wav",
+          "note": "late micro texture; should be felt more than heard",
+          "intendedPerceivedShare": "3-5%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321526
+      }
+    },
+    {
+      "id": "calm_013_warm_music_with_open_air",
+      "title": "Warm Music with Open Air — Calm",
+      "goal": "calm",
+      "scene": "quiet_relaxation",
+      "outputPath": "public/audio/content-baseline/batch-011/calm_013_warm_music_with_open_air.mp3",
+      "outputUrl": "/audio/content-baseline/batch-011/calm_013_warm_music_with_open_air.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "batch_010_good_music_beds_but_too_pure_music",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "Batch 010 calm was safe but pure music; this adds a tiny open-air space layer, avoiding bowls and dark resonance.",
+      "sources": [
+        {
+          "role": "primary_safe_warm_music_bed",
+          "path": "public/audio/content-baseline/batch-010/calm_012_safe_warm_music_bed.mp3",
+          "note": "accepted safe warm music bed remains the main content",
+          "intendedPerceivedShare": "85-92%"
+        },
+        {
+          "role": "micro_open_air_space",
+          "path": "public/audio/authentic-scene-review/2026-07-14/authentic_open_wind.mp3",
+          "note": "tiny spatial lift only; not wind as content",
+          "intendedPerceivedShare": "2-4%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321452
+      }
+    },
+    {
+      "id": "focus_016_music_bed_with_room_air",
+      "title": "Music Bed with Room Air — Focus",
+      "goal": "focus",
+      "scene": "deep_work",
+      "outputPath": "public/audio/content-baseline/batch-011/focus_016_music_bed_with_room_air.mp3",
+      "outputUrl": "/audio/content-baseline/batch-011/focus_016_music_bed_with_room_air.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "batch_010_good_music_beds_but_too_pure_music",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "thesis": "Focus remains mostly music because that was the strongest direction; the added space layer must be almost invisible.",
+      "sources": [
+        {
+          "role": "primary_quiet_focus_music_bed",
+          "path": "public/audio/content-baseline/batch-010/focus_015_quieter_music_bed.mp3",
+          "note": "accepted focus music bed remains the main content",
+          "intendedPerceivedShare": "90-95%"
+        },
+        {
+          "role": "micro_room_air",
+          "path": "public/audio/authentic-scene-review/2026-07-14/authentic_pine_forest_wind.mp3",
+          "note": "nearly invisible space cue, not a nature layer",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321197
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-011/index.html"
+}

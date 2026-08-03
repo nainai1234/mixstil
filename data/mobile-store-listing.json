@@ -1,0 +1,86 @@
+{
+  "release": "Voice-free Beta",
+  "applicationId": "com.snooze.soundscapes",
+  "categories": {
+    "primary": "Health & Fitness",
+    "secondary": "Lifestyle"
+  },
+  "apple": {
+    "name": "MixStil",
+    "subtitle": "Personal soundscapes",
+    "promotionalText": "Create a sleep, calm, or focus soundscape around what you like and what you want excluded.",
+    "keywords": "sleep sounds,ambient,focus,calm,noise,soundscape,relaxation"
+  },
+  "googlePlay": {
+    "name": "MixStil",
+    "shortDescription": "Describe the sound you need, adjust it, save it, and return whenever you want."
+  },
+  "fullDescription": "MixStil creates a personal listening environment from a simple description. Choose Sleep, Calm, or Focus, name sounds you want to avoid, and hear an immediately playable result assembled from approved audio layers. Refine the result with AI, adjust individual layers when needed, save trusted versions to My Sounds, and continue from your latest position. Saved sounds can be made available offline. MixStil is a listening and sound-customization product; it does not diagnose, treat, cure, or guarantee health outcomes.",
+  "reviewNotes": [
+    "The initial build is Voice-free Beta; voice and TTS controls are disabled.",
+    "Playback begins only after an explicit user action.",
+    "Background audio is a core product behavior and is declared on iOS.",
+    "Account deletion is available in Profile and requires an authenticated account plus explicit confirmation.",
+    "Review credentials and a production API environment are supplied outside source control."
+  ],
+  "storeIcons": [
+    {
+      "id": "apple-app-store",
+      "path": "ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "google-play",
+      "path": "public-mobile/icons/icon-512.png",
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "onboarding",
+      "title": "Set goals and exclusions",
+      "route": "/onboarding"
+    },
+    {
+      "id": "create",
+      "title": "Describe the sound you need",
+      "route": "/create"
+    },
+    {
+      "id": "player-refine",
+      "title": "Play and refine the result",
+      "route": "/player"
+    },
+    {
+      "id": "layer-adjustment",
+      "title": "Adjust one sound layer",
+      "route": "/player"
+    },
+    {
+      "id": "my-sounds",
+      "title": "Save and replay offline",
+      "route": "/sounds"
+    },
+    {
+      "id": "profile",
+      "title": "Manage preferences and privacy",
+      "route": "/profile"
+    }
+  ],
+  "screenshotExports": [
+    {
+      "platform": "ios",
+      "directory": "store-assets/ios/iphone-6.7",
+      "width": 1290,
+      "height": 2796
+    },
+    {
+      "platform": "android",
+      "directory": "store-assets/android/phone",
+      "width": 1080,
+      "height": 1920
+    }
+  ]
+}

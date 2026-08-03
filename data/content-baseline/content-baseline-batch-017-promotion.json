@@ -1,0 +1,113 @@
+{
+  "version": "2026-07-17.content-baseline-batch-017-promotion",
+  "generatedAt": "2026-07-17T10:17:57.230Z",
+  "sourceManifest": "data/content-baseline/content-baseline-batch-017-manifest.json",
+  "reviewPage": "/review/content-baseline-batch-017/index.html",
+  "decision": "promote_as_internal_audible_product_baseline_seed",
+  "decisionReason": "Owner listening confirmed Batch 17 candidates are save/replay worthy: “愿意保存、下次还会打开”.",
+  "acceptedContentFormula": {
+    "primaryLayer": "quiet music bed",
+    "secondaryLayer": "micro organic texture or musical release below attention",
+    "rejectedPatterns": [
+      "white/pink/brown noise as main content",
+      "mechanical/electric/pulse engine substrate",
+      "hellish, horror-like, dark ritual resonance",
+      "obvious wind/rain/room texture as foreground",
+      "music bed too loud or too busy",
+      "pure music with no soundscape character"
+    ]
+  },
+  "byGoal": {
+    "sleep": 1,
+    "calm": 1,
+    "focus": 1
+  },
+  "promoted": [
+    {
+      "id": "sleep_027_phone_down_bedtime",
+      "title": "Phone Down Bedtime — Sleep",
+      "goal": "sleep",
+      "scene": "phone_down_bedtime",
+      "contentClass": "finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-017/sleep_027_phone_down_bedtime.mp3",
+      "outputUrl": "/audio/content-baseline/batch-017/sleep_027_phone_down_bedtime.mp3",
+      "sha256": "3b8f6906aa7539d620ed9da148422df7d474c86d9e0cc0a54064da0af91a02ee",
+      "durationSeconds": 179.976979,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "愿意保存、下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": null,
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    },
+    {
+      "id": "calm_023_after_work_release",
+      "title": "After Work Release — Calm",
+      "goal": "calm",
+      "scene": "after_work_release",
+      "contentClass": "finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-017/calm_023_after_work_release.mp3",
+      "outputUrl": "/audio/content-baseline/batch-017/calm_023_after_work_release.mp3",
+      "sha256": "9f463e481403df9c9461bc196a6850439d167847c5a09228cb930b38639c5684",
+      "durationSeconds": 179.976979,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "愿意保存、下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": null,
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    },
+    {
+      "id": "focus_026_reading_low_distraction",
+      "title": "Reading Low Distraction — Focus",
+      "goal": "focus",
+      "scene": "reading_focus",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-017/focus_026_reading_low_distraction.mp3",
+      "outputUrl": "/audio/content-baseline/batch-017/focus_026_reading_low_distraction.mp3",
+      "sha256": "3e7444464d4a0ad040cc50abf8fc9880cbc06ca1042f1fdf2bcd7cdda20940d7",
+      "durationSeconds": 179.976979,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "愿意保存、下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": null,
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    }
+  ],
+  "nextProductionStep": {
+    "target": "reach 30 finished-content items for Internal Audible Product Baseline",
+    "currentPromotedCountFromThisBatch": 3,
+    "method": "continue deriving close variants from the Batch 012/013 formula, then run diversity, longer-duration, rights, and Recipe V2 wiring gates"
+  }
+}

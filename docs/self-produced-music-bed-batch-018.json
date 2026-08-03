@@ -1,0 +1,333 @@
+{
+  "batchId": "self_produced_music_bed_batch_018_2026_07_17",
+  "purpose": "Generate review-only self-produced Calm and Focus music-bed candidates using ACE-Step, adapted from the MakeBestMusic-style prompt-to-music production principle but kept out of the user-facing product.",
+  "model": {
+    "provider": "ACE-Step",
+    "repository": "https://github.com/ace-step/ACE-Step",
+    "checkpoint": "ACE-Step/ACE-Step-v1-3.5B",
+    "codeLicense": "Apache-2.0",
+    "checkpointLicense": "Apache-2.0",
+    "generationLocation": "local-mac-backend",
+    "commercialOutputReview": "required",
+    "productBoundary": "candidate-only; generated files must not enter approved assets, public playback, offline playback, or rendered works until promoted"
+  },
+  "defaults": {
+    "durationSeconds": 60,
+    "inferenceSteps": 27,
+    "guidanceScale": 7,
+    "format": "wav",
+    "lyrics": "",
+    "negativeRequirements": [
+      "no vocals",
+      "no spoken voice",
+      "no whispering",
+      "no humming",
+      "no choir",
+      "no lyrics",
+      "no drums",
+      "no beat",
+      "no pulse",
+      "no arpeggio",
+      "no dance rhythm",
+      "no sudden impact",
+      "no cinematic climax",
+      "no horror",
+      "no suspense",
+      "no ominous tension",
+      "no dissonance",
+      "no bright bell",
+      "no alarm-like tones",
+      "no strong melody hook"
+    ]
+  },
+  "acceptanceTarget": {
+    "generatedCandidates": 30,
+    "usableMusicBedsAfterListening": "6-10",
+    "finishedSoundscapeVariantsAfterPackaging": "12-18",
+    "sleepPolicy": "ACE-Step outputs are not the default Sleep route in this batch because prior sleep attempts produced celebratory affect and pulse."
+  },
+  "admissionGates": [
+    "origin_record",
+    "technical_decode_duration_peak_silence_loudness",
+    "no_human_voice",
+    "no_startle_opening_20_seconds",
+    "low_attention_no_hook_no_pulse",
+    "loop_and_30_minute_repetition_review",
+    "calm_focus_scene_fit_distinction",
+    "commercial_rights_review",
+    "recipe_v2_combination_qa",
+    "explicit_promotion_before_any_public_or_offline_use"
+  ],
+  "candidates": [
+    {
+      "id": "self_calm_grounded_bed_018_001",
+      "family": "grounded_warm_pad",
+      "goal": "calm",
+      "scene": "after_work_release",
+      "seed": 818001,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental grounded calming ambient music bed, warm felt synth and soft sine pad, slow consonant harmony, relaxed after-work decompression, low stimulation, intimate room, no vocals, no spoken voice, no drums, no beat, no pulse, no arpeggio, no melody hook, no cinematic climax, no suspense, no dissonance"
+    },
+    {
+      "id": "self_calm_grounded_bed_018_002",
+      "family": "grounded_warm_pad",
+      "goal": "calm",
+      "scene": "after_work_release",
+      "seed": 818002,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental calm transition music bed, soft warm pad with very slow harmonic movement, grounded reassuring texture, gentle emotional settling, unobtrusive background, no vocals, no spoken voice, no drums, no beat, no pulse, no plucked notes, no bright bells, no strong melody, no tension"
+    },
+    {
+      "id": "self_calm_grounded_bed_018_003",
+      "family": "grounded_warm_pad",
+      "goal": "calm",
+      "scene": "quiet_evening",
+      "seed": 818003,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental quiet evening ambient bed, warm low-mid pad, smooth consonant chords, slow predictable evolution, soft release after a long day, no vocals, no spoken voice, no drums, no beat, no pulse, no suspense, no horror, no melody hook, no bright tones"
+    },
+    {
+      "id": "self_calm_soft_breath_018_004",
+      "family": "soft_breathing_pad",
+      "goal": "calm",
+      "scene": "breathing",
+      "seed": 818004,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental breathing meditation music bed, very gentle warm pad, long smooth attack and release, peaceful stable harmony, supports slow breathing without drawing attention, no vocals, no spoken voice, no drums, no beat, no pulse, no arpeggio, no cinematic emotion, no dissonance"
+    },
+    {
+      "id": "self_calm_soft_breath_018_005",
+      "family": "soft_breathing_pad",
+      "goal": "calm",
+      "scene": "breathing",
+      "seed": 818005,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental soft calm breath support, airy felt pad and rounded sine texture, extremely slow subtle movement, reassuring and low attention, no vocals, no spoken voice, no whisper, no drums, no beat, no pulse, no melody hook, no bright bell, no tension"
+    },
+    {
+      "id": "self_calm_soft_breath_018_006",
+      "family": "soft_breathing_pad",
+      "goal": "calm",
+      "scene": "emotional_settling",
+      "seed": 818006,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental emotional settling ambient music bed, warm slow pad, soft rounded lows, gentle stable consonant harmony, low brightness, comforting but not sentimental, no vocals, no spoken voice, no drums, no beat, no pulse, no strong melody, no cinematic swell"
+    },
+    {
+      "id": "self_calm_open_room_018_007",
+      "family": "open_room_pad",
+      "goal": "calm",
+      "scene": "five_minute_arrival",
+      "seed": 818007,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental calm arrival music bed, open quiet room feeling, soft diffuse pad, minimal harmonic change, gentle spaciousness, low stimulation, no vocals, no spoken voice, no drums, no beat, no pulse, no arpeggio, no hook, no suspense, no dissonance"
+    },
+    {
+      "id": "self_calm_open_room_018_008",
+      "family": "open_room_pad",
+      "goal": "calm",
+      "scene": "five_minute_arrival",
+      "seed": 818008,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental quiet reset ambient bed, soft warm room tone blended with smooth synth pad, slow safe consonant harmony, clear but unobtrusive, no vocals, no spoken voice, no drums, no beat, no pulse, no bright pluck, no melody hook, no cinematic tension"
+    },
+    {
+      "id": "self_calm_open_room_018_009",
+      "family": "open_room_pad",
+      "goal": "calm",
+      "scene": "silent_room_sit",
+      "seed": 818009,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental silent room sitting music bed, very soft sustained pad, neutral warm tone, meditative low movement, no performance feeling, no vocals, no spoken voice, no drums, no beat, no pulse, no hook, no suspense, no horror, no dissonance"
+    },
+    {
+      "id": "self_calm_low_release_018_010",
+      "family": "low_release_pad",
+      "goal": "calm",
+      "scene": "emotional_settling",
+      "seed": 818010,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental low release ambient music bed, soft bass warmth and gentle pad, slow exhale-like harmonic release, reassuring and grounded, no vocals, no spoken voice, no drums, no beat, no pulse, no arpeggio, no strong melody, no dark drone, no suspense"
+    },
+    {
+      "id": "self_calm_low_release_018_011",
+      "family": "low_release_pad",
+      "goal": "calm",
+      "scene": "after_work_release",
+      "seed": 818011,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental warm low-attention calm bed, rounded low mids, soft felt texture, very slow consonant chord drift, relaxed and ordinary, no vocals, no spoken voice, no drums, no beat, no pulse, no bright tones, no hook, no cinematic drama"
+    },
+    {
+      "id": "self_calm_low_release_018_012",
+      "family": "low_release_pad",
+      "goal": "calm",
+      "scene": "quiet_evening",
+      "seed": 818012,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental calm evening background music bed, warm sustained synth, low brightness, smooth non-rhythmic movement, peaceful and stable, no vocals, no spoken voice, no drums, no beat, no pulse, no melody hook, no suspense, no dissonance"
+    },
+    {
+      "id": "self_calm_neutral_warmth_018_013",
+      "family": "neutral_warmth_pad",
+      "goal": "calm",
+      "scene": "quiet_evening",
+      "seed": 818013,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental neutral warm ambient bed, calm soft pad, gentle consonant harmony, minimal movement, low attention, not sad, not festive, no vocals, no spoken voice, no drums, no beat, no pulse, no hook, no bright bell, no cinematic swell"
+    },
+    {
+      "id": "self_calm_neutral_warmth_018_014",
+      "family": "neutral_warmth_pad",
+      "goal": "calm",
+      "scene": "emotional_settling",
+      "seed": 818014,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental soft neutral calming pad, warm and stable, very slow evolving harmony, comforting but plain, background soundscape music bed, no vocals, no spoken voice, no drums, no beat, no pulse, no arpeggio, no melody hook, no tension"
+    },
+    {
+      "id": "self_calm_neutral_warmth_018_015",
+      "family": "neutral_warmth_pad",
+      "goal": "calm",
+      "scene": "five_minute_arrival",
+      "seed": 818015,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental five minute arrival ambient music bed, soft warm stable pad, low stimulation, quiet inner room, slow gentle harmonic settling, no vocals, no spoken voice, no drums, no beat, no pulse, no strong melody, no bright tones, no suspense"
+    },
+    {
+      "id": "self_focus_neutral_anchor_018_016",
+      "family": "neutral_focus_anchor",
+      "goal": "focus",
+      "scene": "deep_focus",
+      "seed": 818016,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental neutral deep focus music bed, transparent midrange pad, stable consonant harmony, minimal motion, unobtrusive work background, clear but not musical foreground, no vocals, no spoken voice, no drums, no beat, no pulse, no arpeggio, no hook, no tension"
+    },
+    {
+      "id": "self_focus_neutral_anchor_018_017",
+      "family": "neutral_focus_anchor",
+      "goal": "focus",
+      "scene": "deep_focus",
+      "seed": 818017,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental quiet focus drone music bed, smooth neutral pad, soft low anchor, slow predictable evolution, non distracting, no vocals, no spoken voice, no drums, no beat, no pulse, no melody hook, no cinematic climax, no suspense"
+    },
+    {
+      "id": "self_focus_neutral_anchor_018_018",
+      "family": "neutral_focus_anchor",
+      "goal": "focus",
+      "scene": "coding_focus",
+      "seed": 818018,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental coding focus ambient bed, steady neutral synth pad, smooth consonant harmony, low distraction, quiet studio atmosphere, no vocals, no spoken voice, no drums, no beat, no pulse, no arpeggio, no hook, no bright bell, no tension"
+    },
+    {
+      "id": "self_focus_reading_still_018_019",
+      "family": "reading_still_pad",
+      "goal": "focus",
+      "scene": "reading_focus",
+      "seed": 818019,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental reading focus music bed, still soft pad, low movement, warm neutral tone, enough body to mask quiet room, not melodic, no vocals, no spoken voice, no drums, no beat, no pulse, no arpeggio, no bright tones, no strong melody"
+    },
+    {
+      "id": "self_focus_reading_still_018_020",
+      "family": "reading_still_pad",
+      "goal": "focus",
+      "scene": "reading_focus",
+      "seed": 818020,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental low-distraction reading ambient bed, transparent warm pad, smooth sustained harmony, subtle non-rhythmic movement, background only, no vocals, no spoken voice, no drums, no beat, no pulse, no melody hook, no suspense, no dissonance"
+    },
+    {
+      "id": "self_focus_reading_still_018_021",
+      "family": "reading_still_pad",
+      "goal": "focus",
+      "scene": "quiet_study",
+      "seed": 818021,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental quiet study music bed, soft neutral pad, clean low-mid warmth, very slow harmonic movement, stable and unobtrusive, no vocals, no spoken voice, no drums, no beat, no pulse, no arpeggio, no hook, no bright pluck, no tension"
+    },
+    {
+      "id": "self_focus_clean_room_018_022",
+      "family": "clean_room_pad",
+      "goal": "focus",
+      "scene": "work_session",
+      "seed": 818022,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental clean room focus bed, smooth synthetic pad, neutral brightness, calm concentration, minimal movement, background texture, no vocals, no spoken voice, no drums, no beat, no pulse, no melody hook, no cinematic emotion, no dissonance"
+    },
+    {
+      "id": "self_focus_clean_room_018_023",
+      "family": "clean_room_pad",
+      "goal": "focus",
+      "scene": "work_session",
+      "seed": 818023,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental work session ambient music bed, quiet stable pad, gentle low anchor, clear non-distracting texture, no vocals, no spoken voice, no drums, no beat, no pulse, no arpeggio, no strong melody, no bright bell, no suspense"
+    },
+    {
+      "id": "self_focus_clean_room_018_024",
+      "family": "clean_room_pad",
+      "goal": "focus",
+      "scene": "deep_focus",
+      "seed": 818024,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental deep focus background bed, smooth neutral synth, low stimulation, stable consonant harmony, very slow motion, no vocals, no spoken voice, no drums, no beat, no pulse, no hook, no cinematic climax, no tension"
+    },
+    {
+      "id": "self_focus_low_cognitive_load_018_025",
+      "family": "low_cognitive_load_pad",
+      "goal": "focus",
+      "scene": "quiet_study",
+      "seed": 818025,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental low cognitive load focus bed, soft sustained pad, neutral warm timbre, low brightness, no memorable melody, smooth stable background, no vocals, no spoken voice, no drums, no beat, no pulse, no arpeggio, no suspense, no dissonance"
+    },
+    {
+      "id": "self_focus_low_cognitive_load_018_026",
+      "family": "low_cognitive_load_pad",
+      "goal": "focus",
+      "scene": "reading_focus",
+      "seed": 818026,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental concentration support music bed, restrained soft pad, stable harmony, no foreground performance, quiet and repeatable, no vocals, no spoken voice, no drums, no beat, no pulse, no melody hook, no bright bell, no cinematic emotion"
+    },
+    {
+      "id": "self_focus_low_cognitive_load_018_027",
+      "family": "low_cognitive_load_pad",
+      "goal": "focus",
+      "scene": "coding_focus",
+      "seed": 818027,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental coding support ambient bed, neutral pad with soft low anchor, predictable slow movement, clear and low attention, no vocals, no spoken voice, no drums, no beat, no pulse, no arpeggio, no hook, no tension, no dissonance"
+    },
+    {
+      "id": "self_focus_warm_masking_018_028",
+      "family": "warm_masking_pad",
+      "goal": "focus",
+      "scene": "work_session",
+      "seed": 818028,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental warm masking focus bed, soft continuous pad, gentle low-mid body, smooth consonant harmony, no active listening demand, no vocals, no spoken voice, no drums, no beat, no pulse, no melody hook, no bright tones, no suspense"
+    },
+    {
+      "id": "self_focus_warm_masking_018_029",
+      "family": "warm_masking_pad",
+      "goal": "focus",
+      "scene": "quiet_study",
+      "seed": 818029,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental quiet study masking music bed, warm neutral sustained pad, subtle non-rhythmic movement, background-only, no vocals, no spoken voice, no drums, no beat, no pulse, no arpeggio, no hook, no cinematic swell, no tension"
+    },
+    {
+      "id": "self_focus_warm_masking_018_030",
+      "family": "warm_masking_pad",
+      "goal": "focus",
+      "scene": "deep_focus",
+      "seed": 818030,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental deep work warm ambient bed, smooth low-attention pad, stable consonant harmony, quiet masking body, no vocals, no spoken voice, no drums, no beat, no pulse, no melody hook, no bright bell, no horror, no suspense"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "version": "2026-07-17.batch-014-scene-coverage-expansion",
+  "generatedAt": "2026-07-17T08:59:58.077Z",
+  "purpose": "Expand the proven Batch 012/013 save-replay formula with scene coverage rather than near-duplicate count inflation.",
+  "inheritedPromotions": [
+    "data/content-baseline/content-baseline-batch-012-promotion.json",
+    "data/content-baseline/content-baseline-batch-013-promotion.json"
+  ],
+  "hardGates": [
+    "Reject if any candidate sounds like noise-bed content rather than music-led soundscape.",
+    "Reject if support layers become foreground or exceed roughly 3 percent perceived share.",
+    "Reject if candidates feel like title-only duplicates rather than useful scene variants.",
+    "Reject if mechanical, hellish, horror-like, oppressive, or physically uncomfortable semantics return."
+  ],
+  "candidates": [
+    {
+      "id": "sleep_021_nap_soft_hold",
+      "title": "Nap Soft Hold — Sleep",
+      "goal": "sleep",
+      "scene": "short_nap",
+      "outputPath": "public/audio/content-baseline/batch-014/sleep_021_nap_soft_hold.mp3",
+      "outputUrl": "/audio/content-baseline/batch-014/sleep_021_nap_soft_hold.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_013_save_replay_formula",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "A lighter nap variant: less downward pull than bedtime, still saveable and music-led.",
+      "sources": [
+        {
+          "role": "batch_013_sleep_floor",
+          "path": "public/audio/content-baseline/batch-013/sleep_020_return_sleep_soft_floor.mp3",
+          "note": "accepted return-sleep body, lighter for nap use",
+          "intendedPerceivedShare": "94-97%"
+        },
+        {
+          "role": "tiny_soft_pad_lift",
+          "path": "public/audio/music/procedural-approved-2026-07-13/procedural_return_to_sleep_soft.mp3",
+          "note": "barely-there lift, no noise",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321526
+      }
+    },
+    {
+      "id": "sleep_022_late_night_blanket",
+      "title": "Late Night Blanket — Sleep",
+      "goal": "sleep",
+      "scene": "late_night_reset",
+      "outputPath": "public/audio/content-baseline/batch-014/sleep_022_late_night_blanket.mp3",
+      "outputUrl": "/audio/content-baseline/batch-014/sleep_022_late_night_blanket.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_013_save_replay_formula",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "A darker late-night variant without mechanical low-end or noise bed.",
+      "sources": [
+        {
+          "role": "batch_013_sleep_deeper",
+          "path": "public/audio/content-baseline/batch-013/sleep_019_soft_descent_deeper.mp3",
+          "note": "accepted deeper sleep language, offset for variation",
+          "intendedPerceivedShare": "94-97%"
+        },
+        {
+          "role": "tiny_rest_pad_release",
+          "path": "public/audio/music/reviewed-2026-07-11/rest_now_pad.mp3",
+          "note": "small musical release only",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321526
+      }
+    },
+    {
+      "id": "calm_017_morning_clear_room",
+      "title": "Morning Clear Room — Calm",
+      "goal": "calm",
+      "scene": "morning_settle",
+      "outputPath": "public/audio/content-baseline/batch-014/calm_017_morning_clear_room.mp3",
+      "outputUrl": "/audio/content-baseline/batch-014/calm_017_morning_clear_room.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_013_save_replay_formula",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "A clearer calm variant for morning, warm but less sleepy.",
+      "sources": [
+        {
+          "role": "batch_013_calm_warm",
+          "path": "public/audio/content-baseline/batch-013/calm_015_warm_room_extended.mp3",
+          "note": "accepted warm calm seed",
+          "intendedPerceivedShare": "93-96%"
+        },
+        {
+          "role": "tiny_clear_pad_width",
+          "path": "public/audio/music/local-review/2026-07-14/procedural_calm_grounded_b.mp3",
+          "note": "small clear width, no ritual resonance",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321452
+      }
+    },
+    {
+      "id": "calm_018_evening_release",
+      "title": "Evening Release — Calm",
+      "goal": "calm",
+      "scene": "evening_release",
+      "outputPath": "public/audio/content-baseline/batch-014/calm_018_evening_release.mp3",
+      "outputUrl": "/audio/content-baseline/batch-014/calm_018_evening_release.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_013_save_replay_formula",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "An evening reset sibling, safer and warmer than earlier resonance attempts.",
+      "sources": [
+        {
+          "role": "batch_013_after_work",
+          "path": "public/audio/content-baseline/batch-013/calm_016_after_work_settle.mp3",
+          "note": "accepted after-work calm language",
+          "intendedPerceivedShare": "93-96%"
+        },
+        {
+          "role": "tiny_sunset_release",
+          "path": "public/audio/music/reviewed-2026-07-11/valley_sunset_pad.mp3",
+          "note": "small warm release, no dark resonance",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321452
+      }
+    },
+    {
+      "id": "focus_020_reading_low_light",
+      "title": "Reading Low Light — Focus",
+      "goal": "focus",
+      "scene": "reading_focus",
+      "outputPath": "public/audio/content-baseline/batch-014/focus_020_reading_low_light.mp3",
+      "outputUrl": "/audio/content-baseline/batch-014/focus_020_reading_low_light.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_013_save_replay_formula",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "thesis": "A lighter focus variant for reading: music-led, low attention, no masking noise.",
+      "sources": [
+        {
+          "role": "batch_013_open_focus",
+          "path": "public/audio/content-baseline/batch-013/focus_019_open_low_attention.mp3",
+          "note": "accepted open focus body",
+          "intendedPerceivedShare": "94-97%"
+        },
+        {
+          "role": "tiny_low_anchor",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_low_anchor.mp3",
+          "note": "tiny anchor only, not a pulse engine",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "focus_021_deep_work_stable",
+      "title": "Deep Work Stable — Focus",
+      "goal": "focus",
+      "scene": "deep_work",
+      "outputPath": "public/audio/content-baseline/batch-014/focus_021_deep_work_stable.mp3",
+      "outputUrl": "/audio/content-baseline/batch-014/focus_021_deep_work_stable.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_013_save_replay_formula",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "thesis": "A steadier deep-work sibling with the same save/replay formula.",
+      "sources": [
+        {
+          "role": "batch_013_clear_focus",
+          "path": "public/audio/content-baseline/batch-013/focus_018_low_workbed_clear.mp3",
+          "note": "accepted clear focus language, offset for variation",
+          "intendedPerceivedShare": "94-97%"
+        },
+        {
+          "role": "tiny_clean_support",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_neutral_clean.mp3",
+          "note": "tiny clean support only",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321197
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-014/index.html"
+}

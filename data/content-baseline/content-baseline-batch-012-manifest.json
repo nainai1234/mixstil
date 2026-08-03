@@ -1,0 +1,104 @@
+{
+  "version": "2026-07-17.batch-012-saveable-music-led-soundscapes",
+  "generatedAt": "2026-07-17T08:36:15.446Z",
+  "purpose": "Owner listening found Batch 011 much stronger. Batch 012 keeps the winning music-led plus micro-texture direction and turns it into more saveable finished soundscape candidates.",
+  "hardGates": [
+    "Reject if any candidate reintroduces obvious noise, wind, rain, room tone, or texture as foreground content.",
+    "Reject if Calm feels hellish, horror-like, ominous, or oppressive.",
+    "Reject if Sleep or Focus becomes too loud or busy.",
+    "These are candidate finished soundscapes, not foundational basic sounds."
+  ],
+  "candidates": [
+    {
+      "id": "sleep_018_saveable_soft_descent",
+      "title": "Saveable Soft Descent — Sleep",
+      "goal": "sleep",
+      "scene": "bedtime_sleep",
+      "outputPath": "public/audio/content-baseline/batch-012/sleep_018_saveable_soft_descent.mp3",
+      "outputUrl": "/audio/content-baseline/batch-012/sleep_018_saveable_soft_descent.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "batch_011_direction_much_stronger_make_saveable",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "Batch 011 was much stronger; this version makes it more saveable by keeping the music-led body and adding only a gentle descent arc.",
+      "sources": [
+        {
+          "role": "batch_011_music_led_soundscape",
+          "path": "public/audio/content-baseline/batch-011/sleep_017_music_bed_with_soft_air.mp3",
+          "note": "accepted Batch 011 sleep direction remains the main body",
+          "intendedPerceivedShare": "90-95%"
+        },
+        {
+          "role": "late_soft_pad_release",
+          "path": "public/audio/music/reviewed-2026-07-11/rest_now_pad.mp3",
+          "note": "barely-there musical release, no noise layer",
+          "intendedPerceivedShare": "3-5%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321526
+      }
+    },
+    {
+      "id": "calm_014_saveable_warm_room",
+      "title": "Saveable Warm Room — Calm",
+      "goal": "calm",
+      "scene": "quiet_relaxation",
+      "outputPath": "public/audio/content-baseline/batch-012/calm_014_saveable_warm_room.mp3",
+      "outputUrl": "/audio/content-baseline/batch-012/calm_014_saveable_warm_room.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "batch_011_direction_much_stronger_make_saveable",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "Batch 011 was much stronger; this keeps the safe warm music and adds a small non-dark expansion in the middle.",
+      "sources": [
+        {
+          "role": "batch_011_warm_soundscape",
+          "path": "public/audio/content-baseline/batch-011/calm_013_warm_music_with_open_air.mp3",
+          "note": "accepted Batch 011 calm direction remains the main body",
+          "intendedPerceivedShare": "90-95%"
+        },
+        {
+          "role": "safe_middle_width",
+          "path": "public/audio/music/reviewed-2026-07-11/valley_sunset_pad.mp3",
+          "note": "small warm width, no bowl or dark resonance",
+          "intendedPerceivedShare": "3-5%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321452
+      }
+    },
+    {
+      "id": "focus_017_saveable_low_workbed",
+      "title": "Saveable Low Workbed — Focus",
+      "goal": "focus",
+      "scene": "deep_work",
+      "outputPath": "public/audio/content-baseline/batch-012/focus_017_saveable_low_workbed.mp3",
+      "outputUrl": "/audio/content-baseline/batch-012/focus_017_saveable_low_workbed.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "batch_011_direction_much_stronger_make_saveable",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "thesis": "Batch 011 focus was safer but very far back; this makes it a little more usable while keeping music-led calmness.",
+      "sources": [
+        {
+          "role": "batch_011_focus_soundscape",
+          "path": "public/audio/content-baseline/batch-011/focus_016_music_bed_with_room_air.mp3",
+          "note": "accepted Batch 011 focus direction remains the main body",
+          "intendedPerceivedShare": "92-97%"
+        },
+        {
+          "role": "tiny_clean_focus_support",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_neutral_clean.mp3",
+          "note": "tiny musical support, not noise or room tone",
+          "intendedPerceivedShare": "2-4%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321197
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-012/index.html"
+}

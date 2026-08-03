@@ -1,0 +1,99 @@
+{
+  "version": "2026-07-16.batch-008-organic-placement-demo",
+  "generatedAt": "2026-07-16T22:59:24.493Z",
+  "purpose": "After Batch 002 was accepted as non-uncomfortable but Focus sounded like music, demonstrate correct placement: organic music beds belong as music layers, not foundational noise.",
+  "hardGates": [
+    "Reject if any candidate feels mechanical, electric, physically oppressive, or harmful.",
+    "Reject if Focus Organic Clear Bed is presented as neutral foundational noise; it must be treated as a music bed.",
+    "Reject if white noise, fan, traffic, or room noise becomes the main content."
+  ],
+  "candidates": [
+    {
+      "id": "sleep_014_organic_night_placement",
+      "title": "Organic Night Placement — Sleep Demo",
+      "goal": "sleep",
+      "scene": "bedtime_sleep",
+      "outputPath": "public/audio/content-baseline/batch-008/sleep_014_organic_night_placement.mp3",
+      "outputUrl": "/audio/content-baseline/batch-008/sleep_014_organic_night_placement.mp3",
+      "productionStatus": "placement_demo_candidate",
+      "purpose": "show where accepted organic factory batch 002 material belongs inside a finished soundscape",
+      "placementThesis": "Organic substrate is a low bed under a gentle sleep journey, not a foreground mechanical drone.",
+      "sources": [
+        {
+          "role": "accepted_organic_substrate_low",
+          "path": "public/audio/organic-structured-sound-factory/batch-002/sleep_organic_night_floor_001.mp3",
+          "note": "Batch 002 accepted organic bed placed below the composition"
+        },
+        {
+          "role": "slow_sleep_descent",
+          "path": "public/audio/music/reviewed-2026-07-11/silent_descent.mp3",
+          "note": "soft sleep movement; no cheerful lead"
+        },
+        {
+          "role": "tiny_organic_night_detail",
+          "path": "public/audio/music/revised-collection-qa/2026-07-14/night_insects_distant.mp3",
+          "note": "late tiny detail only"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321271
+      }
+    },
+    {
+      "id": "calm_010_organic_resonance_placement",
+      "title": "Organic Resonance Placement — Calm Demo",
+      "goal": "calm",
+      "scene": "quiet_relaxation",
+      "outputPath": "public/audio/content-baseline/batch-008/calm_010_organic_resonance_placement.mp3",
+      "outputUrl": "/audio/content-baseline/batch-008/calm_010_organic_resonance_placement.mp3",
+      "productionStatus": "placement_demo_candidate",
+      "purpose": "show where accepted organic factory batch 002 material belongs inside a finished soundscape",
+      "placementThesis": "Calm organic resonance can act as a sparse space layer; the bowl cues must not become a performance.",
+      "sources": [
+        {
+          "role": "accepted_organic_resonance_space",
+          "path": "public/audio/organic-structured-sound-factory/batch-002/calm_organic_bowl_air_001.mp3",
+          "note": "Batch 002 calm layer placed as warm space"
+        },
+        {
+          "role": "open_calm_pad",
+          "path": "public/audio/music/local-review/2026-07-14/procedural_calm_grounded_b.mp3",
+          "note": "gentle body, not a song lead"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "focus_013_organic_music_bed_placement",
+      "title": "Organic Music Bed Placement — Focus Demo",
+      "goal": "focus",
+      "scene": "deep_work",
+      "outputPath": "public/audio/content-baseline/batch-008/focus_013_organic_music_bed_placement.mp3",
+      "outputUrl": "/audio/content-baseline/batch-008/focus_013_organic_music_bed_placement.mp3",
+      "productionStatus": "placement_demo_candidate",
+      "purpose": "show where accepted organic factory batch 002 material belongs inside a finished soundscape",
+      "placementThesis": "Focus Organic Clear Bed 001 is treated as a music bed, not as foundational noise or neutral substrate.",
+      "sources": [
+        {
+          "role": "organic_focus_music_bed_low",
+          "path": "public/audio/organic-structured-sound-factory/batch-002/focus_organic_clear_bed_001.mp3",
+          "note": "classified as a music bed; intentionally below full-track presence"
+        },
+        {
+          "role": "low_attention_anchor",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_neutral_clean.mp3",
+          "note": "small stable support; no noise wall"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321197
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-008/index.html"
+}

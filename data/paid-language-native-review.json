@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "scope": "consumer UI and mobile store listing copy",
+  "policy": "Machine checks can make a locale ready for native review but cannot approve it.",
+  "locales": [
+    { "locale": "de", "batch": 1, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "fr", "batch": 1, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "ko", "batch": 1, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "it", "batch": 1, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "nl", "batch": 1, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "zh-Hant", "batch": 2, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "tr", "batch": 2, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "pl", "batch": 2, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "sv", "batch": 2, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "th", "batch": 2, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "vi", "batch": 3, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "ms", "batch": 3, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "he", "batch": 3, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "da", "batch": 3, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "no", "batch": 3, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null },
+    { "locale": "fi", "batch": 3, "machineStatus": "passed", "nativeStatus": "pending_native_review", "reviewer": null, "reviewedAt": null }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "version": "2026-07-16.organic-structured-sound-factory-batch-002",
+  "generatedAt": "2026-07-16T22:56:13.235Z",
+  "purpose": "Replace the rejected mechanical-sounding original synthetic substrate experiment with organic, low-stimulation reference substrates.",
+  "rejectedPreviousDirection": {
+    "batch": "original-structured-sound-factory-batch-001",
+    "reason": "mechanical/electric/pulse-like tones are inappropriate for sleep and meditation and should not be used as a wellness substrate"
+  },
+  "hardGates": [
+    "Reject anything that sounds mechanical, electric, alarm-like, vibrator-like, or physically oppressive.",
+    "Reject any white/pink/brown noise, fan, traffic, or room-tone layer that becomes the perceived main content.",
+    "Noise-like air decoration must remain below attention, roughly under 10 percent perceived share.",
+    "These candidates are substrate references, not finished meditation or sleep tracks."
+  ],
+  "candidates": [
+    {
+      "id": "sleep_organic_night_floor_001",
+      "title": "Sleep Organic Night Floor 001",
+      "goal": "sleep",
+      "role": "organic_foundational_bed",
+      "outputPath": "public/audio/organic-structured-sound-factory/batch-002/sleep_organic_night_floor_001.mp3",
+      "outputUrl": "/audio/organic-structured-sound-factory/batch-002/sleep_organic_night_floor_001.mp3",
+      "productionStatus": "organic_reference_candidate",
+      "correction": "reject_mechanical_synthetic_substrate_direction",
+      "designRule": "sleep substrate must not contain mechanical pulse, electric hum, aggressive low vibration, or cheerful melody",
+      "intendedPlacement": "beneath future sleep journeys at a low level; not a standalone meditation track",
+      "sourcePolicy": "source-based organic arrangement; no deterministic synth pulse, no machine engine, no white/pink/brown noise file",
+      "sources": [
+        {
+          "role": "soft_organic_music_floor",
+          "path": "public/audio/music/revised-collection-qa/2026-07-14/warm_music_later.mp3",
+          "note": "organic musical warmth only; no bright lead"
+        },
+        {
+          "role": "forest_breath_hint",
+          "path": "public/audio/music/revised-collection-qa/2026-07-14/forest_breathing.mp3",
+          "note": "very low organic air, deliberately below attention"
+        },
+        {
+          "role": "distant_night_life_detail",
+          "path": "public/audio/music/revised-collection-qa/2026-07-14/night_insects_distant.mp3",
+          "note": "late tiny organic detail, not a bed"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321271
+      }
+    },
+    {
+      "id": "calm_organic_bowl_air_001",
+      "title": "Calm Organic Bowl Air 001",
+      "goal": "calm",
+      "role": "organic_resonance_space",
+      "outputPath": "public/audio/organic-structured-sound-factory/batch-002/calm_organic_bowl_air_001.mp3",
+      "outputUrl": "/audio/organic-structured-sound-factory/batch-002/calm_organic_bowl_air_001.mp3",
+      "productionStatus": "organic_reference_candidate",
+      "correction": "reject_mechanical_synthetic_substrate_direction",
+      "designRule": "calm substrate may use soft acoustic resonance, but no machine drone, no pulse engine, and no hiss-as-breath",
+      "intendedPlacement": "as a calm/meditation space layer under a future composition; bowls must stay sparse",
+      "sourcePolicy": "source-based organic arrangement; no deterministic synth pulse, no machine engine, no white/pink/brown noise file",
+      "sources": [
+        {
+          "role": "warm_still_music_floor",
+          "path": "public/audio/music/revised-collection-qa/2026-07-14/warm_music_later.mp3",
+          "note": "soft organic floor, not a lead"
+        },
+        {
+          "role": "opening_bowl_resonance",
+          "path": "public/audio/accent/batch-05/singingbowl1.ogg",
+          "note": "one sparse acoustic cue after entry"
+        },
+        {
+          "role": "return_bowl_resonance",
+          "path": "public/audio/accent/batch-05/singingbowl2.ogg",
+          "note": "one later return cue, not rhythmic"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "focus_organic_clear_bed_001",
+      "title": "Focus Organic Clear Bed 001",
+      "goal": "focus",
+      "role": "organic_low_distraction_bed",
+      "outputPath": "public/audio/organic-structured-sound-factory/batch-002/focus_organic_clear_bed_001.mp3",
+      "outputUrl": "/audio/organic-structured-sound-factory/batch-002/focus_organic_clear_bed_001.mp3",
+      "productionStatus": "organic_reference_candidate",
+      "correction": "reject_mechanical_synthetic_substrate_direction",
+      "designRule": "focus substrate must stay clear and non-mechanical; no white noise wall, fan, traffic, pulse engine, or alarm-like repetition",
+      "intendedPlacement": "quiet under-work layer for users who dislike mechanical focus sounds",
+      "sourcePolicy": "source-based organic arrangement; no deterministic synth pulse, no machine engine, no white/pink/brown noise file",
+      "sources": [
+        {
+          "role": "neutral_ambient_floor",
+          "path": "public/audio/music/reviewed-2026-07-11/ambient_low_bed.mp3",
+          "note": "steady ambient body without pulse"
+        },
+        {
+          "role": "soft_open_pad",
+          "path": "public/audio/music/reviewed-2026-07-11/valley_sunset_pad.mp3",
+          "note": "late clarity and width, not a foreground melody"
+        },
+        {
+          "role": "organic_air_micro_layer",
+          "path": "public/audio/authentic-scene-review/2026-07-14/authentic_pine_forest_wind.mp3",
+          "note": "sub-10-percent organic air decoration only"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321197
+      }
+    }
+  ],
+  "reviewPage": "/review/organic-structured-sound-factory-batch-002/index.html"
+}

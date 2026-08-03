@@ -1,0 +1,194 @@
+{
+  "version": "2026-07-17.content-baseline-batch-016-promotion",
+  "generatedAt": "2026-07-17T10:10:41.231Z",
+  "sourceManifest": "data/content-baseline/content-baseline-batch-016-manifest.json",
+  "reviewPage": "/review/content-baseline-batch-016/index.html",
+  "decision": "promote_as_internal_audible_product_baseline_seed",
+  "decisionReason": "Owner listening confirmed Batch 16 candidates are save/replay worthy: “愿意保存、下次还会打开”.",
+  "acceptedContentFormula": {
+    "primaryLayer": "quiet music bed",
+    "secondaryLayer": "micro organic texture or musical release below attention",
+    "rejectedPatterns": [
+      "white/pink/brown noise as main content",
+      "mechanical/electric/pulse engine substrate",
+      "hellish, horror-like, dark ritual resonance",
+      "obvious wind/rain/room texture as foreground",
+      "music bed too loud or too busy",
+      "pure music with no soundscape character"
+    ]
+  },
+  "byGoal": {
+    "sleep": 2,
+    "calm": 2,
+    "focus": 2
+  },
+  "promoted": [
+    {
+      "id": "sleep_025_anxious_bedtime_soften",
+      "title": "Anxious Bedtime Soften — Sleep",
+      "goal": "sleep",
+      "scene": "anxious_bedtime",
+      "contentClass": "finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-016/sleep_025_anxious_bedtime_soften.mp3",
+      "outputUrl": "/audio/content-baseline/batch-016/sleep_025_anxious_bedtime_soften.mp3",
+      "sha256": "972310145b7239248aebb15e3b989d90b21de79ed18d8efc387a350cb2dee104",
+      "durationSeconds": 180,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "愿意保存、下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": null,
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    },
+    {
+      "id": "sleep_026_early_morning_return",
+      "title": "Early Morning Return — Sleep",
+      "goal": "sleep",
+      "scene": "early_morning_return",
+      "contentClass": "finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-016/sleep_026_early_morning_return.mp3",
+      "outputUrl": "/audio/content-baseline/batch-016/sleep_026_early_morning_return.mp3",
+      "sha256": "cdcc9c96d1a9760f4564c56dfa513d65135b67506e680184cc1e2a56d5612752",
+      "durationSeconds": 179.976979,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "愿意保存、下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": null,
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    },
+    {
+      "id": "calm_021_emotional_buffer",
+      "title": "Emotional Buffer — Calm",
+      "goal": "calm",
+      "scene": "emotional_buffer",
+      "contentClass": "finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-016/calm_021_emotional_buffer.mp3",
+      "outputUrl": "/audio/content-baseline/batch-016/calm_021_emotional_buffer.mp3",
+      "sha256": "bc1523e75c28fcbc4a42a6da77f60a8024c93637993a89238e3e4e80658ef975",
+      "durationSeconds": 180,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "愿意保存、下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": null,
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    },
+    {
+      "id": "calm_022_weekend_unwind",
+      "title": "Weekend Unwind — Calm",
+      "goal": "calm",
+      "scene": "weekend_unwind",
+      "contentClass": "finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-016/calm_022_weekend_unwind.mp3",
+      "outputUrl": "/audio/content-baseline/batch-016/calm_022_weekend_unwind.mp3",
+      "sha256": "8ddb5d977d6126e89a1fc4ce94fa6e6aa97d1f1986ec5ffb36ebc86573b9f4ea",
+      "durationSeconds": 179.976979,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "愿意保存、下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": null,
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    },
+    {
+      "id": "focus_024_coding_low_loop",
+      "title": "Coding Low Loop — Focus",
+      "goal": "focus",
+      "scene": "coding_focus",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-016/focus_024_coding_low_loop.mp3",
+      "outputUrl": "/audio/content-baseline/batch-016/focus_024_coding_low_loop.mp3",
+      "sha256": "e1721ee6fbd0cb0f0120cf0c434e3621e494fdd2f75373694c004f3b34776ffd",
+      "durationSeconds": 179.976979,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "愿意保存、下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": null,
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    },
+    {
+      "id": "focus_025_study_long_arc",
+      "title": "Study Long Arc — Focus",
+      "goal": "focus",
+      "scene": "study_focus",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-016/focus_025_study_long_arc.mp3",
+      "outputUrl": "/audio/content-baseline/batch-016/focus_025_study_long_arc.mp3",
+      "sha256": "66ae7f0518672e5c85cf333ef769d96a742a22268feea63fbc129acc64290380",
+      "durationSeconds": 179.976979,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "愿意保存、下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": null,
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    }
+  ],
+  "nextProductionStep": {
+    "target": "reach 30 finished-content items for Internal Audible Product Baseline",
+    "currentPromotedCountFromThisBatch": 6,
+    "method": "continue deriving close variants from the Batch 012/013 formula, then run diversity, longer-duration, rights, and Recipe V2 wiring gates"
+  }
+}

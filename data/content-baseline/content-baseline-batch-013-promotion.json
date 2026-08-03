@@ -1,0 +1,194 @@
+{
+  "version": "2026-07-17.content-baseline-batch-013-promotion",
+  "generatedAt": "2026-07-17T08:48:20.574Z",
+  "sourceManifest": "data/content-baseline/content-baseline-batch-013-manifest.json",
+  "reviewPage": "/review/content-baseline-batch-013/index.html",
+  "decision": "promote_as_internal_audible_product_baseline_seed",
+  "decisionReason": "Owner listening confirmed Batch 13 candidates are save/replay worthy: “都愿意保存，下次还会打开”.",
+  "acceptedContentFormula": {
+    "primaryLayer": "quiet music bed",
+    "secondaryLayer": "micro organic texture or musical release below attention",
+    "rejectedPatterns": [
+      "white/pink/brown noise as main content",
+      "mechanical/electric/pulse engine substrate",
+      "hellish, horror-like, dark ritual resonance",
+      "obvious wind/rain/room texture as foreground",
+      "music bed too loud or too busy",
+      "pure music with no soundscape character"
+    ]
+  },
+  "byGoal": {
+    "sleep": 2,
+    "calm": 2,
+    "focus": 2
+  },
+  "promoted": [
+    {
+      "id": "sleep_019_soft_descent_deeper",
+      "title": "Soft Descent Deeper — Sleep",
+      "goal": "sleep",
+      "scene": "bedtime_sleep",
+      "contentClass": "finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-013/sleep_019_soft_descent_deeper.mp3",
+      "outputUrl": "/audio/content-baseline/batch-013/sleep_019_soft_descent_deeper.mp3",
+      "sha256": "463ae3e21fa1460b1949668ac6251d2dec35520cb8c140c1a44704fa73ea0da2",
+      "durationSeconds": 180,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "都愿意保存，下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": "data/content-baseline/content-baseline-batch-012-promotion.json",
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    },
+    {
+      "id": "sleep_020_return_sleep_soft_floor",
+      "title": "Return Sleep Soft Floor — Sleep",
+      "goal": "sleep",
+      "scene": "return_to_sleep",
+      "contentClass": "finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-013/sleep_020_return_sleep_soft_floor.mp3",
+      "outputUrl": "/audio/content-baseline/batch-013/sleep_020_return_sleep_soft_floor.mp3",
+      "sha256": "21bd284d4cc8d9513f6bdb2d0f9547b9e524f0176a6bd22640a419893ce2b80b",
+      "durationSeconds": 179.976979,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "都愿意保存，下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": "data/content-baseline/content-baseline-batch-012-promotion.json",
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    },
+    {
+      "id": "calm_015_warm_room_extended",
+      "title": "Warm Room Extended — Calm",
+      "goal": "calm",
+      "scene": "quiet_relaxation",
+      "contentClass": "finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-013/calm_015_warm_room_extended.mp3",
+      "outputUrl": "/audio/content-baseline/batch-013/calm_015_warm_room_extended.mp3",
+      "sha256": "80998be485eb2eaa89017734665b3df7e20de1b2eb7102a82b1f767b78e8aac4",
+      "durationSeconds": 180,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "都愿意保存，下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": "data/content-baseline/content-baseline-batch-012-promotion.json",
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    },
+    {
+      "id": "calm_016_after_work_settle",
+      "title": "After Work Settle — Calm",
+      "goal": "calm",
+      "scene": "after_work_settling",
+      "contentClass": "finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-013/calm_016_after_work_settle.mp3",
+      "outputUrl": "/audio/content-baseline/batch-013/calm_016_after_work_settle.mp3",
+      "sha256": "acd76bc648c7c4a0a2dd6171a2ebfff7ea14c09164e950304edfe131a02642e1",
+      "durationSeconds": 179.976979,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "都愿意保存，下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": "data/content-baseline/content-baseline-batch-012-promotion.json",
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    },
+    {
+      "id": "focus_018_low_workbed_clear",
+      "title": "Low Workbed Clear — Focus",
+      "goal": "focus",
+      "scene": "deep_work",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-013/focus_018_low_workbed_clear.mp3",
+      "outputUrl": "/audio/content-baseline/batch-013/focus_018_low_workbed_clear.mp3",
+      "sha256": "9d8fd4181fbbdd5a6b8f95eefbe2410af8de3036df215e1efa55497813f9e1fc",
+      "durationSeconds": 180,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "都愿意保存，下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": "data/content-baseline/content-baseline-batch-012-promotion.json",
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    },
+    {
+      "id": "focus_019_open_low_attention",
+      "title": "Open Low Attention — Focus",
+      "goal": "focus",
+      "scene": "light_focus",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-013/focus_019_open_low_attention.mp3",
+      "outputUrl": "/audio/content-baseline/batch-013/focus_019_open_low_attention.mp3",
+      "sha256": "5dece0ea0b31f58c7897f123d828dbc51ac9faef6e7f0b102d07c8b135e35c5b",
+      "durationSeconds": 179.976979,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "都愿意保存，下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture or musical release below attention",
+      "inheritedFrom": "data/content-baseline/content-baseline-batch-012-promotion.json",
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "proof of public-release content depth without further QA"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "full Internal Audible Product Baseline expansion and diversity review"
+      ]
+    }
+  ],
+  "nextProductionStep": {
+    "target": "reach 30 finished-content items for Internal Audible Product Baseline",
+    "currentPromotedCountFromThisBatch": 6,
+    "method": "continue deriving close variants from the Batch 012/013 formula, then run diversity, longer-duration, rights, and Recipe V2 wiring gates"
+  }
+}

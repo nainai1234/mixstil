@@ -1,0 +1,15 @@
+search_id	priority	source_platform	query	license_filter	content_type	voice_presence	target_count	recommended_scene	reject_terms	notes
+b06_foley_tapping_cc0	0	Freesound	asmr tapping wood plastic glass	cc0	asmr_foley	none	10	calm,focus	voice whisper talking mouth	Prefer clean object tapping with no room conversation.
+b06_foley_paper_cc0	0	Freesound	asmr paper page turning writing	cc0	asmr_foley	none	8	calm,focus	voice whisper talking	Good for low-volume detail layers.
+b06_foley_brush_cc0	0	Freesound	asmr brushing soft brush fabric	cc0	asmr_foley	none	8	calm	breath voice whisper hair roleplay	Reject hair/roleplay with people sounds unless ASMR voice review is intended.
+b06_foley_typing_cc0	0	Freesound	soft typing keyboard mouse click	cc0	asmr_foley	none	8	focus	voice office talking	Useful for focus ASMR only if not sharp.
+b06_breath_soft_cc0	1	Freesound	asmr soft breathing slow	cc0	asmr_breath	breath	8	calm,sleep	talking laugh crowd sexual	Allowed only if steady, gentle, and non-startling.
+b06_whisper_soft_cc0	1	Freesound	asmr soft whisper calm	cc0	asmr_whisper	whisper	8	calm,sleep	loud laugh roleplay erotic medical	Requires language/content review.
+b06_hypnosis_counting_cc0	1	Freesound	soft counting hypnosis relaxation	cc0	asmr_hypnosis	regular_speech	6	sleep	therapy cure medical erotic	Requires script/content review and no medical claims.
+b06_pixabay_tapping	1	Pixabay	asmr tapping	Pixabay Content License	asmr_foley	none	10	calm,focus	voice whisper mouth talk	Use rendered mixes only; no raw standalone redistribution.
+b06_pixabay_paper	1	Pixabay	asmr paper	Pixabay Content License	asmr_foley	none	8	calm,focus	voice whisper mouth talk	Use rendered mixes only.
+b06_pixabay_whisper	2	Pixabay	asmr whisper	Pixabay Content License	asmr_whisper	whisper	8	calm,sleep	loud random roleplay erotic medical	Requires content review.
+b06_mixkit_foley	1	Mixkit	tapping paper typing brush	Mixkit License	asmr_foley	none	12	calm,focus	voice speech people	Free SFX fallback; not ASMR-specific.
+b06_zapsplat_cc0	2	ZapSplat	asmr foley tapping paper brush	CC0 preferred	asmr_foley	none	8	calm,focus	voice speech people	Check item license; Standard free license requires attribution unless CC0.
+b06_wikimedia_pd_foley	2	Wikimedia Commons	soft tapping paper brushing audio	public-domain	asmr_foley	none	5	calm,focus	voice speech performance	Use only explicit PD/CC0/commercial-friendly CC.
+b06_archive_pd_foley	2	Internet Archive	asmr tapping paper sounds	public-domain	asmr_foley	none	5	calm,focus	podcast interview music	Use only explicit PD/CC0/commercial-friendly CC.

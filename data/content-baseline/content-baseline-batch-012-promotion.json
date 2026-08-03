@@ -1,0 +1,105 @@
+{
+  "version": "2026-07-17.content-baseline-batch-012-promotion",
+  "generatedAt": "2026-07-17T08:40:39.935Z",
+  "sourceManifest": "data/content-baseline/content-baseline-batch-012-manifest.json",
+  "reviewPage": "/review/content-baseline-batch-012/index.html",
+  "decision": "promote_as_internal_audible_product_baseline_seed",
+  "decisionReason": "Owner listening confirmed Batch 012 contains content they would save and replay. This is the first successful finished-content direction after repeated noise-bed, mechanical, hellish-resonance, and pure-music failures.",
+  "acceptedContentFormula": {
+    "primaryLayer": "quiet music bed",
+    "secondaryLayer": "micro organic texture or musical release below attention",
+    "rejectedPatterns": [
+      "white/pink/brown noise as main content",
+      "mechanical/electric/pulse engine substrate",
+      "hellish, horror-like, dark ritual resonance",
+      "obvious wind/rain/room texture as foreground",
+      "music bed too loud or too busy",
+      "pure music with no soundscape character"
+    ]
+  },
+  "promoted": [
+    {
+      "id": "sleep_018_saveable_soft_descent",
+      "title": "Saveable Soft Descent — Sleep",
+      "goal": "sleep",
+      "scene": "bedtime_sleep",
+      "contentClass": "finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-012/sleep_018_saveable_soft_descent.mp3",
+      "outputUrl": "/audio/content-baseline/batch-012/sleep_018_saveable_soft_descent.mp3",
+      "sha256": "21687e1de6f1df9c473dac61ff4b3da0050188e13a3a278c530039c55d1a2f55",
+      "durationSeconds": 180,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "我愿意保存下来，下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture below attention",
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "standalone proof of paid beta inventory depth"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "broader internal audible baseline expansion to at least 30 finished items"
+      ]
+    },
+    {
+      "id": "calm_014_saveable_warm_room",
+      "title": "Saveable Warm Room — Calm",
+      "goal": "calm",
+      "scene": "quiet_relaxation",
+      "contentClass": "finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-012/calm_014_saveable_warm_room.mp3",
+      "outputUrl": "/audio/content-baseline/batch-012/calm_014_saveable_warm_room.mp3",
+      "sha256": "76673c7388436be0d9691067c0f27fc331c1cfc381dbb92ef32e98f9366ace04",
+      "durationSeconds": 180,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "我愿意保存下来，下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture below attention",
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "standalone proof of paid beta inventory depth"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "broader internal audible baseline expansion to at least 30 finished items"
+      ]
+    },
+    {
+      "id": "focus_017_saveable_low_workbed",
+      "title": "Saveable Low Workbed — Focus",
+      "goal": "focus",
+      "scene": "deep_work",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "outputPath": "public/audio/content-baseline/batch-012/focus_017_saveable_low_workbed.mp3",
+      "outputUrl": "/audio/content-baseline/batch-012/focus_017_saveable_low_workbed.mp3",
+      "sha256": "df588fdd9d59c6bb389a43d4ad12406a114bb24185801a39eb7d9e82e9f47219",
+      "durationSeconds": 180,
+      "promotionStatus": "internal_audible_product_baseline_seed",
+      "ownerListeningVerdict": "save_and_replay_worthy",
+      "ownerListeningQuote": "我愿意保存下来，下次还会打开",
+      "acceptedFormula": "music bed as main content plus micro organic texture below attention",
+      "notForUseAs": [
+        "foundational basic sound",
+        "white-noise/noise-bed variant",
+        "standalone proof of paid beta inventory depth"
+      ],
+      "requiredBeforePublicRelease": [
+        "longer duration family or loop/extension QA",
+        "source and derivative rights chain confirmation for every ingredient",
+        "Recipe V2 registration or release-catalog wiring",
+        "broader internal audible baseline expansion to at least 30 finished items"
+      ]
+    }
+  ],
+  "nextProductionStep": {
+    "target": "expand to 30 finished-content items for Internal Audible Product Baseline",
+    "batchSize": 6,
+    "method": "derive close variants from the Batch 012 formula across bedtime sleep, quiet relaxation, and deep focus while preserving save/replay listening gates"
+  }
+}

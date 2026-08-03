@@ -1,0 +1,66 @@
+{
+  "version": "2026-07-16.original-structured-sound-factory-batch-001",
+  "generatedAt": "2026-07-16T22:49:31.166Z",
+  "purpose": "Start a project-owned original structured sound substrate factory after Batch 006 was acceptable but still not foundational enough.",
+  "factoryRule": "Generate reusable low-level harmonic substrates from deterministic synthesis, then later arrange them into finished sound journeys.",
+  "stems": [
+    {
+      "id": "sleep_dark_substrate_001",
+      "title": "Sleep Dark Substrate 001",
+      "goal": "sleep",
+      "role": "foundational_harmonic_substrate",
+      "outputPath": "public/audio/original-structured-sound-factory/batch-001/sleep_dark_substrate_001.mp3",
+      "wavMasterPath": "public/audio/original-structured-sound-factory/batch-001/wav-masters/sleep_dark_substrate_001.wav",
+      "outputUrl": "/audio/original-structured-sound-factory/batch-001/sleep_dark_substrate_001.mp3",
+      "generationMethod": "original_deterministic_js_synthesis_no_external_audio",
+      "designIntent": "A dark, low, non-melodic sleep substrate that can sit underneath future sleep journeys without sounding cheerful or song-like.",
+      "structure": "dim entry -> low-body settlement -> gradual descent -> stable night floor",
+      "sourceRights": "project_original_generated_from_code",
+      "noHumanVoice": true,
+      "noWhitePinkBrownNoise": true,
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "calm_breathing_field_001",
+      "title": "Calm Breathing Field 001",
+      "goal": "calm",
+      "role": "foundational_breathing_harmonic_field",
+      "outputPath": "public/audio/original-structured-sound-factory/batch-001/calm_breathing_field_001.mp3",
+      "wavMasterPath": "public/audio/original-structured-sound-factory/batch-001/wav-masters/calm_breathing_field_001.wav",
+      "outputUrl": "/audio/original-structured-sound-factory/batch-001/calm_breathing_field_001.mp3",
+      "generationMethod": "original_deterministic_js_synthesis_no_external_audio",
+      "designIntent": "A warm breath-like harmonic field where the sense of inhale/exhale comes from slow gain motion, not from hiss or white-noise texture.",
+      "structure": "warm presence -> wider breathing field -> one gentle settling wave -> quiet release",
+      "sourceRights": "project_original_generated_from_code",
+      "noHumanVoice": true,
+      "noWhitePinkBrownNoise": true,
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "focus_clean_engine_001",
+      "title": "Focus Clean Engine 001",
+      "goal": "focus",
+      "role": "foundational_low_attention_engine",
+      "outputPath": "public/audio/original-structured-sound-factory/batch-001/focus_clean_engine_001.mp3",
+      "wavMasterPath": "public/audio/original-structured-sound-factory/batch-001/wav-masters/focus_clean_engine_001.wav",
+      "outputUrl": "/audio/original-structured-sound-factory/batch-001/focus_clean_engine_001.mp3",
+      "generationMethod": "original_deterministic_js_synthesis_no_external_audio",
+      "designIntent": "A clean, upright focus engine built from low harmonic repetition rather than white noise, traffic, fan, or room-tone masking.",
+      "structure": "clean low pulse -> stable workbed -> restrained harmonic motion -> sustained attention floor",
+      "sourceRights": "project_original_generated_from_code",
+      "noHumanVoice": true,
+      "noWhitePinkBrownNoise": true,
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321197
+      }
+    }
+  ],
+  "reviewPage": "/review/original-structured-sound-factory-batch-001/index.html"
+}

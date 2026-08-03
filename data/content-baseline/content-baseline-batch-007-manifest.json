@@ -1,0 +1,263 @@
+{
+  "version": "2026-07-16.batch-007-original-structured-foundations",
+  "generatedAt": "2026-07-16T22:50:02.985967+00:00",
+  "purpose": "Respond to listening feedback that Batch 006 is acceptable but not bottom-level enough by creating original procedural foundation stems and finished previews.",
+  "hardGates": [
+    "No third-party music source in Batch 007 foundation stems.",
+    "No audible human voice, speech, humming, chanting, crowd, or vocal texture.",
+    "Sleep must be dark, slow, and non-celebratory.",
+    "Focus must not be perceived as white noise, traffic, fan, or harsh masking.",
+    "Every candidate must expose explicit stem roles so Recipe V2 can later select and refine structure."
+  ],
+  "selection": {
+    "stems": 6,
+    "sleep": 2,
+    "calm": 1,
+    "focus": 1
+  },
+  "stems": [
+    {
+      "id": "b007_sleep_sub_body_a",
+      "title": "Sleep Sub Body A",
+      "role": "low_frequency_body",
+      "goal": "sleep",
+      "family": "dark_non_melodic_sleep",
+      "outputPath": "public/audio/content-foundation/batch-007/b007_sleep_sub_body_a.mp3",
+      "outputUrl": "/audio/content-foundation/batch-007/b007_sleep_sub_body_a.mp3",
+      "license": "project_original_procedural_generation",
+      "commercialUseAllowed": true,
+      "derivativeUseAllowed": true,
+      "humanVoice": false,
+      "notes": "Dark, slow, non-celebratory body. Intended to be felt more than followed.",
+      "probe": {
+        "durationSeconds": 180.0,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "b007_sleep_warm_night_air_a",
+      "title": "Sleep Warm Night Air A",
+      "role": "dark_air_and_blanket_layer",
+      "goal": "sleep",
+      "family": "low_event_sleep_air",
+      "outputPath": "public/audio/content-foundation/batch-007/b007_sleep_warm_night_air_a.mp3",
+      "outputUrl": "/audio/content-foundation/batch-007/b007_sleep_warm_night_air_a.mp3",
+      "license": "project_original_procedural_generation",
+      "commercialUseAllowed": true,
+      "derivativeUseAllowed": true,
+      "humanVoice": false,
+      "notes": "Barely moving air layer; not white noise and not a room recording.",
+      "probe": {
+        "durationSeconds": 180.0,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "b007_calm_breathing_harmonic_a",
+      "title": "Calm Breathing Harmonic A",
+      "role": "breathing_harmonic_body",
+      "goal": "calm",
+      "family": "warm_breathing_space",
+      "outputPath": "public/audio/content-foundation/batch-007/b007_calm_breathing_harmonic_a.mp3",
+      "outputUrl": "/audio/content-foundation/batch-007/b007_calm_breathing_harmonic_a.mp3",
+      "license": "project_original_procedural_generation",
+      "commercialUseAllowed": true,
+      "derivativeUseAllowed": true,
+      "humanVoice": false,
+      "notes": "Audible slow inhale/exhale movement created by harmony, not hiss.",
+      "probe": {
+        "durationSeconds": 180.0,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "b007_calm_open_room_color_a",
+      "title": "Calm Open Room Color A",
+      "role": "soft_spatial_color",
+      "goal": "calm",
+      "family": "open_room_meditation",
+      "outputPath": "public/audio/content-foundation/batch-007/b007_calm_open_room_color_a.mp3",
+      "outputUrl": "/audio/content-foundation/batch-007/b007_calm_open_room_color_a.mp3",
+      "license": "project_original_procedural_generation",
+      "commercialUseAllowed": true,
+      "derivativeUseAllowed": true,
+      "humanVoice": false,
+      "notes": "Wide, warm spatial color for calm mixes; avoids foreground melody.",
+      "probe": {
+        "durationSeconds": 180.0,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "b007_focus_clean_pulse_a",
+      "title": "Focus Clean Pulse A",
+      "role": "low_distraction_work_pulse",
+      "goal": "focus",
+      "family": "clean_harmonic_focus",
+      "outputPath": "public/audio/content-foundation/batch-007/b007_focus_clean_pulse_a.mp3",
+      "outputUrl": "/audio/content-foundation/batch-007/b007_focus_clean_pulse_a.mp3",
+      "license": "project_original_procedural_generation",
+      "commercialUseAllowed": true,
+      "derivativeUseAllowed": true,
+      "humanVoice": false,
+      "notes": "Very restrained tonal work pulse. No noise mask, traffic, fan, or beat.",
+      "probe": {
+        "durationSeconds": 180.0,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "b007_focus_low_anchor_a",
+      "title": "Focus Low Anchor A",
+      "role": "steady_low_focus_anchor",
+      "goal": "focus",
+      "family": "clean_harmonic_focus",
+      "outputPath": "public/audio/content-foundation/batch-007/b007_focus_low_anchor_a.mp3",
+      "outputUrl": "/audio/content-foundation/batch-007/b007_focus_low_anchor_a.mp3",
+      "license": "project_original_procedural_generation",
+      "commercialUseAllowed": true,
+      "derivativeUseAllowed": true,
+      "humanVoice": false,
+      "notes": "Stable low anchor so focus does not become white/pink/brown noise.",
+      "probe": {
+        "durationSeconds": 180.0,
+        "sizeBytes": 4321197
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "id": "sleep_012_sub_blanket_descent",
+      "title": "Sub-Blanket Descent",
+      "goal": "sleep",
+      "scene": "bedtime_sleep",
+      "question": "Does this feel bottom-level and sleep-safe without sounding festive, pretty, or like a song?",
+      "structure": "low body is present immediately -> warm night air slowly grows -> upper detail fades -> stable dark blanket remains",
+      "layers": [
+        [
+          "b007_sleep_sub_body_a",
+          1.0
+        ],
+        [
+          "b007_sleep_warm_night_air_a",
+          0.78
+        ]
+      ],
+      "previewDurationSeconds": 180,
+      "outputPath": "public/audio/content-baseline/batch-007/sleep_012_sub_blanket_descent.mp3",
+      "outputUrl": "/audio/content-baseline/batch-007/sleep_012_sub_blanket_descent.mp3",
+      "productionStatus": "candidate_preview",
+      "sourcePolicy": "fully_original_structured_procedural_stems",
+      "rejectedPatterns": [
+        "third-party music as the main identity",
+        "cheerful, festive, bright, cute, romantic, or narrative sleep music",
+        "white/pink/brown noise wall used as focus identity",
+        "audible human voice, humming, chanting, crowd, or speech"
+      ],
+      "probe": {
+        "durationSeconds": 180.0,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "sleep_013_return_to_sleep_floor",
+      "title": "Return-to-Sleep Floor",
+      "goal": "sleep",
+      "scene": "return_to_sleep",
+      "question": "Can this sit under a half-awake state without creating emotional brightness or narrative attention?",
+      "structure": "lower, flatter variant; less air and more body than the bedtime version",
+      "layers": [
+        [
+          "b007_sleep_sub_body_a",
+          1.08
+        ],
+        [
+          "b007_sleep_warm_night_air_a",
+          0.48
+        ]
+      ],
+      "previewDurationSeconds": 180,
+      "outputPath": "public/audio/content-baseline/batch-007/sleep_013_return_to_sleep_floor.mp3",
+      "outputUrl": "/audio/content-baseline/batch-007/sleep_013_return_to_sleep_floor.mp3",
+      "productionStatus": "candidate_preview",
+      "sourcePolicy": "fully_original_structured_procedural_stems",
+      "rejectedPatterns": [
+        "third-party music as the main identity",
+        "cheerful, festive, bright, cute, romantic, or narrative sleep music",
+        "white/pink/brown noise wall used as focus identity",
+        "audible human voice, humming, chanting, crowd, or speech"
+      ],
+      "probe": {
+        "durationSeconds": 180.0,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "calm_009_breathing_room_foundation",
+      "title": "Breathing Room Foundation",
+      "goal": "calm",
+      "scene": "quiet_relaxation",
+      "question": "Does this feel intentional and breathable while still staying below foreground music?",
+      "structure": "warm breath cycle leads -> open room color widens -> no bell/event payoff",
+      "layers": [
+        [
+          "b007_calm_breathing_harmonic_a",
+          0.96
+        ],
+        [
+          "b007_calm_open_room_color_a",
+          0.72
+        ]
+      ],
+      "previewDurationSeconds": 180,
+      "outputPath": "public/audio/content-baseline/batch-007/calm_009_breathing_room_foundation.mp3",
+      "outputUrl": "/audio/content-baseline/batch-007/calm_009_breathing_room_foundation.mp3",
+      "productionStatus": "candidate_preview",
+      "sourcePolicy": "fully_original_structured_procedural_stems",
+      "rejectedPatterns": [
+        "third-party music as the main identity",
+        "cheerful, festive, bright, cute, romantic, or narrative sleep music",
+        "white/pink/brown noise wall used as focus identity",
+        "audible human voice, humming, chanting, crowd, or speech"
+      ],
+      "probe": {
+        "durationSeconds": 180.0,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "focus_012_clean_underwork_engine",
+      "title": "Clean Underwork Engine",
+      "goal": "focus",
+      "scene": "deep_work",
+      "question": "Can this support work without becoming a noise wall or a track that asks to be listened to?",
+      "structure": "clean tonal pulse -> low anchor underneath -> minimal spectral movement only",
+      "layers": [
+        [
+          "b007_focus_clean_pulse_a",
+          0.92
+        ],
+        [
+          "b007_focus_low_anchor_a",
+          0.82
+        ]
+      ],
+      "previewDurationSeconds": 180,
+      "outputPath": "public/audio/content-baseline/batch-007/focus_012_clean_underwork_engine.mp3",
+      "outputUrl": "/audio/content-baseline/batch-007/focus_012_clean_underwork_engine.mp3",
+      "productionStatus": "candidate_preview",
+      "sourcePolicy": "fully_original_structured_procedural_stems",
+      "rejectedPatterns": [
+        "third-party music as the main identity",
+        "cheerful, festive, bright, cute, romantic, or narrative sleep music",
+        "white/pink/brown noise wall used as focus identity",
+        "audible human voice, humming, chanting, crowd, or speech"
+      ],
+      "probe": {
+        "durationSeconds": 180.0,
+        "sizeBytes": 4321197
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-007/index.html"
+}

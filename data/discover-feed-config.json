@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "heroLabel": "从这里开始",
+  "tags": [
+    "#深度睡眠",
+    "#专注",
+    "#冥想",
+    "#雨声",
+    "#无人声"
+  ],
+  "quickActions": [
+    {
+      "label": "睡前入睡",
+      "prompt": "生成一个柔和、没有突发声的睡前声景。"
+    },
+    {
+      "label": "夜醒回睡",
+      "prompt": "生成一个短时回睡声景，开始就要安稳舒适。"
+    },
+    {
+      "label": "深度专注",
+      "prompt": "生成一个稳定、低干扰、无人声的专注声景。"
+    },
+    {
+      "label": "安静冥想",
+      "prompt": "生成一个安静、无人声、有温暖空间感的冥想声景。"
+    },
+    {
+      "label": "短时放松",
+      "prompt": "生成一个短时放松声景，有柔和开头和平滑结尾。"
+    },
+    {
+      "label": "自然声",
+      "prompt": "生成一个低事件密度、无人声的安静自然声景。"
+    },
+    {
+      "label": "不要旋律",
+      "prompt": "生成一个低频、无明显旋律、柔和稳定的声景。"
+    },
+    {
+      "label": "不要人声",
+      "prompt": "生成一个只使用柔和已审核素材的无人声声景。"
+    }
+  ],
+  "sections": [
+    {
+      "id": "sleep-ready",
+      "enabled": true,
+      "eyebrow": "睡眠诉求",
+      "title": "睡前入睡",
+      "description": "柔和、低事件密度的睡前声景，适合想少搜索、直接进入稳定声音的用户。",
+      "prompt": "生成一个柔和低频、没有突发声、没有人声的睡前声景。",
+      "keywords": [
+        "sleep",
+        "bed",
+        "night",
+        "rain",
+        "brown",
+        "soft"
+      ],
+      "mixIds": [
+        "mix_demand_plus_variants_2026_07_30_sleep_ready_01",
+        "mix_demand_plus_variants_2026_07_30_sleep_ready_02",
+        "mix_demand_plus_variants_2026_07_30_sleep_ready_03"
+      ],
+      "icon": "moon",
+      "limit": 6
+    },
+    {
+      "id": "return-to-sleep",
+      "enabled": true,
+      "eyebrow": "夜醒回睡",
+      "title": "快速回睡",
+      "description": "适合半夜醒来后使用，开头就要安稳，不用明显铺垫，也避免抓注意力的细节。",
+      "prompt": "生成一个一开始就舒适、避免明亮细节的夜醒回睡声景。",
+      "keywords": [
+        "return",
+        "wake",
+        "sleep",
+        "dark",
+        "low",
+        "quiet"
+      ],
+      "mixIds": [],
+      "icon": "clock",
+      "limit": 6
+    },
+    {
+      "id": "light-music",
+      "enabled": true,
+      "eyebrow": "声音类型",
+      "title": "轻音乐但不抓耳",
+      "description": "温暖铺底、稀疏音乐感，适合想要一点情绪但不想听成歌曲的用户。",
+      "prompt": "生成一个轻柔氛围音乐声景，没有强旋律，也没有戏剧化变化。",
+      "keywords": [
+        "music",
+        "piano",
+        "pad",
+        "ambient",
+        "warm",
+        "harmony"
+      ],
+      "mixIds": [],
+      "icon": "music",
+      "limit": 6
+    },
+    {
+      "id": "noise-masking",
+      "enabled": true,
+      "eyebrow": "声音类型",
+      "title": "噪声与房间遮蔽",
+      "description": "棕噪、粉噪、空气声、舱内声和房间底噪，适合想要遮蔽但不想要复杂场景的用户。",
+      "prompt": "生成一个柔和遮蔽声景，低噪、无人声、没有突出的前景事件。",
+      "keywords": [
+        "noise",
+        "brown",
+        "pink",
+        "air",
+        "cabin",
+        "room",
+        "masking"
+      ],
+      "mixIds": [],
+      "icon": "volume",
+      "limit": 6
+    },
+    {
+      "id": "quiet-nature",
+      "enabled": true,
+      "eyebrow": "声音类型",
+      "title": "低事件自然声",
+      "description": "安静自然声，避免尖锐前景、密集虫鸣和容易抓注意力的动态。",
+      "prompt": "生成一个有柔和距离感、无尖锐事件、无人声的安静自然声景。",
+      "keywords": [
+        "rain",
+        "forest",
+        "wind",
+        "nature",
+        "water",
+        "meadow",
+        "trees"
+      ],
+      "mixIds": [],
+      "icon": "trees",
+      "limit": 6
+    },
+    {
+      "id": "asmr-texture",
+      "enabled": true,
+      "eyebrow": "声音质感",
+      "title": "细腻纹理",
+      "description": "柔和近距离纹理和细小细节，当前版本保持无人声、无惊跳边界。",
+      "prompt": "生成一个柔和细腻纹理声景，有近距离细节，但没有口腔声、没有人声。",
+      "keywords": [
+        "soft",
+        "fabric",
+        "texture",
+        "air",
+        "quiet",
+        "gentle"
+      ],
+      "mixIds": [],
+      "icon": "waves",
+      "limit": 6
+    },
+    {
+      "id": "calm-reset",
+      "enabled": true,
+      "eyebrow": "放松诉求",
+      "title": "短时放松与切换",
+      "description": "适合下班后、短暂呼吸空间或快速情绪降速的 5 到 15 分钟声景。",
+      "prompt": "生成一个短时无人声放松声景，有温暖空间、平静开头和平滑释放。",
+      "keywords": [
+        "calm",
+        "reset",
+        "breath",
+        "evening",
+        "short",
+        "warm"
+      ],
+      "mixIds": [],
+      "icon": "timer-reset",
+      "limit": 6
+    },
+    {
+      "id": "focus",
+      "enabled": true,
+      "eyebrow": "工作模式",
+      "title": "低干扰专注",
+      "description": "适合阅读、写代码、学习或遮蔽环境声，不要太催眠，也不要太抢注意力。",
+      "prompt": "生成一个稳定深度专注声景，无人声、无尖锐事件，并有干净低频底层。",
+      "keywords": [
+        "focus",
+        "work",
+        "office",
+        "noise",
+        "cabin",
+        "steady"
+      ],
+      "mixIds": [
+        "mix_demand_plus_variants_2026_07_30_focus_01",
+        "mix_demand_plus_variants_2026_07_30_focus_02",
+        "mix_demand_plus_variants_2026_07_30_focus_03"
+      ],
+      "icon": "brain",
+      "limit": 6
+    },
+    {
+      "id": "minimal",
+      "enabled": true,
+      "eyebrow": "敏感偏好",
+      "title": "极简低刺激",
+      "description": "适合容易被细节、旋律或动态拉走注意力的敏感用户。",
+      "prompt": "生成一个极简低刺激声景，几乎没有前景事件，也没有人声。",
+      "keywords": [
+        "minimal",
+        "simple",
+        "steady",
+        "quiet",
+        "low",
+        "soft"
+      ],
+      "mixIds": [],
+      "icon": "wind",
+      "limit": 6
+    },
+    {
+      "id": "exclusions",
+      "enabled": true,
+      "eyebrow": "排除偏好",
+      "title": "严格无人声、简单",
+      "description": "适合更在意不要什么的敏感用户，比如不要人声、不要鸟叫、不要旋律。",
+      "prompt": "生成一个简单无人声声景，没有明亮事件、没有鸟叫、没有明显旋律。",
+      "keywords": [
+        "noise",
+        "simple",
+        "minimal",
+        "voice",
+        "brown",
+        "pink"
+      ],
+      "mixIds": [],
+      "icon": "volume-x",
+      "limit": 6
+    }
+  ]
+}

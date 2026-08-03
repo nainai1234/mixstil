@@ -1,0 +1,199 @@
+{
+  "version": "2026-07-17.batch-015-scene-coverage-expansion",
+  "generatedAt": "2026-07-17T09:10:50.258Z",
+  "purpose": "Continue expanding the proven save-replay formula from 15 to 21 seeds with distinct user scenarios, not duplicate inflation.",
+  "inheritedPromotions": [
+    "data/content-baseline/content-baseline-batch-012-promotion.json",
+    "data/content-baseline/content-baseline-batch-013-promotion.json",
+    "data/content-baseline/content-baseline-batch-014-promotion.json"
+  ],
+  "hardGates": [
+    "Reject if any candidate sounds like noise-bed content rather than music-led soundscape.",
+    "Reject if support layers become foreground or exceed roughly 3 percent perceived share.",
+    "Reject if candidates feel like title-only duplicates rather than useful scene variants.",
+    "Reject if mechanical, hellish, horror-like, oppressive, or physically uncomfortable semantics return."
+  ],
+  "candidates": [
+    {
+      "id": "sleep_023_travel_rest_shell",
+      "title": "Travel Rest Shell — Sleep",
+      "goal": "sleep",
+      "scene": "travel_rest",
+      "outputPath": "public/audio/content-baseline/batch-015/sleep_023_travel_rest_shell.mp3",
+      "outputUrl": "/audio/content-baseline/batch-015/sleep_023_travel_rest_shell.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_014_save_replay_formula",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "A portable sleep variant for unfamiliar places: familiar music-led safety without transport or room noise.",
+      "sources": [
+        {
+          "role": "batch_014_late_night_body",
+          "path": "public/audio/content-baseline/batch-014/sleep_022_late_night_blanket.mp3",
+          "note": "accepted late-night sleep body, repurposed for travel rest",
+          "intendedPerceivedShare": "94-97%"
+        },
+        {
+          "role": "tiny_return_pad",
+          "path": "public/audio/music/procedural-approved-2026-07-13/procedural_return_to_sleep_soft.mp3",
+          "note": "tiny musical safety layer, no transport ambience",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321526
+      }
+    },
+    {
+      "id": "sleep_024_restless_mind_downshift",
+      "title": "Restless Mind Downshift — Sleep",
+      "goal": "sleep",
+      "scene": "restless_mind",
+      "outputPath": "public/audio/content-baseline/batch-015/sleep_024_restless_mind_downshift.mp3",
+      "outputUrl": "/audio/content-baseline/batch-015/sleep_024_restless_mind_downshift.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_014_save_replay_formula",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "A slightly more structured sleep downshift for busy thoughts, still quiet and non-melodramatic.",
+      "sources": [
+        {
+          "role": "batch_014_nap_body_slowed",
+          "path": "public/audio/content-baseline/batch-014/sleep_021_nap_soft_hold.mp3",
+          "note": "accepted nap body with a calmer offset",
+          "intendedPerceivedShare": "94-97%"
+        },
+        {
+          "role": "tiny_silent_descent_shadow",
+          "path": "public/audio/music/reviewed-2026-07-11/silent_descent.mp3",
+          "note": "tiny musical descent only",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321526
+      }
+    },
+    {
+      "id": "calm_019_midday_recenter",
+      "title": "Midday Recenter — Calm",
+      "goal": "calm",
+      "scene": "midday_recenter",
+      "outputPath": "public/audio/content-baseline/batch-015/calm_019_midday_recenter.mp3",
+      "outputUrl": "/audio/content-baseline/batch-015/calm_019_midday_recenter.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_014_save_replay_formula",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "A midday reset that is clearer than evening calm but still soft enough to save and repeat.",
+      "sources": [
+        {
+          "role": "batch_014_morning_calm_body",
+          "path": "public/audio/content-baseline/batch-014/calm_017_morning_clear_room.mp3",
+          "note": "accepted morning calm body",
+          "intendedPerceivedShare": "94-97%"
+        },
+        {
+          "role": "tiny_grounded_width",
+          "path": "public/audio/music/local-review/2026-07-14/procedural_calm_grounded_a.mp3",
+          "note": "tiny grounded width, no dark resonance",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 180,
+        "sizeBytes": 4321452
+      }
+    },
+    {
+      "id": "calm_020_before_meeting_settle",
+      "title": "Before Meeting Settle — Calm",
+      "goal": "calm",
+      "scene": "pre_meeting_settle",
+      "outputPath": "public/audio/content-baseline/batch-015/calm_020_before_meeting_settle.mp3",
+      "outputUrl": "/audio/content-baseline/batch-015/calm_020_before_meeting_settle.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_014_save_replay_formula",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "A short pre-meeting emotional settling variant: stable, warm, and not sleepy.",
+      "sources": [
+        {
+          "role": "batch_014_evening_body_clearer",
+          "path": "public/audio/content-baseline/batch-014/calm_018_evening_release.mp3",
+          "note": "accepted evening body with a clearer offset",
+          "intendedPerceivedShare": "94-97%"
+        },
+        {
+          "role": "tiny_clear_calm_support",
+          "path": "public/audio/music/local-review/2026-07-14/procedural_calm_grounded_b.mp3",
+          "note": "tiny clear support, no ritual tone",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321452
+      }
+    },
+    {
+      "id": "focus_022_writing_flow_low",
+      "title": "Writing Flow Low — Focus",
+      "goal": "focus",
+      "scene": "writing_focus",
+      "outputPath": "public/audio/content-baseline/batch-015/focus_022_writing_flow_low.mp3",
+      "outputUrl": "/audio/content-baseline/batch-015/focus_022_writing_flow_low.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_014_save_replay_formula",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "thesis": "A writing-focused variant: low attention, steady enough to support language work without becoming a song.",
+      "sources": [
+        {
+          "role": "batch_014_reading_body",
+          "path": "public/audio/content-baseline/batch-014/focus_020_reading_low_light.mp3",
+          "note": "accepted reading-focus body",
+          "intendedPerceivedShare": "94-97%"
+        },
+        {
+          "role": "tiny_focus_low_anchor",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_low_anchor.mp3",
+          "note": "tiny low anchor, not a pulse engine",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321197
+      }
+    },
+    {
+      "id": "focus_023_low_energy_admin",
+      "title": "Low Energy Admin — Focus",
+      "goal": "focus",
+      "scene": "low_energy_admin",
+      "outputPath": "public/audio/content-baseline/batch-015/focus_023_low_energy_admin.mp3",
+      "outputUrl": "/audio/content-baseline/batch-015/focus_023_low_energy_admin.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "scale_batch_012_014_save_replay_formula",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "thesis": "A low-energy work variant for admin tasks: supportive but not stimulating or noisy.",
+      "sources": [
+        {
+          "role": "batch_014_deep_work_body",
+          "path": "public/audio/content-baseline/batch-014/focus_021_deep_work_stable.mp3",
+          "note": "accepted deep-work body with lower-energy offset",
+          "intendedPerceivedShare": "94-97%"
+        },
+        {
+          "role": "tiny_neutral_focus_support",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_neutral_clean.mp3",
+          "note": "tiny neutral support only",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321197
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-015/index.html"
+}

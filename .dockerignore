@@ -1,0 +1,16 @@
+.git
+node_modules
+dist
+dist-mobile
+artifacts
+backups
+reports
+public/audio
+public/exports
+public/review
+imports
+assets
+ios
+android
+*.log
+.env*

@@ -1,0 +1,233 @@
+{
+  "version": "2026-07-16.batch-003-arrangement-state-transition",
+  "generatedAt": "2026-07-16T22:00:03.030Z",
+  "purpose": "Arrangement correction after Batch 002 proved the music source can attract saving, but the whole mix did not create therapeutic, meditation, focus, or personalized soundscape value.",
+  "hardGates": [
+    "Reject if the value comes only from the music source rather than the full mix.",
+    "Reject if noise or environment remains a static bed instead of a structured transition or support layer.",
+    "Reject if the candidate feels like ordinary listening instead of helping enter sleep, calm, or focus."
+  ],
+  "selection": {
+    "sleep": 2,
+    "calm": 2,
+    "focus": 1
+  },
+  "candidates": [
+    {
+      "id": "sleep_007_no_water_bedtime_pad",
+      "title": "No-Water Bedtime Pad — Arrangement Arc",
+      "goal": "sleep",
+      "scene": "bedtime_with_music",
+      "sourceBriefDurationMinutes": 45,
+      "previewDurationSeconds": 150,
+      "targetLufs": -26,
+      "outputPath": "public/audio/content-baseline/batch-003/sleep_007_no_water_bedtime_pad.mp3",
+      "outputUrl": "/audio/content-baseline/batch-003/sleep_007_no_water_bedtime_pad.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_002_music_source_attractive_but_mix_not_stateful",
+      "stateArc": "room protection -> low masking settles body -> music appears briefly -> environment and pad recede",
+      "listeningQuestion": "Does this feel like being guided toward bedtime, or does the piano still simply become a song?",
+      "sources": [
+        {
+          "role": "structured_masking_transition",
+          "path": "generated://brown-noise-3001",
+          "note": "brown tone opens the room and later returns as a soft landing"
+        },
+        {
+          "role": "warm_pad_state_layer",
+          "path": "public/audio/production-remediated-2026-07-13/music/vastness_ambient_pad.mp3",
+          "note": "pad enters before music to make the piano feel held"
+        },
+        {
+          "role": "brief_music_memory",
+          "path": "public/audio/production-remediated-2026-07-13/music/possible_dreams_piano.mp3",
+          "note": "music becomes a middle-section cue, not the whole point"
+        },
+        {
+          "role": "distant_night_edge",
+          "path": "public/audio/nature/batch-04/night_forest_insects.wav",
+          "note": "barely present late-night edge after the music drops"
+        }
+      ],
+      "limitations": [
+        "Arrangement-level state-transition preview; not a final commercial master.",
+        "Generated noise/tone layers are allowed only as automated transitions, anchors, or masking support.",
+        "Requires human listening for state change, layer harmony, fatigue, and save-worthiness before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 150,
+        "sizeBytes": 3601197
+      }
+    },
+    {
+      "id": "sleep_009_gentle_train_night",
+      "title": "Gentle Train Night — Carriage Descent",
+      "goal": "sleep",
+      "scene": "travel_like_sleep",
+      "sourceBriefDurationMinutes": 60,
+      "previewDurationSeconds": 150,
+      "targetLufs": -26,
+      "outputPath": "public/audio/content-baseline/batch-003/sleep_009_gentle_train_night.mp3",
+      "outputUrl": "/audio/content-baseline/batch-003/sleep_009_gentle_train_night.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_002_music_source_attractive_but_mix_not_stateful",
+      "stateArc": "carriage rhythm first -> music breathes in -> rail texture becomes sleep mask -> music leaves",
+      "listeningQuestion": "Does the train/music relationship feel composed enough to become sleep, not travel ambience plus piano?",
+      "sources": [
+        {
+          "role": "carriage_identity",
+          "path": "public/audio/music/revised-collection-qa/2026-07-14/quiet_train_focus.mp3",
+          "note": "rail bed is the stable body rhythm"
+        },
+        {
+          "role": "soft_brown_suspension",
+          "path": "generated://brown-noise-3002",
+          "note": "masking rises only after the rhythm is established"
+        },
+        {
+          "role": "low_piano_breath",
+          "path": "public/audio/production-remediated-2026-07-13/music/dreaming_soft_piano.mp3",
+          "note": "piano is a descent cue rather than the foreground"
+        }
+      ],
+      "limitations": [
+        "Arrangement-level state-transition preview; not a final commercial master.",
+        "Generated noise/tone layers are allowed only as automated transitions, anchors, or masking support.",
+        "Requires human listening for state change, layer harmony, fatigue, and save-worthiness before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 150,
+        "sizeBytes": 3601197
+      }
+    },
+    {
+      "id": "calm_004_soft_bell_exhale",
+      "title": "Soft Bell Exhale — Exhale Cycle",
+      "goal": "calm",
+      "scene": "short_reset",
+      "sourceBriefDurationMinutes": 10,
+      "previewDurationSeconds": 150,
+      "targetLufs": -24,
+      "outputPath": "public/audio/content-baseline/batch-003/calm_004_soft_bell_exhale.mp3",
+      "outputUrl": "/audio/content-baseline/batch-003/calm_004_soft_bell_exhale.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_002_music_source_attractive_but_mix_not_stateful",
+      "stateArc": "quiet air -> resonant cue -> long tail -> open space -> second cue lower in attention",
+      "listeningQuestion": "Do the bell events feel like breath/exhale guidance without becoming a repeated meditation cliché?",
+      "sources": [
+        {
+          "role": "soft_air_opening",
+          "path": "generated://pink-noise-3003",
+          "note": "soft air gives breath space and changes level across cycles"
+        },
+        {
+          "role": "resonant_bell_cycle",
+          "path": "public/audio/production-remediated-2026-07-13/music/crystal_meditation.mp3",
+          "note": "bell/bowl comes in waves, not as constant music"
+        },
+        {
+          "role": "low_body_anchor",
+          "path": "generated://sine-110",
+          "note": "subtle low anchor for body settling"
+        }
+      ],
+      "limitations": [
+        "Arrangement-level state-transition preview; not a final commercial master.",
+        "Generated noise/tone layers are allowed only as automated transitions, anchors, or masking support.",
+        "Requires human listening for state change, layer harmony, fatigue, and save-worthiness before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 150,
+        "sizeBytes": 3601197
+      }
+    },
+    {
+      "id": "calm_006_gentle_guitar_horizon",
+      "title": "Gentle Guitar Horizon — Unwind Mix",
+      "goal": "calm",
+      "scene": "emotional_unwind",
+      "sourceBriefDurationMinutes": 20,
+      "previewDurationSeconds": 150,
+      "targetLufs": -24,
+      "outputPath": "public/audio/content-baseline/batch-003/calm_006_gentle_guitar_horizon.mp3",
+      "outputUrl": "/audio/content-baseline/batch-003/calm_006_gentle_guitar_horizon.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_002_music_source_attractive_but_mix_not_stateful",
+      "stateArc": "room tone and soft air first -> guitar arrives as warmth -> forest opens after the body settles -> guitar steps back",
+      "listeningQuestion": "Does the guitar become part of unwinding, or does it still read as an ordinary song?",
+      "sources": [
+        {
+          "role": "soft_room_base",
+          "path": "public/audio/music/revised-collection-qa/2026-07-14/dry_quiet_room.mp3",
+          "note": "room tone makes the guitar feel placed in a body-safe space"
+        },
+        {
+          "role": "guitar_warmth",
+          "path": "public/audio/music/batch-03/relaxing_nature_guitar.mp3",
+          "note": "guitar arrives after the room, then yields"
+        },
+        {
+          "role": "forest_afterimage",
+          "path": "public/audio/nature/batch-04/forest_river_birds.wav",
+          "note": "environment appears as afterimage, not constant wallpaper"
+        }
+      ],
+      "limitations": [
+        "Arrangement-level state-transition preview; not a final commercial master.",
+        "Generated noise/tone layers are allowed only as automated transitions, anchors, or masking support.",
+        "Requires human listening for state change, layer harmony, fatigue, and save-worthiness before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 150,
+        "sizeBytes": 3601197
+      }
+    },
+    {
+      "id": "focus_010_open_air_concentration",
+      "title": "Open Air Concentration — Attention Arc",
+      "goal": "focus",
+      "scene": "lighter_focus",
+      "sourceBriefDurationMinutes": 40,
+      "previewDurationSeconds": 150,
+      "targetLufs": -23,
+      "outputPath": "public/audio/content-baseline/batch-003/focus_010_open_air_concentration.mp3",
+      "outputUrl": "/audio/content-baseline/batch-003/focus_010_open_air_concentration.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_002_music_source_attractive_but_mix_not_stateful",
+      "stateArc": "clean masking establishes attention -> guitar contour enters lightly -> air opens -> music reduces into steady work bed",
+      "listeningQuestion": "Does it make you start working, or does it pull you into listening to the track?",
+      "sources": [
+        {
+          "role": "light_focus_mask",
+          "path": "generated://pink-noise-3005",
+          "note": "functional masking with small movement, not static noise"
+        },
+        {
+          "role": "restrained_guitar_contour",
+          "path": "public/audio/music/batch-03/relaxing_nature_guitar.mp3",
+          "note": "music is a starting contour, then moves behind attention"
+        },
+        {
+          "role": "open_air_edge",
+          "path": "public/audio/nature/batch-04/river_shore_crickets.wav",
+          "note": "open air appears after attention has stabilized"
+        },
+        {
+          "role": "low_focus_anchor",
+          "path": "generated://sine-130.81",
+          "note": "very low tonal anchor for continuity"
+        }
+      ],
+      "limitations": [
+        "Arrangement-level state-transition preview; not a final commercial master.",
+        "Generated noise/tone layers are allowed only as automated transitions, anchors, or masking support.",
+        "Requires human listening for state change, layer harmony, fatigue, and save-worthiness before promotion."
+      ],
+      "probe": {
+        "durationSeconds": 150,
+        "sizeBytes": 3601197
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-003/index.html"
+}

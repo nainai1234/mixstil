@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "batchId": "supply_gap_batch_01_focus_2026_07_15",
+  "title": "Supply Gap Batch 01 Focus Music Machine QA",
+  "reviewDate": "2026-07-15",
+  "reportBaseName": "supply-gap-batch-01-focus-machine-qa-2026-07-15",
+  "generator": "scripts/generate-procedural-foundation-pads.py",
+  "python": ".venv-audio/bin/python",
+  "outputDirectory": "public/audio/music/local-candidates/2026-07-15",
+  "previewDirectory": "public/audio/music/local-review/2026-07-15",
+  "status": "candidate_only",
+  "commercialPolicy": "Deterministic project-owned synthesis; retain code, profile, seed, measurements, diversity QA, and listening QA before promotion.",
+  "candidates": [
+    {
+      "id": "procedural_focus_neutral_clean",
+      "profile": "focus_neutral",
+      "seed": 75101,
+      "goal": "focus",
+      "scene": "deep_focus",
+      "targetLufs": -25,
+      "family": "neutral_mid_pad",
+      "rootFrequenciesHz": [110.0, 165.0, 220.0, 330.0]
+    },
+    {
+      "id": "procedural_focus_warm_mid",
+      "profile": "focus_warm_mid",
+      "seed": 75201,
+      "goal": "focus",
+      "scene": "deep_focus",
+      "targetLufs": -25,
+      "family": "warm_mid_pad",
+      "rootFrequenciesHz": [123.47, 185.0, 246.94, 369.99]
+    },
+    {
+      "id": "procedural_focus_low_anchor",
+      "profile": "focus_low_anchor",
+      "seed": 75301,
+      "goal": "focus",
+      "scene": "deep_focus",
+      "targetLufs": -25,
+      "family": "low_anchor_pad",
+      "rootFrequenciesHz": [82.41, 123.62, 164.81, 247.23]
+    },
+    {
+      "id": "procedural_focus_open_air",
+      "profile": "focus_open_air",
+      "seed": 75401,
+      "goal": "focus",
+      "scene": "deep_focus",
+      "targetLufs": -25,
+      "family": "open_air_pad",
+      "rootFrequenciesHz": [130.81, 196.0, 261.63, 392.0]
+    }
+  ],
+  "requiredGates": [
+    "decode",
+    "duration",
+    "sample_rate",
+    "channels",
+    "lufs",
+    "peak",
+    "opening_20s",
+    "no_voice",
+    "no_beat",
+    "no_melody_hook",
+    "no_cinematic_climax",
+    "collection_diversity",
+    "loop_30m",
+    "scene_fit",
+    "combination_qa"
+  ]
+}

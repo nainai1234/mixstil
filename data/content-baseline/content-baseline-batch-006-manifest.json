@@ -1,0 +1,139 @@
+{
+  "version": "2026-07-16.batch-006-semantic-music-filter",
+  "generatedAt": "2026-07-16T22:43:57.562Z",
+  "purpose": "Correct Batch 005 feedback: the first sleep candidate used music that felt cheerful/festive, and the focus candidate collapsed back into uncomfortable white-noise perception. Batch 006 tests music semantics before mix polish.",
+  "hardGates": [
+    "Reject any Sleep item whose main music feels cheerful, festive, bright, cute, cinematic, romantic, or performance-like.",
+    "Reject any Focus item that is perceived as white noise, pink noise, traffic mask, fan mask, or uncomfortable hiss.",
+    "Reject any item where environment/noise-like support occupies the main perceived attention.",
+    "Keep the first 20-30 seconds audible but calm; do not solve quietness by adding a noise bed."
+  ],
+  "selection": {
+    "sleep": 1,
+    "calm": 1,
+    "focus": 1
+  },
+  "candidates": [
+    {
+      "id": "sleep_010_dark_descent_no_melody",
+      "title": "Dark Descent — No Festive Melody",
+      "goal": "sleep",
+      "scene": "bedtime_sleep",
+      "previewDurationSeconds": 180,
+      "outputPath": "public/audio/content-baseline/batch-006/sleep_010_dark_descent_no_melody.mp3",
+      "outputUrl": "/audio/content-baseline/batch-006/sleep_010_dark_descent_no_melody.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_005_music_semantics_failed_sleep_and_focus",
+      "designRule": "sleep music must feel dim, slow, and non-celebratory; no piano/guitar lead, no white-noise support",
+      "stateArc": "low drone is already present -> darker pad slowly opens -> high detail disappears -> one stable night body remains",
+      "listeningQuestion": "Does this feel like a quiet descent instead of pleasant/cheerful music?",
+      "rejectedPatterns": [
+        "sleep content with cheerful, festive, bright, or narrative lead melody",
+        "focus content that is perceived as white noise or uncomfortable masking",
+        "noise, room tone, traffic, or fan used as the primary perceived content"
+      ],
+      "sources": [
+        {
+          "role": "dark_low_sleep_body",
+          "path": "public/audio/music/local-review/2026-07-13/procedural_deep_sleep_low.mp3",
+          "note": "low sustained body; carries sleep identity without melody"
+        },
+        {
+          "role": "slow_descent_pad",
+          "path": "public/audio/music/reviewed-2026-07-11/silent_descent.mp3",
+          "note": "slow harmonic descent; no bright theme"
+        },
+        {
+          "role": "distant_meditation_drone",
+          "path": "public/audio/music/reviewed-2026-07-11/deep_meditation_drone.mp3",
+          "note": "late depth only, not an event layer"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.953958,
+        "sizeBytes": 4320621
+      }
+    },
+    {
+      "id": "calm_008_warm_stillness_no_hiss",
+      "title": "Warm Stillness — Breath Without Noise",
+      "goal": "calm",
+      "scene": "quiet_relaxation",
+      "previewDurationSeconds": 180,
+      "outputPath": "public/audio/content-baseline/batch-006/calm_008_warm_stillness_no_hiss.mp3",
+      "outputUrl": "/audio/content-baseline/batch-006/calm_008_warm_stillness_no_hiss.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_005_music_semantics_failed_sleep_and_focus",
+      "designRule": "calm must be warm and intentional, with breathing-like phrasing from harmony rather than hiss or noise",
+      "stateArc": "warm grounded pad appears immediately -> open meditation tone widens -> soft resonance returns once -> settles without drama",
+      "listeningQuestion": "Does this create a calmer room around you, rather than simply playing pretty music?",
+      "rejectedPatterns": [
+        "sleep content with cheerful, festive, bright, or narrative lead melody",
+        "focus content that is perceived as white noise or uncomfortable masking",
+        "noise, room tone, traffic, or fan used as the primary perceived content"
+      ],
+      "sources": [
+        {
+          "role": "grounded_warm_pad",
+          "path": "public/audio/music/local-review/2026-07-14/procedural_calm_grounded_b.mp3",
+          "note": "warm body from the start; avoids empty opening"
+        },
+        {
+          "role": "open_meditation_width",
+          "path": "public/audio/music/local-review/2026-07-14/procedural_meditation_open_b.mp3",
+          "note": "opens the space without becoming a lead track"
+        },
+        {
+          "role": "single_resonant_color",
+          "path": "public/audio/music/reviewed-2026-07-11/meditation_tones.mp3",
+          "note": "subtle tonal color; no foreground bell show"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.953958,
+        "sizeBytes": 4320621
+      }
+    },
+    {
+      "id": "focus_011_clean_harmonic_workbed",
+      "title": "Clean Harmonic Workbed — No Noise Mask",
+      "goal": "focus",
+      "scene": "deep_work",
+      "previewDurationSeconds": 180,
+      "outputPath": "public/audio/content-baseline/batch-006/focus_011_clean_harmonic_workbed.mp3",
+      "outputUrl": "/audio/content-baseline/batch-006/focus_011_clean_harmonic_workbed.mp3",
+      "productionStatus": "candidate_preview",
+      "productionCorrection": "batch_005_music_semantics_failed_sleep_and_focus",
+      "designRule": "focus must be upright and clean; no white/pink/brown noise, no room-tone masking, no traffic bed",
+      "stateArc": "neutral pulse is audible immediately -> low anchor stabilizes -> restrained mid motion adds work energy -> remains non-performative",
+      "listeningQuestion": "Can this sit under work without feeling like white noise or like a song asking for attention?",
+      "rejectedPatterns": [
+        "sleep content with cheerful, festive, bright, or narrative lead melody",
+        "focus content that is perceived as white noise or uncomfortable masking",
+        "noise, room tone, traffic, or fan used as the primary perceived content"
+      ],
+      "sources": [
+        {
+          "role": "neutral_clean_focus_core",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_neutral_clean.mp3",
+          "note": "clear focus identity; not a noise layer"
+        },
+        {
+          "role": "low_harmonic_anchor",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_low_anchor.mp3",
+          "note": "low stability under the core"
+        },
+        {
+          "role": "restrained_work_motion",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_warm_mid.mp3",
+          "note": "small amount of motion, late and restrained"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.953958,
+        "sizeBytes": 4320621
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-006/index.html"
+}

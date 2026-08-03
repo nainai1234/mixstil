@@ -1,0 +1,16 @@
+stem_id	category	name	blocker	technical_value	next_action
+stem_mixkit_music_583	Music	Crystal Meditation	true_peak_near_zero	-0.11 dBTP	Normalize/remediate to production copy before approval; retain platform-risk monitoring.
+stem_mixkit_music_31	Music	Dreaming Soft Piano	true_peak_near_zero	-0.02 dBTP	Normalize/remediate to production copy before approval; retain platform-risk monitoring.
+stem_mixkit_music_340	Music	Nap Time Pad	true_peak_near_zero	-0.93 dBTP	Normalize/remediate to production copy before approval; retain platform-risk monitoring.
+stem_mixkit_music_22	Music	Piano Reflections	true_peak_above_zero	0.70 dBTP	Normalize/remediate to production copy before approval.
+stem_mixkit_music_599	Music	Possible Dreams Piano	true_peak_near_zero	-0.11 dBTP	Normalize/remediate to production copy before approval; retain platform-risk monitoring.
+stem_mixkit_music_759	Music	Soft Evening Guitar	true_peak_above_zero	0.52 dBTP	Normalize/remediate to production copy before approval.
+stem_mixkit_music_184	Music	Vastness Ambient Pad	true_peak_near_zero	-0.30 dBTP	Normalize/remediate to production copy before approval; retain platform-risk monitoring.
+stem_mixkit_17	Nature	Birds Singing in Trees	short_duration_loop_risk	8.33s	Build loop QA copy and restrict routing away from sleep if bird events remain attention-grabbing.
+stem_mixkit_1329	Nature	Burning Campfire Crackles	very_low_loudness_short_duration	-53.60 LUFS / 14.08s	Normalize and loop QA before approval; confirm label/content match.
+stem_mixkit_2397	Nature	Clear Rain Thunderstorm	true_peak_above_zero	0.07 dBTP	Normalize/remediate and restrict thunder routing before approval.
+stem_mixkit_2399	Nature	Heavy Rain Drops	short_duration_loop_risk	12.17s	Build loop QA copy before approval.
+stem_mixkit_2390	Nature	Rain and Thunder Storm	true_peak_near_zero_thunder_risk	-0.16 dBTP	Normalize/remediate and restrict thunder routing before approval.
+stem_mixkit_1194	Nature	Rough Sea Waves	true_peak_near_zero	-0.04 dBTP	Normalize/remediate before approval.
+stem_mixkit_1181	Nature	Sea Swimming Loop	true_peak_above_zero_short_duration	0.15 dBTP / 10.35s	Normalize/remediate and loop QA before approval.
+stem_mixkit_2402	Nature	Thunderstorm Rain Loop	true_peak_near_zero_thunder_risk	-0.23 dBTP	Normalize/remediate and restrict thunder routing before approval.

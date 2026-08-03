@@ -1,0 +1,31 @@
+item_id	slug	name	source_path	tags	default_volume	recommended_scene
+2390	rain_thunder_storm	Rain and Thunder Storm	rain	Rain,Thunder,Storm	10	storm ambience
+2415	calm_jungle_thunderstorm	Calm Jungle Thunderstorm	rain	Rain,Thunder,Jungle	10	deep nature
+2399	heavy_rain_drops	Heavy Rain Drops	rain	Rain,Heavy,Masking	12	focus
+2397	clear_rain_thunderstorm	Clear Rain Thunderstorm	rain	Rain,Thunder,Clear	10	storm ambience
+2431	jungle_rain_birds	Jungle Rain with Birds	rain	Rain,Jungle,Birds	11	morning nature
+2402	thunderstorm_rain_loop	Thunderstorm Rain Loop	rain	Rain,Thunder,Loop	10	storm ambience
+1194	rough_sea_waves	Rough Sea Waves	ocean	Ocean,Rough,Waves	11	coastal ambience
+1181	sea_swimming_loop	Sea Swimming Loop	ocean	Ocean,Water,Loop	13	water relaxation
+1206	coast_breaking_waves	Coast Breaking Waves	ocean	Ocean,Coast,Waves	11	coastal ambience
+1202	sea_wave_noise	Sea Wave Noise	ocean	Ocean,Noise,Masking	12	focus
+17	birds_in_trees	Birds Singing in Trees	forest	Birds,Trees,Morning	10	morning calm
+2434	jungle_birds	Jungle Birds	forest	Birds,Jungle,Wildlife	10	deep nature
+2414	night_forest_insects	Night Forest Insects	forest	Forest,Night,Insects	10	bedtime
+1216	forest_river_birds	Forest River with Birds	forest	Forest,River,Birds	11	nature meditation
+2456	wildlife_river	Wildlife by the River	forest	Wildlife,River,Nature	10	deep nature
+2466	forest_owl	Owl in the Forest	forest	Owl,Forest,Night	8	night ambience
+1238	windy_forest_birds	Windy Forest with Birds	forest	Forest,Wind,Birds	10	forest ambience
+39	wild_crickets_insects	Wild Crickets and Insects	crickets	Crickets,Insects,Night	9	bedtime
+1782	swamp_night_crickets	Swamp Night Crickets	crickets	Crickets,Swamp,Night	9	night ambience
+2475	crickets_at_night	Crickets at Night	crickets	Crickets,Nature,Night	9	bedtime
+1227	summer_night_forest	Summer Night Forest	crickets	Forest,Summer,Night	9	bedtime
+1784	river_shore_crickets	River Shore with Crickets	crickets	River,Crickets,Night	9	night ambience
+2518	flowing_waterfall	Flowing Waterfall	waterfall	Waterfall,Flow,Water	11	focus
+3030	large_waterfall_loop	Large Waterfall Loop	waterfall	Waterfall,Large,Loop	10	masking
+2514	forest_waterfall_loop	Forest Waterfall Loop	waterfall	Waterfall,Forest,Loop	11	relaxation
+2515	big_waterfall_loop	Big Waterfall Loop	waterfall	Waterfall,Big,Water	10	focus
+1736	campfire_night_wind	Campfire with Night Wind	fire	Campfire,Wind,Night	11	cozy sleep
+1329	burning_campfire	Burning Campfire Crackles	fire	Campfire,Crackle,Fire	12	cozy sleep
+2473	birds_near_river	Birds Near the River	water	River,Birds,Morning	10	morning calm
+1785	river_shore_insects	River Shore Insects	water	River,Insects,Shore	9	night ambience

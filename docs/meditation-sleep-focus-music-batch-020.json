@@ -1,0 +1,105 @@
+{
+  "batchId": "meditation_sleep_focus_music_batch_020_2026_07_17",
+  "purpose": "Correct Batch 019's anxious buzzing by generating gentle, music-like functional soundscape candidates for meditation, sleep, and focus. Borrow structure from hypnosis and meditation music, not protected source audio.",
+  "model": {
+    "provider": "ACE-Step",
+    "repository": "https://github.com/ace-step/ACE-Step",
+    "checkpoint": "ACE-Step/ACE-Step-v1-3.5B",
+    "codeLicense": "Apache-2.0",
+    "checkpointLicense": "Apache-2.0",
+    "generationLocation": "local-mac-backend",
+    "commercialOutputReview": "required",
+    "productBoundary": "candidate-only; generated files must not enter approved assets, public playback, offline playback, or rendered works until promoted"
+  },
+  "defaults": {
+    "durationSeconds": 60,
+    "inferenceSteps": 27,
+    "guidanceScale": 6,
+    "format": "wav",
+    "lyrics": "",
+    "negativeRequirements": [
+      "no vocals",
+      "no spoken voice",
+      "no fake voice",
+      "no vowel pad",
+      "no choir",
+      "no humming",
+      "no chanting",
+      "no whispering",
+      "no lyrics",
+      "no cinematic score",
+      "no trailer music",
+      "no suspense",
+      "no horror",
+      "no dramatic climax",
+      "no buzzing drone as the main sound",
+      "no harsh resonance",
+      "no alarm-like tone",
+      "no drums",
+      "no beat",
+      "no dance pulse",
+      "no strong melody hook"
+    ]
+  },
+  "listeningTarget": {
+    "meditation": "soft instrumental background for quiet sitting or breath attention, not guided voice",
+    "sleep": "gentle, familiar, slow music-like descent that does not buzz or demand attention",
+    "focus": "low-distraction musical background with soft texture, no beat and no melody hook"
+  },
+  "candidates": [
+    {
+      "id": "meditation_soft_felt_room_020_001",
+      "family": "soft_felt_room",
+      "goal": "calm",
+      "scene": "voice_free_meditation",
+      "seed": 820001,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental voice-free meditation background for quiet sitting, soft felt piano and warm gentle pad, slow breathing-like volume arc, simple consonant harmony, intimate calm room, very low stimulation, no vocals, no fake voice, no choir, no humming, no chanting, no lyrics, no cinematic score, no buzzing drone, no drums, no beat, no strong melody hook"
+    },
+    {
+      "id": "sleep_soft_lullaby_pad_020_002",
+      "family": "soft_lullaby_pad",
+      "goal": "sleep",
+      "scene": "bedtime",
+      "seed": 820002,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental bedtime sleep background, soft lullaby-like warm pad with sparse felt piano tones, very slow gentle harmonic descent, safe familiar calm, no vocals, no fake voice, no choir, no humming, no lyrics, no cinematic score, no suspense, no buzzing drone, no drums, no beat, no arpeggio, no bright bells, no strong melody hook"
+    },
+    {
+      "id": "focus_soft_study_pulsefree_020_003",
+      "family": "soft_study_pulsefree",
+      "goal": "focus",
+      "scene": "deep_focus",
+      "seed": 820003,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental low-distraction focus background for reading and deep work, soft warm electric piano texture and smooth pad, stable consonant harmony, no active melody, no vocals, no fake voice, no choir, no humming, no lyrics, no drums, no beat, no pulse, no arpeggio, no buzzing drone, no cinematic score"
+    },
+    {
+      "id": "meditation_warm_guitar_space_020_004",
+      "family": "warm_guitar_space",
+      "goal": "calm",
+      "scene": "voice_free_meditation",
+      "seed": 820004,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental meditation music background, very soft warm nylon guitar harmonics blended with gentle pad, slow spacious exhale feeling, peaceful ordinary room, no vocals, no fake voice, no choir, no humming, no chanting, no lyrics, no cinematic score, no buzzing drone, no drums, no beat, no melody hook"
+    },
+    {
+      "id": "sleep_warm_descent_keys_020_005",
+      "family": "warm_descent_keys",
+      "goal": "sleep",
+      "scene": "return_to_sleep",
+      "seed": 820005,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental return-to-sleep background, warm soft keys and gentle pad, slow downward harmonic movement, very calm and familiar, no vocals, no fake voice, no choir, no humming, no lyrics, no cinematic score, no suspense, no buzzing drone, no drums, no beat, no bright bell, no strong melody"
+    },
+    {
+      "id": "focus_clear_warm_room_020_006",
+      "family": "clear_warm_room",
+      "goal": "focus",
+      "scene": "reading_focus",
+      "seed": 820006,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental reading focus background, soft clear warm room music, gentle sustained keys and smooth pad, low cognitive load, unobtrusive and steady, no vocals, no fake voice, no choir, no humming, no lyrics, no drums, no beat, no pulse, no buzzing drone, no cinematic feeling, no strong melody hook"
+    }
+  ]
+}

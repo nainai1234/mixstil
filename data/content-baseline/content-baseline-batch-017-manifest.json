@@ -1,0 +1,111 @@
+{
+  "version": "2026-07-17.batch-017-closing-30-seed-baseline",
+  "generatedAt": "2026-07-17T10:13:14.066Z",
+  "purpose": "Close the Internal Audible Product Baseline from 27 to 30 seeds with one high-retention use case per goal.",
+  "inheritedPromotions": [
+    "data/content-baseline/content-baseline-batch-012-promotion.json",
+    "data/content-baseline/content-baseline-batch-013-promotion.json",
+    "data/content-baseline/content-baseline-batch-014-promotion.json",
+    "data/content-baseline/content-baseline-batch-015-promotion.json",
+    "data/content-baseline/content-baseline-batch-016-promotion.json"
+  ],
+  "hardGates": [
+    "Reject if a candidate exists only to pad the 30-item count.",
+    "Reject if the piece becomes white-noise-led, mechanical, dark, horror-like, or physically uncomfortable.",
+    "Reject if the support layer becomes a foreground hook.",
+    "Reject if the opening is inaudible for 20-30 seconds or arrives with a forceful wash."
+  ],
+  "candidates": [
+    {
+      "id": "sleep_027_phone_down_bedtime",
+      "title": "Phone Down Bedtime — Sleep",
+      "goal": "sleep",
+      "scene": "phone_down_bedtime",
+      "outputPath": "public/audio/content-baseline/batch-017/sleep_027_phone_down_bedtime.mp3",
+      "outputUrl": "/audio/content-baseline/batch-017/sleep_027_phone_down_bedtime.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "close_internal_audible_product_baseline_30",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "A quiet end-of-day sleep variant for putting the phone down: soft entry, stable body, no bright or festive emotion.",
+      "sources": [
+        {
+          "role": "batch_016_anxious_bedtime_body",
+          "path": "public/audio/content-baseline/batch-016/sleep_025_anxious_bedtime_soften.mp3",
+          "note": "accepted anxious-bedtime body, softened for routine bedtime",
+          "intendedPerceivedShare": "96-98%"
+        },
+        {
+          "role": "tiny_deep_sleep_shadow",
+          "path": "public/audio/music/procedural-approved-2026-07-13/procedural_deep_sleep_low.mp3",
+          "note": "tiny low warmth only, not a drone foreground",
+          "intendedPerceivedShare": "1-2%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321526
+      }
+    },
+    {
+      "id": "calm_023_after_work_release",
+      "title": "After Work Release — Calm",
+      "goal": "calm",
+      "scene": "after_work_release",
+      "outputPath": "public/audio/content-baseline/batch-017/calm_023_after_work_release.mp3",
+      "outputUrl": "/audio/content-baseline/batch-017/calm_023_after_work_release.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "close_internal_audible_product_baseline_30",
+      "contentClass": "finished_soundscape_candidate",
+      "thesis": "A calm transition after work: warm, unforced, and repeatable without becoming a song to actively listen to.",
+      "sources": [
+        {
+          "role": "batch_016_weekend_body",
+          "path": "public/audio/content-baseline/batch-016/calm_022_weekend_unwind.mp3",
+          "note": "accepted weekend-unwind body, narrowed for weekday decompression",
+          "intendedPerceivedShare": "95-98%"
+        },
+        {
+          "role": "tiny_calm_grounded_b",
+          "path": "public/audio/music/local-review/2026-07-14/procedural_calm_grounded_b.mp3",
+          "note": "tiny grounded contour only",
+          "intendedPerceivedShare": "1-3%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321452
+      }
+    },
+    {
+      "id": "focus_026_reading_low_distraction",
+      "title": "Reading Low Distraction — Focus",
+      "goal": "focus",
+      "scene": "reading_focus",
+      "outputPath": "public/audio/content-baseline/batch-017/focus_026_reading_low_distraction.mp3",
+      "outputUrl": "/audio/content-baseline/batch-017/focus_026_reading_low_distraction.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "close_internal_audible_product_baseline_30",
+      "contentClass": "focus_finished_soundscape_candidate",
+      "thesis": "A reading-focused workbed: lower motion than coding, enough body to mask the room without becoming obvious noise.",
+      "sources": [
+        {
+          "role": "batch_016_study_body",
+          "path": "public/audio/content-baseline/batch-016/focus_025_study_long_arc.mp3",
+          "note": "accepted study body, lowered for reading",
+          "intendedPerceivedShare": "96-98%"
+        },
+        {
+          "role": "tiny_focus_low_anchor",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_low_anchor.mp3",
+          "note": "tiny low focus anchor only",
+          "intendedPerceivedShare": "1-2%"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321197
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-017/index.html"
+}

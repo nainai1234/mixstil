@@ -1,0 +1,33 @@
+item_id	slug	name	category	source_path	tags	default_volume	recommended_scene
+2393	light_rain_loop	Light Rain Loop	Nature	rain	Rain,Light,Sleep	14	bedtime
+1253	soft_rain_loop	Soft Rain Loop	Nature	rain	Rain,Soft,Focus	13	focus
+1247	long_rain_ambience	Long Rain Ambience	Nature	rain	Rain,Long,Masking	14	return-to-sleep
+1225	forest_rain_loop	Forest Rain Loop	Nature	rain	Rain,Forest,Nature	14	bedtime
+2474	light_rain_atmosphere	Light Rain Atmosphere	Nature	rain	Rain,Atmosphere,Soft	13	relaxation
+1248	rain_on_car_glass	Rain on Car Glass	Nature	rain	Rain,Car,Cozy	13	cozy sleep
+1185	sea_waves_with_birds	Sea Waves with Birds	Nature	ocean	Ocean,Birds,Morning	12	morning calm
+1208	harbor_rock_waves	Harbor Rock Waves	Nature	ocean	Ocean,Rocks,Waves	14	breathing
+1196	sea_waves_loop	Sea Waves Loop	Nature	ocean	Ocean,Loop,Sleep	15	bedtime
+1200	windy_sea_loop	Windy Sea Loop	Nature	ocean	Ocean,Wind,Coast	13	nature
+3126	flowing_water_loop	Flowing Water Loop	Nature	water	River,Water,Loop	14	relaxation
+2454	river_water_flowing	River Water Flowing	Nature	water	River,Flow,Nature	14	bedtime
+2458	river_at_sunrise	River at Sunrise	Nature	water	River,Morning,Wildlife	12	morning calm
+61	water_and_birds	Flowing Water with Birds	Nature	water	Water,Birds,Nature	12	light meditation
+2513	waterfall_ambience	Waterfall Ambience	Nature	waterfall	Waterfall,Water,Masking	13	focus
+2516	forest_waterfall	Forest Waterfall	Nature	waterfall	Waterfall,Forest,Nature	13	relaxation
+1212	forest_birds_singing	Forest Birds Singing	Nature	forest	Forest,Birds,Morning	11	morning calm
+1213	european_forest	European Forest Ambience	Nature	forest	Forest,Ambience,Nature	12	relaxation
+2427	breeze_through_trees	Breeze Through Trees	Nature	wind	Wind,Trees,Leaves	13	bedtime
+2658	wind_blowing	Wind Blowing Ambience	Nature	wind	Wind,Air,Masking	12	focus
+1330	campfire_crackles	Campfire Crackles	Nature	fire	Fire,Crackle,Cozy	14	cozy sleep
+1789	summer_night_crickets	Summer Night Crickets	Nature	crickets	Crickets,Night,Summer	10	bedtime
+3109	relaxing_bell_chime	Relaxing Bell Chime	Accent	chime	Bell,Soft,Meditation	10	breathing
+2014	wind_chimes	Wind Chimes	Accent	chime	Chime,Wind,Light	9	light meditation
+1879	sink_water_drip	Soft Water Drip	Accent	drip	Water,Drop,Sparse	8	night ambience
+1317	water_bubble	Water Bubble	Accent	water	Water,Bubble,Soft	8	meditation
+2428	dry_leaves	Dry Leaves	Accent	leaves	Leaves,Dry,Nature	8	forest
+2430	leaves_rustling	Leaves Rustling	Accent	leaves	Leaves,Rustle,Wind	8	forest
+1278	distant_thunder	Distant Thunder	Accent	thunder	Thunder,Distant,Storm	7	rain ambience
+2395	thunder_rumble	Thunder Rumble	Accent	thunder	Thunder,Rumble,Distant	7	rain ambience
+1107	single_soft_chime	Single Soft Chime	Accent	chime	Chime,Transition,Single	9	breathing cue
+1108	soft_return_chime	Soft Return Chime	Accent	chime	Chime,Transition,Soft	9	meditation cue

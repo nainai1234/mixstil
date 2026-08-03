@@ -1,0 +1,31 @@
+search_id	priority	source_platform	query	license_filter	category	scene_family	target_count	recommended_scene	exclude_terms	notes
+b05_nat_rain_cc0	0	Freesound	rain field recording sleep	creativecommons0	Nature	rain	8	sleep	thunder loud storm alarm speech	Prefer long steady beds with no voices, music, or sudden thunder.
+b05_nat_rain_soft_cc0	0	Freesound	soft rain window field recording	creativecommons0	Nature	rain	6	return-to-sleep	thunder storm car voice	Prefer low-transient rain that can loop quietly.
+b05_nat_ocean_cc0	0	Freesound	gentle ocean waves shore field recording	creativecommons0	Nature	ocean	8	sleep	crash storm boat people	Prefer predictable wave cadence without loud crashes.
+b05_nat_river_cc0	0	Freesound	forest river stream field recording	creativecommons0	Nature	river	6	meditation	people birds loud traffic	Prefer steady water texture with no sharp birds.
+b05_nat_forest_cc0	0	Freesound	quiet forest ambience field recording	creativecommons0	Nature	forest	6	emotional-settling	people plane dog gun	Prefer calm forest beds; daytime birds should not enter night defaults.
+b05_nat_night_cc0	0	Freesound	night insects crickets ambience field recording	creativecommons0	Nature	night-insects	6	sleep	frog loud swamp people	Screen high-frequency insect fatigue carefully.
+b05_nat_fire_cc0	0	Freesound	campfire fireplace crackle field recording	creativecommons0	Nature	fire	5	sleep	talk crowd loud pop	Reject startling pops and foreground voices.
+b05_nat_wind_cc0	0	Freesound	soft wind leaves field recording	creativecommons0	Nature	wind	5	focus	storm whistle door people	Prefer broad low wind, not scary howls.
+b05_acc_bowl_cc0	0	Freesound	singing bowl soft single hit	creativecommons0	Accent	bowl	8	meditation	healing therapy chakra frequency	Use as accent only; avoid medical or spiritual claims in names.
+b05_acc_bell_cc0	0	Freesound	soft bell distant chime	creativecommons0	Accent	bell	6	meditation	church alarm harsh loud	Prefer low-stimulation tonal markers.
+b05_acc_water_drop_cc0	0	Freesound	single water drop cave soft	creativecommons0	Accent	water-drop	5	meditation	loud splash drain bathroom	Good for sparse event layers.
+b05_acc_leaves_cc0	0	Freesound	soft leaves rustle gentle	creativecommons0	Accent	leaves	4	emotional-settling	footsteps animal loud	Reject identifiable footsteps unless scene requires them.
+b05_acc_thunder_cc0	1	Freesound	distant soft thunder rumble	creativecommons0	Accent	thunder	4	sleep	loud crack storm intense	Use only low volume and never in return-to-sleep default.
+b05_music_drone_cc0	1	Freesound	ambient drone calm low	creativecommons0	Music	drone	5	meditation	dark horror suspense beat	Only accept low-stimulation, non-cinematic beds.
+b05_music_pad_cc0	1	Freesound	soft ambient pad meditation	creativecommons0	Music	pad	5	meditation	healing frequency therapy binaural	Requires full listen and Content ID review.
+b05_commons_bowl_pd	0	Wikimedia Commons	singing bowl audio public domain	public-domain	Accent	bowl	4	meditation	healing therapy	Verify file page and exact license.
+b05_commons_bells_pd	1	Wikimedia Commons	bell sound audio public domain	public-domain	Accent	bell	4	meditation	alarm church crowd	Verify file page and exact license.
+b05_commons_nature_pd	1	Wikimedia Commons	nature sounds audio public domain	public-domain	Nature	forest	6	emotional-settling	people traffic	Use only clear PD, CC0, or commercial-friendly CC.
+b05_archive_nature_pd	1	Internet Archive	nature sounds field recording	public-domain	Nature	nature	10	sleep	album podcast speech	Use only explicit public domain, CC0, or commercial-friendly CC metadata.
+b05_archive_rain_pd	1	Internet Archive	rain sounds field recording	public-domain	Nature	rain	6	sleep	speech guided meditation	Reject collections with vague license metadata.
+b05_archive_ocean_pd	1	Internet Archive	ocean waves field recording	public-domain	Nature	ocean	6	sleep	music speech	Prefer original files with clear metadata and stable URLs.
+b05_openverse_cc0_rain	1	Openverse	rain field recording	cc0	Nature	rain	8	sleep	thunder speech	Discovery only; verify original source before import.
+b05_openverse_cc0_bowl	1	Openverse	singing bowl sound	cc0	Accent	bowl	6	meditation	healing therapy	Discovery only; verify original source before import.
+b05_openverse_cc0_forest	1	Openverse	forest ambience field recording	cc0	Nature	forest	6	emotional-settling	people traffic	Discovery only; verify original source before import.
+b05_pixabay_rain	2	Pixabay	soft rain sleep	Pixabay Content License	Nature	rain	6	sleep	thunder cinematic	Use inside rendered mixes only; no raw redistribution.
+b05_pixabay_meditation_music	2	Pixabay	sleep meditation ambient	Pixabay Content License	Music	pad	8	sleep	frequency therapy healing content-id-shield	Requires source snapshot and Content ID review.
+b05_mixkit_accents	2	Mixkit	soft chime bell water drop	Mixkit License	Accent	chime	6	meditation	alarm harsh cinematic	Only if it fills a concrete accent gap.
+b05_sonniss_soft_sfx	2	Sonniss	soft chime bell nature ambience	Sonniss GDC License	Accent	sfx	10	meditation	horror weapon impact whoosh	Screen aggressively for cinematic or game-like texture.
+b05_internal_noise	0	Internal	pink brown white room noise	internal	Noise	noise	15	sleep	none	Prefer generated internal noise over external stock audio.
+b05_internal_drone	0	Internal	low neutral procedural drone	internal	Music	drone	6	sleep	none	Use fixed seed generator and keep candidates out of routing until listening QA.

@@ -1,0 +1,1098 @@
+{
+  "version": 1,
+  "generatedFrom": "consumer i18n plus localized non-medical boundary",
+  "localizations": [
+    {
+      "locale": "zh",
+      "storeLocale": "zh-Hans",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "睡眠 · 放松 · 专注",
+        "promotionalText": "描述你需要的声音. 先说感受，再补充要避开的声音。",
+        "keywords": "睡眠,放松,专注,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "先选择状态，MixStil 会围绕它塑造声音。"
+      },
+      "fullDescription": "描述你需要的声音\n\n这个结果根据你的目标、避开项、时长和敏感度偏好，由已审核声音层编排而成。\n\n保存到我的声音\n\nMixStil 不提供诊断、治疗或治愈，也不保证健康结果。",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "个人声音偏好"
+        },
+        {
+          "id": "create",
+          "title": "描述你需要的声音"
+        },
+        {
+          "id": "player-refine",
+          "title": "自定义声景"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "声音调整"
+        },
+        {
+          "id": "my-sounds",
+          "title": "我的声音"
+        },
+        {
+          "id": "profile",
+          "title": "我的"
+        }
+      ]
+    },
+    {
+      "locale": "en",
+      "storeLocale": "en-US",
+      "nativeReviewStatus": "source_baseline",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Sleep · Calm · Focus",
+        "promotionalText": "Describe what you need. Start with the feeling, then adjust what to avoid.",
+        "keywords": "Sleep,Calm,Focus,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Pick your state first. MixStil will shape the sound around it."
+      },
+      "fullDescription": "Describe what you need\n\nThis result was arranged from approved layers to match your goal, exclusions, duration, and sensitivity preferences.\n\nSave to My Sounds\n\nMixStil does not diagnose, treat, cure, or guarantee health outcomes.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Personal sound preferences"
+        },
+        {
+          "id": "create",
+          "title": "Describe what you need"
+        },
+        {
+          "id": "player-refine",
+          "title": "Custom Soundscape"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "My Sounds"
+        },
+        {
+          "id": "profile",
+          "title": "Profile"
+        }
+      ]
+    },
+    {
+      "locale": "hi",
+      "storeLocale": "hi-IN",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "नींद · शांति · फोकस",
+        "promotionalText": "अपनी जरूरत बताएं. पहले एहसास बताएं, फिर किन ध्वनियों से बचना है।",
+        "keywords": "नींद,शांति,फोकस,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "पहले अपनी स्थिति चुनें। MixStil उसी के अनुसार ध्वनि बनाएगा।"
+      },
+      "fullDescription": "अपनी जरूरत बताएं\n\nयह परिणाम आपके लक्ष्य, बचाव, अवधि और संवेदनशीलता के अनुसार स्वीकृत लेयर से बनाया गया है।\n\nमेरे साउंड में सहेजें\n\nMixStil निदान, उपचार या इलाज नहीं करता और स्वास्थ्य परिणामों की गारंटी नहीं देता।",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "व्यक्तिगत ध्वनि पसंद"
+        },
+        {
+          "id": "create",
+          "title": "अपनी जरूरत बताएं"
+        },
+        {
+          "id": "player-refine",
+          "title": "कस्टम साउंडस्केप"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "मेरे साउंड"
+        },
+        {
+          "id": "profile",
+          "title": "प्रोफ़ाइल"
+        }
+      ]
+    },
+    {
+      "locale": "es",
+      "storeLocale": "es-ES",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Dormir · Calma · Enfoque",
+        "promotionalText": "Describe el sonido que necesitas. Empieza por la sensación y luego ajusta lo que quieres evitar.",
+        "keywords": "Dormir,Calma,Enfoque,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Elige primero tu estado. MixStil dará forma al sonido alrededor de eso."
+      },
+      "fullDescription": "Describe el sonido que necesitas\n\nEste resultado se organizó con capas aprobadas para coincidir con tu objetivo, exclusiones, duración y sensibilidad.\n\nGuardar en Mis sonidos\n\nMixStil no diagnostica, trata ni cura, ni garantiza resultados de salud.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Preferencias personales de sonido"
+        },
+        {
+          "id": "create",
+          "title": "Describe el sonido que necesitas"
+        },
+        {
+          "id": "player-refine",
+          "title": "Paisaje sonoro personalizado"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Ajustes de sonido"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Mis sonidos"
+        },
+        {
+          "id": "profile",
+          "title": "Perfil"
+        }
+      ]
+    },
+    {
+      "locale": "ar",
+      "storeLocale": "ar-SA",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "النوم · الهدوء · التركيز",
+        "promotionalText": "صف الصوت الذي تحتاجه. ابدأ بالشعور ثم أضف ما تريد تجنبه.",
+        "keywords": "النوم,الهدوء,التركيز,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "اختر حالتك أولاً، وسيشكّل MixStil الصوت حولها."
+      },
+      "fullDescription": "صف الصوت الذي تحتاجه\n\nتم ترتيب هذه النتيجة من طبقات معتمدة لتناسب هدفك والاستبعادات والمدة وحساسية الصوت.\n\nحفظ في أصواتي\n\nلا يشخّص MixStil الحالات الصحية ولا يعالجها أو يشفيها ولا يضمن نتائج صحية.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "تفضيلات الصوت الشخصية"
+        },
+        {
+          "id": "create",
+          "title": "صف الصوت الذي تحتاجه"
+        },
+        {
+          "id": "player-refine",
+          "title": "مشهد صوتي مخصص"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "تعديلات الصوت"
+        },
+        {
+          "id": "my-sounds",
+          "title": "أصواتي"
+        },
+        {
+          "id": "profile",
+          "title": "الملف"
+        }
+      ]
+    },
+    {
+      "locale": "bn",
+      "storeLocale": "bn-BD",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "ঘুম · শান্ত · ফোকাস",
+        "promotionalText": "আপনার দরকার বলুন. আগে অনুভূতি বলুন, তারপর কোন শব্দ এড়াতে হবে।",
+        "keywords": "ঘুম,শান্ত,ফোকাস,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "প্রথমে আপনার অবস্থা বেছে নিন। MixStil সেটির চারপাশে শব্দ তৈরি করবে।"
+      },
+      "fullDescription": "আপনার দরকার বলুন\n\nএই ফল আপনার লক্ষ্য, বাদ দেওয়া, সময় ও সংবেদনশীলতার সাথে মিলিয়ে অনুমোদিত লেয়ার থেকে সাজানো হয়েছে।\n\nআমার সাউন্ডে সংরক্ষণ\n\nMixStil রোগ নির্ণয়, চিকিৎসা বা নিরাময় করে না এবং স্বাস্থ্যগত ফলের নিশ্চয়তা দেয় না।",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "ব্যক্তিগত সাউন্ড পছন্দ"
+        },
+        {
+          "id": "create",
+          "title": "আপনার দরকার বলুন"
+        },
+        {
+          "id": "player-refine",
+          "title": "কাস্টম সাউন্ডস্কেপ"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "আমার সাউন্ড"
+        },
+        {
+          "id": "profile",
+          "title": "প্রোফাইল"
+        }
+      ]
+    },
+    {
+      "locale": "pt",
+      "storeLocale": "pt-BR",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Sono · Calma · Foco",
+        "promotionalText": "Descreva o que precisa. Comece pelo sentimento, depois ajuste o que evitar.",
+        "keywords": "Sono,Calma,Foco,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Escolha seu estado primeiro. O MixStil molda o som ao redor dele."
+      },
+      "fullDescription": "Descreva o que precisa\n\nEste resultado foi organizado com camadas aprovadas para combinar com seu objetivo, exclusões, duração e sensibilidade.\n\nSalvar em Meus sons\n\nO MixStil não diagnostica, trata ou cura e não garante resultados de saúde.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Preferências pessoais de som"
+        },
+        {
+          "id": "create",
+          "title": "Descreva o que precisa"
+        },
+        {
+          "id": "player-refine",
+          "title": "Paisagem sonora personalizada"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Meus sons"
+        },
+        {
+          "id": "profile",
+          "title": "Perfil"
+        }
+      ]
+    },
+    {
+      "locale": "ru",
+      "storeLocale": "ru-RU",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Сон · Спокойствие · Фокус",
+        "promotionalText": "Опишите, что нужно. Начните с ощущения, затем добавьте, чего избегать.",
+        "keywords": "Сон,Спокойствие,Фокус,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Сначала выберите состояние. MixStil подстроит звук под него."
+      },
+      "fullDescription": "Опишите, что нужно\n\nЭтот результат собран из одобренных слоев с учетом цели, исключений, длительности и чувствительности.\n\nСохранить в Мои звуки\n\nMixStil не диагностирует, не лечит и не гарантирует результаты для здоровья.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Личные звуковые предпочтения"
+        },
+        {
+          "id": "create",
+          "title": "Опишите, что нужно"
+        },
+        {
+          "id": "player-refine",
+          "title": "Пользовательская звуковая сцена"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Мои звуки"
+        },
+        {
+          "id": "profile",
+          "title": "Профиль"
+        }
+      ]
+    },
+    {
+      "locale": "ja",
+      "storeLocale": "ja-JP",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "睡眠 · リラックス · 集中",
+        "promotionalText": "必要な音を説明する. 気分から始めて、避けたい音を追加します。",
+        "keywords": "睡眠,リラックス,集中,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "まず状態を選ぶと、MixStil がそれに合わせて音を整えます。"
+      },
+      "fullDescription": "必要な音を説明する\n\nこの結果は、目的、避けたい音、長さ、敏感さの設定に合わせて、承認済みレイヤーから構成されています。\n\nマイサウンドに保存\n\nMixStil は診断、治療、治癒を行わず、健康上の結果を保証しません。",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "個人の音の好み"
+        },
+        {
+          "id": "create",
+          "title": "必要な音を説明する"
+        },
+        {
+          "id": "player-refine",
+          "title": "カスタムサウンドスケープ"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "音の調整"
+        },
+        {
+          "id": "my-sounds",
+          "title": "マイサウンド"
+        },
+        {
+          "id": "profile",
+          "title": "プロフィール"
+        }
+      ]
+    },
+    {
+      "locale": "id",
+      "storeLocale": "id-ID",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Tidur · Tenang · Fokus",
+        "promotionalText": "Jelaskan yang kamu butuhkan. Mulai dari rasa, lalu tambahkan suara yang perlu dihindari.",
+        "keywords": "Tidur,Tenang,Fokus,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Pilih keadaanmu dulu. MixStil akan membentuk suara di sekitarnya."
+      },
+      "fullDescription": "Jelaskan yang kamu butuhkan\n\nHasil ini disusun dari layer yang disetujui agar sesuai dengan tujuan, pengecualian, durasi, dan sensitivitasmu.\n\nSimpan ke Suaraku\n\nMixStil tidak mendiagnosis, mengobati, menyembuhkan, atau menjamin hasil kesehatan.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Preferensi suara pribadi"
+        },
+        {
+          "id": "create",
+          "title": "Jelaskan yang kamu butuhkan"
+        },
+        {
+          "id": "player-refine",
+          "title": "Soundscape kustom"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Suaraku"
+        },
+        {
+          "id": "profile",
+          "title": "Profil"
+        }
+      ]
+    },
+    {
+      "locale": "de",
+      "storeLocale": "de-DE",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Schlaf · Ruhe · Fokus",
+        "promotionalText": "Beschreibe, was du brauchst. Beginne mit dem Gefühl und ergänze dann, was vermieden werden soll.",
+        "keywords": "Schlaf,Ruhe,Fokus,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Wähle zuerst deinen Zustand. MixStil formt den Klang darum herum."
+      },
+      "fullDescription": "Beschreibe, was du brauchst\n\nDieses Ergebnis wurde aus geprüften Schichten passend zu Ziel, Ausschlüssen, Dauer und Empfindlichkeit angeordnet.\n\nIn Meine Klänge speichern\n\nMixStil diagnostiziert, behandelt oder heilt nicht und garantiert keine gesundheitlichen Ergebnisse.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Persönliche Klangvorlieben"
+        },
+        {
+          "id": "create",
+          "title": "Beschreibe, was du brauchst"
+        },
+        {
+          "id": "player-refine",
+          "title": "Eigene Klanglandschaft"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Klanganpassungen"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Meine Klänge"
+        },
+        {
+          "id": "profile",
+          "title": "Profil"
+        }
+      ]
+    },
+    {
+      "locale": "fr",
+      "storeLocale": "fr-FR",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Create my sound",
+        "promotionalText": "Décrivez ce dont vous avez besoin. Commencez par le ressenti, puis ajoutez les sons à éviter.",
+        "keywords": "Sommeil,Calme,Concentration,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Choisissez d’abord votre état. MixStil façonne le son autour de lui."
+      },
+      "fullDescription": "Décrivez ce dont vous avez besoin\n\nCe résultat a été composé à partir de couches approuvées selon votre objectif, vos exclusions, la durée et la sensibilité.\n\nEnregistrer dans Mes sons\n\nMixStil ne diagnostique, ne traite et ne guérit pas, et ne garantit aucun résultat de santé.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Préférences sonores personnelles"
+        },
+        {
+          "id": "create",
+          "title": "Décrivez ce dont vous avez besoin"
+        },
+        {
+          "id": "player-refine",
+          "title": "Paysage sonore personnalisé"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Mes sons"
+        },
+        {
+          "id": "profile",
+          "title": "Profil"
+        }
+      ]
+    },
+    {
+      "locale": "ko",
+      "storeLocale": "ko-KR",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "수면 · 안정 · 집중",
+        "promotionalText": "필요한 소리를 설명하세요. 느낌을 먼저 말하고 피할 소리를 덧붙이세요.",
+        "keywords": "수면,안정,집중,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "먼저 상태를 선택하세요. MixStil가 그에 맞춰 소리를 만듭니다."
+      },
+      "fullDescription": "필요한 소리를 설명하세요\n\n이 결과는 목표, 제외 항목, 길이, 민감도에 맞춰 승인된 레이어로 구성되었습니다.\n\n내 소리에 저장\n\nMixStil는 진단, 치료 또는 치유를 제공하지 않으며 건강 결과를 보장하지 않습니다.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "개인 소리 선호"
+        },
+        {
+          "id": "create",
+          "title": "필요한 소리를 설명하세요"
+        },
+        {
+          "id": "player-refine",
+          "title": "맞춤 사운드스케이프"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "내 소리"
+        },
+        {
+          "id": "profile",
+          "title": "프로필"
+        }
+      ]
+    },
+    {
+      "locale": "it",
+      "storeLocale": "it-IT",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Sonno · Calma · Focus",
+        "promotionalText": "Descrivi cosa ti serve. Inizia dalla sensazione, poi aggiungi i suoni da evitare.",
+        "keywords": "Sonno,Calma,Focus,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Scegli prima il tuo stato. MixStil costruirà il suono intorno a quello."
+      },
+      "fullDescription": "Descrivi cosa ti serve\n\nQuesto risultato è stato composto da livelli approvati in base a obiettivo, esclusioni, durata e sensibilità.\n\nSalva nei miei suoni\n\nMixStil non diagnostica, tratta o cura e non garantisce risultati di salute.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Preferenze sonore personali"
+        },
+        {
+          "id": "create",
+          "title": "Descrivi cosa ti serve"
+        },
+        {
+          "id": "player-refine",
+          "title": "Paesaggio sonoro personalizzato"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "I miei suoni"
+        },
+        {
+          "id": "profile",
+          "title": "Profilo"
+        }
+      ]
+    },
+    {
+      "locale": "nl",
+      "storeLocale": "nl-NL",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Slaap · Rust · Focus",
+        "promotionalText": "Beschrijf wat je nodig hebt. Begin met het gevoel en voeg daarna toe wat je wilt vermijden.",
+        "keywords": "Slaap,Rust,Focus,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Kies eerst je toestand. MixStil vormt het geluid daaromheen."
+      },
+      "fullDescription": "Beschrijf wat je nodig hebt\n\nDit resultaat is samengesteld uit goedgekeurde lagen op basis van je doel, uitsluitingen, duur en gevoeligheid.\n\nOpslaan in Mijn geluiden\n\nMixStil stelt geen diagnose, behandelt of geneest niet en garandeert geen gezondheidsresultaten.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Persoonlijke geluidsvoorkeuren"
+        },
+        {
+          "id": "create",
+          "title": "Beschrijf wat je nodig hebt"
+        },
+        {
+          "id": "player-refine",
+          "title": "Aangepaste soundscape"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Mijn geluiden"
+        },
+        {
+          "id": "profile",
+          "title": "Profiel"
+        }
+      ]
+    },
+    {
+      "locale": "zh-Hant",
+      "storeLocale": "zh-Hant",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "睡眠 · 放鬆 · 專注",
+        "promotionalText": "描述你需要的聲音. 先說感受，再補充要避開的聲音。",
+        "keywords": "睡眠,放鬆,專注,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "先選擇狀態，MixStil 會圍繞它塑造聲音。"
+      },
+      "fullDescription": "描述你需要的聲音\n\n這個結果會依照你的目標、排除項、時長和敏感度，由已審核聲音層編排而成。\n\n儲存到我的聲音\n\nMixStil 不提供診斷、治療或治癒，也不保證健康結果。",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "個人聲音偏好"
+        },
+        {
+          "id": "create",
+          "title": "描述你需要的聲音"
+        },
+        {
+          "id": "player-refine",
+          "title": "自訂聲景"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "我的聲音"
+        },
+        {
+          "id": "profile",
+          "title": "我的"
+        }
+      ]
+    },
+    {
+      "locale": "tr",
+      "storeLocale": "tr-TR",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Uyku · Sakinlik · Odak",
+        "promotionalText": "İhtiyacınız olan sesi anlatın. Önce hissi söyleyin, sonra kaçınılacak sesleri ekleyin.",
+        "keywords": "Uyku,Sakinlik,Odak,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Bugün neye ihtiyacın var?"
+      },
+      "fullDescription": "İhtiyacınız olan sesi anlatın\n\nBu sonuç hedefin, hariç tuttukların, süre ve hassasiyet tercihlerine göre onaylı katmanlardan düzenlendi.\n\nSeslerime kaydet\n\nMixStil teşhis, tedavi veya iyileştirme sunmaz ve sağlık sonucu garanti etmez.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Personal sound preferences"
+        },
+        {
+          "id": "create",
+          "title": "İhtiyacınız olan sesi anlatın"
+        },
+        {
+          "id": "player-refine",
+          "title": "Özel ses ortamı"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Seslerim"
+        },
+        {
+          "id": "profile",
+          "title": "Profil"
+        }
+      ]
+    },
+    {
+      "locale": "pl",
+      "storeLocale": "pl-PL",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Sen · Spokój · Skupienie",
+        "promotionalText": "Opisz, czego potrzebujesz. Najpierw opisz odczucie, potem dodaj dźwięki do uniknięcia.",
+        "keywords": "Sen,Spokój,Skupienie,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Czego dziś potrzebujesz?"
+      },
+      "fullDescription": "Opisz, czego potrzebujesz\n\nTen wynik ułożono z zatwierdzonych warstw według celu, wykluczeń, czasu i wrażliwości.\n\nZapisz w Moich dźwiękach\n\nMixStil nie diagnozuje, nie leczy ani nie gwarantuje rezultatów zdrowotnych.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Personal sound preferences"
+        },
+        {
+          "id": "create",
+          "title": "Opisz, czego potrzebujesz"
+        },
+        {
+          "id": "player-refine",
+          "title": "Własny pejzaż dźwiękowy"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Moje dźwięki"
+        },
+        {
+          "id": "profile",
+          "title": "Profil"
+        }
+      ]
+    },
+    {
+      "locale": "sv",
+      "storeLocale": "sv-SE",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Sömn · Lugn · Fokus",
+        "promotionalText": "Beskriv vad du behöver. Börja med känslan och lägg sedan till ljud att undvika.",
+        "keywords": "Sömn,Lugn,Fokus,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Vad behöver du idag?"
+      },
+      "fullDescription": "Beskriv vad du behöver\n\nResultatet har satts ihop av godkända lager efter mål, uteslutningar, längd och känslighet.\n\nSpara i Mina ljud\n\nMixStil diagnostiserar, behandlar eller botar inte och garanterar inga hälsoresultat.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Personal sound preferences"
+        },
+        {
+          "id": "create",
+          "title": "Beskriv vad du behöver"
+        },
+        {
+          "id": "player-refine",
+          "title": "Eget ljudlandskap"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Mina ljud"
+        },
+        {
+          "id": "profile",
+          "title": "Profil"
+        }
+      ]
+    },
+    {
+      "locale": "th",
+      "storeLocale": "th-TH",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "นอนหลับ · สงบ · โฟกัส",
+        "promotionalText": "อธิบายเสียงที่คุณต้องการ. เริ่มจากความรู้สึก แล้วค่อยเพิ่มเสียงที่ต้องการหลีกเลี่ยง",
+        "keywords": "นอนหลับ,สงบ,โฟกัส,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "วันนี้คุณต้องการอะไร?"
+      },
+      "fullDescription": "อธิบายเสียงที่คุณต้องการ\n\nผลลัพธ์นี้จัดเรียงจากเลเยอร์เสียงที่ผ่านการอนุมัติ ตามเป้าหมาย สิ่งที่ไม่ต้องการ ระยะเวลา และความไวต่อเสียงของคุณ\n\nบันทึกไปยังเสียงของฉัน\n\nMixStil ไม่ได้วินิจฉัย บำบัด หรือรักษาโรค และไม่รับประกันผลลัพธ์ด้านสุขภาพ",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Personal sound preferences"
+        },
+        {
+          "id": "create",
+          "title": "อธิบายเสียงที่คุณต้องการ"
+        },
+        {
+          "id": "player-refine",
+          "title": "เสียงบรรยากาศที่กำหนดเอง"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "เสียงของฉัน"
+        },
+        {
+          "id": "profile",
+          "title": "โปรไฟล์"
+        }
+      ]
+    },
+    {
+      "locale": "vi",
+      "storeLocale": "vi-VN",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Ngủ · Bình tĩnh · Tập trung",
+        "promotionalText": "Mô tả âm thanh bạn cần. Nói cảm giác trước, rồi thêm âm thanh cần tránh.",
+        "keywords": "Ngủ,Bình tĩnh,Tập trung,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Hôm nay bạn cần gì?"
+      },
+      "fullDescription": "Mô tả âm thanh bạn cần\n\nKết quả này được sắp xếp từ các lớp đã duyệt theo mục tiêu, loại trừ, thời lượng và độ nhạy của bạn.\n\nLưu vào Âm thanh của tôi\n\nMixStil không chẩn đoán, điều trị, chữa bệnh hoặc bảo đảm kết quả sức khỏe.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Personal sound preferences"
+        },
+        {
+          "id": "create",
+          "title": "Mô tả âm thanh bạn cần"
+        },
+        {
+          "id": "player-refine",
+          "title": "Cảnh âm thanh tùy chỉnh"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Âm thanh của tôi"
+        },
+        {
+          "id": "profile",
+          "title": "Hồ sơ"
+        }
+      ]
+    },
+    {
+      "locale": "ms",
+      "storeLocale": "ms-MY",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Tidur · Tenang · Fokus",
+        "promotionalText": "Terangkan bunyi yang anda perlukan. Mulakan dengan rasa, kemudian tambah bunyi yang perlu dielakkan.",
+        "keywords": "Tidur,Tenang,Fokus,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Apa yang anda perlukan hari ini?"
+      },
+      "fullDescription": "Terangkan bunyi yang anda perlukan\n\nHasil ini disusun daripada lapisan diluluskan mengikut matlamat, pengecualian, tempoh dan kepekaan anda.\n\nSimpan ke Bunyi saya\n\nMixStil tidak mendiagnosis, merawat atau menyembuhkan dan tidak menjamin hasil kesihatan.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Personal sound preferences"
+        },
+        {
+          "id": "create",
+          "title": "Terangkan bunyi yang anda perlukan"
+        },
+        {
+          "id": "player-refine",
+          "title": "Lanskap bunyi tersuai"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Bunyi saya"
+        },
+        {
+          "id": "profile",
+          "title": "Profil"
+        }
+      ]
+    },
+    {
+      "locale": "he",
+      "storeLocale": "he-IL",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "שינה · רוגע · מיקוד",
+        "promotionalText": "תארו את הצליל שאתם צריכים. התחילו בתחושה ואז הוסיפו צלילים להימנע מהם.",
+        "keywords": "שינה,רוגע,מיקוד,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "מה צריך היום?"
+      },
+      "fullDescription": "תארו את הצליל שאתם צריכים\n\nהתוצאה הורכבה משכבות מאושרות לפי המטרה, ההחרגות, משך ההאזנה והרגישות שלך.\n\nשמירה בצלילים שלי\n\nMixStil אינו מאבחן, מטפל או מרפא ואינו מבטיח תוצאות בריאותיות.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Personal sound preferences"
+        },
+        {
+          "id": "create",
+          "title": "תארו את הצליל שאתם צריכים"
+        },
+        {
+          "id": "player-refine",
+          "title": "נוף צליל מותאם"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "הצלילים שלי"
+        },
+        {
+          "id": "profile",
+          "title": "פרופיל"
+        }
+      ]
+    },
+    {
+      "locale": "da",
+      "storeLocale": "da-DK",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Søvn · Ro · Fokus",
+        "promotionalText": "Beskriv den lyd, du har brug for. Start med følelsen, og tilføj derefter lyde, der skal undgås.",
+        "keywords": "Søvn,Ro,Fokus,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Hvad har du brug for i dag?"
+      },
+      "fullDescription": "Beskriv den lyd, du har brug for\n\nResultatet er sammensat af godkendte lag efter mål, fravalg, varighed og følsomhed.\n\nGem i Mine lyde\n\nMixStil diagnosticerer, behandler eller helbreder ikke og garanterer ingen sundhedsresultater.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Personal sound preferences"
+        },
+        {
+          "id": "create",
+          "title": "Beskriv den lyd, du har brug for"
+        },
+        {
+          "id": "player-refine",
+          "title": "Tilpasset lydlandskab"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Mine lyde"
+        },
+        {
+          "id": "profile",
+          "title": "Profil"
+        }
+      ]
+    },
+    {
+      "locale": "no",
+      "storeLocale": "no-NO",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Søvn · Ro · Fokus",
+        "promotionalText": "Beskriv lyden du trenger. Begynn med følelsen, og legg deretter til lyder som skal unngås.",
+        "keywords": "Søvn,Ro,Fokus,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Hva trenger du i dag?"
+      },
+      "fullDescription": "Beskriv lyden du trenger\n\nResultatet er satt sammen av godkjente lag etter mål, utelukkelser, varighet og følsomhet.\n\nLagre i Mine lyder\n\nMixStil diagnostiserer, behandler eller kurerer ikke og garanterer ingen helseresultater.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Personal sound preferences"
+        },
+        {
+          "id": "create",
+          "title": "Beskriv lyden du trenger"
+        },
+        {
+          "id": "player-refine",
+          "title": "Tilpasset lydlandskap"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Mine lyder"
+        },
+        {
+          "id": "profile",
+          "title": "Profil"
+        }
+      ]
+    },
+    {
+      "locale": "fi",
+      "storeLocale": "fi-FI",
+      "nativeReviewStatus": "pending_native_review",
+      "apple": {
+        "name": "MixStil",
+        "subtitle": "Uni · Rauha · Keskittyminen",
+        "promotionalText": "Kuvaile tarvitsemasi ääni. Aloita tunteesta ja lisää sitten vältettävät äänet.",
+        "keywords": "Uni,Rauha,Keskittyminen,MixStil"
+      },
+      "googlePlay": {
+        "name": "MixStil",
+        "shortDescription": "Mitä tarvitset tänään?"
+      },
+      "fullDescription": "Kuvaile tarvitsemasi ääni\n\nTulos koostettiin hyväksytyistä kerroksista tavoitteesi, poissulkujen, keston ja herkkyyden mukaan.\n\nTallenna Omiin ääniin\n\nMixStil ei diagnosoi, hoida tai paranna eikä takaa terveysvaikutuksia.",
+      "screenshots": [
+        {
+          "id": "onboarding",
+          "title": "Personal sound preferences"
+        },
+        {
+          "id": "create",
+          "title": "Kuvaile tarvitsemasi ääni"
+        },
+        {
+          "id": "player-refine",
+          "title": "Mukautettu äänimaisema"
+        },
+        {
+          "id": "layer-adjustment",
+          "title": "Sound adjustments"
+        },
+        {
+          "id": "my-sounds",
+          "title": "Omat äänet"
+        },
+        {
+          "id": "profile",
+          "title": "Profiili"
+        }
+      ]
+    }
+  ]
+}

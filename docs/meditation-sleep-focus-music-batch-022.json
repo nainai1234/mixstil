@@ -1,0 +1,111 @@
+{
+  "batchId": "meditation_sleep_focus_music_batch_022_2026_07_17",
+  "purpose": "Reference-driven smoke test after Batch 020/021 listening failures. Use parameterized low-energy music prompts derived from public ACE-Step/MusicGen prompt structures, avoiding excitement, strong melody, and large reverb. Candidate-only; not approved for product use.",
+  "researchNotes": "docs/functional-music-prompt-research-2026-07-17.md",
+  "promptLibrary": "docs/functional-music-prompt-library-2026-07-17.md",
+  "model": {
+    "provider": "ACE-Step",
+    "repository": "https://github.com/ace-step/ACE-Step",
+    "checkpoint": "ACE-Step/ACE-Step-v1-3.5B",
+    "codeLicense": "Apache-2.0",
+    "checkpointLicense": "Apache-2.0",
+    "generationLocation": "local-mac-backend",
+    "commercialOutputReview": "required",
+    "productBoundary": "candidate-only; generated files must not enter approved assets, public playback, offline playback, or rendered works until promoted"
+  },
+  "defaults": {
+    "durationSeconds": 60,
+    "inferenceSteps": 27,
+    "guidanceScale": 4.5,
+    "format": "wav",
+    "lyrics": "",
+    "negativeRequirements": [
+      "no vocals",
+      "no spoken voice",
+      "no fake voice",
+      "no choir",
+      "no humming",
+      "no chanting",
+      "no lyrics",
+      "no drums",
+      "no beat",
+      "no percussion",
+      "no pulse",
+      "no arpeggio",
+      "no bass line",
+      "no lead melody",
+      "no strong tune",
+      "no memorable hook",
+      "no song structure",
+      "no chorus",
+      "no build",
+      "no drop",
+      "no climax",
+      "no emotional lift",
+      "no exciting chord progression",
+      "no cinematic score",
+      "no suspense",
+      "no large reverb",
+      "no long reverb tail",
+      "no spacious reverb",
+      "no ambient wash",
+      "no shimmer",
+      "no bright bells",
+      "no buzzing drone as the main sound",
+      "no harsh resonance",
+      "no alarm-like tone"
+    ]
+  },
+  "listeningTarget": {
+    "sleep": "plain, sleepy, low-arousal instrumental backing bed with no tune to follow and no emotional cadence",
+    "focus": "dry, close, low-distraction instrumental backing bed for reading or deep work, no space-bath wash",
+    "meditation": "stable, low-stimulation instrumental support for breath attention, no chant, no fake voice, no cinematic movement"
+  },
+  "candidates": [
+    {
+      "id": "sleep_plain_slow_keys_022_001",
+      "family": "plain_slow_keys",
+      "goal": "sleep",
+      "scene": "bedtime",
+      "seed": 822001,
+      "reviewStatus": "candidate",
+      "prompt": "minimal instrumental sleep background, 48 BPM, C major, 4/4, very low energy, soft low electric piano, faint warm support tone, sparse notes with long gaps, flat harmony, no melodic lead, dry tight production, close mic, short room only, controlled top end, no song structure, no chorus, no build, no drop, no climax, no vocals, no spoken voice, no fake voice, no choir, no humming, no chanting, no drums, no beat, no percussion, no pulse, no arpeggio, no strong tune, no emotional lift, no large reverb, no ambient wash"
+    },
+    {
+      "id": "sleep_dull_warm_hold_022_002",
+      "family": "dull_warm_hold",
+      "goal": "sleep",
+      "scene": "return_to_sleep",
+      "seed": 822002,
+      "reviewStatus": "candidate",
+      "prompt": "plain instrumental return-to-sleep music, 45 BPM, F major, very low energy, dull warm sustained electric piano, quiet low organ support, low register, almost no chord movement, sparse note events, no tune to follow, dry tight production, very short room, narrow stereo image, soft high-frequency rolloff, no song structure, no chorus, no build, no drop, no climax, no vocals, no spoken voice, no fake voice, no choir, no humming, no chanting, no drums, no beat, no percussion, no pulse, no lead melody, no lullaby melody, no emotional cadence, no spacious reverb, no long tail"
+    },
+    {
+      "id": "focus_dry_lofi_nodrums_022_003",
+      "family": "dry_lofi_nodrums",
+      "goal": "focus",
+      "scene": "deep_focus",
+      "seed": 822003,
+      "reviewStatus": "candidate",
+      "prompt": "instrumental lo-fi study background, 68 BPM, A minor, low energy, muted electric piano, soft tape noise texture, dry tight production, close room, short decay, narrow stereo image, low cognitive load, no drums, no beat, no percussion, no bass line, no pulse, no arpeggio, no song structure, no chorus, no build, no drop, no lead melody, no strong tune, no emotional lift, no spacious reverb, no ambient wash, background for reading"
+    },
+    {
+      "id": "focus_neutral_close_ep_022_004",
+      "family": "neutral_close_ep",
+      "goal": "focus",
+      "scene": "reading_focus",
+      "seed": 822004,
+      "reviewStatus": "candidate",
+      "prompt": "minimal instrumental focus background for reading, 64 BPM, D minor, low energy, close dry electric piano, quiet warm analog support tone, stable neutral harmony, sparse two-note cells, no memorable phrase, dry tight production, short room production, controlled top end, no vocals, no spoken voice, no fake voice, no choir, no humming, no chanting, no drums, no beat, no percussion, no pulse, no arpeggio, no lead melody, no chorus, no build, no drop, no climax, no emotional lift, no large reverb, no space-bath wash"
+    },
+    {
+      "id": "meditation_stable_short_room_022_005",
+      "family": "stable_short_room",
+      "goal": "calm",
+      "scene": "voice_free_meditation",
+      "seed": 822005,
+      "reviewStatus": "candidate",
+      "prompt": "minimal instrumental meditation support, 54 BPM, D major, very low energy, stable soft organ-like tone, sparse low electric piano, slow breath-like volume contour, steady consonant harmony, no tune to follow, dry tight production, short room production, smooth top end, no vocals, no spoken voice, no fake voice, no choir, no humming, no chanting, no wordless vocals, no drums, no beat, no pulse, no arpeggio, no lead melody, no emotional lift, no cinematic score, no large reverb, no buzzing drone"
+    }
+  ]
+}

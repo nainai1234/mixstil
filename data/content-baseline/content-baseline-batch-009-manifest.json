@@ -1,0 +1,103 @@
+{
+  "version": "2026-07-16.batch-009-music-first-natural-placement",
+  "generatedAt": "2026-07-16T23:03:51.880Z",
+  "purpose": "Correct Batch 008 feedback: Sleep and Calm were not natural enough and had too much perceived noise; Focus was good but is clearly music. Batch 009 uses music-first placement and honest music-bed classification.",
+  "hardGates": [
+    "Reject Sleep or Calm if noise, air, insects, room tone, or texture becomes louder than the musical body.",
+    "Reject any candidate that feels mechanical, electric, physically oppressive, or harmful.",
+    "Focus candidate must be judged as a music bed, not as foundational sound.",
+    "Do not promote these as basic sounds if they are clearly music."
+  ],
+  "candidates": [
+    {
+      "id": "sleep_015_music_first_natural_bed",
+      "title": "Music-First Natural Bed — Sleep",
+      "goal": "sleep",
+      "scene": "bedtime_sleep",
+      "outputPath": "public/audio/content-baseline/batch-009/sleep_015_music_first_natural_bed.mp3",
+      "outputUrl": "/audio/content-baseline/batch-009/sleep_015_music_first_natural_bed.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "batch_008_sleep_noise_too_loud_and_not_natural",
+      "contentClass": "finished_music_bed_candidate",
+      "thesis": "Sleep should be carried by dim, natural music movement; no noise bed is needed unless it is almost invisible.",
+      "sources": [
+        {
+          "role": "dim_sleep_music_body",
+          "path": "public/audio/music/reviewed-2026-07-11/silent_descent.mp3",
+          "note": "primary sleep music bed, not cheerful and not noisy"
+        },
+        {
+          "role": "soft_deep_pad_underlay",
+          "path": "public/audio/music/procedural-approved-2026-07-13/procedural_deep_sleep_low.mp3",
+          "note": "low musical underlay, not mechanical and not a noise wall"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321452
+      }
+    },
+    {
+      "id": "calm_011_music_first_resonance",
+      "title": "Music-First Resonance — Calm",
+      "goal": "calm",
+      "scene": "quiet_relaxation",
+      "outputPath": "public/audio/content-baseline/batch-009/calm_011_music_first_resonance.mp3",
+      "outputUrl": "/audio/content-baseline/batch-009/calm_011_music_first_resonance.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "batch_008_calm_noise_too_loud_and_not_natural",
+      "contentClass": "finished_music_bed_candidate",
+      "thesis": "Calm can use sparse resonance, but the continuous body must feel musical and natural, not noisy.",
+      "sources": [
+        {
+          "role": "warm_calm_music_body",
+          "path": "public/audio/music/local-review/2026-07-14/procedural_calm_grounded_b.mp3",
+          "note": "warm calm music body"
+        },
+        {
+          "role": "soft_open_resonance",
+          "path": "public/audio/music/local-review/2026-07-14/procedural_meditation_open_b.mp3",
+          "note": "late open resonance, no hiss layer"
+        },
+        {
+          "role": "single_sparse_bowl_color",
+          "path": "public/audio/accent/batch-05/singingbowl1.ogg",
+          "note": "one tiny acoustic color only; not a performance"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.953958,
+        "sizeBytes": 4320621
+      }
+    },
+    {
+      "id": "focus_014_music_bed_confirmed",
+      "title": "Music Bed Confirmed — Focus",
+      "goal": "focus",
+      "scene": "deep_work",
+      "outputPath": "public/audio/content-baseline/batch-009/focus_014_music_bed_confirmed.mp3",
+      "outputUrl": "/audio/content-baseline/batch-009/focus_014_music_bed_confirmed.mp3",
+      "productionStatus": "candidate_preview",
+      "correction": "batch_008_focus_good_but_all_music",
+      "contentClass": "focus_music_bed_candidate",
+      "thesis": "This keeps the successful Batch 008 direction but labels it honestly as music, not foundational sound.",
+      "sources": [
+        {
+          "role": "organic_focus_music_bed",
+          "path": "public/audio/organic-structured-sound-factory/batch-002/focus_organic_clear_bed_001.mp3",
+          "note": "the accepted focus material, explicitly treated as music"
+        },
+        {
+          "role": "small_stability_layer",
+          "path": "public/audio/music/local-review/2026-07-15/procedural_focus_neutral_clean.mp3",
+          "note": "very small musical stability layer"
+        }
+      ],
+      "probe": {
+        "durationSeconds": 179.976979,
+        "sizeBytes": 4321197
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-009/index.html"
+}

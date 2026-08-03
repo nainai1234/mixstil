@@ -1,0 +1,223 @@
+{
+  "version": "2026-07-16.batch-001",
+  "generatedAt": "2026-07-16T21:16:05.887Z",
+  "purpose": "First audible candidates for the content baseline reset.",
+  "selection": {
+    "sleep": 4,
+    "calm": 3,
+    "focus": 3
+  },
+  "candidates": [
+    {
+      "id": "sleep_001_quiet_room_cocoon",
+      "title": "Quiet Room Cocoon",
+      "goal": "sleep",
+      "scene": "bedtime",
+      "sourceBriefDurationMinutes": 30,
+      "previewDurationSeconds": 120,
+      "targetLufs": -27,
+      "outputPath": "public/audio/content-baseline/batch-001/sleep_001_quiet_room_cocoon.mp3",
+      "outputUrl": "/audio/content-baseline/batch-001/sleep_001_quiet_room_cocoon.mp3",
+      "productionStatus": "candidate_preview",
+      "limitations": [
+        "Procedural preview only; not a final commercial master.",
+        "Requires human listening for save-worthiness, fatigue, and scene differentiation.",
+        "Requires replacement or enrichment with approved high-quality recorded/generated assets before release."
+      ],
+      "probe": {
+        "durationSeconds": 120,
+        "sizeBytes": 2881197
+      }
+    },
+    {
+      "id": "sleep_002_soft_brown_night",
+      "title": "Soft Brown Night",
+      "goal": "sleep",
+      "scene": "bedtime",
+      "sourceBriefDurationMinutes": 45,
+      "previewDurationSeconds": 120,
+      "targetLufs": -27,
+      "outputPath": "public/audio/content-baseline/batch-001/sleep_002_soft_brown_night.mp3",
+      "outputUrl": "/audio/content-baseline/batch-001/sleep_002_soft_brown_night.mp3",
+      "productionStatus": "candidate_preview",
+      "limitations": [
+        "Procedural preview only; not a final commercial master.",
+        "Requires human listening for save-worthiness, fatigue, and scene differentiation.",
+        "Requires replacement or enrichment with approved high-quality recorded/generated assets before release."
+      ],
+      "probe": {
+        "durationSeconds": 120,
+        "sizeBytes": 2881197
+      }
+    },
+    {
+      "id": "sleep_003_warm_fan_sleep",
+      "title": "Warm Fan Sleep",
+      "goal": "sleep",
+      "scene": "bedtime",
+      "sourceBriefDurationMinutes": 60,
+      "previewDurationSeconds": 120,
+      "targetLufs": -26,
+      "outputPath": "public/audio/content-baseline/batch-001/sleep_003_warm_fan_sleep.mp3",
+      "outputUrl": "/audio/content-baseline/batch-001/sleep_003_warm_fan_sleep.mp3",
+      "productionStatus": "candidate_preview",
+      "limitations": [
+        "Procedural preview only; not a final commercial master.",
+        "Requires human listening for save-worthiness, fatigue, and scene differentiation.",
+        "Requires replacement or enrichment with approved high-quality recorded/generated assets before release."
+      ],
+      "probe": {
+        "durationSeconds": 120,
+        "sizeBytes": 2881197
+      }
+    },
+    {
+      "id": "sleep_007_no_water_bedtime_pad",
+      "title": "No-Water Bedtime Pad",
+      "goal": "sleep",
+      "scene": "bedtime_with_music",
+      "sourceBriefDurationMinutes": 45,
+      "previewDurationSeconds": 120,
+      "targetLufs": -26,
+      "outputPath": "public/audio/content-baseline/batch-001/sleep_007_no_water_bedtime_pad.mp3",
+      "outputUrl": "/audio/content-baseline/batch-001/sleep_007_no_water_bedtime_pad.mp3",
+      "productionStatus": "candidate_preview",
+      "limitations": [
+        "Procedural preview only; not a final commercial master.",
+        "Requires human listening for save-worthiness, fatigue, and scene differentiation.",
+        "Requires replacement or enrichment with approved high-quality recorded/generated assets before release."
+      ],
+      "probe": {
+        "durationSeconds": 120,
+        "sizeBytes": 2881197
+      }
+    },
+    {
+      "id": "calm_001_warm_breathing_space",
+      "title": "Warm Breathing Space",
+      "goal": "calm",
+      "scene": "breathing_meditation",
+      "sourceBriefDurationMinutes": 15,
+      "previewDurationSeconds": 120,
+      "targetLufs": -24,
+      "outputPath": "public/audio/content-baseline/batch-001/calm_001_warm_breathing_space.mp3",
+      "outputUrl": "/audio/content-baseline/batch-001/calm_001_warm_breathing_space.mp3",
+      "productionStatus": "candidate_preview",
+      "limitations": [
+        "Procedural preview only; not a final commercial master.",
+        "Requires human listening for save-worthiness, fatigue, and scene differentiation.",
+        "Requires replacement or enrichment with approved high-quality recorded/generated assets before release."
+      ],
+      "probe": {
+        "durationSeconds": 120,
+        "sizeBytes": 2881197
+      }
+    },
+    {
+      "id": "calm_002_grounded_ambient_pad",
+      "title": "Grounded Ambient Pad",
+      "goal": "calm",
+      "scene": "emotional_settling",
+      "sourceBriefDurationMinutes": 20,
+      "previewDurationSeconds": 120,
+      "targetLufs": -24,
+      "outputPath": "public/audio/content-baseline/batch-001/calm_002_grounded_ambient_pad.mp3",
+      "outputUrl": "/audio/content-baseline/batch-001/calm_002_grounded_ambient_pad.mp3",
+      "productionStatus": "candidate_preview",
+      "limitations": [
+        "Procedural preview only; not a final commercial master.",
+        "Requires human listening for save-worthiness, fatigue, and scene differentiation.",
+        "Requires replacement or enrichment with approved high-quality recorded/generated assets before release."
+      ],
+      "probe": {
+        "durationSeconds": 120,
+        "sizeBytes": 2881197
+      }
+    },
+    {
+      "id": "calm_004_soft_bell_exhale",
+      "title": "Soft Bell Exhale",
+      "goal": "calm",
+      "scene": "short_reset",
+      "sourceBriefDurationMinutes": 10,
+      "previewDurationSeconds": 120,
+      "targetLufs": -24,
+      "outputPath": "public/audio/content-baseline/batch-001/calm_004_soft_bell_exhale.mp3",
+      "outputUrl": "/audio/content-baseline/batch-001/calm_004_soft_bell_exhale.mp3",
+      "productionStatus": "candidate_preview",
+      "limitations": [
+        "Procedural preview only; not a final commercial master.",
+        "Requires human listening for save-worthiness, fatigue, and scene differentiation.",
+        "Requires replacement or enrichment with approved high-quality recorded/generated assets before release."
+      ],
+      "probe": {
+        "durationSeconds": 120,
+        "sizeBytes": 2881197
+      }
+    },
+    {
+      "id": "focus_001_quiet_train_focus",
+      "title": "Quiet Train Focus",
+      "goal": "focus",
+      "scene": "deep_work",
+      "sourceBriefDurationMinutes": 45,
+      "previewDurationSeconds": 120,
+      "targetLufs": -24,
+      "outputPath": "public/audio/content-baseline/batch-001/focus_001_quiet_train_focus.mp3",
+      "outputUrl": "/audio/content-baseline/batch-001/focus_001_quiet_train_focus.mp3",
+      "productionStatus": "candidate_preview",
+      "limitations": [
+        "Procedural preview only; not a final commercial master.",
+        "Requires human listening for save-worthiness, fatigue, and scene differentiation.",
+        "Requires replacement or enrichment with approved high-quality recorded/generated assets before release."
+      ],
+      "probe": {
+        "durationSeconds": 120,
+        "sizeBytes": 2881197
+      }
+    },
+    {
+      "id": "focus_004_low_anchor_pad",
+      "title": "Low Anchor Pad",
+      "goal": "focus",
+      "scene": "music_supported_focus",
+      "sourceBriefDurationMinutes": 40,
+      "previewDurationSeconds": 120,
+      "targetLufs": -23,
+      "outputPath": "public/audio/content-baseline/batch-001/focus_004_low_anchor_pad.mp3",
+      "outputUrl": "/audio/content-baseline/batch-001/focus_004_low_anchor_pad.mp3",
+      "productionStatus": "candidate_preview",
+      "limitations": [
+        "Procedural preview only; not a final commercial master.",
+        "Requires human listening for save-worthiness, fatigue, and scene differentiation.",
+        "Requires replacement or enrichment with approved high-quality recorded/generated assets before release."
+      ],
+      "probe": {
+        "durationSeconds": 120,
+        "sizeBytes": 2881197
+      }
+    },
+    {
+      "id": "focus_007_clean_pink_focus",
+      "title": "Clean Pink Focus",
+      "goal": "focus",
+      "scene": "minimal_focus",
+      "sourceBriefDurationMinutes": 30,
+      "previewDurationSeconds": 120,
+      "targetLufs": -24,
+      "outputPath": "public/audio/content-baseline/batch-001/focus_007_clean_pink_focus.mp3",
+      "outputUrl": "/audio/content-baseline/batch-001/focus_007_clean_pink_focus.mp3",
+      "productionStatus": "candidate_preview",
+      "limitations": [
+        "Procedural preview only; not a final commercial master.",
+        "Requires human listening for save-worthiness, fatigue, and scene differentiation.",
+        "Requires replacement or enrichment with approved high-quality recorded/generated assets before release."
+      ],
+      "probe": {
+        "durationSeconds": 120,
+        "sizeBytes": 2881197
+      }
+    }
+  ],
+  "reviewPage": "/review/content-baseline-batch-001/index.html"
+}
