@@ -1,0 +1,2179 @@
+{
+  "schemaVersion": "1.0.0",
+  "catalogId": "foundational-audio-elements-v1",
+  "generatedOn": "2026-07-22T14:40:29.108849+00:00",
+  "status": "approved_foundational_elements",
+  "sourceBatchId": "lyria-single-element-pilot-v1",
+  "elementCount": 24,
+  "productionAllowed": true,
+  "selectionPolicy": {
+    "minimumLayers": 2,
+    "maximumLayers": 3,
+    "preferHarmonicCompatibility": true,
+    "respectExplicitInstrumentExclusions": true,
+    "avoidExactRecipeReplay": true,
+    "externalApiAtRuntime": false
+  },
+  "elements": [
+    {
+      "id": "stem_lyria_element_airy_bright_pad_v1",
+      "candidateId": "airy_bright_pad_v1",
+      "name": "Airy Bright Pad 1",
+      "family": "airy_bright_pad",
+      "variant": 1,
+      "elementRole": "harmony",
+      "goals": [
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "airy",
+        "pad",
+        "open",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/airy_bright_pad/airy_bright_pad_v1.mp3",
+      "defaultVolume": 30,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "F",
+        "rootIndex": 5,
+        "mode": "major",
+        "confidence": 0.0606,
+        "profileScore": 0.8085
+      },
+      "acoustic": {
+        "durationSeconds": 27.153,
+        "bytes": 653314,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -23.1,
+        "truePeakDb": -6.1,
+        "estimatedTempoBpm": 80.75,
+        "beatCount": 31,
+        "onsetDensityPerSecond": 2.0581,
+        "spectralCentroidHz": 959.24,
+        "loopTonalSimilarity": 0.9363,
+        "chroma": [
+          0.217021,
+          0.043921,
+          0.041545,
+          0.059948,
+          0.048174,
+          0.223329,
+          0.055846,
+          0.088035,
+          0.06304,
+          0.045998,
+          0.067545,
+          0.045596
+        ]
+      },
+      "sha256": "055f6b4e7444bccd3e1dd2f2fe277cf41c29ae47e4945b532a423feb347459e2",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "airy_bright_pad_v1",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/airy_bright_pad_v1.mp3",
+        "prompt": "Instrumental ambient sound material, free-time, intensity 1/10. A single airy synthesizer pad is the only foreground identity. Light upper-mid texture without piercing highs, gentle major add-nine color, extremely slow breathing movement, stable harmony, no chord progression, no cadence, and a soft unresolved ending. Smooth attacks, clean open stereo image, restrained reverb, consistent dynamics, suitable for crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, drums, percussion, rhythmic pulse, arpeggio, lead melody, bells, sharp sparkle, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:43:05.705Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_airy_bright_pad_v2",
+      "candidateId": "airy_bright_pad_v2",
+      "name": "Airy Bright Pad 2",
+      "family": "airy_bright_pad",
+      "variant": 2,
+      "elementRole": "harmony",
+      "goals": [
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "airy",
+        "pad",
+        "open",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/airy_bright_pad/airy_bright_pad_v2.mp3",
+      "defaultVolume": 30,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "F#",
+        "rootIndex": 6,
+        "mode": "major",
+        "confidence": 0.1609,
+        "profileScore": 0.7012
+      },
+      "acoustic": {
+        "durationSeconds": 24.358,
+        "bytes": 586231,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -23.1,
+        "truePeakDb": -4.8,
+        "estimatedTempoBpm": 60.09,
+        "beatCount": 20,
+        "onsetDensityPerSecond": 1.1761,
+        "spectralCentroidHz": 1665.27,
+        "loopTonalSimilarity": 0.7188,
+        "chroma": [
+          0.047613,
+          0.089277,
+          0.10884,
+          0.06468,
+          0.048737,
+          0.106091,
+          0.155654,
+          0.036464,
+          0.041608,
+          0.039958,
+          0.140883,
+          0.120194
+        ]
+      },
+      "sha256": "4d17fc42cd71bd32f5463d0e99d7db93638754e2e2b80d7a4d4aeb16a99510ef",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "airy_bright_pad_v2",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/airy_bright_pad_v2.mp3",
+        "prompt": "Instrumental ambient sound material, free-time, intensity 1/10. A single airy synthesizer pad is the only foreground identity. Light upper-mid texture without piercing highs, gentle major add-nine color, extremely slow breathing movement, stable harmony, no chord progression, no cadence, and a soft unresolved ending. Smooth attacks, clean open stereo image, restrained reverb, consistent dynamics, suitable for crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, drums, percussion, rhythmic pulse, arpeggio, lead melody, bells, sharp sparkle, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:43:16.945Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_airy_bright_pad_v3",
+      "candidateId": "airy_bright_pad_v3",
+      "name": "Airy Bright Pad 3",
+      "family": "airy_bright_pad",
+      "variant": 3,
+      "elementRole": "harmony",
+      "goals": [
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "airy",
+        "pad",
+        "open",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/airy_bright_pad/airy_bright_pad_v3.mp3",
+      "defaultVolume": 30,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "A#",
+        "rootIndex": 10,
+        "mode": "major",
+        "confidence": 0.063,
+        "profileScore": 0.7645
+      },
+      "acoustic": {
+        "durationSeconds": 25.455,
+        "bytes": 612563,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -22.3,
+        "truePeakDb": -10.9,
+        "estimatedTempoBpm": 143.55,
+        "beatCount": 58,
+        "onsetDensityPerSecond": 0.0364,
+        "spectralCentroidHz": 843.94,
+        "loopTonalSimilarity": 0.1975,
+        "chroma": [
+          0.14021,
+          0.02184,
+          0.061791,
+          0.168075,
+          0.034779,
+          0.197501,
+          0.029023,
+          0.102184,
+          0.016684,
+          0.076654,
+          0.129334,
+          0.021924
+        ]
+      },
+      "sha256": "33a2ce7c5ff797ba1c2551e6f0bb3bb87c248e9e7f2d7105cc59a78d07d39621",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "airy_bright_pad_v3",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/airy_bright_pad_v3.mp3",
+        "prompt": "Instrumental ambient sound material, free-time, intensity 1/10. A single airy synthesizer pad is the only foreground identity. Light upper-mid texture without piercing highs, gentle major add-nine color, extremely slow breathing movement, stable harmony, no chord progression, no cadence, and a soft unresolved ending. Smooth attacks, clean open stereo image, restrained reverb, consistent dynamics, suitable for crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, drums, percussion, rhythmic pulse, arpeggio, lead melody, bells, sharp sparkle, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:43:26.548Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_deep_low_drone_v1",
+      "candidateId": "deep_low_drone_v1",
+      "name": "Deep Low Drone 1",
+      "family": "deep_low_drone",
+      "variant": 1,
+      "elementRole": "low_support",
+      "goals": [
+        "sleep"
+      ],
+      "tags": [
+        "deep",
+        "drone",
+        "dark_warm",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/deep_low_drone/deep_low_drone_v1.mp3",
+      "defaultVolume": 32,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "F",
+        "rootIndex": 5,
+        "mode": "major",
+        "confidence": 0.0472,
+        "profileScore": 0.725
+      },
+      "acoustic": {
+        "durationSeconds": 28.772,
+        "bytes": 692184,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -24.0,
+        "truePeakDb": -9.3,
+        "estimatedTempoBpm": 60.09,
+        "beatCount": 30,
+        "onsetDensityPerSecond": 1.6248,
+        "spectralCentroidHz": 642.54,
+        "loopTonalSimilarity": 0.3411,
+        "chroma": [
+          0.06293,
+          0.048387,
+          0.046612,
+          0.051276,
+          0.063413,
+          0.310733,
+          0.071929,
+          0.06513,
+          0.058837,
+          0.058247,
+          0.123047,
+          0.039458
+        ]
+      },
+      "sha256": "231a6b5f0bbae9492d658afee836e12dc44fd02a616c47fca248292dc7441326",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "deep_low_drone_v1",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/deep_low_drone_v1.mp3",
+        "prompt": "Instrumental dark ambient sound material, free-time, intensity 1/10. One deep sustained synthesizer drone is the only foreground identity. Low register, rounded sub-bass with audible low-mid body, extremely slow organic movement, one stable pitch center, no harmonic journey, no cadence, and an unresolved ending. Soft attacks, controlled bass, restrained stereo space, stable loudness, suitable for crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, drums, percussion, heartbeat, rhythmic pulse, melody, bright overtones, impact, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:42:35.396Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_deep_low_drone_v2",
+      "candidateId": "deep_low_drone_v2",
+      "name": "Deep Low Drone 2",
+      "family": "deep_low_drone",
+      "variant": 2,
+      "elementRole": "low_support",
+      "goals": [
+        "sleep"
+      ],
+      "tags": [
+        "deep",
+        "drone",
+        "dark_warm",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/deep_low_drone/deep_low_drone_v2.mp3",
+      "defaultVolume": 32,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "C",
+        "rootIndex": 0,
+        "mode": "minor",
+        "confidence": 0.0317,
+        "profileScore": 0.7003
+      },
+      "acoustic": {
+        "durationSeconds": 28.772,
+        "bytes": 692184,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -22.4,
+        "truePeakDb": -8.4,
+        "estimatedTempoBpm": 60.09,
+        "beatCount": 31,
+        "onsetDensityPerSecond": 2.9897,
+        "spectralCentroidHz": 745.89,
+        "loopTonalSimilarity": 0.9949,
+        "chroma": [
+          0.227861,
+          0.053319,
+          0.043141,
+          0.065154,
+          0.046252,
+          0.106585,
+          0.044704,
+          0.068379,
+          0.14518,
+          0.046377,
+          0.105276,
+          0.047772
+        ]
+      },
+      "sha256": "3ae6a399866661d54eb50ddb009617955688b354ceea17d4923646484e4a17fb",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "deep_low_drone_v2",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/deep_low_drone_v2.mp3",
+        "prompt": "Instrumental dark ambient sound material, free-time, intensity 1/10. One deep sustained synthesizer drone is the only foreground identity. Low register, rounded sub-bass with audible low-mid body, extremely slow organic movement, one stable pitch center, no harmonic journey, no cadence, and an unresolved ending. Soft attacks, controlled bass, restrained stereo space, stable loudness, suitable for crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, drums, percussion, heartbeat, rhythmic pulse, melody, bright overtones, impact, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:42:45.719Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_deep_low_drone_v3",
+      "candidateId": "deep_low_drone_v3",
+      "name": "Deep Low Drone 3",
+      "family": "deep_low_drone",
+      "variant": 3,
+      "elementRole": "low_support",
+      "goals": [
+        "sleep"
+      ],
+      "tags": [
+        "deep",
+        "drone",
+        "dark_warm",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/deep_low_drone/deep_low_drone_v3.mp3",
+      "defaultVolume": 32,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "D",
+        "rootIndex": 2,
+        "mode": "minor",
+        "confidence": 0.1347,
+        "profileScore": 0.8076
+      },
+      "acoustic": {
+        "durationSeconds": 28.772,
+        "bytes": 692184,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -21.0,
+        "truePeakDb": -8.9,
+        "estimatedTempoBpm": 152.0,
+        "beatCount": 54,
+        "onsetDensityPerSecond": 4.4196,
+        "spectralCentroidHz": 607.71,
+        "loopTonalSimilarity": 0.0987,
+        "chroma": [
+          0.073774,
+          0.035234,
+          0.157282,
+          0.047718,
+          0.131228,
+          0.218069,
+          0.040824,
+          0.032125,
+          0.025855,
+          0.178337,
+          0.028956,
+          0.030599
+        ]
+      },
+      "sha256": "f4206c56ec29f4cbe516a0fb69400c5d136e6036e5293e777dfc47f14b318247",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "deep_low_drone_v3",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/deep_low_drone_v3.mp3",
+        "prompt": "Instrumental dark ambient sound material, free-time, intensity 1/10. One deep sustained synthesizer drone is the only foreground identity. Low register, rounded sub-bass with audible low-mid body, extremely slow organic movement, one stable pitch center, no harmonic journey, no cadence, and an unresolved ending. Soft attacks, controlled bass, restrained stereo space, stable loudness, suitable for crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, drums, percussion, heartbeat, rhythmic pulse, melody, bright overtones, impact, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:42:55.520Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_felt_piano_phrase_v1",
+      "candidateId": "felt_piano_phrase_v1",
+      "name": "Sparse Felt Piano Phrase 1",
+      "family": "felt_piano_phrase",
+      "variant": 1,
+      "elementRole": "melody",
+      "goals": [
+        "sleep",
+        "calm"
+      ],
+      "tags": [
+        "felt_piano",
+        "sparse",
+        "soft_attack",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/felt_piano_phrase/felt_piano_phrase_v1.mp3",
+      "defaultVolume": 22,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "C",
+        "rootIndex": 0,
+        "mode": "major",
+        "confidence": 0.3065,
+        "profileScore": 0.9528
+      },
+      "acoustic": {
+        "durationSeconds": 22.059,
+        "bytes": 531061,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -21.4,
+        "truePeakDb": -5.0,
+        "estimatedTempoBpm": 143.55,
+        "beatCount": 46,
+        "onsetDensityPerSecond": 1.7457,
+        "spectralCentroidHz": 683.88,
+        "loopTonalSimilarity": 0.8464,
+        "chroma": [
+          0.263907,
+          0.0412,
+          0.055556,
+          0.033536,
+          0.118126,
+          0.138353,
+          0.040413,
+          0.144328,
+          0.028665,
+          0.066414,
+          0.035684,
+          0.03382
+        ]
+      },
+      "sha256": "357d4843a0de828699667506f5bde5ea503ec7dbaf5751235c06a5fdf5db76f1",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "felt_piano_phrase_v1",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/felt_piano_phrase_v1.mp3",
+        "prompt": "Instrumental minimalist ambient phrase at 48 BPM and intensity 1/10. Solo soft felt piano is the only instrument. A very sparse four-note motif in the middle-low register, gentle touch, long pauses, narrow pitch range, simple open harmony implied by single notes, small natural variation, no dramatic resolution, and a quiet unfinished ending. Intimate dry-to-moderate room sound with soft mechanical texture and no accompaniment. No singing, spoken voice, choir, synthesizer pad, strings, guitar, bass, drums, percussion, arpeggio, dense chords, catchy hook, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:43:35.530Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_felt_piano_phrase_v2",
+      "candidateId": "felt_piano_phrase_v2",
+      "name": "Sparse Felt Piano Phrase 2",
+      "family": "felt_piano_phrase",
+      "variant": 2,
+      "elementRole": "melody",
+      "goals": [
+        "sleep",
+        "calm"
+      ],
+      "tags": [
+        "felt_piano",
+        "sparse",
+        "soft_attack",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/felt_piano_phrase/felt_piano_phrase_v2.mp3",
+      "defaultVolume": 22,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "C",
+        "rootIndex": 0,
+        "mode": "major",
+        "confidence": 0.023,
+        "profileScore": 0.8123
+      },
+      "acoustic": {
+        "durationSeconds": 19.473,
+        "bytes": 468994,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -22.6,
+        "truePeakDb": -6.4,
+        "estimatedTempoBpm": 152.0,
+        "beatCount": 38,
+        "onsetDensityPerSecond": 2.9805,
+        "spectralCentroidHz": 527.08,
+        "loopTonalSimilarity": 0.5744,
+        "chroma": [
+          0.276043,
+          0.048487,
+          0.062936,
+          0.059474,
+          0.034886,
+          0.081266,
+          0.041111,
+          0.182104,
+          0.039824,
+          0.04374,
+          0.078295,
+          0.051833
+        ]
+      },
+      "sha256": "5823e05e2e67fa7ee10f011e58a7856035d3f8cc990edb5836c2d942966e157d",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "felt_piano_phrase_v2",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/felt_piano_phrase_v2.mp3",
+        "prompt": "Instrumental minimalist ambient phrase at 48 BPM and intensity 1/10. Solo soft felt piano is the only instrument. A very sparse four-note motif in the middle-low register, gentle touch, long pauses, narrow pitch range, simple open harmony implied by single notes, small natural variation, no dramatic resolution, and a quiet unfinished ending. Intimate dry-to-moderate room sound with soft mechanical texture and no accompaniment. No singing, spoken voice, choir, synthesizer pad, strings, guitar, bass, drums, percussion, arpeggio, dense chords, catchy hook, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:43:44.339Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_felt_piano_phrase_v3",
+      "candidateId": "felt_piano_phrase_v3",
+      "name": "Sparse Felt Piano Phrase 3",
+      "family": "felt_piano_phrase",
+      "variant": 3,
+      "elementRole": "melody",
+      "goals": [
+        "sleep",
+        "calm"
+      ],
+      "tags": [
+        "felt_piano",
+        "sparse",
+        "soft_attack",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/felt_piano_phrase/felt_piano_phrase_v3.mp3",
+      "defaultVolume": 22,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "F",
+        "rootIndex": 5,
+        "mode": "major",
+        "confidence": 0.0357,
+        "profileScore": 0.8286
+      },
+      "acoustic": {
+        "durationSeconds": 28.485,
+        "bytes": 685288,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -22.9,
+        "truePeakDb": -9.4,
+        "estimatedTempoBpm": 152.0,
+        "beatCount": 65,
+        "onsetDensityPerSecond": 2.001,
+        "spectralCentroidHz": 699.28,
+        "loopTonalSimilarity": 0.8198,
+        "chroma": [
+          0.220939,
+          0.050262,
+          0.060078,
+          0.037081,
+          0.079911,
+          0.143272,
+          0.047226,
+          0.089133,
+          0.037802,
+          0.085367,
+          0.103368,
+          0.045561
+        ]
+      },
+      "sha256": "2318d897d5d1f609e0bb442c9dd4cef628ab45777cb5d74a37dbbcb433821c1d",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "felt_piano_phrase_v3",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/felt_piano_phrase_v3.mp3",
+        "prompt": "Instrumental minimalist ambient phrase at 48 BPM and intensity 1/10. Solo soft felt piano is the only instrument. A very sparse four-note motif in the middle-low register, gentle touch, long pauses, narrow pitch range, simple open harmony implied by single notes, small natural variation, no dramatic resolution, and a quiet unfinished ending. Intimate dry-to-moderate room sound with soft mechanical texture and no accompaniment. No singing, spoken voice, choir, synthesizer pad, strings, guitar, bass, drums, percussion, arpeggio, dense chords, catchy hook, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:43:53.187Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_nylon_guitar_phrase_v1",
+      "candidateId": "nylon_guitar_phrase_v1",
+      "name": "Sparse Nylon Guitar Phrase 1",
+      "family": "nylon_guitar_phrase",
+      "variant": 1,
+      "elementRole": "melody",
+      "goals": [
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "nylon_guitar",
+        "fingerpicked",
+        "soft",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/nylon_guitar_phrase/nylon_guitar_phrase_v1.mp3",
+      "defaultVolume": 23,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "A",
+        "rootIndex": 9,
+        "mode": "major",
+        "confidence": 0.0784,
+        "profileScore": 0.74
+      },
+      "acoustic": {
+        "durationSeconds": 28.772,
+        "bytes": 692184,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -22.1,
+        "truePeakDb": -10.1,
+        "estimatedTempoBpm": 123.05,
+        "beatCount": 63,
+        "onsetDensityPerSecond": 1.6898,
+        "spectralCentroidHz": 501.47,
+        "loopTonalSimilarity": 0.4864,
+        "chroma": [
+          0.042265,
+          0.029111,
+          0.082713,
+          0.035243,
+          0.117418,
+          0.058068,
+          0.106272,
+          0.07564,
+          0.094613,
+          0.271876,
+          0.055191,
+          0.031589
+        ]
+      },
+      "sha256": "a835ded259c8bd8dafbc100b3b1eb1a7febc9365faac9c49f084b40bfa304974",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "nylon_guitar_phrase_v1",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/nylon_guitar_phrase_v1.mp3",
+        "prompt": "Instrumental minimalist ambient phrase at 54 BPM and intensity 2/10. Solo nylon-string acoustic guitar is the only instrument. A sparse four-note fingerpicked motif in the middle register, warm fingertip attack, long pauses, narrow pitch range, gentle repetition with small variations, no full strummed chords, no cadence, and a quiet unfinished ending. Intimate natural room recording with restrained delay and no accompaniment. No singing, spoken voice, choir, steel-string guitar, piano, synthesizer pad, strings, bass, drums, percussion, rhythmic groove, fast arpeggio, catchy hook, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:44:27.869Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_nylon_guitar_phrase_v2",
+      "candidateId": "nylon_guitar_phrase_v2",
+      "name": "Sparse Nylon Guitar Phrase 2",
+      "family": "nylon_guitar_phrase",
+      "variant": 2,
+      "elementRole": "melody",
+      "goals": [
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "nylon_guitar",
+        "fingerpicked",
+        "soft",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/nylon_guitar_phrase/nylon_guitar_phrase_v2.mp3",
+      "defaultVolume": 23,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "D#",
+        "rootIndex": 3,
+        "mode": "major",
+        "confidence": 0.2049,
+        "profileScore": 0.8408
+      },
+      "acoustic": {
+        "durationSeconds": 28.772,
+        "bytes": 692184,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -23.0,
+        "truePeakDb": -10.2,
+        "estimatedTempoBpm": 129.2,
+        "beatCount": 68,
+        "onsetDensityPerSecond": 2.3398,
+        "spectralCentroidHz": 588.49,
+        "loopTonalSimilarity": 0.7776,
+        "chroma": [
+          0.06434,
+          0.024472,
+          0.057979,
+          0.126813,
+          0.027894,
+          0.081187,
+          0.044452,
+          0.132498,
+          0.147589,
+          0.052739,
+          0.205673,
+          0.034365
+        ]
+      },
+      "sha256": "72a05a8a75504eff8576cb526a76fbfcf191b519dacdc73fb1032e82f37d1622",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "nylon_guitar_phrase_v2",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/nylon_guitar_phrase_v2.mp3",
+        "prompt": "Instrumental minimalist ambient phrase at 54 BPM and intensity 2/10. Solo nylon-string acoustic guitar is the only instrument. A sparse four-note fingerpicked motif in the middle register, warm fingertip attack, long pauses, narrow pitch range, gentle repetition with small variations, no full strummed chords, no cadence, and a quiet unfinished ending. Intimate natural room recording with restrained delay and no accompaniment. No singing, spoken voice, choir, steel-string guitar, piano, synthesizer pad, strings, bass, drums, percussion, rhythmic groove, fast arpeggio, catchy hook, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:44:41.577Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_nylon_guitar_phrase_v3",
+      "candidateId": "nylon_guitar_phrase_v3",
+      "name": "Sparse Nylon Guitar Phrase 3",
+      "family": "nylon_guitar_phrase",
+      "variant": 3,
+      "elementRole": "melody",
+      "goals": [
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "nylon_guitar",
+        "fingerpicked",
+        "soft",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/nylon_guitar_phrase/nylon_guitar_phrase_v3.mp3",
+      "defaultVolume": 23,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "E",
+        "rootIndex": 4,
+        "mode": "major",
+        "confidence": 0.0071,
+        "profileScore": 0.6941
+      },
+      "acoustic": {
+        "durationSeconds": 20.335,
+        "bytes": 489683,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -22.9,
+        "truePeakDb": -5.8,
+        "estimatedTempoBpm": 129.2,
+        "beatCount": 46,
+        "onsetDensityPerSecond": 2.4625,
+        "spectralCentroidHz": 624.31,
+        "loopTonalSimilarity": 0.6108,
+        "chroma": [
+          0.075217,
+          0.029069,
+          0.070815,
+          0.042062,
+          0.181604,
+          0.037541,
+          0.160064,
+          0.075654,
+          0.083113,
+          0.090046,
+          0.041037,
+          0.11378
+        ]
+      },
+      "sha256": "56f81774386d811fb76d393d398476b4d14dc22ff077541f8d7002d0b2e13fab",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "nylon_guitar_phrase_v3",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/nylon_guitar_phrase_v3.mp3",
+        "prompt": "Instrumental minimalist ambient phrase at 54 BPM and intensity 2/10. Solo nylon-string acoustic guitar is the only instrument. A sparse four-note fingerpicked motif in the middle register, warm fingertip attack, long pauses, narrow pitch range, gentle repetition with small variations, no full strummed chords, no cadence, and a quiet unfinished ending. Intimate natural room recording with restrained delay and no accompaniment. No singing, spoken voice, choir, steel-string guitar, piano, synthesizer pad, strings, bass, drums, percussion, rhythmic groove, fast arpeggio, catchy hook, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:44:49.456Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_open_fifth_harmonic_bed_v1",
+      "candidateId": "open_fifth_harmonic_bed_v1",
+      "name": "Open Fifth Harmonic Bed 1",
+      "family": "open_fifth_harmonic_bed",
+      "variant": 1,
+      "elementRole": "harmony",
+      "goals": [
+        "sleep",
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "open_fifth",
+        "harmonic_bed",
+        "neutral",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/open_fifth_harmonic_bed/open_fifth_harmonic_bed_v1.mp3",
+      "defaultVolume": 31,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "A#",
+        "rootIndex": 10,
+        "mode": "minor",
+        "confidence": 0.0638,
+        "profileScore": 0.8049
+      },
+      "acoustic": {
+        "durationSeconds": 28.772,
+        "bytes": 692184,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -24.4,
+        "truePeakDb": -9.2,
+        "estimatedTempoBpm": 117.45,
+        "beatCount": 59,
+        "onsetDensityPerSecond": 0.7474,
+        "spectralCentroidHz": 701.6,
+        "loopTonalSimilarity": 0.6666,
+        "chroma": [
+          0.09545,
+          0.107599,
+          0.04586,
+          0.082863,
+          0.0344,
+          0.17266,
+          0.076627,
+          0.082513,
+          0.091172,
+          0.031585,
+          0.150335,
+          0.028936
+        ]
+      },
+      "sha256": "9e64b1994555a6593c1a91128bcc3470f28a2eb57dd344128a289e26d978f96c",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "open_fifth_harmonic_bed_v1",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/open_fifth_harmonic_bed_v1.mp3",
+        "prompt": "Instrumental ambient harmonic material, free-time, intensity 1/10. One soft blended synthesizer tone sustains a neutral open fifth as the only identity. Slow overlapping swells, no melody, no bass line, no chord progression, no tonal resolution, stable low density, consistent dynamics, and an unresolved ending. Soft attacks, warm middle register, restrained stereo width and reverb, designed as an editable background bed and for crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, drums, percussion, pulse, arpeggio, lead tone, bright transient, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:45:11.411Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_open_fifth_harmonic_bed_v2",
+      "candidateId": "open_fifth_harmonic_bed_v2",
+      "name": "Open Fifth Harmonic Bed 2",
+      "family": "open_fifth_harmonic_bed",
+      "variant": 2,
+      "elementRole": "harmony",
+      "goals": [
+        "sleep",
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "open_fifth",
+        "harmonic_bed",
+        "neutral",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/open_fifth_harmonic_bed/open_fifth_harmonic_bed_v2.mp3",
+      "defaultVolume": 31,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "E",
+        "rootIndex": 4,
+        "mode": "minor",
+        "confidence": 0.084,
+        "profileScore": 0.7827
+      },
+      "acoustic": {
+        "durationSeconds": 28.772,
+        "bytes": 692184,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -22.6,
+        "truePeakDb": -5.6,
+        "estimatedTempoBpm": 143.55,
+        "beatCount": 50,
+        "onsetDensityPerSecond": 0.065,
+        "spectralCentroidHz": 1558.94,
+        "loopTonalSimilarity": 0.2526,
+        "chroma": [
+          0.115791,
+          0.027867,
+          0.048411,
+          0.031018,
+          0.264411,
+          0.128714,
+          0.036262,
+          0.16026,
+          0.033065,
+          0.087122,
+          0.02154,
+          0.045539
+        ]
+      },
+      "sha256": "e91dd2361d3b16df5cda3a27a238a0f09f71a92bc3a1e88bf25efc4f40336641",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "open_fifth_harmonic_bed_v2",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/open_fifth_harmonic_bed_v2.mp3",
+        "prompt": "Instrumental ambient harmonic material, free-time, intensity 1/10. One soft blended synthesizer tone sustains a neutral open fifth as the only identity. Slow overlapping swells, no melody, no bass line, no chord progression, no tonal resolution, stable low density, consistent dynamics, and an unresolved ending. Soft attacks, warm middle register, restrained stereo width and reverb, designed as an editable background bed and for crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, drums, percussion, pulse, arpeggio, lead tone, bright transient, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:45:22.326Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_open_fifth_harmonic_bed_v3",
+      "candidateId": "open_fifth_harmonic_bed_v3",
+      "name": "Open Fifth Harmonic Bed 3",
+      "family": "open_fifth_harmonic_bed",
+      "variant": 3,
+      "elementRole": "harmony",
+      "goals": [
+        "sleep",
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "open_fifth",
+        "harmonic_bed",
+        "neutral",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/open_fifth_harmonic_bed/open_fifth_harmonic_bed_v3.mp3",
+      "defaultVolume": 31,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "B",
+        "rootIndex": 11,
+        "mode": "major",
+        "confidence": 0.0668,
+        "profileScore": 0.7626
+      },
+      "acoustic": {
+        "durationSeconds": 26.97,
+        "bytes": 648925,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -23.3,
+        "truePeakDb": -5.1,
+        "estimatedTempoBpm": 60.09,
+        "beatCount": 24,
+        "onsetDensityPerSecond": 2.3128,
+        "spectralCentroidHz": 1159.7,
+        "loopTonalSimilarity": 0.6711,
+        "chroma": [
+          0.037058,
+          0.076291,
+          0.037567,
+          0.096567,
+          0.120338,
+          0.042687,
+          0.154885,
+          0.066142,
+          0.135923,
+          0.080696,
+          0.03587,
+          0.115976
+        ]
+      },
+      "sha256": "797b8fd7034e998b7ed26c43b739ae884f5b0d5175a7b4dc2d9322f70557e6c5",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "open_fifth_harmonic_bed_v3",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/open_fifth_harmonic_bed_v3.mp3",
+        "prompt": "Instrumental ambient harmonic material, free-time, intensity 1/10. One soft blended synthesizer tone sustains a neutral open fifth as the only identity. Slow overlapping swells, no melody, no bass line, no chord progression, no tonal resolution, stable low density, consistent dynamics, and an unresolved ending. Soft attacks, warm middle register, restrained stereo width and reverb, designed as an editable background bed and for crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, drums, percussion, pulse, arpeggio, lead tone, bright transient, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:45:32.110Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_sparse_tonal_texture_v1",
+      "candidateId": "sparse_tonal_texture_v1",
+      "name": "Sparse Tonal Texture 1",
+      "family": "sparse_tonal_texture",
+      "variant": 1,
+      "elementRole": "texture",
+      "goals": [
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "tonal_texture",
+        "granular",
+        "sparse",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/sparse_tonal_texture/sparse_tonal_texture_v1.mp3",
+      "defaultVolume": 18,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "F",
+        "rootIndex": 5,
+        "mode": "major",
+        "confidence": 0.0755,
+        "profileScore": 0.7
+      },
+      "acoustic": {
+        "durationSeconds": 23.678,
+        "bytes": 569931,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -22.7,
+        "truePeakDb": -4.6,
+        "estimatedTempoBpm": 89.1,
+        "beatCount": 32,
+        "onsetDensityPerSecond": 2.8429,
+        "spectralCentroidHz": 2373.48,
+        "loopTonalSimilarity": 0.8256,
+        "chroma": [
+          0.121468,
+          0.043729,
+          0.041517,
+          0.040981,
+          0.071076,
+          0.163198,
+          0.102805,
+          0.124644,
+          0.07528,
+          0.111135,
+          0.053301,
+          0.050866
+        ]
+      },
+      "sha256": "bc8149038d1b44322c567667c123bcc7b6e484ce875f33c586540d8e7f727891",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "sparse_tonal_texture_v1",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/sparse_tonal_texture_v1.mp3",
+        "prompt": "Instrumental ambient tonal texture, free-time, intensity 1/10. A single soft granular glass-like texture is the only identity, with distant rounded partials emerging very slowly from silence. Sparse, low-event-density, harmonically neutral, no identifiable melody, no chord progression, no beat, stable dynamics, and an unresolved ending. Diffuse wide space, softened high frequencies, no sharp attacks, suitable as a subtle editable detail layer and for crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, bowls, bells, drums, percussion, pulse, bass line, hook, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:45:41.713Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_sparse_tonal_texture_v2",
+      "candidateId": "sparse_tonal_texture_v2",
+      "name": "Sparse Tonal Texture 2",
+      "family": "sparse_tonal_texture",
+      "variant": 2,
+      "elementRole": "texture",
+      "goals": [
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "tonal_texture",
+        "granular",
+        "sparse",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/sparse_tonal_texture/sparse_tonal_texture_v2.mp3",
+      "defaultVolume": 18,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "F",
+        "rootIndex": 5,
+        "mode": "minor",
+        "confidence": 0.0239,
+        "profileScore": 0.6803
+      },
+      "acoustic": {
+        "durationSeconds": 27.936,
+        "bytes": 672122,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -25.7,
+        "truePeakDb": -5.8,
+        "estimatedTempoBpm": 117.45,
+        "beatCount": 15,
+        "onsetDensityPerSecond": 1.1691,
+        "spectralCentroidHz": 836.66,
+        "loopTonalSimilarity": 0.5287,
+        "chroma": [
+          0.067553,
+          0.044693,
+          0.03914,
+          0.044817,
+          0.080512,
+          0.349776,
+          0.094893,
+          0.074626,
+          0.063076,
+          0.054896,
+          0.042934,
+          0.043085
+        ]
+      },
+      "sha256": "0abe027fd3f39d05fb7a6fb0b8329fb1708aadef1213652d921d26987b31a06e",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "sparse_tonal_texture_v2",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/sparse_tonal_texture_v2.mp3",
+        "prompt": "Instrumental ambient tonal texture, free-time, intensity 1/10. A single soft granular glass-like texture is the only identity, with distant rounded partials emerging very slowly from silence. Sparse, low-event-density, harmonically neutral, no identifiable melody, no chord progression, no beat, stable dynamics, and an unresolved ending. Diffuse wide space, softened high frequencies, no sharp attacks, suitable as a subtle editable detail layer and for crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, bowls, bells, drums, percussion, pulse, bass line, hook, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:45:51.808Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_sparse_tonal_texture_v3",
+      "candidateId": "sparse_tonal_texture_v3",
+      "name": "Sparse Tonal Texture 3",
+      "family": "sparse_tonal_texture",
+      "variant": 3,
+      "elementRole": "texture",
+      "goals": [
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "tonal_texture",
+        "granular",
+        "sparse",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/sparse_tonal_texture/sparse_tonal_texture_v3.mp3",
+      "defaultVolume": 18,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "A#",
+        "rootIndex": 10,
+        "mode": "major",
+        "confidence": 0.1016,
+        "profileScore": 0.6791
+      },
+      "acoustic": {
+        "durationSeconds": 27.544,
+        "bytes": 662718,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -22.1,
+        "truePeakDb": -5.8,
+        "estimatedTempoBpm": 117.45,
+        "beatCount": 56,
+        "onsetDensityPerSecond": 1.997,
+        "spectralCentroidHz": 2524.31,
+        "loopTonalSimilarity": 0.4901,
+        "chroma": [
+          0.078724,
+          0.067181,
+          0.07195,
+          0.08119,
+          0.076235,
+          0.085425,
+          0.061192,
+          0.077658,
+          0.09948,
+          0.08468,
+          0.146736,
+          0.06955
+        ]
+      },
+      "sha256": "a245994aa50498aef12bbd566ad9ffa08c8bd1046af616eb99148a7f51919388",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "sparse_tonal_texture_v3",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/sparse_tonal_texture_v3.mp3",
+        "prompt": "Instrumental ambient tonal texture, free-time, intensity 1/10. A single soft granular glass-like texture is the only identity, with distant rounded partials emerging very slowly from silence. Sparse, low-event-density, harmonically neutral, no identifiable melody, no chord progression, no beat, stable dynamics, and an unresolved ending. Diffuse wide space, softened high frequencies, no sharp attacks, suitable as a subtle editable detail layer and for crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, bowls, bells, drums, percussion, pulse, bass line, hook, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:46:01.868Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_warm_analog_pad_v1",
+      "candidateId": "warm_analog_pad_v1",
+      "name": "Warm Analog Pad 1",
+      "family": "warm_analog_pad",
+      "variant": 1,
+      "elementRole": "harmony",
+      "goals": [
+        "sleep",
+        "calm"
+      ],
+      "tags": [
+        "warm",
+        "pad",
+        "low_motion",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/warm_analog_pad/warm_analog_pad_v1.mp3",
+      "defaultVolume": 34,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "D#",
+        "rootIndex": 3,
+        "mode": "major",
+        "confidence": 0.1548,
+        "profileScore": 0.6888
+      },
+      "acoustic": {
+        "durationSeconds": 24.593,
+        "bytes": 591874,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -23.3,
+        "truePeakDb": -5.2,
+        "estimatedTempoBpm": 60.09,
+        "beatCount": 27,
+        "onsetDensityPerSecond": 3.798,
+        "spectralCentroidHz": 1654.15,
+        "loopTonalSimilarity": 0.853,
+        "chroma": [
+          0.053401,
+          0.047891,
+          0.049335,
+          0.116637,
+          0.054156,
+          0.075551,
+          0.091777,
+          0.092192,
+          0.109917,
+          0.10133,
+          0.140926,
+          0.066887
+        ]
+      },
+      "sha256": "66ae247210137f8469ed08c321c37375cb5686dcf9016dde985fa2ee6852b8cf",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "warm_analog_pad_v1",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/warm_analog_pad_v1.mp3",
+        "prompt": "Instrumental ambient sound material, free-time, intensity 1/10. A single continuous warm analog synthesizer pad is the only foreground identity. Dark-warm timbre, soft low-mid register, extremely slow filter movement, sustained open fifth harmony, stable dynamics, no chord progression, and a neutral unresolved ending. Clean wide recording with soft attacks and restrained reverb. Keep the texture minimal and consistent for editing and crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, drums, percussion, rhythmic pulse, arpeggio, lead melody, chimes, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:42:07.815Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_warm_analog_pad_v2",
+      "candidateId": "warm_analog_pad_v2",
+      "name": "Warm Analog Pad 2",
+      "family": "warm_analog_pad",
+      "variant": 2,
+      "elementRole": "harmony",
+      "goals": [
+        "sleep",
+        "calm"
+      ],
+      "tags": [
+        "warm",
+        "pad",
+        "low_motion",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/warm_analog_pad/warm_analog_pad_v2.mp3",
+      "defaultVolume": 34,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "E",
+        "rootIndex": 4,
+        "mode": "major",
+        "confidence": 0.0216,
+        "profileScore": 0.7092
+      },
+      "acoustic": {
+        "durationSeconds": 24.07,
+        "bytes": 579335,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -23.5,
+        "truePeakDb": -5.5,
+        "estimatedTempoBpm": 117.45,
+        "beatCount": 34,
+        "onsetDensityPerSecond": 0.1534,
+        "spectralCentroidHz": 929.55,
+        "loopTonalSimilarity": 0.8451,
+        "chroma": [
+          0.018609,
+          0.017993,
+          0.098592,
+          0.045739,
+          0.515088,
+          0.065187,
+          0.026277,
+          0.013682,
+          0.0312,
+          0.046267,
+          0.017055,
+          0.10431
+        ]
+      },
+      "sha256": "b72eed5b31f610f84466a01ff07f085ebcfa5d3fb77754cf4ad495a2a5aa119e",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "warm_analog_pad_v2",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/warm_analog_pad_v2.mp3",
+        "prompt": "Instrumental ambient sound material, free-time, intensity 1/10. A single continuous warm analog synthesizer pad is the only foreground identity. Dark-warm timbre, soft low-mid register, extremely slow filter movement, sustained open fifth harmony, stable dynamics, no chord progression, and a neutral unresolved ending. Clean wide recording with soft attacks and restrained reverb. Keep the texture minimal and consistent for editing and crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, drums, percussion, rhythmic pulse, arpeggio, lead melody, chimes, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:42:17.240Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_warm_analog_pad_v3",
+      "candidateId": "warm_analog_pad_v3",
+      "name": "Warm Analog Pad 3",
+      "family": "warm_analog_pad",
+      "variant": 3,
+      "elementRole": "harmony",
+      "goals": [
+        "sleep",
+        "calm"
+      ],
+      "tags": [
+        "warm",
+        "pad",
+        "low_motion",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/warm_analog_pad/warm_analog_pad_v3.mp3",
+      "defaultVolume": 34,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "G",
+        "rootIndex": 7,
+        "mode": "minor",
+        "confidence": 0.2601,
+        "profileScore": 0.8974
+      },
+      "acoustic": {
+        "durationSeconds": 28.694,
+        "bytes": 690303,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -22.5,
+        "truePeakDb": -10.8,
+        "estimatedTempoBpm": 234.91,
+        "beatCount": 64,
+        "onsetDensityPerSecond": 5.3757,
+        "spectralCentroidHz": 431.75,
+        "loopTonalSimilarity": 0.288,
+        "chroma": [
+          0.013887,
+          0.019819,
+          0.21566,
+          0.031018,
+          0.016933,
+          0.111573,
+          0.035676,
+          0.268845,
+          0.035117,
+          0.026397,
+          0.198525,
+          0.02655
+        ]
+      },
+      "sha256": "055a6f1390a225726b4c45528c2a087631838184625dde77c87f8ffa7bd85a9f",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "warm_analog_pad_v3",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/warm_analog_pad_v3.mp3",
+        "prompt": "Instrumental ambient sound material, free-time, intensity 1/10. A single continuous warm analog synthesizer pad is the only foreground identity. Dark-warm timbre, soft low-mid register, extremely slow filter movement, sustained open fifth harmony, stable dynamics, no chord progression, and a neutral unresolved ending. Clean wide recording with soft attacks and restrained reverb. Keep the texture minimal and consistent for editing and crossfaded looping. No singing, spoken voice, choir, piano, guitar, strings, drums, percussion, rhythmic pulse, arpeggio, lead melody, chimes, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:42:26.396Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_warm_rhodes_phrase_v1",
+      "candidateId": "warm_rhodes_phrase_v1",
+      "name": "Warm Rhodes Phrase 1",
+      "family": "warm_rhodes_phrase",
+      "variant": 1,
+      "elementRole": "melody",
+      "goals": [
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "rhodes",
+        "sparse",
+        "warm",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/warm_rhodes_phrase/warm_rhodes_phrase_v1.mp3",
+      "defaultVolume": 24,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "C",
+        "rootIndex": 0,
+        "mode": "major",
+        "confidence": 0.0929,
+        "profileScore": 0.8814
+      },
+      "acoustic": {
+        "durationSeconds": 28.772,
+        "bytes": 692184,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -22.7,
+        "truePeakDb": -10.7,
+        "estimatedTempoBpm": 60.09,
+        "beatCount": 31,
+        "onsetDensityPerSecond": 1.4624,
+        "spectralCentroidHz": 365.96,
+        "loopTonalSimilarity": 0.3952,
+        "chroma": [
+          0.180107,
+          0.028288,
+          0.090526,
+          0.023295,
+          0.161075,
+          0.051265,
+          0.070874,
+          0.147967,
+          0.02387,
+          0.114148,
+          0.020635,
+          0.08795
+        ]
+      },
+      "sha256": "62b704abd7d5526a6cc5d9bf28c5b49a6c8a981e3f863990dc204c62a7261b0b",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "warm_rhodes_phrase_v1",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/warm_rhodes_phrase_v1.mp3",
+        "prompt": "Instrumental minimalist ambient phrase at 60 BPM and intensity 2/10. Solo warm Rhodes electric piano is the only instrument. A restrained five-note motif in a narrow middle register, soft rounded attacks, long spaces, subtle repetition with small variations, harmonically neutral, no emotional cadence, and an unfinished ending. Clean close recording with restrained tremolo and limited reverb, no accompaniment. No singing, spoken voice, choir, acoustic piano, synthesizer pad, strings, guitar, bass, drums, percussion, arpeggio, dense chords, bright bell tone, catchy hook, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:44:02.565Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_warm_rhodes_phrase_v2",
+      "candidateId": "warm_rhodes_phrase_v2",
+      "name": "Warm Rhodes Phrase 2",
+      "family": "warm_rhodes_phrase",
+      "variant": 2,
+      "elementRole": "melody",
+      "goals": [
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "rhodes",
+        "sparse",
+        "warm",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/warm_rhodes_phrase/warm_rhodes_phrase_v2.mp3",
+      "defaultVolume": 24,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "F",
+        "rootIndex": 5,
+        "mode": "major",
+        "confidence": 0.0264,
+        "profileScore": 0.7417
+      },
+      "acoustic": {
+        "durationSeconds": 25.82,
+        "bytes": 621340,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -23.1,
+        "truePeakDb": -4.8,
+        "estimatedTempoBpm": 117.45,
+        "beatCount": 41,
+        "onsetDensityPerSecond": 1.4737,
+        "spectralCentroidHz": 740.45,
+        "loopTonalSimilarity": 0.5144,
+        "chroma": [
+          0.146328,
+          0.043629,
+          0.066367,
+          0.12583,
+          0.045092,
+          0.218379,
+          0.038029,
+          0.067043,
+          0.056371,
+          0.034356,
+          0.120697,
+          0.037878
+        ]
+      },
+      "sha256": "52f9f43e53e1dabd08d6c3f625a48b98e9737539a37da1f181507aba9c312a25",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "warm_rhodes_phrase_v2",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/warm_rhodes_phrase_v2.mp3",
+        "prompt": "Instrumental minimalist ambient phrase at 60 BPM and intensity 2/10. Solo warm Rhodes electric piano is the only instrument. A restrained five-note motif in a narrow middle register, soft rounded attacks, long spaces, subtle repetition with small variations, harmonically neutral, no emotional cadence, and an unfinished ending. Clean close recording with restrained tremolo and limited reverb, no accompaniment. No singing, spoken voice, choir, acoustic piano, synthesizer pad, strings, guitar, bass, drums, percussion, arpeggio, dense chords, bright bell tone, catchy hook, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:44:10.560Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    },
+    {
+      "id": "stem_lyria_element_warm_rhodes_phrase_v3",
+      "candidateId": "warm_rhodes_phrase_v3",
+      "name": "Warm Rhodes Phrase 3",
+      "family": "warm_rhodes_phrase",
+      "variant": 3,
+      "elementRole": "melody",
+      "goals": [
+        "calm",
+        "focus"
+      ],
+      "tags": [
+        "rhodes",
+        "sparse",
+        "warm",
+        "voice_free",
+        "lyria_generated",
+        "foundational_element"
+      ],
+      "audioUrl": "/audio/music/foundational-elements-v1/warm_rhodes_phrase/warm_rhodes_phrase_v3.mp3",
+      "defaultVolume": 24,
+      "loop": {
+        "enabled": true,
+        "crossfadeSeconds": 2
+      },
+      "key": {
+        "root": "D",
+        "rootIndex": 2,
+        "mode": "major",
+        "confidence": 0.2202,
+        "profileScore": 0.8583
+      },
+      "acoustic": {
+        "durationSeconds": 28.772,
+        "bytes": 692184,
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -22.6,
+        "truePeakDb": -10.8,
+        "estimatedTempoBpm": 60.09,
+        "beatCount": 31,
+        "onsetDensityPerSecond": 1.0399,
+        "spectralCentroidHz": 330.22,
+        "loopTonalSimilarity": 0.8002,
+        "chroma": [
+          0.016987,
+          0.027812,
+          0.224973,
+          0.028761,
+          0.067651,
+          0.029538,
+          0.24822,
+          0.128409,
+          0.028033,
+          0.123669,
+          0.021125,
+          0.05482
+        ]
+      },
+      "sha256": "4d8ea1c7f295ba5040aff720e48ace27668cb03754bcd5455f9466ed83efdbff",
+      "source": {
+        "provider": "google-cloud-vertex-ai",
+        "product": "lyria-music-generation",
+        "model": "lyria-3-clip-preview",
+        "sourceCandidateId": "warm_rhodes_phrase_v3",
+        "sourceAudioUrl": "/audio/music/local-review/lyria-single-element-pilot-v1/audio/warm_rhodes_phrase_v3.mp3",
+        "prompt": "Instrumental minimalist ambient phrase at 60 BPM and intensity 2/10. Solo warm Rhodes electric piano is the only instrument. A restrained five-note motif in a narrow middle register, soft rounded attacks, long spaces, subtle repetition with small variations, harmonically neutral, no emotional cadence, and an unfinished ending. Clean close recording with restrained tremolo and limited reverb, no accompaniment. No singing, spoken voice, choir, acoustic piano, synthesizer pad, strings, guitar, bass, drums, percussion, arpeggio, dense chords, bright bell tone, catchy hook, climax, or sudden change.",
+        "generatedOn": "2026-07-22T12:44:18.532Z",
+        "projectId": "project-a8dea3a9-cd9d-40dd-867"
+      },
+      "rights": {
+        "sourceCreator": "SNOOZE via Google Vertex AI Lyria",
+        "licenseName": "Customer-generated output under Google Cloud service terms",
+        "licenseUrl": "https://cloud.google.com/terms/service-terms",
+        "commercialUseAllowed": true,
+        "derivativeUseAllowed": true,
+        "attributionRequired": false,
+        "rawRedistributionAllowed": true
+      },
+      "qa": {
+        "status": "approved",
+        "ownerReviewEvidence": "Owner proceeded after single-element, 10-minute combination, and 12-composition listening gates on 2026-07-22.",
+        "machineWarningsResolved": [
+          "near_digital_ceiling_normalized",
+          "loop_boundary_crossfaded"
+        ],
+        "collectionResidualRisk": "Multi-composition machine gate retained 2 near-duplicate pairs for human-aware selection."
+      }
+    }
+  ]
+}

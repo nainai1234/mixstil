@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "1.0.0",
+  "baselineId": "foundational-elements-formal-baseline-v1",
+  "status": "formal_gate_defined",
+  "productionAllowed": false,
+  "purpose": "Define the formal, composable foundation for personalized Sleep, Calm, and Focus soundscapes. Lyria clips are candidates unless they pass identity, voice-free, role, loop, and composition-compatibility gates.",
+  "principles": [
+    "Do not count mixed Lyria clips as playable instrument sources or independent stems.",
+    "Separate configured, generated candidate, machine passed, human passed, formal usable, and runtime integrated states.",
+    "Use Lyria only for candidate pad, drone, phrase, harmonic bed, texture, and special style gaps.",
+    "Use sample libraries, SoundFont, SFZ, or multisamples for playable instruments.",
+    "Use deterministic composition data for harmony templates and motifs.",
+    "Use deterministic DSP for noise, fixed frequency, and binaural offset configurations.",
+    "Do not make medical, healing, brainwave, heart-rate, or guaranteed outcome claims.",
+    "Voice-free Beta rejects singing, spoken voice, choir, chanting, and human-like vocal texture."
+  ],
+  "targets": {
+    "instrument_source": 6,
+    "music_template": 24,
+    "motif": 36,
+    "pad_drone": 12,
+    "environment_bed": 18,
+    "organic_texture": 12,
+    "accent_one_shot": 12,
+    "deterministic_acoustic_config": 6
+  },
+  "minimumVariantPolicy": {
+    "perFamily": 3,
+    "dimensions": ["loudness", "density", "timbre"]
+  },
+  "formalElementStates": [
+    "configured",
+    "generated_candidate",
+    "machine_passed",
+    "human_passed",
+    "formal_usable",
+    "runtime_integrated"
+  ],
+  "sourceRegisters": {
+    "existingLyriaElements": {
+      "path": "config/foundational-audio-elements-v1.json",
+      "formalUse": "candidate_music_material_only",
+      "reason": "These 24 files are approved for previous Quick Create demos, but they are fixed audio clips and cannot be counted as playable instruments, deterministic templates, or independent generated stems."
+    },
+    "lyriaExpansionCandidates": {
+      "path": "public/audio/music/local-review/lyria-foundational-expansion-v2/manifest.json",
+      "formalUse": "candidate_pool_only",
+      "expectedCandidates": 60,
+      "requiredProductionAllowed": false,
+      "reason": "These files still require human identity, voice-free, single-target, and loop-behavior review before any promotion."
+    },
+    "compositionMaterialLibrary": {
+      "path": "config/composition-material-library-v1.json",
+      "formalUse": "structured_music_material_seed",
+      "currentLimit": "Currently contains 12 harmony items and 12 motif items, below the formal target of 24 harmony templates and 36 motifs."
+    },
+    "formalNonMusicElements": {
+      "path": "config/formal-foundational-non-music-elements-v1.json",
+      "formalUse": "formal_candidate_registry",
+      "reason": "Fills the remaining pad/drone, environment bed, organic texture, and accent one-shot baseline counts while preserving candidate, human-review, and runtime gates."
+    },
+    "localInstrumentSources": {
+      "formalUse": "instrument_source_candidates",
+      "items": [
+        {
+          "id": "fluidr3_gm_soundfont",
+          "label": "FluidR3 GM SoundFont",
+          "path": "assets/soundfonts/FluidR3_GM.sf2",
+          "sourceType": "soundfont",
+          "candidateInstruments": ["piano", "electric_piano", "guitar", "strings", "woodwinds"],
+          "status": "file_present_runtime_not_formally_verified"
+        },
+        {
+          "id": "vcsl_kawai_soft_piano",
+          "label": "VSCL Kawai Soft Piano samples",
+          "path": "assets/audio-sources/vcsl-kawai-soft",
+          "sourceType": "multisample_directory",
+          "candidateInstruments": ["soft_piano"],
+          "status": "file_present_runtime_not_formally_verified"
+        },
+        {
+          "id": "discord_cc0_rhodes",
+          "label": "Discord CC0 Band Rhodes samples",
+          "path": "assets/audio-sources/discord-cc0-band/rhodes",
+          "sourceType": "multisample_directory",
+          "candidateInstruments": ["rhodes"],
+          "status": "file_present_runtime_not_formally_verified"
+        },
+        {
+          "id": "discord_cc0_guitar",
+          "label": "Discord CC0 Band guitar samples",
+          "path": "assets/audio-sources/discord-cc0-band/guitar",
+          "sourceType": "multisample_directory",
+          "candidateInstruments": ["acoustic_guitar"],
+          "status": "file_present_runtime_not_formally_verified"
+        }
+      ]
+    }
+  },
+  "promotionGates": {
+    "instrument_source": [
+      "source file or sample directory exists",
+      "license and source record present",
+      "note mapping or SoundFont preset mapping present",
+      "usable range documented",
+      "runtime loader verified",
+      "audible render smoke test passed"
+    ],
+    "music_template": [
+      "structured chord or note-event data, not MP3",
+      "goal and scene compatibility documented",
+      "mode or pitch-set compatibility documented",
+      "density and tempo range documented",
+      "no fixed complete melody required for every render"
+    ],
+    "motif": [
+      "structured notes, durations, rests, and velocity curve",
+      "compatible modes or pitch sets documented",
+      "ending behavior documented",
+      "seeded transformation rules documented"
+    ],
+    "pad_drone": [
+      "single dominant target identity",
+      "no voice or human-like vocal texture",
+      "no percussion or lead melody",
+      "loop or crossfade behavior verified",
+      "compatible with at least two composition plans"
+    ],
+    "environment_bed": [
+      "environment identity is clear",
+      "no music, voice, animals, or sudden events unless explicitly categorized",
+      "long-session fatigue risk reviewed",
+      "loop or extension behavior verified"
+    ],
+    "organic_texture": [
+      "single texture identity is clear",
+      "no voice, percussion pattern, or fixed melody",
+      "density and spectrum role documented",
+      "loop or one-shot behavior verified"
+    ],
+    "accent_one_shot": [
+      "one-shot behavior verified",
+      "onset count appropriate for the accent type",
+      "tail decay or trim point documented",
+      "not used as a loop bed"
+    ],
+    "deterministic_acoustic_config": [
+      "generated by deterministic DSP, not Lyria",
+      "signal parameters documented",
+      "no unsupported healing or medical claim",
+      "gain and safety limits documented"
+    ]
+  },
+  "nextProductionOrder": [
+    "Create the formal manifest and validation gate.",
+    "Promote verified instrument sources only after runtime render proof.",
+    "Expand structured harmony templates from 12 to 24.",
+    "Expand structured motifs from 12 to 36.",
+    "Review and promote eligible Lyria pad, drone, texture, environment, and accent candidates by category.",
+    "Add six deterministic acoustic configurations with DSP parameters.",
+    "Run two or more composition-plan listening proofs before calling the baseline internally usable."
+  ]
+}

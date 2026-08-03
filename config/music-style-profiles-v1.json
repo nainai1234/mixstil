@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "1.0.0",
+  "profiles": [
+    {
+      "id": "east_asian_pentatonic_lyrical_piano",
+      "version": "0.1.0",
+      "status": "draft",
+      "goals": ["calm"],
+      "tonal": {
+        "pitchClasses": [0, 2, 4, 7, 9],
+        "rangeMidi": [55, 76],
+        "maxLeapSemitones": 7
+      },
+      "melody": {
+        "motifNoteCount": [3, 5],
+        "firstMotifSeconds": [8, 18],
+        "contours": ["pickup_rise_third_stepwise_return", "arch_with_soft_open_end"],
+        "exactRepeatMax": 2,
+        "returnCount": [3, 5],
+        "highPointPositionRatio": [0.5, 0.7]
+      },
+      "rhythm": {
+        "meters": ["4/4"],
+        "bpm": [58, 64],
+        "onsetsPerBar": [1, 5],
+        "maxNonReleaseGapSeconds": 4.5,
+        "pulseSalienceMax": 0.25
+      },
+      "harmony": {
+        "harmonicRhythmBars": [2, 4],
+        "commonToneMinimum": 1,
+        "bassMotionSemitonesMax": 7,
+        "cadenceStyle": "soft_modal_or_plagal"
+      },
+      "form": {
+        "graph": ["layered_arrival", "theme", "answer", "restrained_contrast", "soft_return", "release"],
+        "secondHalfEnergy": "flat_or_falling"
+      },
+      "instrumentation": {
+        "roles": ["cc0_kawai_piano_primary", "piano_inner_response"],
+        "sourceRequirement": "approved_cc0_real_sample"
+      },
+      "performance": {
+        "arrivalSeconds": [8, 12],
+        "phraseAwareVelocity": true,
+        "handSeparationMilliseconds": [18, 70]
+      },
+      "mix": {
+        "integratedLufs": [-19, -16],
+        "lraMax": 5,
+        "reverbWetMax": 0.1
+      },
+      "forbidden": ["named_melody_imitation", "generic_pentatonic_random_walk", "bright_repeated_pluck", "theatrical_climax", "buzz", "filler_noise"]
+    },
+    {
+      "id": "western_six_eight_acoustic_unwind",
+      "version": "0.1.0",
+      "status": "draft",
+      "goals": ["calm"],
+      "tonal": {
+        "modes": ["major_with_modal_color", "mixolydian"],
+        "rangeMidi": [40, 74],
+        "maxLeapSemitones": 7
+      },
+      "melody": {
+        "motifNoteCount": [4, 6],
+        "firstMotifSeconds": [6, 15],
+        "contours": ["pickup_wave_return", "falling_answer"],
+        "exactRepeatMax": 2,
+        "returnCount": [3, 5],
+        "highPointPositionRatio": [0.42, 0.62]
+      },
+      "rhythm": {
+        "meters": ["6/8"],
+        "bpmDottedQuarter": [48, 56],
+        "onsetsPerBar": [3, 7],
+        "maxNonReleaseGapSeconds": 3.8,
+        "pulseSalienceMax": 0.38
+      },
+      "harmony": {
+        "harmonicRhythmBars": [1, 2],
+        "commonToneMinimum": 1,
+        "bassMotionSemitonesMax": 7,
+        "cadenceStyle": "open_or_plagal"
+      },
+      "form": {
+        "graph": ["soft_pickup", "wave_theme", "varied_return", "open_response", "short_return", "release"],
+        "secondHalfEnergy": "flat_or_falling"
+      },
+      "instrumentation": {
+        "roles": ["cc0_steel_guitar_primary", "guitar_low_middle_support"],
+        "sourceRequirement": "approved_cc0_real_sample"
+      },
+      "performance": {
+        "arrivalSeconds": [6, 10],
+        "phraseAwareVelocity": true,
+        "attackSofteningMilliseconds": [35, 85]
+      },
+      "mix": {
+        "integratedLufs": [-19, -16],
+        "lraMax": 5,
+        "reverbWetMax": 0.08
+      },
+      "forbidden": ["hard_pluck", "marching_bass", "rock_backbeat", "continuous_hard_eighths", "heroic_lift", "buzz", "filler_noise"]
+    },
+    {
+      "id": "dry_rhodes_brushless_focus",
+      "version": "0.1.0",
+      "status": "draft",
+      "goals": ["focus"],
+      "tonal": {
+        "modes": ["dorian", "major_modal"],
+        "rangeMidi": [45, 71],
+        "maxLeapSemitones": 5
+      },
+      "melody": {
+        "motifNoteCount": [3, 5],
+        "firstMotifSeconds": [4, 12],
+        "contours": ["narrow_step_cycle", "common_tone_answer"],
+        "exactRepeatMax": 2,
+        "returnCount": [4, 7],
+        "highPointPositionRatio": [0.35, 0.58]
+      },
+      "rhythm": {
+        "meters": ["4/4"],
+        "bpm": [62, 72],
+        "onsetsPerBar": [3, 8],
+        "maxNonReleaseGapSeconds": 3.2,
+        "pulseSalienceMax": 0.45
+      },
+      "harmony": {
+        "harmonicRhythmBars": [2, 4],
+        "commonToneMinimum": 2,
+        "bassMotionSemitonesMax": 5,
+        "cadenceStyle": "open_common_tone"
+      },
+      "form": {
+        "graph": ["quiet_entry", "stable_cycle", "directional_variant", "stable_return", "open_loop"],
+        "secondHalfEnergy": "flat"
+      },
+      "instrumentation": {
+        "roles": ["cc0_rhodes_primary", "cc0_finger_bass_secondary"],
+        "sourceRequirement": "approved_cc0_real_sample"
+      },
+      "performance": {
+        "arrivalSeconds": [4, 8],
+        "phraseAwareVelocity": true,
+        "attackSofteningMilliseconds": [55, 120]
+      },
+      "mix": {
+        "integratedLufs": [-19, -16],
+        "lraMax": 4,
+        "reverbWetMax": 0.05
+      },
+      "forbidden": ["drums", "walking_bass", "lounge_swing", "jazz_solo", "chord_stab", "large_reverb", "emotional_lift", "buzz", "filler_noise"]
+    },
+    {
+      "id": "low_register_piano_sleep_descent",
+      "version": "0.1.0",
+      "status": "draft",
+      "goals": ["sleep"],
+      "tonal": {"pitchClasses": [0, 2, 4, 7, 9], "rangeMidi": [36, 67], "maxLeapSemitones": 5},
+      "melody": {"motifNoteCount": [3, 4], "firstMotifSeconds": [12, 20], "contours": ["slow_stepwise_descent"], "exactRepeatMax": 2, "returnCount": [3, 4], "highPointPositionRatio": [0.2, 0.45]},
+      "rhythm": {"meters": ["4/4"], "bpm": [46, 52], "onsetsPerBar": [1, 3], "maxNonReleaseGapSeconds": 4.0, "pulseSalienceMax": 0.18},
+      "harmony": {"harmonicRhythmBars": [3, 5], "commonToneMinimum": 1, "bassMotionSemitonesMax": 5, "cadenceStyle": "soft_plagal_descent"},
+      "form": {"graph": ["dim_entry", "descent", "lower_return", "thinning", "release"], "secondHalfEnergy": "falling"},
+      "instrumentation": {"roles": ["cc0_kawai_low_piano", "quiet_common_tone_support"], "sourceRequirement": "approved_cc0_real_sample"},
+      "performance": {"arrivalSeconds": [10, 16], "phraseAwareVelocity": true, "handSeparationMilliseconds": [35, 90]},
+      "mix": {"integratedLufs": [-22, -18], "lraMax": 4, "reverbWetMax": 0.06},
+      "forbidden": ["bright_register", "upward_lift", "strong_pulse", "climax", "buzz", "filler_noise"]
+    },
+    {
+      "id": "open_fifth_guitar_meditation",
+      "version": "0.1.0",
+      "status": "draft",
+      "goals": ["calm"],
+      "tonal": {"modes": ["major_pentatonic", "mixolydian"], "rangeMidi": [40, 72], "maxLeapSemitones": 7},
+      "melody": {"motifNoteCount": [3, 4], "firstMotifSeconds": [10, 18], "contours": ["open_fifth_soft_return"], "exactRepeatMax": 2, "returnCount": [3, 4], "highPointPositionRatio": [0.35, 0.55]},
+      "rhythm": {"meters": ["4/4"], "bpm": [52, 58], "onsetsPerBar": [2, 4], "maxNonReleaseGapSeconds": 4.2, "pulseSalienceMax": 0.24},
+      "harmony": {"harmonicRhythmBars": [2, 4], "commonToneMinimum": 1, "bassMotionSemitonesMax": 7, "cadenceStyle": "open_fifth"},
+      "form": {"graph": ["breath_in", "open_space", "answer", "return", "release"], "secondHalfEnergy": "flat_or_falling"},
+      "instrumentation": {"roles": ["cc0_steel_guitar_primary", "open_middle_support"], "sourceRequirement": "approved_cc0_real_sample"},
+      "performance": {"arrivalSeconds": [8, 14], "phraseAwareVelocity": true, "attackSofteningMilliseconds": [50, 100]},
+      "mix": {"integratedLufs": [-21, -17], "lraMax": 5, "reverbWetMax": 0.06},
+      "forbidden": ["backbeat", "hard_pluck", "busy_arpeggio", "folk_dance", "climax", "buzz", "filler_noise"]
+    },
+    {
+      "id": "common_tone_piano_focus",
+      "version": "0.1.0",
+      "status": "draft",
+      "goals": ["focus"],
+      "tonal": {"modes": ["major_modal"], "rangeMidi": [45, 69], "maxLeapSemitones": 4},
+      "melody": {"motifNoteCount": [3, 4], "firstMotifSeconds": [6, 12], "contours": ["small_arch_common_tone"], "exactRepeatMax": 2, "returnCount": [4, 6], "highPointPositionRatio": [0.35, 0.55]},
+      "rhythm": {"meters": ["4/4"], "bpm": [60, 68], "onsetsPerBar": [3, 6], "maxNonReleaseGapSeconds": 3.0, "pulseSalienceMax": 0.34},
+      "harmony": {"harmonicRhythmBars": [2, 4], "commonToneMinimum": 2, "bassMotionSemitonesMax": 5, "cadenceStyle": "open_common_tone"},
+      "form": {"graph": ["quiet_entry", "work_cycle", "small_variant", "return", "open_end"], "secondHalfEnergy": "flat"},
+      "instrumentation": {"roles": ["cc0_kawai_piano_primary", "middle_register_support"], "sourceRequirement": "approved_cc0_real_sample"},
+      "performance": {"arrivalSeconds": [4, 8], "phraseAwareVelocity": true, "handSeparationMilliseconds": [20, 60]},
+      "mix": {"integratedLufs": [-20, -17], "lraMax": 4, "reverbWetMax": 0.04},
+      "forbidden": ["drums", "busy_ostinato", "strong_syncopation", "emotional_lift", "large_reverb", "buzz", "filler_noise"]
+    }
+  ]
+}

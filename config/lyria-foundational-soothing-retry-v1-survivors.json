@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0.0",
+  "batchId": "lyria-foundational-soothing-retry-v1",
+  "status": "machine_survivors_only_not_approved",
+  "productionAllowed": false,
+  "decision": "The batch confirms the product-owner concern: stricter Lyria prompting still produced too many event-heavy or pulse-like candidates for Sleep/Calm foundational use. Only strict low-arousal machine survivors may proceed to human listening; all other candidates are rejected or retry-only and must not be promoted.",
+  "sourceManifest": "public/audio/music/local-review/lyria-foundational-soothing-retry-v1/manifest.json",
+  "reviewUrl": "/review/lyria-foundational-soothing-retry-v1/index.html",
+  "lowArousalThresholds": {
+    "environment": { "onsetDensityPerSecondMax": 2.2, "spectralCentroidHzMax": 1800 },
+    "texture": { "onsetDensityPerSecondMax": 2.0, "spectralCentroidHzMax": 1500 },
+    "instrument": { "onsetDensityPerSecondMax": 1.2, "spectralCentroidHzMax": 1200 },
+    "accent": { "onsetDensityPerSecondMax": 1.4, "spectralCentroidHzMax": 1100 }
+  },
+  "globalHardExclusions": [
+    "drums",
+    "percussion",
+    "beat",
+    "rhythmic pulse",
+    "groove",
+    "kick",
+    "snare",
+    "hi-hat",
+    "tabla",
+    "hand drum",
+    "handpan rhythm",
+    "singing",
+    "human voice",
+    "human-like vocal texture"
+  ],
+  "survivors": [
+    {
+      "candidateId": "deep_soft_bowl_tail_v1",
+      "category": "accent",
+      "role": "one_shot_accent",
+      "reason": "Only one clear soft onset, dark centroid, usable as a rare transition or beginning marker after human review.",
+      "preparedAudioUrl": "/audio/music/local-review/lyria-foundational-soothing-retry-v1/prepared/deep_soft_bowl_tail_v1.mp3",
+      "machineMetrics": { "onsetDensityPerSecond": 0.3333, "spectralCentroidHz": 870.4, "peakDbfs": -7.444 }
+    },
+    {
+      "candidateId": "long_cello_breath_no_swell_v1",
+      "category": "instrument",
+      "role": "sparse_instrument_phrase",
+      "reason": "Very low onset density and warm low-middle centroid; may work as a restrained cello breath if human review confirms no swell or hook.",
+      "preparedAudioUrl": "/audio/music/local-review/lyria-foundational-soothing-retry-v1/prepared/long_cello_breath_no_swell_v1.mp3",
+      "machineMetrics": { "onsetDensityPerSecond": 0.4171, "spectralCentroidHz": 834.49, "peakDbfs": -5.632 }
+    },
+    {
+      "candidateId": "pine_air_no_gust_v1",
+      "category": "environment",
+      "role": "environment_bed",
+      "reason": "Within environment onset and centroid limits; may support Sleep/Calm as a low-brightness air layer after human identity review.",
+      "preparedAudioUrl": "/audio/music/local-review/lyria-foundational-soothing-retry-v1/prepared/pine_air_no_gust_v1.mp3",
+      "machineMetrics": { "onsetDensityPerSecond": 2.1498, "spectralCentroidHz": 1350.79, "peakDbfs": -6.136 }
+    },
+    {
+      "candidateId": "pine_air_no_gust_v3",
+      "category": "environment",
+      "role": "environment_bed",
+      "reason": "Best environment survivor by machine metrics: low onset density and dark centroid.",
+      "preparedAudioUrl": "/audio/music/local-review/lyria-foundational-soothing-retry-v1/prepared/pine_air_no_gust_v3.mp3",
+      "machineMetrics": { "onsetDensityPerSecond": 1.286, "spectralCentroidHz": 727.95, "peakDbfs": -5.277 }
+    },
+    {
+      "candidateId": "velvet_room_air_v1",
+      "category": "environment",
+      "role": "environment_bed",
+      "reason": "Passes environment low-arousal limits and fits the non-musical room-air target if human review confirms no fan cycle or mechanical pulse.",
+      "preparedAudioUrl": "/audio/music/local-review/lyria-foundational-soothing-retry-v1/prepared/velvet_room_air_v1.mp3",
+      "machineMetrics": { "onsetDensityPerSecond": 2.0506, "spectralCentroidHz": 1298.92, "peakDbfs": -5.035 }
+    }
+  ],
+  "rejectedOrRetryOnlyPolicy": {
+    "count": 31,
+    "reason": "Failed low-arousal event-density/brightness screen or requires re-generation with a non-Lyria source.",
+    "allowedUse": "none_in_consumer_recipe",
+    "nextSource": "deterministic_synthesis_or_controlled_recording"
+  },
+  "nextAction": {
+    "id": "soothing-deterministic-foundation-v1",
+    "purpose": "Replace event-heavy Lyria environment and texture material with deterministic, low-event, voice-free, no-drum foundational audio for Sleep, Calm, and low-arousal Focus."
+  }
+}

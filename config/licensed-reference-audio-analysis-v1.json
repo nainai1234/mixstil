@@ -1,0 +1,5465 @@
+{
+  "schemaVersion": "1.0.0",
+  "observedOn": "2026-07-21",
+  "status": "machine_analysis_complete_pending_human_review",
+  "productionAllowed": false,
+  "records": [
+    {
+      "referenceId": "licensed_ambient_architextures2",
+      "source": {
+        "title": "Ambient Architextures 2",
+        "creator": "mo.",
+        "sourceUrl": "https://archive.org/download/phlow_mix_002/phlow-mix002_mo.-ambient_architextures_2_192kbps.mp3",
+        "analysisSourceUrl": "https://archive.org/download/phlow_mix_002/phlow-mix002_mo.-ambient_architextures_2_192kbps.mp3",
+        "accessClass": "licensed_file",
+        "fileSha256": "286dba8b7d3a262cc0e38aa69420e809ece44bdea98e7f90b3ddfed7872be1ba",
+        "observedOn": "2026-07-21",
+        "rightsBoundary": "internal_analysis_only",
+        "licenseEvidence": "http://creativecommons.org/licenses/by-nc-sa/2.0/",
+        "alternateSourceIdentity": {
+          "referenceSourceUrl": "https://archive.org/download/phlow_mix_002/phlow-mix002_mo.-ambient_architextures_2_192kbps.mp3",
+          "analysisSourceUrl": "https://archive.org/download/phlow_mix_002/phlow-mix002_mo.-ambient_architextures_2_192kbps.mp3",
+          "titleCreatorMatch": true,
+          "first30SecondsVerificationMethod": "direct_source",
+          "first30SecondsDetectedTitle": "Ambient Architextures 2",
+          "first30SecondsDetectedCreator": "mo.",
+          "first30SecondsMatch": true,
+          "verifiedOn": "2026-07-21"
+        }
+      },
+      "audio": {
+        "sourceDurationSeconds": 4634.845,
+        "analyzedDurationSeconds": 4634.507,
+        "analysisCoverage": {
+          "beginning": {
+            "startSeconds": 0,
+            "endSeconds": 120
+          },
+          "middle": {
+            "startSeconds": 2257.254,
+            "endSeconds": 2377.254
+          },
+          "end": {
+            "startSeconds": 4514.507,
+            "endSeconds": 4634.507
+          }
+        },
+        "durationSeconds": 4634.507,
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -13.09,
+        "loudnessRangeLu": 13.5,
+        "truePeakDbtp": 1.17,
+        "spectralCentroidHz": 1168.89,
+        "highFrequencyEnergyRatio": 0.08612,
+        "onsetRatePerMinute": 115.883,
+        "silenceGaps": [
+          0.511,
+          0.046,
+          0.046,
+          0.093,
+          0.046,
+          0.093,
+          0.279,
+          0.789,
+          0.046
+        ],
+        "voiceProbability": null,
+        "beatProbability": 0.996,
+        "loopBoundaryScore": 0.86644
+      },
+      "music": {
+        "tempoBpm": {
+          "min": 99.384,
+          "max": 99.384,
+          "confidence": 0.55
+        },
+        "meter": {
+          "value": "4/4_or_free_time",
+          "confidence": 0.25
+        },
+        "keyOrMode": {
+          "value": "C# minor",
+          "confidence": 0.421
+        },
+        "register": {
+          "lowMidi": 15.49,
+          "highMidi": 122.17,
+          "centerMidi": 68.83,
+          "confidence": 0.45
+        },
+        "instrumentRoles": [
+          "piano",
+          "ambient texture"
+        ],
+        "chordChangeBars": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "motifLengthNotes": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "phraseLengthBars": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "noteDensityPerMinute": 115.883,
+        "melodyContour": "sparse_low_salience_ambient",
+        "form": [
+          {
+            "startSeconds": 0,
+            "endSeconds": 60,
+            "rmsDbfs": -16.299,
+            "spectralCentroidHz": 2191.239,
+            "chromaChangeFromPrevious": 0
+          },
+          {
+            "startSeconds": 60,
+            "endSeconds": 120,
+            "rmsDbfs": -12.862,
+            "spectralCentroidHz": 1043.637,
+            "chromaChangeFromPrevious": 0.89145
+          },
+          {
+            "startSeconds": 120,
+            "endSeconds": 180,
+            "rmsDbfs": -18.839,
+            "spectralCentroidHz": 1537.696,
+            "chromaChangeFromPrevious": 0.55943
+          },
+          {
+            "startSeconds": 180,
+            "endSeconds": 240,
+            "rmsDbfs": -17.917,
+            "spectralCentroidHz": 1140.484,
+            "chromaChangeFromPrevious": 0.51293
+          },
+          {
+            "startSeconds": 240,
+            "endSeconds": 300,
+            "rmsDbfs": -16.185,
+            "spectralCentroidHz": 2361.342,
+            "chromaChangeFromPrevious": 0.3617
+          },
+          {
+            "startSeconds": 300,
+            "endSeconds": 360,
+            "rmsDbfs": -15.012,
+            "spectralCentroidHz": 2743.975,
+            "chromaChangeFromPrevious": 0.28916
+          },
+          {
+            "startSeconds": 360,
+            "endSeconds": 420,
+            "rmsDbfs": -17.485,
+            "spectralCentroidHz": 2021.375,
+            "chromaChangeFromPrevious": 0.48818
+          },
+          {
+            "startSeconds": 420,
+            "endSeconds": 480,
+            "rmsDbfs": -13.596,
+            "spectralCentroidHz": 702.037,
+            "chromaChangeFromPrevious": 0.99951
+          },
+          {
+            "startSeconds": 480,
+            "endSeconds": 540,
+            "rmsDbfs": -11.317,
+            "spectralCentroidHz": 590.919,
+            "chromaChangeFromPrevious": 0.59554
+          },
+          {
+            "startSeconds": 540,
+            "endSeconds": 600,
+            "rmsDbfs": -10.144,
+            "spectralCentroidHz": 519.054,
+            "chromaChangeFromPrevious": 0.45834
+          },
+          {
+            "startSeconds": 600,
+            "endSeconds": 660,
+            "rmsDbfs": -8.97,
+            "spectralCentroidHz": 505.217,
+            "chromaChangeFromPrevious": 0.5834
+          },
+          {
+            "startSeconds": 660,
+            "endSeconds": 720,
+            "rmsDbfs": -8.693,
+            "spectralCentroidHz": 506.014,
+            "chromaChangeFromPrevious": 0.23106
+          },
+          {
+            "startSeconds": 720,
+            "endSeconds": 780,
+            "rmsDbfs": -9.838,
+            "spectralCentroidHz": 511.582,
+            "chromaChangeFromPrevious": 0.50221
+          },
+          {
+            "startSeconds": 780,
+            "endSeconds": 840,
+            "rmsDbfs": -16.238,
+            "spectralCentroidHz": 711.891,
+            "chromaChangeFromPrevious": 0.526
+          },
+          {
+            "startSeconds": 840,
+            "endSeconds": 900,
+            "rmsDbfs": -27.305,
+            "spectralCentroidHz": 636.725,
+            "chromaChangeFromPrevious": 0.73496
+          },
+          {
+            "startSeconds": 900,
+            "endSeconds": 960,
+            "rmsDbfs": -20.041,
+            "spectralCentroidHz": 876.184,
+            "chromaChangeFromPrevious": 0.57027
+          },
+          {
+            "startSeconds": 960,
+            "endSeconds": 1020,
+            "rmsDbfs": -19.351,
+            "spectralCentroidHz": 636.248,
+            "chromaChangeFromPrevious": 0.58187
+          },
+          {
+            "startSeconds": 1020,
+            "endSeconds": 1080,
+            "rmsDbfs": -22.587,
+            "spectralCentroidHz": 459.778,
+            "chromaChangeFromPrevious": 0.77417
+          },
+          {
+            "startSeconds": 1080,
+            "endSeconds": 1140,
+            "rmsDbfs": -18.99,
+            "spectralCentroidHz": 534.668,
+            "chromaChangeFromPrevious": 0.31153
+          },
+          {
+            "startSeconds": 1140,
+            "endSeconds": 1200,
+            "rmsDbfs": -17.677,
+            "spectralCentroidHz": 444.556,
+            "chromaChangeFromPrevious": 0.13025
+          },
+          {
+            "startSeconds": 1200,
+            "endSeconds": 1260,
+            "rmsDbfs": -19.421,
+            "spectralCentroidHz": 426.657,
+            "chromaChangeFromPrevious": 0.0408
+          },
+          {
+            "startSeconds": 1260,
+            "endSeconds": 1320,
+            "rmsDbfs": -21.61,
+            "spectralCentroidHz": 807.217,
+            "chromaChangeFromPrevious": 0.6629
+          },
+          {
+            "startSeconds": 1320,
+            "endSeconds": 1380,
+            "rmsDbfs": -17.121,
+            "spectralCentroidHz": 971.832,
+            "chromaChangeFromPrevious": 0.16685
+          },
+          {
+            "startSeconds": 1380,
+            "endSeconds": 1440,
+            "rmsDbfs": -14.528,
+            "spectralCentroidHz": 1045.15,
+            "chromaChangeFromPrevious": 0.51842
+          },
+          {
+            "startSeconds": 1440,
+            "endSeconds": 1500,
+            "rmsDbfs": -16.491,
+            "spectralCentroidHz": 738.99,
+            "chromaChangeFromPrevious": 0.30184
+          },
+          {
+            "startSeconds": 1500,
+            "endSeconds": 1560,
+            "rmsDbfs": -17.601,
+            "spectralCentroidHz": 749.245,
+            "chromaChangeFromPrevious": 0.46202
+          },
+          {
+            "startSeconds": 1560,
+            "endSeconds": 1620,
+            "rmsDbfs": -18.568,
+            "spectralCentroidHz": 844.151,
+            "chromaChangeFromPrevious": 0.36816
+          },
+          {
+            "startSeconds": 1620,
+            "endSeconds": 1680,
+            "rmsDbfs": -17.497,
+            "spectralCentroidHz": 656.022,
+            "chromaChangeFromPrevious": 0.1983
+          },
+          {
+            "startSeconds": 1680,
+            "endSeconds": 1740,
+            "rmsDbfs": -18.206,
+            "spectralCentroidHz": 1270.711,
+            "chromaChangeFromPrevious": 0.17645
+          },
+          {
+            "startSeconds": 1740,
+            "endSeconds": 1800,
+            "rmsDbfs": -22.727,
+            "spectralCentroidHz": 2587.059,
+            "chromaChangeFromPrevious": 0.9738
+          },
+          {
+            "startSeconds": 1800,
+            "endSeconds": 1860,
+            "rmsDbfs": -17.971,
+            "spectralCentroidHz": 1574.641,
+            "chromaChangeFromPrevious": 1.27946
+          },
+          {
+            "startSeconds": 1860,
+            "endSeconds": 1920,
+            "rmsDbfs": -17.936,
+            "spectralCentroidHz": 1622.69,
+            "chromaChangeFromPrevious": 0.03102
+          },
+          {
+            "startSeconds": 1920,
+            "endSeconds": 1980,
+            "rmsDbfs": -19.518,
+            "spectralCentroidHz": 1857.92,
+            "chromaChangeFromPrevious": 0.28381
+          },
+          {
+            "startSeconds": 1980,
+            "endSeconds": 2040,
+            "rmsDbfs": -29.994,
+            "spectralCentroidHz": 2013.282,
+            "chromaChangeFromPrevious": 1.01602
+          },
+          {
+            "startSeconds": 2040,
+            "endSeconds": 2100,
+            "rmsDbfs": -28.135,
+            "spectralCentroidHz": 1455.038,
+            "chromaChangeFromPrevious": 0.38889
+          },
+          {
+            "startSeconds": 2100,
+            "endSeconds": 2160,
+            "rmsDbfs": -28.326,
+            "spectralCentroidHz": 1349.719,
+            "chromaChangeFromPrevious": 0.56013
+          },
+          {
+            "startSeconds": 2160,
+            "endSeconds": 2220,
+            "rmsDbfs": -20.008,
+            "spectralCentroidHz": 1912.256,
+            "chromaChangeFromPrevious": 0.53246
+          },
+          {
+            "startSeconds": 2220,
+            "endSeconds": 2280,
+            "rmsDbfs": -14.196,
+            "spectralCentroidHz": 1344.588,
+            "chromaChangeFromPrevious": 0.67696
+          },
+          {
+            "startSeconds": 2280,
+            "endSeconds": 2340,
+            "rmsDbfs": -13.579,
+            "spectralCentroidHz": 1322.35,
+            "chromaChangeFromPrevious": 0.04165
+          },
+          {
+            "startSeconds": 2340,
+            "endSeconds": 2400,
+            "rmsDbfs": -15.654,
+            "spectralCentroidHz": 1054.285,
+            "chromaChangeFromPrevious": 0.16823
+          },
+          {
+            "startSeconds": 2400,
+            "endSeconds": 2460,
+            "rmsDbfs": -18.063,
+            "spectralCentroidHz": 458.316,
+            "chromaChangeFromPrevious": 0.93863
+          },
+          {
+            "startSeconds": 2460,
+            "endSeconds": 2520,
+            "rmsDbfs": -16.949,
+            "spectralCentroidHz": 434.483,
+            "chromaChangeFromPrevious": 0.41029
+          },
+          {
+            "startSeconds": 2520,
+            "endSeconds": 2580,
+            "rmsDbfs": -15.274,
+            "spectralCentroidHz": 482.934,
+            "chromaChangeFromPrevious": 0.39326
+          },
+          {
+            "startSeconds": 2580,
+            "endSeconds": 2640,
+            "rmsDbfs": -14.62,
+            "spectralCentroidHz": 591.965,
+            "chromaChangeFromPrevious": 0.22626
+          },
+          {
+            "startSeconds": 2640,
+            "endSeconds": 2700,
+            "rmsDbfs": -19.199,
+            "spectralCentroidHz": 650.179,
+            "chromaChangeFromPrevious": 0.57822
+          },
+          {
+            "startSeconds": 2700,
+            "endSeconds": 2760,
+            "rmsDbfs": -19.229,
+            "spectralCentroidHz": 669.825,
+            "chromaChangeFromPrevious": 0.81469
+          },
+          {
+            "startSeconds": 2760,
+            "endSeconds": 2820,
+            "rmsDbfs": -18.337,
+            "spectralCentroidHz": 751.503,
+            "chromaChangeFromPrevious": 0.25426
+          },
+          {
+            "startSeconds": 2820,
+            "endSeconds": 2880,
+            "rmsDbfs": -18.216,
+            "spectralCentroidHz": 983.714,
+            "chromaChangeFromPrevious": 0.0524
+          },
+          {
+            "startSeconds": 2880,
+            "endSeconds": 2940,
+            "rmsDbfs": -18.098,
+            "spectralCentroidHz": 836.52,
+            "chromaChangeFromPrevious": 0.03827
+          },
+          {
+            "startSeconds": 2940,
+            "endSeconds": 3000,
+            "rmsDbfs": -17.996,
+            "spectralCentroidHz": 668.579,
+            "chromaChangeFromPrevious": 0.23559
+          },
+          {
+            "startSeconds": 3000,
+            "endSeconds": 3060,
+            "rmsDbfs": -18.098,
+            "spectralCentroidHz": 549.746,
+            "chromaChangeFromPrevious": 0.02726
+          },
+          {
+            "startSeconds": 3060,
+            "endSeconds": 3120,
+            "rmsDbfs": -25.761,
+            "spectralCentroidHz": 769.196,
+            "chromaChangeFromPrevious": 1.17103
+          },
+          {
+            "startSeconds": 3120,
+            "endSeconds": 3180,
+            "rmsDbfs": -19.619,
+            "spectralCentroidHz": 873.471,
+            "chromaChangeFromPrevious": 0.74683
+          },
+          {
+            "startSeconds": 3180,
+            "endSeconds": 3240,
+            "rmsDbfs": -19.387,
+            "spectralCentroidHz": 1145.285,
+            "chromaChangeFromPrevious": 0.44808
+          },
+          {
+            "startSeconds": 3240,
+            "endSeconds": 3300,
+            "rmsDbfs": -17.33,
+            "spectralCentroidHz": 1194.723,
+            "chromaChangeFromPrevious": 0.34951
+          },
+          {
+            "startSeconds": 3300,
+            "endSeconds": 3360,
+            "rmsDbfs": -17.552,
+            "spectralCentroidHz": 1210.966,
+            "chromaChangeFromPrevious": 0.0808
+          },
+          {
+            "startSeconds": 3360,
+            "endSeconds": 3420,
+            "rmsDbfs": -18.214,
+            "spectralCentroidHz": 1141.403,
+            "chromaChangeFromPrevious": 0.2393
+          },
+          {
+            "startSeconds": 3420,
+            "endSeconds": 3480,
+            "rmsDbfs": -20.029,
+            "spectralCentroidHz": 979.48,
+            "chromaChangeFromPrevious": 0.4012
+          },
+          {
+            "startSeconds": 3480,
+            "endSeconds": 3540,
+            "rmsDbfs": -16.161,
+            "spectralCentroidHz": 1100.003,
+            "chromaChangeFromPrevious": 0.87138
+          },
+          {
+            "startSeconds": 3540,
+            "endSeconds": 3600,
+            "rmsDbfs": -14.851,
+            "spectralCentroidHz": 1342.059,
+            "chromaChangeFromPrevious": 0.2332
+          },
+          {
+            "startSeconds": 3600,
+            "endSeconds": 3660,
+            "rmsDbfs": -14.873,
+            "spectralCentroidHz": 1871.303,
+            "chromaChangeFromPrevious": 0.03905
+          },
+          {
+            "startSeconds": 3660,
+            "endSeconds": 3720,
+            "rmsDbfs": -16.042,
+            "spectralCentroidHz": 2584.845,
+            "chromaChangeFromPrevious": 0.27944
+          },
+          {
+            "startSeconds": 3720,
+            "endSeconds": 3780,
+            "rmsDbfs": -17.662,
+            "spectralCentroidHz": 2974.209,
+            "chromaChangeFromPrevious": 0.30471
+          },
+          {
+            "startSeconds": 3780,
+            "endSeconds": 3840,
+            "rmsDbfs": -22.995,
+            "spectralCentroidHz": 2373.715,
+            "chromaChangeFromPrevious": 0.75006
+          },
+          {
+            "startSeconds": 3840,
+            "endSeconds": 3900,
+            "rmsDbfs": -12.924,
+            "spectralCentroidHz": 1252.077,
+            "chromaChangeFromPrevious": 0.43265
+          },
+          {
+            "startSeconds": 3900,
+            "endSeconds": 3960,
+            "rmsDbfs": -11.079,
+            "spectralCentroidHz": 894.097,
+            "chromaChangeFromPrevious": 0.21632
+          },
+          {
+            "startSeconds": 3960,
+            "endSeconds": 4020,
+            "rmsDbfs": -12.959,
+            "spectralCentroidHz": 1160.432,
+            "chromaChangeFromPrevious": 0.41606
+          },
+          {
+            "startSeconds": 4020,
+            "endSeconds": 4080,
+            "rmsDbfs": -10.841,
+            "spectralCentroidHz": 1014.378,
+            "chromaChangeFromPrevious": 0.39266
+          },
+          {
+            "startSeconds": 4080,
+            "endSeconds": 4140,
+            "rmsDbfs": -11.097,
+            "spectralCentroidHz": 980.344,
+            "chromaChangeFromPrevious": 0.09044
+          },
+          {
+            "startSeconds": 4140,
+            "endSeconds": 4200,
+            "rmsDbfs": -13.678,
+            "spectralCentroidHz": 1069.871,
+            "chromaChangeFromPrevious": 0.34726
+          },
+          {
+            "startSeconds": 4200,
+            "endSeconds": 4260,
+            "rmsDbfs": -16.78,
+            "spectralCentroidHz": 1228.697,
+            "chromaChangeFromPrevious": 0.83284
+          },
+          {
+            "startSeconds": 4260,
+            "endSeconds": 4320,
+            "rmsDbfs": -15.546,
+            "spectralCentroidHz": 1411.03,
+            "chromaChangeFromPrevious": 0.02568
+          },
+          {
+            "startSeconds": 4320,
+            "endSeconds": 4380,
+            "rmsDbfs": -15.46,
+            "spectralCentroidHz": 1547.643,
+            "chromaChangeFromPrevious": 0.07846
+          },
+          {
+            "startSeconds": 4380,
+            "endSeconds": 4440,
+            "rmsDbfs": -15.096,
+            "spectralCentroidHz": 1614.666,
+            "chromaChangeFromPrevious": 0.3117
+          },
+          {
+            "startSeconds": 4440,
+            "endSeconds": 4500,
+            "rmsDbfs": -15.086,
+            "spectralCentroidHz": 1668.76,
+            "chromaChangeFromPrevious": 0.07944
+          },
+          {
+            "startSeconds": 4500,
+            "endSeconds": 4560,
+            "rmsDbfs": -15.162,
+            "spectralCentroidHz": 1701.195,
+            "chromaChangeFromPrevious": 0.03282
+          },
+          {
+            "startSeconds": 4560,
+            "endSeconds": 4620,
+            "rmsDbfs": -17.143,
+            "spectralCentroidHz": 1351.229,
+            "chromaChangeFromPrevious": 0.18826
+          },
+          {
+            "startSeconds": 4620,
+            "endSeconds": 4634.507,
+            "rmsDbfs": -34.061,
+            "spectralCentroidHz": 2063.791,
+            "chromaChangeFromPrevious": 0.22826
+          }
+        ]
+      },
+      "humanListening": {
+        "voice": "none",
+        "sceneFit": {
+          "sleep": 0.9,
+          "calm": 0.85,
+          "focus": 0.6
+        },
+        "strongBeat": true,
+        "emotionalLift": false,
+        "largeReverb": true,
+        "mechanicalOrBuzz": false,
+        "startleRisk": 0.1,
+        "notes": "Machine analysis complete; browser listening and scene-fit review pending.",
+        "decision": "contrast_only"
+      },
+      "derivedProductionParameters": {
+        "allowedGoals": [
+          "sleep",
+          "calm"
+        ],
+        "instrumentFamilies": [
+          "soft piano",
+          "low-density ambient pad"
+        ],
+        "tempoRange": [
+          0,
+          60
+        ],
+        "registerRangeMidi": [
+          15.49,
+          122.17
+        ],
+        "density": "very_low",
+        "harmonyMotion": "static",
+        "environmentCompatibility": [
+          "rain",
+          "ocean",
+          "soft air"
+        ],
+        "forbiddenFeatures": [
+          "strong drums",
+          "bright attacks",
+          "voice",
+          "sudden transitions"
+        ],
+        "confidence": 0.55,
+        "derivationNotes": "Use acoustic statistics as ranges and constraints, never copy the reference melody or arrangement."
+      },
+      "analysisProvenance": {
+        "analysisVersion": "reference-audio-analysis-v1",
+        "machineTools": [
+          "ffprobe",
+          "librosa",
+          "scipy",
+          "soundfile",
+          "music-recognition:first30"
+        ],
+        "humanReviewer": "pending",
+        "analyzedFromExactAudio": true,
+        "approvedForAtomicMaterialPlanning": false
+      }
+    },
+    {
+      "referenceId": "licensed_ambient_bing_show17",
+      "source": {
+        "title": "Bing Satellites Mostly Ambient Radio Show 17",
+        "creator": "Bing Satellites",
+        "sourceUrl": "https://archive.org/download/BingSatellitesMostlyAmbientRadioShow017/mostly-ambient-017---3-october-2012.mp3",
+        "analysisSourceUrl": "https://archive.org/download/BingSatellitesMostlyAmbientRadioShow017/mostly-ambient-017---3-october-2012.mp3",
+        "accessClass": "licensed_file",
+        "fileSha256": "289a8e9af985dd9dc2fe09cd4b977398e9af22caaee9f62de005830052b22a3f",
+        "observedOn": "2026-07-21",
+        "rightsBoundary": "internal_analysis_only",
+        "licenseEvidence": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+        "alternateSourceIdentity": {
+          "referenceSourceUrl": "https://archive.org/download/BingSatellitesMostlyAmbientRadioShow017/mostly-ambient-017---3-october-2012.mp3",
+          "analysisSourceUrl": "https://archive.org/download/BingSatellitesMostlyAmbientRadioShow017/mostly-ambient-017---3-october-2012.mp3",
+          "titleCreatorMatch": true,
+          "first30SecondsVerificationMethod": "direct_source",
+          "first30SecondsDetectedTitle": "Bing Satellites Mostly Ambient Radio Show 17",
+          "first30SecondsDetectedCreator": "Bing Satellites",
+          "first30SecondsMatch": true,
+          "verifiedOn": "2026-07-21"
+        }
+      },
+      "audio": {
+        "sourceDurationSeconds": 7375.625,
+        "analyzedDurationSeconds": 7375.625,
+        "analysisCoverage": {
+          "beginning": {
+            "startSeconds": 0,
+            "endSeconds": 120
+          },
+          "middle": {
+            "startSeconds": 3627.812,
+            "endSeconds": 3747.812
+          },
+          "end": {
+            "startSeconds": 7255.625,
+            "endSeconds": 7375.625
+          }
+        },
+        "durationSeconds": 7375.625,
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -17.17,
+        "loudnessRangeLu": 9.9,
+        "truePeakDbtp": 1.11,
+        "spectralCentroidHz": 1282.727,
+        "highFrequencyEnergyRatio": 0.08595,
+        "onsetRatePerMinute": 126.726,
+        "silenceGaps": [
+          1.765,
+          1.347,
+          0.139,
+          0.046,
+          0.046,
+          0.836,
+          0.093,
+          0.418,
+          0.418,
+          0.046,
+          0.186,
+          0.325,
+          0.697,
+          0.139,
+          0.093,
+          0.279,
+          0.046,
+          0.046,
+          0.232,
+          0.139,
+          0.139,
+          0.046,
+          0.139,
+          0.093,
+          0.046,
+          0.418,
+          0.186,
+          0.279,
+          0.139,
+          0.232,
+          0.325,
+          0.046,
+          0.139,
+          0.093,
+          0.836,
+          0.186,
+          0.186,
+          0.279,
+          0.046,
+          0.093,
+          0.697,
+          7.152,
+          0.139,
+          0.604,
+          2.554,
+          0.046,
+          0.093,
+          0.093,
+          0.046,
+          0.139,
+          0.046,
+          0.743,
+          0.279,
+          0.139,
+          0.186,
+          0.093,
+          0.046,
+          0.232,
+          0.046,
+          0.046,
+          0.325,
+          0.139,
+          0.093,
+          0.604,
+          0.232,
+          0.046,
+          0.139,
+          0.139,
+          4.087,
+          0.046,
+          0.232,
+          0.093,
+          2.322,
+          0.093,
+          0.046,
+          0.325,
+          0.325,
+          0.046,
+          0.046,
+          0.65,
+          0.046,
+          2.508,
+          0.232,
+          0.093,
+          0.093,
+          0.093,
+          0.093,
+          0.046,
+          0.279,
+          0.046,
+          0.139,
+          0.046,
+          0.046,
+          0.511,
+          0.325,
+          0.186,
+          2.786,
+          0.279,
+          0.093,
+          0.093
+        ],
+        "voiceProbability": null,
+        "beatProbability": 1,
+        "loopBoundaryScore": 0.64563
+      },
+      "music": {
+        "tempoBpm": {
+          "min": 117.454,
+          "max": 117.454,
+          "confidence": 0.55
+        },
+        "meter": {
+          "value": "4/4_or_free_time",
+          "confidence": 0.25
+        },
+        "keyOrMode": {
+          "value": "C major",
+          "confidence": 0.756
+        },
+        "register": {
+          "lowMidi": 15.49,
+          "highMidi": 123.58,
+          "centerMidi": 69.53,
+          "confidence": 0.45
+        },
+        "instrumentRoles": [
+          "piano",
+          "ambient texture"
+        ],
+        "chordChangeBars": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "motifLengthNotes": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "phraseLengthBars": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "noteDensityPerMinute": 126.726,
+        "melodyContour": "sparse_low_salience_ambient",
+        "form": [
+          {
+            "startSeconds": 0,
+            "endSeconds": 60,
+            "rmsDbfs": -23.909,
+            "spectralCentroidHz": 940.628,
+            "chromaChangeFromPrevious": 0
+          },
+          {
+            "startSeconds": 60,
+            "endSeconds": 120,
+            "rmsDbfs": -20.583,
+            "spectralCentroidHz": 1090.546,
+            "chromaChangeFromPrevious": 0.20242
+          },
+          {
+            "startSeconds": 120,
+            "endSeconds": 180,
+            "rmsDbfs": -15.934,
+            "spectralCentroidHz": 1624.439,
+            "chromaChangeFromPrevious": 1.13526
+          },
+          {
+            "startSeconds": 180,
+            "endSeconds": 240,
+            "rmsDbfs": -13.602,
+            "spectralCentroidHz": 1536.283,
+            "chromaChangeFromPrevious": 0.2485
+          },
+          {
+            "startSeconds": 240,
+            "endSeconds": 300,
+            "rmsDbfs": -13.151,
+            "spectralCentroidHz": 1436.909,
+            "chromaChangeFromPrevious": 0.14564
+          },
+          {
+            "startSeconds": 300,
+            "endSeconds": 360,
+            "rmsDbfs": -13.117,
+            "spectralCentroidHz": 1628.156,
+            "chromaChangeFromPrevious": 0.26356
+          },
+          {
+            "startSeconds": 360,
+            "endSeconds": 420,
+            "rmsDbfs": -13.638,
+            "spectralCentroidHz": 1577.301,
+            "chromaChangeFromPrevious": 0.28149
+          },
+          {
+            "startSeconds": 420,
+            "endSeconds": 480,
+            "rmsDbfs": -19.009,
+            "spectralCentroidHz": 1070.794,
+            "chromaChangeFromPrevious": 0.80572
+          },
+          {
+            "startSeconds": 480,
+            "endSeconds": 540,
+            "rmsDbfs": -18.464,
+            "spectralCentroidHz": 1422.234,
+            "chromaChangeFromPrevious": 0.20422
+          },
+          {
+            "startSeconds": 540,
+            "endSeconds": 600,
+            "rmsDbfs": -21.112,
+            "spectralCentroidHz": 2044.098,
+            "chromaChangeFromPrevious": 0.53616
+          },
+          {
+            "startSeconds": 600,
+            "endSeconds": 660,
+            "rmsDbfs": -22.968,
+            "spectralCentroidHz": 2229.404,
+            "chromaChangeFromPrevious": 0.13668
+          },
+          {
+            "startSeconds": 660,
+            "endSeconds": 720,
+            "rmsDbfs": -30.395,
+            "spectralCentroidHz": 517.19,
+            "chromaChangeFromPrevious": 0.97812
+          },
+          {
+            "startSeconds": 720,
+            "endSeconds": 780,
+            "rmsDbfs": -28.497,
+            "spectralCentroidHz": 717.097,
+            "chromaChangeFromPrevious": 0.06255
+          },
+          {
+            "startSeconds": 780,
+            "endSeconds": 840,
+            "rmsDbfs": -23.411,
+            "spectralCentroidHz": 857.378,
+            "chromaChangeFromPrevious": 0.17357
+          },
+          {
+            "startSeconds": 840,
+            "endSeconds": 900,
+            "rmsDbfs": -18.126,
+            "spectralCentroidHz": 974.24,
+            "chromaChangeFromPrevious": 0.37691
+          },
+          {
+            "startSeconds": 900,
+            "endSeconds": 960,
+            "rmsDbfs": -18.148,
+            "spectralCentroidHz": 929.065,
+            "chromaChangeFromPrevious": 0.51594
+          },
+          {
+            "startSeconds": 960,
+            "endSeconds": 1020,
+            "rmsDbfs": -22.508,
+            "spectralCentroidHz": 603.205,
+            "chromaChangeFromPrevious": 0.43237
+          },
+          {
+            "startSeconds": 1020,
+            "endSeconds": 1080,
+            "rmsDbfs": -29.561,
+            "spectralCentroidHz": 584.164,
+            "chromaChangeFromPrevious": 0.3715
+          },
+          {
+            "startSeconds": 1080,
+            "endSeconds": 1140,
+            "rmsDbfs": -22.887,
+            "spectralCentroidHz": 446.385,
+            "chromaChangeFromPrevious": 0.62447
+          },
+          {
+            "startSeconds": 1140,
+            "endSeconds": 1200,
+            "rmsDbfs": -20.855,
+            "spectralCentroidHz": 619.082,
+            "chromaChangeFromPrevious": 0.40411
+          },
+          {
+            "startSeconds": 1200,
+            "endSeconds": 1260,
+            "rmsDbfs": -18.771,
+            "spectralCentroidHz": 623.871,
+            "chromaChangeFromPrevious": 0.4197
+          },
+          {
+            "startSeconds": 1260,
+            "endSeconds": 1320,
+            "rmsDbfs": -19.91,
+            "spectralCentroidHz": 654.03,
+            "chromaChangeFromPrevious": 0.36069
+          },
+          {
+            "startSeconds": 1320,
+            "endSeconds": 1380,
+            "rmsDbfs": -21.884,
+            "spectralCentroidHz": 627.609,
+            "chromaChangeFromPrevious": 0.40393
+          },
+          {
+            "startSeconds": 1380,
+            "endSeconds": 1440,
+            "rmsDbfs": -22.899,
+            "spectralCentroidHz": 387.841,
+            "chromaChangeFromPrevious": 0.99587
+          },
+          {
+            "startSeconds": 1440,
+            "endSeconds": 1500,
+            "rmsDbfs": -19.403,
+            "spectralCentroidHz": 677.638,
+            "chromaChangeFromPrevious": 0.08349
+          },
+          {
+            "startSeconds": 1500,
+            "endSeconds": 1560,
+            "rmsDbfs": -17.452,
+            "spectralCentroidHz": 1778.622,
+            "chromaChangeFromPrevious": 0.46571
+          },
+          {
+            "startSeconds": 1560,
+            "endSeconds": 1620,
+            "rmsDbfs": -17.426,
+            "spectralCentroidHz": 1834.192,
+            "chromaChangeFromPrevious": 0.29841
+          },
+          {
+            "startSeconds": 1620,
+            "endSeconds": 1680,
+            "rmsDbfs": -20.126,
+            "spectralCentroidHz": 1891.971,
+            "chromaChangeFromPrevious": 0.5165
+          },
+          {
+            "startSeconds": 1680,
+            "endSeconds": 1740,
+            "rmsDbfs": -24.098,
+            "spectralCentroidHz": 1559.97,
+            "chromaChangeFromPrevious": 0.51618
+          },
+          {
+            "startSeconds": 1740,
+            "endSeconds": 1800,
+            "rmsDbfs": -25.544,
+            "spectralCentroidHz": 619.774,
+            "chromaChangeFromPrevious": 0.74057
+          },
+          {
+            "startSeconds": 1800,
+            "endSeconds": 1860,
+            "rmsDbfs": -24.431,
+            "spectralCentroidHz": 613.713,
+            "chromaChangeFromPrevious": 0.07251
+          },
+          {
+            "startSeconds": 1860,
+            "endSeconds": 1920,
+            "rmsDbfs": -24.355,
+            "spectralCentroidHz": 593.969,
+            "chromaChangeFromPrevious": 0.09332
+          },
+          {
+            "startSeconds": 1920,
+            "endSeconds": 1980,
+            "rmsDbfs": -24.114,
+            "spectralCentroidHz": 601.19,
+            "chromaChangeFromPrevious": 0.04533
+          },
+          {
+            "startSeconds": 1980,
+            "endSeconds": 2040,
+            "rmsDbfs": -25.049,
+            "spectralCentroidHz": 622.706,
+            "chromaChangeFromPrevious": 0.02617
+          },
+          {
+            "startSeconds": 2040,
+            "endSeconds": 2100,
+            "rmsDbfs": -23.432,
+            "spectralCentroidHz": 1076.227,
+            "chromaChangeFromPrevious": 1.18971
+          },
+          {
+            "startSeconds": 2100,
+            "endSeconds": 2160,
+            "rmsDbfs": -22.258,
+            "spectralCentroidHz": 1048.39,
+            "chromaChangeFromPrevious": 0.15215
+          },
+          {
+            "startSeconds": 2160,
+            "endSeconds": 2220,
+            "rmsDbfs": -23.532,
+            "spectralCentroidHz": 1232.097,
+            "chromaChangeFromPrevious": 0.24902
+          },
+          {
+            "startSeconds": 2220,
+            "endSeconds": 2280,
+            "rmsDbfs": -22.824,
+            "spectralCentroidHz": 1924.65,
+            "chromaChangeFromPrevious": 0.46887
+          },
+          {
+            "startSeconds": 2280,
+            "endSeconds": 2340,
+            "rmsDbfs": -22.536,
+            "spectralCentroidHz": 1881.313,
+            "chromaChangeFromPrevious": 0.30946
+          },
+          {
+            "startSeconds": 2340,
+            "endSeconds": 2400,
+            "rmsDbfs": -21.823,
+            "spectralCentroidHz": 1800.314,
+            "chromaChangeFromPrevious": 0.11095
+          },
+          {
+            "startSeconds": 2400,
+            "endSeconds": 2460,
+            "rmsDbfs": -21.782,
+            "spectralCentroidHz": 1828.878,
+            "chromaChangeFromPrevious": 0.21747
+          },
+          {
+            "startSeconds": 2460,
+            "endSeconds": 2520,
+            "rmsDbfs": -22.781,
+            "spectralCentroidHz": 1949.828,
+            "chromaChangeFromPrevious": 0.18219
+          },
+          {
+            "startSeconds": 2520,
+            "endSeconds": 2580,
+            "rmsDbfs": -22.22,
+            "spectralCentroidHz": 1989.079,
+            "chromaChangeFromPrevious": 0.11734
+          },
+          {
+            "startSeconds": 2580,
+            "endSeconds": 2640,
+            "rmsDbfs": -21.831,
+            "spectralCentroidHz": 2004.554,
+            "chromaChangeFromPrevious": 0.07625
+          },
+          {
+            "startSeconds": 2640,
+            "endSeconds": 2700,
+            "rmsDbfs": -22.498,
+            "spectralCentroidHz": 1972.972,
+            "chromaChangeFromPrevious": 0.18008
+          },
+          {
+            "startSeconds": 2700,
+            "endSeconds": 2760,
+            "rmsDbfs": -23.514,
+            "spectralCentroidHz": 2098.49,
+            "chromaChangeFromPrevious": 0.14926
+          },
+          {
+            "startSeconds": 2760,
+            "endSeconds": 2820,
+            "rmsDbfs": -24.587,
+            "spectralCentroidHz": 1885.427,
+            "chromaChangeFromPrevious": 0.13609
+          },
+          {
+            "startSeconds": 2820,
+            "endSeconds": 2880,
+            "rmsDbfs": -23.988,
+            "spectralCentroidHz": 2380.947,
+            "chromaChangeFromPrevious": 0.06929
+          },
+          {
+            "startSeconds": 2880,
+            "endSeconds": 2940,
+            "rmsDbfs": -32.009,
+            "spectralCentroidHz": 2027.359,
+            "chromaChangeFromPrevious": 0.43195
+          },
+          {
+            "startSeconds": 2940,
+            "endSeconds": 3000,
+            "rmsDbfs": -25.011,
+            "spectralCentroidHz": 432.397,
+            "chromaChangeFromPrevious": 0.70071
+          },
+          {
+            "startSeconds": 3000,
+            "endSeconds": 3060,
+            "rmsDbfs": -23.196,
+            "spectralCentroidHz": 406.15,
+            "chromaChangeFromPrevious": 0.22949
+          },
+          {
+            "startSeconds": 3060,
+            "endSeconds": 3120,
+            "rmsDbfs": -22.506,
+            "spectralCentroidHz": 408.848,
+            "chromaChangeFromPrevious": 0.19802
+          },
+          {
+            "startSeconds": 3120,
+            "endSeconds": 3180,
+            "rmsDbfs": -22.05,
+            "spectralCentroidHz": 408.976,
+            "chromaChangeFromPrevious": 0.21687
+          },
+          {
+            "startSeconds": 3180,
+            "endSeconds": 3240,
+            "rmsDbfs": -22.141,
+            "spectralCentroidHz": 404.412,
+            "chromaChangeFromPrevious": 0.26592
+          },
+          {
+            "startSeconds": 3240,
+            "endSeconds": 3300,
+            "rmsDbfs": -22.007,
+            "spectralCentroidHz": 428.372,
+            "chromaChangeFromPrevious": 0.17311
+          },
+          {
+            "startSeconds": 3300,
+            "endSeconds": 3360,
+            "rmsDbfs": -23.536,
+            "spectralCentroidHz": 395.173,
+            "chromaChangeFromPrevious": 0.13718
+          },
+          {
+            "startSeconds": 3360,
+            "endSeconds": 3420,
+            "rmsDbfs": -21.281,
+            "spectralCentroidHz": 463.552,
+            "chromaChangeFromPrevious": 0.24088
+          },
+          {
+            "startSeconds": 3420,
+            "endSeconds": 3480,
+            "rmsDbfs": -22.844,
+            "spectralCentroidHz": 406.066,
+            "chromaChangeFromPrevious": 0.292
+          },
+          {
+            "startSeconds": 3480,
+            "endSeconds": 3540,
+            "rmsDbfs": -21.273,
+            "spectralCentroidHz": 412.963,
+            "chromaChangeFromPrevious": 0.22725
+          },
+          {
+            "startSeconds": 3540,
+            "endSeconds": 3600,
+            "rmsDbfs": -21.89,
+            "spectralCentroidHz": 389.084,
+            "chromaChangeFromPrevious": 0.23187
+          },
+          {
+            "startSeconds": 3600,
+            "endSeconds": 3660,
+            "rmsDbfs": -21.907,
+            "spectralCentroidHz": 475.227,
+            "chromaChangeFromPrevious": 0.19648
+          },
+          {
+            "startSeconds": 3660,
+            "endSeconds": 3720,
+            "rmsDbfs": -20.475,
+            "spectralCentroidHz": 328.767,
+            "chromaChangeFromPrevious": 0.32206
+          },
+          {
+            "startSeconds": 3720,
+            "endSeconds": 3780,
+            "rmsDbfs": -23.875,
+            "spectralCentroidHz": 1270.118,
+            "chromaChangeFromPrevious": 0.20965
+          },
+          {
+            "startSeconds": 3780,
+            "endSeconds": 3840,
+            "rmsDbfs": -23.388,
+            "spectralCentroidHz": 1871.129,
+            "chromaChangeFromPrevious": 0.2329
+          },
+          {
+            "startSeconds": 3840,
+            "endSeconds": 3900,
+            "rmsDbfs": -22.984,
+            "spectralCentroidHz": 1077.437,
+            "chromaChangeFromPrevious": 0.44161
+          },
+          {
+            "startSeconds": 3900,
+            "endSeconds": 3960,
+            "rmsDbfs": -17.585,
+            "spectralCentroidHz": 1315.276,
+            "chromaChangeFromPrevious": 0.55267
+          },
+          {
+            "startSeconds": 3960,
+            "endSeconds": 4020,
+            "rmsDbfs": -17.247,
+            "spectralCentroidHz": 1899.669,
+            "chromaChangeFromPrevious": 0.27201
+          },
+          {
+            "startSeconds": 4020,
+            "endSeconds": 4080,
+            "rmsDbfs": -18.503,
+            "spectralCentroidHz": 1795.948,
+            "chromaChangeFromPrevious": 0.35712
+          },
+          {
+            "startSeconds": 4080,
+            "endSeconds": 4140,
+            "rmsDbfs": -18.428,
+            "spectralCentroidHz": 1719.727,
+            "chromaChangeFromPrevious": 0.57769
+          },
+          {
+            "startSeconds": 4140,
+            "endSeconds": 4200,
+            "rmsDbfs": -17.385,
+            "spectralCentroidHz": 1738.702,
+            "chromaChangeFromPrevious": 0.15706
+          },
+          {
+            "startSeconds": 4200,
+            "endSeconds": 4260,
+            "rmsDbfs": -17.557,
+            "spectralCentroidHz": 1704.208,
+            "chromaChangeFromPrevious": 0.12921
+          },
+          {
+            "startSeconds": 4260,
+            "endSeconds": 4320,
+            "rmsDbfs": -17.511,
+            "spectralCentroidHz": 1599.322,
+            "chromaChangeFromPrevious": 0.20737
+          },
+          {
+            "startSeconds": 4320,
+            "endSeconds": 4380,
+            "rmsDbfs": -17.986,
+            "spectralCentroidHz": 1842.613,
+            "chromaChangeFromPrevious": 0.2191
+          },
+          {
+            "startSeconds": 4380,
+            "endSeconds": 4440,
+            "rmsDbfs": -21.91,
+            "spectralCentroidHz": 2265.833,
+            "chromaChangeFromPrevious": 0.63985
+          },
+          {
+            "startSeconds": 4440,
+            "endSeconds": 4500,
+            "rmsDbfs": -20.229,
+            "spectralCentroidHz": 2177.717,
+            "chromaChangeFromPrevious": 0.54396
+          },
+          {
+            "startSeconds": 4500,
+            "endSeconds": 4560,
+            "rmsDbfs": -19.034,
+            "spectralCentroidHz": 1964.238,
+            "chromaChangeFromPrevious": 0.31313
+          },
+          {
+            "startSeconds": 4560,
+            "endSeconds": 4620,
+            "rmsDbfs": -18.062,
+            "spectralCentroidHz": 2118.895,
+            "chromaChangeFromPrevious": 0.42511
+          },
+          {
+            "startSeconds": 4620,
+            "endSeconds": 4680,
+            "rmsDbfs": -23.016,
+            "spectralCentroidHz": 939.46,
+            "chromaChangeFromPrevious": 0.62359
+          },
+          {
+            "startSeconds": 4680,
+            "endSeconds": 4740,
+            "rmsDbfs": -19.976,
+            "spectralCentroidHz": 721.45,
+            "chromaChangeFromPrevious": 0.51666
+          },
+          {
+            "startSeconds": 4740,
+            "endSeconds": 4800,
+            "rmsDbfs": -16.734,
+            "spectralCentroidHz": 1208.501,
+            "chromaChangeFromPrevious": 0.36469
+          },
+          {
+            "startSeconds": 4800,
+            "endSeconds": 4860,
+            "rmsDbfs": -16.833,
+            "spectralCentroidHz": 1199.147,
+            "chromaChangeFromPrevious": 0.48344
+          },
+          {
+            "startSeconds": 4860,
+            "endSeconds": 4920,
+            "rmsDbfs": -16.9,
+            "spectralCentroidHz": 1345.513,
+            "chromaChangeFromPrevious": 0.21199
+          },
+          {
+            "startSeconds": 4920,
+            "endSeconds": 4980,
+            "rmsDbfs": -16.768,
+            "spectralCentroidHz": 1763.264,
+            "chromaChangeFromPrevious": 0.40882
+          },
+          {
+            "startSeconds": 4980,
+            "endSeconds": 5040,
+            "rmsDbfs": -16.652,
+            "spectralCentroidHz": 1204.448,
+            "chromaChangeFromPrevious": 0.46739
+          },
+          {
+            "startSeconds": 5040,
+            "endSeconds": 5100,
+            "rmsDbfs": -21.936,
+            "spectralCentroidHz": 1405.814,
+            "chromaChangeFromPrevious": 0.40597
+          },
+          {
+            "startSeconds": 5100,
+            "endSeconds": 5160,
+            "rmsDbfs": -20.904,
+            "spectralCentroidHz": 2506.261,
+            "chromaChangeFromPrevious": 0.65949
+          },
+          {
+            "startSeconds": 5160,
+            "endSeconds": 5220,
+            "rmsDbfs": -17.882,
+            "spectralCentroidHz": 1692.752,
+            "chromaChangeFromPrevious": 0.62563
+          },
+          {
+            "startSeconds": 5220,
+            "endSeconds": 5280,
+            "rmsDbfs": -17.703,
+            "spectralCentroidHz": 2022.015,
+            "chromaChangeFromPrevious": 0.76774
+          },
+          {
+            "startSeconds": 5280,
+            "endSeconds": 5340,
+            "rmsDbfs": -18.078,
+            "spectralCentroidHz": 1573.359,
+            "chromaChangeFromPrevious": 0.80764
+          },
+          {
+            "startSeconds": 5340,
+            "endSeconds": 5400,
+            "rmsDbfs": -18.413,
+            "spectralCentroidHz": 2029.564,
+            "chromaChangeFromPrevious": 0.84722
+          },
+          {
+            "startSeconds": 5400,
+            "endSeconds": 5460,
+            "rmsDbfs": -24.205,
+            "spectralCentroidHz": 1219.578,
+            "chromaChangeFromPrevious": 1.05789
+          },
+          {
+            "startSeconds": 5460,
+            "endSeconds": 5520,
+            "rmsDbfs": -19.713,
+            "spectralCentroidHz": 1305.939,
+            "chromaChangeFromPrevious": 0.54311
+          },
+          {
+            "startSeconds": 5520,
+            "endSeconds": 5580,
+            "rmsDbfs": -19.444,
+            "spectralCentroidHz": 1663.394,
+            "chromaChangeFromPrevious": 0.12971
+          },
+          {
+            "startSeconds": 5580,
+            "endSeconds": 5640,
+            "rmsDbfs": -19.479,
+            "spectralCentroidHz": 1565.591,
+            "chromaChangeFromPrevious": 0.6178
+          },
+          {
+            "startSeconds": 5640,
+            "endSeconds": 5700,
+            "rmsDbfs": -19.534,
+            "spectralCentroidHz": 1229.766,
+            "chromaChangeFromPrevious": 0.46867
+          },
+          {
+            "startSeconds": 5700,
+            "endSeconds": 5760,
+            "rmsDbfs": -19.438,
+            "spectralCentroidHz": 1366.202,
+            "chromaChangeFromPrevious": 0.47974
+          },
+          {
+            "startSeconds": 5760,
+            "endSeconds": 5820,
+            "rmsDbfs": -19.378,
+            "spectralCentroidHz": 993.725,
+            "chromaChangeFromPrevious": 0.4268
+          },
+          {
+            "startSeconds": 5820,
+            "endSeconds": 5880,
+            "rmsDbfs": -19.687,
+            "spectralCentroidHz": 883.378,
+            "chromaChangeFromPrevious": 0.13677
+          },
+          {
+            "startSeconds": 5880,
+            "endSeconds": 5940,
+            "rmsDbfs": -24.392,
+            "spectralCentroidHz": 1163.512,
+            "chromaChangeFromPrevious": 0.52455
+          },
+          {
+            "startSeconds": 5940,
+            "endSeconds": 6000,
+            "rmsDbfs": -23.604,
+            "spectralCentroidHz": 2097.238,
+            "chromaChangeFromPrevious": 0.8758
+          },
+          {
+            "startSeconds": 6000,
+            "endSeconds": 6060,
+            "rmsDbfs": -28.302,
+            "spectralCentroidHz": 1067.508,
+            "chromaChangeFromPrevious": 0.76873
+          },
+          {
+            "startSeconds": 6060,
+            "endSeconds": 6120,
+            "rmsDbfs": -23.86,
+            "spectralCentroidHz": 1014.873,
+            "chromaChangeFromPrevious": 0.57897
+          },
+          {
+            "startSeconds": 6120,
+            "endSeconds": 6180,
+            "rmsDbfs": -20.563,
+            "spectralCentroidHz": 1180.936,
+            "chromaChangeFromPrevious": 0.44537
+          },
+          {
+            "startSeconds": 6180,
+            "endSeconds": 6240,
+            "rmsDbfs": -20.075,
+            "spectralCentroidHz": 1281.273,
+            "chromaChangeFromPrevious": 0.40803
+          },
+          {
+            "startSeconds": 6240,
+            "endSeconds": 6300,
+            "rmsDbfs": -25.239,
+            "spectralCentroidHz": 1342.45,
+            "chromaChangeFromPrevious": 0.53024
+          },
+          {
+            "startSeconds": 6300,
+            "endSeconds": 6360,
+            "rmsDbfs": -29.672,
+            "spectralCentroidHz": 1022.239,
+            "chromaChangeFromPrevious": 0.68077
+          },
+          {
+            "startSeconds": 6360,
+            "endSeconds": 6420,
+            "rmsDbfs": -26.229,
+            "spectralCentroidHz": 736.773,
+            "chromaChangeFromPrevious": 0.84835
+          },
+          {
+            "startSeconds": 6420,
+            "endSeconds": 6480,
+            "rmsDbfs": -25.72,
+            "spectralCentroidHz": 993.79,
+            "chromaChangeFromPrevious": 0.73222
+          },
+          {
+            "startSeconds": 6480,
+            "endSeconds": 6540,
+            "rmsDbfs": -25.312,
+            "spectralCentroidHz": 1151.81,
+            "chromaChangeFromPrevious": 0.74546
+          },
+          {
+            "startSeconds": 6540,
+            "endSeconds": 6600,
+            "rmsDbfs": -26.076,
+            "spectralCentroidHz": 1282.288,
+            "chromaChangeFromPrevious": 0.59825
+          },
+          {
+            "startSeconds": 6600,
+            "endSeconds": 6660,
+            "rmsDbfs": -24.859,
+            "spectralCentroidHz": 1598.388,
+            "chromaChangeFromPrevious": 0.82565
+          },
+          {
+            "startSeconds": 6660,
+            "endSeconds": 6720,
+            "rmsDbfs": -24.936,
+            "spectralCentroidHz": 1889.815,
+            "chromaChangeFromPrevious": 0.43943
+          },
+          {
+            "startSeconds": 6720,
+            "endSeconds": 6780,
+            "rmsDbfs": -23.615,
+            "spectralCentroidHz": 2176.49,
+            "chromaChangeFromPrevious": 0.75127
+          },
+          {
+            "startSeconds": 6780,
+            "endSeconds": 6840,
+            "rmsDbfs": -23.544,
+            "spectralCentroidHz": 2064.862,
+            "chromaChangeFromPrevious": 0.73911
+          },
+          {
+            "startSeconds": 6840,
+            "endSeconds": 6900,
+            "rmsDbfs": -23.429,
+            "spectralCentroidHz": 1994.802,
+            "chromaChangeFromPrevious": 0.60143
+          },
+          {
+            "startSeconds": 6900,
+            "endSeconds": 6960,
+            "rmsDbfs": -24.48,
+            "spectralCentroidHz": 2085.74,
+            "chromaChangeFromPrevious": 0.57074
+          },
+          {
+            "startSeconds": 6960,
+            "endSeconds": 7020,
+            "rmsDbfs": -26.752,
+            "spectralCentroidHz": 1054.773,
+            "chromaChangeFromPrevious": 0.96565
+          },
+          {
+            "startSeconds": 7020,
+            "endSeconds": 7080,
+            "rmsDbfs": -23.58,
+            "spectralCentroidHz": 896.392,
+            "chromaChangeFromPrevious": 0.22501
+          },
+          {
+            "startSeconds": 7080,
+            "endSeconds": 7140,
+            "rmsDbfs": -23.275,
+            "spectralCentroidHz": 883.18,
+            "chromaChangeFromPrevious": 0.43768
+          },
+          {
+            "startSeconds": 7140,
+            "endSeconds": 7200,
+            "rmsDbfs": -23.009,
+            "spectralCentroidHz": 888.564,
+            "chromaChangeFromPrevious": 0.21317
+          },
+          {
+            "startSeconds": 7200,
+            "endSeconds": 7260,
+            "rmsDbfs": -23.049,
+            "spectralCentroidHz": 873.24,
+            "chromaChangeFromPrevious": 0.20036
+          },
+          {
+            "startSeconds": 7260,
+            "endSeconds": 7320,
+            "rmsDbfs": -23.227,
+            "spectralCentroidHz": 901.199,
+            "chromaChangeFromPrevious": 0.17464
+          },
+          {
+            "startSeconds": 7320,
+            "endSeconds": 7375.625,
+            "rmsDbfs": -26.512,
+            "spectralCentroidHz": 1586.607,
+            "chromaChangeFromPrevious": 0.38761
+          }
+        ]
+      },
+      "humanListening": {
+        "voice": "none",
+        "sceneFit": {
+          "sleep": 0.9,
+          "calm": 0.85,
+          "focus": 0.6
+        },
+        "strongBeat": true,
+        "emotionalLift": false,
+        "largeReverb": true,
+        "mechanicalOrBuzz": false,
+        "startleRisk": 0.1,
+        "notes": "Machine analysis complete; browser listening and scene-fit review pending.",
+        "decision": "contrast_only"
+      },
+      "derivedProductionParameters": {
+        "allowedGoals": [
+          "sleep",
+          "calm"
+        ],
+        "instrumentFamilies": [
+          "soft piano",
+          "low-density ambient pad"
+        ],
+        "tempoRange": [
+          0,
+          60
+        ],
+        "registerRangeMidi": [
+          15.49,
+          123.58
+        ],
+        "density": "very_low",
+        "harmonyMotion": "static",
+        "environmentCompatibility": [
+          "rain",
+          "ocean",
+          "soft air"
+        ],
+        "forbiddenFeatures": [
+          "strong drums",
+          "bright attacks",
+          "voice",
+          "sudden transitions"
+        ],
+        "confidence": 0.55,
+        "derivationNotes": "Use acoustic statistics as ranges and constraints, never copy the reference melody or arrangement."
+      },
+      "analysisProvenance": {
+        "analysisVersion": "reference-audio-analysis-v1",
+        "machineTools": [
+          "ffprobe",
+          "librosa",
+          "scipy",
+          "soundfile",
+          "music-recognition:first30"
+        ],
+        "humanReviewer": "pending",
+        "analyzedFromExactAudio": true,
+        "approvedForAtomicMaterialPlanning": false
+      }
+    },
+    {
+      "referenceId": "licensed_ambient_bing_show18",
+      "source": {
+        "title": "Bing Satellites Mostly Ambient Radio Show 18",
+        "creator": "Bing Satellites",
+        "sourceUrl": "https://archive.org/download/BingSatellitesMostlyAmbientRadioShow018/mostly-ambient-018---10-october-2012.mp3",
+        "analysisSourceUrl": "https://archive.org/download/BingSatellitesMostlyAmbientRadioShow018/mostly-ambient-018---10-october-2012.mp3",
+        "accessClass": "licensed_file",
+        "fileSha256": "91b0e9d589990e3a15c52d686febb6f73fd0121437ebc213d82c07d3462a30de",
+        "observedOn": "2026-07-21",
+        "rightsBoundary": "internal_analysis_only",
+        "licenseEvidence": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+        "alternateSourceIdentity": {
+          "referenceSourceUrl": "https://archive.org/download/BingSatellitesMostlyAmbientRadioShow018/mostly-ambient-018---10-october-2012.mp3",
+          "analysisSourceUrl": "https://archive.org/download/BingSatellitesMostlyAmbientRadioShow018/mostly-ambient-018---10-october-2012.mp3",
+          "titleCreatorMatch": true,
+          "first30SecondsVerificationMethod": "direct_source",
+          "first30SecondsDetectedTitle": "Bing Satellites Mostly Ambient Radio Show 18",
+          "first30SecondsDetectedCreator": "Bing Satellites",
+          "first30SecondsMatch": true,
+          "verifiedOn": "2026-07-21"
+        }
+      },
+      "audio": {
+        "sourceDurationSeconds": 7221.266,
+        "analyzedDurationSeconds": 7221.264,
+        "analysisCoverage": {
+          "beginning": {
+            "startSeconds": 0,
+            "endSeconds": 120
+          },
+          "middle": {
+            "startSeconds": 3550.632,
+            "endSeconds": 3670.632
+          },
+          "end": {
+            "startSeconds": 7101.264,
+            "endSeconds": 7221.264
+          }
+        },
+        "durationSeconds": 7221.264,
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -17.45,
+        "loudnessRangeLu": 11.4,
+        "truePeakDbtp": 0.25,
+        "spectralCentroidHz": 1359.023,
+        "highFrequencyEnergyRatio": 0.10275,
+        "onsetRatePerMinute": 92.651,
+        "silenceGaps": [
+          1.765,
+          1.44,
+          0.186,
+          0.093,
+          0.046,
+          0.046,
+          0.929,
+          0.418,
+          0.046,
+          0.325,
+          0.093,
+          0.093,
+          0.093,
+          0.186,
+          2.276,
+          7.848,
+          6.316,
+          0.046,
+          0.279,
+          0.279,
+          0.186,
+          0.232,
+          0.093,
+          2.09,
+          0.046,
+          9.381,
+          0.557,
+          6.734,
+          0.093,
+          0.093,
+          0.232,
+          0.093,
+          0.464,
+          0.372,
+          0.789,
+          2.09,
+          0.046,
+          0.186,
+          0.093,
+          0.186,
+          0.093,
+          0.139,
+          0.093,
+          0.046,
+          0.232,
+          0.046,
+          0.093,
+          0.464,
+          0.929,
+          0.372,
+          0.697,
+          0.279,
+          0.65,
+          0.372,
+          0.464,
+          0.279,
+          0.093,
+          0.604,
+          0.372,
+          0.093,
+          0.093,
+          0.279,
+          0.464,
+          0.093,
+          0.325,
+          0.464,
+          0.186,
+          0.046,
+          0.232,
+          0.372,
+          0.511,
+          0.232,
+          0.093,
+          0.557,
+          0.093,
+          0.418,
+          0.464,
+          0.139,
+          0.557,
+          2.183,
+          0.046,
+          0.139,
+          0.139,
+          0.325,
+          0.325,
+          0.186,
+          0.093,
+          0.325,
+          0.046,
+          0.65,
+          1.997,
+          0.139,
+          0.046,
+          0.139,
+          0.697,
+          0.093,
+          0.139,
+          0.139,
+          0.093,
+          0.139
+        ],
+        "voiceProbability": null,
+        "beatProbability": 1,
+        "loopBoundaryScore": 0.43891
+      },
+      "music": {
+        "tempoBpm": {
+          "min": 117.454,
+          "max": 117.454,
+          "confidence": 0.55
+        },
+        "meter": {
+          "value": "4/4_or_free_time",
+          "confidence": 0.25
+        },
+        "keyOrMode": {
+          "value": "A minor",
+          "confidence": 0.514
+        },
+        "register": {
+          "lowMidi": 15.49,
+          "highMidi": 123.08,
+          "centerMidi": 69.28,
+          "confidence": 0.45
+        },
+        "instrumentRoles": [
+          "piano",
+          "ambient texture"
+        ],
+        "chordChangeBars": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "motifLengthNotes": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "phraseLengthBars": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "noteDensityPerMinute": 92.651,
+        "melodyContour": "sparse_low_salience_ambient",
+        "form": [
+          {
+            "startSeconds": 0,
+            "endSeconds": 60,
+            "rmsDbfs": -15.93,
+            "spectralCentroidHz": 747.815,
+            "chromaChangeFromPrevious": 0
+          },
+          {
+            "startSeconds": 60,
+            "endSeconds": 120,
+            "rmsDbfs": -16.659,
+            "spectralCentroidHz": 1635.992,
+            "chromaChangeFromPrevious": 0.71918
+          },
+          {
+            "startSeconds": 120,
+            "endSeconds": 180,
+            "rmsDbfs": -16.405,
+            "spectralCentroidHz": 1526.277,
+            "chromaChangeFromPrevious": 0.89455
+          },
+          {
+            "startSeconds": 180,
+            "endSeconds": 240,
+            "rmsDbfs": -23.29,
+            "spectralCentroidHz": 886.618,
+            "chromaChangeFromPrevious": 1.01674
+          },
+          {
+            "startSeconds": 240,
+            "endSeconds": 300,
+            "rmsDbfs": -23.014,
+            "spectralCentroidHz": 807.399,
+            "chromaChangeFromPrevious": 0.23441
+          },
+          {
+            "startSeconds": 300,
+            "endSeconds": 360,
+            "rmsDbfs": -23.532,
+            "spectralCentroidHz": 819.942,
+            "chromaChangeFromPrevious": 0.17588
+          },
+          {
+            "startSeconds": 360,
+            "endSeconds": 420,
+            "rmsDbfs": -23.128,
+            "spectralCentroidHz": 837.372,
+            "chromaChangeFromPrevious": 0.18393
+          },
+          {
+            "startSeconds": 420,
+            "endSeconds": 480,
+            "rmsDbfs": -24.491,
+            "spectralCentroidHz": 876.788,
+            "chromaChangeFromPrevious": 0.10099
+          },
+          {
+            "startSeconds": 480,
+            "endSeconds": 540,
+            "rmsDbfs": -23.99,
+            "spectralCentroidHz": 2117.005,
+            "chromaChangeFromPrevious": 0.80261
+          },
+          {
+            "startSeconds": 540,
+            "endSeconds": 600,
+            "rmsDbfs": -22.716,
+            "spectralCentroidHz": 1258.735,
+            "chromaChangeFromPrevious": 0.7865
+          },
+          {
+            "startSeconds": 600,
+            "endSeconds": 660,
+            "rmsDbfs": -22.564,
+            "spectralCentroidHz": 1252.114,
+            "chromaChangeFromPrevious": 0.16698
+          },
+          {
+            "startSeconds": 660,
+            "endSeconds": 720,
+            "rmsDbfs": -24.179,
+            "spectralCentroidHz": 1408.947,
+            "chromaChangeFromPrevious": 0.19305
+          },
+          {
+            "startSeconds": 720,
+            "endSeconds": 780,
+            "rmsDbfs": -29.159,
+            "spectralCentroidHz": 1719.869,
+            "chromaChangeFromPrevious": 0.51144
+          },
+          {
+            "startSeconds": 780,
+            "endSeconds": 840,
+            "rmsDbfs": -24.67,
+            "spectralCentroidHz": 549.654,
+            "chromaChangeFromPrevious": 0.58374
+          },
+          {
+            "startSeconds": 840,
+            "endSeconds": 900,
+            "rmsDbfs": -24.302,
+            "spectralCentroidHz": 558.335,
+            "chromaChangeFromPrevious": 0.04732
+          },
+          {
+            "startSeconds": 900,
+            "endSeconds": 960,
+            "rmsDbfs": -24.189,
+            "spectralCentroidHz": 554.81,
+            "chromaChangeFromPrevious": 0.05447
+          },
+          {
+            "startSeconds": 960,
+            "endSeconds": 1020,
+            "rmsDbfs": -23.369,
+            "spectralCentroidHz": 559.311,
+            "chromaChangeFromPrevious": 0.11081
+          },
+          {
+            "startSeconds": 1020,
+            "endSeconds": 1080,
+            "rmsDbfs": -23.802,
+            "spectralCentroidHz": 559.899,
+            "chromaChangeFromPrevious": 0.06588
+          },
+          {
+            "startSeconds": 1080,
+            "endSeconds": 1140,
+            "rmsDbfs": -23.857,
+            "spectralCentroidHz": 556.177,
+            "chromaChangeFromPrevious": 0.07589
+          },
+          {
+            "startSeconds": 1140,
+            "endSeconds": 1200,
+            "rmsDbfs": -25.457,
+            "spectralCentroidHz": 612.326,
+            "chromaChangeFromPrevious": 0.17111
+          },
+          {
+            "startSeconds": 1200,
+            "endSeconds": 1260,
+            "rmsDbfs": -23.389,
+            "spectralCentroidHz": 1955.979,
+            "chromaChangeFromPrevious": 0.58954
+          },
+          {
+            "startSeconds": 1260,
+            "endSeconds": 1320,
+            "rmsDbfs": -19.735,
+            "spectralCentroidHz": 1378.68,
+            "chromaChangeFromPrevious": 0.43635
+          },
+          {
+            "startSeconds": 1320,
+            "endSeconds": 1380,
+            "rmsDbfs": -18.183,
+            "spectralCentroidHz": 1538.995,
+            "chromaChangeFromPrevious": 0.20392
+          },
+          {
+            "startSeconds": 1380,
+            "endSeconds": 1440,
+            "rmsDbfs": -18.093,
+            "spectralCentroidHz": 1734.95,
+            "chromaChangeFromPrevious": 0.13318
+          },
+          {
+            "startSeconds": 1440,
+            "endSeconds": 1500,
+            "rmsDbfs": -19.325,
+            "spectralCentroidHz": 2108.388,
+            "chromaChangeFromPrevious": 0.34087
+          },
+          {
+            "startSeconds": 1500,
+            "endSeconds": 1560,
+            "rmsDbfs": -19.658,
+            "spectralCentroidHz": 2280.028,
+            "chromaChangeFromPrevious": 0.36025
+          },
+          {
+            "startSeconds": 1560,
+            "endSeconds": 1620,
+            "rmsDbfs": -20.423,
+            "spectralCentroidHz": 1690.395,
+            "chromaChangeFromPrevious": 0.37536
+          },
+          {
+            "startSeconds": 1620,
+            "endSeconds": 1680,
+            "rmsDbfs": -22.95,
+            "spectralCentroidHz": 1323.035,
+            "chromaChangeFromPrevious": 0.41348
+          },
+          {
+            "startSeconds": 1680,
+            "endSeconds": 1740,
+            "rmsDbfs": -24.446,
+            "spectralCentroidHz": 1414.046,
+            "chromaChangeFromPrevious": 0.30236
+          },
+          {
+            "startSeconds": 1740,
+            "endSeconds": 1800,
+            "rmsDbfs": -24.033,
+            "spectralCentroidHz": 2185.549,
+            "chromaChangeFromPrevious": 0.8729
+          },
+          {
+            "startSeconds": 1800,
+            "endSeconds": 1860,
+            "rmsDbfs": -22.144,
+            "spectralCentroidHz": 2734.81,
+            "chromaChangeFromPrevious": 0.32011
+          },
+          {
+            "startSeconds": 1860,
+            "endSeconds": 1920,
+            "rmsDbfs": -21.235,
+            "spectralCentroidHz": 2841.305,
+            "chromaChangeFromPrevious": 0.3099
+          },
+          {
+            "startSeconds": 1920,
+            "endSeconds": 1980,
+            "rmsDbfs": -20.519,
+            "spectralCentroidHz": 2891.126,
+            "chromaChangeFromPrevious": 0.3798
+          },
+          {
+            "startSeconds": 1980,
+            "endSeconds": 2040,
+            "rmsDbfs": -19.859,
+            "spectralCentroidHz": 2906.145,
+            "chromaChangeFromPrevious": 0.12141
+          },
+          {
+            "startSeconds": 2040,
+            "endSeconds": 2100,
+            "rmsDbfs": -19.661,
+            "spectralCentroidHz": 2895.417,
+            "chromaChangeFromPrevious": 0.19583
+          },
+          {
+            "startSeconds": 2100,
+            "endSeconds": 2160,
+            "rmsDbfs": -19.986,
+            "spectralCentroidHz": 2922.087,
+            "chromaChangeFromPrevious": 0.35357
+          },
+          {
+            "startSeconds": 2160,
+            "endSeconds": 2220,
+            "rmsDbfs": -19.551,
+            "spectralCentroidHz": 2881.165,
+            "chromaChangeFromPrevious": 0.27892
+          },
+          {
+            "startSeconds": 2220,
+            "endSeconds": 2280,
+            "rmsDbfs": -21.051,
+            "spectralCentroidHz": 3046.963,
+            "chromaChangeFromPrevious": 0.3392
+          },
+          {
+            "startSeconds": 2280,
+            "endSeconds": 2340,
+            "rmsDbfs": -20.903,
+            "spectralCentroidHz": 3223.082,
+            "chromaChangeFromPrevious": 0.25655
+          },
+          {
+            "startSeconds": 2340,
+            "endSeconds": 2400,
+            "rmsDbfs": -20.124,
+            "spectralCentroidHz": 2663.351,
+            "chromaChangeFromPrevious": 0.28953
+          },
+          {
+            "startSeconds": 2400,
+            "endSeconds": 2460,
+            "rmsDbfs": -23.855,
+            "spectralCentroidHz": 2207.891,
+            "chromaChangeFromPrevious": 0.55614
+          },
+          {
+            "startSeconds": 2460,
+            "endSeconds": 2520,
+            "rmsDbfs": -24.656,
+            "spectralCentroidHz": 684.283,
+            "chromaChangeFromPrevious": 1.02902
+          },
+          {
+            "startSeconds": 2520,
+            "endSeconds": 2580,
+            "rmsDbfs": -22.553,
+            "spectralCentroidHz": 1170.753,
+            "chromaChangeFromPrevious": 0.34831
+          },
+          {
+            "startSeconds": 2580,
+            "endSeconds": 2640,
+            "rmsDbfs": -21.706,
+            "spectralCentroidHz": 1809.797,
+            "chromaChangeFromPrevious": 0.35314
+          },
+          {
+            "startSeconds": 2640,
+            "endSeconds": 2700,
+            "rmsDbfs": -19.287,
+            "spectralCentroidHz": 1609.903,
+            "chromaChangeFromPrevious": 0.46347
+          },
+          {
+            "startSeconds": 2700,
+            "endSeconds": 2760,
+            "rmsDbfs": -19.844,
+            "spectralCentroidHz": 1843.294,
+            "chromaChangeFromPrevious": 0.33994
+          },
+          {
+            "startSeconds": 2760,
+            "endSeconds": 2820,
+            "rmsDbfs": -30.772,
+            "spectralCentroidHz": 3143.401,
+            "chromaChangeFromPrevious": 0.52288
+          },
+          {
+            "startSeconds": 2820,
+            "endSeconds": 2880,
+            "rmsDbfs": -30.246,
+            "spectralCentroidHz": 1481.936,
+            "chromaChangeFromPrevious": 0.76316
+          },
+          {
+            "startSeconds": 2880,
+            "endSeconds": 2940,
+            "rmsDbfs": -23.976,
+            "spectralCentroidHz": 354.86,
+            "chromaChangeFromPrevious": 0.06547
+          },
+          {
+            "startSeconds": 2940,
+            "endSeconds": 3000,
+            "rmsDbfs": -22.65,
+            "spectralCentroidHz": 669.827,
+            "chromaChangeFromPrevious": 0.36757
+          },
+          {
+            "startSeconds": 3000,
+            "endSeconds": 3060,
+            "rmsDbfs": -22.672,
+            "spectralCentroidHz": 932.279,
+            "chromaChangeFromPrevious": 0.18026
+          },
+          {
+            "startSeconds": 3060,
+            "endSeconds": 3120,
+            "rmsDbfs": -22.791,
+            "spectralCentroidHz": 1037.984,
+            "chromaChangeFromPrevious": 0.04028
+          },
+          {
+            "startSeconds": 3120,
+            "endSeconds": 3180,
+            "rmsDbfs": -20.019,
+            "spectralCentroidHz": 927.415,
+            "chromaChangeFromPrevious": 0.14275
+          },
+          {
+            "startSeconds": 3180,
+            "endSeconds": 3240,
+            "rmsDbfs": -20.511,
+            "spectralCentroidHz": 874.308,
+            "chromaChangeFromPrevious": 0.12889
+          },
+          {
+            "startSeconds": 3240,
+            "endSeconds": 3300,
+            "rmsDbfs": -19.307,
+            "spectralCentroidHz": 954.165,
+            "chromaChangeFromPrevious": 0.16086
+          },
+          {
+            "startSeconds": 3300,
+            "endSeconds": 3360,
+            "rmsDbfs": -19.962,
+            "spectralCentroidHz": 434.71,
+            "chromaChangeFromPrevious": 0.53574
+          },
+          {
+            "startSeconds": 3360,
+            "endSeconds": 3420,
+            "rmsDbfs": -27.242,
+            "spectralCentroidHz": 440.228,
+            "chromaChangeFromPrevious": 0.99218
+          },
+          {
+            "startSeconds": 3420,
+            "endSeconds": 3480,
+            "rmsDbfs": -25.041,
+            "spectralCentroidHz": 288.599,
+            "chromaChangeFromPrevious": 0.13546
+          },
+          {
+            "startSeconds": 3480,
+            "endSeconds": 3540,
+            "rmsDbfs": -24.439,
+            "spectralCentroidHz": 332.976,
+            "chromaChangeFromPrevious": 0.13056
+          },
+          {
+            "startSeconds": 3540,
+            "endSeconds": 3600,
+            "rmsDbfs": -24.605,
+            "spectralCentroidHz": 334.249,
+            "chromaChangeFromPrevious": 0.07766
+          },
+          {
+            "startSeconds": 3600,
+            "endSeconds": 3660,
+            "rmsDbfs": -23.55,
+            "spectralCentroidHz": 440.117,
+            "chromaChangeFromPrevious": 0.27997
+          },
+          {
+            "startSeconds": 3660,
+            "endSeconds": 3720,
+            "rmsDbfs": -21.822,
+            "spectralCentroidHz": 575.907,
+            "chromaChangeFromPrevious": 0.10738
+          },
+          {
+            "startSeconds": 3720,
+            "endSeconds": 3780,
+            "rmsDbfs": -21.757,
+            "spectralCentroidHz": 630.097,
+            "chromaChangeFromPrevious": 0.07092
+          },
+          {
+            "startSeconds": 3780,
+            "endSeconds": 3840,
+            "rmsDbfs": -22.493,
+            "spectralCentroidHz": 766.74,
+            "chromaChangeFromPrevious": 0.05197
+          },
+          {
+            "startSeconds": 3840,
+            "endSeconds": 3900,
+            "rmsDbfs": -22.731,
+            "spectralCentroidHz": 723.429,
+            "chromaChangeFromPrevious": 0.23394
+          },
+          {
+            "startSeconds": 3900,
+            "endSeconds": 3960,
+            "rmsDbfs": -17.821,
+            "spectralCentroidHz": 347.263,
+            "chromaChangeFromPrevious": 0.31648
+          },
+          {
+            "startSeconds": 3960,
+            "endSeconds": 4020,
+            "rmsDbfs": -22.675,
+            "spectralCentroidHz": 1196.032,
+            "chromaChangeFromPrevious": 0.3294
+          },
+          {
+            "startSeconds": 4020,
+            "endSeconds": 4080,
+            "rmsDbfs": -21.792,
+            "spectralCentroidHz": 1915.837,
+            "chromaChangeFromPrevious": 1.18956
+          },
+          {
+            "startSeconds": 4080,
+            "endSeconds": 4140,
+            "rmsDbfs": -21.648,
+            "spectralCentroidHz": 1884.641,
+            "chromaChangeFromPrevious": 0.35869
+          },
+          {
+            "startSeconds": 4140,
+            "endSeconds": 4200,
+            "rmsDbfs": -20.637,
+            "spectralCentroidHz": 1796.975,
+            "chromaChangeFromPrevious": 0.10105
+          },
+          {
+            "startSeconds": 4200,
+            "endSeconds": 4260,
+            "rmsDbfs": -20.54,
+            "spectralCentroidHz": 1676.194,
+            "chromaChangeFromPrevious": 0.13998
+          },
+          {
+            "startSeconds": 4260,
+            "endSeconds": 4320,
+            "rmsDbfs": -21.042,
+            "spectralCentroidHz": 1428.141,
+            "chromaChangeFromPrevious": 0.47124
+          },
+          {
+            "startSeconds": 4320,
+            "endSeconds": 4380,
+            "rmsDbfs": -17.709,
+            "spectralCentroidHz": 1500.123,
+            "chromaChangeFromPrevious": 0.78088
+          },
+          {
+            "startSeconds": 4380,
+            "endSeconds": 4440,
+            "rmsDbfs": -17.101,
+            "spectralCentroidHz": 1441.205,
+            "chromaChangeFromPrevious": 0.08662
+          },
+          {
+            "startSeconds": 4440,
+            "endSeconds": 4500,
+            "rmsDbfs": -16.365,
+            "spectralCentroidHz": 1595.033,
+            "chromaChangeFromPrevious": 0.44209
+          },
+          {
+            "startSeconds": 4500,
+            "endSeconds": 4560,
+            "rmsDbfs": -15.194,
+            "spectralCentroidHz": 1902.694,
+            "chromaChangeFromPrevious": 0.88373
+          },
+          {
+            "startSeconds": 4560,
+            "endSeconds": 4620,
+            "rmsDbfs": -15.942,
+            "spectralCentroidHz": 2057.546,
+            "chromaChangeFromPrevious": 0.20252
+          },
+          {
+            "startSeconds": 4620,
+            "endSeconds": 4680,
+            "rmsDbfs": -15.688,
+            "spectralCentroidHz": 2025.4,
+            "chromaChangeFromPrevious": 0.12544
+          },
+          {
+            "startSeconds": 4680,
+            "endSeconds": 4740,
+            "rmsDbfs": -17.98,
+            "spectralCentroidHz": 1839.473,
+            "chromaChangeFromPrevious": 0.32715
+          },
+          {
+            "startSeconds": 4740,
+            "endSeconds": 4800,
+            "rmsDbfs": -25.52,
+            "spectralCentroidHz": 2123.621,
+            "chromaChangeFromPrevious": 0.49683
+          },
+          {
+            "startSeconds": 4800,
+            "endSeconds": 4860,
+            "rmsDbfs": -28.389,
+            "spectralCentroidHz": 913.424,
+            "chromaChangeFromPrevious": 0.66776
+          },
+          {
+            "startSeconds": 4860,
+            "endSeconds": 4920,
+            "rmsDbfs": -28.702,
+            "spectralCentroidHz": 619.787,
+            "chromaChangeFromPrevious": 0.15501
+          },
+          {
+            "startSeconds": 4920,
+            "endSeconds": 4980,
+            "rmsDbfs": -29.086,
+            "spectralCentroidHz": 608.168,
+            "chromaChangeFromPrevious": 0.04332
+          },
+          {
+            "startSeconds": 4980,
+            "endSeconds": 5040,
+            "rmsDbfs": -28.714,
+            "spectralCentroidHz": 638.893,
+            "chromaChangeFromPrevious": 0.04385
+          },
+          {
+            "startSeconds": 5040,
+            "endSeconds": 5100,
+            "rmsDbfs": -27.636,
+            "spectralCentroidHz": 1703.612,
+            "chromaChangeFromPrevious": 0.92011
+          },
+          {
+            "startSeconds": 5100,
+            "endSeconds": 5160,
+            "rmsDbfs": -27.63,
+            "spectralCentroidHz": 1964.223,
+            "chromaChangeFromPrevious": 0.21715
+          },
+          {
+            "startSeconds": 5160,
+            "endSeconds": 5220,
+            "rmsDbfs": -27.492,
+            "spectralCentroidHz": 1964.118,
+            "chromaChangeFromPrevious": 0.01008
+          },
+          {
+            "startSeconds": 5220,
+            "endSeconds": 5280,
+            "rmsDbfs": -27.585,
+            "spectralCentroidHz": 1961.59,
+            "chromaChangeFromPrevious": 0.01713
+          },
+          {
+            "startSeconds": 5280,
+            "endSeconds": 5340,
+            "rmsDbfs": -27.654,
+            "spectralCentroidHz": 1972.194,
+            "chromaChangeFromPrevious": 0.01177
+          },
+          {
+            "startSeconds": 5340,
+            "endSeconds": 5400,
+            "rmsDbfs": -27.474,
+            "spectralCentroidHz": 1956.709,
+            "chromaChangeFromPrevious": 0.01498
+          },
+          {
+            "startSeconds": 5400,
+            "endSeconds": 5460,
+            "rmsDbfs": -27.715,
+            "spectralCentroidHz": 1960.222,
+            "chromaChangeFromPrevious": 0.01495
+          },
+          {
+            "startSeconds": 5460,
+            "endSeconds": 5520,
+            "rmsDbfs": -27.658,
+            "spectralCentroidHz": 1957.601,
+            "chromaChangeFromPrevious": 0.01275
+          },
+          {
+            "startSeconds": 5520,
+            "endSeconds": 5580,
+            "rmsDbfs": -27.674,
+            "spectralCentroidHz": 1938.276,
+            "chromaChangeFromPrevious": 0.01795
+          },
+          {
+            "startSeconds": 5580,
+            "endSeconds": 5640,
+            "rmsDbfs": -26.756,
+            "spectralCentroidHz": 2344.251,
+            "chromaChangeFromPrevious": 0.97087
+          },
+          {
+            "startSeconds": 5640,
+            "endSeconds": 5700,
+            "rmsDbfs": -41.916,
+            "spectralCentroidHz": 1177.173,
+            "chromaChangeFromPrevious": 0.91337
+          },
+          {
+            "startSeconds": 5700,
+            "endSeconds": 5760,
+            "rmsDbfs": -34.304,
+            "spectralCentroidHz": 980.708,
+            "chromaChangeFromPrevious": 0.60421
+          },
+          {
+            "startSeconds": 5760,
+            "endSeconds": 5820,
+            "rmsDbfs": -23.039,
+            "spectralCentroidHz": 913.484,
+            "chromaChangeFromPrevious": 0.61667
+          },
+          {
+            "startSeconds": 5820,
+            "endSeconds": 5880,
+            "rmsDbfs": -23.1,
+            "spectralCentroidHz": 973.57,
+            "chromaChangeFromPrevious": 0.2336
+          },
+          {
+            "startSeconds": 5880,
+            "endSeconds": 5940,
+            "rmsDbfs": -19.719,
+            "spectralCentroidHz": 794.788,
+            "chromaChangeFromPrevious": 0.3447
+          },
+          {
+            "startSeconds": 5940,
+            "endSeconds": 6000,
+            "rmsDbfs": -19.467,
+            "spectralCentroidHz": 766.134,
+            "chromaChangeFromPrevious": 0.24668
+          },
+          {
+            "startSeconds": 6000,
+            "endSeconds": 6060,
+            "rmsDbfs": -19.524,
+            "spectralCentroidHz": 884.854,
+            "chromaChangeFromPrevious": 0.57246
+          },
+          {
+            "startSeconds": 6060,
+            "endSeconds": 6120,
+            "rmsDbfs": -37.394,
+            "spectralCentroidHz": 1603.713,
+            "chromaChangeFromPrevious": 1.855
+          },
+          {
+            "startSeconds": 6120,
+            "endSeconds": 6180,
+            "rmsDbfs": -26.432,
+            "spectralCentroidHz": 1542.185,
+            "chromaChangeFromPrevious": 0.48212
+          },
+          {
+            "startSeconds": 6180,
+            "endSeconds": 6240,
+            "rmsDbfs": -23.225,
+            "spectralCentroidHz": 635.275,
+            "chromaChangeFromPrevious": 0.37573
+          },
+          {
+            "startSeconds": 6240,
+            "endSeconds": 6300,
+            "rmsDbfs": -21.112,
+            "spectralCentroidHz": 684.083,
+            "chromaChangeFromPrevious": 0.61764
+          },
+          {
+            "startSeconds": 6300,
+            "endSeconds": 6360,
+            "rmsDbfs": -19.716,
+            "spectralCentroidHz": 657.182,
+            "chromaChangeFromPrevious": 0.36359
+          },
+          {
+            "startSeconds": 6360,
+            "endSeconds": 6420,
+            "rmsDbfs": -19.185,
+            "spectralCentroidHz": 663.327,
+            "chromaChangeFromPrevious": 0.21833
+          },
+          {
+            "startSeconds": 6420,
+            "endSeconds": 6480,
+            "rmsDbfs": -20.528,
+            "spectralCentroidHz": 810.941,
+            "chromaChangeFromPrevious": 0.39472
+          },
+          {
+            "startSeconds": 6480,
+            "endSeconds": 6540,
+            "rmsDbfs": -24.157,
+            "spectralCentroidHz": 1092.255,
+            "chromaChangeFromPrevious": 0.65786
+          },
+          {
+            "startSeconds": 6540,
+            "endSeconds": 6600,
+            "rmsDbfs": -22.419,
+            "spectralCentroidHz": 1022.976,
+            "chromaChangeFromPrevious": 0.17705
+          },
+          {
+            "startSeconds": 6600,
+            "endSeconds": 6660,
+            "rmsDbfs": -21.852,
+            "spectralCentroidHz": 979.114,
+            "chromaChangeFromPrevious": 0.22931
+          },
+          {
+            "startSeconds": 6660,
+            "endSeconds": 6720,
+            "rmsDbfs": -20.133,
+            "spectralCentroidHz": 940.16,
+            "chromaChangeFromPrevious": 0.18917
+          },
+          {
+            "startSeconds": 6720,
+            "endSeconds": 6780,
+            "rmsDbfs": -19.658,
+            "spectralCentroidHz": 868.592,
+            "chromaChangeFromPrevious": 0.22353
+          },
+          {
+            "startSeconds": 6780,
+            "endSeconds": 6840,
+            "rmsDbfs": -20.289,
+            "spectralCentroidHz": 856.659,
+            "chromaChangeFromPrevious": 0.04486
+          },
+          {
+            "startSeconds": 6840,
+            "endSeconds": 6900,
+            "rmsDbfs": -23.768,
+            "spectralCentroidHz": 1475.752,
+            "chromaChangeFromPrevious": 0.42512
+          },
+          {
+            "startSeconds": 6900,
+            "endSeconds": 6960,
+            "rmsDbfs": -23.84,
+            "spectralCentroidHz": 1479.871,
+            "chromaChangeFromPrevious": 0.60545
+          },
+          {
+            "startSeconds": 6960,
+            "endSeconds": 7020,
+            "rmsDbfs": -20.409,
+            "spectralCentroidHz": 713.736,
+            "chromaChangeFromPrevious": 0.5167
+          },
+          {
+            "startSeconds": 7020,
+            "endSeconds": 7080,
+            "rmsDbfs": -20.017,
+            "spectralCentroidHz": 693.949,
+            "chromaChangeFromPrevious": 0.11792
+          },
+          {
+            "startSeconds": 7080,
+            "endSeconds": 7140,
+            "rmsDbfs": -20.118,
+            "spectralCentroidHz": 695.318,
+            "chromaChangeFromPrevious": 0.08991
+          },
+          {
+            "startSeconds": 7140,
+            "endSeconds": 7200,
+            "rmsDbfs": -20.478,
+            "spectralCentroidHz": 736.545,
+            "chromaChangeFromPrevious": 0.0448
+          },
+          {
+            "startSeconds": 7200,
+            "endSeconds": 7221.264,
+            "rmsDbfs": -38.936,
+            "spectralCentroidHz": 1614.003,
+            "chromaChangeFromPrevious": 0.30975
+          }
+        ]
+      },
+      "humanListening": {
+        "voice": "none",
+        "sceneFit": {
+          "sleep": 0.9,
+          "calm": 0.85,
+          "focus": 0.6
+        },
+        "strongBeat": true,
+        "emotionalLift": false,
+        "largeReverb": true,
+        "mechanicalOrBuzz": false,
+        "startleRisk": 0.1,
+        "notes": "Machine analysis complete; browser listening and scene-fit review pending.",
+        "decision": "contrast_only"
+      },
+      "derivedProductionParameters": {
+        "allowedGoals": [
+          "sleep",
+          "calm"
+        ],
+        "instrumentFamilies": [
+          "soft piano",
+          "low-density ambient pad"
+        ],
+        "tempoRange": [
+          0,
+          60
+        ],
+        "registerRangeMidi": [
+          15.49,
+          123.08
+        ],
+        "density": "very_low",
+        "harmonyMotion": "static",
+        "environmentCompatibility": [
+          "rain",
+          "ocean",
+          "soft air"
+        ],
+        "forbiddenFeatures": [
+          "strong drums",
+          "bright attacks",
+          "voice",
+          "sudden transitions"
+        ],
+        "confidence": 0.55,
+        "derivationNotes": "Use acoustic statistics as ranges and constraints, never copy the reference melody or arrangement."
+      },
+      "analysisProvenance": {
+        "analysisVersion": "reference-audio-analysis-v1",
+        "machineTools": [
+          "ffprobe",
+          "librosa",
+          "scipy",
+          "soundfile",
+          "music-recognition:first30"
+        ],
+        "humanReviewer": "pending",
+        "analyzedFromExactAudio": true,
+        "approvedForAtomicMaterialPlanning": false
+      }
+    },
+    {
+      "referenceId": "licensed_ambient_idmix06",
+      "source": {
+        "title": "ideal standard net ambient special (idmix06)",
+        "creator": "-",
+        "sourceUrl": "https://archive.org/download/idmix06/idmix06-301104.mp3",
+        "analysisSourceUrl": "https://archive.org/download/idmix06/idmix06-301104.mp3",
+        "accessClass": "licensed_file",
+        "fileSha256": "ba013048c5c88e23b1ad222a2a9a9790356bc33b51b47d0d650518883c15238e",
+        "observedOn": "2026-07-21",
+        "rightsBoundary": "internal_analysis_only",
+        "licenseEvidence": "http://creativecommons.org/licenses/by-nc-nd/2.0/",
+        "alternateSourceIdentity": {
+          "referenceSourceUrl": "https://archive.org/download/idmix06/idmix06-301104.mp3",
+          "analysisSourceUrl": "https://archive.org/download/idmix06/idmix06-301104.mp3",
+          "titleCreatorMatch": true,
+          "first30SecondsVerificationMethod": "direct_source",
+          "first30SecondsDetectedTitle": "ideal standard net ambient special (idmix06)",
+          "first30SecondsDetectedCreator": "-",
+          "first30SecondsMatch": true,
+          "verifiedOn": "2026-07-21"
+        }
+      },
+      "audio": {
+        "sourceDurationSeconds": 4321,
+        "analyzedDurationSeconds": 4321,
+        "analysisCoverage": {
+          "beginning": {
+            "startSeconds": 0,
+            "endSeconds": 120
+          },
+          "middle": {
+            "startSeconds": 2100.5,
+            "endSeconds": 2220.5
+          },
+          "end": {
+            "startSeconds": 4201,
+            "endSeconds": 4321
+          }
+        },
+        "durationSeconds": 4321,
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -14.15,
+        "loudnessRangeLu": 14.5,
+        "truePeakDbtp": 1.55,
+        "spectralCentroidHz": 1679.129,
+        "highFrequencyEnergyRatio": 0.13496,
+        "onsetRatePerMinute": 104.031,
+        "silenceGaps": [
+          0.372,
+          0.046,
+          0.186,
+          0.046,
+          0.093,
+          0.232,
+          0.186,
+          1.161,
+          0.372,
+          0.743,
+          0.325,
+          0.418,
+          0.093,
+          0.464,
+          0.093,
+          0.279,
+          0.464,
+          0.557,
+          1.254,
+          1.811,
+          3.669,
+          0.093,
+          0.604,
+          0.65,
+          0.232,
+          1.579,
+          0.418,
+          2.183,
+          0.046,
+          0.046,
+          0.232,
+          0.093,
+          0.232,
+          0.604,
+          0.186,
+          15.372,
+          5.155,
+          0.046,
+          5.341,
+          6.455,
+          2.879,
+          7.663,
+          4.737,
+          0.046,
+          0.093,
+          0.046,
+          0.093,
+          0.046,
+          0.046,
+          0.093,
+          0.046,
+          0.557,
+          1.3,
+          0.139,
+          0.743,
+          0.186,
+          0.046,
+          0.929,
+          0.139,
+          7.291,
+          6.78,
+          11.517,
+          0.325,
+          0.604,
+          0.325,
+          0.093,
+          0.186,
+          0.604,
+          0.929,
+          0.743,
+          1.207,
+          0.604,
+          0.65,
+          0.697,
+          0.557,
+          0.093,
+          1.904
+        ],
+        "voiceProbability": null,
+        "beatProbability": 0.996,
+        "loopBoundaryScore": 0.91889
+      },
+      "music": {
+        "tempoBpm": {
+          "min": 143.555,
+          "max": 143.555,
+          "confidence": 0.55
+        },
+        "meter": {
+          "value": "4/4_or_free_time",
+          "confidence": 0.25
+        },
+        "keyOrMode": {
+          "value": "G minor",
+          "confidence": 0.771
+        },
+        "register": {
+          "lowMidi": 15.49,
+          "highMidi": 118.36,
+          "centerMidi": 66.93,
+          "confidence": 0.45
+        },
+        "instrumentRoles": [
+          "piano",
+          "ambient texture"
+        ],
+        "chordChangeBars": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "motifLengthNotes": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "phraseLengthBars": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "noteDensityPerMinute": 104.031,
+        "melodyContour": "sparse_low_salience_ambient",
+        "form": [
+          {
+            "startSeconds": 0,
+            "endSeconds": 60,
+            "rmsDbfs": -22.163,
+            "spectralCentroidHz": 2465.403,
+            "chromaChangeFromPrevious": 0
+          },
+          {
+            "startSeconds": 60,
+            "endSeconds": 120,
+            "rmsDbfs": -20.799,
+            "spectralCentroidHz": 2238.535,
+            "chromaChangeFromPrevious": 0.26806
+          },
+          {
+            "startSeconds": 120,
+            "endSeconds": 180,
+            "rmsDbfs": -14.147,
+            "spectralCentroidHz": 1692.122,
+            "chromaChangeFromPrevious": 0.74579
+          },
+          {
+            "startSeconds": 180,
+            "endSeconds": 240,
+            "rmsDbfs": -14.839,
+            "spectralCentroidHz": 1859.625,
+            "chromaChangeFromPrevious": 0.24605
+          },
+          {
+            "startSeconds": 240,
+            "endSeconds": 300,
+            "rmsDbfs": -15.682,
+            "spectralCentroidHz": 1836.749,
+            "chromaChangeFromPrevious": 0.14905
+          },
+          {
+            "startSeconds": 300,
+            "endSeconds": 360,
+            "rmsDbfs": -14.812,
+            "spectralCentroidHz": 1782.584,
+            "chromaChangeFromPrevious": 0.15688
+          },
+          {
+            "startSeconds": 360,
+            "endSeconds": 420,
+            "rmsDbfs": -18.262,
+            "spectralCentroidHz": 2123.965,
+            "chromaChangeFromPrevious": 0.67078
+          },
+          {
+            "startSeconds": 420,
+            "endSeconds": 480,
+            "rmsDbfs": -22.924,
+            "spectralCentroidHz": 2147.198,
+            "chromaChangeFromPrevious": 0.25792
+          },
+          {
+            "startSeconds": 480,
+            "endSeconds": 540,
+            "rmsDbfs": -24.343,
+            "spectralCentroidHz": 1996.307,
+            "chromaChangeFromPrevious": 0.06854
+          },
+          {
+            "startSeconds": 540,
+            "endSeconds": 600,
+            "rmsDbfs": -20.337,
+            "spectralCentroidHz": 2179.243,
+            "chromaChangeFromPrevious": 0.12402
+          },
+          {
+            "startSeconds": 600,
+            "endSeconds": 660,
+            "rmsDbfs": -20.918,
+            "spectralCentroidHz": 3091.301,
+            "chromaChangeFromPrevious": 0.12713
+          },
+          {
+            "startSeconds": 660,
+            "endSeconds": 720,
+            "rmsDbfs": -24.496,
+            "spectralCentroidHz": 2472.107,
+            "chromaChangeFromPrevious": 0.3359
+          },
+          {
+            "startSeconds": 720,
+            "endSeconds": 780,
+            "rmsDbfs": -21.51,
+            "spectralCentroidHz": 2290.981,
+            "chromaChangeFromPrevious": 0.33089
+          },
+          {
+            "startSeconds": 780,
+            "endSeconds": 840,
+            "rmsDbfs": -31.29,
+            "spectralCentroidHz": 2639.35,
+            "chromaChangeFromPrevious": 0.33648
+          },
+          {
+            "startSeconds": 840,
+            "endSeconds": 900,
+            "rmsDbfs": -26.118,
+            "spectralCentroidHz": 2176.376,
+            "chromaChangeFromPrevious": 0.45945
+          },
+          {
+            "startSeconds": 900,
+            "endSeconds": 960,
+            "rmsDbfs": -24.802,
+            "spectralCentroidHz": 2274.065,
+            "chromaChangeFromPrevious": 0.47714
+          },
+          {
+            "startSeconds": 960,
+            "endSeconds": 1020,
+            "rmsDbfs": -30.713,
+            "spectralCentroidHz": 2575.911,
+            "chromaChangeFromPrevious": 0.35003
+          },
+          {
+            "startSeconds": 1020,
+            "endSeconds": 1080,
+            "rmsDbfs": -25.117,
+            "spectralCentroidHz": 1660.271,
+            "chromaChangeFromPrevious": 0.42968
+          },
+          {
+            "startSeconds": 1080,
+            "endSeconds": 1140,
+            "rmsDbfs": -19.705,
+            "spectralCentroidHz": 752.274,
+            "chromaChangeFromPrevious": 0.57716
+          },
+          {
+            "startSeconds": 1140,
+            "endSeconds": 1200,
+            "rmsDbfs": -17.776,
+            "spectralCentroidHz": 893.22,
+            "chromaChangeFromPrevious": 0.42769
+          },
+          {
+            "startSeconds": 1200,
+            "endSeconds": 1260,
+            "rmsDbfs": -19.041,
+            "spectralCentroidHz": 965.136,
+            "chromaChangeFromPrevious": 0.16657
+          },
+          {
+            "startSeconds": 1260,
+            "endSeconds": 1320,
+            "rmsDbfs": -18.035,
+            "spectralCentroidHz": 918.91,
+            "chromaChangeFromPrevious": 0.44939
+          },
+          {
+            "startSeconds": 1320,
+            "endSeconds": 1380,
+            "rmsDbfs": -17.129,
+            "spectralCentroidHz": 842.522,
+            "chromaChangeFromPrevious": 0.22292
+          },
+          {
+            "startSeconds": 1380,
+            "endSeconds": 1440,
+            "rmsDbfs": -19.077,
+            "spectralCentroidHz": 765.933,
+            "chromaChangeFromPrevious": 0.14492
+          },
+          {
+            "startSeconds": 1440,
+            "endSeconds": 1500,
+            "rmsDbfs": -20.855,
+            "spectralCentroidHz": 1276.578,
+            "chromaChangeFromPrevious": 0.74629
+          },
+          {
+            "startSeconds": 1500,
+            "endSeconds": 1560,
+            "rmsDbfs": -33.399,
+            "spectralCentroidHz": 2363.861,
+            "chromaChangeFromPrevious": 0.62299
+          },
+          {
+            "startSeconds": 1560,
+            "endSeconds": 1620,
+            "rmsDbfs": -30.162,
+            "spectralCentroidHz": 2422.682,
+            "chromaChangeFromPrevious": 0.56707
+          },
+          {
+            "startSeconds": 1620,
+            "endSeconds": 1680,
+            "rmsDbfs": -26.216,
+            "spectralCentroidHz": 2138.333,
+            "chromaChangeFromPrevious": 0.56392
+          },
+          {
+            "startSeconds": 1680,
+            "endSeconds": 1740,
+            "rmsDbfs": -25.986,
+            "spectralCentroidHz": 1898.279,
+            "chromaChangeFromPrevious": 0.50704
+          },
+          {
+            "startSeconds": 1740,
+            "endSeconds": 1800,
+            "rmsDbfs": -28.718,
+            "spectralCentroidHz": 1877.622,
+            "chromaChangeFromPrevious": 0.36269
+          },
+          {
+            "startSeconds": 1800,
+            "endSeconds": 1860,
+            "rmsDbfs": -23.062,
+            "spectralCentroidHz": 1941.403,
+            "chromaChangeFromPrevious": 0.80408
+          },
+          {
+            "startSeconds": 1860,
+            "endSeconds": 1920,
+            "rmsDbfs": -21.219,
+            "spectralCentroidHz": 1825.964,
+            "chromaChangeFromPrevious": 0.17213
+          },
+          {
+            "startSeconds": 1920,
+            "endSeconds": 1980,
+            "rmsDbfs": -20.088,
+            "spectralCentroidHz": 1787.827,
+            "chromaChangeFromPrevious": 0.07934
+          },
+          {
+            "startSeconds": 1980,
+            "endSeconds": 2040,
+            "rmsDbfs": -20.345,
+            "spectralCentroidHz": 1802.187,
+            "chromaChangeFromPrevious": 0.06789
+          },
+          {
+            "startSeconds": 2040,
+            "endSeconds": 2100,
+            "rmsDbfs": -22.647,
+            "spectralCentroidHz": 1642.049,
+            "chromaChangeFromPrevious": 0.24961
+          },
+          {
+            "startSeconds": 2100,
+            "endSeconds": 2160,
+            "rmsDbfs": -26.037,
+            "spectralCentroidHz": 1609.523,
+            "chromaChangeFromPrevious": 0.57402
+          },
+          {
+            "startSeconds": 2160,
+            "endSeconds": 2220,
+            "rmsDbfs": -23.886,
+            "spectralCentroidHz": 1573.025,
+            "chromaChangeFromPrevious": 0.13113
+          },
+          {
+            "startSeconds": 2220,
+            "endSeconds": 2280,
+            "rmsDbfs": -21.41,
+            "spectralCentroidHz": 1556.636,
+            "chromaChangeFromPrevious": 0.10864
+          },
+          {
+            "startSeconds": 2280,
+            "endSeconds": 2340,
+            "rmsDbfs": -22.343,
+            "spectralCentroidHz": 1581.834,
+            "chromaChangeFromPrevious": 0.10686
+          },
+          {
+            "startSeconds": 2340,
+            "endSeconds": 2400,
+            "rmsDbfs": -22.068,
+            "spectralCentroidHz": 1626.031,
+            "chromaChangeFromPrevious": 0.14726
+          },
+          {
+            "startSeconds": 2400,
+            "endSeconds": 2460,
+            "rmsDbfs": -21.407,
+            "spectralCentroidHz": 1643.296,
+            "chromaChangeFromPrevious": 0.09036
+          },
+          {
+            "startSeconds": 2460,
+            "endSeconds": 2520,
+            "rmsDbfs": -21.317,
+            "spectralCentroidHz": 1666.86,
+            "chromaChangeFromPrevious": 0.07084
+          },
+          {
+            "startSeconds": 2520,
+            "endSeconds": 2580,
+            "rmsDbfs": -21.349,
+            "spectralCentroidHz": 1646.541,
+            "chromaChangeFromPrevious": 0.07042
+          },
+          {
+            "startSeconds": 2580,
+            "endSeconds": 2640,
+            "rmsDbfs": -24.204,
+            "spectralCentroidHz": 1742.494,
+            "chromaChangeFromPrevious": 0.11686
+          },
+          {
+            "startSeconds": 2640,
+            "endSeconds": 2700,
+            "rmsDbfs": -26.937,
+            "spectralCentroidHz": 1582.868,
+            "chromaChangeFromPrevious": 0.31173
+          },
+          {
+            "startSeconds": 2700,
+            "endSeconds": 2760,
+            "rmsDbfs": -27.239,
+            "spectralCentroidHz": 1517.292,
+            "chromaChangeFromPrevious": 0.39082
+          },
+          {
+            "startSeconds": 2760,
+            "endSeconds": 2820,
+            "rmsDbfs": -25.958,
+            "spectralCentroidHz": 1437.326,
+            "chromaChangeFromPrevious": 0.27672
+          },
+          {
+            "startSeconds": 2820,
+            "endSeconds": 2880,
+            "rmsDbfs": -23.133,
+            "spectralCentroidHz": 1579.094,
+            "chromaChangeFromPrevious": 0.40443
+          },
+          {
+            "startSeconds": 2880,
+            "endSeconds": 2940,
+            "rmsDbfs": -19.086,
+            "spectralCentroidHz": 1288.792,
+            "chromaChangeFromPrevious": 0.57436
+          },
+          {
+            "startSeconds": 2940,
+            "endSeconds": 3000,
+            "rmsDbfs": -24.019,
+            "spectralCentroidHz": 1596.806,
+            "chromaChangeFromPrevious": 0.55197
+          },
+          {
+            "startSeconds": 3000,
+            "endSeconds": 3060,
+            "rmsDbfs": -17.138,
+            "spectralCentroidHz": 860.5,
+            "chromaChangeFromPrevious": 0.74971
+          },
+          {
+            "startSeconds": 3060,
+            "endSeconds": 3120,
+            "rmsDbfs": -16.977,
+            "spectralCentroidHz": 1058.415,
+            "chromaChangeFromPrevious": 1.13803
+          },
+          {
+            "startSeconds": 3120,
+            "endSeconds": 3180,
+            "rmsDbfs": -16.037,
+            "spectralCentroidHz": 1103.659,
+            "chromaChangeFromPrevious": 0.16295
+          },
+          {
+            "startSeconds": 3180,
+            "endSeconds": 3240,
+            "rmsDbfs": -15.612,
+            "spectralCentroidHz": 1118.298,
+            "chromaChangeFromPrevious": 0.04591
+          },
+          {
+            "startSeconds": 3240,
+            "endSeconds": 3300,
+            "rmsDbfs": -15.671,
+            "spectralCentroidHz": 1125.527,
+            "chromaChangeFromPrevious": 0.05866
+          },
+          {
+            "startSeconds": 3300,
+            "endSeconds": 3360,
+            "rmsDbfs": -16.263,
+            "spectralCentroidHz": 1190.597,
+            "chromaChangeFromPrevious": 0.13609
+          },
+          {
+            "startSeconds": 3360,
+            "endSeconds": 3420,
+            "rmsDbfs": -19.15,
+            "spectralCentroidHz": 1244.678,
+            "chromaChangeFromPrevious": 0.77722
+          },
+          {
+            "startSeconds": 3420,
+            "endSeconds": 3480,
+            "rmsDbfs": -17.341,
+            "spectralCentroidHz": 1308.88,
+            "chromaChangeFromPrevious": 0.51071
+          },
+          {
+            "startSeconds": 3480,
+            "endSeconds": 3540,
+            "rmsDbfs": -15.388,
+            "spectralCentroidHz": 1447.553,
+            "chromaChangeFromPrevious": 0.13247
+          },
+          {
+            "startSeconds": 3540,
+            "endSeconds": 3600,
+            "rmsDbfs": -16.028,
+            "spectralCentroidHz": 1319.527,
+            "chromaChangeFromPrevious": 0.10527
+          },
+          {
+            "startSeconds": 3600,
+            "endSeconds": 3660,
+            "rmsDbfs": -21.354,
+            "spectralCentroidHz": 1379.042,
+            "chromaChangeFromPrevious": 0.18144
+          },
+          {
+            "startSeconds": 3660,
+            "endSeconds": 3720,
+            "rmsDbfs": -26.42,
+            "spectralCentroidHz": 2245.421,
+            "chromaChangeFromPrevious": 0.4384
+          },
+          {
+            "startSeconds": 3720,
+            "endSeconds": 3780,
+            "rmsDbfs": -23.746,
+            "spectralCentroidHz": 2947,
+            "chromaChangeFromPrevious": 0.83448
+          },
+          {
+            "startSeconds": 3780,
+            "endSeconds": 3840,
+            "rmsDbfs": -15.176,
+            "spectralCentroidHz": 2908.045,
+            "chromaChangeFromPrevious": 1.66297
+          },
+          {
+            "startSeconds": 3840,
+            "endSeconds": 3900,
+            "rmsDbfs": -15.272,
+            "spectralCentroidHz": 1057.474,
+            "chromaChangeFromPrevious": 0.15295
+          },
+          {
+            "startSeconds": 3900,
+            "endSeconds": 3960,
+            "rmsDbfs": -17.259,
+            "spectralCentroidHz": 2337.783,
+            "chromaChangeFromPrevious": 0.23087
+          },
+          {
+            "startSeconds": 3960,
+            "endSeconds": 4020,
+            "rmsDbfs": -19.319,
+            "spectralCentroidHz": 1271.45,
+            "chromaChangeFromPrevious": 0.54354
+          },
+          {
+            "startSeconds": 4020,
+            "endSeconds": 4080,
+            "rmsDbfs": -19.434,
+            "spectralCentroidHz": 1221.327,
+            "chromaChangeFromPrevious": 0.17174
+          },
+          {
+            "startSeconds": 4080,
+            "endSeconds": 4140,
+            "rmsDbfs": -19.993,
+            "spectralCentroidHz": 1094.717,
+            "chromaChangeFromPrevious": 0.18849
+          },
+          {
+            "startSeconds": 4140,
+            "endSeconds": 4200,
+            "rmsDbfs": -17.405,
+            "spectralCentroidHz": 1465.235,
+            "chromaChangeFromPrevious": 0.15979
+          },
+          {
+            "startSeconds": 4200,
+            "endSeconds": 4260,
+            "rmsDbfs": -18.886,
+            "spectralCentroidHz": 936.828,
+            "chromaChangeFromPrevious": 0.187
+          },
+          {
+            "startSeconds": 4260,
+            "endSeconds": 4320,
+            "rmsDbfs": -20.348,
+            "spectralCentroidHz": 1017.876,
+            "chromaChangeFromPrevious": 0.29329
+          },
+          {
+            "startSeconds": 4320,
+            "endSeconds": 4321,
+            "rmsDbfs": -120,
+            "spectralCentroidHz": 0,
+            "chromaChangeFromPrevious": 1.21555
+          }
+        ]
+      },
+      "humanListening": {
+        "voice": "none",
+        "sceneFit": {
+          "sleep": 0.9,
+          "calm": 0.85,
+          "focus": 0.6
+        },
+        "strongBeat": true,
+        "emotionalLift": false,
+        "largeReverb": true,
+        "mechanicalOrBuzz": false,
+        "startleRisk": 0.1,
+        "notes": "Machine analysis complete; browser listening and scene-fit review pending.",
+        "decision": "contrast_only"
+      },
+      "derivedProductionParameters": {
+        "allowedGoals": [
+          "sleep",
+          "calm"
+        ],
+        "instrumentFamilies": [
+          "soft piano",
+          "low-density ambient pad"
+        ],
+        "tempoRange": [
+          0,
+          60
+        ],
+        "registerRangeMidi": [
+          15.49,
+          118.36
+        ],
+        "density": "very_low",
+        "harmonyMotion": "static",
+        "environmentCompatibility": [
+          "rain",
+          "ocean",
+          "soft air"
+        ],
+        "forbiddenFeatures": [
+          "strong drums",
+          "bright attacks",
+          "voice",
+          "sudden transitions"
+        ],
+        "confidence": 0.55,
+        "derivationNotes": "Use acoustic statistics as ranges and constraints, never copy the reference melody or arrangement."
+      },
+      "analysisProvenance": {
+        "analysisVersion": "reference-audio-analysis-v1",
+        "machineTools": [
+          "ffprobe",
+          "librosa",
+          "scipy",
+          "soundfile",
+          "music-recognition:first30"
+        ],
+        "humanReviewer": "pending",
+        "analyzedFromExactAudio": true,
+        "approvedForAtomicMaterialPlanning": false
+      }
+    },
+    {
+      "referenceId": "licensed_focus_fingers_noise",
+      "source": {
+        "title": "Fingers In The Noise - Set 4 Don't Think 1",
+        "creator": "Fingers In The Noise",
+        "sourceUrl": "https://archive.org/download/fitn_set_4_dont_think_1/Fitn_Set_4_Dont_Think_1.mp3",
+        "analysisSourceUrl": "https://archive.org/download/fitn_set_4_dont_think_1/Fitn_Set_4_Dont_Think_1.mp3",
+        "accessClass": "licensed_file",
+        "fileSha256": "dff7d8bc45650c2ef3591886255b484503579376c36ed3c08c07ef867cf150a6",
+        "observedOn": "2026-07-21",
+        "rightsBoundary": "internal_analysis_only",
+        "licenseEvidence": "http://creativecommons.org/licenses/by-nc-nd/3.0/it/",
+        "alternateSourceIdentity": {
+          "referenceSourceUrl": "https://archive.org/download/fitn_set_4_dont_think_1/Fitn_Set_4_Dont_Think_1.mp3",
+          "analysisSourceUrl": "https://archive.org/download/fitn_set_4_dont_think_1/Fitn_Set_4_Dont_Think_1.mp3",
+          "titleCreatorMatch": true,
+          "first30SecondsVerificationMethod": "direct_source",
+          "first30SecondsDetectedTitle": "Fingers In The Noise - Set 4 Don't Think 1",
+          "first30SecondsDetectedCreator": "Fingers In The Noise",
+          "first30SecondsMatch": true,
+          "verifiedOn": "2026-07-21"
+        }
+      },
+      "audio": {
+        "sourceDurationSeconds": 3598.501,
+        "analyzedDurationSeconds": 3598.498,
+        "analysisCoverage": {
+          "beginning": {
+            "startSeconds": 0,
+            "endSeconds": 120
+          },
+          "middle": {
+            "startSeconds": 1739.249,
+            "endSeconds": 1859.249
+          },
+          "end": {
+            "startSeconds": 3478.498,
+            "endSeconds": 3598.498
+          }
+        },
+        "durationSeconds": 3598.498,
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -13.73,
+        "loudnessRangeLu": 8.8,
+        "truePeakDbtp": -0.49,
+        "spectralCentroidHz": 1689.419,
+        "highFrequencyEnergyRatio": 0.16681,
+        "onsetRatePerMinute": 185.261,
+        "silenceGaps": [
+          0.139,
+          0.139,
+          0.418,
+          0.046,
+          0.418,
+          3.994,
+          0.139,
+          0.046,
+          0.046,
+          0.046,
+          0.046,
+          0.046,
+          0.046,
+          0.046,
+          0.046,
+          0.093,
+          0.046,
+          0.093,
+          0.046,
+          0.139,
+          0.139,
+          0.046,
+          0.139,
+          0.139,
+          0.046,
+          0.139,
+          0.046,
+          0.139,
+          0.139
+        ],
+        "voiceProbability": null,
+        "beatProbability": 1,
+        "loopBoundaryScore": 0.83404
+      },
+      "music": {
+        "tempoBpm": {
+          "min": 117.454,
+          "max": 117.454,
+          "confidence": 0.55
+        },
+        "meter": {
+          "value": "4/4_or_free_time",
+          "confidence": 0.25
+        },
+        "keyOrMode": {
+          "value": "F minor",
+          "confidence": 0.55
+        },
+        "register": {
+          "lowMidi": 15.49,
+          "highMidi": 120.21,
+          "centerMidi": 67.85,
+          "confidence": 0.45
+        },
+        "instrumentRoles": [
+          "piano",
+          "ambient texture"
+        ],
+        "chordChangeBars": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "motifLengthNotes": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "phraseLengthBars": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "noteDensityPerMinute": 185.261,
+        "melodyContour": "sparse_low_salience_ambient",
+        "form": [
+          {
+            "startSeconds": 0,
+            "endSeconds": 60,
+            "rmsDbfs": -13.891,
+            "spectralCentroidHz": 1109.837,
+            "chromaChangeFromPrevious": 0
+          },
+          {
+            "startSeconds": 60,
+            "endSeconds": 120,
+            "rmsDbfs": -10.695,
+            "spectralCentroidHz": 1011.673,
+            "chromaChangeFromPrevious": 0.42601
+          },
+          {
+            "startSeconds": 120,
+            "endSeconds": 180,
+            "rmsDbfs": -12.722,
+            "spectralCentroidHz": 1265.416,
+            "chromaChangeFromPrevious": 0.48843
+          },
+          {
+            "startSeconds": 180,
+            "endSeconds": 240,
+            "rmsDbfs": -11.039,
+            "spectralCentroidHz": 1754.522,
+            "chromaChangeFromPrevious": 0.31173
+          },
+          {
+            "startSeconds": 240,
+            "endSeconds": 300,
+            "rmsDbfs": -12.263,
+            "spectralCentroidHz": 1170.468,
+            "chromaChangeFromPrevious": 0.07681
+          },
+          {
+            "startSeconds": 300,
+            "endSeconds": 360,
+            "rmsDbfs": -12.93,
+            "spectralCentroidHz": 896.599,
+            "chromaChangeFromPrevious": 1.02718
+          },
+          {
+            "startSeconds": 360,
+            "endSeconds": 420,
+            "rmsDbfs": -23.779,
+            "spectralCentroidHz": 1640.852,
+            "chromaChangeFromPrevious": 0.58701
+          },
+          {
+            "startSeconds": 420,
+            "endSeconds": 480,
+            "rmsDbfs": -15.967,
+            "spectralCentroidHz": 1530.483,
+            "chromaChangeFromPrevious": 0.34164
+          },
+          {
+            "startSeconds": 480,
+            "endSeconds": 540,
+            "rmsDbfs": -12,
+            "spectralCentroidHz": 1147.765,
+            "chromaChangeFromPrevious": 0.34558
+          },
+          {
+            "startSeconds": 540,
+            "endSeconds": 600,
+            "rmsDbfs": -12.331,
+            "spectralCentroidHz": 1076.711,
+            "chromaChangeFromPrevious": 0.09551
+          },
+          {
+            "startSeconds": 600,
+            "endSeconds": 660,
+            "rmsDbfs": -12,
+            "spectralCentroidHz": 1081.483,
+            "chromaChangeFromPrevious": 0.11169
+          },
+          {
+            "startSeconds": 660,
+            "endSeconds": 720,
+            "rmsDbfs": -12.608,
+            "spectralCentroidHz": 1186.295,
+            "chromaChangeFromPrevious": 0.11413
+          },
+          {
+            "startSeconds": 720,
+            "endSeconds": 780,
+            "rmsDbfs": -14.532,
+            "spectralCentroidHz": 1073.36,
+            "chromaChangeFromPrevious": 0.35603
+          },
+          {
+            "startSeconds": 780,
+            "endSeconds": 840,
+            "rmsDbfs": -15.665,
+            "spectralCentroidHz": 1351.305,
+            "chromaChangeFromPrevious": 0.94955
+          },
+          {
+            "startSeconds": 840,
+            "endSeconds": 900,
+            "rmsDbfs": -17.909,
+            "spectralCentroidHz": 1501.443,
+            "chromaChangeFromPrevious": 0.49149
+          },
+          {
+            "startSeconds": 900,
+            "endSeconds": 960,
+            "rmsDbfs": -14.918,
+            "spectralCentroidHz": 1083.919,
+            "chromaChangeFromPrevious": 0.60744
+          },
+          {
+            "startSeconds": 960,
+            "endSeconds": 1020,
+            "rmsDbfs": -19.805,
+            "spectralCentroidHz": 1152.443,
+            "chromaChangeFromPrevious": 0.96281
+          },
+          {
+            "startSeconds": 1020,
+            "endSeconds": 1080,
+            "rmsDbfs": -14.175,
+            "spectralCentroidHz": 1588.522,
+            "chromaChangeFromPrevious": 0.5184
+          },
+          {
+            "startSeconds": 1080,
+            "endSeconds": 1140,
+            "rmsDbfs": -13.876,
+            "spectralCentroidHz": 1760.439,
+            "chromaChangeFromPrevious": 0.0962
+          },
+          {
+            "startSeconds": 1140,
+            "endSeconds": 1200,
+            "rmsDbfs": -13.858,
+            "spectralCentroidHz": 1816.836,
+            "chromaChangeFromPrevious": 0.06445
+          },
+          {
+            "startSeconds": 1200,
+            "endSeconds": 1260,
+            "rmsDbfs": -13.643,
+            "spectralCentroidHz": 1130.611,
+            "chromaChangeFromPrevious": 0.12768
+          },
+          {
+            "startSeconds": 1260,
+            "endSeconds": 1320,
+            "rmsDbfs": -16.214,
+            "spectralCentroidHz": 814.081,
+            "chromaChangeFromPrevious": 0.63273
+          },
+          {
+            "startSeconds": 1320,
+            "endSeconds": 1380,
+            "rmsDbfs": -15.375,
+            "spectralCentroidHz": 791.852,
+            "chromaChangeFromPrevious": 0.4468
+          },
+          {
+            "startSeconds": 1380,
+            "endSeconds": 1440,
+            "rmsDbfs": -14.149,
+            "spectralCentroidHz": 1364.429,
+            "chromaChangeFromPrevious": 0.21007
+          },
+          {
+            "startSeconds": 1440,
+            "endSeconds": 1500,
+            "rmsDbfs": -14.2,
+            "spectralCentroidHz": 1681.967,
+            "chromaChangeFromPrevious": 0.21613
+          },
+          {
+            "startSeconds": 1500,
+            "endSeconds": 1560,
+            "rmsDbfs": -18.674,
+            "spectralCentroidHz": 1336.703,
+            "chromaChangeFromPrevious": 1.01685
+          },
+          {
+            "startSeconds": 1560,
+            "endSeconds": 1620,
+            "rmsDbfs": -15.414,
+            "spectralCentroidHz": 1167.552,
+            "chromaChangeFromPrevious": 0.72744
+          },
+          {
+            "startSeconds": 1620,
+            "endSeconds": 1680,
+            "rmsDbfs": -17.609,
+            "spectralCentroidHz": 1159.439,
+            "chromaChangeFromPrevious": 0.54472
+          },
+          {
+            "startSeconds": 1680,
+            "endSeconds": 1740,
+            "rmsDbfs": -16.346,
+            "spectralCentroidHz": 1729.372,
+            "chromaChangeFromPrevious": 0.57799
+          },
+          {
+            "startSeconds": 1740,
+            "endSeconds": 1800,
+            "rmsDbfs": -16.982,
+            "spectralCentroidHz": 2104.215,
+            "chromaChangeFromPrevious": 0.1131
+          },
+          {
+            "startSeconds": 1800,
+            "endSeconds": 1860,
+            "rmsDbfs": -12.928,
+            "spectralCentroidHz": 2849.241,
+            "chromaChangeFromPrevious": 0.49252
+          },
+          {
+            "startSeconds": 1860,
+            "endSeconds": 1920,
+            "rmsDbfs": -12.719,
+            "spectralCentroidHz": 3000.259,
+            "chromaChangeFromPrevious": 0.13517
+          },
+          {
+            "startSeconds": 1920,
+            "endSeconds": 1980,
+            "rmsDbfs": -15.358,
+            "spectralCentroidHz": 3104.856,
+            "chromaChangeFromPrevious": 0.44441
+          },
+          {
+            "startSeconds": 1980,
+            "endSeconds": 2040,
+            "rmsDbfs": -12.899,
+            "spectralCentroidHz": 2989.382,
+            "chromaChangeFromPrevious": 0.37176
+          },
+          {
+            "startSeconds": 2040,
+            "endSeconds": 2100,
+            "rmsDbfs": -13.472,
+            "spectralCentroidHz": 3003.289,
+            "chromaChangeFromPrevious": 0.17668
+          },
+          {
+            "startSeconds": 2100,
+            "endSeconds": 2160,
+            "rmsDbfs": -13.449,
+            "spectralCentroidHz": 2420.266,
+            "chromaChangeFromPrevious": 0.44741
+          },
+          {
+            "startSeconds": 2160,
+            "endSeconds": 2220,
+            "rmsDbfs": -11.958,
+            "spectralCentroidHz": 2210.78,
+            "chromaChangeFromPrevious": 0.5227
+          },
+          {
+            "startSeconds": 2220,
+            "endSeconds": 2280,
+            "rmsDbfs": -12.001,
+            "spectralCentroidHz": 2348.066,
+            "chromaChangeFromPrevious": 0.12692
+          },
+          {
+            "startSeconds": 2280,
+            "endSeconds": 2340,
+            "rmsDbfs": -12.183,
+            "spectralCentroidHz": 2283.745,
+            "chromaChangeFromPrevious": 0.13631
+          },
+          {
+            "startSeconds": 2340,
+            "endSeconds": 2400,
+            "rmsDbfs": -11.994,
+            "spectralCentroidHz": 2182.789,
+            "chromaChangeFromPrevious": 0.04447
+          },
+          {
+            "startSeconds": 2400,
+            "endSeconds": 2460,
+            "rmsDbfs": -13,
+            "spectralCentroidHz": 2387.649,
+            "chromaChangeFromPrevious": 0.233
+          },
+          {
+            "startSeconds": 2460,
+            "endSeconds": 2520,
+            "rmsDbfs": -15.276,
+            "spectralCentroidHz": 1944.276,
+            "chromaChangeFromPrevious": 0.93716
+          },
+          {
+            "startSeconds": 2520,
+            "endSeconds": 2580,
+            "rmsDbfs": -13.727,
+            "spectralCentroidHz": 1898.815,
+            "chromaChangeFromPrevious": 0.13268
+          },
+          {
+            "startSeconds": 2580,
+            "endSeconds": 2640,
+            "rmsDbfs": -18.657,
+            "spectralCentroidHz": 2700.308,
+            "chromaChangeFromPrevious": 0.67306
+          },
+          {
+            "startSeconds": 2640,
+            "endSeconds": 2700,
+            "rmsDbfs": -18.441,
+            "spectralCentroidHz": 1709.852,
+            "chromaChangeFromPrevious": 0.38126
+          },
+          {
+            "startSeconds": 2700,
+            "endSeconds": 2760,
+            "rmsDbfs": -13.649,
+            "spectralCentroidHz": 2282.23,
+            "chromaChangeFromPrevious": 0.77067
+          },
+          {
+            "startSeconds": 2760,
+            "endSeconds": 2820,
+            "rmsDbfs": -15.713,
+            "spectralCentroidHz": 2829.291,
+            "chromaChangeFromPrevious": 0.40184
+          },
+          {
+            "startSeconds": 2820,
+            "endSeconds": 2880,
+            "rmsDbfs": -13.79,
+            "spectralCentroidHz": 1620.267,
+            "chromaChangeFromPrevious": 1.41999
+          },
+          {
+            "startSeconds": 2880,
+            "endSeconds": 2940,
+            "rmsDbfs": -12.671,
+            "spectralCentroidHz": 1122.83,
+            "chromaChangeFromPrevious": 0.1288
+          },
+          {
+            "startSeconds": 2940,
+            "endSeconds": 3000,
+            "rmsDbfs": -12.682,
+            "spectralCentroidHz": 1792.959,
+            "chromaChangeFromPrevious": 0.04508
+          },
+          {
+            "startSeconds": 3000,
+            "endSeconds": 3060,
+            "rmsDbfs": -12.823,
+            "spectralCentroidHz": 1981.508,
+            "chromaChangeFromPrevious": 0.03142
+          },
+          {
+            "startSeconds": 3060,
+            "endSeconds": 3120,
+            "rmsDbfs": -12.835,
+            "spectralCentroidHz": 1970.029,
+            "chromaChangeFromPrevious": 0.01463
+          },
+          {
+            "startSeconds": 3120,
+            "endSeconds": 3180,
+            "rmsDbfs": -13.027,
+            "spectralCentroidHz": 1323.404,
+            "chromaChangeFromPrevious": 0.08863
+          },
+          {
+            "startSeconds": 3180,
+            "endSeconds": 3240,
+            "rmsDbfs": -17.706,
+            "spectralCentroidHz": 1410.404,
+            "chromaChangeFromPrevious": 0.50196
+          },
+          {
+            "startSeconds": 3240,
+            "endSeconds": 3300,
+            "rmsDbfs": -19.385,
+            "spectralCentroidHz": 1320.088,
+            "chromaChangeFromPrevious": 1.04574
+          },
+          {
+            "startSeconds": 3300,
+            "endSeconds": 3360,
+            "rmsDbfs": -20.028,
+            "spectralCentroidHz": 1223.949,
+            "chromaChangeFromPrevious": 0.27235
+          },
+          {
+            "startSeconds": 3360,
+            "endSeconds": 3420,
+            "rmsDbfs": -19.201,
+            "spectralCentroidHz": 1907.527,
+            "chromaChangeFromPrevious": 0.14742
+          },
+          {
+            "startSeconds": 3420,
+            "endSeconds": 3480,
+            "rmsDbfs": -18.842,
+            "spectralCentroidHz": 2536.224,
+            "chromaChangeFromPrevious": 0.12713
+          },
+          {
+            "startSeconds": 3480,
+            "endSeconds": 3540,
+            "rmsDbfs": -19.886,
+            "spectralCentroidHz": 920.662,
+            "chromaChangeFromPrevious": 0.17239
+          },
+          {
+            "startSeconds": 3540,
+            "endSeconds": 3598.498,
+            "rmsDbfs": -25.83,
+            "spectralCentroidHz": 583.712,
+            "chromaChangeFromPrevious": 0.31546
+          }
+        ]
+      },
+      "humanListening": {
+        "voice": "none",
+        "sceneFit": {
+          "sleep": 0.9,
+          "calm": 0.85,
+          "focus": 0.6
+        },
+        "strongBeat": true,
+        "emotionalLift": false,
+        "largeReverb": true,
+        "mechanicalOrBuzz": false,
+        "startleRisk": 0.1,
+        "notes": "Machine analysis complete; browser listening and scene-fit review pending.",
+        "decision": "contrast_only"
+      },
+      "derivedProductionParameters": {
+        "allowedGoals": [
+          "sleep",
+          "calm"
+        ],
+        "instrumentFamilies": [
+          "soft piano",
+          "low-density ambient pad"
+        ],
+        "tempoRange": [
+          0,
+          60
+        ],
+        "registerRangeMidi": [
+          15.49,
+          120.21
+        ],
+        "density": "very_low",
+        "harmonyMotion": "static",
+        "environmentCompatibility": [
+          "rain",
+          "ocean",
+          "soft air"
+        ],
+        "forbiddenFeatures": [
+          "strong drums",
+          "bright attacks",
+          "voice",
+          "sudden transitions"
+        ],
+        "confidence": 0.55,
+        "derivationNotes": "Use acoustic statistics as ranges and constraints, never copy the reference melody or arrangement."
+      },
+      "analysisProvenance": {
+        "analysisVersion": "reference-audio-analysis-v1",
+        "machineTools": [
+          "ffprobe",
+          "librosa",
+          "scipy",
+          "soundfile",
+          "music-recognition:first30"
+        ],
+        "humanReviewer": "pending",
+        "analyzedFromExactAudio": true,
+        "approvedForAtomicMaterialPlanning": false
+      }
+    },
+    {
+      "referenceId": "licensed_focus_titfos",
+      "source": {
+        "title": "TITFOS - Subject is FOCUS",
+        "creator": "Chad Bowers",
+        "sourceUrl": "https://archive.org/download/20230724-173559-0001-titfos/20230724-173559-0001-TITFOS.mp3",
+        "analysisSourceUrl": "https://archive.org/download/20230724-173559-0001-titfos/20230724-173559-0001-TITFOS.mp3",
+        "accessClass": "licensed_file",
+        "fileSha256": "3266c5527d40ea6d39004b1c34bb7d760f21a0c6f3ce768e5a873535da3f0aba",
+        "observedOn": "2026-07-21",
+        "rightsBoundary": "internal_analysis_only",
+        "licenseEvidence": "https://creativecommons.org/licenses/by-nd/4.0/",
+        "alternateSourceIdentity": {
+          "referenceSourceUrl": "https://archive.org/download/20230724-173559-0001-titfos/20230724-173559-0001-TITFOS.mp3",
+          "analysisSourceUrl": "https://archive.org/download/20230724-173559-0001-titfos/20230724-173559-0001-TITFOS.mp3",
+          "titleCreatorMatch": true,
+          "first30SecondsVerificationMethod": "direct_source",
+          "first30SecondsDetectedTitle": "TITFOS - Subject is FOCUS",
+          "first30SecondsDetectedCreator": "Chad Bowers",
+          "first30SecondsMatch": true,
+          "verifiedOn": "2026-07-21"
+        }
+      },
+      "audio": {
+        "sourceDurationSeconds": 2032.861,
+        "analyzedDurationSeconds": 1851.543,
+        "analysisCoverage": {
+          "beginning": {
+            "startSeconds": 0,
+            "endSeconds": 120
+          },
+          "middle": {
+            "startSeconds": 865.772,
+            "endSeconds": 985.772
+          },
+          "end": {
+            "startSeconds": 1731.543,
+            "endSeconds": 1851.543
+          }
+        },
+        "durationSeconds": 1851.543,
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -30.89,
+        "loudnessRangeLu": 13.9,
+        "truePeakDbtp": 7.06,
+        "spectralCentroidHz": 1493.503,
+        "highFrequencyEnergyRatio": 0.1225,
+        "onsetRatePerMinute": 153.828,
+        "silenceGaps": [
+          0.511,
+          0.139,
+          0.232,
+          0.325,
+          0.279,
+          0.186,
+          0.093,
+          0.093,
+          0.418,
+          0.836,
+          0.325,
+          0.232,
+          0.093,
+          0.186,
+          0.046,
+          0.046,
+          0.093,
+          0.65,
+          0.186,
+          0.372,
+          0.093,
+          0.093,
+          0.511,
+          0.093,
+          0.093,
+          0.511,
+          0.325,
+          0.882,
+          0.186,
+          0.139,
+          1.068,
+          0.279,
+          1.207,
+          1.254,
+          0.279,
+          0.975,
+          0.232,
+          0.836,
+          1.486,
+          0.046,
+          0.464,
+          0.139,
+          0.882,
+          0.372,
+          0.743,
+          0.139,
+          0.093,
+          0.186,
+          1.44,
+          0.139,
+          0.557,
+          0.139,
+          0.232,
+          0.557,
+          0.65,
+          0.139,
+          0.046,
+          0.093,
+          0.093,
+          0.604,
+          1.44,
+          1.161,
+          0.139,
+          1.022,
+          0.139,
+          0.093,
+          0.372,
+          0.511,
+          0.929,
+          0.882,
+          0.743,
+          0.65,
+          0.186,
+          0.139,
+          0.093,
+          0.232,
+          0.418,
+          0.789,
+          0.279,
+          0.046,
+          0.139,
+          1.207,
+          1.347,
+          0.604,
+          0.232,
+          0.139,
+          0.929,
+          0.836,
+          0.372,
+          0.046,
+          0.604,
+          0.046,
+          0.046,
+          0.789,
+          2.043,
+          0.557,
+          0.093,
+          0.093,
+          0.464,
+          1.858
+        ],
+        "voiceProbability": null,
+        "beatProbability": 0.996,
+        "loopBoundaryScore": 0.9903
+      },
+      "music": {
+        "tempoBpm": {
+          "min": 143.555,
+          "max": 143.555,
+          "confidence": 0.55
+        },
+        "meter": {
+          "value": "4/4_or_free_time",
+          "confidence": 0.25
+        },
+        "keyOrMode": {
+          "value": "B minor",
+          "confidence": 0.318
+        },
+        "register": {
+          "lowMidi": 15.49,
+          "highMidi": 117.31,
+          "centerMidi": 66.4,
+          "confidence": 0.45
+        },
+        "instrumentRoles": [
+          "piano",
+          "ambient texture"
+        ],
+        "chordChangeBars": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "motifLengthNotes": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "phraseLengthBars": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "noteDensityPerMinute": 153.828,
+        "melodyContour": "sparse_low_salience_ambient",
+        "form": [
+          {
+            "startSeconds": 0,
+            "endSeconds": 60,
+            "rmsDbfs": -35.948,
+            "spectralCentroidHz": 1452.989,
+            "chromaChangeFromPrevious": 0
+          },
+          {
+            "startSeconds": 60,
+            "endSeconds": 120,
+            "rmsDbfs": -36.377,
+            "spectralCentroidHz": 1384.807,
+            "chromaChangeFromPrevious": 0.19426
+          },
+          {
+            "startSeconds": 120,
+            "endSeconds": 180,
+            "rmsDbfs": -33.619,
+            "spectralCentroidHz": 1703.826,
+            "chromaChangeFromPrevious": 0.17528
+          },
+          {
+            "startSeconds": 180,
+            "endSeconds": 240,
+            "rmsDbfs": -33.894,
+            "spectralCentroidHz": 1536.028,
+            "chromaChangeFromPrevious": 0.12422
+          },
+          {
+            "startSeconds": 240,
+            "endSeconds": 300,
+            "rmsDbfs": -36.992,
+            "spectralCentroidHz": 1378.022,
+            "chromaChangeFromPrevious": 0.13574
+          },
+          {
+            "startSeconds": 300,
+            "endSeconds": 360,
+            "rmsDbfs": -36.085,
+            "spectralCentroidHz": 1438.015,
+            "chromaChangeFromPrevious": 0.06021
+          },
+          {
+            "startSeconds": 360,
+            "endSeconds": 420,
+            "rmsDbfs": -35.404,
+            "spectralCentroidHz": 1403.632,
+            "chromaChangeFromPrevious": 0.12433
+          },
+          {
+            "startSeconds": 420,
+            "endSeconds": 480,
+            "rmsDbfs": -35.879,
+            "spectralCentroidHz": 1581.742,
+            "chromaChangeFromPrevious": 0.22137
+          },
+          {
+            "startSeconds": 480,
+            "endSeconds": 540,
+            "rmsDbfs": -34.091,
+            "spectralCentroidHz": 1620.322,
+            "chromaChangeFromPrevious": 0.13188
+          },
+          {
+            "startSeconds": 540,
+            "endSeconds": 600,
+            "rmsDbfs": -37.485,
+            "spectralCentroidHz": 1803.441,
+            "chromaChangeFromPrevious": 0.15724
+          },
+          {
+            "startSeconds": 600,
+            "endSeconds": 660,
+            "rmsDbfs": -34.729,
+            "spectralCentroidHz": 1772.887,
+            "chromaChangeFromPrevious": 0.22382
+          },
+          {
+            "startSeconds": 660,
+            "endSeconds": 720,
+            "rmsDbfs": -38.901,
+            "spectralCentroidHz": 1675.416,
+            "chromaChangeFromPrevious": 0.14953
+          },
+          {
+            "startSeconds": 720,
+            "endSeconds": 780,
+            "rmsDbfs": -34.564,
+            "spectralCentroidHz": 1635.999,
+            "chromaChangeFromPrevious": 0.21433
+          },
+          {
+            "startSeconds": 780,
+            "endSeconds": 840,
+            "rmsDbfs": -31.02,
+            "spectralCentroidHz": 1685.586,
+            "chromaChangeFromPrevious": 0.12029
+          },
+          {
+            "startSeconds": 840,
+            "endSeconds": 900,
+            "rmsDbfs": -34.556,
+            "spectralCentroidHz": 1634.128,
+            "chromaChangeFromPrevious": 0.11788
+          },
+          {
+            "startSeconds": 900,
+            "endSeconds": 960,
+            "rmsDbfs": -35.059,
+            "spectralCentroidHz": 1565.259,
+            "chromaChangeFromPrevious": 0.14355
+          },
+          {
+            "startSeconds": 960,
+            "endSeconds": 1020,
+            "rmsDbfs": -34.164,
+            "spectralCentroidHz": 1646.948,
+            "chromaChangeFromPrevious": 0.18504
+          },
+          {
+            "startSeconds": 1020,
+            "endSeconds": 1080,
+            "rmsDbfs": -36.337,
+            "spectralCentroidHz": 1866.232,
+            "chromaChangeFromPrevious": 0.09576
+          },
+          {
+            "startSeconds": 1080,
+            "endSeconds": 1140,
+            "rmsDbfs": -37.824,
+            "spectralCentroidHz": 1327.606,
+            "chromaChangeFromPrevious": 0.22802
+          },
+          {
+            "startSeconds": 1140,
+            "endSeconds": 1200,
+            "rmsDbfs": -38.112,
+            "spectralCentroidHz": 1382.056,
+            "chromaChangeFromPrevious": 0.232
+          },
+          {
+            "startSeconds": 1200,
+            "endSeconds": 1260,
+            "rmsDbfs": -42.252,
+            "spectralCentroidHz": 1416.882,
+            "chromaChangeFromPrevious": 0.1487
+          },
+          {
+            "startSeconds": 1260,
+            "endSeconds": 1320,
+            "rmsDbfs": -43.589,
+            "spectralCentroidHz": 1285.773,
+            "chromaChangeFromPrevious": 0.16024
+          },
+          {
+            "startSeconds": 1320,
+            "endSeconds": 1380,
+            "rmsDbfs": -41.374,
+            "spectralCentroidHz": 1254.607,
+            "chromaChangeFromPrevious": 0.13885
+          },
+          {
+            "startSeconds": 1380,
+            "endSeconds": 1440,
+            "rmsDbfs": -41.406,
+            "spectralCentroidHz": 1306.899,
+            "chromaChangeFromPrevious": 0.1356
+          },
+          {
+            "startSeconds": 1440,
+            "endSeconds": 1500,
+            "rmsDbfs": -41.134,
+            "spectralCentroidHz": 1273.988,
+            "chromaChangeFromPrevious": 0.16796
+          },
+          {
+            "startSeconds": 1500,
+            "endSeconds": 1560,
+            "rmsDbfs": -38.597,
+            "spectralCentroidHz": 1255.896,
+            "chromaChangeFromPrevious": 0.30798
+          },
+          {
+            "startSeconds": 1560,
+            "endSeconds": 1620,
+            "rmsDbfs": -37.573,
+            "spectralCentroidHz": 1315.958,
+            "chromaChangeFromPrevious": 0.18964
+          },
+          {
+            "startSeconds": 1620,
+            "endSeconds": 1680,
+            "rmsDbfs": -37.577,
+            "spectralCentroidHz": 1467.444,
+            "chromaChangeFromPrevious": 0.12721
+          },
+          {
+            "startSeconds": 1680,
+            "endSeconds": 1740,
+            "rmsDbfs": -39.238,
+            "spectralCentroidHz": 1360.078,
+            "chromaChangeFromPrevious": 0.12385
+          },
+          {
+            "startSeconds": 1740,
+            "endSeconds": 1800,
+            "rmsDbfs": -35.549,
+            "spectralCentroidHz": 1486.481,
+            "chromaChangeFromPrevious": 0.20261
+          },
+          {
+            "startSeconds": 1800,
+            "endSeconds": 1851.543,
+            "rmsDbfs": -35.69,
+            "spectralCentroidHz": 1364.848,
+            "chromaChangeFromPrevious": 0.09896
+          }
+        ]
+      },
+      "humanListening": {
+        "voice": "present",
+        "sceneFit": {
+          "sleep": 0.9,
+          "calm": 0.85,
+          "focus": 0.6
+        },
+        "strongBeat": true,
+        "emotionalLift": false,
+        "largeReverb": true,
+        "mechanicalOrBuzz": false,
+        "startleRisk": 0.1,
+        "notes": "Owner listening confirmed audible human voice. Retain only as a high-level Focus structure/style reference; exclude voice, melody, recording, and arrangement from Voice-free material production.",
+        "decision": "contrast_only",
+        "referenceUse": "style_structure_only_exclude_voice"
+      },
+      "derivedProductionParameters": {
+        "allowedGoals": [
+          "sleep",
+          "calm"
+        ],
+        "instrumentFamilies": [
+          "soft piano",
+          "low-density ambient pad"
+        ],
+        "tempoRange": [
+          0,
+          60
+        ],
+        "registerRangeMidi": [
+          15.49,
+          117.31
+        ],
+        "density": "very_low",
+        "harmonyMotion": "static",
+        "environmentCompatibility": [
+          "rain",
+          "ocean",
+          "soft air"
+        ],
+        "forbiddenFeatures": [
+          "strong drums",
+          "bright attacks",
+          "voice",
+          "sudden transitions"
+        ],
+        "confidence": 0.55,
+        "derivationNotes": "Use acoustic statistics as ranges and constraints, never copy the reference melody or arrangement."
+      },
+      "analysisProvenance": {
+        "analysisVersion": "reference-audio-analysis-v1",
+        "machineTools": [
+          "ffprobe",
+          "librosa",
+          "scipy",
+          "soundfile",
+          "music-recognition:first30"
+        ],
+        "humanReviewer": "owner",
+        "analyzedFromExactAudio": true,
+        "approvedForAtomicMaterialPlanning": false
+      }
+    },
+    {
+      "referenceId": "licensed_meditation_danutz",
+      "source": {
+        "title": "DANUTZ Meditation Green World And DUB",
+        "creator": "DANUTZ",
+        "sourceUrl": "https://archive.org/download/DANUTZ-Danutzs-Meditation-Green-World-And-DUB/DANUTZ-Danutz%27s%20Meditation%20Green%20World%20%20And%20DUB.mp3",
+        "analysisSourceUrl": "https://archive.org/download/DANUTZ-Danutzs-Meditation-Green-World-And-DUB/DANUTZ-Danutz%27s%20Meditation%20Green%20World%20%20And%20DUB.mp3",
+        "accessClass": "licensed_file",
+        "fileSha256": "824eb5cd0eec16757df0181a643414e952af7124e4ce7fbcef6b4eff1c0db8c2",
+        "observedOn": "2026-07-21",
+        "rightsBoundary": "internal_analysis_only",
+        "licenseEvidence": "http://creativecommons.org/publicdomain/mark/1.0/",
+        "alternateSourceIdentity": {
+          "referenceSourceUrl": "https://archive.org/download/DANUTZ-Danutzs-Meditation-Green-World-And-DUB/DANUTZ-Danutz%27s%20Meditation%20Green%20World%20%20And%20DUB.mp3",
+          "analysisSourceUrl": "https://archive.org/download/DANUTZ-Danutzs-Meditation-Green-World-And-DUB/DANUTZ-Danutz%27s%20Meditation%20Green%20World%20%20And%20DUB.mp3",
+          "titleCreatorMatch": true,
+          "first30SecondsVerificationMethod": "direct_source",
+          "first30SecondsDetectedTitle": "DANUTZ Meditation Green World And DUB",
+          "first30SecondsDetectedCreator": "DANUTZ",
+          "first30SecondsMatch": true,
+          "verifiedOn": "2026-07-21"
+        }
+      },
+      "audio": {
+        "sourceDurationSeconds": 4142.997,
+        "analyzedDurationSeconds": 4142.997,
+        "analysisCoverage": {
+          "beginning": {
+            "startSeconds": 0,
+            "endSeconds": 120
+          },
+          "middle": {
+            "startSeconds": 2011.499,
+            "endSeconds": 2131.499
+          },
+          "end": {
+            "startSeconds": 4022.997,
+            "endSeconds": 4142.997
+          }
+        },
+        "durationSeconds": 4142.997,
+        "sampleRate": 44100,
+        "channels": 2,
+        "integratedLufs": -9.32,
+        "loudnessRangeLu": 11.7,
+        "truePeakDbtp": 3.32,
+        "spectralCentroidHz": 1817.625,
+        "highFrequencyEnergyRatio": 0.14531,
+        "onsetRatePerMinute": 198.204,
+        "silenceGaps": [
+          0.232,
+          11.331,
+          0.139,
+          0.139,
+          10.867,
+          0.139,
+          0.093,
+          7.57,
+          3.994,
+          8.638,
+          5.341,
+          4.365,
+          0.836,
+          0.279,
+          0.279,
+          0.093,
+          10.588,
+          0.789,
+          1.393,
+          3.297,
+          0.464,
+          0.511
+        ],
+        "voiceProbability": null,
+        "beatProbability": 1,
+        "loopBoundaryScore": 0.95768
+      },
+      "music": {
+        "tempoBpm": {
+          "min": 143.555,
+          "max": 143.555,
+          "confidence": 0.55
+        },
+        "meter": {
+          "value": "4/4_or_free_time",
+          "confidence": 0.25
+        },
+        "keyOrMode": {
+          "value": "F major",
+          "confidence": 0.702
+        },
+        "register": {
+          "lowMidi": 15.49,
+          "highMidi": 118.6,
+          "centerMidi": 67.04,
+          "confidence": 0.45
+        },
+        "instrumentRoles": [
+          "piano",
+          "ambient texture"
+        ],
+        "chordChangeBars": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "motifLengthNotes": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "phraseLengthBars": {
+          "min": 0,
+          "max": 0,
+          "confidence": 0
+        },
+        "noteDensityPerMinute": 198.204,
+        "melodyContour": "sparse_low_salience_ambient",
+        "form": [
+          {
+            "startSeconds": 0,
+            "endSeconds": 60,
+            "rmsDbfs": -18.361,
+            "spectralCentroidHz": 2513.294,
+            "chromaChangeFromPrevious": 0
+          },
+          {
+            "startSeconds": 60,
+            "endSeconds": 120,
+            "rmsDbfs": -11.972,
+            "spectralCentroidHz": 2023.336,
+            "chromaChangeFromPrevious": 0.38606
+          },
+          {
+            "startSeconds": 120,
+            "endSeconds": 180,
+            "rmsDbfs": -10.598,
+            "spectralCentroidHz": 1902.278,
+            "chromaChangeFromPrevious": 0.26444
+          },
+          {
+            "startSeconds": 180,
+            "endSeconds": 240,
+            "rmsDbfs": -12.694,
+            "spectralCentroidHz": 1754.777,
+            "chromaChangeFromPrevious": 0.33453
+          },
+          {
+            "startSeconds": 240,
+            "endSeconds": 300,
+            "rmsDbfs": -10.873,
+            "spectralCentroidHz": 1908.669,
+            "chromaChangeFromPrevious": 0.33941
+          },
+          {
+            "startSeconds": 300,
+            "endSeconds": 360,
+            "rmsDbfs": -12.851,
+            "spectralCentroidHz": 2312.026,
+            "chromaChangeFromPrevious": 0.33721
+          },
+          {
+            "startSeconds": 360,
+            "endSeconds": 420,
+            "rmsDbfs": -18.793,
+            "spectralCentroidHz": 2067.977,
+            "chromaChangeFromPrevious": 0.51452
+          },
+          {
+            "startSeconds": 420,
+            "endSeconds": 480,
+            "rmsDbfs": -10.906,
+            "spectralCentroidHz": 2134.259,
+            "chromaChangeFromPrevious": 0.46148
+          },
+          {
+            "startSeconds": 480,
+            "endSeconds": 540,
+            "rmsDbfs": -14.929,
+            "spectralCentroidHz": 2157.425,
+            "chromaChangeFromPrevious": 0.70309
+          },
+          {
+            "startSeconds": 540,
+            "endSeconds": 600,
+            "rmsDbfs": -14.408,
+            "spectralCentroidHz": 1702.036,
+            "chromaChangeFromPrevious": 0.40737
+          },
+          {
+            "startSeconds": 600,
+            "endSeconds": 660,
+            "rmsDbfs": -10.621,
+            "spectralCentroidHz": 1798.968,
+            "chromaChangeFromPrevious": 0.46401
+          },
+          {
+            "startSeconds": 660,
+            "endSeconds": 720,
+            "rmsDbfs": -17.495,
+            "spectralCentroidHz": 2089.28,
+            "chromaChangeFromPrevious": 0.50568
+          },
+          {
+            "startSeconds": 720,
+            "endSeconds": 780,
+            "rmsDbfs": -11.305,
+            "spectralCentroidHz": 1819.696,
+            "chromaChangeFromPrevious": 0.31313
+          },
+          {
+            "startSeconds": 780,
+            "endSeconds": 840,
+            "rmsDbfs": -9.16,
+            "spectralCentroidHz": 1502.533,
+            "chromaChangeFromPrevious": 0.25903
+          },
+          {
+            "startSeconds": 840,
+            "endSeconds": 900,
+            "rmsDbfs": -10.407,
+            "spectralCentroidHz": 1632.759,
+            "chromaChangeFromPrevious": 0.27572
+          },
+          {
+            "startSeconds": 900,
+            "endSeconds": 960,
+            "rmsDbfs": -17.217,
+            "spectralCentroidHz": 1827.042,
+            "chromaChangeFromPrevious": 0.46858
+          },
+          {
+            "startSeconds": 960,
+            "endSeconds": 1020,
+            "rmsDbfs": -9.967,
+            "spectralCentroidHz": 1647.646,
+            "chromaChangeFromPrevious": 0.45902
+          },
+          {
+            "startSeconds": 1020,
+            "endSeconds": 1080,
+            "rmsDbfs": -10.211,
+            "spectralCentroidHz": 1652.384,
+            "chromaChangeFromPrevious": 0.17091
+          },
+          {
+            "startSeconds": 1080,
+            "endSeconds": 1140,
+            "rmsDbfs": -26.9,
+            "spectralCentroidHz": 1828.567,
+            "chromaChangeFromPrevious": 0.692
+          },
+          {
+            "startSeconds": 1140,
+            "endSeconds": 1200,
+            "rmsDbfs": -12.208,
+            "spectralCentroidHz": 1226.892,
+            "chromaChangeFromPrevious": 0.75359
+          },
+          {
+            "startSeconds": 1200,
+            "endSeconds": 1260,
+            "rmsDbfs": -12.791,
+            "spectralCentroidHz": 2189.771,
+            "chromaChangeFromPrevious": 0.44403
+          },
+          {
+            "startSeconds": 1260,
+            "endSeconds": 1320,
+            "rmsDbfs": -10.814,
+            "spectralCentroidHz": 2230.098,
+            "chromaChangeFromPrevious": 0.28405
+          },
+          {
+            "startSeconds": 1320,
+            "endSeconds": 1380,
+            "rmsDbfs": -11.879,
+            "spectralCentroidHz": 2012.335,
+            "chromaChangeFromPrevious": 0.19403
+          },
+          {
+            "startSeconds": 1380,
+            "endSeconds": 1440,
+            "rmsDbfs": -16.359,
+            "spectralCentroidHz": 1746.468,
+            "chromaChangeFromPrevious": 0.66453
+          },
+          {
+            "startSeconds": 1440,
+            "endSeconds": 1500,
+            "rmsDbfs": -10.976,
+            "spectralCentroidHz": 2225.346,
+            "chromaChangeFromPrevious": 0.79851
+          },
+          {
+            "startSeconds": 1500,
+            "endSeconds": 1560,
+            "rmsDbfs": -14.284,
+            "spectralCentroidHz": 1835.344,
+            "chromaChangeFromPrevious": 0.42737
+          },
+          {
+            "startSeconds": 1560,
+            "endSeconds": 1620,
+            "rmsDbfs": -12.638,
+            "spectralCentroidHz": 2345.535,
+            "chromaChangeFromPrevious": 0.27604
+          },
+          {
+            "startSeconds": 1620,
+            "endSeconds": 1680,
+            "rmsDbfs": -8.99,
+            "spectralCentroidHz": 2181.81,
+            "chromaChangeFromPrevious": 0.49152
+          },
+          {
+            "startSeconds": 1680,
+            "endSeconds": 1740,
+            "rmsDbfs": -14.991,
+            "spectralCentroidHz": 2474.798,
+            "chromaChangeFromPrevious": 0.52093
+          },
+          {
+            "startSeconds": 1740,
+            "endSeconds": 1800,
+            "rmsDbfs": -8.878,
+            "spectralCentroidHz": 2154.323,
+            "chromaChangeFromPrevious": 0.50554
+          },
+          {
+            "startSeconds": 1800,
+            "endSeconds": 1860,
+            "rmsDbfs": -8.956,
+            "spectralCentroidHz": 2120.207,
+            "chromaChangeFromPrevious": 0.0366
+          },
+          {
+            "startSeconds": 1860,
+            "endSeconds": 1920,
+            "rmsDbfs": -10.944,
+            "spectralCentroidHz": 1985.955,
+            "chromaChangeFromPrevious": 0.24567
+          },
+          {
+            "startSeconds": 1920,
+            "endSeconds": 1980,
+            "rmsDbfs": -11.588,
+            "spectralCentroidHz": 2099.563,
+            "chromaChangeFromPrevious": 0.78295
+          },
+          {
+            "startSeconds": 1980,
+            "endSeconds": 2040,
+            "rmsDbfs": -11.015,
+            "spectralCentroidHz": 1934.914,
+            "chromaChangeFromPrevious": 0.24074
+          },
+          {
+            "startSeconds": 2040,
+            "endSeconds": 2100,
+            "rmsDbfs": -10.39,
+            "spectralCentroidHz": 2160.225,
+            "chromaChangeFromPrevious": 0.29315
+          },
+          {
+            "startSeconds": 2100,
+            "endSeconds": 2160,
+            "rmsDbfs": -9.559,
+            "spectralCentroidHz": 2017.729,
+            "chromaChangeFromPrevious": 0.41956
+          },
+          {
+            "startSeconds": 2160,
+            "endSeconds": 2220,
+            "rmsDbfs": -9.596,
+            "spectralCentroidHz": 1941.196,
+            "chromaChangeFromPrevious": 0.05393
+          },
+          {
+            "startSeconds": 2220,
+            "endSeconds": 2280,
+            "rmsDbfs": -14.295,
+            "spectralCentroidHz": 1670.363,
+            "chromaChangeFromPrevious": 0.66815
+          },
+          {
+            "startSeconds": 2280,
+            "endSeconds": 2340,
+            "rmsDbfs": -8.538,
+            "spectralCentroidHz": 1565.089,
+            "chromaChangeFromPrevious": 0.49075
+          },
+          {
+            "startSeconds": 2340,
+            "endSeconds": 2400,
+            "rmsDbfs": -7.789,
+            "spectralCentroidHz": 1234.64,
+            "chromaChangeFromPrevious": 0.22328
+          },
+          {
+            "startSeconds": 2400,
+            "endSeconds": 2460,
+            "rmsDbfs": -8.15,
+            "spectralCentroidHz": 1125.226,
+            "chromaChangeFromPrevious": 0.27087
+          },
+          {
+            "startSeconds": 2460,
+            "endSeconds": 2520,
+            "rmsDbfs": -8.508,
+            "spectralCentroidHz": 1475.885,
+            "chromaChangeFromPrevious": 0.13749
+          },
+          {
+            "startSeconds": 2520,
+            "endSeconds": 2580,
+            "rmsDbfs": -14.29,
+            "spectralCentroidHz": 1086.429,
+            "chromaChangeFromPrevious": 0.42091
+          },
+          {
+            "startSeconds": 2580,
+            "endSeconds": 2640,
+            "rmsDbfs": -16.424,
+            "spectralCentroidHz": 2492.407,
+            "chromaChangeFromPrevious": 0.57856
+          },
+          {
+            "startSeconds": 2640,
+            "endSeconds": 2700,
+            "rmsDbfs": -11.662,
+            "spectralCentroidHz": 2306.396,
+            "chromaChangeFromPrevious": 0.30124
+          },
+          {
+            "startSeconds": 2700,
+            "endSeconds": 2760,
+            "rmsDbfs": -11.286,
+            "spectralCentroidHz": 2317.988,
+            "chromaChangeFromPrevious": 0.1135
+          },
+          {
+            "startSeconds": 2760,
+            "endSeconds": 2820,
+            "rmsDbfs": -15.09,
+            "spectralCentroidHz": 2105.468,
+            "chromaChangeFromPrevious": 0.3477
+          },
+          {
+            "startSeconds": 2820,
+            "endSeconds": 2880,
+            "rmsDbfs": -23.36,
+            "spectralCentroidHz": 1876.296,
+            "chromaChangeFromPrevious": 0.30603
+          },
+          {
+            "startSeconds": 2880,
+            "endSeconds": 2940,
+            "rmsDbfs": -11.73,
+            "spectralCentroidHz": 1989.306,
+            "chromaChangeFromPrevious": 0.29219
+          },
+          {
+            "startSeconds": 2940,
+            "endSeconds": 3000,
+            "rmsDbfs": -11.866,
+            "spectralCentroidHz": 1768.677,
+            "chromaChangeFromPrevious": 0.23994
+          },
+          {
+            "startSeconds": 3000,
+            "endSeconds": 3060,
+            "rmsDbfs": -13.65,
+            "spectralCentroidHz": 1502.348,
+            "chromaChangeFromPrevious": 0.11448
+          },
+          {
+            "startSeconds": 3060,
+            "endSeconds": 3120,
+            "rmsDbfs": -11.154,
+            "spectralCentroidHz": 2121.26,
+            "chromaChangeFromPrevious": 0.15176
+          },
+          {
+            "startSeconds": 3120,
+            "endSeconds": 3180,
+            "rmsDbfs": -15.615,
+            "spectralCentroidHz": 1546.892,
+            "chromaChangeFromPrevious": 0.36612
+          },
+          {
+            "startSeconds": 3180,
+            "endSeconds": 3240,
+            "rmsDbfs": -18.962,
+            "spectralCentroidHz": 1983.212,
+            "chromaChangeFromPrevious": 0.26409
+          },
+          {
+            "startSeconds": 3240,
+            "endSeconds": 3300,
+            "rmsDbfs": -9.135,
+            "spectralCentroidHz": 1545.056,
+            "chromaChangeFromPrevious": 0.67974
+          },
+          {
+            "startSeconds": 3300,
+            "endSeconds": 3360,
+            "rmsDbfs": -10.878,
+            "spectralCentroidHz": 1779.612,
+            "chromaChangeFromPrevious": 0.40901
+          },
+          {
+            "startSeconds": 3360,
+            "endSeconds": 3420,
+            "rmsDbfs": -8.631,
+            "spectralCentroidHz": 1475.925,
+            "chromaChangeFromPrevious": 0.22315
+          },
+          {
+            "startSeconds": 3420,
+            "endSeconds": 3480,
+            "rmsDbfs": -10.791,
+            "spectralCentroidHz": 1254.214,
+            "chromaChangeFromPrevious": 0.34604
+          },
+          {
+            "startSeconds": 3480,
+            "endSeconds": 3540,
+            "rmsDbfs": -8.987,
+            "spectralCentroidHz": 1264.295,
+            "chromaChangeFromPrevious": 0.41785
+          },
+          {
+            "startSeconds": 3540,
+            "endSeconds": 3600,
+            "rmsDbfs": -9.107,
+            "spectralCentroidHz": 1509.647,
+            "chromaChangeFromPrevious": 0.18608
+          },
+          {
+            "startSeconds": 3600,
+            "endSeconds": 3660,
+            "rmsDbfs": -8.734,
+            "spectralCentroidHz": 1487.077,
+            "chromaChangeFromPrevious": 0.8475
+          },
+          {
+            "startSeconds": 3660,
+            "endSeconds": 3720,
+            "rmsDbfs": -10.552,
+            "spectralCentroidHz": 1192.997,
+            "chromaChangeFromPrevious": 0.22509
+          },
+          {
+            "startSeconds": 3720,
+            "endSeconds": 3780,
+            "rmsDbfs": -22.816,
+            "spectralCentroidHz": 1386.016,
+            "chromaChangeFromPrevious": 0.59166
+          },
+          {
+            "startSeconds": 3780,
+            "endSeconds": 3840,
+            "rmsDbfs": -18.163,
+            "spectralCentroidHz": 1837.981,
+            "chromaChangeFromPrevious": 0.3867
+          },
+          {
+            "startSeconds": 3840,
+            "endSeconds": 3900,
+            "rmsDbfs": -12.658,
+            "spectralCentroidHz": 1358.517,
+            "chromaChangeFromPrevious": 0.31099
+          },
+          {
+            "startSeconds": 3900,
+            "endSeconds": 3960,
+            "rmsDbfs": -14.799,
+            "spectralCentroidHz": 1629.901,
+            "chromaChangeFromPrevious": 0.40983
+          },
+          {
+            "startSeconds": 3960,
+            "endSeconds": 4020,
+            "rmsDbfs": -12.986,
+            "spectralCentroidHz": 1498.795,
+            "chromaChangeFromPrevious": 0.4695
+          },
+          {
+            "startSeconds": 4020,
+            "endSeconds": 4080,
+            "rmsDbfs": -11.623,
+            "spectralCentroidHz": 1575.447,
+            "chromaChangeFromPrevious": 0.45305
+          },
+          {
+            "startSeconds": 4080,
+            "endSeconds": 4140,
+            "rmsDbfs": -12.702,
+            "spectralCentroidHz": 1345.811,
+            "chromaChangeFromPrevious": 0.29703
+          },
+          {
+            "startSeconds": 4140,
+            "endSeconds": 4142.997,
+            "rmsDbfs": -16.042,
+            "spectralCentroidHz": 848.256,
+            "chromaChangeFromPrevious": 0.48232
+          }
+        ]
+      },
+      "humanListening": {
+        "voice": "none",
+        "sceneFit": {
+          "sleep": 0.9,
+          "calm": 0.85,
+          "focus": 0.6
+        },
+        "strongBeat": true,
+        "emotionalLift": false,
+        "largeReverb": true,
+        "mechanicalOrBuzz": false,
+        "startleRisk": 0.1,
+        "notes": "Machine analysis complete; browser listening and scene-fit review pending.",
+        "decision": "contrast_only"
+      },
+      "derivedProductionParameters": {
+        "allowedGoals": [
+          "sleep",
+          "calm"
+        ],
+        "instrumentFamilies": [
+          "soft piano",
+          "low-density ambient pad"
+        ],
+        "tempoRange": [
+          0,
+          60
+        ],
+        "registerRangeMidi": [
+          15.49,
+          118.6
+        ],
+        "density": "very_low",
+        "harmonyMotion": "static",
+        "environmentCompatibility": [
+          "rain",
+          "ocean",
+          "soft air"
+        ],
+        "forbiddenFeatures": [
+          "strong drums",
+          "bright attacks",
+          "voice",
+          "sudden transitions"
+        ],
+        "confidence": 0.55,
+        "derivationNotes": "Use acoustic statistics as ranges and constraints, never copy the reference melody or arrangement."
+      },
+      "analysisProvenance": {
+        "analysisVersion": "reference-audio-analysis-v1",
+        "machineTools": [
+          "ffprobe",
+          "librosa",
+          "scipy",
+          "soundfile",
+          "music-recognition:first30"
+        ],
+        "humanReviewer": "pending",
+        "analyzedFromExactAudio": true,
+        "approvedForAtomicMaterialPlanning": false
+      }
+    }
+  ]
+}

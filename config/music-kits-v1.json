@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0.0",
+  "requiredStemRoles": ["harmony", "melody", "accompaniment", "low_support", "transition"],
+  "kits": [
+    {
+      "id": "kit_east_asian_pentatonic_lyrical_piano_001",
+      "version": "0.1.0",
+      "status": "candidate",
+      "profileId": "east_asian_pentatonic_lyrical_piano",
+      "profileVersion": "0.1.0",
+      "goal": "calm",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 5,
+      "meter": "4/4",
+      "tempoBpm": 62,
+      "tonalCenter": "C",
+      "sourceRights": "VCSL Kawai CC0-1.0",
+      "stems": [
+        {"role": "harmony", "defaultVolume": 68, "range": [35, 82]},
+        {"role": "melody", "defaultVolume": 76, "range": [35, 90]},
+        {"role": "accompaniment", "defaultVolume": 56, "range": [20, 78]},
+        {"role": "low_support", "defaultVolume": 42, "range": [0, 62]},
+        {"role": "transition", "defaultVolume": 58, "range": [20, 76]}
+      ]
+    },
+    {
+      "id": "kit_western_six_eight_acoustic_unwind_001",
+      "version": "0.1.0",
+      "status": "candidate",
+      "profileId": "western_six_eight_acoustic_unwind",
+      "profileVersion": "0.1.0",
+      "goal": "calm",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 5,
+      "meter": "6/8",
+      "tempoBpm": 52,
+      "tonalCenter": "C",
+      "sourceRights": "Discord GM Martin steel guitar CC0",
+      "stems": [
+        {"role": "harmony", "defaultVolume": 64, "range": [30, 80]},
+        {"role": "melody", "defaultVolume": 72, "range": [30, 86]},
+        {"role": "accompaniment", "defaultVolume": 62, "range": [24, 82]},
+        {"role": "low_support", "defaultVolume": 38, "range": [0, 58]},
+        {"role": "transition", "defaultVolume": 55, "range": [16, 72]}
+      ]
+    },
+    {
+      "id": "kit_dry_rhodes_brushless_focus_001",
+      "version": "0.1.0",
+      "status": "candidate",
+      "profileId": "dry_rhodes_brushless_focus",
+      "profileVersion": "0.1.0",
+      "goal": "focus",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 10,
+      "meter": "4/4",
+      "tempoBpm": 68,
+      "tonalCenter": "C",
+      "sourceRights": "jRhodes CC0 and Killer Bass CC0",
+      "stems": [
+        {"role": "harmony", "defaultVolume": 62, "range": [28, 78]},
+        {"role": "melody", "defaultVolume": 58, "range": [20, 74]},
+        {"role": "accompaniment", "defaultVolume": 68, "range": [35, 84]},
+        {"role": "low_support", "defaultVolume": 34, "range": [0, 54]},
+        {"role": "transition", "defaultVolume": 48, "range": [12, 66]}
+      ]
+    },
+    {
+      "id": "kit_low_register_piano_sleep_001",
+      "version": "0.1.0",
+      "status": "candidate",
+      "profileId": "low_register_piano_sleep_descent",
+      "profileVersion": "0.1.0",
+      "goal": "sleep",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 5,
+      "meter": "4/4",
+      "tempoBpm": 48,
+      "tonalCenter": "C",
+      "sourceRights": "VCSL Kawai CC0-1.0",
+      "stems": [
+        {"role": "harmony", "defaultVolume": 60, "range": [28, 76]},
+        {"role": "melody", "defaultVolume": 64, "range": [25, 80]},
+        {"role": "accompaniment", "defaultVolume": 48, "range": [18, 70]},
+        {"role": "low_support", "defaultVolume": 44, "range": [0, 62]},
+        {"role": "transition", "defaultVolume": 52, "range": [16, 70]}
+      ]
+    },
+    {
+      "id": "kit_open_fifth_guitar_meditation_001",
+      "version": "0.1.0",
+      "status": "candidate",
+      "profileId": "open_fifth_guitar_meditation",
+      "profileVersion": "0.1.0",
+      "goal": "calm",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 8,
+      "meter": "4/4",
+      "tempoBpm": 55,
+      "tonalCenter": "C",
+      "sourceRights": "Discord GM Martin steel guitar CC0",
+      "stems": [
+        {"role": "harmony", "defaultVolume": 58, "range": [26, 74]},
+        {"role": "melody", "defaultVolume": 62, "range": [26, 80]},
+        {"role": "accompaniment", "defaultVolume": 54, "range": [18, 70]},
+        {"role": "low_support", "defaultVolume": 36, "range": [0, 56]},
+        {"role": "transition", "defaultVolume": 50, "range": [14, 68]}
+      ]
+    },
+    {
+      "id": "kit_common_tone_piano_focus_001",
+      "version": "0.1.0",
+      "status": "candidate",
+      "profileId": "common_tone_piano_focus",
+      "profileVersion": "0.1.0",
+      "goal": "focus",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 5,
+      "meter": "4/4",
+      "tempoBpm": 64,
+      "tonalCenter": "C",
+      "sourceRights": "VCSL Kawai CC0-1.0",
+      "stems": [
+        {"role": "harmony", "defaultVolume": 60, "range": [28, 76]},
+        {"role": "melody", "defaultVolume": 54, "range": [20, 72]},
+        {"role": "accompaniment", "defaultVolume": 62, "range": [30, 80]},
+        {"role": "low_support", "defaultVolume": 32, "range": [0, 54]},
+        {"role": "transition", "defaultVolume": 46, "range": [12, 64]}
+      ]
+    }
+  ]
+}

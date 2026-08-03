@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.0.0",
+  "registryId": "formal-foundational-non-music-elements-v1",
+  "status": "formal_candidate_registry",
+  "productionAllowed": false,
+  "purpose": "Fill the formal foundational baseline gaps for pad/drone, environment beds, organic textures, and accent one-shots without treating mixed finished music as composable elements.",
+  "rules": [
+    "Every counted Lyria item remains a candidate until human identity and voice-free review is complete.",
+    "Environment beds must not contain music, voice, animals, rhythm, or sudden events.",
+    "Organic textures must not contain fixed melodies, percussion patterns, or human-like vocal texture.",
+    "Accent one-shots are not loop beds and must declare onset and tail policy.",
+    "Deterministic accents are parameter recipes, not recordings and not therapeutic claims."
+  ],
+  "sourceManifests": {
+    "lyriaSingleElementPilotV1": "public/audio/music/local-review/lyria-single-element-pilot-v1/manifest.json",
+    "lyriaFoundationalExpansionV2": "public/audio/music/local-review/lyria-foundational-expansion-v2/manifest.json"
+  },
+  "targetsFilledByRegistry": {
+    "pad_drone": 3,
+    "environment_bed": 18,
+    "organic_texture": 12,
+    "accent_one_shot": 12
+  },
+  "lyriaCandidateFamilies": [
+    { "id": "open_fifth_harmonic_bed", "sourceManifest": "lyriaSingleElementPilotV1", "countAs": "pad_drone", "expectedVariants": 3, "status": "formal_candidate", "loopMode": "crossfade", "humanGate": "required" },
+    { "id": "distant_ocean_wash", "sourceManifest": "lyriaFoundationalExpansionV2", "countAs": "environment_bed", "expectedVariants": 3, "status": "formal_candidate", "loopMode": "crossfade", "humanGate": "required" },
+    { "id": "gentle_rain_canopy", "sourceManifest": "lyriaFoundationalExpansionV2", "countAs": "environment_bed", "expectedVariants": 3, "status": "formal_candidate", "loopMode": "crossfade", "humanGate": "required" },
+    { "id": "night_forest_hush", "sourceManifest": "lyriaFoundationalExpansionV2", "countAs": "environment_bed", "expectedVariants": 3, "status": "formal_candidate", "loopMode": "crossfade", "humanGate": "required" },
+    { "id": "quiet_fireplace_embers", "sourceManifest": "lyriaFoundationalExpansionV2", "countAs": "environment_bed", "expectedVariants": 3, "status": "formal_candidate", "loopMode": "crossfade", "humanGate": "required" },
+    { "id": "soft_pine_wind", "sourceManifest": "lyriaFoundationalExpansionV2", "countAs": "environment_bed", "expectedVariants": 2, "includedVariants": [1, 2], "status": "formal_candidate", "loopMode": "crossfade", "humanGate": "required" },
+    { "id": "steady_room_ventilation", "sourceManifest": "lyriaFoundationalExpansionV2", "countAs": "environment_bed", "expectedVariants": 3, "status": "formal_candidate", "loopMode": "crossfade", "humanGate": "required" },
+    { "id": "granular_mist", "sourceManifest": "lyriaFoundationalExpansionV2", "countAs": "organic_texture", "expectedVariants": 3, "status": "formal_candidate", "loopMode": "crossfade", "humanGate": "required" },
+    { "id": "low_wood_resonance", "sourceManifest": "lyriaFoundationalExpansionV2", "countAs": "organic_texture", "expectedVariants": 3, "status": "formal_candidate", "loopMode": "crossfade", "humanGate": "required" },
+    { "id": "muted_string_harmonics", "sourceManifest": "lyriaFoundationalExpansionV2", "countAs": "organic_texture", "expectedVariants": 3, "status": "formal_candidate", "loopMode": "crossfade", "humanGate": "required" },
+    { "id": "soft_tape_air", "sourceManifest": "lyriaFoundationalExpansionV2", "countAs": "organic_texture", "expectedVariants": 3, "status": "formal_candidate", "loopMode": "crossfade", "humanGate": "required" },
+    { "id": "single_low_temple_bell", "sourceManifest": "lyriaFoundationalExpansionV2", "countAs": "accent_one_shot", "expectedVariants": 3, "status": "formal_candidate", "loopMode": "one_shot", "humanGate": "required" },
+    { "id": "single_singing_bowl", "sourceManifest": "lyriaFoundationalExpansionV2", "countAs": "accent_one_shot", "expectedVariants": 3, "status": "formal_candidate", "loopMode": "one_shot", "humanGate": "required" },
+    { "id": "single_wood_chime", "sourceManifest": "lyriaFoundationalExpansionV2", "countAs": "accent_one_shot", "expectedVariants": 3, "status": "formal_candidate", "loopMode": "one_shot", "humanGate": "required" }
+  ],
+  "deterministicEnvironmentConfigs": [
+    {
+      "id": "env_procedural_soft_airflow_bed_v1",
+      "countAs": "environment_bed",
+      "status": "formal_candidate",
+      "generator": "deterministic_dsp",
+      "label": "Procedural Soft Airflow Bed",
+      "goals": ["sleep", "calm", "focus"],
+      "parameters": {
+        "noiseColor": "pink",
+        "lowpassHz": 5200,
+        "slowAmplitudeModulationHz": 0.025,
+        "modulationDepth": 0.08,
+        "defaultGainDb": -32,
+        "maxGainDb": -23
+      },
+      "renderPolicy": { "loopable": true, "seeded": true, "defaultDurationSeconds": 120, "crossfadeSeconds": 4 },
+      "safety": { "voiceFree": true, "medicalClaimAllowed": false, "maxTruePeakDb": -6 }
+    }
+  ],
+  "deterministicAccentConfigs": [
+    {
+      "id": "accent_soft_sine_bell_c5_v1",
+      "countAs": "accent_one_shot",
+      "status": "formal_candidate",
+      "generator": "deterministic_dsp",
+      "label": "Soft Sine Bell C5",
+      "goals": ["sleep", "calm"],
+      "parameters": { "waveform": "sine", "frequencyHz": 523.25, "attackSeconds": 0.018, "decaySeconds": 2.8, "defaultGainDb": -31, "maxGainDb": -22 },
+      "onsetPolicy": { "expectedOnsets": 1, "tailSeconds": 2.8, "loopable": false },
+      "safety": { "voiceFree": true, "medicalClaimAllowed": false, "maxTruePeakDb": -6 }
+    },
+    {
+      "id": "accent_soft_filtered_noise_breath_v1",
+      "countAs": "accent_one_shot",
+      "status": "formal_candidate",
+      "generator": "deterministic_dsp",
+      "label": "Soft Filtered Noise Swell",
+      "goals": ["sleep", "calm", "focus"],
+      "parameters": { "noiseColor": "pink", "bandpassHz": [900, 2400], "attackSeconds": 0.12, "decaySeconds": 1.9, "defaultGainDb": -34, "maxGainDb": -25 },
+      "onsetPolicy": { "expectedOnsets": 1, "tailSeconds": 1.9, "loopable": false },
+      "safety": { "voiceFree": true, "medicalClaimAllowed": false, "maxTruePeakDb": -6 }
+    },
+    {
+      "id": "accent_low_wood_tone_g3_v1",
+      "countAs": "accent_one_shot",
+      "status": "formal_candidate",
+      "generator": "deterministic_dsp",
+      "label": "Low Wood Tone G3",
+      "goals": ["calm", "focus"],
+      "parameters": { "waveform": "triangle", "frequencyHz": 196, "lowpassHz": 1800, "attackSeconds": 0.01, "decaySeconds": 1.45, "defaultGainDb": -33, "maxGainDb": -24 },
+      "onsetPolicy": { "expectedOnsets": 1, "tailSeconds": 1.45, "loopable": false },
+      "safety": { "voiceFree": true, "medicalClaimAllowed": false, "maxTruePeakDb": -6 }
+    }
+  ]
+}

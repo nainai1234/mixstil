@@ -1,0 +1,2283 @@
+{
+  "schemaVersion": "2.0.0",
+  "sourceBatch": "independent-composition-pilot-v3",
+  "promotedOn": "2026-07-21",
+  "status": "approved_foundational_music",
+  "humanListening": "passed_by_project_owner",
+  "machineQa": "passed",
+  "diversity": {
+    "maximumSimilarity": 0.6646,
+    "threshold": 0.78
+  },
+  "kits": [
+    {
+      "id": "kit_east_asian_pentatonic_lyrical_piano_001",
+      "version": "0.1.0",
+      "profileId": "east_asian_pentatonic_lyrical_piano",
+      "goal": "calm",
+      "form": "lyrical_nocturne",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 5,
+      "status": "approved",
+      "stems": [
+        {
+          "id": "kit_east_asian_pentatonic_lyrical_piano_001__harmony",
+          "name": "east asian pentatonic lyrical piano - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v1/kit_east_asian_pentatonic_lyrical_piano_001/harmony.mp3",
+          "defaultVolume": 68,
+          "durationSeconds": 96,
+          "fileSha256": "40ec11e8699d783ec70e6ee2a21287750eb94c86d0aca10b1a175da995ae1253",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:east_asian_pentatonic_lyrical_piano:harmony",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        },
+        {
+          "id": "kit_east_asian_pentatonic_lyrical_piano_001__melody",
+          "name": "east asian pentatonic lyrical piano - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v1/kit_east_asian_pentatonic_lyrical_piano_001/melody.mp3",
+          "defaultVolume": 76,
+          "durationSeconds": 96,
+          "fileSha256": "a05a492823080e1a03f78d9e4d6d47c99a920dbe30a2188d9d04b5dc9562a0b6",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:east_asian_pentatonic_lyrical_piano:melody",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        },
+        {
+          "id": "kit_east_asian_pentatonic_lyrical_piano_001__accompaniment",
+          "name": "east asian pentatonic lyrical piano - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v1/kit_east_asian_pentatonic_lyrical_piano_001/accompaniment.mp3",
+          "defaultVolume": 56,
+          "durationSeconds": 96,
+          "fileSha256": "f2c5e999ff13ce3a5b7888fab355dc434aa98bdaebc8a9187901773caded4076",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:east_asian_pentatonic_lyrical_piano:accompaniment",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        },
+        {
+          "id": "kit_east_asian_pentatonic_lyrical_piano_001__low_support",
+          "name": "east asian pentatonic lyrical piano - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v1/kit_east_asian_pentatonic_lyrical_piano_001/low_support.mp3",
+          "defaultVolume": 42,
+          "durationSeconds": 96,
+          "fileSha256": "f932927618a0b1a6867be04a6216e0ae562e69be9e4fedd49a103b0829555247",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:east_asian_pentatonic_lyrical_piano:low_support",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        },
+        {
+          "id": "kit_east_asian_pentatonic_lyrical_piano_001__transition",
+          "name": "east asian pentatonic lyrical piano - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v1/kit_east_asian_pentatonic_lyrical_piano_001/transition.mp3",
+          "defaultVolume": 58,
+          "durationSeconds": 96,
+          "fileSha256": "b60a206438df592212fb7d9a2ed66c729dd46b8df77427f60b637e79d9e43ae3",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:east_asian_pentatonic_lyrical_piano:transition",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        }
+      ]
+    },
+    {
+      "id": "kit_western_six_eight_acoustic_unwind_001",
+      "version": "0.1.0",
+      "profileId": "western_six_eight_acoustic_unwind",
+      "goal": "calm",
+      "form": "six_eight_unwind",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 5,
+      "status": "approved",
+      "stems": [
+        {
+          "id": "kit_western_six_eight_acoustic_unwind_001__harmony",
+          "name": "western six eight acoustic unwind - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v1/kit_western_six_eight_acoustic_unwind_001/harmony.mp3",
+          "defaultVolume": 64,
+          "durationSeconds": 96,
+          "fileSha256": "eb2f1c9a69b03b4854ed3bb2a8dfa79ebcd81b3c89cd698d7e9432fe315538d3",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:western_six_eight_acoustic_unwind:harmony",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        },
+        {
+          "id": "kit_western_six_eight_acoustic_unwind_001__melody",
+          "name": "western six eight acoustic unwind - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v1/kit_western_six_eight_acoustic_unwind_001/melody.mp3",
+          "defaultVolume": 72,
+          "durationSeconds": 96,
+          "fileSha256": "302f17dbf80fdb835f07533fe7a2da1b56388dea244436f645d5bc0849a4d2e6",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:western_six_eight_acoustic_unwind:melody",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        },
+        {
+          "id": "kit_western_six_eight_acoustic_unwind_001__accompaniment",
+          "name": "western six eight acoustic unwind - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v1/kit_western_six_eight_acoustic_unwind_001/accompaniment.mp3",
+          "defaultVolume": 62,
+          "durationSeconds": 96,
+          "fileSha256": "e28665448c9e8d5c8b1e5d46f313ca75744339df3476136470acbf8de64d60aa",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:western_six_eight_acoustic_unwind:accompaniment",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        },
+        {
+          "id": "kit_western_six_eight_acoustic_unwind_001__low_support",
+          "name": "western six eight acoustic unwind - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v1/kit_western_six_eight_acoustic_unwind_001/low_support.mp3",
+          "defaultVolume": 38,
+          "durationSeconds": 96,
+          "fileSha256": "80ddc7a144c3a7f9dfe767ea3ce78ad5633e2b8e3304945030beb63d2478f4f6",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:western_six_eight_acoustic_unwind:low_support",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        },
+        {
+          "id": "kit_western_six_eight_acoustic_unwind_001__transition",
+          "name": "western six eight acoustic unwind - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v1/kit_western_six_eight_acoustic_unwind_001/transition.mp3",
+          "defaultVolume": 55,
+          "durationSeconds": 96,
+          "fileSha256": "7a5db05e659ae4d74654986a5a6a0748ecfe60a24795131da675b0c5024c61a2",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:western_six_eight_acoustic_unwind:transition",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        }
+      ]
+    },
+    {
+      "id": "kit_dry_rhodes_brushless_focus_001",
+      "version": "0.1.0",
+      "profileId": "dry_rhodes_brushless_focus",
+      "goal": "focus",
+      "form": "focus_cycle",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 10,
+      "status": "approved",
+      "stems": [
+        {
+          "id": "kit_dry_rhodes_brushless_focus_001__harmony",
+          "name": "dry rhodes brushless focus - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v1/kit_dry_rhodes_brushless_focus_001/harmony.mp3",
+          "defaultVolume": 62,
+          "durationSeconds": 96,
+          "fileSha256": "a2c74da27e9cffb6a8d1260d873add55d0cbacb707643db1ee1cd1a9f666cc02",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:dry_rhodes_brushless_focus:harmony",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        },
+        {
+          "id": "kit_dry_rhodes_brushless_focus_001__melody",
+          "name": "dry rhodes brushless focus - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v1/kit_dry_rhodes_brushless_focus_001/melody.mp3",
+          "defaultVolume": 58,
+          "durationSeconds": 96,
+          "fileSha256": "ad451fb2df5124f620681d32db3089cf8bbb7bfafed4f6bcf208475a358ecbe8",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:dry_rhodes_brushless_focus:melody",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        },
+        {
+          "id": "kit_dry_rhodes_brushless_focus_001__accompaniment",
+          "name": "dry rhodes brushless focus - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v1/kit_dry_rhodes_brushless_focus_001/accompaniment.mp3",
+          "defaultVolume": 68,
+          "durationSeconds": 96,
+          "fileSha256": "dfc4a6b4877704839527dad0d994d457cd2c810ab2f37c6a207401380a83f5f7",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:dry_rhodes_brushless_focus:accompaniment",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        },
+        {
+          "id": "kit_dry_rhodes_brushless_focus_001__low_support",
+          "name": "dry rhodes brushless focus - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v1/kit_dry_rhodes_brushless_focus_001/low_support.mp3",
+          "defaultVolume": 34,
+          "durationSeconds": 96,
+          "fileSha256": "abc79eb2b883ff6692df15580aa6f9b47013417678137cad4c89aca93f9a4aee",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:dry_rhodes_brushless_focus:low_support",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        },
+        {
+          "id": "kit_dry_rhodes_brushless_focus_001__transition",
+          "name": "dry rhodes brushless focus - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v1/kit_dry_rhodes_brushless_focus_001/transition.mp3",
+          "defaultVolume": 48,
+          "durationSeconds": 96,
+          "fileSha256": "54f3d534e542ae692c36c8e100675ef35563b9abefe5902feed4a830c8d1a954",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:dry_rhodes_brushless_focus:transition",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        }
+      ]
+    },
+    {
+      "id": "kit_low_register_piano_sleep_001",
+      "version": "0.1.0",
+      "profileId": "low_register_piano_sleep_descent",
+      "goal": "sleep",
+      "form": "sleep_descent",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 5,
+      "status": "approved",
+      "stems": [
+        {
+          "id": "kit_low_register_piano_sleep_001__harmony",
+          "name": "low register piano sleep descent - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v1/kit_low_register_piano_sleep_001/harmony.mp3",
+          "defaultVolume": 60,
+          "durationSeconds": 96,
+          "fileSha256": "0c49b57a1794bf1ff7ea3fc75186df93b26e76193f4dd1d8b4aab25de336d014",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:low_register_piano_sleep_descent:harmony",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        },
+        {
+          "id": "kit_low_register_piano_sleep_001__melody",
+          "name": "low register piano sleep descent - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v1/kit_low_register_piano_sleep_001/melody.mp3",
+          "defaultVolume": 64,
+          "durationSeconds": 96,
+          "fileSha256": "b8a3d0dac27f8e3164b6b06202bbc5806d60bee144bbfcc7a776d269d5bb13d5",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:low_register_piano_sleep_descent:melody",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        },
+        {
+          "id": "kit_low_register_piano_sleep_001__accompaniment",
+          "name": "low register piano sleep descent - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v1/kit_low_register_piano_sleep_001/accompaniment.mp3",
+          "defaultVolume": 48,
+          "durationSeconds": 96,
+          "fileSha256": "e2ad59a1e5e9871a82080d72c025fda30537c7244b7e86fa970c34519fdd3b10",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:low_register_piano_sleep_descent:accompaniment",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        },
+        {
+          "id": "kit_low_register_piano_sleep_001__low_support",
+          "name": "low register piano sleep descent - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v1/kit_low_register_piano_sleep_001/low_support.mp3",
+          "defaultVolume": 44,
+          "durationSeconds": 96,
+          "fileSha256": "045e1673fa4f71b7b620da8d7a997c854a411a19d466ef1fc9833df53ecfe324",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:low_register_piano_sleep_descent:low_support",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        },
+        {
+          "id": "kit_low_register_piano_sleep_001__transition",
+          "name": "low register piano sleep descent - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v1/kit_low_register_piano_sleep_001/transition.mp3",
+          "defaultVolume": 52,
+          "durationSeconds": 96,
+          "fileSha256": "f799709c882c21546dcf6a86bd000c51e92602cb66af7f5d467a7aac0d0a4dad",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:low_register_piano_sleep_descent:transition",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        }
+      ]
+    },
+    {
+      "id": "kit_open_fifth_guitar_meditation_001",
+      "version": "0.1.0",
+      "profileId": "open_fifth_guitar_meditation",
+      "goal": "calm",
+      "form": "open_breathing",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 8,
+      "status": "approved",
+      "stems": [
+        {
+          "id": "kit_open_fifth_guitar_meditation_001__harmony",
+          "name": "open fifth guitar meditation - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v1/kit_open_fifth_guitar_meditation_001/harmony.mp3",
+          "defaultVolume": 58,
+          "durationSeconds": 96,
+          "fileSha256": "4ef519874e1f523fd4f8489d5d56fe77e43299d2f3425116626f3c284659aea0",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:open_fifth_guitar_meditation:harmony",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        },
+        {
+          "id": "kit_open_fifth_guitar_meditation_001__melody",
+          "name": "open fifth guitar meditation - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v1/kit_open_fifth_guitar_meditation_001/melody.mp3",
+          "defaultVolume": 62,
+          "durationSeconds": 96,
+          "fileSha256": "cfb1b5bd4a4da7b716eeb55df4751506e3a85911cee50f011dccbb2ff62eaf97",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:open_fifth_guitar_meditation:melody",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        },
+        {
+          "id": "kit_open_fifth_guitar_meditation_001__accompaniment",
+          "name": "open fifth guitar meditation - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v1/kit_open_fifth_guitar_meditation_001/accompaniment.mp3",
+          "defaultVolume": 54,
+          "durationSeconds": 96,
+          "fileSha256": "4082550d2b63f1c8d0117ccfa0a02b37a3426e6213cb7afbba3877400f199d52",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:open_fifth_guitar_meditation:accompaniment",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        },
+        {
+          "id": "kit_open_fifth_guitar_meditation_001__low_support",
+          "name": "open fifth guitar meditation - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v1/kit_open_fifth_guitar_meditation_001/low_support.mp3",
+          "defaultVolume": 36,
+          "durationSeconds": 96,
+          "fileSha256": "7ec4a7f603ce3d42ba43541cb547b959474212766a1ba3ee00c6c2b45cc41f6e",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:open_fifth_guitar_meditation:low_support",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        },
+        {
+          "id": "kit_open_fifth_guitar_meditation_001__transition",
+          "name": "open fifth guitar meditation - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v1/kit_open_fifth_guitar_meditation_001/transition.mp3",
+          "defaultVolume": 50,
+          "durationSeconds": 96,
+          "fileSha256": "e96cc19f4936ebcac1247bfcfb2feb78213db1dfd5bba7cd05a4938c7ca902ce",
+          "sourcePlatform": "Discord SFZ GM Bank",
+          "sourceUrl": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank",
+          "sourceItemId": "7a9c478fe331f94f246d33332f0adedb25bbbe27:open_fifth_guitar_meditation:transition",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/discord-cc0-band-source-record.md"
+        }
+      ]
+    },
+    {
+      "id": "kit_common_tone_piano_focus_001",
+      "version": "0.1.0",
+      "profileId": "common_tone_piano_focus",
+      "goal": "focus",
+      "form": "steady_common_tone",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 5,
+      "status": "approved",
+      "stems": [
+        {
+          "id": "kit_common_tone_piano_focus_001__harmony",
+          "name": "common tone piano focus - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v1/kit_common_tone_piano_focus_001/harmony.mp3",
+          "defaultVolume": 60,
+          "durationSeconds": 96,
+          "fileSha256": "a64327146afeb2a17bd4d607b3961309844da8c55c75608438f8399c5e9083e4",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:common_tone_piano_focus:harmony",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        },
+        {
+          "id": "kit_common_tone_piano_focus_001__melody",
+          "name": "common tone piano focus - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v1/kit_common_tone_piano_focus_001/melody.mp3",
+          "defaultVolume": 54,
+          "durationSeconds": 96,
+          "fileSha256": "081da6ae1b367dcded8f2e3e3825d7b6f209621684105a80333325f388ce9b98",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:common_tone_piano_focus:melody",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        },
+        {
+          "id": "kit_common_tone_piano_focus_001__accompaniment",
+          "name": "common tone piano focus - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v1/kit_common_tone_piano_focus_001/accompaniment.mp3",
+          "defaultVolume": 62,
+          "durationSeconds": 96,
+          "fileSha256": "04dcdf5ba6e3afbd4aa0c628f74e20a43c47c0ca33cc3a6d51c012a24f5c3a6a",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:common_tone_piano_focus:accompaniment",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        },
+        {
+          "id": "kit_common_tone_piano_focus_001__low_support",
+          "name": "common tone piano focus - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v1/kit_common_tone_piano_focus_001/low_support.mp3",
+          "defaultVolume": 32,
+          "durationSeconds": 96,
+          "fileSha256": "0a92b138bd4948d524a1407644e4e1ba460ab15eb30abb7365a4640b0592f80c",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:common_tone_piano_focus:low_support",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        },
+        {
+          "id": "kit_common_tone_piano_focus_001__transition",
+          "name": "common tone piano focus - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v1/kit_common_tone_piano_focus_001/transition.mp3",
+          "defaultVolume": 46,
+          "durationSeconds": 96,
+          "fileSha256": "4130c9755f55749da28d250d830a706fe64f209ff639115fb63e3c09b6637efe",
+          "sourcePlatform": "VCSL",
+          "sourceUrl": "https://github.com/sgossner/VCSL",
+          "sourceItemId": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e:common_tone_piano_focus:transition",
+          "sourceCreator": "SNOOZE arrangement using pinned CC0 instrument samples",
+          "licenseName": "CC0 1.0 Universal",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "docs/vcsl-kawai-soft-source-record.md"
+        }
+      ]
+    },
+    {
+      "id": "kit_sleep_low_piano_a_001",
+      "version": "2.0.0",
+      "compositionId": "sleep_low_piano_a",
+      "profileId": "low_piano_sleep",
+      "goal": "sleep",
+      "form": "sleep_descent_form",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 2,
+      "status": "approved",
+      "approval": {
+        "approvedBy": "project_owner",
+        "approvedOn": "2026-07-21",
+        "listeningDecision": "independent_composition_pilot_v3_passed",
+        "machineQa": {
+          "duration": true,
+          "coreContinuity": true,
+          "controlledTopEnd": true,
+          "peakSafe": true
+        },
+        "paidApi": false,
+        "generativeModel": false,
+        "renderer": "generate-independent-composition-pilot-v3.py",
+        "materials": {
+          "harmony": "sleep_calm_c_am_f_c",
+          "motif": "sleep_falling_1",
+          "form": "sleep_descent_form",
+          "grammar": "sparse_keys"
+        },
+        "fingerprint": {
+          "harmonyRoots": [
+            36,
+            45,
+            41,
+            36
+          ],
+          "motifIntervals": [
+            -3,
+            -2,
+            -2
+          ],
+          "motifBeats": [
+            1.5,
+            1.8,
+            2,
+            2.6
+          ],
+          "formGaps": [
+            23.8,
+            24,
+            24
+          ],
+          "grammarPattern": [
+            1,
+            2,
+            1
+          ]
+        }
+      },
+      "stems": [
+        {
+          "id": "kit_sleep_low_piano_a_001__harmony",
+          "name": "sleep low piano a - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_a_001/harmony.mp3",
+          "defaultVolume": 62,
+          "durationSeconds": 96,
+          "fileSha256": "7a502c1a5ab23743d4ca1f6d4d4b6736187423ef2c99f109bfd61ee35e5c2f01",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_a:harmony",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_a/harmony"
+        },
+        {
+          "id": "kit_sleep_low_piano_a_001__melody",
+          "name": "sleep low piano a - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_a_001/melody.mp3",
+          "defaultVolume": 48,
+          "durationSeconds": 96,
+          "fileSha256": "98935e76375717c7995604ec1cd4ed1b2109360a4e6275aba76df2abbe9fe5d4",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_a:melody",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_a/melody"
+        },
+        {
+          "id": "kit_sleep_low_piano_a_001__accompaniment",
+          "name": "sleep low piano a - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_a_001/accompaniment.mp3",
+          "defaultVolume": 44,
+          "durationSeconds": 96,
+          "fileSha256": "1d654d842e5415fd690f563f0b10df305ed5cf0bc2328e98df8c029f219fbc27",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_a:accompaniment",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_a/accompaniment"
+        },
+        {
+          "id": "kit_sleep_low_piano_a_001__low_support",
+          "name": "sleep low piano a - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_a_001/low_support.mp3",
+          "defaultVolume": 38,
+          "durationSeconds": 96,
+          "fileSha256": "e61c58bbb0c8541c1e94d50da2604043503cc53128b6a0ab46b30955c114af47",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_a:low_support",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_a/low_support"
+        },
+        {
+          "id": "kit_sleep_low_piano_a_001__transition",
+          "name": "sleep low piano a - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_a_001/transition.mp3",
+          "defaultVolume": 40,
+          "durationSeconds": 96,
+          "fileSha256": "520342bd26dcecc0d77a3c445db29022c32f21b0a737b63a07ab6e8ddb432b94",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_a:transition",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_a/transition"
+        }
+      ]
+    },
+    {
+      "id": "kit_sleep_low_piano_b_001",
+      "version": "2.0.0",
+      "compositionId": "sleep_low_piano_b",
+      "profileId": "low_piano_sleep",
+      "goal": "sleep",
+      "form": "sleep_long_arc_form",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 2,
+      "status": "approved",
+      "approval": {
+        "approvedBy": "project_owner",
+        "approvedOn": "2026-07-21",
+        "listeningDecision": "independent_composition_pilot_v3_passed",
+        "machineQa": {
+          "duration": true,
+          "coreContinuity": true,
+          "controlledTopEnd": true,
+          "peakSafe": true
+        },
+        "paidApi": false,
+        "generativeModel": false,
+        "renderer": "generate-independent-composition-pilot-v3.py",
+        "materials": {
+          "harmony": "sleep_open_c_f_dm_g",
+          "motif": "sleep_open_2",
+          "form": "sleep_long_arc_form",
+          "grammar": "open_keys"
+        },
+        "fingerprint": {
+          "harmonyRoots": [
+            36,
+            41,
+            38,
+            43
+          ],
+          "motifIntervals": [
+            7,
+            -3
+          ],
+          "motifBeats": [
+            2.2,
+            2.8,
+            3.2
+          ],
+          "formGaps": [
+            17.1,
+            20,
+            22,
+            18
+          ],
+          "grammarPattern": [
+            1,
+            2
+          ]
+        }
+      },
+      "stems": [
+        {
+          "id": "kit_sleep_low_piano_b_001__harmony",
+          "name": "sleep low piano b - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_b_001/harmony.mp3",
+          "defaultVolume": 62,
+          "durationSeconds": 96,
+          "fileSha256": "ac0b6183f0298570820d7ca4ea7435cf6bf97f25f68b7afebcec0e35df1ab755",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_b:harmony",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_b/harmony"
+        },
+        {
+          "id": "kit_sleep_low_piano_b_001__melody",
+          "name": "sleep low piano b - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_b_001/melody.mp3",
+          "defaultVolume": 48,
+          "durationSeconds": 96,
+          "fileSha256": "c58ae6397ad1fa48ce19709f31209aaf31fb5b5b162f09404b17ab940e8342d4",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_b:melody",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_b/melody"
+        },
+        {
+          "id": "kit_sleep_low_piano_b_001__accompaniment",
+          "name": "sleep low piano b - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_b_001/accompaniment.mp3",
+          "defaultVolume": 44,
+          "durationSeconds": 96,
+          "fileSha256": "7efe0cb621d4074375ff36c1952bdfc3bfd90226ca48a19dabbb61baa7c5580d",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_b:accompaniment",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_b/accompaniment"
+        },
+        {
+          "id": "kit_sleep_low_piano_b_001__low_support",
+          "name": "sleep low piano b - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_b_001/low_support.mp3",
+          "defaultVolume": 38,
+          "durationSeconds": 96,
+          "fileSha256": "f6523c16752213933d638f43878cb09e46515ca8c71b01f41cae55839f39c391",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_b:low_support",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_b/low_support"
+        },
+        {
+          "id": "kit_sleep_low_piano_b_001__transition",
+          "name": "sleep low piano b - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_b_001/transition.mp3",
+          "defaultVolume": 40,
+          "durationSeconds": 96,
+          "fileSha256": "def3e2a1471ce0a49a83ccd245f38288af90b4754bde52adc0da5e70c3c08396",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_b:transition",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_b/transition"
+        }
+      ]
+    },
+    {
+      "id": "kit_sleep_low_piano_c_001",
+      "version": "2.0.0",
+      "compositionId": "sleep_low_piano_c",
+      "profileId": "low_piano_sleep",
+      "goal": "sleep",
+      "form": "sleep_late_theme_form",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 2,
+      "status": "approved",
+      "approval": {
+        "approvedBy": "project_owner",
+        "approvedOn": "2026-07-21",
+        "listeningDecision": "independent_composition_pilot_v3_passed",
+        "machineQa": {
+          "duration": true,
+          "coreContinuity": true,
+          "controlledTopEnd": true,
+          "peakSafe": true
+        },
+        "paidApi": false,
+        "generativeModel": false,
+        "renderer": "generate-independent-composition-pilot-v3.py",
+        "materials": {
+          "harmony": "sleep_modal_am_f_c_g",
+          "motif": "sleep_late_3",
+          "form": "sleep_late_theme_form",
+          "grammar": "lyrical_keys"
+        },
+        "fingerprint": {
+          "harmonyRoots": [
+            45,
+            41,
+            36,
+            43
+          ],
+          "motifIntervals": [
+            3,
+            2,
+            -5
+          ],
+          "motifBeats": [
+            1.8,
+            2.1,
+            2.4,
+            3
+          ],
+          "formGaps": [
+            20.7,
+            22,
+            23,
+            13
+          ],
+          "grammarPattern": [
+            1,
+            2,
+            3,
+            2
+          ]
+        }
+      },
+      "stems": [
+        {
+          "id": "kit_sleep_low_piano_c_001__harmony",
+          "name": "sleep low piano c - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_c_001/harmony.mp3",
+          "defaultVolume": 62,
+          "durationSeconds": 96,
+          "fileSha256": "84084065abec6e3f1c236b2103d9a2720562ee1876cd5a08a73023f956e9ee32",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_c:harmony",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_c/harmony"
+        },
+        {
+          "id": "kit_sleep_low_piano_c_001__melody",
+          "name": "sleep low piano c - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_c_001/melody.mp3",
+          "defaultVolume": 48,
+          "durationSeconds": 96,
+          "fileSha256": "05b6490de02507c60df9b26e53642fed20f30fd7fa17b7f233287423eae3a676",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_c:melody",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_c/melody"
+        },
+        {
+          "id": "kit_sleep_low_piano_c_001__accompaniment",
+          "name": "sleep low piano c - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_c_001/accompaniment.mp3",
+          "defaultVolume": 44,
+          "durationSeconds": 96,
+          "fileSha256": "9568470614abc4fd8845901a07f627350443d1ad63ce727ca6023db710fec74b",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_c:accompaniment",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_c/accompaniment"
+        },
+        {
+          "id": "kit_sleep_low_piano_c_001__low_support",
+          "name": "sleep low piano c - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_c_001/low_support.mp3",
+          "defaultVolume": 38,
+          "durationSeconds": 96,
+          "fileSha256": "4c0c381d5e6c5004d67de181141e695128b67102cc7ff9fa8a95d91056c33a89",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_c:low_support",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_c/low_support"
+        },
+        {
+          "id": "kit_sleep_low_piano_c_001__transition",
+          "name": "sleep low piano c - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v2/kit_sleep_low_piano_c_001/transition.mp3",
+          "defaultVolume": 40,
+          "durationSeconds": 96,
+          "fileSha256": "1f5c63954ab12919e524b483d580fda81625732a9d1ba9547c423bea6295e72f",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:sleep_low_piano_c:transition",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/sleep_low_piano_c/transition"
+        }
+      ]
+    },
+    {
+      "id": "kit_calm_lyrical_piano_a_001",
+      "version": "2.0.0",
+      "compositionId": "calm_lyrical_piano_a",
+      "profileId": "calm_lyrical_piano",
+      "goal": "calm",
+      "form": "calm_breath_form",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 2,
+      "status": "approved",
+      "approval": {
+        "approvedBy": "project_owner",
+        "approvedOn": "2026-07-21",
+        "listeningDecision": "independent_composition_pilot_v3_passed",
+        "machineQa": {
+          "duration": true,
+          "coreContinuity": true,
+          "controlledTopEnd": true,
+          "peakSafe": true
+        },
+        "paidApi": false,
+        "generativeModel": false,
+        "renderer": "generate-independent-composition-pilot-v3.py",
+        "materials": {
+          "harmony": "calm_c_f_am_g",
+          "motif": "calm_arch_1",
+          "form": "calm_breath_form",
+          "grammar": "lyrical_keys"
+        },
+        "fingerprint": {
+          "harmonyRoots": [
+            48,
+            41,
+            45,
+            43
+          ],
+          "motifIntervals": [
+            3,
+            2,
+            -2,
+            -3
+          ],
+          "motifBeats": [
+            0.8,
+            1.1,
+            1.3,
+            1.1,
+            1.8
+          ],
+          "formGaps": [
+            15,
+            21,
+            23,
+            19
+          ],
+          "grammarPattern": [
+            1,
+            2,
+            3,
+            2
+          ]
+        }
+      },
+      "stems": [
+        {
+          "id": "kit_calm_lyrical_piano_a_001__harmony",
+          "name": "calm lyrical piano a - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_a_001/harmony.mp3",
+          "defaultVolume": 62,
+          "durationSeconds": 96,
+          "fileSha256": "51b6b5f810ebed3c82c31b39d398e46482a719521c8ebbe76588863c84efcd3f",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_a:harmony",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_a/harmony"
+        },
+        {
+          "id": "kit_calm_lyrical_piano_a_001__melody",
+          "name": "calm lyrical piano a - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_a_001/melody.mp3",
+          "defaultVolume": 60,
+          "durationSeconds": 96,
+          "fileSha256": "55eab8fcacfd777bd1058dada53e17148d9a98bffbb2a688f311d4e4d801b9c2",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_a:melody",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_a/melody"
+        },
+        {
+          "id": "kit_calm_lyrical_piano_a_001__accompaniment",
+          "name": "calm lyrical piano a - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_a_001/accompaniment.mp3",
+          "defaultVolume": 50,
+          "durationSeconds": 96,
+          "fileSha256": "03a722b5f1483be559d93522ca4e0281e65044635703daf1972fbbd9ff8a3d14",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_a:accompaniment",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_a/accompaniment"
+        },
+        {
+          "id": "kit_calm_lyrical_piano_a_001__low_support",
+          "name": "calm lyrical piano a - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_a_001/low_support.mp3",
+          "defaultVolume": 34,
+          "durationSeconds": 96,
+          "fileSha256": "28743c568f86b15c7f5601a7e111745b26aadb88912a77d0560e50ea1ba9867e",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_a:low_support",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_a/low_support"
+        },
+        {
+          "id": "kit_calm_lyrical_piano_a_001__transition",
+          "name": "calm lyrical piano a - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_a_001/transition.mp3",
+          "defaultVolume": 44,
+          "durationSeconds": 96,
+          "fileSha256": "5bd91cdaccc5e08a0bad5b527be615e1993bbe45af06b7b01e496fc539e9dea8",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_a:transition",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_a/transition"
+        }
+      ]
+    },
+    {
+      "id": "kit_calm_lyrical_piano_b_001",
+      "version": "2.0.0",
+      "compositionId": "calm_lyrical_piano_b",
+      "profileId": "calm_lyrical_piano",
+      "goal": "calm",
+      "form": "calm_nocturne_form",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 2,
+      "status": "approved",
+      "approval": {
+        "approvedBy": "project_owner",
+        "approvedOn": "2026-07-21",
+        "listeningDecision": "independent_composition_pilot_v3_passed",
+        "machineQa": {
+          "duration": true,
+          "coreContinuity": true,
+          "controlledTopEnd": true,
+          "peakSafe": true
+        },
+        "paidApi": false,
+        "generativeModel": false,
+        "renderer": "generate-independent-composition-pilot-v3.py",
+        "materials": {
+          "harmony": "calm_dm_g_c_am",
+          "motif": "calm_answer_2",
+          "form": "calm_nocturne_form",
+          "grammar": "sparse_keys"
+        },
+        "fingerprint": {
+          "harmonyRoots": [
+            38,
+            43,
+            48,
+            45
+          ],
+          "motifIntervals": [
+            2,
+            3,
+            -3
+          ],
+          "motifBeats": [
+            1,
+            1,
+            1.4,
+            1.8
+          ],
+          "formGaps": [
+            12,
+            15,
+            20,
+            20
+          ],
+          "grammarPattern": [
+            1,
+            2,
+            1
+          ]
+        }
+      },
+      "stems": [
+        {
+          "id": "kit_calm_lyrical_piano_b_001__harmony",
+          "name": "calm lyrical piano b - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_b_001/harmony.mp3",
+          "defaultVolume": 62,
+          "durationSeconds": 96,
+          "fileSha256": "711d78f890a6713b2e6817c5e35e6ef6bc44d9ed65022dc370f5405627494c6e",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_b:harmony",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_b/harmony"
+        },
+        {
+          "id": "kit_calm_lyrical_piano_b_001__melody",
+          "name": "calm lyrical piano b - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_b_001/melody.mp3",
+          "defaultVolume": 60,
+          "durationSeconds": 96,
+          "fileSha256": "cd99ae298ae70642b02744931f324ff9dd59fa7e8b9bb1e006e02799c8fceab6",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_b:melody",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_b/melody"
+        },
+        {
+          "id": "kit_calm_lyrical_piano_b_001__accompaniment",
+          "name": "calm lyrical piano b - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_b_001/accompaniment.mp3",
+          "defaultVolume": 50,
+          "durationSeconds": 96,
+          "fileSha256": "60c254b3c871477787f26c2fa83c80a3a024d07e2fc00f0f51757598b3ae5a1f",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_b:accompaniment",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_b/accompaniment"
+        },
+        {
+          "id": "kit_calm_lyrical_piano_b_001__low_support",
+          "name": "calm lyrical piano b - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_b_001/low_support.mp3",
+          "defaultVolume": 34,
+          "durationSeconds": 96,
+          "fileSha256": "50186e07afbf4111fd3640ec6584dcec6235dfda36519b28dbd4f64595a630df",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_b:low_support",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_b/low_support"
+        },
+        {
+          "id": "kit_calm_lyrical_piano_b_001__transition",
+          "name": "calm lyrical piano b - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_b_001/transition.mp3",
+          "defaultVolume": 44,
+          "durationSeconds": 96,
+          "fileSha256": "6dfec7cfb041f945ea2a72799693665bfc8e671863aaaab5031ad2cf9b88bc8c",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_b:transition",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_b/transition"
+        }
+      ]
+    },
+    {
+      "id": "kit_calm_lyrical_piano_c_001",
+      "version": "2.0.0",
+      "compositionId": "calm_lyrical_piano_c",
+      "profileId": "calm_lyrical_piano",
+      "goal": "calm",
+      "form": "calm_call_answer_form",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 2,
+      "status": "approved",
+      "approval": {
+        "approvedBy": "project_owner",
+        "approvedOn": "2026-07-21",
+        "listeningDecision": "independent_composition_pilot_v3_passed",
+        "machineQa": {
+          "duration": true,
+          "coreContinuity": true,
+          "controlledTopEnd": true,
+          "peakSafe": true
+        },
+        "paidApi": false,
+        "generativeModel": false,
+        "renderer": "generate-independent-composition-pilot-v3.py",
+        "materials": {
+          "harmony": "calm_f_c_g_am",
+          "motif": "calm_open_3",
+          "form": "calm_call_answer_form",
+          "grammar": "open_keys"
+        },
+        "fingerprint": {
+          "harmonyRoots": [
+            41,
+            48,
+            43,
+            45
+          ],
+          "motifIntervals": [
+            -5,
+            9
+          ],
+          "motifBeats": [
+            1.8,
+            2.5,
+            3.2
+          ],
+          "formGaps": [
+            20,
+            21,
+            21,
+            15
+          ],
+          "grammarPattern": [
+            1,
+            2
+          ]
+        }
+      },
+      "stems": [
+        {
+          "id": "kit_calm_lyrical_piano_c_001__harmony",
+          "name": "calm lyrical piano c - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_c_001/harmony.mp3",
+          "defaultVolume": 62,
+          "durationSeconds": 96,
+          "fileSha256": "34ce1b37daea6dbcd492453c60f0cd1b30f253ea963b3bcabdcc078382da4728",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_c:harmony",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_c/harmony"
+        },
+        {
+          "id": "kit_calm_lyrical_piano_c_001__melody",
+          "name": "calm lyrical piano c - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_c_001/melody.mp3",
+          "defaultVolume": 60,
+          "durationSeconds": 96,
+          "fileSha256": "0002525ea4c4567f5e7a5f6cd3c90012dc1b80355b4ba12a5cdcdeb618d7955f",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_c:melody",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_c/melody"
+        },
+        {
+          "id": "kit_calm_lyrical_piano_c_001__accompaniment",
+          "name": "calm lyrical piano c - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_c_001/accompaniment.mp3",
+          "defaultVolume": 50,
+          "durationSeconds": 96,
+          "fileSha256": "11dd4938a8ff9abfe7f4653d97b3c3cb2db92235b5d3759cde5c7c29ce5097b3",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_c:accompaniment",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_c/accompaniment"
+        },
+        {
+          "id": "kit_calm_lyrical_piano_c_001__low_support",
+          "name": "calm lyrical piano c - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_c_001/low_support.mp3",
+          "defaultVolume": 34,
+          "durationSeconds": 96,
+          "fileSha256": "9e5e04480148a8699af594e827a751c3af42d003032424bb3540be1fb313a2a3",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_c:low_support",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_c/low_support"
+        },
+        {
+          "id": "kit_calm_lyrical_piano_c_001__transition",
+          "name": "calm lyrical piano c - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_lyrical_piano_c_001/transition.mp3",
+          "defaultVolume": 44,
+          "durationSeconds": 96,
+          "fileSha256": "75e90c2e3d2e58289714df4ab6fe8b6c3301052784bc0095f5e32f9a7a2d6834",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_lyrical_piano_c:transition",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_lyrical_piano_c/transition"
+        }
+      ]
+    },
+    {
+      "id": "kit_calm_guitar_a_001",
+      "version": "2.0.0",
+      "compositionId": "calm_guitar_a",
+      "profileId": "calm_guitar",
+      "goal": "calm",
+      "form": "guitar_wave_form",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 2,
+      "status": "approved",
+      "approval": {
+        "approvedBy": "project_owner",
+        "approvedOn": "2026-07-21",
+        "listeningDecision": "independent_composition_pilot_v3_passed",
+        "machineQa": {
+          "duration": true,
+          "coreContinuity": true,
+          "controlledTopEnd": true,
+          "peakSafe": true
+        },
+        "paidApi": false,
+        "generativeModel": false,
+        "renderer": "generate-independent-composition-pilot-v3.py",
+        "materials": {
+          "harmony": "guitar_c_g_am_f",
+          "motif": "guitar_wave_1",
+          "form": "guitar_wave_form",
+          "grammar": "guitar_wave"
+        },
+        "fingerprint": {
+          "harmonyRoots": [
+            48,
+            43,
+            45,
+            41
+          ],
+          "motifIntervals": [
+            3,
+            2,
+            -2,
+            -3
+          ],
+          "motifBeats": [
+            0.7,
+            0.9,
+            1,
+            0.9,
+            1.4
+          ],
+          "formGaps": [
+            13,
+            17,
+            18,
+            19
+          ],
+          "grammarPattern": [
+            0,
+            2,
+            1,
+            3
+          ]
+        }
+      },
+      "stems": [
+        {
+          "id": "kit_calm_guitar_a_001__harmony",
+          "name": "calm guitar a - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_a_001/harmony.mp3",
+          "defaultVolume": 62,
+          "durationSeconds": 96,
+          "fileSha256": "585830af39fec39b946ff9463fb872748e864bc7e10a57094b33308f0336ac89",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_a:harmony",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_a/harmony"
+        },
+        {
+          "id": "kit_calm_guitar_a_001__melody",
+          "name": "calm guitar a - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_a_001/melody.mp3",
+          "defaultVolume": 60,
+          "durationSeconds": 96,
+          "fileSha256": "9f95074f89c1af5ba2d93c05bffd4beaf6d83b6b207552dc701600780697aeab",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_a:melody",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_a/melody"
+        },
+        {
+          "id": "kit_calm_guitar_a_001__accompaniment",
+          "name": "calm guitar a - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_a_001/accompaniment.mp3",
+          "defaultVolume": 50,
+          "durationSeconds": 96,
+          "fileSha256": "d0ff75e647967487895c6fe078320a78ef2dec0bf83cc3620e08c326c6d2e19a",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_a:accompaniment",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_a/accompaniment"
+        },
+        {
+          "id": "kit_calm_guitar_a_001__low_support",
+          "name": "calm guitar a - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_a_001/low_support.mp3",
+          "defaultVolume": 34,
+          "durationSeconds": 96,
+          "fileSha256": "de7cf49b43e1ec442aa8ca0d12362fac2685d2ffe0eb10a89ab2b545c76911ea",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_a:low_support",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_a/low_support"
+        },
+        {
+          "id": "kit_calm_guitar_a_001__transition",
+          "name": "calm guitar a - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_a_001/transition.mp3",
+          "defaultVolume": 44,
+          "durationSeconds": 96,
+          "fileSha256": "f00e638b8c5f612fb0aa25e07be9275e786b829900ccea82d18aedc1b95f9d2c",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_a:transition",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_a/transition"
+        }
+      ]
+    },
+    {
+      "id": "kit_calm_guitar_b_001",
+      "version": "2.0.0",
+      "compositionId": "calm_guitar_b",
+      "profileId": "calm_guitar",
+      "goal": "calm",
+      "form": "guitar_open_form",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 2,
+      "status": "approved",
+      "approval": {
+        "approvedBy": "project_owner",
+        "approvedOn": "2026-07-21",
+        "listeningDecision": "independent_composition_pilot_v3_passed",
+        "machineQa": {
+          "duration": true,
+          "coreContinuity": true,
+          "controlledTopEnd": true,
+          "peakSafe": true
+        },
+        "paidApi": false,
+        "generativeModel": false,
+        "renderer": "generate-independent-composition-pilot-v3.py",
+        "materials": {
+          "harmony": "guitar_c_em_f_g",
+          "motif": "guitar_answer_2",
+          "form": "guitar_open_form",
+          "grammar": "guitar_open"
+        },
+        "fingerprint": {
+          "harmonyRoots": [
+            48,
+            40,
+            41,
+            43
+          ],
+          "motifIntervals": [
+            4,
+            3,
+            -3
+          ],
+          "motifBeats": [
+            1,
+            1.2,
+            1.5,
+            2
+          ],
+          "formGaps": [
+            17,
+            21,
+            19,
+            18
+          ],
+          "grammarPattern": [
+            0,
+            2,
+            1
+          ]
+        }
+      },
+      "stems": [
+        {
+          "id": "kit_calm_guitar_b_001__harmony",
+          "name": "calm guitar b - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_b_001/harmony.mp3",
+          "defaultVolume": 62,
+          "durationSeconds": 96,
+          "fileSha256": "0c81c3ef2b6609e07e70c0cf96f710998ccfde32343432e48ce18ead0186ef5e",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_b:harmony",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_b/harmony"
+        },
+        {
+          "id": "kit_calm_guitar_b_001__melody",
+          "name": "calm guitar b - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_b_001/melody.mp3",
+          "defaultVolume": 60,
+          "durationSeconds": 96,
+          "fileSha256": "f831561f070d94d1198a9cc2cc700935dee9873968ab8b493a0cd7787d2a3324",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_b:melody",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_b/melody"
+        },
+        {
+          "id": "kit_calm_guitar_b_001__accompaniment",
+          "name": "calm guitar b - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_b_001/accompaniment.mp3",
+          "defaultVolume": 50,
+          "durationSeconds": 96,
+          "fileSha256": "6a1f0b9a4a1fabbb78f40c183405fabaee9db2d274cc88b029fbd4346b6332d5",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_b:accompaniment",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_b/accompaniment"
+        },
+        {
+          "id": "kit_calm_guitar_b_001__low_support",
+          "name": "calm guitar b - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_b_001/low_support.mp3",
+          "defaultVolume": 34,
+          "durationSeconds": 96,
+          "fileSha256": "aedb9ab3039be4b69656da483a9ebcf72d9ebf1fb8a9dde7f13f40302f26554a",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_b:low_support",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_b/low_support"
+        },
+        {
+          "id": "kit_calm_guitar_b_001__transition",
+          "name": "calm guitar b - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_b_001/transition.mp3",
+          "defaultVolume": 44,
+          "durationSeconds": 96,
+          "fileSha256": "266e21232b218643a9468beb8635e8e85a6df50e728a0116f563b30d78ee0843",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_b:transition",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_b/transition"
+        }
+      ]
+    },
+    {
+      "id": "kit_calm_guitar_c_001",
+      "version": "2.0.0",
+      "compositionId": "calm_guitar_c",
+      "profileId": "calm_guitar",
+      "goal": "calm",
+      "form": "guitar_slow_roll_form",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 2,
+      "status": "approved",
+      "approval": {
+        "approvedBy": "project_owner",
+        "approvedOn": "2026-07-21",
+        "listeningDecision": "independent_composition_pilot_v3_passed",
+        "machineQa": {
+          "duration": true,
+          "coreContinuity": true,
+          "controlledTopEnd": true,
+          "peakSafe": true
+        },
+        "paidApi": false,
+        "generativeModel": false,
+        "renderer": "generate-independent-composition-pilot-v3.py",
+        "materials": {
+          "harmony": "guitar_am_g_f_c",
+          "motif": "guitar_open_3",
+          "form": "guitar_slow_roll_form",
+          "grammar": "guitar_roll"
+        },
+        "fingerprint": {
+          "harmonyRoots": [
+            45,
+            43,
+            41,
+            48
+          ],
+          "motifIntervals": [
+            7,
+            -3
+          ],
+          "motifBeats": [
+            2,
+            2.6,
+            3
+          ],
+          "formGaps": [
+            10,
+            14,
+            20,
+            21,
+            14
+          ],
+          "grammarPattern": [
+            0,
+            1,
+            3,
+            2
+          ]
+        }
+      },
+      "stems": [
+        {
+          "id": "kit_calm_guitar_c_001__harmony",
+          "name": "calm guitar c - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_c_001/harmony.mp3",
+          "defaultVolume": 62,
+          "durationSeconds": 96,
+          "fileSha256": "6f4d7c5fb5ab304ab47d9fb92c9a3b83baefaa615175aa8440a831f5a348effc",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_c:harmony",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_c/harmony"
+        },
+        {
+          "id": "kit_calm_guitar_c_001__melody",
+          "name": "calm guitar c - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_c_001/melody.mp3",
+          "defaultVolume": 60,
+          "durationSeconds": 96,
+          "fileSha256": "9b349dbdcae57514d6a2315e55788aae22edab7930328da132fe242ba45718b1",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_c:melody",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_c/melody"
+        },
+        {
+          "id": "kit_calm_guitar_c_001__accompaniment",
+          "name": "calm guitar c - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_c_001/accompaniment.mp3",
+          "defaultVolume": 50,
+          "durationSeconds": 96,
+          "fileSha256": "14832876e4108df0bb364fa6e66f78743512fbbcd46c9a859b5eefd47f632648",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_c:accompaniment",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_c/accompaniment"
+        },
+        {
+          "id": "kit_calm_guitar_c_001__low_support",
+          "name": "calm guitar c - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_c_001/low_support.mp3",
+          "defaultVolume": 34,
+          "durationSeconds": 96,
+          "fileSha256": "7b93d4416bbe415baf6e18c135f24474dbfa607bac255b94f0a886a08f6315a7",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_c:low_support",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_c/low_support"
+        },
+        {
+          "id": "kit_calm_guitar_c_001__transition",
+          "name": "calm guitar c - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v2/kit_calm_guitar_c_001/transition.mp3",
+          "defaultVolume": 44,
+          "durationSeconds": 96,
+          "fileSha256": "14df44885aec835ccc9145967d42baf1f62a615167d51bb6f0162416609ea54e",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:calm_guitar_c:transition",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/calm_guitar_c/transition"
+        }
+      ]
+    },
+    {
+      "id": "kit_focus_rhodes_a_001",
+      "version": "2.0.0",
+      "compositionId": "focus_rhodes_a",
+      "profileId": "focus_rhodes",
+      "goal": "focus",
+      "form": "focus_cycle_form",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 2,
+      "status": "approved",
+      "approval": {
+        "approvedBy": "project_owner",
+        "approvedOn": "2026-07-21",
+        "listeningDecision": "independent_composition_pilot_v3_passed",
+        "machineQa": {
+          "duration": true,
+          "coreContinuity": true,
+          "controlledTopEnd": true,
+          "peakSafe": true
+        },
+        "paidApi": false,
+        "generativeModel": false,
+        "renderer": "generate-independent-composition-pilot-v3.py",
+        "materials": {
+          "harmony": "focus_c_g_am_f",
+          "motif": "focus_cycle_1",
+          "form": "focus_cycle_form",
+          "grammar": "rhodes_grid"
+        },
+        "fingerprint": {
+          "harmonyRoots": [
+            48,
+            43,
+            45,
+            41
+          ],
+          "motifIntervals": [
+            2,
+            3,
+            -3
+          ],
+          "motifBeats": [
+            0.8,
+            0.9,
+            1.1,
+            1.3
+          ],
+          "formGaps": [
+            8,
+            16,
+            16,
+            16,
+            16
+          ],
+          "grammarPattern": [
+            1,
+            2
+          ]
+        }
+      },
+      "stems": [
+        {
+          "id": "kit_focus_rhodes_a_001__harmony",
+          "name": "focus rhodes a - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_a_001/harmony.mp3",
+          "defaultVolume": 58,
+          "durationSeconds": 96,
+          "fileSha256": "73ad269d5dc4f2676aeb393a7fe19c0e36308140bab226cc0f7c35a549e752e6",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_a:harmony",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_a/harmony"
+        },
+        {
+          "id": "kit_focus_rhodes_a_001__melody",
+          "name": "focus rhodes a - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_a_001/melody.mp3",
+          "defaultVolume": 42,
+          "durationSeconds": 96,
+          "fileSha256": "cfc1824775c17ccc58178a554c410a673f20bcebebe93f31e6e435e3e473b3fa",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_a:melody",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_a/melody"
+        },
+        {
+          "id": "kit_focus_rhodes_a_001__accompaniment",
+          "name": "focus rhodes a - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_a_001/accompaniment.mp3",
+          "defaultVolume": 60,
+          "durationSeconds": 96,
+          "fileSha256": "a534ad7a8ffe6180d9253223a03ee3eadaa48327110c6d13fb662b52f3cb82d9",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_a:accompaniment",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_a/accompaniment"
+        },
+        {
+          "id": "kit_focus_rhodes_a_001__low_support",
+          "name": "focus rhodes a - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_a_001/low_support.mp3",
+          "defaultVolume": 30,
+          "durationSeconds": 96,
+          "fileSha256": "7e57bf1ef4599e705afd6d7b2479ec6d5f1033db83447a7b4d652b672a112374",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_a:low_support",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_a/low_support"
+        },
+        {
+          "id": "kit_focus_rhodes_a_001__transition",
+          "name": "focus rhodes a - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_a_001/transition.mp3",
+          "defaultVolume": 36,
+          "durationSeconds": 96,
+          "fileSha256": "55530f8a98b9700d6d4f6d46d503255b30a0749042f95a4eed829b4c9eedea88",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_a:transition",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_a/transition"
+        }
+      ]
+    },
+    {
+      "id": "kit_focus_rhodes_b_001",
+      "version": "2.0.0",
+      "compositionId": "focus_rhodes_b",
+      "profileId": "focus_rhodes",
+      "goal": "focus",
+      "form": "focus_split_form",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 2,
+      "status": "approved",
+      "approval": {
+        "approvedBy": "project_owner",
+        "approvedOn": "2026-07-21",
+        "listeningDecision": "independent_composition_pilot_v3_passed",
+        "machineQa": {
+          "duration": true,
+          "coreContinuity": true,
+          "controlledTopEnd": true,
+          "peakSafe": true
+        },
+        "paidApi": false,
+        "generativeModel": false,
+        "renderer": "generate-independent-composition-pilot-v3.py",
+        "materials": {
+          "harmony": "focus_f_c_g_am",
+          "motif": "focus_split_2",
+          "form": "focus_split_form",
+          "grammar": "rhodes_breath"
+        },
+        "fingerprint": {
+          "harmonyRoots": [
+            41,
+            48,
+            43,
+            45
+          ],
+          "motifIntervals": [
+            2,
+            2,
+            -2,
+            -3
+          ],
+          "motifBeats": [
+            0.7,
+            0.8,
+            1,
+            0.9,
+            1.4
+          ],
+          "formGaps": [
+            16,
+            19,
+            19,
+            19
+          ],
+          "grammarPattern": [
+            2,
+            1,
+            2
+          ]
+        }
+      },
+      "stems": [
+        {
+          "id": "kit_focus_rhodes_b_001__harmony",
+          "name": "focus rhodes b - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_b_001/harmony.mp3",
+          "defaultVolume": 58,
+          "durationSeconds": 96,
+          "fileSha256": "ccef998405923382fbe6b49bafa9c3e22ab2fb2027721eaefdc6f963f4fde5cd",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_b:harmony",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_b/harmony"
+        },
+        {
+          "id": "kit_focus_rhodes_b_001__melody",
+          "name": "focus rhodes b - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_b_001/melody.mp3",
+          "defaultVolume": 42,
+          "durationSeconds": 96,
+          "fileSha256": "a286d5217d64c9b07fdb3a9f9ba73fef53ade4e631bed9f79e186d63c267c74b",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_b:melody",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_b/melody"
+        },
+        {
+          "id": "kit_focus_rhodes_b_001__accompaniment",
+          "name": "focus rhodes b - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_b_001/accompaniment.mp3",
+          "defaultVolume": 60,
+          "durationSeconds": 96,
+          "fileSha256": "34d5f2504052c6b356f45c2467f0b822764e617f287b668338077be30215e6f3",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_b:accompaniment",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_b/accompaniment"
+        },
+        {
+          "id": "kit_focus_rhodes_b_001__low_support",
+          "name": "focus rhodes b - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_b_001/low_support.mp3",
+          "defaultVolume": 30,
+          "durationSeconds": 96,
+          "fileSha256": "c4c54a294eab42ab2a018516e3b2885febe7c8132fc00fcf3fd87aca14e52e82",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_b:low_support",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_b/low_support"
+        },
+        {
+          "id": "kit_focus_rhodes_b_001__transition",
+          "name": "focus rhodes b - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_b_001/transition.mp3",
+          "defaultVolume": 36,
+          "durationSeconds": 96,
+          "fileSha256": "06c0488f176fd1b3e61bb34c796e3b7a610d59d5ab30b138b0fd693f0252a6a4",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_b:transition",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_b/transition"
+        }
+      ]
+    },
+    {
+      "id": "kit_focus_rhodes_c_001",
+      "version": "2.0.0",
+      "compositionId": "focus_rhodes_c",
+      "profileId": "focus_rhodes",
+      "goal": "focus",
+      "form": "focus_open_form",
+      "durationSeconds": 96,
+      "loopCrossfadeSeconds": 2,
+      "status": "approved",
+      "approval": {
+        "approvedBy": "project_owner",
+        "approvedOn": "2026-07-21",
+        "listeningDecision": "independent_composition_pilot_v3_passed",
+        "machineQa": {
+          "duration": true,
+          "coreContinuity": true,
+          "controlledTopEnd": true,
+          "peakSafe": true
+        },
+        "paidApi": false,
+        "generativeModel": false,
+        "renderer": "generate-independent-composition-pilot-v3.py",
+        "materials": {
+          "harmony": "focus_dm_g_c_f",
+          "motif": "focus_common_3",
+          "form": "focus_open_form",
+          "grammar": "rhodes_grid"
+        },
+        "fingerprint": {
+          "harmonyRoots": [
+            38,
+            43,
+            48,
+            41
+          ],
+          "motifIntervals": [
+            -2,
+            2,
+            3
+          ],
+          "motifBeats": [
+            1.1,
+            0.8,
+            1,
+            1.5
+          ],
+          "formGaps": [
+            11,
+            22,
+            22,
+            22
+          ],
+          "grammarPattern": [
+            1,
+            2
+          ]
+        }
+      },
+      "stems": [
+        {
+          "id": "kit_focus_rhodes_c_001__harmony",
+          "name": "focus rhodes c - harmony",
+          "role": "harmony",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_c_001/harmony.mp3",
+          "defaultVolume": 58,
+          "durationSeconds": 96,
+          "fileSha256": "4052545e21460fc8498e60b9dda8161dd9bf0e8aae7cec45339aecd092e024f1",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_c:harmony",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_c/harmony"
+        },
+        {
+          "id": "kit_focus_rhodes_c_001__melody",
+          "name": "focus rhodes c - melody",
+          "role": "melody",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_c_001/melody.mp3",
+          "defaultVolume": 42,
+          "durationSeconds": 96,
+          "fileSha256": "691392b4ffe956e960644d4d03ea761d516ccf692b6b4f8292a5e0ecf482fd1c",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_c:melody",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_c/melody"
+        },
+        {
+          "id": "kit_focus_rhodes_c_001__accompaniment",
+          "name": "focus rhodes c - accompaniment",
+          "role": "accompaniment",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_c_001/accompaniment.mp3",
+          "defaultVolume": 60,
+          "durationSeconds": 96,
+          "fileSha256": "297a48633a7bf58d30d48baf6c4e5eedde515277553d50340577ceddf78a3efc",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_c:accompaniment",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_c/accompaniment"
+        },
+        {
+          "id": "kit_focus_rhodes_c_001__low_support",
+          "name": "focus rhodes c - low_support",
+          "role": "low_support",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_c_001/low_support.mp3",
+          "defaultVolume": 30,
+          "durationSeconds": 96,
+          "fileSha256": "ee1b997e3ca9888393919ac6c6d78c659872b9b6237942cf7cca390886985254",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_c:low_support",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_c/low_support"
+        },
+        {
+          "id": "kit_focus_rhodes_c_001__transition",
+          "name": "focus rhodes c - transition",
+          "role": "transition",
+          "audioUrl": "/audio/music/music-kits-v2/kit_focus_rhodes_c_001/transition.mp3",
+          "defaultVolume": 36,
+          "durationSeconds": 96,
+          "fileSha256": "9a6ee1cb01e40599face47d0b4e498408f64c6cb237686557c7e9b4f118066f9",
+          "sourcePlatform": "SNOOZE deterministic composition factory",
+          "sourceUrl": "internal://snooze/composition-material-library-v1",
+          "sourceItemId": "independent-composition-pilot-v3:focus_rhodes_c:transition",
+          "sourceCreator": "SNOOZE composition renderer using CC0 VCSL/Discord GM samples",
+          "licenseName": "CC0 1.0 upstream samples; SNOOZE original arrangement",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceRecord": "internal://snooze/provenance/independent-composition-pilot-v3/focus_rhodes_c/transition"
+        }
+      ]
+    }
+  ]
+}

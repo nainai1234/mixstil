@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "1.0.0",
+  "batchId": "lyria-foundational-soothing-retry-v1",
+  "provider": "google-cloud-vertex-ai",
+  "model": "lyria-3-clip-preview",
+  "sourceBatchId": "lyria-foundational-expansion-v2",
+  "reason": "The first expansion candidates are useful for coverage but many feel too active, bright, or event-dense for Sleep/Calm. This retry batch narrows prompts toward darker, slower, lower-transient, lower-density material.",
+  "variantsPerFamily": 3,
+  "targetFamilyCount": 12,
+  "targetCandidateCount": 36,
+  "productionAllowed": false,
+  "soothingProfile": {
+    "preferredPreparedOnsetDensityPerSecondMax": {
+      "environment": 2.2,
+      "texture": 2.0,
+      "instrument": 1.2,
+      "accent": 1.4
+    },
+    "preferredSpectralCentroidHzMax": {
+      "environment": 1800,
+      "texture": 1500,
+      "instrument": 1200,
+      "accent": 1100
+    },
+    "promptRequirements": [
+      "no drums",
+      "no percussion",
+      "no beat",
+      "no rhythmic pulse",
+      "no groove",
+      "no kick",
+      "no snare",
+      "no hi-hat",
+      "no tabla",
+      "no hand drum",
+      "no handpan rhythm",
+      "no bright high-frequency detail",
+      "no crisp transient",
+      "no bright sparkle",
+      "no melody hook",
+      "no sudden change",
+      "no climax",
+      "no singing",
+      "no human voice",
+      "no human voice or human-like vocal texture"
+    ],
+    "globalPromptSuffix": "Hard exclusions for every candidate: no drums, no percussion, no beat, no rhythmic pulse, no groove, no kick, no snare, no hi-hat, no tabla, no hand drum, no handpan rhythm, no bright high-frequency detail, no crisp transient, no bright sparkle, no melody hook, no sudden change, no climax, no singing, no human voice, no human-like vocal texture, no human voice or human-like vocal texture."
+  },
+  "families": [
+    {
+      "id": "velvet_room_air",
+      "title": "Velvet Room Air",
+      "category": "environment",
+      "role": "environment_bed",
+      "goals": ["sleep", "calm", "focus"],
+      "loopMode": "crossfade",
+      "prompt": "Pure environmental sound-design material, not music. Intensity 0.5/10. A very soft dark indoor room air layer, like distant smooth ventilation through fabric, continuous and almost still, warm low-mid body, low brightness, no obvious motor pitch, no rattles, no clicks, no air bursts, no cyclic fan sweep. Extremely low event density, stable loudness, no beginning gesture and no ending gesture, designed for long crossfaded looping. No singing, human voice, human-like vocal texture, breathing, footsteps, water, birds, insects, melody, harmony, drone note, synthesizer note, instrument, rhythm, percussion, chime, sparkle, crisp transient, impact, climax, or sudden change."
+    },
+    {
+      "id": "dark_far_ocean_hum",
+      "title": "Dark Far Ocean Hum",
+      "category": "environment",
+      "role": "environment_bed",
+      "goals": ["sleep", "calm"],
+      "loopMode": "crossfade",
+      "prompt": "Pure environmental sound-design material, not music. Intensity 0.5/10. Very distant ocean heard through a closed window, more dark low continuous wash than individual waves, slow blurred movement, no close splash, no crest detail, no bright foam, no isolated breaker, no dramatic swell. Warm low-frequency body, softened highs, extremely low event density, stable loudness for long crossfaded looping. No singing, human voice, human-like vocal texture, boats, gulls, birds, animals, melody, harmony, drone note, synthesizer, instrument, rhythm, percussion, chime, sparkle, crisp transient, impact, climax, or sudden change."
+    },
+    {
+      "id": "soft_rain_behind_wall",
+      "title": "Soft Rain Behind Wall",
+      "category": "environment",
+      "role": "environment_bed",
+      "goals": ["sleep", "calm", "focus"],
+      "loopMode": "crossfade",
+      "prompt": "Pure environmental sound-design material, not music. Intensity 0.5/10. Fine rain heard indirectly from indoors, muffled by walls and curtains, soft continuous texture, no individual drops, no roof hits, no puddle splashes, no thunder, no wind gust, no changing weather. Darker than normal rain, low brightness, extremely low event density, stable loudness and no narrative change, designed for long crossfaded looping. No singing, human voice, human-like vocal texture, breathing, animals, birds, melody, harmony, drone note, synthesizer, instrument, rhythm, percussion, chime, sparkle, crisp transient, impact, climax, or sudden change."
+    },
+    {
+      "id": "pine_air_no_gust",
+      "title": "Pine Air No Gust",
+      "category": "environment",
+      "role": "environment_bed",
+      "goals": ["sleep", "calm"],
+      "loopMode": "crossfade",
+      "prompt": "Pure environmental sound-design material, not music. Intensity 0.5/10. Dark distant pine air with almost no gust, only a very slow soft movement through far needles, low brightness and smooth noise, no branch movement, no leaf clicks, no close rustle, no animals, no birds, no insects. Continuous stable room-like forest air, extremely low event density, designed for long crossfaded looping. No singing, human voice, human-like vocal texture, water, melody, harmony, drone note, synthesizer, instrument, rhythm, percussion, chime, sparkle, crisp transient, impact, climax, or sudden change."
+    },
+    {
+      "id": "ember_glow_no_crackle",
+      "title": "Ember Glow No Crackle",
+      "category": "environment",
+      "role": "environment_bed",
+      "goals": ["sleep", "calm"],
+      "loopMode": "crossfade",
+      "prompt": "Pure environmental sound-design material, not music. Intensity 0.5/10. A warm dark fireplace reduced to steady ember glow, mostly smooth combustion hush, no clear crackle, no pops, no log shift, no ash collapse, no flame flare. Rounded low-mid warmth, low brightness, extremely low event density and stable loudness, designed for long crossfaded looping. No singing, human voice, human-like vocal texture, breathing, wind, animals, melody, harmony, drone note, synthesizer, instrument, rhythm, percussion, chime, sparkle, crisp transient, impact, climax, or sudden change."
+    },
+    {
+      "id": "velvet_tape_hush",
+      "title": "Velvet Tape Hush",
+      "category": "texture",
+      "role": "noise_texture",
+      "goals": ["sleep", "calm", "focus"],
+      "loopMode": "crossfade",
+      "prompt": "Abstract non-musical audio texture. Intensity 0.5/10. A dark velvet analog tape hush, warm and low, extremely smooth, almost motionless, no hiss sparkle, no click, no dust pop, no wobble, no repeating defect, no tonal center. Very low event density, low brightness, stable dynamics, designed as a subtle background texture for long crossfaded looping. No singing, human voice, human-like vocal texture, breathing, field recording identity, melody, harmony, drone note, synthesizer note, instrument, rhythm, percussion, chime, sparkle, crisp transient, impact, climax, or sudden change."
+    },
+    {
+      "id": "low_felt_resonance",
+      "title": "Low Felt Resonance",
+      "category": "texture",
+      "role": "low_texture",
+      "goals": ["sleep", "calm"],
+      "loopMode": "crossfade",
+      "prompt": "Abstract organic ambient texture. Intensity 0.5/10. A very low felt-covered resonance, dark rounded and soft, one broad neutral pitch region, no clear instrument identity, no phrase, no chord progression, no bass line, no pulse. Long blurred attack, long blurred decay overlap, extremely low event density, stable low brightness for long crossfaded looping. No singing, human voice, human-like vocal texture, breathing, melody, percussion, knock, click, sparkle, crisp transient, impact, climax, or sudden change."
+    },
+    {
+      "id": "dark_granular_cloud",
+      "title": "Dark Granular Cloud",
+      "category": "texture",
+      "role": "tonal_texture",
+      "goals": ["sleep", "calm", "focus"],
+      "loopMode": "crossfade",
+      "prompt": "Abstract ambient sound material. Intensity 0.5/10. One dark diffuse granular cloud, very slow and soft, rounded microscopic particles almost fused into a smooth layer, no sparkle, no bright grains, no sharp partials, no phrase, no chord change, no tonal resolution. Low event density, low brightness, stable dynamics, designed for long crossfaded looping. No singing, human voice, human-like vocal texture, choir, breathing, melody, bass line, instrument, drums, pulse, bell, impact, climax, or sudden change."
+    },
+    {
+      "id": "blurred_string_air",
+      "title": "Blurred String Air",
+      "category": "texture",
+      "role": "harmonic_texture",
+      "goals": ["sleep", "calm"],
+      "loopMode": "crossfade",
+      "prompt": "Instrumental ambient texture. Intensity 0.5/10. Only distant blurred string air, not a melody and not a chord progression, soft unresolved harmonic haze in a narrow low-middle register, no bow attack, no vibrato focus, no ensemble swell, no cadence. Low brightness, very low event density, stable and background-only for long crossfaded looping. No singing, human voice, human-like vocal texture, choir, breathing, piano, guitar, bass, drums, pulse, pizzicato, sparkle, crisp transient, impact, climax, or sudden change."
+    },
+    {
+      "id": "ultra_sparse_felt_piano",
+      "title": "Ultra Sparse Felt Piano",
+      "category": "instrument",
+      "role": "melodic_phrase",
+      "goals": ["sleep", "calm"],
+      "loopMode": "crossfade",
+      "prompt": "Instrumental minimalist phrase. Intensity 0.5/10. Solo felt piano only, extremely sparse, two or three very soft low-middle notes over the whole clip, long silence between notes, no recognizable melody, no arpeggio, no chord progression, no hook, no cadence, unfinished ending. Dark felt tone, very soft hammer noise, low brightness, restrained room, suitable as an editable phrase for crossfaded looping. No singing, human voice, human-like vocal texture, choir, guitar, strings, synthesizer, bass, drums, percussion, rhythm, sparkle, crisp transient, climax, or sudden change."
+    },
+    {
+      "id": "long_cello_breath_no_swell",
+      "title": "Long Cello Breath No Swell",
+      "category": "instrument",
+      "role": "melodic_phrase",
+      "goals": ["sleep", "calm"],
+      "loopMode": "crossfade",
+      "prompt": "Instrumental minimalist phrase. Intensity 0.5/10. Solo warm cello only, two or three very long connected low notes, nearly no vibrato, no emotional swell, no dramatic bow pressure, no melody hook, no cadence, no resolution. Dark low-middle tone, soft onset, long pauses, low brightness, stable dynamics, suitable as an editable phrase for crossfaded looping. No singing, human voice, human-like vocal texture, choir, violin, piano, guitar, synthesizer, bass line, drums, percussion, rhythm, climax, or sudden change."
+    },
+    {
+      "id": "deep_soft_bowl_tail",
+      "title": "Deep Soft Bowl Tail",
+      "category": "accent",
+      "role": "one_shot_accent",
+      "goals": ["sleep", "calm"],
+      "loopMode": "one_shot",
+      "prompt": "Isolated sound-design element, not a performance. Intensity 0.5/10. One single very soft deep bowl tone near the beginning, followed only by a warm smooth low resonance tail fading into silence. Exactly one gentle onset, no rubbing, no sequence, no shimmer cluster, no high sparkle, no second strike, no background bed. No singing, human voice, human-like vocal texture, chanting, choir, melody, harmony progression, other instrument, drum, rhythm, bright chime, impact, climax, or sudden additional sound."
+    }
+  ]
+}

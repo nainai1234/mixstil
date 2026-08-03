@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "2.0.0",
+  "batchId": "lyria-foundational-expansion-v2",
+  "provider": "google-cloud-vertex-ai",
+  "model": "lyria-3-clip-preview",
+  "variantsPerFamily": 3,
+  "existingApprovedElementCount": 24,
+  "targetNewCandidateCount": 60,
+  "targetCombinedElementCount": 84,
+  "productionAllowed": false,
+  "families": [
+    {
+      "id": "gentle_rain_canopy",
+      "title": "Gentle Rain Canopy",
+      "category": "environment",
+      "role": "environment_bed",
+      "goals": ["sleep", "calm", "focus"],
+      "loopMode": "crossfade",
+      "prompt": "Pure environmental sound-design material, not music. A steady layer of gentle fine rain falling onto a soft fabric canopy, close and diffuse, low event density, even intensity, no thunder, no individual loud drops, no changing weather, no beginning or ending gesture. Natural broadband texture with softened highs, designed for crossfaded looping. No singing, human voice, breathing, animals, birds, melody, harmony, drone, synthesizer, instrument, rhythm, percussion, chime, impact, climax, or sudden change."
+    },
+    {
+      "id": "distant_ocean_wash",
+      "title": "Distant Ocean Wash",
+      "category": "environment",
+      "role": "environment_bed",
+      "goals": ["sleep", "calm"],
+      "loopMode": "crossfade",
+      "prompt": "Pure environmental sound-design material, not music. Distant gentle ocean surf heard from a sheltered shore, broad slow wash with overlapping waves and no isolated breakers, stable low intensity, rounded low-mid body, softened spray noise, no close splashes and no dramatic swell. Continuous neutral ambience designed for crossfaded looping. No singing, human voice, breathing, boats, gulls, birds, animals, melody, harmony, drone, synthesizer, instrument, rhythm, percussion, chime, impact, climax, or sudden change."
+    },
+    {
+      "id": "soft_pine_wind",
+      "title": "Soft Pine Wind",
+      "category": "environment",
+      "role": "environment_bed",
+      "goals": ["sleep", "calm", "focus"],
+      "loopMode": "crossfade",
+      "prompt": "Pure environmental sound-design material, not music. A soft steady breeze moving through distant pine needles, airy but not bright, slow natural fluctuations, no strong gusts, no branch cracks, no close leaf transients, low event density and stable loudness. Continuous forest air designed for crossfaded looping. No singing, human voice, breathing, birds, insects, animals, water, melody, harmony, drone, synthesizer, instrument, rhythm, percussion, chime, impact, climax, or sudden change."
+    },
+    {
+      "id": "quiet_fireplace_embers",
+      "title": "Quiet Fireplace Embers",
+      "category": "environment",
+      "role": "environment_bed",
+      "goals": ["sleep", "calm"],
+      "loopMode": "crossfade",
+      "prompt": "Pure environmental sound-design material, not music. A small indoor fireplace reduced to warm glowing embers, soft continuous combustion hiss with rare tiny rounded crackles, no large pops, no log collapse, stable low intensity and dark frequency balance. Intimate safe room ambience designed for crossfaded looping. No singing, human voice, breathing, wind, animals, melody, harmony, drone, synthesizer, instrument, rhythm, percussion, chime, impact, climax, or sudden change."
+    },
+    {
+      "id": "night_forest_hush",
+      "title": "Night Forest Hush",
+      "category": "environment",
+      "role": "environment_bed",
+      "goals": ["sleep", "calm"],
+      "loopMode": "crossfade",
+      "prompt": "Pure environmental sound-design material, not music. A very quiet sheltered forest at night with distant diffuse air and subtle foliage movement, extremely low event density, dark and stable, no identifiable animal calls, no insects near the listener, no footsteps and no water. Continuous neutral ambience designed for crossfaded looping. No singing, human voice, breathing, owl, birds, crickets, frogs, melody, harmony, drone, synthesizer, instrument, rhythm, percussion, chime, impact, climax, or sudden change."
+    },
+    {
+      "id": "steady_room_ventilation",
+      "title": "Steady Room Ventilation",
+      "category": "environment",
+      "role": "masking_bed",
+      "goals": ["sleep", "focus"],
+      "loopMode": "crossfade",
+      "prompt": "Pure environmental sound-design material, not music. A clean modern room with steady distant ventilation and soft low mechanical airflow, smooth broadband masking, stable pitchless noise, no motor cycle, no rattling, no clicks, no changing fan speed and no room activity. Continuous low-distraction ambience designed for crossfaded looping. No singing, human voice, breathing, footsteps, traffic, melody, harmony, tonal drone, synthesizer, instrument, rhythm, percussion, chime, impact, climax, or sudden change."
+    },
+    {
+      "id": "soft_tape_air",
+      "title": "Soft Tape Air",
+      "category": "texture",
+      "role": "noise_texture",
+      "goals": ["sleep", "calm", "focus"],
+      "loopMode": "crossfade",
+      "prompt": "Abstract non-musical audio texture. Soft analog tape air and low-level magnetic hiss, warm and diffuse, extremely slow almost imperceptible fluctuation, stable dynamics, no repeating defect, no click, no wow-and-flutter pitch, no chord or tonal center. A subtle background texture designed for crossfaded looping. No singing, human voice, breathing, field recording, melody, harmony, drone, synthesizer note, instrument, rhythm, percussion, chime, impact, climax, or sudden change."
+    },
+    {
+      "id": "granular_mist",
+      "title": "Granular Mist",
+      "category": "texture",
+      "role": "tonal_texture",
+      "goals": ["sleep", "calm", "focus"],
+      "loopMode": "crossfade",
+      "prompt": "Abstract ambient sound material, free-time, intensity 1/10. One diffuse granular mist texture with soft rounded microscopic particles and no identifiable source, low event density, harmonically neutral, slow organic movement, stable loudness and no phrase. Designed as a quiet editable detail layer and for crossfaded looping. No singing, human voice, choir, breathing, melody, chord progression, bass line, instrument, drums, pulse, bell, sharp sparkle, impact, climax, or sudden change."
+    },
+    {
+      "id": "bowed_glass_cloud",
+      "title": "Bowed Glass Cloud",
+      "category": "texture",
+      "role": "tonal_texture",
+      "goals": ["calm", "focus"],
+      "loopMode": "crossfade",
+      "prompt": "Abstract ambient texture, free-time, intensity 1/10. A single very soft bowed-glass harmonic cloud, blurred and distant, rounded upper partials with no sharp resonance, narrow stable pitch area, extremely slow movement, no phrase, no chord change and no resolution. Designed for subtle layering and crossfaded looping. No singing, human voice, choir, breathing, melody, lead instrument, piano, guitar, strings ensemble, drums, pulse, bell strike, impact, climax, or sudden change."
+    },
+    {
+      "id": "muted_string_harmonics",
+      "title": "Muted String Harmonics",
+      "category": "texture",
+      "role": "harmonic_texture",
+      "goals": ["sleep", "calm"],
+      "loopMode": "crossfade",
+      "prompt": "Instrumental ambient texture, free-time, intensity 1/10. Only distant muted string harmonics forming a soft unresolved cloud, no identifiable solo instrument, long blurred attacks, narrow pitch range, sparse overlap, stable open harmony, no melody, no chord progression and no cadence. Designed as a background texture for crossfaded looping. No singing, human voice, choir, breathing, piano, guitar, bass, drums, pulse, pizzicato, bright bow attack, impact, climax, or sudden change."
+    },
+    {
+      "id": "low_wood_resonance",
+      "title": "Low Wood Resonance",
+      "category": "texture",
+      "role": "low_texture",
+      "goals": ["sleep", "calm", "focus"],
+      "loopMode": "crossfade",
+      "prompt": "Abstract organic ambient texture, free-time, intensity 1/10. A low hollow wooden resonance breathing very slowly, rounded and dark, one neutral pitch region, soft attacks, long decay overlap, stable low density and no recognizable instrument performance. Designed as subtle low support for crossfaded looping. No singing, human voice, choir, breathing, melody, chord progression, bass line, drum rhythm, percussion pattern, knock, click, impact, climax, or sudden change."
+    },
+    {
+      "id": "soft_harp_phrase",
+      "title": "Sparse Soft Harp Phrase",
+      "category": "instrument",
+      "role": "melodic_phrase",
+      "goals": ["sleep", "calm"],
+      "loopMode": "crossfade",
+      "prompt": "Instrumental minimalist phrase at 48 BPM and intensity 1/10. Solo soft concert harp is the only instrument. A sparse four-note motif in the middle-low register, fingertip-soft attacks, long pauses, narrow pitch range, open intervals, small natural variation, no glissando, no cadence and an unfinished ending. Intimate restrained room sound with no accompaniment. No singing, human voice, choir, piano, guitar, strings, synthesizer, bass, drums, percussion, arpeggio, bright pluck, catchy hook, climax, or sudden change."
+    },
+    {
+      "id": "low_cello_phrase",
+      "title": "Slow Low Cello Phrase",
+      "category": "instrument",
+      "role": "melodic_phrase",
+      "goals": ["sleep", "calm"],
+      "loopMode": "crossfade",
+      "prompt": "Instrumental minimalist phrase, free-time and intensity 1/10. Solo warm cello is the only instrument. Three or four very long connected notes in a narrow low register, soft bow onset, generous silence, neutral unresolved intervals, minimal vibrato, no emotional swell, no cadence and an unfinished ending. Close dark recording with restrained reverb and no accompaniment. No singing, human voice, choir, violin, piano, guitar, synthesizer, bass line, drums, percussion, ostinato, dramatic melody, climax, or sudden change."
+    },
+    {
+      "id": "bamboo_flute_phrase",
+      "title": "Sparse Bamboo Flute Phrase",
+      "category": "instrument",
+      "role": "melodic_phrase",
+      "goals": ["calm", "sleep"],
+      "loopMode": "crossfade",
+      "prompt": "Instrumental minimalist phrase, free-time and intensity 1/10. Solo low bamboo flute is the only instrument. A sparse four-note breath-shaped motif in a comfortable middle-low register, long pauses, narrow pentatonic range, soft non-piercing tone, no decorative runs, no cadence and an unfinished ending. Natural quiet room with restrained reverb and no accompaniment. No singing, human voice, spoken sound, choir, chanting, piano, strings, synthesizer, drums, percussion, fast ornament, catchy melody, climax, or sudden change."
+    },
+    {
+      "id": "guqin_phrase",
+      "title": "Sparse Guqin Phrase",
+      "category": "instrument",
+      "role": "melodic_phrase",
+      "goals": ["calm", "focus"],
+      "loopMode": "crossfade",
+      "prompt": "Instrumental minimalist phrase, free-time and intensity 1/10. Solo guqin is the only instrument. Four widely spaced low and middle-register notes, soft finger attack, natural muted string noise, generous silence, narrow pentatonic pitch set, no fast slides, no recognizable traditional tune, no cadence and an unfinished ending. Intimate dry room and no accompaniment. No singing, human voice, choir, flute, piano, guitar, synthesizer, bass, drums, percussion pattern, rapid plucking, catchy hook, climax, or sudden change."
+    },
+    {
+      "id": "bansuri_phrase",
+      "title": "Sparse Bansuri Phrase",
+      "category": "instrument",
+      "role": "melodic_phrase",
+      "goals": ["calm", "sleep"],
+      "loopMode": "crossfade",
+      "prompt": "Instrumental minimalist phrase, free-time and intensity 1/10. Solo low bansuri flute is the only instrument. Three or four sustained notes with long silence, narrow neutral raga-like pitch set without quoting any composition, warm breathy tone, very restrained ornament, no tabla, no drone, no cadence and an unfinished ending. Close natural recording with no accompaniment. No singing, human voice, chanting, choir, sitar, piano, strings, synthesizer, drums, percussion, fast run, emotional climax, or sudden change."
+    },
+    {
+      "id": "soft_handpan_phrase",
+      "title": "Sparse Soft Handpan Phrase",
+      "category": "instrument",
+      "role": "rhythmic_phrase",
+      "goals": ["calm", "focus"],
+      "loopMode": "crossfade",
+      "prompt": "Instrumental minimalist phrase around 60 BPM and intensity 1/10. Solo soft handpan is the only instrument. A restrained five-note pattern with large spaces, rounded fingertip attacks, narrow pitch set, gentle irregular repetition, no driving groove, no flourish, no cadence and an unfinished ending. Close warm recording with short restrained room decay and no accompaniment. No singing, human voice, choir, piano, guitar, synthesizer, bass, drums, additional percussion, fast rhythm, bright metallic strike, catchy hook, climax, or sudden change."
+    },
+    {
+      "id": "single_singing_bowl",
+      "title": "Single Singing Bowl Resonance",
+      "category": "accent",
+      "role": "one_shot_accent",
+      "goals": ["sleep", "calm"],
+      "loopMode": "one_shot",
+      "prompt": "Isolated sound-design element, not a musical performance. One single soft low singing-bowl strike near the beginning, followed only by its full natural warm resonance and decay into silence for the remainder of the clip. Exactly one onset, rounded mallet attack, no rubbing, no second strike, no sequence, no ambience bed. No singing, human voice, chanting, choir, melody, harmony progression, other instrument, drum, rhythm, impact, climax, or sudden additional sound."
+    },
+    {
+      "id": "single_low_temple_bell",
+      "title": "Single Low Temple Bell",
+      "category": "accent",
+      "role": "one_shot_accent",
+      "goals": ["calm", "focus"],
+      "loopMode": "one_shot",
+      "prompt": "Isolated sound-design element, not a musical performance. One single gentle low temple-bell strike near the beginning, followed only by a smooth dark resonance and complete natural decay into silence. Exactly one onset, soft mallet, no repeated bell, no pattern and no background bed. No singing, human voice, chanting, choir, melody, harmony progression, other instrument, drum, rhythm, bright chime, impact, climax, or sudden additional sound."
+    },
+    {
+      "id": "single_wood_chime",
+      "title": "Single Soft Wood Chime",
+      "category": "accent",
+      "role": "one_shot_accent",
+      "goals": ["sleep", "calm", "focus"],
+      "loopMode": "one_shot",
+      "prompt": "Isolated sound-design element, not a musical performance. One single soft hollow wooden chime note near the beginning, followed only by its short rounded natural decay into silence. Exactly one onset, low-mid pitch, no second note, no wind-chime cluster, no rhythmic pattern and no ambience bed. No singing, human voice, chanting, choir, melody, harmony, other instrument, drum, rhythm, sharp click, impact, climax, or sudden additional sound."
+    }
+  ]
+}

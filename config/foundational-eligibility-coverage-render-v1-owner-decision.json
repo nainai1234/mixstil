@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0.0",
+  "decisionId": "foundational-eligibility-coverage-render-v1-owner-decision",
+  "sourceBatchId": "foundational-eligibility-coverage-render-v1",
+  "decidedAt": "2026-07-28T00:00:00.000Z",
+  "reviewer": "project_owner",
+  "ownerFeedback": "内容没问题。",
+  "ownerDecision": "passed_for_internal_audible_product_baseline_regression",
+  "scope": "Foundational Eligibility Coverage Render V1 is accepted as an internal audible product-baseline route proof for Sleep, Calm, and Focus Quick Create coverage. These rendered outputs remain route proofs, not foundational elements and not production release assets.",
+  "humanListeningResult": "positive_content_pass",
+  "humanPassScope": {
+    "renderedCoverageCases": 9,
+    "sleepCases": 3,
+    "calmCases": 3,
+    "focusCases": 3,
+    "distinctSelections": 7,
+    "runtimeExternalApiUsed": 0
+  },
+  "formalUsablePromotionAllowed": false,
+  "productionAllowed": false,
+  "quickCreateInternalBaselineAllowed": true,
+  "nextAllowedStage": "consumer_quick_create_internal_baseline_regression",
+  "mustRemainBlocked": [
+    "public production routing",
+    "formal usable item promotion",
+    "medical or healing claims",
+    "voice, choir, singing, chanting, or human-like vocal texture",
+    "strong drums or beat-forward defaults for Sleep and Calm",
+    "water, road, HVAC, or machine-like material in explicit no-water/no-road intents",
+    "finished-content or router-proof renders counted as foundational elements",
+    "runtime external full-track generation during consumer Quick Create"
+  ],
+  "acceptedCorrections": [
+    "sleep_bedtime_warm_sparse must not collapse into generic white-noise-only output.",
+    "sleep_no_music_dark_hush must remain pure soundscape without water, road, HVAC, or music roles.",
+    "focus_no_melody_masking must avoid water-like beds and melodic motifs while retaining non-melodic focus support."
+  ],
+  "nextStageRequirements": [
+    "run consumer Quick Create regression with the foundational eligibility route enabled",
+    "verify exclusions are preserved in generated Recipe V2 plans",
+    "verify Sleep, Calm, and Focus outputs remain perceptually distinct",
+    "verify rendered-route proofs are not promoted as foundational materials",
+    "move only after this into Sprint 1 mobile background and long-session playback gates"
+  ],
+  "currentEvidence": {
+    "manifest": "public/review/foundational-eligibility-coverage-render-v1/manifest.json",
+    "reviewPage": "public/review/foundational-eligibility-coverage-render-v1/index.html",
+    "report": "reports/foundational-eligibility-coverage-render-v1.md",
+    "validator": "server/validateFoundationalEligibilityCoverageRenderV1.ts"
+  }
+}

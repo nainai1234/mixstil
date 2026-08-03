@@ -1,0 +1,235 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedOn": "2026-07-21",
+  "totalReferences": 24,
+  "alreadyAnalyzed": 7,
+  "downloadRequired": 17,
+  "importDirectory": "imports/reference-youtube",
+  "acceptedExtensions": [
+    "mp3",
+    "m4a",
+    "wav",
+    "flac",
+    "webm",
+    "opus",
+    "ogg"
+  ],
+  "items": [
+    {
+      "id": "sleep_flying",
+      "goal": "sleep",
+      "title": "Flying",
+      "creator": "Peder B. Helland / Soothing Relaxation",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1ZYbU82GVz4",
+      "status": "analyzed",
+      "targetFilename": "sleep_flying.mp3"
+    },
+    {
+      "id": "sleep_weightless",
+      "goal": "sleep",
+      "title": "Weightless",
+      "creator": "Marconi Union",
+      "youtubeUrl": "https://www.youtube.com/watch?v=UfcAVejslrU",
+      "status": "analyzed",
+      "targetFilename": "sleep_weightless.mp3"
+    },
+    {
+      "id": "sleep_piano_rain_you_me",
+      "goal": "sleep",
+      "title": "Relaxing Music & Rain Sounds - You & Me",
+      "creator": "Soothing Relaxation",
+      "youtubeUrl": "https://www.youtube.com/watch?v=o8GrqUSdzi0",
+      "status": "download_required",
+      "targetFilename": "sleep_piano_rain_you_me.mp3"
+    },
+    {
+      "id": "sleep_eight_hour_piano",
+      "goal": "sleep",
+      "title": "8 Hours of Beautiful Piano Music",
+      "creator": "Soothing Relaxation",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OeHLHNKQCXA",
+      "status": "download_required",
+      "targetFilename": "sleep_eight_hour_piano.mp3"
+    },
+    {
+      "id": "sleep_ocean_eight_hour",
+      "goal": "sleep",
+      "title": "Sleep Music for 8 Hours - Ocean Waves",
+      "creator": "Soothing Relaxation",
+      "youtubeUrl": "https://www.youtube.com/watch?v=L6VBHflOeuY",
+      "status": "download_required",
+      "targetFilename": "sleep_ocean_eight_hour.mp3"
+    },
+    {
+      "id": "sleep_ending_ascent",
+      "goal": "sleep",
+      "title": "An Ending (Ascent)",
+      "creator": "Brian Eno",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OlaTeXX3uH8",
+      "status": "download_required",
+      "targetFilename": "sleep_ending_ascent.mp3"
+    },
+    {
+      "id": "sleep_saman",
+      "goal": "sleep",
+      "title": "saman",
+      "creator": "Ólafur Arnalds",
+      "youtubeUrl": "https://www.youtube.com/watch?v=jzcWhWrDnAY",
+      "status": "download_required",
+      "targetFilename": "sleep_saman.mp3"
+    },
+    {
+      "id": "sleep_rhubarb",
+      "goal": "sleep",
+      "title": "#3 (Rhubarb)",
+      "creator": "Aphex Twin",
+      "youtubeUrl": "https://www.youtube.com/watch?v=_AWIqXzvX-U",
+      "status": "download_required",
+      "targetFilename": "sleep_rhubarb.mp3"
+    },
+    {
+      "id": "sleep_dream_1",
+      "goal": "sleep",
+      "title": "Dream 1",
+      "creator": "Max Richter",
+      "youtubeUrl": "https://www.youtube.com/watch?v=gYQfsGYI1Y4",
+      "status": "download_required",
+      "targetFilename": "sleep_dream_1.mp3"
+    },
+    {
+      "id": "sleep_first_light",
+      "goal": "sleep",
+      "title": "First Light",
+      "creator": "Harold Budd & Brian Eno",
+      "youtubeUrl": "https://www.youtube.com/watch?v=cOWJq88uAiQ",
+      "status": "download_required",
+      "targetFilename": "sleep_first_light.mp3"
+    },
+    {
+      "id": "calm_piano_guitar_10h",
+      "goal": "calm",
+      "title": "10 Hours of Relaxing Piano & Guitar",
+      "creator": "Soothing Relaxation",
+      "youtubeUrl": "https://www.youtube.com/watch?v=8WVXk0Gz66E",
+      "status": "download_required",
+      "targetFilename": "calm_piano_guitar_10h.mp3"
+    },
+    {
+      "id": "calm_relaxing_guitar_3h",
+      "goal": "calm",
+      "title": "3 Hour Relaxing Guitar Music",
+      "creator": "Yellow Brick Cinema",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ss7EJ-PW2Uk",
+      "status": "download_required",
+      "targetFilename": "calm_relaxing_guitar_3h.mp3"
+    },
+    {
+      "id": "calm_meditation_monoman",
+      "goal": "calm",
+      "title": "Meditation",
+      "creator": "MONOMAN",
+      "youtubeUrl": "https://www.youtube.com/watch?v=FjHGZj2IjBk",
+      "status": "download_required",
+      "targetFilename": "calm_meditation_monoman.mp3"
+    },
+    {
+      "id": "calm_pipa_language",
+      "goal": "calm",
+      "title": "Pipa Language / 琵琶语",
+      "creator": "Lin Hai",
+      "youtubeUrl": "https://www.youtube.com/watch?v=sFe31-Jmx-M",
+      "status": "analyzed",
+      "targetFilename": "calm_pipa_language.mp3"
+    },
+    {
+      "id": "calm_silent_moon",
+      "goal": "calm",
+      "title": "Silent Moon",
+      "creator": "Jia Peng Fang",
+      "youtubeUrl": "https://www.youtube.com/watch?v=bfcGClrwVqc",
+      "status": "analyzed",
+      "targetFilename": "calm_silent_moon.mp3"
+    },
+    {
+      "id": "calm_raga_yaman_flute",
+      "goal": "calm",
+      "title": "Raga Yaman",
+      "creator": "Hariprasad Chaurasia",
+      "youtubeUrl": "https://www.youtube.com/watch?v=pfvemvF__E0",
+      "status": "download_required",
+      "targetFilename": "calm_raga_yaman_flute.mp3"
+    },
+    {
+      "id": "calm_silk_road",
+      "goal": "calm",
+      "title": "Silk Road Legend, Volume 1",
+      "creator": "Kitaro",
+      "youtubeUrl": "https://www.youtube.com/watch?v=mOtwSirCTHo",
+      "status": "download_required",
+      "targetFilename": "calm_silk_road.mp3"
+    },
+    {
+      "id": "calm_meditation_no_1",
+      "goal": "calm",
+      "title": "Meditation No. 1",
+      "creator": "Laraaji",
+      "youtubeUrl": "https://www.youtube.com/watch?v=X6DxwTi2FNU",
+      "status": "download_required",
+      "targetFilename": "calm_meditation_no_1.mp3"
+    },
+    {
+      "id": "focus_work_study",
+      "goal": "focus",
+      "title": "Focus Music for Work and Studying",
+      "creator": "Greenred Productions",
+      "youtubeUrl": "https://www.youtube.com/watch?v=_4kHxtiuML0",
+      "status": "download_required",
+      "targetFilename": "focus_work_study.mp3"
+    },
+    {
+      "id": "focus_deep_ambient_12h",
+      "goal": "focus",
+      "title": "Deep Focus Music - 12 Hours Ambient Study Music",
+      "creator": "4K Video Nature - Focus Music",
+      "youtubeUrl": "https://www.youtube.com/watch?v=DfSkKYQiwoU",
+      "status": "download_required",
+      "targetFilename": "focus_deep_ambient_12h.mp3"
+    },
+    {
+      "id": "focus_a_walk",
+      "goal": "focus",
+      "title": "A Walk",
+      "creator": "Tycho",
+      "youtubeUrl": "https://www.youtube.com/watch?v=SDNA934EEVk",
+      "status": "analyzed",
+      "targetFilename": "focus_a_walk.mp3"
+    },
+    {
+      "id": "focus_affection",
+      "goal": "focus",
+      "title": "Affection",
+      "creator": "Jinsang",
+      "youtubeUrl": "https://www.youtube.com/watch?v=NAkZ8gUXcIE",
+      "status": "download_required",
+      "targetFilename": "focus_affection.mp3"
+    },
+    {
+      "id": "focus_kerala",
+      "goal": "focus",
+      "title": "Kerala",
+      "creator": "Bonobo",
+      "youtubeUrl": "https://www.youtube.com/watch?v=S0Q4gqBUs7c",
+      "status": "analyzed",
+      "targetFilename": "focus_kerala.mp3"
+    },
+    {
+      "id": "focus_aruarian_dance",
+      "goal": "focus",
+      "title": "Aruarian Dance",
+      "creator": "Nujabes",
+      "youtubeUrl": "https://www.youtube.com/watch?v=qYcoJpqCha4",
+      "status": "analyzed",
+      "targetFilename": "focus_aruarian_dance.mp3"
+    }
+  ]
+}

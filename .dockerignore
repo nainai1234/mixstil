@@ -6,6 +6,15 @@ artifacts
 backups
 reports
 public/audio
+!public/audio/
+public/audio/*
+!public/audio/music/
+public/audio/music/*
+!public/audio/music/local-review/
+public/audio/music/local-review/*
+!public/audio/music/local-review/atomic-foundation-elements-v1/
+public/audio/music/local-review/atomic-foundation-elements-v1/*
+!public/audio/music/local-review/atomic-foundation-elements-v1/manifest.json
 public/exports
 public/review
 imports

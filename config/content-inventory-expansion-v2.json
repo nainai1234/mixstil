@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "2.0.0",
+  "status": "approved_plan_candidate_audio_only",
+  "evidenceBaseline": "docs/evidence-based-audio-content-and-materials-plan-v1.md",
+  "targets": {
+    "musicKits": 24,
+    "musicStems": 120,
+    "musicStemRoles": ["harmony", "melody", "accompaniment", "low_support", "transition"],
+    "goalDistribution": { "sleep": 10, "calm": 8, "focus": 6 },
+    "maskingBeds": 24,
+    "environmentBeds": 30,
+    "organicTextures": 12,
+    "safeAccents": 12
+  },
+  "routingPolicy": {
+    "inventoryOnlyTargetRatio": 0.85,
+    "localVariantTargetRatio": 0.10,
+    "paidApiMaximumRatio": 0.05,
+    "fullTrackExternalGenerationAllowed": false,
+    "externalGenerationScope": "one_missing_stem_only",
+    "cachePromotedCandidates": true
+  },
+  "evidenceRefs": [
+    "cochrane_CD010459",
+    "plos_10.1371_journal.pone.0206531",
+    "sleep_med_reviews_PMID_33007706",
+    "pnas_10.1073_pnas.2013097118",
+    "heart_PMID_16199412",
+    "stress_meta_10.1080_17437199.2019.1627897",
+    "focus_PMC10162369",
+    "focus_review_10.1177_20592043221134392",
+    "who_make_listening_safe"
+  ],
+  "musicKits": [
+    {"id":"low_register_piano_sleep_descent","goal":"sleep","scene":"bedtime","status":"approved","family":"low_piano_descent","instrument":"sampled_piano","sourceRoute":"approved_cc0","tempoRange":[46,52],"pulsePolicy":"imperceptible","melodyDensity":"very_low","energyArc":"falling","environmentCompatibility":["none","soft_rain","distant_ocean"],"forbidden":["bright_register","strong_pulse","climax","buzz"]},
+    {"id":"felt_piano_still_bedtime","goal":"sleep","scene":"bedtime","status":"planned","family":"felt_piano_stillness","instrument":"felt_piano","sourceRoute":"source_acquisition_required","tempoRange":[44,50],"pulsePolicy":"none","melodyDensity":"very_low","energyArc":"falling","environmentCompatibility":["none","soft_rain","room_air"],"forbidden":["hard_attack","hook","large_reverb","buzz"]},
+    {"id":"modal_piano_night_fall","goal":"sleep","scene":"bedtime","status":"planned","family":"modal_nocturne","instrument":"sampled_piano","sourceRoute":"approved_cc0","tempoRange":[46,54],"pulsePolicy":"none","melodyDensity":"low","energyArc":"falling","environmentCompatibility":["none","night_wind"],"forbidden":["major_lift","busy_arpeggio","climax","buzz"]},
+    {"id":"six_eight_guitar_lullaby_no_backbeat","goal":"sleep","scene":"bedtime","status":"planned","family":"six_eight_lullaby","instrument":"sampled_guitar","sourceRoute":"approved_cc0","tempoRange":[44,50],"pulsePolicy":"weak_wave","melodyDensity":"low","energyArc":"falling","environmentCompatibility":["none","distant_ocean"],"forbidden":["backbeat","hard_pluck","folk_dance","climax"]},
+    {"id":"low_piano_rain_compatible","goal":"sleep","scene":"bedtime","status":"planned","family":"rain_space_piano","instrument":"sampled_piano","sourceRoute":"approved_cc0","tempoRange":[46,52],"pulsePolicy":"none","melodyDensity":"very_low","energyArc":"flat_then_falling","environmentCompatibility":["soft_rain","window_rain"],"forbidden":["dense_midrange","high_chimes","hook","buzz"]},
+    {"id":"low_piano_ocean_compatible","goal":"sleep","scene":"bedtime","status":"planned","family":"ocean_space_piano","instrument":"sampled_piano","sourceRoute":"approved_cc0","tempoRange":[44,50],"pulsePolicy":"none","melodyDensity":"very_low","energyArc":"flat_then_falling","environmentCompatibility":["distant_ocean","shore_wash"],"forbidden":["busy_bass","bright_lead","climax","buzz"]},
+    {"id":"return_sleep_sparse_piano","goal":"sleep","scene":"return_to_sleep","status":"planned","family":"sparse_return_keys","instrument":"sampled_piano","sourceRoute":"approved_cc0","tempoRange":[42,48],"pulsePolicy":"none","melodyDensity":"minimal","energyArc":"immediately_falling","environmentCompatibility":["none","brown_masking"],"forbidden":["long_silence","new_theme","upward_lift","buzz"]},
+    {"id":"return_sleep_open_fifth_guitar","goal":"sleep","scene":"return_to_sleep","status":"planned","family":"open_fifth_return","instrument":"sampled_guitar","sourceRoute":"approved_cc0","tempoRange":[44,50],"pulsePolicy":"weak_wave","melodyDensity":"minimal","energyArc":"immediately_falling","environmentCompatibility":["none","soft_rain"],"forbidden":["hard_pluck","rhythmic_drive","new_theme","climax"]},
+    {"id":"return_sleep_melody_optional_keys","goal":"sleep","scene":"return_to_sleep","status":"planned","family":"melody_optional_return","instrument":"sampled_piano","sourceRoute":"approved_cc0","tempoRange":[42,48],"pulsePolicy":"none","melodyDensity":"optional","energyArc":"flat_low","environmentCompatibility":["brown_masking","room_air"],"forbidden":["attention_hook","bright_register","pulse","buzz"]},
+    {"id":"warm_rhodes_sleep_nocturne","goal":"sleep","scene":"bedtime","status":"planned","family":"warm_rhodes_nocturne","instrument":"sampled_rhodes","sourceRoute":"approved_cc0","tempoRange":[46,52],"pulsePolicy":"none","melodyDensity":"very_low","energyArc":"falling","environmentCompatibility":["none","room_air"],"forbidden":["lounge_jazz","chord_stab","large_reverb","climax"]},
+
+    {"id":"east_asian_pentatonic_lyrical_piano","goal":"calm","scene":"emotional_settling","status":"approved","family":"pentatonic_lyrical_piano","instrument":"sampled_piano","sourceRoute":"approved_cc0","tempoRange":[58,64],"pulsePolicy":"weak","melodyDensity":"low","energyArc":"flat_or_falling","environmentCompatibility":["none","garden_water","soft_rain"],"forbidden":["random_pentatonic_walk","bright_pluck","climax","buzz"]},
+    {"id":"western_six_eight_acoustic_unwind","goal":"calm","scene":"emotional_settling","status":"approved","family":"six_eight_acoustic","instrument":"sampled_guitar","sourceRoute":"approved_cc0","tempoRange":[48,56],"pulsePolicy":"gentle_wave","melodyDensity":"medium_low","energyArc":"flat_or_falling","environmentCompatibility":["none","distant_ocean"],"forbidden":["hard_pluck","rock_backbeat","heroic_lift","buzz"]},
+    {"id":"open_fifth_guitar_meditation","goal":"calm","scene":"breathing","status":"approved","family":"open_fifth_breathing","instrument":"sampled_guitar","sourceRoute":"approved_cc0","tempoRange":[52,58],"pulsePolicy":"breath_like","melodyDensity":"low","energyArc":"flat_or_falling","environmentCompatibility":["none","room_air","garden_water"],"forbidden":["backbeat","busy_arpeggio","folk_dance","climax"]},
+    {"id":"breathing_pentatonic_piano","goal":"calm","scene":"breathing","status":"planned","family":"pentatonic_breathing","instrument":"sampled_piano","sourceRoute":"approved_cc0","tempoRange":[50,56],"pulsePolicy":"breath_like","melodyDensity":"low","energyArc":"flat","environmentCompatibility":["none","room_air"],"forbidden":["random_walk","high_chime","climax","buzz"]},
+    {"id":"emotional_settling_dry_rhodes","goal":"calm","scene":"emotional_settling","status":"planned","family":"dry_rhodes_settling","instrument":"sampled_rhodes","sourceRoute":"approved_cc0","tempoRange":[54,60],"pulsePolicy":"weak","melodyDensity":"low","energyArc":"settle_then_flat","environmentCompatibility":["none","soft_rain"],"forbidden":["lounge_jazz","syncopated_stab","large_reverb","climax"]},
+    {"id":"calm_low_piano_reflection","goal":"calm","scene":"emotional_settling","status":"planned","family":"low_piano_reflection","instrument":"sampled_piano","sourceRoute":"approved_cc0","tempoRange":[52,58],"pulsePolicy":"none","melodyDensity":"low","energyArc":"small_arch_then_falling","environmentCompatibility":["none","forest_air"],"forbidden":["melodrama","cinematic_build","bright_register","buzz"]},
+    {"id":"breathing_nylon_guitar","goal":"calm","scene":"breathing","status":"planned","family":"nylon_breathing","instrument":"nylon_guitar","sourceRoute":"source_acquisition_required","tempoRange":[50,56],"pulsePolicy":"breath_like","melodyDensity":"low","energyArc":"flat","environmentCompatibility":["none","garden_water"],"forbidden":["hard_nail_attack","flamenco_drive","backbeat","climax"]},
+    {"id":"commissioned_soft_harp_meditation","goal":"calm","scene":"breathing","status":"planned","family":"soft_harp_space","instrument":"recorded_harp","sourceRoute":"commissioned_recording_required","tempoRange":[48,54],"pulsePolicy":"none","melodyDensity":"very_low","energyArc":"flat_or_falling","environmentCompatibility":["none","forest_air"],"forbidden":["glissando_swell","bright_pluck","fantasy_score","climax"]},
+
+    {"id":"dry_rhodes_brushless_focus","goal":"focus","scene":"deep_focus","status":"approved","family":"dry_rhodes_focus","instrument":"sampled_rhodes","sourceRoute":"approved_cc0","tempoRange":[62,72],"pulsePolicy":"stable_weak","melodyDensity":"medium_low","energyArc":"flat","environmentCompatibility":["none","room_air","brown_masking"],"forbidden":["drums","walking_bass","lounge_swing","large_reverb"]},
+    {"id":"common_tone_piano_focus","goal":"focus","scene":"deep_focus","status":"approved","family":"common_tone_piano","instrument":"sampled_piano","sourceRoute":"approved_cc0","tempoRange":[60,68],"pulsePolicy":"stable_weak","melodyDensity":"medium_low","energyArc":"flat","environmentCompatibility":["none","room_air"],"forbidden":["busy_ostinato","strong_syncopation","emotional_lift","large_reverb"]},
+    {"id":"stable_rhodes_common_tone","goal":"focus","scene":"deep_focus","status":"planned","family":"rhodes_common_tone","instrument":"sampled_rhodes","sourceRoute":"approved_cc0","tempoRange":[60,68],"pulsePolicy":"stable_weak","melodyDensity":"low","energyArc":"flat","environmentCompatibility":["none","brown_masking"],"forbidden":["jazz_solo","chord_stab","beat","large_reverb"]},
+    {"id":"dry_piano_deep_work","goal":"focus","scene":"deep_focus","status":"planned","family":"dry_piano_work_cycle","instrument":"sampled_piano","sourceRoute":"approved_cc0","tempoRange":[58,66],"pulsePolicy":"stable_weak","melodyDensity":"medium_low","energyArc":"flat","environmentCompatibility":["none","room_air"],"forbidden":["song_hook","cinematic_build","large_reverb","busy_bass"]},
+    {"id":"low_motion_guitar_focus","goal":"focus","scene":"deep_focus","status":"planned","family":"guitar_low_motion","instrument":"sampled_guitar","sourceRoute":"approved_cc0","tempoRange":[56,64],"pulsePolicy":"gentle_cycle","melodyDensity":"low","energyArc":"flat","environmentCompatibility":["none","soft_rain"],"forbidden":["hard_pluck","rock_backbeat","folk_dance","chorus"]},
+    {"id":"neutral_modal_keys_focus","goal":"focus","scene":"deep_focus","status":"planned","family":"neutral_modal_keys","instrument":"sampled_piano","sourceRoute":"approved_cc0","tempoRange":[60,68],"pulsePolicy":"stable_weak","melodyDensity":"low","energyArc":"flat","environmentCompatibility":["none","pink_masking"],"forbidden":["major_lift","dramatic_minor","hook","large_reverb"]}
+  ],
+  "materialFamilies": [
+    {"id":"brown_masking","category":"masking","targetCount":6,"sourceRoute":"project_owned_synthesis","requirements":["documented_spectral_curve","no_narrowband_tone","level_ceiling"]},
+    {"id":"pink_masking","category":"masking","targetCount":6,"sourceRoute":"project_owned_synthesis","requirements":["documented_spectral_curve","no_narrowband_tone","level_ceiling"]},
+    {"id":"soft_white_masking","category":"masking","targetCount":4,"sourceRoute":"project_owned_synthesis","requirements":["controlled_top_end","level_ceiling","support_layer_only"]},
+    {"id":"adaptive_filtered_masking","category":"masking","targetCount":8,"sourceRoute":"project_owned_synthesis","requirements":["slow_filter_motion","no_pulse","no_buzz","level_ceiling"]},
+    {"id":"rain_environments","category":"environment","targetCount":8,"sourceRoute":"first_party_or_commissioned_recording","requirements":["no_voice","no_traffic","event_density_tags","loop_qa"]},
+    {"id":"ocean_environments","category":"environment","targetCount":6,"sourceRoute":"first_party_or_commissioned_recording","requirements":["no_voice","no_boat","wave_intensity_tags","loop_qa"]},
+    {"id":"wind_environments","category":"environment","targetCount":4,"sourceRoute":"first_party_or_commissioned_recording","requirements":["no_whistle_peak","no_voice","gust_density_tags","loop_qa"]},
+    {"id":"forest_environments","category":"environment","targetCount":5,"sourceRoute":"first_party_or_commissioned_recording","requirements":["bird_density_tags","no_voice","no_vehicle","loop_qa"]},
+    {"id":"water_environments","category":"environment","targetCount":3,"sourceRoute":"first_party_or_commissioned_recording","requirements":["splash_density_tags","no_voice","no_pump_noise","loop_qa"]},
+    {"id":"room_environments","category":"environment","targetCount":4,"sourceRoute":"first_party_recording","requirements":["no_speech","no_device_alarm","stable_room_tone","loop_qa"]},
+    {"id":"air_and_room_textures","category":"organic_texture","targetCount":4,"sourceRoute":"project_owned_synthesis_or_recording","requirements":["no_buzz","no_voice","low_attention"]},
+    {"id":"wood_and_cloth_textures","category":"organic_texture","targetCount":4,"sourceRoute":"first_party_recording","requirements":["soft_transient","no_rhythm","low_attention"]},
+    {"id":"distant_water_textures","category":"organic_texture","targetCount":4,"sourceRoute":"first_party_or_commissioned_recording","requirements":["no_splash_startle","low_event_density","loop_qa"]},
+    {"id":"arrival_release_accents","category":"safe_accent","targetCount":6,"sourceRoute":"project_owned_performance_or_synthesis","requirements":["no_bell","no_chime","no_voice","startle_qa"]},
+    {"id":"organic_micro_accents","category":"safe_accent","targetCount":6,"sourceRoute":"first_party_recording","requirements":["soft_transient","rare_placement","startle_qa"]}
+  ]
+}

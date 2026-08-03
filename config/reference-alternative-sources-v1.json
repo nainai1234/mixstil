@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "observedOn": "2026-07-21",
+  "purpose": "temporary reference-analysis copies only; never product playback or asset reuse",
+  "records": [
+    {
+      "referenceId": "sleep_ocean_eight_hour",
+      "status": "downloaded_and_analyzed",
+      "sourceType": "SoundCloud official artist account",
+      "sourceUrl": "https://soundcloud.com/soothingrelaxation/deep-sleep-music-ocean-waves-fall-asleep-fast-relaxing-music-sleeping-music-138",
+      "identity": {"titleCreatorMatch": true, "first30SecondsMatch": true, "verificationMethod": "direct_source"},
+      "downloadedFile": "imports/reference-youtube/sleep_ocean_eight_hour.mp3",
+      "fullDurationSeconds": 11078.055,
+      "formalAnalysisDurationSeconds": 1800.021,
+      "notes": "Official Soothing Relaxation upload identifies the same Ocean Waves #138 reference; full file retained, 30-minute beginning sample analyzed."
+    },
+    {
+      "referenceId": "focus_affection",
+      "status": "downloaded_and_analyzed",
+      "sourceType": "SoundCloud official artist account",
+      "sourceUrl": "https://soundcloud.com/jinsangbeats/affection",
+      "identity": {"titleCreatorMatch": true, "first30SecondsMatch": true, "verificationMethod": "direct_source"},
+      "downloadedFile": "imports/reference-youtube/focus_affection.mp3",
+      "fullDurationSeconds": 115.589,
+      "formalAnalysisDurationSeconds": 115.589,
+      "notes": "Exact artist-account upload; complete track analyzed because it is under 30 minutes."
+    },
+    {
+      "referenceId": "sleep_ending_ascent",
+      "status": "source_found_download_blocked",
+      "sourceType": "SoundCloud official artist account",
+      "sourceUrl": "https://soundcloud.com/brian-eno-official/an-ending-ascent-remastered",
+      "identity": {"titleCreatorMatch": true},
+      "notes": "Official source is DRM-protected; no file was imported."
+    },
+    {
+      "referenceId": "sleep_saman",
+      "status": "source_found_download_blocked",
+      "sourceType": "SoundCloud official artist account",
+      "sourceUrl": "https://soundcloud.com/olafur-arnalds/saman",
+      "identity": {"titleCreatorMatch": true},
+      "notes": "Official source is DRM-protected; no file was imported."
+    },
+    {
+      "referenceId": "calm_raga_yaman_flute",
+      "status": "source_found_download_blocked",
+      "sourceType": "SoundCloud official artist account",
+      "sourceUrl": "https://soundcloud.com/pandit-hariprasad-chaurasia/raga-yaman-pandit-hariprasad",
+      "identity": {"titleCreatorMatch": true},
+      "notes": "Official source is DRM-protected; no file was imported."
+    }
+  ],
+  "unresolved": [
+    "sleep_piano_rain_you_me",
+    "sleep_eight_hour_piano",
+    "sleep_rhubarb",
+    "sleep_dream_1",
+    "sleep_first_light",
+    "calm_piano_guitar_10h",
+    "calm_relaxing_guitar_3h",
+    "calm_meditation_monoman",
+    "calm_silk_road",
+    "calm_meditation_no_1",
+    "focus_work_study",
+    "focus_deep_ambient_12h"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0.0",
+  "decisionId": "foundational-material-complete-v1-owner-decision",
+  "sourceBatchId": "foundational-material-complete-v1",
+  "decidedAt": "2026-07-28T00:00:00.000Z",
+  "reviewer": "project_owner",
+  "ownerFeedback": "我听了，效果都不错。",
+  "ownerDecision": "passed_for_recipe_eligibility_mapping",
+  "scope": "Foundational Material Complete V1 is accepted as a complete candidate/configured foundational material baseline for the next Recipe eligibility and routing-metadata stage.",
+  "humanListeningResult": "positive_directional_pass",
+  "humanPassScope": {
+    "audioReviewItems": 45,
+    "dspConfigItems": 8,
+    "symbolicRuleItems": 50,
+    "totalReviewItems": 103
+  },
+  "formalUsablePromotionAllowed": false,
+  "productionAllowed": false,
+  "nextAllowedStage": "foundational_recipe_eligibility_map_v1",
+  "mustRemainBlocked": [
+    "public production routing",
+    "formal usable item promotion",
+    "medical or healing claims",
+    "voice, choir, singing, chanting, or human-like vocal texture",
+    "drums or beat-forward defaults for Sleep and Calm",
+    "finished-content or router-proof renders counted as foundational elements"
+  ],
+  "nextStageRequirements": [
+    "assign recipeRole and defaultGainRange to each eligible audio element",
+    "mark support-only materials so noise/air layers do not become foreground identity by default",
+    "separate Sleep, Calm, and Focus routing suitability",
+    "record hard exclusions such as road-like, pulse-like, voice-like, harsh, or attention-capturing risks",
+    "keep productionAllowed=false until Recipe integration, long-session behavior, and release QA pass"
+  ]
+}

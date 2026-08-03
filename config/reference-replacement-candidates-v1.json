@@ -1,0 +1,390 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "candidate_review_required",
+  "observedOn": "2026-07-21",
+  "policy": {
+    "candidateOnly": true,
+    "first30IdentityRequiredBeforePromotion": true,
+    "voiceCheckRequiredBeforePromotion": true
+  },
+  "items": [
+    {
+      "referenceId": "sleep_piano_rain_you_me",
+      "goal": "sleep",
+      "exact": {
+        "status": "unresolved",
+        "reason": "No non-YouTube/non-SoundCloud full source could be tied to the approved Soothing Relaxation music-plus-rain recording."
+      },
+      "replacement": {
+        "status": "replacement_candidate",
+        "title": "Rain 2 (Med.+) 10h LowGentleThunder, Downpour",
+        "creator": "GenreFan collection",
+        "completeAudioUrl": "https://archive.org/download/relaxingsounds/Rain%202%20%28Med.%2B%29%2010h%20LowGentleThunder%2C%20Downpour.mp3",
+        "evidenceUrl": "https://archive.org/details/relaxingsounds",
+        "popularityEvidence": {
+          "metric": "Internet Archive downloads",
+          "value": 78826,
+          "observedOn": "2026-07-21"
+        },
+        "durationSeconds": 36049.79,
+        "structureFit": "Provides a long continuous rain mask for the music-plus-rain balance slot; musical layer must be produced separately.",
+        "voiceEvidence": "Nature-sound collection metadata; machine voice check still required before promotion.",
+        "sourceValidation": "Archive.org item page and direct audio URL resolved with HTTP 200 on 2026-07-21; candidate audio not yet machine-analyzed."
+      }
+    },
+    {
+      "referenceId": "sleep_eight_hour_piano",
+      "goal": "sleep",
+      "exact": {
+        "status": "unresolved",
+        "reason": "No precise full copy of the approved Soothing Relaxation eight-hour recording was found outside previously failed routes."
+      },
+      "replacement": {
+        "status": "replacement_candidate",
+        "title": "001 - Openings",
+        "creator": "Torley",
+        "completeAudioUrl": "https://archive.org/download/solo-piano-7/Torley-001-Openings.mp3",
+        "evidenceUrl": "https://archive.org/details/solo-piano-7",
+        "popularityEvidence": {
+          "metric": "Internet Archive downloads",
+          "value": 205431,
+          "observedOn": "2026-07-21"
+        },
+        "durationSeconds": 99.5,
+        "structureFit": "Complete soft solo-piano composition from an explicitly instrumental ambient-piano collection; useful for phrase density and attack analysis, not long-session continuity.",
+        "voiceEvidence": "Collection explicitly tagged instrumental and solo piano; machine voice check still required.",
+        "sourceValidation": "Archive.org item page and direct audio URL resolved with HTTP 200 on 2026-07-21; candidate audio not yet machine-analyzed."
+      }
+    },
+    {
+      "referenceId": "sleep_ocean_eight_hour",
+      "goal": "sleep",
+      "exact": {
+        "status": "unresolved",
+        "reason": "No exact full Soothing Relaxation ocean recording was found outside previously failed routes."
+      },
+      "replacement": {
+        "status": "replacement_candidate",
+        "title": "Ocean Sound - Mediterranean Sea - Plakias Beach - Crete - Greece, Part 1",
+        "creator": "Dale (field recording credit)",
+        "completeAudioUrl": "https://archive.org/download/ocean-sea-sounds/Ocean_Sound_-_Mediterranean_Sea_-_Plakias_Beach_-_Crete_-_Greece%20by%20Dale%20Part%201.mp3",
+        "evidenceUrl": "https://archive.org/details/ocean-sea-sounds",
+        "popularityEvidence": {
+          "metric": "Internet Archive downloads",
+          "value": 119543,
+          "observedOn": "2026-07-21"
+        },
+        "durationSeconds": 1864.67,
+        "structureFit": "A complete 31-minute ocean field recording suited to wave-swell, masking and low-frequency-balance analysis.",
+        "voiceEvidence": "Field-recording metadata only; machine voice check still required.",
+        "sourceValidation": "Archive.org item page and direct audio URL resolved with HTTP 200 on 2026-07-21; candidate audio not yet machine-analyzed."
+      }
+    },
+    {
+      "referenceId": "sleep_ending_ascent",
+      "goal": "sleep",
+      "exact": {
+        "status": "unresolved",
+        "reason": "Official full source remained unavailable outside the failed streaming routes; remixes and covers were rejected."
+      },
+      "replacement": {
+        "status": "replacement_candidate",
+        "title": "Winter Flowers",
+        "creator": "Poodleplay Arkestra",
+        "completeAudioUrl": "https://archive.org/download/PoodleplayArkestra-TheoryOfColour/1-Winter_Flowers.mp3",
+        "evidenceUrl": "https://archive.org/details/PoodleplayArkestra-TheoryOfColour",
+        "popularityEvidence": {
+          "metric": "Internet Archive downloads",
+          "value": 262009,
+          "observedOn": "2026-07-21"
+        },
+        "durationSeconds": 216.54,
+        "structureFit": "Peaceful ambient work explicitly described as guitars, piano, strings and soundscapes influenced by Eno; suitable for beatless overlap and brightness analysis.",
+        "voiceEvidence": "Instrument list is explicit, but machine voice check remains required.",
+        "sourceValidation": "Archive.org item page and direct audio URL resolved with HTTP 200 on 2026-07-21; candidate audio not yet machine-analyzed."
+      }
+    },
+    {
+      "referenceId": "sleep_saman",
+      "goal": "sleep",
+      "exact": {
+        "status": "unresolved",
+        "reason": "A third-party full upload was found earlier, but independent first-30-second same-recording evidence was insufficient."
+      },
+      "replacement": {
+        "status": "replacement_candidate",
+        "title": "Lontana, dolcemente sospesa",
+        "creator": "Fabrizio Paterlini",
+        "completeAudioUrl": "https://archive.org/download/ca315_fp/03_Lontana_dolcemente_sospesa.mp3",
+        "evidenceUrl": "https://archive.org/details/ca315_fp",
+        "popularityEvidence": {
+          "metric": "Internet Archive downloads",
+          "value": 23388,
+          "observedOn": "2026-07-21"
+        },
+        "durationSeconds": 218.25,
+        "structureFit": "Complete neo-classical ambient piano piece suited to soft-attack, phrase-spacing and decay analysis.",
+        "voiceEvidence": "Release tagged piano solo; machine voice check still required.",
+        "sourceValidation": "Archive.org item page and direct audio URL resolved with HTTP 200 on 2026-07-21; candidate audio not yet machine-analyzed."
+      }
+    },
+    {
+      "referenceId": "sleep_rhubarb",
+      "goal": "sleep",
+      "exact": {
+        "status": "unresolved",
+        "reason": "The available official SoundCloud item was a different recording; no exact alternative source was confirmed."
+      },
+      "replacement": {
+        "status": "replacement_candidate",
+        "title": "You Were In My Dream",
+        "creator": "Candlegravity",
+        "completeAudioUrl": "https://archive.org/download/Vkrsnl037CandlegravityAMomentForMyself/Candlegravity-AMomentForMyself-06-YouWereInMyDream.mp3",
+        "evidenceUrl": "https://archive.org/details/Vkrsnl037CandlegravityAMomentForMyself",
+        "popularityEvidence": {
+          "metric": "Internet Archive downloads",
+          "value": 261437,
+          "observedOn": "2026-07-21"
+        },
+        "durationSeconds": 407,
+        "structureFit": "Complete ambient soundscape with long-form electronic texture; candidate for static-harmony and synthetic-fatigue analysis.",
+        "voiceEvidence": "Release described as electronica, downtempo, ambient beats and soundscapes; machine voice check required.",
+        "sourceValidation": "Archive.org item page and direct audio URL resolved with HTTP 200 on 2026-07-21; candidate audio not yet machine-analyzed."
+      }
+    },
+    {
+      "referenceId": "sleep_dream_1",
+      "goal": "sleep",
+      "exact": {
+        "status": "unresolved",
+        "reason": "No full exact source was found outside the failed official streaming route."
+      },
+      "replacement": {
+        "status": "replacement_candidate",
+        "title": "lodge",
+        "creator": "Nest (Otto Totland / Huw Roberts release)",
+        "completeAudioUrl": "https://archive.org/download/ser013/ser013_01_nest_-_lodge.mp3",
+        "evidenceUrl": "https://archive.org/details/ser013",
+        "popularityEvidence": {
+          "metric": "Internet Archive downloads",
+          "value": 35989,
+          "observedOn": "2026-07-21"
+        },
+        "durationSeconds": 234.69,
+        "structureFit": "Complete post-classical ambient piece from a piano/classical/ambient release; candidate for low-motion structured-sleep form.",
+        "voiceEvidence": "Release tagged piano, classical and ambient; machine voice check required.",
+        "sourceValidation": "Archive.org item page and direct audio URL resolved with HTTP 200 on 2026-07-21; candidate audio not yet machine-analyzed."
+      }
+    },
+    {
+      "referenceId": "sleep_first_light",
+      "goal": "sleep",
+      "exact": {
+        "status": "unresolved",
+        "reason": "No exact full Harold Budd/Brian Eno recording source was found; radio programmes were rejected."
+      },
+      "replacement": {
+        "status": "replacement_candidate",
+        "title": "Deep Pond",
+        "creator": "East Forest",
+        "completeAudioUrl": "https://archive.org/download/EastForest-TheEducationOfTheIndividualSoul/08DeepPond.mp3",
+        "evidenceUrl": "https://archive.org/details/EastForest-TheEducationOfTheIndividualSoul",
+        "popularityEvidence": {
+          "metric": "Internet Archive downloads",
+          "value": 300147,
+          "observedOn": "2026-07-21"
+        },
+        "durationSeconds": 216.45,
+        "structureFit": "Complete ambient-piano soundscape using original field recordings; candidate for piano-pad balance and low-urgency analysis.",
+        "voiceEvidence": "Album description says field recordings and melodic soundscapes; machine voice check required.",
+        "sourceValidation": "Archive.org item page and direct audio URL resolved with HTTP 200 on 2026-07-21; candidate audio not yet machine-analyzed."
+      }
+    },
+    {
+      "referenceId": "calm_piano_guitar_10h",
+      "goal": "calm",
+      "classification": "replacement_candidate",
+      "title": "Beautiful Relaxing Music Peaceful Piano Music & Guitar Music (Sunny Mornings)",
+      "creator": "Soothing Relaxation",
+      "url": "https://soundcloud.com/soothingrelaxation/beautiful-relaxing-music-peaceful-piano-music-guitar-music-sunny-mornings-by-peder-b",
+      "sourceAccess": "SoundCloud HLS full stream, 11018.955 seconds",
+      "heatEvidence": {
+        "platform": "SoundCloud",
+        "plays": 472252,
+        "likes": 4752,
+        "observedVia": "yt-dlp metadata",
+        "observedOn": "2026-07-21"
+      },
+      "structureFit": "10-hour continuous piano/guitar ambient bed; long-form continuity and low event density fit the slot.",
+      "identity": {
+        "exactReferenceConfirmed": false,
+        "first30VerificationRequired": true
+      }
+    },
+    {
+      "referenceId": "calm_relaxing_guitar_3h",
+      "goal": "calm",
+      "classification": "replacement_candidate",
+      "title": "Beautiful Relaxing Music - Flute, Guitar & Piano Music with Birds Singing",
+      "creator": "Soothing Relaxation",
+      "url": "https://soundcloud.com/soothingrelaxation/beautiful-relaxing-music-flute-guitar-piano-music-with-birds-singing",
+      "sourceAccess": "SoundCloud HLS full stream, 11344.456 seconds",
+      "heatEvidence": {
+        "platform": "SoundCloud",
+        "plays": 52538,
+        "likes": 632,
+        "observedVia": "yt-dlp metadata",
+        "observedOn": "2026-07-21"
+      },
+      "structureFit": "Three-hour guitar-led continuous relaxation bed; birds are optional environment layer and should be excluded if pure-instrument mode is required.",
+      "identity": {
+        "exactReferenceConfirmed": false,
+        "first30VerificationRequired": true
+      }
+    },
+    {
+      "referenceId": "calm_meditation_monoman",
+      "goal": "calm",
+      "classification": "replacement_candidate",
+      "title": "Peaceful Relaxing Soothing Meditation Monoman",
+      "creator": "MONOMAN (re-upload account: khine)",
+      "url": "https://soundcloud.com/ph-m-kh-i-405981615/peaceful-relaxing-soothing-meditation-monoman",
+      "sourceAccess": "SoundCloud HLS full stream, 4436.213 seconds; prior transfer was interrupted",
+      "heatEvidence": {
+        "platform": "SoundCloud",
+        "plays": 88807,
+        "likes": 1197,
+        "observedVia": "yt-dlp metadata",
+        "observedOn": "2026-07-21"
+      },
+      "structureFit": "Long uninterrupted meditation bed matching the reference's low-event, ambient-piano slot.",
+      "identity": {
+        "exactReferenceConfirmed": false,
+        "first30VerificationRequired": true,
+        "reason": "Uploader is not the original artist."
+      }
+    },
+    {
+      "referenceId": "calm_raga_yaman_flute",
+      "goal": "calm",
+      "classification": "replacement_candidate",
+      "title": "Pandit Hariprasad Chaurasia At Ramakrishna Mission Delhi 2014 01 19",
+      "creator": "Hariprasad Chaurasia",
+      "url": "https://archive.org/details/PanditHariprasadChaurasiaAtRamakrishnaMissionDelhi20140119",
+      "sourceAccess": "Internet Archive complete public audio; downloadable files listed in item",
+      "heatEvidence": {
+        "platform": "Internet Archive",
+        "downloads": 11266,
+        "observedVia": "Archive advanced search",
+        "observedOn": "2026-07-21"
+      },
+      "structureFit": "Full-length live bansuri performance with alap-like free-time passages; appropriate structural replacement for a Raga Yaman flute meditation slot, but raga identity must be checked.",
+      "identity": {
+        "exactReferenceConfirmed": false,
+        "first30VerificationRequired": true
+      }
+    },
+    {
+      "referenceId": "calm_silk_road",
+      "goal": "calm",
+      "classification": "exact",
+      "title": "Celestial Scenery: Silk Road Legend, Volume 1",
+      "creator": "Kitaro",
+      "url": "https://kitaro.bandcamp.com/album/celestial-scenery-silk-road-legend-volume-1",
+      "sourceAccess": "Official Kitaro Bandcamp album with complete track list and playable full tracks",
+      "heatEvidence": {
+        "platform": "YouTube reference",
+        "visibleViews": 7891257,
+        "referenceUrl": "https://www.youtube.com/watch?v=mOtwSirCTHo",
+        "observedOn": "2026-07-21"
+      },
+      "structureFit": "Official album title and track sequence directly match the selected Silk Road Legend Volume 1 reference; synth/East Asian instrumental blend is preserved.",
+      "identity": {
+        "exactReferenceConfirmed": true,
+        "first30VerificationRequired": true
+      }
+    },
+    {
+      "referenceId": "calm_meditation_no_1",
+      "goal": "calm",
+      "classification": "replacement_candidate",
+      "title": "Unicorns In Paradise (Side A)",
+      "creator": "Laraaji",
+      "url": "https://laraaji.bandcamp.com/track/unicorns-in-paradise-side-a-2",
+      "sourceAccess": "Official Laraaji Bandcamp full track",
+      "heatEvidence": {
+        "platform": "YouTube reference artist signal",
+        "referenceVisibleViews": 145638,
+        "referenceUrl": "https://www.youtube.com/watch?v=X6DxwTi2FNU",
+        "replacementQuantitativePlays": null,
+        "observedOn": "2026-07-21"
+      },
+      "structureFit": "Official zither/electronic-sustain work with extended ambient continuity; good structural replacement for Meditation No. 1, but heat for this specific replacement is not quantified.",
+      "identity": {
+        "exactReferenceConfirmed": false,
+        "first30VerificationRequired": true,
+        "reason": "Different Laraaji composition; exact Meditation No. 1 full source was not downloadable."
+      }
+    },
+    {
+      "referenceId": "focus_affection",
+      "goal": "focus",
+      "replacement": {
+        "title": "solitude. [full album]",
+        "creator": "jinsang",
+        "completeAudioUrl": "https://jinsangbeats.bandcamp.com/album/solitude",
+        "completeAudioProvider": "artist official Bandcamp",
+        "heatEvidence": {
+          "metric": "SoundCloud plays",
+          "value": 968405,
+          "observedOn": "2026-07-21",
+          "evidenceUrl": "https://soundcloud.com/jinsangbeats/solitude-full-album"
+        },
+        "instrumentalEvidence": "Artist-published instrumental lo-fi beat album; voice absence must still be machine-checked before promotion.",
+        "structureFit": "Same artist and lo-fi vocabulary as Affection; useful for studying masking noise, short-loop variation, stable drums, and long-session sequencing.",
+        "status": "replacement_candidate_only"
+      }
+    },
+    {
+      "referenceId": "focus_work_study",
+      "goal": "focus",
+      "replacement": {
+        "title": "Missing You",
+        "creator": "Purrple Cat",
+        "completeAudioUrl": "https://purrplecat.bandcamp.com/track/missing-you",
+        "completeAudioProvider": "artist official Bandcamp",
+        "durationSeconds": 227.51,
+        "heatEvidence": {
+          "metric": "SoundCloud plays",
+          "value": 68004,
+          "observedOn": "2026-07-21",
+          "evidenceUrl": "https://soundcloud.com/purrplecat/missing-you"
+        },
+        "instrumentalEvidence": "Official lo-fi instrumental release; voice absence must still be machine-checked before promotion.",
+        "structureFit": "Stable low-intensity lo-fi pulse and concise repeatable form fit the work/study slot; useful for measuring beat salience, masking texture, and hook fatigue.",
+        "status": "replacement_candidate_only"
+      }
+    },
+    {
+      "referenceId": "focus_deep_ambient_12h",
+      "goal": "focus",
+      "replacement": {
+        "title": "Love On A Real Train",
+        "creator": "State Azure",
+        "completeAudioUrl": "https://stateazure.bandcamp.com/track/love-on-a-real-train",
+        "completeAudioProvider": "artist official Bandcamp",
+        "durationSeconds": 504.963,
+        "heatEvidence": {
+          "metric": "SoundCloud plays",
+          "value": 192360,
+          "observedOn": "2026-07-21",
+          "evidenceUrl": "https://soundcloud.com/state-azure/tangerine-deam-love-on-a-real-train-live-cover"
+        },
+        "instrumentalEvidence": "Instrumental synthesizer performance; voice absence must still be machine-checked before promotion.",
+        "structureFit": "Long, stable sequencer-driven ambient form fits the deep-focus structure slot; useful for pulse consistency, slow timbral evolution, and low-interruption energy arcs.",
+        "status": "replacement_candidate_only",
+        "caveat": "This is a cover and only 8.4 minutes, so it calibrates the structural slot but does not replace 12-hour endurance analysis. Heat evidence belongs to the official artist SoundCloud upload of the same performance."
+      }
+    }
+  ]
+}

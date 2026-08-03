@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "observedOn": "2026-07-21",
+  "purpose": "select long-form Meditation, Sleep, and Focus references for structural and acoustic study; not medical efficacy evidence",
+  "globalRules": {
+    "voicePolicy": "voice_free_required",
+    "browserReviewRequired": true,
+    "requiredChecks": ["beginning", "middle", "end", "voice_presence", "startle_events", "loop_fatigue", "foreground_salience"]
+  },
+  "goals": {
+    "meditation": {
+      "sourceGoal": "calm",
+      "minimumDurationSeconds": 1800,
+      "primary": [
+        {"referenceId":"calm_magical_night","reason":"3 小时环境音乐，元数据明确包含 meditation 与 yoga。","risk":"检查循环和高频装饰。"},
+        {"referenceId":"calm_zen_water","reason":"Zen、water 与 meditation 的长时组合，可研究自然声和音乐比例。","risk":"水声可能压过音乐层。"},
+        {"referenceId":"calm_celtic_dance_of_life","reason":"补充凯尔特调式和旋律型冥想样本。","risk":"旋律可能过于前景化。"},
+        {"referenceId":"calm_northern_lights","reason":"Deep ambient、弱节拍和慢变化，适合空间型冥想。","risk":"排除低频蜂鸣与合成器疲劳。"},
+        {"referenceId":"calm_planet_earth","reason":"长时环境声场与稳定和声，适合自然意象型放松。","risk":"可能更接近背景音乐。"},
+        {"referenceId":"calm_no_loops","reason":"明确 no loops 且包含多种乐器，可研究非固定循环的长时组织。","risk":"段落与风格跨度可能过大。"}
+      ],
+      "secondary": [
+        {"referenceId":"calm_piano_vol3","reason":"54 分钟钢琴合集，适合轻度冥想，不作为深度冥想首选。","risk":"旋律注意力较高。"},
+        {"referenceId":"calm_sunny_mornings","reason":"钢琴、吉他与自然声，适合日间 Calm。","risk":"鸟声和明亮音色可能干扰内观。"}
+      ]
+    },
+    "sleep": {
+      "sourceGoal": "sleep",
+      "minimumDurationSeconds": 1800,
+      "primary": [
+        {"referenceId":"sleep_blue_night","reason":"约 3 小时，软钢琴与海浪，播放量高，可研究音乐与遮蔽声平衡。","risk":"检查浪涌和钢琴主题是否唤醒注意。"},
+        {"referenceId":"sleep_deep_68","reason":"约 3 小时、低密度环境型长音频，播放量高。","risk":"确认是否只是短曲机械重复。"},
+        {"referenceId":"sleep_moonlight_12h","reason":"接近 12 小时，适合研究整夜持续性与循环疲劳。","risk":"长时版本可能高度重复。"},
+        {"referenceId":"sleep_quiet_night","reason":"约 3 小时深睡环境音乐，目标明确。","risk":"检查开头与段落转折是否过强。"},
+        {"referenceId":"sleep_tranquility","reason":"约 3.2 小时，睡眠与冥想之间的低刺激过渡样本。","risk":"检查情绪抬升和大混响。"},
+        {"referenceId":"sleep_rain_you_me_long","reason":"约 3 小时软雨与钢琴，且用户已在 YouTube 页面确认对应长版本。","risk":"雨滴瞬态与熟悉旋律可能吸引注意。"}
+      ],
+      "secondary": [
+        {"referenceId":"sleep_midnight_calm","reason":"约 3 小时低刺激环境睡眠样本。","risk":"播放量和外部行为证据较弱。"},
+        {"referenceId":"sleep_rain_slow_day","reason":"约 3 小时雨声与钢琴的另一种配比。","risk":"与 You & Me 雨声版本可能过于相似。"}
+      ]
+    },
+    "focus": {
+      "sourceGoal": "focus",
+      "minimumDurationSeconds": 3600,
+      "primary": [
+        {"referenceId":"focus_greenred_concentration","reason":"约 114 分钟，目标明确为学习与专注。","risk":"需要忽略未经验证的 binaural 功效表述。"},
+        {"referenceId":"focus_lofi_house","reason":"约 60 分钟，作者明确说明全器乐、无人声。","risk":"House 鼓点可能对部分用户过强。"},
+        {"referenceId":"focus_flow_617","reason":"约 76 分钟，器乐电子与 ambient 组合，适合主动专注。","risk":"Techno/House 强度需分级。"},
+        {"referenceId":"focus_flow_61","reason":"约 74 分钟，钢琴、ambient 和 synth，可代表较柔和的专注路径。","risk":"尾部休息段可能改变声场。"},
+        {"referenceId":"focus_flow_67","reason":"约 3.8 小时，包含多个 60 分钟工作段，可研究长任务能量管理。","risk":"段间自然声休息会破坏连续性。"},
+        {"referenceId":"focus_deep_work","reason":"约 62 分钟，明确定位 deep work 与 ambient study。","risk":"播放量较低，需以声音质量而非标题判断。"}
+      ],
+      "secondary": [
+        {"referenceId":"focus_flow_62","reason":"约 73 分钟 Dub Techno/House，可作为高脉冲专注分支。","risk":"节拍可能过强。"},
+        {"referenceId":"focus_flow_63","reason":"约 76 分钟 Melodic Techno/Ambient，可作为冲刺型专注分支。","risk":"旋律发展和鼓点可能分散注意。"}
+      ]
+    }
+  },
+  "releaseDecision": "pending_browser_listen_and_acoustic_review"
+}

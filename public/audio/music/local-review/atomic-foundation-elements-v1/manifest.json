@@ -1,0 +1,2217 @@
+{
+  "schemaVersion": "1.0.0",
+  "batchId": "atomic-foundation-elements-v1",
+  "generatedAt": "2026-08-03T03:15:18.153271+00:00",
+  "status": "atomic_foundation_elements_pending_human_review",
+  "productionAllowed": false,
+  "formalUsableCount": 0,
+  "humanPassCount": 0,
+  "purpose": "Review true foundational elements instead of finished or semi-finished music candidates.",
+  "hardRules": [
+    "Do not review these as finished songs.",
+    "Every audio item must be short: single notes, chord cells, motifs, or support gestures.",
+    "Symbolic elements are structure data, not audio.",
+    "No Lyria, no finished songs, no voice, no drums, no therapeutic claims."
+  ],
+  "counts": {
+    "audioElements": 27,
+    "symbolicElements": 50,
+    "totalElements": 77,
+    "singleNotes": 12,
+    "harmonyCells": 6,
+    "shortMotifs": 6,
+    "bassSupport": 3
+  },
+  "reviewUrl": "/review/atomic-foundation-elements-v1/index.html",
+  "audioElements": [
+    {
+      "elementId": "atom_note_piano_c3",
+      "elementType": "single_note",
+      "goal": "sleep",
+      "instrument": "piano",
+      "instrumentSourceId": "vcsl_kawai_soft_piano",
+      "notes": [
+        "C3"
+      ],
+      "businessQuestion": "这个单音音色能不能作为基础乐器源？注意听起音、尾音、刺耳感和音色身份。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_note_piano_c3.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_piano_c3.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_piano_c3.mp3",
+      "durationSeconds": 3.2,
+      "analysis": {
+        "durationSeconds": 3.2,
+        "integratedLufs": -28.5,
+        "peakDbfs": -14.03,
+        "rawOnsetCount": 4,
+        "onsetDensityPerSecond": 1.25,
+        "p99RmsJumpDb": -0.61,
+        "spectralCentroidHz": 729.48,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof",
+        "too_many_onsets_for_low_arousal_default"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_note_piano_e3",
+      "elementType": "single_note",
+      "goal": "sleep",
+      "instrument": "piano",
+      "instrumentSourceId": "vcsl_kawai_soft_piano",
+      "notes": [
+        "E3"
+      ],
+      "businessQuestion": "这个单音音色能不能作为基础乐器源？注意听起音、尾音、刺耳感和音色身份。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_note_piano_e3.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_piano_e3.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_piano_e3.mp3",
+      "durationSeconds": 3.2,
+      "analysis": {
+        "durationSeconds": 3.2,
+        "integratedLufs": -28.5,
+        "peakDbfs": -18.56,
+        "rawOnsetCount": 4,
+        "onsetDensityPerSecond": 1.25,
+        "p99RmsJumpDb": -6.13,
+        "spectralCentroidHz": 1014.2,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof",
+        "too_many_onsets_for_low_arousal_default"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_note_piano_g3",
+      "elementType": "single_note",
+      "goal": "sleep",
+      "instrument": "piano",
+      "instrumentSourceId": "vcsl_kawai_soft_piano",
+      "notes": [
+        "G3"
+      ],
+      "businessQuestion": "这个单音音色能不能作为基础乐器源？注意听起音、尾音、刺耳感和音色身份。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_note_piano_g3.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_piano_g3.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_piano_g3.mp3",
+      "durationSeconds": 3.2,
+      "analysis": {
+        "durationSeconds": 3.2,
+        "integratedLufs": -28.99,
+        "peakDbfs": -11.39,
+        "rawOnsetCount": 4,
+        "onsetDensityPerSecond": 1.25,
+        "p99RmsJumpDb": -6.93,
+        "spectralCentroidHz": 1079.47,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof",
+        "too_many_onsets_for_low_arousal_default"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_note_rhodes_c3",
+      "elementType": "single_note",
+      "goal": "calm",
+      "instrument": "rhodes",
+      "instrumentSourceId": "discord_cc0_rhodes",
+      "notes": [
+        "C3"
+      ],
+      "businessQuestion": "这个单音音色能不能作为基础乐器源？注意听起音、尾音、刺耳感和音色身份。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_note_rhodes_c3.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_rhodes_c3.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_rhodes_c3.mp3",
+      "durationSeconds": 3.2,
+      "analysis": {
+        "durationSeconds": 3.2,
+        "integratedLufs": -28.5,
+        "peakDbfs": -18.49,
+        "rawOnsetCount": 1,
+        "onsetDensityPerSecond": 0.3125,
+        "p99RmsJumpDb": -2.35,
+        "spectralCentroidHz": 253.2,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_note_rhodes_e3",
+      "elementType": "single_note",
+      "goal": "calm",
+      "instrument": "rhodes",
+      "instrumentSourceId": "discord_cc0_rhodes",
+      "notes": [
+        "E3"
+      ],
+      "businessQuestion": "这个单音音色能不能作为基础乐器源？注意听起音、尾音、刺耳感和音色身份。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_note_rhodes_e3.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_rhodes_e3.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_rhodes_e3.mp3",
+      "durationSeconds": 3.2,
+      "analysis": {
+        "durationSeconds": 3.2,
+        "integratedLufs": -28.5,
+        "peakDbfs": -18.46,
+        "rawOnsetCount": 1,
+        "onsetDensityPerSecond": 0.3125,
+        "p99RmsJumpDb": -2.29,
+        "spectralCentroidHz": 317.39,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_note_rhodes_g3",
+      "elementType": "single_note",
+      "goal": "calm",
+      "instrument": "rhodes",
+      "instrumentSourceId": "discord_cc0_rhodes",
+      "notes": [
+        "G3"
+      ],
+      "businessQuestion": "这个单音音色能不能作为基础乐器源？注意听起音、尾音、刺耳感和音色身份。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_note_rhodes_g3.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_rhodes_g3.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_rhodes_g3.mp3",
+      "durationSeconds": 3.2,
+      "analysis": {
+        "durationSeconds": 3.2,
+        "integratedLufs": -28.5,
+        "peakDbfs": -21.01,
+        "rawOnsetCount": 1,
+        "onsetDensityPerSecond": 0.3125,
+        "p99RmsJumpDb": -1.27,
+        "spectralCentroidHz": 258.8,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_note_guitar_c3",
+      "elementType": "single_note",
+      "goal": "calm",
+      "instrument": "guitar",
+      "instrumentSourceId": "discord_cc0_guitar",
+      "notes": [
+        "C3"
+      ],
+      "businessQuestion": "这个单音音色能不能作为基础乐器源？注意听起音、尾音、刺耳感和音色身份。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_note_guitar_c3.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_guitar_c3.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_guitar_c3.mp3",
+      "durationSeconds": 3.2,
+      "analysis": {
+        "durationSeconds": 3.2,
+        "integratedLufs": -28.5,
+        "peakDbfs": -15.92,
+        "rawOnsetCount": 2,
+        "onsetDensityPerSecond": 0.625,
+        "p99RmsJumpDb": 8.57,
+        "spectralCentroidHz": 395.21,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_note_guitar_e3",
+      "elementType": "single_note",
+      "goal": "calm",
+      "instrument": "guitar",
+      "instrumentSourceId": "discord_cc0_guitar",
+      "notes": [
+        "E3"
+      ],
+      "businessQuestion": "这个单音音色能不能作为基础乐器源？注意听起音、尾音、刺耳感和音色身份。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_note_guitar_e3.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_guitar_e3.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_guitar_e3.mp3",
+      "durationSeconds": 3.2,
+      "analysis": {
+        "durationSeconds": 3.2,
+        "integratedLufs": -28.5,
+        "peakDbfs": -10.07,
+        "rawOnsetCount": 1,
+        "onsetDensityPerSecond": 0.3125,
+        "p99RmsJumpDb": -3.08,
+        "spectralCentroidHz": 608.19,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_note_guitar_g3",
+      "elementType": "single_note",
+      "goal": "calm",
+      "instrument": "guitar",
+      "instrumentSourceId": "discord_cc0_guitar",
+      "notes": [
+        "G3"
+      ],
+      "businessQuestion": "这个单音音色能不能作为基础乐器源？注意听起音、尾音、刺耳感和音色身份。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_note_guitar_g3.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_guitar_g3.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_guitar_g3.mp3",
+      "durationSeconds": 3.2,
+      "analysis": {
+        "durationSeconds": 3.2,
+        "integratedLufs": -28.5,
+        "peakDbfs": -15.07,
+        "rawOnsetCount": 2,
+        "onsetDensityPerSecond": 0.625,
+        "p99RmsJumpDb": 12.1,
+        "spectralCentroidHz": 534.71,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_note_bass_c2",
+      "elementType": "single_note",
+      "goal": "focus",
+      "instrument": "bass",
+      "instrumentSourceId": "discord_cc0_bass",
+      "notes": [
+        "C2"
+      ],
+      "businessQuestion": "这个单音音色能不能作为基础乐器源？注意听起音、尾音、刺耳感和音色身份。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_note_bass_c2.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_bass_c2.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_bass_c2.mp3",
+      "durationSeconds": 2.6,
+      "analysis": {
+        "durationSeconds": 2.6,
+        "integratedLufs": -28.5,
+        "peakDbfs": -17.12,
+        "rawOnsetCount": 16,
+        "onsetDensityPerSecond": 6.1538,
+        "p99RmsJumpDb": -0.98,
+        "spectralCentroidHz": 103.2,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_note_bass_gflat2",
+      "elementType": "single_note",
+      "goal": "focus",
+      "instrument": "bass",
+      "instrumentSourceId": "discord_cc0_bass",
+      "notes": [
+        "Gb2"
+      ],
+      "businessQuestion": "这个单音音色能不能作为基础乐器源？注意听起音、尾音、刺耳感和音色身份。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_note_bass_gflat2.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_bass_gflat2.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_bass_gflat2.mp3",
+      "durationSeconds": 2.6,
+      "analysis": {
+        "durationSeconds": 2.6,
+        "integratedLufs": -28.5,
+        "peakDbfs": -15.66,
+        "rawOnsetCount": 1,
+        "onsetDensityPerSecond": 0.3846,
+        "p99RmsJumpDb": -3.14,
+        "spectralCentroidHz": 111.86,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_note_bass_c3",
+      "elementType": "single_note",
+      "goal": "focus",
+      "instrument": "bass",
+      "instrumentSourceId": "discord_cc0_bass",
+      "notes": [
+        "C3"
+      ],
+      "businessQuestion": "这个单音音色能不能作为基础乐器源？注意听起音、尾音、刺耳感和音色身份。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_note_bass_c3.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_bass_c3.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_note_bass_c3.mp3",
+      "durationSeconds": 2.6,
+      "analysis": {
+        "durationSeconds": 2.6,
+        "integratedLufs": -28.5,
+        "peakDbfs": -18.01,
+        "rawOnsetCount": 1,
+        "onsetDensityPerSecond": 0.3846,
+        "p99RmsJumpDb": -1.75,
+        "spectralCentroidHz": 136.01,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_chord_sleep_open_fifth_c_g",
+      "elementType": "harmony_cell",
+      "goal": "sleep",
+      "instrument": "piano",
+      "instrumentSourceId": "vcsl_kawai_soft_piano",
+      "notes": [
+        "C3",
+        "G3"
+      ],
+      "businessQuestion": "这个和声音型能不能作为可复用基础和声？不要按一首歌判断，只判断它是否稳定、舒缓、可组合。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_chord_sleep_open_fifth_c_g.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_chord_sleep_open_fifth_c_g.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_chord_sleep_open_fifth_c_g.mp3",
+      "durationSeconds": 6.5,
+      "analysis": {
+        "durationSeconds": 6.5,
+        "integratedLufs": -29.0,
+        "peakDbfs": -12.46,
+        "rawOnsetCount": 8,
+        "onsetDensityPerSecond": 1.2308,
+        "p99RmsJumpDb": 1.97,
+        "spectralCentroidHz": 602.17,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof",
+        "too_many_onsets_for_low_arousal_default"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_chord_sleep_soft_triad_c",
+      "elementType": "harmony_cell",
+      "goal": "sleep",
+      "instrument": "piano",
+      "instrumentSourceId": "vcsl_kawai_soft_piano",
+      "notes": [
+        "C3",
+        "E3",
+        "G3"
+      ],
+      "businessQuestion": "这个和声音型能不能作为可复用基础和声？不要按一首歌判断，只判断它是否稳定、舒缓、可组合。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_chord_sleep_soft_triad_c.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_chord_sleep_soft_triad_c.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_chord_sleep_soft_triad_c.mp3",
+      "durationSeconds": 6.5,
+      "analysis": {
+        "durationSeconds": 6.5,
+        "integratedLufs": -28.71,
+        "peakDbfs": -11.51,
+        "rawOnsetCount": 29,
+        "onsetDensityPerSecond": 4.4615,
+        "p99RmsJumpDb": 5.57,
+        "spectralCentroidHz": 654.07,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof",
+        "too_many_onsets_for_low_arousal_default"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_chord_calm_open_fifth_d_a",
+      "elementType": "harmony_cell",
+      "goal": "calm",
+      "instrument": "rhodes",
+      "instrumentSourceId": "discord_cc0_rhodes",
+      "notes": [
+        "D3",
+        "A3"
+      ],
+      "businessQuestion": "这个和声音型能不能作为可复用基础和声？不要按一首歌判断，只判断它是否稳定、舒缓、可组合。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_chord_calm_open_fifth_d_a.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_chord_calm_open_fifth_d_a.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_chord_calm_open_fifth_d_a.mp3",
+      "durationSeconds": 6.5,
+      "analysis": {
+        "durationSeconds": 6.5,
+        "integratedLufs": -29.0,
+        "peakDbfs": -16.68,
+        "rawOnsetCount": 1,
+        "onsetDensityPerSecond": 0.1538,
+        "p99RmsJumpDb": -1.14,
+        "spectralCentroidHz": 213.93,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_chord_calm_soft_triad_f",
+      "elementType": "harmony_cell",
+      "goal": "calm",
+      "instrument": "rhodes",
+      "instrumentSourceId": "discord_cc0_rhodes",
+      "notes": [
+        "F3",
+        "A3",
+        "C4"
+      ],
+      "businessQuestion": "这个和声音型能不能作为可复用基础和声？不要按一首歌判断，只判断它是否稳定、舒缓、可组合。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_chord_calm_soft_triad_f.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_chord_calm_soft_triad_f.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_chord_calm_soft_triad_f.mp3",
+      "durationSeconds": 6.5,
+      "analysis": {
+        "durationSeconds": 6.5,
+        "integratedLufs": -29.0,
+        "peakDbfs": -17.14,
+        "rawOnsetCount": 3,
+        "onsetDensityPerSecond": 0.4615,
+        "p99RmsJumpDb": -0.46,
+        "spectralCentroidHz": 233.96,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_chord_calm_guitar_open_c",
+      "elementType": "harmony_cell",
+      "goal": "calm",
+      "instrument": "guitar",
+      "instrumentSourceId": "discord_cc0_guitar",
+      "notes": [
+        "C3",
+        "G3",
+        "E4"
+      ],
+      "businessQuestion": "这个和声音型能不能作为可复用基础和声？不要按一首歌判断，只判断它是否稳定、舒缓、可组合。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_chord_calm_guitar_open_c.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_chord_calm_guitar_open_c.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_chord_calm_guitar_open_c.mp3",
+      "durationSeconds": 6.5,
+      "analysis": {
+        "durationSeconds": 6.5,
+        "integratedLufs": -29.0,
+        "peakDbfs": -16.61,
+        "rawOnsetCount": 7,
+        "onsetDensityPerSecond": 1.0769,
+        "p99RmsJumpDb": 8.84,
+        "spectralCentroidHz": 468.85,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof",
+        "too_many_onsets_for_low_arousal_default"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_chord_focus_neutral_cell_cg",
+      "elementType": "harmony_cell",
+      "goal": "focus",
+      "instrument": "rhodes",
+      "instrumentSourceId": "discord_cc0_rhodes",
+      "notes": [
+        "C3",
+        "G3",
+        "A3"
+      ],
+      "businessQuestion": "这个和声音型能不能作为可复用基础和声？不要按一首歌判断，只判断它是否稳定、舒缓、可组合。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_chord_focus_neutral_cell_cg.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_chord_focus_neutral_cell_cg.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_chord_focus_neutral_cell_cg.mp3",
+      "durationSeconds": 6.5,
+      "analysis": {
+        "durationSeconds": 6.5,
+        "integratedLufs": -29.0,
+        "peakDbfs": -16.25,
+        "rawOnsetCount": 1,
+        "onsetDensityPerSecond": 0.1538,
+        "p99RmsJumpDb": -0.91,
+        "spectralCentroidHz": 203.79,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_motif_sleep_two_note_release",
+      "elementType": "short_motif",
+      "goal": "sleep",
+      "instrument": "piano",
+      "instrumentSourceId": "vcsl_kawai_soft_piano",
+      "notes": [
+        "F3",
+        "C3"
+      ],
+      "businessQuestion": "这个短动机是不是可复用？重点判断它是否太像固定旋律、是否容易听腻、是否能被变形。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_motif_sleep_two_note_release.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_motif_sleep_two_note_release.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_motif_sleep_two_note_release.mp3",
+      "durationSeconds": 5.3,
+      "analysis": {
+        "durationSeconds": 5.3,
+        "integratedLufs": -28.0,
+        "peakDbfs": -15.81,
+        "rawOnsetCount": 3,
+        "onsetDensityPerSecond": 0.566,
+        "p99RmsJumpDb": 42.45,
+        "spectralCentroidHz": 380.08,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_motif_sleep_falling_1_micro",
+      "elementType": "short_motif",
+      "goal": "sleep",
+      "instrument": "piano",
+      "instrumentSourceId": "vcsl_kawai_soft_piano",
+      "notes": [
+        "G3",
+        "E3",
+        "D3",
+        "C3"
+      ],
+      "businessQuestion": "这个短动机是不是可复用？重点判断它是否太像固定旋律、是否容易听腻、是否能被变形。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_motif_sleep_falling_1_micro.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_motif_sleep_falling_1_micro.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_motif_sleep_falling_1_micro.mp3",
+      "durationSeconds": 6.3,
+      "analysis": {
+        "durationSeconds": 6.3,
+        "integratedLufs": -28.0,
+        "peakDbfs": -15.45,
+        "rawOnsetCount": 7,
+        "onsetDensityPerSecond": 1.1111,
+        "p99RmsJumpDb": 36.1,
+        "spectralCentroidHz": 329.08,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof",
+        "too_many_onsets_for_low_arousal_default"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_motif_calm_breath_arch_micro",
+      "elementType": "short_motif",
+      "goal": "calm",
+      "instrument": "rhodes",
+      "instrumentSourceId": "discord_cc0_rhodes",
+      "notes": [
+        "E3",
+        "G3",
+        "A3",
+        "G3",
+        "E3"
+      ],
+      "businessQuestion": "这个短动机是不是可复用？重点判断它是否太像固定旋律、是否容易听腻、是否能被变形。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_motif_calm_breath_arch_micro.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_motif_calm_breath_arch_micro.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_motif_calm_breath_arch_micro.mp3",
+      "durationSeconds": 5.7,
+      "analysis": {
+        "durationSeconds": 5.7,
+        "integratedLufs": -28.0,
+        "peakDbfs": -18.42,
+        "rawOnsetCount": 5,
+        "onsetDensityPerSecond": 0.8772,
+        "p99RmsJumpDb": 4.55,
+        "spectralCentroidHz": 274.65,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_motif_calm_guitar_open_return",
+      "elementType": "short_motif",
+      "goal": "calm",
+      "instrument": "guitar",
+      "instrumentSourceId": "discord_cc0_guitar",
+      "notes": [
+        "C4",
+        "G3",
+        "E4"
+      ],
+      "businessQuestion": "这个短动机是不是可复用？重点判断它是否太像固定旋律、是否容易听腻、是否能被变形。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_motif_calm_guitar_open_return.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_motif_calm_guitar_open_return.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_motif_calm_guitar_open_return.mp3",
+      "durationSeconds": 5.5,
+      "analysis": {
+        "durationSeconds": 5.5,
+        "integratedLufs": -28.0,
+        "peakDbfs": -13.74,
+        "rawOnsetCount": 3,
+        "onsetDensityPerSecond": 0.5455,
+        "p99RmsJumpDb": 33.41,
+        "spectralCentroidHz": 481.19,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_motif_focus_common_tone_cell",
+      "elementType": "short_motif",
+      "goal": "focus",
+      "instrument": "rhodes",
+      "instrumentSourceId": "discord_cc0_rhodes",
+      "notes": [
+        "A3",
+        "C4",
+        "A3",
+        "E4"
+      ],
+      "businessQuestion": "这个短动机是不是可复用？重点判断它是否太像固定旋律、是否容易听腻、是否能被变形。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_motif_focus_common_tone_cell.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_motif_focus_common_tone_cell.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_motif_focus_common_tone_cell.mp3",
+      "durationSeconds": 3.83,
+      "analysis": {
+        "durationSeconds": 3.83,
+        "integratedLufs": -28.0,
+        "peakDbfs": -19.05,
+        "rawOnsetCount": 4,
+        "onsetDensityPerSecond": 1.0444,
+        "p99RmsJumpDb": 3.95,
+        "spectralCentroidHz": 272.83,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_motif_focus_two_note_anchor",
+      "elementType": "short_motif",
+      "goal": "focus",
+      "instrument": "rhodes",
+      "instrumentSourceId": "discord_cc0_rhodes",
+      "notes": [
+        "G3",
+        "D4",
+        "G3"
+      ],
+      "businessQuestion": "这个短动机是不是可复用？重点判断它是否太像固定旋律、是否容易听腻、是否能被变形。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_motif_focus_two_note_anchor.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_motif_focus_two_note_anchor.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_motif_focus_two_note_anchor.mp3",
+      "durationSeconds": 3.97,
+      "analysis": {
+        "durationSeconds": 3.97,
+        "integratedLufs": -28.0,
+        "peakDbfs": -19.94,
+        "rawOnsetCount": 3,
+        "onsetDensityPerSecond": 0.7557,
+        "p99RmsJumpDb": 6.57,
+        "spectralCentroidHz": 249.77,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_bass_sleep_low_anchor_c",
+      "elementType": "bass_support",
+      "goal": "sleep",
+      "instrument": "bass",
+      "instrumentSourceId": "discord_cc0_bass",
+      "notes": [
+        "C2"
+      ],
+      "businessQuestion": "这个低音支撑是否能做底层锚点？不能有鼓点感、不能像循环节拍、不能抢主层。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_bass_sleep_low_anchor_c.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_bass_sleep_low_anchor_c.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_bass_sleep_low_anchor_c.mp3",
+      "durationSeconds": 3.6,
+      "analysis": {
+        "durationSeconds": 3.6,
+        "integratedLufs": -28.0,
+        "peakDbfs": -15.65,
+        "rawOnsetCount": 3,
+        "onsetDensityPerSecond": 0.8333,
+        "p99RmsJumpDb": 1.18,
+        "spectralCentroidHz": 72.95,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_bass_sleep_fifth_anchor_cg",
+      "elementType": "bass_support",
+      "goal": "sleep",
+      "instrument": "bass",
+      "instrumentSourceId": "discord_cc0_bass",
+      "notes": [
+        "C2",
+        "G2"
+      ],
+      "businessQuestion": "这个低音支撑是否能做底层锚点？不能有鼓点感、不能像循环节拍、不能抢主层。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_bass_sleep_fifth_anchor_cg.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_bass_sleep_fifth_anchor_cg.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_bass_sleep_fifth_anchor_cg.mp3",
+      "durationSeconds": 5.5,
+      "analysis": {
+        "durationSeconds": 5.5,
+        "integratedLufs": -28.0,
+        "peakDbfs": -14.37,
+        "rawOnsetCount": 4,
+        "onsetDensityPerSecond": 0.7273,
+        "p99RmsJumpDb": 45.37,
+        "spectralCentroidHz": 79.82,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    },
+    {
+      "elementId": "atom_bass_focus_low_pulse_free_anchor",
+      "elementType": "bass_support",
+      "goal": "focus",
+      "instrument": "bass",
+      "instrumentSourceId": "discord_cc0_bass",
+      "notes": [
+        "C2",
+        "Gb2",
+        "C3"
+      ],
+      "businessQuestion": "这个低音支撑是否能做底层锚点？不能有鼓点感、不能像循环节拍、不能抢主层。",
+      "reviewMode": "element_usability_not_music_preference",
+      "masterAudioPath": "public/audio/music/local-review/atomic-foundation-elements-v1/masters/atom_bass_focus_low_pulse_free_anchor.wav",
+      "preparedAudioUrl": "/audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_bass_focus_low_pulse_free_anchor.mp3",
+      "reviewAudioSrc": "../../audio/music/local-review/atomic-foundation-elements-v1/prepared/atom_bass_focus_low_pulse_free_anchor.mp3",
+      "durationSeconds": 4.7,
+      "analysis": {
+        "durationSeconds": 4.7,
+        "integratedLufs": -28.0,
+        "peakDbfs": -15.39,
+        "rawOnsetCount": 4,
+        "onsetDensityPerSecond": 0.8511,
+        "p99RmsJumpDb": 9.39,
+        "spectralCentroidHz": 85.61,
+        "humanVoiceProbability": "not_applicable_local_instrument_samples_no_voice_source",
+        "drumProbability": "not_applicable_no_percussion_events"
+      },
+      "machineStatus": "review_required",
+      "failures": [
+        "duration_too_short_for_form_proof"
+      ],
+      "humanListeningStatus": "pending",
+      "formalUsable": false,
+      "productionAllowed": false
+    }
+  ],
+  "symbolicElements": [
+    {
+      "elementId": "symbolic_harmony_sleep_calm_c_am_f_c",
+      "elementType": "symbolic_harmony_template",
+      "goal": "sleep",
+      "family": "sleep_descent",
+      "chords": [
+        [
+          "C2",
+          "G2",
+          "E3"
+        ],
+        [
+          "A2",
+          "E3",
+          "C4"
+        ],
+        [
+          "F2",
+          "C3",
+          "A3"
+        ],
+        [
+          "C2",
+          "G2",
+          "E3"
+        ]
+      ],
+      "businessQuestion": "这个和声模板是否适合作为可变化的作曲材料？它不是音频，也不是一首歌。",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_harmony_sleep_open_c_f_dm_g",
+      "elementType": "symbolic_harmony_template",
+      "goal": "sleep",
+      "family": "sleep_open",
+      "chords": [
+        [
+          "C2",
+          "G2",
+          "E3"
+        ],
+        [
+          "F2",
+          "C3",
+          "A3"
+        ],
+        [
+          "D2",
+          "A2",
+          "F3"
+        ],
+        [
+          "G2",
+          "D3",
+          "B3"
+        ]
+      ],
+      "businessQuestion": "这个和声模板是否适合作为可变化的作曲材料？它不是音频，也不是一首歌。",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_harmony_sleep_modal_am_f_c_g",
+      "elementType": "symbolic_harmony_template",
+      "goal": "sleep",
+      "family": "sleep_modal",
+      "chords": [
+        [
+          "A2",
+          "E3",
+          "C4"
+        ],
+        [
+          "F2",
+          "C3",
+          "A3"
+        ],
+        [
+          "C2",
+          "G2",
+          "E3"
+        ],
+        [
+          "G2",
+          "D3",
+          "B3"
+        ]
+      ],
+      "businessQuestion": "这个和声模板是否适合作为可变化的作曲材料？它不是音频，也不是一首歌。",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_harmony_calm_c_f_am_g",
+      "elementType": "symbolic_harmony_template",
+      "goal": "calm",
+      "family": "calm_grounded",
+      "chords": [
+        [
+          "C3",
+          "G3",
+          "E4"
+        ],
+        [
+          "F2",
+          "C3",
+          "A3"
+        ],
+        [
+          "A2",
+          "E3",
+          "C4"
+        ],
+        [
+          "G2",
+          "D3",
+          "B3"
+        ]
+      ],
+      "businessQuestion": "这个和声模板是否适合作为可变化的作曲材料？它不是音频，也不是一首歌。",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_harmony_calm_dm_g_c_am",
+      "elementType": "symbolic_harmony_template",
+      "goal": "calm",
+      "family": "calm_call_answer",
+      "chords": [
+        [
+          "D2",
+          "A2",
+          "F3"
+        ],
+        [
+          "G2",
+          "D3",
+          "B3"
+        ],
+        [
+          "C3",
+          "G3",
+          "E4"
+        ],
+        [
+          "A2",
+          "E3",
+          "C4"
+        ]
+      ],
+      "businessQuestion": "这个和声模板是否适合作为可变化的作曲材料？它不是音频，也不是一首歌。",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_harmony_calm_f_c_g_am",
+      "elementType": "symbolic_harmony_template",
+      "goal": "calm",
+      "family": "calm_open",
+      "chords": [
+        [
+          "F2",
+          "C3",
+          "A3"
+        ],
+        [
+          "C3",
+          "G3",
+          "E4"
+        ],
+        [
+          "G2",
+          "D3",
+          "B3"
+        ],
+        [
+          "A2",
+          "E3",
+          "C4"
+        ]
+      ],
+      "businessQuestion": "这个和声模板是否适合作为可变化的作曲材料？它不是音频，也不是一首歌。",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_harmony_guitar_c_g_am_f",
+      "elementType": "symbolic_harmony_template",
+      "goal": "calm",
+      "family": "guitar_wave",
+      "chords": [
+        [
+          "C3",
+          "G3",
+          "E4"
+        ],
+        [
+          "G2",
+          "D3",
+          "B3"
+        ],
+        [
+          "A2",
+          "E3",
+          "C4"
+        ],
+        [
+          "F2",
+          "C3",
+          "A3"
+        ]
+      ],
+      "businessQuestion": "这个和声模板是否适合作为可变化的作曲材料？它不是音频，也不是一首歌。",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_harmony_guitar_c_em_f_g",
+      "elementType": "symbolic_harmony_template",
+      "goal": "calm",
+      "family": "guitar_open",
+      "chords": [
+        [
+          "C3",
+          "G3",
+          "E4"
+        ],
+        [
+          "E2",
+          "B2",
+          "G3"
+        ],
+        [
+          "F2",
+          "C3",
+          "A3"
+        ],
+        [
+          "G2",
+          "D3",
+          "B3"
+        ]
+      ],
+      "businessQuestion": "这个和声模板是否适合作为可变化的作曲材料？它不是音频，也不是一首歌。",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_harmony_guitar_am_g_f_c",
+      "elementType": "symbolic_harmony_template",
+      "goal": "calm",
+      "family": "guitar_slow_roll",
+      "chords": [
+        [
+          "A2",
+          "E3",
+          "C4"
+        ],
+        [
+          "G2",
+          "D3",
+          "B3"
+        ],
+        [
+          "F2",
+          "C3",
+          "A3"
+        ],
+        [
+          "C3",
+          "G3",
+          "E4"
+        ]
+      ],
+      "businessQuestion": "这个和声模板是否适合作为可变化的作曲材料？它不是音频，也不是一首歌。",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_harmony_focus_c_g_am_f",
+      "elementType": "symbolic_harmony_template",
+      "goal": "focus",
+      "family": "focus_cycle",
+      "chords": [
+        [
+          "C3",
+          "G3",
+          "E4"
+        ],
+        [
+          "G2",
+          "D3",
+          "B3"
+        ],
+        [
+          "A2",
+          "E3",
+          "C4"
+        ],
+        [
+          "F2",
+          "C3",
+          "A3"
+        ]
+      ],
+      "businessQuestion": "这个和声模板是否适合作为可变化的作曲材料？它不是音频，也不是一首歌。",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_harmony_focus_f_c_g_am",
+      "elementType": "symbolic_harmony_template",
+      "goal": "focus",
+      "family": "focus_split",
+      "chords": [
+        [
+          "F2",
+          "C3",
+          "A3"
+        ],
+        [
+          "C3",
+          "G3",
+          "E4"
+        ],
+        [
+          "G2",
+          "D3",
+          "B3"
+        ],
+        [
+          "A2",
+          "E3",
+          "C4"
+        ]
+      ],
+      "businessQuestion": "这个和声模板是否适合作为可变化的作曲材料？它不是音频，也不是一首歌。",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_harmony_focus_dm_g_c_f",
+      "elementType": "symbolic_harmony_template",
+      "goal": "focus",
+      "family": "focus_open",
+      "chords": [
+        [
+          "D2",
+          "A2",
+          "F3"
+        ],
+        [
+          "G2",
+          "D3",
+          "B3"
+        ],
+        [
+          "C3",
+          "G3",
+          "E4"
+        ],
+        [
+          "F2",
+          "C3",
+          "A3"
+        ]
+      ],
+      "businessQuestion": "这个和声模板是否适合作为可变化的作曲材料？它不是音频，也不是一首歌。",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_sleep_falling_1",
+      "elementType": "symbolic_motif_template",
+      "goal": "sleep",
+      "notes": [
+        "G3",
+        "E3",
+        "D3",
+        "C3"
+      ],
+      "beats": [
+        1.5,
+        1.8,
+        2.0,
+        2.6
+      ],
+      "contour": "slow_descent",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_sleep_open_2",
+      "elementType": "symbolic_motif_template",
+      "goal": "sleep",
+      "notes": [
+        "C3",
+        "G3",
+        "E3"
+      ],
+      "beats": [
+        2.2,
+        2.8,
+        3.2
+      ],
+      "contour": "open_fifth",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_sleep_late_3",
+      "elementType": "symbolic_motif_template",
+      "goal": "sleep",
+      "notes": [
+        "E3",
+        "G3",
+        "A3",
+        "E3"
+      ],
+      "beats": [
+        1.8,
+        2.1,
+        2.4,
+        3.0
+      ],
+      "contour": "late_arch",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_calm_arch_1",
+      "elementType": "symbolic_motif_template",
+      "goal": "calm",
+      "notes": [
+        "E3",
+        "G3",
+        "A3",
+        "G3",
+        "E3"
+      ],
+      "beats": [
+        0.8,
+        1.1,
+        1.3,
+        1.1,
+        1.8
+      ],
+      "contour": "breath_arch",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_calm_answer_2",
+      "elementType": "symbolic_motif_template",
+      "goal": "calm",
+      "notes": [
+        "D4",
+        "E4",
+        "G4",
+        "E4"
+      ],
+      "beats": [
+        1.0,
+        1.0,
+        1.4,
+        1.8
+      ],
+      "contour": "narrow_answer",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_calm_open_3",
+      "elementType": "symbolic_motif_template",
+      "goal": "calm",
+      "notes": [
+        "C4",
+        "G3",
+        "E4"
+      ],
+      "beats": [
+        1.8,
+        2.5,
+        3.2
+      ],
+      "contour": "open_return",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_guitar_wave_1",
+      "elementType": "symbolic_motif_template",
+      "goal": "calm",
+      "notes": [
+        "E4",
+        "G4",
+        "A4",
+        "G4",
+        "E4"
+      ],
+      "beats": [
+        0.7,
+        0.9,
+        1.0,
+        0.9,
+        1.4
+      ],
+      "contour": "wave_fall",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_guitar_answer_2",
+      "elementType": "symbolic_motif_template",
+      "goal": "calm",
+      "notes": [
+        "G3",
+        "B3",
+        "D4",
+        "B3"
+      ],
+      "beats": [
+        1.0,
+        1.2,
+        1.5,
+        2.0
+      ],
+      "contour": "rising_answer",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_guitar_open_3",
+      "elementType": "symbolic_motif_template",
+      "goal": "calm",
+      "notes": [
+        "C4",
+        "G4",
+        "E4"
+      ],
+      "beats": [
+        2.0,
+        2.6,
+        3.0
+      ],
+      "contour": "open_fifth_breath",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_focus_cycle_1",
+      "elementType": "symbolic_motif_template",
+      "goal": "focus",
+      "notes": [
+        "D4",
+        "E4",
+        "G4",
+        "E4"
+      ],
+      "beats": [
+        0.8,
+        0.9,
+        1.1,
+        1.3
+      ],
+      "contour": "narrow_cycle",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_focus_split_2",
+      "elementType": "symbolic_motif_template",
+      "goal": "focus",
+      "notes": [
+        "C4",
+        "D4",
+        "E4",
+        "D4",
+        "B3"
+      ],
+      "beats": [
+        0.7,
+        0.8,
+        1.0,
+        0.9,
+        1.4
+      ],
+      "contour": "small_arc",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_focus_common_3",
+      "elementType": "symbolic_motif_template",
+      "goal": "focus",
+      "notes": [
+        "E4",
+        "D4",
+        "E4",
+        "G4"
+      ],
+      "beats": [
+        1.1,
+        0.8,
+        1.0,
+        1.5
+      ],
+      "contour": "common_tone",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_sleep_breath_drop_4",
+      "elementType": "symbolic_motif_template",
+      "goal": "sleep",
+      "notes": [
+        "A3",
+        "G3",
+        "E3"
+      ],
+      "beats": [
+        2.4,
+        2.8,
+        3.4
+      ],
+      "contour": "breath_drop",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_sleep_low_anchor_5",
+      "elementType": "symbolic_motif_template",
+      "goal": "sleep",
+      "notes": [
+        "C3",
+        "G2",
+        "C3"
+      ],
+      "beats": [
+        3.0,
+        3.4,
+        4.0
+      ],
+      "contour": "low_anchor",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_sleep_half_step_6",
+      "elementType": "symbolic_motif_template",
+      "goal": "sleep",
+      "notes": [
+        "E3",
+        "F3",
+        "E3",
+        "C3"
+      ],
+      "beats": [
+        2.0,
+        2.2,
+        2.6,
+        3.2
+      ],
+      "contour": "soft_neighbor",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_sleep_pentatonic_7",
+      "elementType": "symbolic_motif_template",
+      "goal": "sleep",
+      "notes": [
+        "D3",
+        "G3",
+        "A3",
+        "G3"
+      ],
+      "beats": [
+        2.1,
+        2.7,
+        3.0,
+        3.6
+      ],
+      "contour": "pentatonic_return",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_sleep_unresolved_8",
+      "elementType": "symbolic_motif_template",
+      "goal": "sleep",
+      "notes": [
+        "F3",
+        "A3",
+        "G3"
+      ],
+      "beats": [
+        2.8,
+        3.1,
+        4.2
+      ],
+      "contour": "unresolved_suspension",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_motif_sleep_low_fifth_9",
+      "elementType": "symbolic_motif_template",
+      "goal": "sleep",
+      "notes": [
+        "C3",
+        "G3",
+        "D3"
+      ],
+      "beats": [
+        3.2,
+        3.6,
+        4.0
+      ],
+      "contour": "open_low_fifth",
+      "businessQuestion": "这个动机结构是否可变形、可复用、不会变成固定主题？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_form_sleep_descent_form",
+      "elementType": "symbolic_form_rule",
+      "goal": "sleep",
+      "sectionStarts": [
+        1.2,
+        25.0,
+        49.0,
+        73.0
+      ],
+      "motifStarts": [
+        14.0,
+        39.0,
+        64.0
+      ],
+      "releaseAt": 84.0,
+      "businessQuestion": "这个曲式规则是否能组织一段声音，而不是生成固定曲子？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_form_sleep_long_arc_form",
+      "elementType": "symbolic_form_rule",
+      "goal": "sleep",
+      "sectionStarts": [
+        0.9,
+        18.0,
+        38.0,
+        60.0,
+        78.0
+      ],
+      "motifStarts": [
+        10.0,
+        31.0,
+        52.0,
+        72.0
+      ],
+      "releaseAt": 84.0,
+      "businessQuestion": "这个曲式规则是否能组织一段声音，而不是生成固定曲子？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_form_sleep_late_theme_form",
+      "elementType": "symbolic_form_rule",
+      "goal": "sleep",
+      "sectionStarts": [
+        1.3,
+        22.0,
+        44.0,
+        67.0,
+        80.0
+      ],
+      "motifStarts": [
+        20.0,
+        46.0,
+        70.0
+      ],
+      "releaseAt": 84.0,
+      "businessQuestion": "这个曲式规则是否能组织一段声音，而不是生成固定曲子？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_form_calm_breath_form",
+      "elementType": "symbolic_form_rule",
+      "goal": "calm",
+      "sectionStarts": [
+        1.0,
+        16.0,
+        37.0,
+        60.0,
+        79.0
+      ],
+      "motifStarts": [
+        10.0,
+        30.0,
+        51.0,
+        72.0
+      ],
+      "releaseAt": 84.0,
+      "businessQuestion": "这个曲式规则是否能组织一段声音，而不是生成固定曲子？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_form_calm_nocturne_form",
+      "elementType": "symbolic_form_rule",
+      "goal": "calm",
+      "sectionStarts": [
+        1.0,
+        13.0,
+        28.0,
+        48.0,
+        68.0
+      ],
+      "motifStarts": [
+        8.0,
+        25.0,
+        54.0,
+        75.0
+      ],
+      "releaseAt": 84.0,
+      "businessQuestion": "这个曲式规则是否能组织一段声音，而不是生成固定曲子？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_form_calm_call_answer_form",
+      "elementType": "symbolic_form_rule",
+      "goal": "calm",
+      "sectionStarts": [
+        1.0,
+        21.0,
+        42.0,
+        63.0,
+        78.0
+      ],
+      "motifStarts": [
+        12.0,
+        34.0,
+        55.0,
+        73.0
+      ],
+      "releaseAt": 84.0,
+      "businessQuestion": "这个曲式规则是否能组织一段声音，而不是生成固定曲子？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_form_guitar_wave_form",
+      "elementType": "symbolic_form_rule",
+      "goal": "calm",
+      "sectionStarts": [
+        1.0,
+        14.0,
+        31.0,
+        49.0,
+        68.0
+      ],
+      "motifStarts": [
+        9.0,
+        27.0,
+        51.0,
+        73.0
+      ],
+      "releaseAt": 84.0,
+      "businessQuestion": "这个曲式规则是否能组织一段声音，而不是生成固定曲子？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_form_guitar_open_form",
+      "elementType": "symbolic_form_rule",
+      "goal": "calm",
+      "sectionStarts": [
+        1.0,
+        18.0,
+        39.0,
+        58.0,
+        76.0
+      ],
+      "motifStarts": [
+        13.0,
+        32.0,
+        54.0,
+        75.0
+      ],
+      "releaseAt": 84.0,
+      "businessQuestion": "这个曲式规则是否能组织一段声音，而不是生成固定曲子？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_form_guitar_slow_roll_form",
+      "elementType": "symbolic_form_rule",
+      "goal": "calm",
+      "sectionStarts": [
+        1.0,
+        11.0,
+        25.0,
+        45.0,
+        66.0,
+        80.0
+      ],
+      "motifStarts": [
+        8.0,
+        29.0,
+        50.0,
+        71.0
+      ],
+      "releaseAt": 84.0,
+      "businessQuestion": "这个曲式规则是否能组织一段声音，而不是生成固定曲子？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_form_focus_cycle_form",
+      "elementType": "symbolic_form_rule",
+      "goal": "focus",
+      "sectionStarts": [
+        1.0,
+        9.0,
+        25.0,
+        41.0,
+        57.0,
+        73.0
+      ],
+      "motifStarts": [
+        8.0,
+        28.0,
+        48.0,
+        68.0
+      ],
+      "releaseAt": 84.0,
+      "businessQuestion": "这个曲式规则是否能组织一段声音，而不是生成固定曲子？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_form_focus_split_form",
+      "elementType": "symbolic_form_rule",
+      "goal": "focus",
+      "sectionStarts": [
+        1.0,
+        17.0,
+        36.0,
+        55.0,
+        74.0
+      ],
+      "motifStarts": [
+        11.0,
+        31.0,
+        51.0,
+        71.0
+      ],
+      "releaseAt": 84.0,
+      "businessQuestion": "这个曲式规则是否能组织一段声音，而不是生成固定曲子？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_form_focus_open_form",
+      "elementType": "symbolic_form_rule",
+      "goal": "focus",
+      "sectionStarts": [
+        1.0,
+        12.0,
+        34.0,
+        56.0,
+        78.0
+      ],
+      "motifStarts": [
+        9.0,
+        29.0,
+        49.0,
+        69.0
+      ],
+      "releaseAt": 84.0,
+      "businessQuestion": "这个曲式规则是否能组织一段声音，而不是生成固定曲子？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_grammar_sparse_keys",
+      "elementType": "symbolic_arrangement_grammar",
+      "goal": "multi",
+      "kind": "keys",
+      "supportStep": 2.7,
+      "spacing": 3.5,
+      "pattern": [
+        1,
+        2,
+        1
+      ],
+      "businessQuestion": "这个编配规则是否能生成变化，而不是固定音乐片段？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_grammar_lyrical_keys",
+      "elementType": "symbolic_arrangement_grammar",
+      "goal": "multi",
+      "kind": "keys",
+      "supportStep": 2.4,
+      "spacing": 2.8,
+      "pattern": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "businessQuestion": "这个编配规则是否能生成变化，而不是固定音乐片段？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_grammar_open_keys",
+      "elementType": "symbolic_arrangement_grammar",
+      "goal": "multi",
+      "kind": "keys",
+      "supportStep": 3.1,
+      "spacing": 4.1,
+      "pattern": [
+        1,
+        2
+      ],
+      "businessQuestion": "这个编配规则是否能生成变化，而不是固定音乐片段？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_grammar_guitar_wave",
+      "elementType": "symbolic_arrangement_grammar",
+      "goal": "multi",
+      "kind": "guitar",
+      "supportStep": 2.25,
+      "spacing": 2.4,
+      "pattern": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "businessQuestion": "这个编配规则是否能生成变化，而不是固定音乐片段？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_grammar_guitar_open",
+      "elementType": "symbolic_arrangement_grammar",
+      "goal": "multi",
+      "kind": "guitar",
+      "supportStep": 3.0,
+      "spacing": 3.3,
+      "pattern": [
+        0,
+        2,
+        1
+      ],
+      "businessQuestion": "这个编配规则是否能生成变化，而不是固定音乐片段？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_grammar_guitar_roll",
+      "elementType": "symbolic_arrangement_grammar",
+      "goal": "multi",
+      "kind": "guitar",
+      "supportStep": 2.1,
+      "spacing": 2.7,
+      "pattern": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "businessQuestion": "这个编配规则是否能生成变化，而不是固定音乐片段？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_grammar_rhodes_grid",
+      "elementType": "symbolic_arrangement_grammar",
+      "goal": "multi",
+      "kind": "rhodes",
+      "supportStep": 2.0,
+      "spacing": 2.2,
+      "pattern": [
+        1,
+        2
+      ],
+      "businessQuestion": "这个编配规则是否能生成变化，而不是固定音乐片段？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    },
+    {
+      "elementId": "symbolic_grammar_rhodes_breath",
+      "elementType": "symbolic_arrangement_grammar",
+      "goal": "multi",
+      "kind": "rhodes",
+      "supportStep": 2.7,
+      "spacing": 3.0,
+      "pattern": [
+        2,
+        1,
+        2
+      ],
+      "businessQuestion": "这个编配规则是否能生成变化，而不是固定音乐片段？",
+      "reviewMode": "structure_usability",
+      "productionAllowed": false,
+      "humanReviewStatus": "pending",
+      "formalUsable": false
+    }
+  ]
+}

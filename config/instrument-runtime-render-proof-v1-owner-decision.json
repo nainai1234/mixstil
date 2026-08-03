@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "decisionId": "instrument-runtime-render-proof-v1-owner-decision",
+  "batchId": "instrument-runtime-render-proof-v1",
+  "decidedAt": "2026-07-28",
+  "reviewer": "project_owner",
+  "ownerFeedback": "方向正确。",
+  "decision": "direction_accepted_item_review_pending",
+  "productionAllowed": false,
+  "formalUsablePromotionAllowed": false,
+  "meaning": "The owner accepted the architecture direction: local playable instrument sources driven by symbolic composition material is the correct path for foundational music elements. This does not mean every rendered candidate is individually approved.",
+  "approvedDirection": [
+    "Use playable local instrument sources instead of fixed finished songs as the core music foundation.",
+    "Use harmony, motif, form, grammar, tempo, seed, and instrument choice as separate controllable inputs.",
+    "Continue producing Sleep, Calm, and Focus variants through deterministic composition routing.",
+    "Keep Lyria as a possible gap filler or color source, not the default engine for foundational instruments."
+  ],
+  "notApprovedYet": [
+    "No individual rendered candidate is formal usable yet.",
+    "No candidate may enter public Recipe routing until item-level human listening passes.",
+    "The two FluidR3 SoundFont sources are still blocked until a runtime loader or replacement source is verified.",
+    "The current review does not approve voice, choir, drums, percussion, therapeutic claims, or generic broadband-noise foregrounds."
+  ],
+  "currentEvidence": {
+    "manifest": "public/audio/music/local-review/instrument-runtime-render-proof-v1/manifest.json",
+    "reviewPage": "public/review/instrument-runtime-render-proof-v1/index.html",
+    "report": "reports/instrument-runtime-render-proof-v1.md",
+    "validator": "server/validateInstrumentRuntimeRenderProofV1.ts"
+  },
+  "nextProductionStep": {
+    "id": "instrument_composition_expansion_batch_v1",
+    "description": "Produce the next controllable foundational music batch from approved direction: more variants across piano, Rhodes, guitar, bass support, and a replacement or loader-backed woodwind source.",
+    "minimumBeforeProductionRouting": [
+      "item_identity_human_review",
+      "comfort_or_soothing_review",
+      "no_voice_no_drum_confirmation",
+      "loop_or_long_session_strategy",
+      "gain_range_metadata",
+      "recipe_role_metadata"
+    ]
+  }
+}

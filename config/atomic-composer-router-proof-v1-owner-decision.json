@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "decisionId": "atomic-composer-router-proof-v1-owner-decision",
+  "sourceBatchId": "atomic-composer-router-proof-v1",
+  "decidedAt": "2026-07-28T00:00:00.000Z",
+  "ownerDecision": "passed_for_quick_create_pilot",
+  "ownerFeedback": "通过下一步。",
+  "scope": "Atomic Composer Router Proof V1 is accepted for local Quick Create pilot integration. This is not a public release promotion.",
+  "humanPassCount": 6,
+  "formalUsablePromotionAllowed": false,
+  "productionAllowed": false,
+  "quickCreatePilotAllowed": true,
+  "requiredRuntimeFlag": "ATOMIC_QUICK_CREATE_PILOT=1",
+  "nextAllowedStage": "atomic_foundation_quick_create_pilot_v1"
+}

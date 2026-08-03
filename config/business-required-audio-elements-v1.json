@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "business-required-audio-elements-v1",
+  "status": "business_inventory_contract",
+  "productionAllowed": false,
+  "purpose": "Define which audio element families SNOOZE needs for the ToC-first personalized Sleep, Calm, and Focus product before producing more candidate audio.",
+  "productGoal": "A consumer describes the sound they need and receives a fitting, immediately playable, refinable, saveable, and reliably replayable personalized soundscape.",
+  "scope": {
+    "goals": ["sleep", "calm", "focus"],
+    "release": "voice-free-beta",
+    "primaryUse": "compose personalized soundscapes from approved reusable ingredients",
+    "notPrimaryUse": "generate one fixed finished song per request"
+  },
+  "milestoneTargets": {
+    "internalAudibleBaseline": {
+      "finishedContent": 30,
+      "foundationalElements": { "min": 80, "max": 100 }
+    },
+    "paidBetaBaseline": {
+      "finishedContent": { "min": 80, "max": 100 },
+      "foundationalElements": { "min": 150, "max": 250 }
+    },
+    "v1Library": {
+      "finishedContent": { "min": 200, "max": 300 },
+      "foundationalElements": { "min": 400, "max": 600 }
+    }
+  },
+  "hardBusinessRules": [
+    "Do not count a finished song as a foundational element.",
+    "Do not count a mixed Lyria clip as an independent instrument or stem unless the single-target identity passes human review.",
+    "Do not let generic broadband noise become the main product identity.",
+    "Do not use human voice, singing, chanting, choir, or human-like vocal texture in Voice-free Beta.",
+    "Do not use drums, percussion, clear beat, groove, or pulse for Sleep and Calm defaults.",
+    "Do not make medical, healing, brainwave, heart-rate, cure, or guaranteed-outcome claims.",
+    "Every approved element needs source identity, role, gain range, loop or one-shot behavior, incompatibility notes, and QA state."
+  ],
+  "elementFamilies": [
+    {
+      "id": "playable_instrument_sources",
+      "businessRole": "Give the composition engine real instruments it can play from notes instead of reusing fixed recordings.",
+      "runtimeRole": "note_to_audio_source",
+      "internalTarget": 6,
+      "paidBetaTarget": { "min": 12, "max": 18 },
+      "v1Target": { "min": 30, "max": 50 },
+      "examples": ["felt_piano", "rhodes", "nylon_guitar", "soft_strings", "wood_flute", "harp_or_kalimba"],
+      "allowedSources": ["SoundFont", "SFZ", "multisample_library", "owned_recording"],
+      "notAllowedAsSource": ["mixed MP3 song", "separated other stem without clear identity", "Lyria clip used as a piano sample"],
+      "qa": ["license_or_origin_record", "note_mapping", "usable_range", "velocity_or_dynamic_behavior", "render_smoke_test", "no_voice"]
+    },
+    {
+      "id": "structured_composition_material",
+      "businessRole": "Create many different works from the same inventory by changing harmony, motifs, form, density, and seed.",
+      "runtimeRole": "recipe_generation_material",
+      "internalTarget": { "harmonyTemplates": 24, "motifs": 36, "forms": 12, "arrangementGrammars": 8 },
+      "paidBetaTarget": { "harmonyTemplates": 60, "motifs": 120, "forms": 30, "arrangementGrammars": 20 },
+      "v1Target": { "harmonyTemplates": 150, "motifs": 300, "forms": 80, "arrangementGrammars": 50 },
+      "examples": ["sleep_descent_harmony", "calm_breath_arch_motif", "focus_common_tone_cell", "arrival_core_release_form"],
+      "allowedSources": ["deterministic JSON data", "human/composer-authored data", "AI-assisted but reviewed symbolic data"],
+      "notAllowedAsSource": ["audio-only clip with no notes", "single fixed melody reused for every user"],
+      "qa": ["goal_compatibility", "density_range", "mode_or_pitch_set", "ending_behavior", "variation_rules", "no_fixed_hook_for_sleep"]
+    },
+    {
+      "id": "music_beds_and_phrases",
+      "businessRole": "Provide musical color when the user wants light music, meditation music, or gentle focus support.",
+      "runtimeRole": "music_layer_audio_or_rendered_phrase",
+      "internalTarget": { "min": 24, "max": 36 },
+      "paidBetaTarget": { "min": 60, "max": 90 },
+      "v1Target": { "min": 150, "max": 220 },
+      "examples": ["warm_pad", "deep_drone", "soft_harmonic_bed", "felt_piano_phrase", "rhodes_phrase", "nylon_guitar_phrase"],
+      "allowedSources": ["rendered from playable instruments", "commercial AI candidate after single-target review", "owned composition render"],
+      "notAllowedAsSource": ["finished song labeled as element", "busy melody hook", "drum-backed loop", "voice-like pad"],
+      "qa": ["single_main_identity", "no_voice", "no_drums_for_sleep_calm", "loop_or_phrase_behavior", "compatible_with_two_or_more_recipes", "long_listen_fatigue"]
+    },
+    {
+      "id": "environment_identity_beds",
+      "businessRole": "Support user requests for concrete scenes such as rain, room, forest, wind, water, travel, or quiet indoor background.",
+      "runtimeRole": "environment_layer",
+      "internalTarget": { "min": 18, "max": 30 },
+      "paidBetaTarget": { "min": 50, "max": 80 },
+      "v1Target": { "min": 120, "max": 180 },
+      "examples": ["soft_rain", "quiet_room", "night_forest_without_animals", "distant_water", "soft_wind", "train_or_aircraft_only_when_requested"],
+      "allowedSources": ["owned_recording", "licensed_recording", "controlled_synthesis", "commercial AI candidate after identity review"],
+      "notAllowedAsSource": ["ambiguous highway-like whoosh", "traffic-like foreground unless user requested traffic", "people or speech", "random animal events", "startling events"],
+      "qa": ["clear_source_identity", "no_human_voice", "low_startle", "fatigue_review", "loop_or_extension_plan", "requested_scene_only"]
+    },
+    {
+      "id": "masking_and_noise_support",
+      "businessRole": "Provide optional stable masking for users who explicitly want noise or need background smoothing, without becoming the whole product.",
+      "runtimeRole": "support_layer",
+      "internalTarget": { "min": 6, "max": 10 },
+      "paidBetaTarget": { "min": 15, "max": 25 },
+      "v1Target": { "min": 40, "max": 60 },
+      "examples": ["soft_pink_noise", "soft_brown_noise", "dark_low_masking", "gentle_bandlimited_noise"],
+      "allowedSources": ["deterministic DSP", "owned synthesis"],
+      "notAllowedAsSource": ["generic noise wall as default result", "highway-like rumble", "harsh white noise foreground"],
+      "qa": ["signal_parameters", "gain_limits", "spectrum_limits", "fatigue_review", "not_default_foreground"]
+    },
+    {
+      "id": "organic_textures",
+      "businessRole": "Add subtle tactile character so mixes do not feel sterile, while staying independently adjustable.",
+      "runtimeRole": "texture_layer",
+      "internalTarget": { "min": 12, "max": 18 },
+      "paidBetaTarget": { "min": 30, "max": 50 },
+      "v1Target": { "min": 80, "max": 120 },
+      "examples": ["soft_tape_hush", "warm_resonance", "wood_body", "fabric_softness", "low_granular_cloud"],
+      "allowedSources": ["deterministic synthesis", "owned recording", "commercial AI candidate after single-texture review"],
+      "notAllowedAsSource": ["road-like noise", "machine cycle", "percussion pattern", "melody line", "voice-like texture"],
+      "qa": ["single_texture_identity", "low_event_density", "spectrum_role", "incompatible_pairings", "long_loop_review"]
+    },
+    {
+      "id": "accent_and_transition_events",
+      "businessRole": "Give sessions a beginning, ending, or rare cue without turning the soundscape into a song.",
+      "runtimeRole": "one_shot_or_transition_layer",
+      "internalTarget": { "min": 12, "max": 20 },
+      "paidBetaTarget": { "min": 30, "max": 50 },
+      "v1Target": { "min": 80, "max": 120 },
+      "examples": ["single_soft_bowl", "low_bell_tail", "soft_chime", "warm_transition_swell", "gentle_release_tail"],
+      "allowedSources": ["owned_recording", "deterministic synthesis", "commercial AI candidate after one-shot review"],
+      "notAllowedAsSource": ["looped bell pattern", "bright sparkle cluster", "startling impact", "chanting or voice"],
+      "qa": ["one_shot_behavior", "onset_count", "tail_decay", "safe_gain", "not_used_as_loop_bed"]
+    },
+    {
+      "id": "precise_dsp_configs",
+      "businessRole": "Provide exact measurable signal layers when the product needs controllable tones, offsets, or noise parameters.",
+      "runtimeRole": "deterministic_signal_layer",
+      "internalTarget": 6,
+      "paidBetaTarget": { "min": 12, "max": 20 },
+      "v1Target": { "min": 30, "max": 50 },
+      "examples": ["pink_noise_config", "brown_noise_config", "reference_tone_config", "stereo_offset_config"],
+      "allowedSources": ["deterministic DSP only"],
+      "notAllowedAsSource": ["Lyria frequency feel", "unverified healing-frequency claim", "brainwave effect claim"],
+      "qa": ["exact_parameters", "gain_limits", "stereo_requirements", "no_medical_claims", "render_reproducibility"]
+    },
+    {
+      "id": "finished_reference_and_seed_content",
+      "businessRole": "Calibrate quality, taste, and scenario fit; provide replayable content, but not count as composable foundation.",
+      "runtimeRole": "finished_content_or_quality_reference",
+      "internalTarget": 30,
+      "paidBetaTarget": { "min": 80, "max": 100 },
+      "v1Target": { "min": 200, "max": 300 },
+      "examples": ["finished_sleep_session", "finished_calm_session", "finished_focus_session", "quality_reference_track"],
+      "allowedSources": ["owned_finished_render", "licensed_finished_content", "reference_metadata_without_copying_audio"],
+      "notAllowedAsSource": ["used as basic element", "copied reference recording", "one fixed track for every user"],
+      "qa": ["replay_value", "goal_distinctness", "long_session_fit", "save_worthiness", "ingredient_traceability"]
+    }
+  ],
+  "defaultProductionOrder": [
+    "Lock this business inventory contract before producing more sound.",
+    "Audit current inventory against each family and state.",
+    "Fill structured composition material and playable instrument gaps first.",
+    "Then produce or source music beds, environment beds, textures, and accents by family.",
+    "Build representative Recipe combinations only after elements pass family QA.",
+    "Promote only combinations that improve Sleep, Calm, and Focus distinctness and save-worthiness."
+  ],
+  "immediateCorrectionFromRecentQa": {
+    "rejectedBatch": "soothing-deterministic-combination-v1",
+    "ownerFeedback": "The result sounded like cars on a highway.",
+    "businessInterpretation": "The business does not need more generic continuous noise as the primary default. It needs an inventory map that separates environment identity, masking support, musical beds, and composition materials, then uses each only when the user need calls for it."
+  }
+}

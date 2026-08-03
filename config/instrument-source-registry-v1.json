@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "registryId": "instrument-source-registry-v1",
+  "status": "formal_gate_defined",
+  "productionAllowed": false,
+  "purpose": "Formal registry of playable instrument sources for the deterministic composition layer. This registry does not include Lyria mixed clips as sources; it only records sample libraries, SoundFonts, and multisample directories that can be mapped to note events.",
+  "states": ["configured", "generated_candidate", "machine_passed", "human_passed", "formal_usable", "runtime_integrated"],
+  "targets": {
+    "instrumentSourceCount": 6,
+    "instrumentTypes": ["piano", "electric_piano", "nylon_guitar", "steel_string_guitar", "bass", "woodwinds"]
+  },
+  "sources": [
+    {
+      "id": "fluidr3_gm_soundfont",
+      "label": "FluidR3 GM SoundFont",
+      "instrumentType": "multi_instrument_soundfont",
+      "sourceType": "soundfont",
+      "status": "formal_candidate",
+      "assetPath": "assets/soundfonts/FluidR3_GM.sf2",
+      "sourceRecord": "docs/midi-and-audio-sample-research-2026-07-22.md",
+      "license": {
+        "name": "General MIDI SoundFont distribution varies by upstream package; verify before runtime promotion.",
+        "url": "https://github.com/FluidSynth/fluidsynth"
+      },
+      "candidateInstruments": ["piano", "electric_piano", "guitar", "bass", "strings", "woodwinds"],
+      "verifiedNoteRange": "C2-C5 via embedded GM mapping",
+      "runtimeLoader": "SoundfontPlayer + FluidSynth",
+      "notes": "Useful as a broad fallback source, but every promoted soundfont preset still requires runtime audition and license verification."
+    },
+    {
+      "id": "vcsl_kawai_soft_piano",
+      "label": "VCSL Kawai Soft Piano",
+      "instrumentType": "piano",
+      "sourceType": "multisample_directory",
+      "status": "formal_candidate",
+      "assetPath": "assets/audio-sources/vcsl-kawai-soft",
+      "sourceRecord": "docs/vcsl-kawai-soft-source-record.md",
+      "license": {
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "candidateInstruments": ["soft_piano"],
+      "verifiedNoteRange": "C2-C5",
+      "runtimeLoader": "sfizz or local sampler mapping",
+      "notes": "Already used as a formal source for the existing piano-based MusicKit batch."
+    },
+    {
+      "id": "discord_cc0_rhodes",
+      "label": "Discord CC0 Band Rhodes",
+      "instrumentType": "electric_piano",
+      "sourceType": "multisample_directory",
+      "status": "formal_candidate",
+      "assetPath": "assets/audio-sources/discord-cc0-band/rhodes",
+      "sourceRecord": "docs/discord-cc0-band-source-record.md",
+      "license": {
+        "name": "CC0 source samples in upstream SFZ distribution",
+        "url": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank"
+      },
+      "candidateInstruments": ["rhodes"],
+      "verifiedNoteRange": "E2-E5",
+      "runtimeLoader": "sfizz or local sampler mapping",
+      "notes": "Low-distraction electric piano source for calm and focus templates."
+    },
+    {
+      "id": "discord_cc0_guitar",
+      "label": "Discord CC0 Band Guitar",
+      "instrumentType": "steel_string_guitar",
+      "sourceType": "multisample_directory",
+      "status": "formal_candidate",
+      "assetPath": "assets/audio-sources/discord-cc0-band/guitar",
+      "sourceRecord": "docs/discord-cc0-band-source-record.md",
+      "license": {
+        "name": "CC0 source samples in upstream SFZ distribution",
+        "url": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank"
+      },
+      "candidateInstruments": ["acoustic_guitar"],
+      "verifiedNoteRange": "E2-B5",
+      "runtimeLoader": "sfizz or local sampler mapping",
+      "notes": "Useful for soft guitar phrases and open-fifth harmonic support."
+    },
+    {
+      "id": "discord_cc0_bass",
+      "label": "Discord CC0 Band Bass",
+      "instrumentType": "bass",
+      "sourceType": "multisample_directory",
+      "status": "formal_candidate",
+      "assetPath": "assets/audio-sources/discord-cc0-band/bass",
+      "sourceRecord": "docs/discord-cc0-band-source-record.md",
+      "license": {
+        "name": "CC0 source samples in upstream SFZ distribution",
+        "url": "https://github.com/sfzinstruments/Discord-SFZ-GM-Bank"
+      },
+      "candidateInstruments": ["finger_bass"],
+      "verifiedNoteRange": "C2-C4",
+      "runtimeLoader": "sfizz or local sampler mapping",
+      "notes": "Low support source for focus and gentle sleep foundations."
+    },
+    {
+      "id": "fluidr3_woodwinds_fallback",
+      "label": "FluidR3 GM Woodwinds Fallback",
+      "instrumentType": "woodwinds",
+      "sourceType": "soundfont",
+      "status": "formal_candidate",
+      "assetPath": "assets/soundfonts/FluidR3_GM.sf2",
+      "sourceRecord": "docs/midi-and-audio-sample-research-2026-07-22.md",
+      "license": {
+        "name": "General MIDI SoundFont distribution varies by upstream package; verify before runtime promotion.",
+        "url": "https://github.com/FluidSynth/fluidsynth"
+      },
+      "candidateInstruments": ["flute", "oboe", "clarinet", "soft_wind"],
+      "verifiedNoteRange": "C3-C5 via embedded GM mapping",
+      "runtimeLoader": "SoundfontPlayer + FluidSynth",
+      "notes": "Fallback wind source until a dedicated flute/bansuri-quality multisample is formally registered."
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "1.0.0",
+  "registryId": "deterministic-acoustic-configs-v1",
+  "status": "formal_usable_parameters",
+  "productionAllowed": false,
+  "purpose": "Deterministic DSP configurations for controllable noise, tone, and binaural-offset layers. These are signal-generation parameters, not medical or therapeutic claims.",
+  "claimPolicy": {
+    "allowed": [
+      "signal type",
+      "frequency or filter parameters",
+      "recommended mix role",
+      "gain limits",
+      "scene compatibility"
+    ],
+    "forbidden": [
+      "healing frequency",
+      "repair frequency",
+      "brainwave entrainment claim",
+      "lower heart rate claim",
+      "treat, cure, diagnose, or guarantee outcome",
+      "sleep induction claim"
+    ]
+  },
+  "configs": [
+    {
+      "id": "dsp_noise_white_soft_v1",
+      "type": "noise",
+      "label": "Soft White Noise",
+      "role": "masking_bed",
+      "goals": ["sleep", "calm", "focus"],
+      "parameters": {
+        "color": "white",
+        "sampleRate": 44100,
+        "highShelfDb": -8,
+        "highShelfFrequencyHz": 4200,
+        "lowpassHz": 12000,
+        "defaultGainDb": -28,
+        "maxGainDb": -18
+      },
+      "renderPolicy": { "loopable": true, "seeded": true, "defaultDurationSeconds": 60, "crossfadeSeconds": 2 },
+      "safety": { "voiceFree": true, "maxTruePeakDb": -3, "medicalClaimAllowed": false },
+      "notes": "Broadband masking support with softened highs; avoid high gain during long sessions."
+    },
+    {
+      "id": "dsp_noise_pink_balanced_v1",
+      "type": "noise",
+      "label": "Balanced Pink Noise",
+      "role": "masking_bed",
+      "goals": ["sleep", "calm", "focus"],
+      "parameters": {
+        "color": "pink",
+        "sampleRate": 44100,
+        "slopeDbPerOctave": -3,
+        "lowpassHz": 11000,
+        "defaultGainDb": -27,
+        "maxGainDb": -17
+      },
+      "renderPolicy": { "loopable": true, "seeded": true, "defaultDurationSeconds": 60, "crossfadeSeconds": 2 },
+      "safety": { "voiceFree": true, "maxTruePeakDb": -3, "medicalClaimAllowed": false },
+      "notes": "Neutral full-spectrum support for low-distraction masking."
+    },
+    {
+      "id": "dsp_noise_brown_soft_v1",
+      "type": "noise",
+      "label": "Soft Brown Noise",
+      "role": "low_masking_bed",
+      "goals": ["sleep", "calm"],
+      "parameters": {
+        "color": "brown",
+        "sampleRate": 44100,
+        "slopeDbPerOctave": -6,
+        "highpassHz": 35,
+        "lowpassHz": 6800,
+        "defaultGainDb": -26,
+        "maxGainDb": -16
+      },
+      "renderPolicy": { "loopable": true, "seeded": true, "defaultDurationSeconds": 60, "crossfadeSeconds": 2 },
+      "safety": { "voiceFree": true, "maxTruePeakDb": -3, "medicalClaimAllowed": false },
+      "notes": "Low-weight masking layer for users who prefer darker noise."
+    },
+    {
+      "id": "dsp_noise_brown_deep_v1",
+      "type": "noise",
+      "label": "Deep Brown Noise",
+      "role": "deep_low_masking_bed",
+      "goals": ["sleep", "focus"],
+      "parameters": {
+        "color": "brown",
+        "sampleRate": 44100,
+        "slopeDbPerOctave": -6,
+        "highpassHz": 28,
+        "lowpassHz": 3600,
+        "defaultGainDb": -29,
+        "maxGainDb": -19
+      },
+      "renderPolicy": { "loopable": true, "seeded": true, "defaultDurationSeconds": 60, "crossfadeSeconds": 2 },
+      "safety": { "voiceFree": true, "maxTruePeakDb": -3, "medicalClaimAllowed": false },
+      "notes": "Darker low-frequency option; keep default lower than soft brown noise to avoid heavy masking."
+    },
+    {
+      "id": "dsp_noise_dark_air_hush_v1",
+      "type": "noise",
+      "label": "Dark Air Hush",
+      "role": "dark_air_masking_support",
+      "goals": ["sleep", "calm"],
+      "parameters": {
+        "color": "pink_brown_hybrid",
+        "sampleRate": 44100,
+        "pinkWeight": 0.35,
+        "brownWeight": 0.65,
+        "highpassHz": 42,
+        "lowpassHz": 4200,
+        "defaultGainDb": -31,
+        "maxGainDb": -21
+      },
+      "renderPolicy": { "loopable": true, "seeded": true, "defaultDurationSeconds": 60, "crossfadeSeconds": 3 },
+      "safety": { "voiceFree": true, "maxTruePeakDb": -3, "medicalClaimAllowed": false },
+      "notes": "Very dark support-only air layer; use under environment or music, not as the foreground identity."
+    },
+    {
+      "id": "dsp_noise_soft_mid_haze_v1",
+      "type": "noise",
+      "label": "Soft Mid Haze",
+      "role": "low_distraction_masking_support",
+      "goals": ["calm", "focus"],
+      "parameters": {
+        "color": "bandlimited_pink",
+        "sampleRate": 44100,
+        "slopeDbPerOctave": -3,
+        "highpassHz": 120,
+        "lowpassHz": 5200,
+        "defaultGainDb": -32,
+        "maxGainDb": -22
+      },
+      "renderPolicy": { "loopable": true, "seeded": true, "defaultDurationSeconds": 60, "crossfadeSeconds": 3 },
+      "safety": { "voiceFree": true, "maxTruePeakDb": -3, "medicalClaimAllowed": false },
+      "notes": "Soft mid-band support for calm/focus; avoids bright hiss and low highway-like rumble."
+    },
+    {
+      "id": "dsp_tone_reference_528hz_v1",
+      "type": "sine_tone",
+      "label": "528 Hz Reference Tone",
+      "role": "technical_reference_tone",
+      "goals": ["calm"],
+      "parameters": {
+        "frequencyHz": 528,
+        "waveform": "sine",
+        "sampleRate": 44100,
+        "defaultGainDb": -42,
+        "maxGainDb": -34,
+        "fadeInSeconds": 4,
+        "fadeOutSeconds": 4
+      },
+      "renderPolicy": { "loopable": true, "seeded": false, "defaultDurationSeconds": 60, "crossfadeSeconds": 4 },
+      "safety": { "voiceFree": true, "maxTruePeakDb": -12, "medicalClaimAllowed": false },
+      "notes": "A precise reference tone only. Product copy must describe it only by measurable signal parameters."
+    },
+    {
+      "id": "dsp_binaural_offset_theta_6hz_v1",
+      "type": "binaural_offset",
+      "label": "Binaural Offset 6 Hz",
+      "role": "technical_stereo_tone",
+      "goals": ["calm", "focus"],
+      "parameters": {
+        "carrierHz": 180,
+        "leftHz": 177,
+        "rightHz": 183,
+        "offsetHz": 6,
+        "waveform": "sine",
+        "sampleRate": 44100,
+        "defaultGainDb": -46,
+        "maxGainDb": -38,
+        "fadeInSeconds": 8,
+        "fadeOutSeconds": 8
+      },
+      "renderPolicy": { "loopable": true, "seeded": false, "defaultDurationSeconds": 60, "crossfadeSeconds": 4 },
+      "safety": { "voiceFree": true, "maxTruePeakDb": -12, "medicalClaimAllowed": false, "requiresStereoPlayback": true },
+      "notes": "Stereo offset signal only. Describe it strictly as a measurable stereo offset layer."
+    }
+  ]
+}
