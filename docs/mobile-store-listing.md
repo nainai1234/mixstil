@@ -1,4 +1,4 @@
-# MIXVOID Mobile Store Listing
+# MixStil Mobile Store Listing
 
 Date: 2026-07-14  
 Release: Voice-free Beta  
@@ -7,7 +7,7 @@ Secondary category: Lifestyle
 
 ## Store Metadata
 
-App name: `MIXVOID`
+App name: `MixStil`
 
 Apple subtitle: `Personal soundscapes`
 
@@ -25,12 +25,12 @@ Keywords:
 
 Full description:
 
-> MIXVOID creates a personal listening environment from a simple description.
+> MixStil creates a personal listening environment from a simple description.
 > Choose Sleep, Calm, or Focus, name sounds you want to avoid, and hear an
 > immediately playable result assembled from approved audio layers. Refine the
 > result with AI, adjust individual layers when needed, save trusted versions
 > to My Sounds, and continue from your latest position. Saved sounds can be made
-> available offline. MIXVOID is a listening and sound-customization product; it
+> available offline. MixStil is a listening and sound-customization product; it
 > does not diagnose, treat, cure, or guarantee health outcomes.
 
 Support URL: required before submission.  
@@ -92,9 +92,29 @@ pnpm validate:mobile-store-listing:submission
 | Listening position and history | Resume and retention experience | Yes | Application infrastructure | Yes |
 | Playback reliability events | Diagnose failures and measure reliability | Pseudonymous/account-linked | Analytics infrastructure as configured | Yes, subject to documented security retention |
 
-MIXVOID does not sell personal information and does not use it for cross-context
+MixStil does not sell personal information and does not use it for cross-context
 behavioral advertising. Final App Privacy and Play Data Safety forms must be
 reconciled against the actual production providers and retention configuration.
+
+## Audience And Age Rating
+
+The store positioning is written for adults who already use sound during
+bedtime, quiet relaxation, or focused work. Do not describe minors as the
+commercial audience and do not imply that payment availability determines the
+age rating.
+
+Apple's age rating must come from truthful questionnaire answers. Do not select
+sensitive-content answers merely to force a higher rating. If App Store Connect
+offers a voluntary higher-rating override and the product owner wants an
+adult-leaning distribution boundary, use the nearest available higher tier;
+Apple's current choices may not include an exact `14+` tier.
+
+The review-ready values for all active locales are generated at
+`docs/app-store-connect-localization-review.md`:
+
+```sh
+pnpm generate:app-store-connect-review
+```
 The field-by-field repository baseline and required reconciliation evidence are
 maintained in [Mobile Privacy Disclosure Baseline](./mobile-privacy-disclosure-baseline.md).
 

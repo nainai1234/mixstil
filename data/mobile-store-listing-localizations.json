@@ -116,7 +116,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "ध्वनि समायोजन"
         },
         {
           "id": "my-sounds",
@@ -146,7 +146,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "Preferencias personales de sonido"
+          "title": "Preferencias de sonido"
         },
         {
           "id": "create",
@@ -230,7 +230,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "ব্যক্তিগত সাউন্ড পছন্দ"
+          "title": "ব্যক্তিগত শব্দ পছন্দ"
         },
         {
           "id": "create",
@@ -242,7 +242,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "শব্দের সমন্বয়"
         },
         {
           "id": "my-sounds",
@@ -272,7 +272,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "Preferências pessoais de som"
+          "title": "Preferências de som"
         },
         {
           "id": "create",
@@ -284,7 +284,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "Ajustes de som"
         },
         {
           "id": "my-sounds",
@@ -326,7 +326,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "Настройки звука"
         },
         {
           "id": "my-sounds",
@@ -356,7 +356,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "個人の音の好み"
+          "title": "サウンドの好み"
         },
         {
           "id": "create",
@@ -368,7 +368,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "音の調整"
+          "title": "サウンド調整"
         },
         {
           "id": "my-sounds",
@@ -410,7 +410,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "Penyesuaian suara"
         },
         {
           "id": "my-sounds",
@@ -470,7 +470,7 @@
       "nativeReviewStatus": "pending_native_review",
       "apple": {
         "name": "MixStil",
-        "subtitle": "Create my sound",
+        "subtitle": "Sommeil · Calme",
         "promotionalText": "Décrivez ce dont vous avez besoin. Commencez par le ressenti, puis ajoutez les sons à éviter.",
         "keywords": "Sommeil,Calme,Concentration,MixStil"
       },
@@ -482,7 +482,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "Préférences sonores personnelles"
+          "title": "Préférences sonores"
         },
         {
           "id": "create",
@@ -494,7 +494,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "Réglages du son"
         },
         {
           "id": "my-sounds",
@@ -524,7 +524,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "개인 소리 선호"
+          "title": "개인 사운드 선호도"
         },
         {
           "id": "create",
@@ -536,7 +536,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "사운드 조정"
         },
         {
           "id": "my-sounds",
@@ -578,7 +578,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "Regolazioni audio"
         },
         {
           "id": "my-sounds",
@@ -620,7 +620,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "Geluidsaanpassingen"
         },
         {
           "id": "my-sounds",
@@ -662,7 +662,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "聲音調整"
         },
         {
           "id": "my-sounds",
@@ -692,7 +692,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "Personal sound preferences"
+          "title": "Kişisel ses tercihleri"
         },
         {
           "id": "create",
@@ -704,7 +704,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "Ses ayarları"
         },
         {
           "id": "my-sounds",
@@ -734,7 +734,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "Personal sound preferences"
+          "title": "Osobiste preferencje dźwięku"
         },
         {
           "id": "create",
@@ -746,7 +746,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "Ustawienia dźwięku"
         },
         {
           "id": "my-sounds",
@@ -776,7 +776,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "Personal sound preferences"
+          "title": "Personliga ljudpreferenser"
         },
         {
           "id": "create",
@@ -788,7 +788,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "Ljudjusteringar"
         },
         {
           "id": "my-sounds",
@@ -818,7 +818,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "Personal sound preferences"
+          "title": "การตั้งค่าเสียงส่วนตัว"
         },
         {
           "id": "create",
@@ -830,7 +830,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "การปรับเสียง"
         },
         {
           "id": "my-sounds",
@@ -860,7 +860,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "Personal sound preferences"
+          "title": "Tùy chọn âm thanh cá nhân"
         },
         {
           "id": "create",
@@ -872,7 +872,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "Điều chỉnh âm thanh"
         },
         {
           "id": "my-sounds",
@@ -902,7 +902,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "Personal sound preferences"
+          "title": "Pilihan bunyi peribadi"
         },
         {
           "id": "create",
@@ -914,7 +914,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "Pelarasan bunyi"
         },
         {
           "id": "my-sounds",
@@ -944,7 +944,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "Personal sound preferences"
+          "title": "העדפות צליל אישיות"
         },
         {
           "id": "create",
@@ -956,7 +956,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "התאמות צליל"
         },
         {
           "id": "my-sounds",
@@ -986,7 +986,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "Personal sound preferences"
+          "title": "Personlige lydpræferencer"
         },
         {
           "id": "create",
@@ -998,7 +998,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "Lydjusteringer"
         },
         {
           "id": "my-sounds",
@@ -1028,7 +1028,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "Personal sound preferences"
+          "title": "Personlige lydpreferanser"
         },
         {
           "id": "create",
@@ -1040,7 +1040,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "Lydjusteringer"
         },
         {
           "id": "my-sounds",
@@ -1070,7 +1070,7 @@
       "screenshots": [
         {
           "id": "onboarding",
-          "title": "Personal sound preferences"
+          "title": "Henkilökohtaiset ääniasetukset"
         },
         {
           "id": "create",
@@ -1082,7 +1082,7 @@
         },
         {
           "id": "layer-adjustment",
-          "title": "Sound adjustments"
+          "title": "Äänen säädöt"
         },
         {
           "id": "my-sounds",

@@ -363,6 +363,7 @@
     "validate:paid-language-coverage-plan": "tsx server/validatePaidLanguageCoveragePlan.ts",
     "validate:paid-language-native-review": "tsx server/validatePaidLanguageNativeReview.ts",
     "generate:mobile-store-listing-localizations": "tsx server/generateMobileStoreListingLocalizations.ts",
+    "generate:app-store-connect-review": "tsx server/generateAppStoreConnectReview.ts",
     "validate:unified-content-model": "tsx server/validateUnifiedContentModel.ts"
   },
   "dependencies": {

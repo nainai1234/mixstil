@@ -3685,7 +3685,9 @@ app.post('/api/quick-create', async (req, res, next) => {
       savedBaselinePreferences,
     });
     const foundationalExcludedSounds = reconcileFoundationalExcludedSounds(prompt, planning.audioIntent.excludedSounds);
-    const foundationalSelectionCandidate = voiceDowngradedForBeta ? null : selectFoundationalElementRecipe({
+    // Foundational composer material is internal review content. Production
+    // must route only to finished, owner-approved baseline soundscapes.
+    const foundationalSelectionCandidate = runtimeConfig.production || voiceDowngradedForBeta || baselineSelection ? null : selectFoundationalElementRecipe({
       prompt,
       goal: planning.audioIntent.goal,
       scene: planning.audioIntent.scene,
@@ -3702,7 +3704,7 @@ app.post('/api/quick-create', async (req, res, next) => {
     const foundationalSelection = planning.audioIntent.environmentPreferences.length > 0
       ? null
       : foundationalSelectionCandidate;
-    const musicKitRecipe = voiceDowngradedForBeta || foundationalSelection || !explicitlyRequestsMusicKit(prompt, planning.audioIntent) ? null : selectMusicKitCatalogRecipe({
+    const musicKitRecipe = runtimeConfig.production || voiceDowngradedForBeta || baselineSelection || foundationalSelection || !explicitlyRequestsMusicKit(prompt, planning.audioIntent) ? null : selectMusicKitCatalogRecipe({
       prompt,
       goal: planning.audioIntent.goal,
       scene: planning.audioIntent.scene,
@@ -3718,7 +3720,7 @@ app.post('/api/quick-create', async (req, res, next) => {
       preferredSounds: planning.audioIntent.environmentPreferences,
       selectionKey: String(res.locals.requestId ?? ''),
     }) : null;
-    const composerRenderPilot = voiceDowngradedForBeta ? null : selectComposerResultRenderPilot({
+    const composerRenderPilot = runtimeConfig.production || voiceDowngradedForBeta || baselineSelection ? null : selectComposerResultRenderPilot({
       prompt,
       goal: planning.audioIntent.goal,
       scene: planning.audioIntent.scene,

@@ -1,0 +1,47 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-mobile
+dist-ssr
+backups/
+artifacts/
+release-evidence.local.json
+.local-models/
+*.local
+.env
+.env.*
+!.env.example
+!.env.mobile.example
+
+# Local content factory inventory and generated review artifacts do not belong
+# in the web deployment repository. Production audio is served by the API/R2.
+public/audio/
+public/exports/
+public/review/
+imports/
+assets/audio-sources/
+assets/originals/
+assets/soundfonts/
+reports/
+ios/DerivedData/
+android/.gradle/
+android/build/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

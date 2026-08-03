@@ -74,7 +74,7 @@ export const parseAudioIntentV2 = (input: {
   const goal = input.goal ?? detectedGoal(prompt) ?? 'sleep';
   const scene = input.scene ?? defaultScene(goal, prompt);
   const detectedExclusions = exclusionTerms
-    .filter((term) => new RegExp(`(?:no|without|avoid|do not want|don't want|not interested in|不要|没有|去掉|不想(?:听|要)?|不需要|不喜欢|不用|别(?:听|要)?)[^,.，。]{0,12}(?:${term.match.source})`, 'i').test(prompt))
+    .filter((term) => new RegExp(`(?:no|without|avoid|do not want|don't want|not interested in|不要|没有|无|去掉|不想(?:听|要)?|不需要|不喜欢|不用|别(?:听|要)?)[^,.，。、]{0,12}(?:${term.match.source})`, 'i').test(prompt))
     .filter((term) => !(term.id === 'music' && /(没有节拍|无节拍|没有旋律|无旋律|no beat|without beat|non[- ]rhythmic|no melody)/i.test(prompt)))
     .map((term) => term.id);
   const excludedSounds = Array.from(new Set(detectedExclusions.flatMap((sound) => exclusionFamilyExpansion[sound] ?? [sound])));

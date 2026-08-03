@@ -25,6 +25,14 @@ if (grounding.sessionSubtype !== 'grounding' || grounding.currentState.emotional
 const allNight = parseAudioIntentV3({ prompt: '整夜循环播放，遮住外面的噪音，不要音乐。', goal: 'sleep', durationSeconds: 3600 });
 if (allNight.sessionSubtype !== 'all_night_masking' || allNight.context.loopPreference !== 'continuous') throw new Error('All-night masking context was not recognized.');
 
+const voiceFreeSleepMusic = parseAudioIntentV3({ prompt: '无水声、无人声、低刺激助眠音乐', goal: 'sleep', durationSeconds: 900 });
+if (!voiceFreeSleepMusic.excludedSounds.includes('water') || !voiceFreeSleepMusic.excludedSounds.includes('voice')) {
+  throw new Error('Chinese no-water/no-voice exclusions were not preserved.');
+}
+if (voiceFreeSleepMusic.environmentPreferences.includes('water')) {
+  throw new Error('Chinese no-water exclusion was incorrectly promoted to an environment preference.');
+}
+
 console.log(JSON.stringify({
   passed: true,
   intents: [racingThoughts, returnToSleep, reading, grounding, allNight].map((intent) => ({

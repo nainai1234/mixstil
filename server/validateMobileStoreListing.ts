@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import dotenv from 'dotenv';
 import { SUPPORTED_LOCALES, type ResolvedLanguage } from '../src/lib/languagePreference';
 
 type StoreIcon = {
@@ -55,6 +56,9 @@ type StoreLocalization = {
 
 const root = process.cwd();
 const requireSubmission = process.argv.includes('--require-submission');
+if (requireSubmission) {
+  dotenv.config({ path: path.join(root, '.env.mobile') });
+}
 const listingPath = path.join(root, 'data/mobile-store-listing.json');
 const listing = JSON.parse(fs.readFileSync(listingPath, 'utf8')) as StoreListing;
 const localizationPath = path.join(root, 'data/mobile-store-listing-localizations.json');
@@ -133,6 +137,10 @@ for (const item of localizationBundle.localizations) {
     assert(item.apple.subtitle !== englishLocalization.apple.subtitle, `${item.locale} Apple subtitle does not fall back to English`);
     assert(item.googlePlay.shortDescription !== englishLocalization.googlePlay.shortDescription, `${item.locale} Play description does not fall back to English`);
     assert(item.fullDescription !== englishLocalization.fullDescription, `${item.locale} full description does not fall back to English`);
+    assert(
+      item.screenshots.every((shot, index) => shot.title !== englishLocalization.screenshots[index]?.title),
+      `${item.locale} screenshot titles do not fall back to English`,
+    );
     assert(item.nativeReviewStatus !== 'source_baseline', `${item.locale} does not claim English source approval`);
   }
 }

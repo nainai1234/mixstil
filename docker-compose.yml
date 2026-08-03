@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: snooze-postgres
+    environment:
+      POSTGRES_DB: snooze
+      POSTGRES_USER: snooze
+      POSTGRES_PASSWORD: snooze
+    ports:
+      - "5432:5432"
+    volumes:
+      - snooze-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U snooze -d snooze"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  snooze-postgres-data:
+

@@ -6,7 +6,9 @@ RUN pnpm install --frozen-lockfile
 
 FROM node:24-bookworm-slim
 WORKDIR /app
-RUN corepack enable && apt-get update && apt-get install -y --no-install-recommends ffmpeg ca-certificates && rm -rf /var/lib/apt/lists/*
+ARG AUDIO_BASELINE_RELEASE_URL=https://github.com/nainai1234/mixstil/releases/download/audio-baseline-v1
+ARG AUDIO_BASELINE_SHA256=7436b97a41b373796a9ebaef33d739b523eaaa52b29572521daa808a42c1124c
+RUN corepack enable && apt-get update && apt-get install -y --no-install-recommends ffmpeg ca-certificates curl && rm -rf /var/lib/apt/lists/*
 COPY --from=dependencies /app/node_modules ./node_modules
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml tsconfig.server.json ./
 COPY server ./server
@@ -14,6 +16,15 @@ COPY config ./config
 COPY data ./data
 COPY docs ./docs
 COPY public/content ./public/content
-COPY public/audio/music/local-review/atomic-foundation-elements-v1/manifest.json ./public/audio/music/local-review/atomic-foundation-elements-v1/manifest.json
+RUN mkdir -p ./public /tmp/audio-baseline-parts && \
+  for part in $(seq -w 0 124); do \
+    curl --fail --location --retry 6 --retry-all-errors \
+      --output "/tmp/audio-baseline-parts/$part" \
+      "$AUDIO_BASELINE_RELEASE_URL/audio-baseline-v1.block-$part"; \
+  done && \
+  cat /tmp/audio-baseline-parts/* > /tmp/audio-baseline-v1.tar.gz && \
+  echo "$AUDIO_BASELINE_SHA256  /tmp/audio-baseline-v1.tar.gz" | sha256sum --check - && \
+  tar -xzf /tmp/audio-baseline-v1.tar.gz -C ./public && \
+  rm -rf /tmp/audio-baseline-parts /tmp/audio-baseline-v1.tar.gz
 EXPOSE 8788
 CMD ["pnpm", "dev:api"]

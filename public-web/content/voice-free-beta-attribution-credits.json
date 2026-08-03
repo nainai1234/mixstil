@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-08-02T21:15:04.023Z",
+  "releaseChannel": "voice-free-beta",
+  "sourceManifest": "reports/content-release-manifest-2026-07-15.json",
+  "status": "pass",
+  "requiredAttributionCount": 8,
+  "creditCount": 8,
+  "byLicense": {
+    "CC BY 4.0": 7,
+    "Creative Commons Attribution 3.0 Unported": 1
+  },
+  "credits": [
+    {
+      "stemId": "stem_batch07_incompetech_meditation_impromptu_01",
+      "title": "Meditation Impromptu 01",
+      "creator": "Kevin MacLeod",
+      "sourcePlatform": "Incompetech",
+      "sourceUrl": "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100163",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionText": "Meditation Impromptu 01 by Kevin MacLeod via Incompetech is licensed under CC BY 4.0.",
+      "adaptationNotice": "Used as source material in a MixStil soundscape; playback may include looping, volume balancing, trimming, layering, or rendering with other approved sounds."
+    },
+    {
+      "stemId": "stem_batch07_incompetech_meditation_impromptu_02",
+      "title": "Meditation Impromptu 02",
+      "creator": "Kevin MacLeod",
+      "sourcePlatform": "Incompetech",
+      "sourceUrl": "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100162",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionText": "Meditation Impromptu 02 by Kevin MacLeod via Incompetech is licensed under CC BY 4.0.",
+      "adaptationNotice": "Used as source material in a MixStil soundscape; playback may include looping, volume balancing, trimming, layering, or rendering with other approved sounds."
+    },
+    {
+      "stemId": "stem_batch07_incompetech_meditation_impromptu_03",
+      "title": "Meditation Impromptu 03",
+      "creator": "Kevin MacLeod",
+      "sourcePlatform": "Incompetech",
+      "sourceUrl": "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100161",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionText": "Meditation Impromptu 03 by Kevin MacLeod via Incompetech is licensed under CC BY 4.0.",
+      "adaptationNotice": "Used as source material in a MixStil soundscape; playback may include looping, volume balancing, trimming, layering, or rendering with other approved sounds."
+    },
+    {
+      "stemId": "stem_batch07_scott_buckley_solace",
+      "title": "Solace",
+      "creator": "Scott Buckley",
+      "sourcePlatform": "Scott Buckley",
+      "sourceUrl": "https://www.scottbuckley.com.au/library/solace/",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionText": "Solace by Scott Buckley via Scott Buckley is licensed under CC BY 4.0.",
+      "adaptationNotice": "Used as source material in a MixStil soundscape; playback may include looping, volume balancing, trimming, layering, or rendering with other approved sounds."
+    },
+    {
+      "stemId": "stem_batch09_air_conditioner_hum_1",
+      "title": "Air Conditioner Hum 1",
+      "creator": "Gravity Sound",
+      "sourcePlatform": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Air_conditioner_hum_(Gravity_Sound).wav",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionText": "Air Conditioner Hum 1 by Gravity Sound via Wikimedia Commons is licensed under CC BY 4.0.",
+      "adaptationNotice": "Used as source material in a MixStil soundscape; playback may include looping, volume balancing, trimming, layering, or rendering with other approved sounds."
+    },
+    {
+      "stemId": "stem_batch09_air_conditioner_hum_2",
+      "title": "Air Conditioner Hum 2",
+      "creator": "Gravity Sound",
+      "sourcePlatform": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Air_conditioner_hum_2_(Gravity_Sound).wav",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionText": "Air Conditioner Hum 2 by Gravity Sound via Wikimedia Commons is licensed under CC BY 4.0.",
+      "adaptationNotice": "Used as source material in a MixStil soundscape; playback may include looping, volume balancing, trimming, layering, or rendering with other approved sounds."
+    },
+    {
+      "stemId": "stem_batch09_fan_mine_ventilation",
+      "title": "Mine Ventilation Fan",
+      "creator": "Work With Sounds / Technical Museum of Slovenia",
+      "sourcePlatform": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:WWS_Ventilationfan.ogg",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attributionText": "Mine Ventilation Fan by Work With Sounds / Technical Museum of Slovenia via Wikimedia Commons is licensed under CC BY 4.0.",
+      "adaptationNotice": "Used as source material in a MixStil soundscape; playback may include looping, volume balancing, trimming, layering, or rendering with other approved sounds."
+    },
+    {
+      "stemId": "stem_commons_pine_forest_wind",
+      "title": "Wind in Pine Forest",
+      "creator": "luc de bruijn",
+      "sourcePlatform": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wind_in_a_pine_forest.ogg",
+      "licenseName": "Creative Commons Attribution 3.0 Unported",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "attributionText": "Wind in Pine Forest by luc de bruijn via Wikimedia Commons is licensed under Creative Commons Attribution 3.0 Unported.",
+      "adaptationNotice": "Used as source material in a MixStil soundscape; playback may include looping, volume balancing, trimming, layering, or rendering with other approved sounds."
+    }
+  ],
+  "policy": {
+    "publicDisplayRequired": "Share pages, mobile public/about credits, and any exported public work metadata must preserve these credits when the corresponding Stem is active.",
+    "adaptationNoticeRequired": true,
+    "nonAttributionLicenses": "CC0, public-domain, Mixkit, and MixStil internal assets remain in the manifest but do not require public byline display."
+  }
+}

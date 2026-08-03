@@ -20,7 +20,7 @@ const requiredAudioContextContracts = [
   'seekTo: (positionSeconds: number) => void',
 ];
 const requiredPlayerContracts = [
-  'preparePlayback()',
+  'prepareNativeAudio({',
   'new MediaMetadata',
   'navigator.mediaSession.playbackState',
   'navigator.mediaSession.setPositionState',

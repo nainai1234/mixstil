@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-07-17T21:44:10.628331+00:00",
+  "model": "facebook/musicgen-style",
+  "license_note": "facebook/musicgen-style pretrained weights are CC-BY-NC 4.0; use generated files for internal research only unless relicensed.",
+  "duration": 12.0,
+  "candidates": [
+    {
+      "file": "experiments/audio-model-lab/outputs/musicgen-style/musicgen-style_ref-unlit-corners-early-08s-4s_prompt-1_q1_cfg2p5_beta4p0.wav",
+      "reference_excerpt": "experiments/audio-model-lab/reference-excerpts/unlit-corners-early-08s-4s.wav",
+      "prompt": "slow therapeutic ambient sleep music, soft warm drone, sparse gentle piano-like tones, no beat, no vocals, no melody hook, long reverb, calm, low intensity, seamless meditation bed",
+      "params": {
+        "eval_q": 1,
+        "cfg_coef": 2.5,
+        "cfg_coef_beta": 4.0,
+        "top_k": 180
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "createdAt": "2026-07-17T23:02:45.221Z",
+  "provider": "stability-ai",
+  "endpoint": "https://api.stability.ai/v2beta/audio/stable-audio-2/text-to-audio",
+  "modelRoute": "stable-audio-2-text-to-audio",
+  "outputDir": "/Users/pang/project/sleep-audio/experiments/audio-model-lab/outputs/stability-audio-sleep-spike-001",
+  "outputFormat": "mp3",
+  "status": "blocked",
+  "licenseBoundary": "Outputs are candidates only. Confirm Stability account plan, API terms, commercial-use rights, and redistribution rights before promotion.",
+  "candidates": [],
+  "blockedReason": "Missing STABILITY_API_KEY or STABILITY_AUDIO_API_KEY. No request was sent."
+}

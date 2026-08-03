@@ -1,0 +1,24 @@
+{
+  "name": "MixStil",
+  "short_name": "MixStil",
+  "start_url": "/listen",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#09090d",
+  "theme_color": "#8c6aff",
+  "description": "Personal sleep, calm, and focus soundscapes.",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -38,11 +38,40 @@ const nonMedicalBoundary: Record<ResolvedLanguage, string> = {
   fi: 'MixStil ei diagnosoi, hoida tai paranna eikä takaa terveysvaikutuksia.',
 };
 
+const screenshotTitleOverrides: Record<ResolvedLanguage, { onboarding: string; layerAdjustment: string }> = {
+  zh: { onboarding: '个人声音偏好', layerAdjustment: '声音调整' },
+  en: { onboarding: 'Personal sound preferences', layerAdjustment: 'Sound adjustments' },
+  hi: { onboarding: 'व्यक्तिगत ध्वनि पसंद', layerAdjustment: 'ध्वनि समायोजन' },
+  es: { onboarding: 'Preferencias de sonido', layerAdjustment: 'Ajustes de sonido' },
+  ar: { onboarding: 'تفضيلات الصوت الشخصية', layerAdjustment: 'تعديلات الصوت' },
+  bn: { onboarding: 'ব্যক্তিগত শব্দ পছন্দ', layerAdjustment: 'শব্দের সমন্বয়' },
+  pt: { onboarding: 'Preferências de som', layerAdjustment: 'Ajustes de som' },
+  ru: { onboarding: 'Личные звуковые предпочтения', layerAdjustment: 'Настройки звука' },
+  ja: { onboarding: 'サウンドの好み', layerAdjustment: 'サウンド調整' },
+  id: { onboarding: 'Preferensi suara pribadi', layerAdjustment: 'Penyesuaian suara' },
+  de: { onboarding: 'Persönliche Klangvorlieben', layerAdjustment: 'Klanganpassungen' },
+  fr: { onboarding: 'Préférences sonores', layerAdjustment: 'Réglages du son' },
+  ko: { onboarding: '개인 사운드 선호도', layerAdjustment: '사운드 조정' },
+  it: { onboarding: 'Preferenze sonore personali', layerAdjustment: 'Regolazioni audio' },
+  nl: { onboarding: 'Persoonlijke geluidsvoorkeuren', layerAdjustment: 'Geluidsaanpassingen' },
+  'zh-Hant': { onboarding: '個人聲音偏好', layerAdjustment: '聲音調整' },
+  tr: { onboarding: 'Kişisel ses tercihleri', layerAdjustment: 'Ses ayarları' },
+  pl: { onboarding: 'Osobiste preferencje dźwięku', layerAdjustment: 'Ustawienia dźwięku' },
+  sv: { onboarding: 'Personliga ljudpreferenser', layerAdjustment: 'Ljudjusteringar' },
+  th: { onboarding: 'การตั้งค่าเสียงส่วนตัว', layerAdjustment: 'การปรับเสียง' },
+  vi: { onboarding: 'Tùy chọn âm thanh cá nhân', layerAdjustment: 'Điều chỉnh âm thanh' },
+  ms: { onboarding: 'Pilihan bunyi peribadi', layerAdjustment: 'Pelarasan bunyi' },
+  he: { onboarding: 'העדפות צליל אישיות', layerAdjustment: 'התאמות צליל' },
+  da: { onboarding: 'Personlige lydpræferencer', layerAdjustment: 'Lydjusteringer' },
+  no: { onboarding: 'Personlige lydpreferanser', layerAdjustment: 'Lydjusteringer' },
+  fi: { onboarding: 'Henkilökohtaiset ääniasetukset', layerAdjustment: 'Äänen säädöt' },
+};
+
 const fit = (preferred: string, fallback: string, maximum: number) => preferred.length <= maximum ? preferred : fallback;
 
 const localizations = SUPPORTED_LOCALES.map((locale) => {
   const goals = [tForLocale(locale, 'goal.sleep'), tForLocale(locale, 'goal.calm'), tForLocale(locale, 'goal.focus')];
-  const subtitle = fit(goals.join(' · '), tForLocale(locale, 'create.title'), 30);
+  const subtitle = fit(goals.join(' · '), goals.slice(0, 2).join(' · '), 30);
   const homeSubtitle = tForLocale(locale, 'home.subtitle');
   const shortDescription = fit(
     locale !== 'en' && homeSubtitle === tForLocale('en', 'home.subtitle') ? tForLocale(locale, 'home.title') : homeSubtitle,
@@ -75,10 +104,10 @@ const localizations = SUPPORTED_LOCALES.map((locale) => {
       nonMedicalBoundary[locale],
     ].join('\n\n'),
     screenshots: [
-      { id: 'onboarding', title: tForLocale(locale, 'profile.preferences') },
+      { id: 'onboarding', title: screenshotTitleOverrides[locale].onboarding },
       { id: 'create', title: tForLocale(locale, 'home.describe.title') },
       { id: 'player-refine', title: tForLocale(locale, 'player.customSoundscape') },
-      { id: 'layer-adjustment', title: tForLocale(locale, 'player.adjustTitle') },
+      { id: 'layer-adjustment', title: screenshotTitleOverrides[locale].layerAdjustment },
       { id: 'my-sounds', title: tForLocale(locale, 'nav.sounds') },
       { id: 'profile', title: tForLocale(locale, 'nav.profile') },
     ],
