@@ -92,6 +92,8 @@
     "validate:music-kit-production-v2": "MUSIC_KIT_PRODUCTION_MANIFEST=music-kit-production-v2.json tsx server/validateMusicKitProductionV2.ts",
     "review:music-kit-production-v2-elements": "node scripts/build-music-kit-production-v2-review.mjs",
     "validate:finished-content-release": "tsx server/validateFinishedContentRelease.ts",
+    "publish:finished-content-30": "tsx server/publishFinishedContent30.ts",
+    "upload:finished-content-masters": "tsx server/uploadFinishedContentMasters.ts",
     "validate:generation-decision": "tsx server/validateGenerationDecision.ts",
     "validate:supply-gap-jobs": "tsx server/validateSupplyGapJobs.ts",
     "validate:sound-group-volumes": "tsx server/validateSoundGroupVolumes.ts",

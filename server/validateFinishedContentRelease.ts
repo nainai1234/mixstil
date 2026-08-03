@@ -20,7 +20,12 @@ const run = async () => {
   if (result.rows.some((row) => row.status !== 'published' || row.render_status !== 'ready' || !row.published_version_id || !row.rendered_audio_url)) {
     fail('one or more finished mixes are not published and rendered');
   }
-  const versions = await query<any>(`select count(*)::int as count from mix_recipe_versions where mix_id like 'mix_finished_%'`);
+  const versions = await query<any>(
+    `select count(*)::int as count
+     from mixes m
+     join mix_recipe_versions v on v.id = m.published_version_id and v.mix_id = m.id
+     where m.id like 'mix_finished_%'`,
+  );
   if (versions.rows[0].count !== 30) fail(`database has ${versions.rows[0].count}/30 frozen recipe versions`);
   const assets = await query<any>(`select count(*)::int as count from audio_stems where id like 'stem_content_baseline_%' and qa_status='approved' and commercial_use_allowed=true and derivative_use_allowed=true`);
   if (assets.rows[0].count !== 30) fail(`database has ${assets.rows[0].count}/30 approved finished content stems`);

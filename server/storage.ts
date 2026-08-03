@@ -97,6 +97,7 @@ export class ExportStorage {
         Bucket: this.config.bucket,
         Key: key,
         Body: createReadStream(filePath),
+        ContentLength: file.size,
         ContentType: contentType,
         CacheControl: 'public, max-age=31536000, immutable',
       }));

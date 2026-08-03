@@ -59,9 +59,10 @@
         "soft"
       ],
       "mixIds": [
-        "mix_demand_plus_variants_2026_07_30_sleep_ready_01",
-        "mix_demand_plus_variants_2026_07_30_sleep_ready_02",
-        "mix_demand_plus_variants_2026_07_30_sleep_ready_03"
+        "mix_finished_sleep_018_saveable_soft_descent",
+        "mix_finished_sleep_019_soft_descent_deeper",
+        "mix_finished_sleep_025_anxious_bedtime_soften",
+        "mix_finished_sleep_027_phone_down_bedtime"
       ],
       "icon": "moon",
       "limit": 6
@@ -81,7 +82,11 @@
         "low",
         "quiet"
       ],
-      "mixIds": [],
+      "mixIds": [
+        "mix_finished_sleep_020_return_sleep_soft_floor",
+        "mix_finished_sleep_026_early_morning_return",
+        "mix_finished_sleep_024_restless_mind_downshift"
+      ],
       "icon": "clock",
       "limit": 6
     },
@@ -100,7 +105,11 @@
         "warm",
         "harmony"
       ],
-      "mixIds": [],
+      "mixIds": [
+        "mix_finished_calm_014_saveable_warm_room",
+        "mix_finished_calm_015_warm_room_extended",
+        "mix_finished_calm_018_evening_release"
+      ],
       "icon": "music",
       "limit": 6
     },
@@ -111,15 +120,7 @@
       "title": "噪声与房间遮蔽",
       "description": "棕噪、粉噪、空气声、舱内声和房间底噪，适合想要遮蔽但不想要复杂场景的用户。",
       "prompt": "生成一个柔和遮蔽声景，低噪、无人声、没有突出的前景事件。",
-      "keywords": [
-        "noise",
-        "brown",
-        "pink",
-        "air",
-        "cabin",
-        "room",
-        "masking"
-      ],
+      "keywords": [],
       "mixIds": [],
       "icon": "volume",
       "limit": 6
@@ -131,15 +132,7 @@
       "title": "低事件自然声",
       "description": "安静自然声，避免尖锐前景、密集虫鸣和容易抓注意力的动态。",
       "prompt": "生成一个有柔和距离感、无尖锐事件、无人声的安静自然声景。",
-      "keywords": [
-        "rain",
-        "forest",
-        "wind",
-        "nature",
-        "water",
-        "meadow",
-        "trees"
-      ],
+      "keywords": [],
       "mixIds": [],
       "icon": "trees",
       "limit": 6
@@ -151,14 +144,7 @@
       "title": "细腻纹理",
       "description": "柔和近距离纹理和细小细节，当前版本保持无人声、无惊跳边界。",
       "prompt": "生成一个柔和细腻纹理声景，有近距离细节，但没有口腔声、没有人声。",
-      "keywords": [
-        "soft",
-        "fabric",
-        "texture",
-        "air",
-        "quiet",
-        "gentle"
-      ],
+      "keywords": [],
       "mixIds": [],
       "icon": "waves",
       "limit": 6
@@ -178,7 +164,12 @@
         "short",
         "warm"
       ],
-      "mixIds": [],
+      "mixIds": [
+        "mix_finished_calm_016_after_work_settle",
+        "mix_finished_calm_019_midday_recenter",
+        "mix_finished_calm_021_emotional_buffer",
+        "mix_finished_calm_023_after_work_release"
+      ],
       "icon": "timer-reset",
       "limit": 6
     },
@@ -198,9 +189,11 @@
         "steady"
       ],
       "mixIds": [
-        "mix_demand_plus_variants_2026_07_30_focus_01",
-        "mix_demand_plus_variants_2026_07_30_focus_02",
-        "mix_demand_plus_variants_2026_07_30_focus_03"
+        "mix_finished_focus_017_saveable_low_workbed",
+        "mix_finished_focus_020_reading_low_light",
+        "mix_finished_focus_021_deep_work_stable",
+        "mix_finished_focus_024_coding_low_loop",
+        "mix_finished_focus_025_study_long_arc"
       ],
       "icon": "brain",
       "limit": 6
@@ -220,7 +213,11 @@
         "low",
         "soft"
       ],
-      "mixIds": [],
+      "mixIds": [
+        "mix_finished_focus_019_open_low_attention",
+        "mix_finished_focus_023_low_energy_admin",
+        "mix_finished_sleep_022_late_night_blanket"
+      ],
       "icon": "wind",
       "limit": 6
     },
@@ -239,7 +236,11 @@
         "brown",
         "pink"
       ],
-      "mixIds": [],
+      "mixIds": [
+        "mix_finished_sleep_024_restless_mind_downshift",
+        "mix_finished_calm_017_morning_clear_room",
+        "mix_finished_focus_026_reading_low_distraction"
+      ],
       "icon": "volume-x",
       "limit": 6
     }
