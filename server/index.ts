@@ -5747,12 +5747,12 @@ app.use((error: unknown, _req: express.Request, res: express.Response, _next: ex
 
 const port = runtimeConfig.port;
 
-const prepareDatabase = runtimeConfig.production
-  ? query('select 1')
-  : createSchema()
-    .then(seedDatabase)
+const prepareDatabase = createSchema()
+  .then(() => runtimeConfig.production
+    ? undefined
+    : seedDatabase()
     .then(seedAudioKnowledgeV3)
-    .then(seedAudioIntentGoldSetV3);
+    .then(seedAudioIntentGoldSetV3));
 
 prepareDatabase
   .then(async () => syncDiscoverPlacements(await loadDiscoverConfig()))
