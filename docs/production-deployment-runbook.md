@@ -18,6 +18,7 @@ Local development continues to use `public/exports`; production rejects local ex
 NODE_ENV=production
 API_PORT=8788
 DATABASE_URL=postgres://...
+DATABASE_SSL_NO_VERIFY=false
 SHARE_CREATOR_PREVIEW_SECRET=<unique 32+ character secret>
 CORS_ALLOWED_ORIGINS=https://app.example.com,capacitor://localhost
 TRUST_PROXY=1
