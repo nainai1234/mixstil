@@ -5759,7 +5759,9 @@ const prepareRuntime = runtimeConfig.production && !existsSync(PRODUCTION_AUDIO_
   : prepareDatabase;
 
 prepareRuntime
-  .then(async () => syncDiscoverPlacements(await loadDiscoverConfig()))
+  .then(async () => {
+    if (!runtimeConfig.production) await syncDiscoverPlacements(await loadDiscoverConfig());
+  })
   .then(() => {
     app.listen(port, () => {
       setMetricGauge('snooze_database_ready', 1);

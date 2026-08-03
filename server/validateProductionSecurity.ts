@@ -75,6 +75,7 @@ const contracts: Array<[boolean, string]> = [
   [server.includes("app.get('/api/health/live'"), 'Liveness endpoint exists'],
   [server.includes("runtimeConfig.production ? 'Internal server error'"), 'Production errors are redacted'],
   [server.includes("runtimeConfig.production\n  ? query('select 1')"), 'Production startup does not mutate or seed the database'],
+  [server.includes("if (!runtimeConfig.production) await syncDiscoverPlacements(await loadDiscoverConfig())"), 'Production startup does not mutate Discover placements'],
   [packageJson.scripts['db:bootstrap'] === 'tsx server/bootstrapDatabase.ts', 'Database bootstrap is explicit'],
   [Boolean(packageJson.scripts['db:backup']), 'Database backup command exists'],
   [Boolean(packageJson.scripts['db:restore']), 'Database restore command exists'],
