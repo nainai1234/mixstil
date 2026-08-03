@@ -24,13 +24,17 @@ const run = async () => {
   const storage = new ExportStorage(config);
   const uploaded = new Map<string, string>();
 
-  for (let offset = 0; offset < release.items.length; offset += 3) {
-    const batch = release.items.slice(offset, offset + 3);
+  for (let offset = 0; offset < release.items.length; offset += 6) {
+    const batch = release.items.slice(offset, offset + 6);
     const results = await Promise.all(batch.map(async (item) => {
       const filePath = path.join(root, item.releasePath);
       if (!fs.existsSync(filePath)) throw new Error(`Missing long-form master: ${item.releasePath}`);
       const key = `finished-content/v1/${path.basename(item.releasePath)}`;
-      const stored = await storage.putFile(key, filePath, 'audio/mpeg');
+      const bytes = fs.statSync(filePath).size;
+      const url = `${config.publicBaseUrl}/${key}`;
+      const stored = await storage.hasObject(key, bytes)
+        ? { key, bytes, url }
+        : await storage.putFile(key, filePath, 'audio/mpeg');
       const response = await fetch(stored.url, { headers: { Range: 'bytes=0-1023' } });
       if (response.status !== 200 && response.status !== 206) {
         throw new Error(`Public master verification failed (${response.status}): ${stored.url}`);

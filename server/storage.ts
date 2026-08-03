@@ -1,4 +1,4 @@
-import { DeleteObjectCommand, ListObjectsV2Command, PutObjectCommand, S3Client } from '@aws-sdk/client-s3';
+import { DeleteObjectCommand, HeadObjectCommand, ListObjectsV2Command, PutObjectCommand, S3Client } from '@aws-sdk/client-s3';
 import { createReadStream, existsSync } from 'node:fs';
 import { mkdir, readdir, rm, stat } from 'node:fs/promises';
 import path from 'node:path';
@@ -107,6 +107,22 @@ export class ExportStorage {
       throw error;
     } finally {
       observeMetric('snooze_storage_operation_duration_seconds', Number(process.hrtime.bigint() - startedAt) / 1_000_000_000, { operation: 'put', driver: this.config.driver });
+    }
+  }
+
+  async hasObject(key: string, expectedBytes: number) {
+    validateKey(key);
+    if (this.config.driver === 'local') {
+      const target = path.join(this.config.localDirectory, key);
+      return existsSync(target) && (await stat(target)).size === expectedBytes;
+    }
+    try {
+      const object = await this.s3!.send(new HeadObjectCommand({ Bucket: this.config.bucket, Key: key }));
+      return Number(object.ContentLength) === expectedBytes;
+    } catch (error) {
+      const status = (error as { $metadata?: { httpStatusCode?: number } }).$metadata?.httpStatusCode;
+      if (status === 404) return false;
+      throw error;
     }
   }
 
