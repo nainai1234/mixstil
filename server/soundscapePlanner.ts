@@ -689,9 +689,17 @@ export const planQuickCreateSoundscape = async (input: {
       matchesConcept(modelRequirement, explicitPreference) || matchesConcept(explicitPreference, modelRequirement)
     ))
   ));
+  const explicitEnvironmentRequirements = explicitPreferredConcepts.filter((conceptId) => !conceptId.startsWith('source.music'));
+  const finishedSleepMusicRequest = fallbackIntent.goal === 'sleep'
+    && /助眠音乐/i.test(input.prompt)
+    && explicitExcludedConcepts.length > 0;
   const requiredConceptIds = compactConceptRequirements([
     ...confirmedModelRequirements,
-    ...(explicitAlternatives ? [] : explicitPreferredConcepts),
+    ...(explicitAlternatives
+      ? []
+      : finishedSleepMusicRequest
+        ? explicitEnvironmentRequirements
+        : explicitPreferredConcepts),
   ])
     .filter((item) => item !== 'source.human.voice')
     .filter((item) => !excludedConceptIds.some((excluded) => matchesConcept(item, excluded)));

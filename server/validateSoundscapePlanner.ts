@@ -2,6 +2,7 @@ import { pool, query } from './db';
 import { planQuickCreateSoundscape, SupplyGapError } from './soundscapePlanner';
 
 const cases = [
+  { id: 'voice-free-sleep-music', prompt: '无水声、无人声、低刺激助眠音乐', goal: 'sleep', durationSeconds: 900, expectedMode: 'functional_music', requiredRole: 'music', forbidden: ['source.natural.water', 'source.human.voice'] },
   { id: 'no-water-music', prompt: '睡前需要温暖音乐，不要任何水声，也不要人声', goal: 'sleep', expectedMode: 'functional_music', forbidden: ['source.natural.water'] },
   { id: 'meditation-music-bed', prompt: '我需要真实的冥想音乐，帮助我快速安静下来，不要人声', goal: 'calm', expectedMode: 'functional_music', requiredAny: ['source.music.meditation'], forbidden: ['source.human.voice'] },
   { id: 'rain-meditation-music', prompt: '睡前想听柔和的雨感氛围音乐，宽广、稳定、不要人声，不要突然变化', goal: 'sleep', expectedMode: 'functional_music', requiredAll: ['source.music.meditation', 'source.natural.water.rain'], forbidden: ['source.human.voice', 'source.natural.thunder'] },
@@ -28,7 +29,7 @@ const run = async () => {
     for (const item of cases) {
       let plan;
       try {
-        plan = await planQuickCreateSoundscape({ prompt: item.prompt, requestedGoal: item.goal, durationSeconds: 300 });
+        plan = await planQuickCreateSoundscape({ prompt: item.prompt, requestedGoal: item.goal, durationSeconds: 'durationSeconds' in item ? item.durationSeconds : 300 });
       } catch (error) {
         if ('expectedSupplyGap' in item && item.expectedSupplyGap && error instanceof SupplyGapError) {
           results.push({ id: item.id, supplyGap: true, unmetRequirements: error.unmetRequirements });

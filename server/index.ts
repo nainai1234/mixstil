@@ -44,6 +44,7 @@ const PROJECT_ROOT = path.resolve(__dirname, '..');
 const PUBLIC_DIR = path.join(PROJECT_ROOT, 'public');
 const REPORTS_DIR = path.join(PROJECT_ROOT, 'reports');
 const DISCOVER_CONFIG_PATH = path.join(PROJECT_ROOT, 'data', 'discover-feed-config.json');
+const PRODUCTION_AUDIO_SMOKE_PATH = path.join(PUBLIC_DIR, 'audio', 'content-baseline', 'batch-015', 'sleep_024_restless_mind_downshift.mp3');
 const ADMIN_IMPORT_ROOT = path.join(PUBLIC_DIR, 'audio', 'inbox', 'admin-import');
 const runtimeConfig = getRuntimeConfig();
 const storageConfig = getStorageConfig(process.env, PROJECT_ROOT);
@@ -5753,8 +5754,11 @@ const prepareDatabase = runtimeConfig.production
     .then(seedDatabase)
     .then(seedAudioKnowledgeV3)
     .then(seedAudioIntentGoldSetV3);
+const prepareRuntime = runtimeConfig.production && !existsSync(PRODUCTION_AUDIO_SMOKE_PATH)
+  ? Promise.reject(new Error('Packaged production audio is missing from the runtime image.'))
+  : prepareDatabase;
 
-prepareDatabase
+prepareRuntime
   .then(async () => syncDiscoverPlacements(await loadDiscoverConfig()))
   .then(() => {
     app.listen(port, () => {

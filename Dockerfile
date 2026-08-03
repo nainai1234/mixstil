@@ -25,6 +25,8 @@ RUN mkdir -p ./public /tmp/audio-baseline-parts && \
   cat /tmp/audio-baseline-parts/* > /tmp/audio-baseline-v1.tar.gz && \
   echo "$AUDIO_BASELINE_SHA256  /tmp/audio-baseline-v1.tar.gz" | sha256sum --check - && \
   tar -xzf /tmp/audio-baseline-v1.tar.gz -C ./public && \
+  test -s ./public/audio/content-baseline/batch-015/sleep_024_restless_mind_downshift.mp3 && \
+  echo "95050e081f674aadbc862083309cb30e1aff2b7143520be95f2c956fb0c4a94e  ./public/audio/content-baseline/batch-015/sleep_024_restless_mind_downshift.mp3" | sha256sum --check - && \
   rm -rf /tmp/audio-baseline-parts /tmp/audio-baseline-v1.tar.gz
 EXPOSE 8788
 CMD ["node", "node_modules/tsx/dist/cli.mjs", "server/index.ts"]
