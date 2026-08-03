@@ -97,7 +97,7 @@ app.use('/api/quick-create', createRateLimiter({ windowMs: 60_000, limit: 10, ke
 app.use('/api/ai/sessions', createRateLimiter({ windowMs: 60_000, limit: 10, key: requestIdentityKey }));
 app.use('/api/supply-gap-jobs', createRateLimiter({ windowMs: 60_000, limit: 10, key: requestIdentityKey }));
 app.use('/api/music-generation', createRateLimiter({ windowMs: 60_000, limit: 5, key: requestIdentityKey }));
-if (!process.env.AUDIO_PUBLIC_BASE_URL) app.use('/audio', express.static(path.join(PUBLIC_DIR, 'audio')));
+app.use('/audio', express.static(path.join(PUBLIC_DIR, 'audio')));
 if (storageConfig.driver === 'local') app.use(storageConfig.localPublicPath, express.static(storageConfig.localDirectory));
 
 app.get('/api/product-capabilities', (_req, res) => {
