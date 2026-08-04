@@ -12,6 +12,21 @@ type AuditRow = ApprovedAudioAssetRow & {
 const root = process.cwd();
 const publicBase = String(process.env.STORAGE_PUBLIC_BASE_URL ?? process.env.AUDIO_PUBLIC_BASE_URL ?? '').replace(/\/+$/, '');
 
+const isOnline = async (url: string) => {
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    try {
+      const response = await fetch(`${url}?audit=${Date.now()}-${attempt}`, {
+        headers: { Range: 'bytes=0-1023', 'Cache-Control': 'no-cache' },
+      });
+      if ((response.status === 200 || response.status === 206) && String(response.headers.get('content-type')).startsWith('audio/')) return true;
+    } catch {
+      // Transient CDN or network failures are retried before declaring the object offline.
+    }
+    if (attempt < 3) await new Promise((resolve) => setTimeout(resolve, attempt * 500));
+  }
+  return false;
+};
+
 const run = async () => {
   if (!publicBase.startsWith('https://')) throw new Error('STORAGE_PUBLIC_BASE_URL or AUDIO_PUBLIC_BASE_URL is required.');
   const result = await pool.query<AuditRow>(
@@ -32,8 +47,7 @@ const run = async () => {
       const row = result.rows[cursor++];
       const location = approvedAudioAssetLocation(root, row);
       if (!location) continue;
-      const response = await fetch(`${publicBase}/${location.key}`, { headers: { Range: 'bytes=0-1023' } });
-      if ((response.status === 200 || response.status === 206) && String(response.headers.get('content-type')).startsWith('audio/')) online.add(row.id);
+      if (await isOnline(`${publicBase}/${location.key}`)) online.add(row.id);
     }
   };
   await Promise.all(Array.from({ length: 12 }, () => worker()));
