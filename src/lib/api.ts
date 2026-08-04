@@ -105,6 +105,55 @@ export const getDownloadUrl = (mixId: string) => resolveServiceUrl(`/api/mixes/$
 export const getCreditsJsonDownloadUrl = (mixId: string) => resolveServiceUrl(`/api/mixes/${mixId}/credits.json`);
 export const getCreditsTextDownloadUrl = (mixId: string) => resolveServiceUrl(`/api/mixes/${mixId}/credits.txt`);
 
+export type AdminResumableUploadProgress = {
+  uploadedBytes: number;
+  totalBytes: number;
+  uploadedParts: number;
+  totalParts: number;
+  percent: number;
+  resumed: boolean;
+};
+
+type AdminResumableUploadSession = {
+  id: string;
+  filename: string;
+  fileSize: number;
+  contentType: string;
+  partSize: number;
+  totalParts: number;
+  status: 'uploading' | 'finalizing' | 'completed' | 'aborted' | 'failed';
+  uploadedParts: Array<{ partNumber: number; bytes: number }>;
+  uploadedBytes: number;
+  audioUrl: string;
+  updatedAt: string;
+};
+
+const uploadBinaryPart = async (sessionId: string, partNumber: number, body: Blob) => {
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= 4; attempt += 1) {
+    try {
+      const authToken = typeof localStorage === 'undefined' ? '' : localStorage.getItem(AUTH_TOKEN_KEY) ?? '';
+      const response = await fetch(resolveServiceUrl(`/api/admin/assets/resumable/${encodeURIComponent(sessionId)}/parts/${partNumber}`), {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/octet-stream',
+          ...(authToken ? { Authorization: `Bearer ${authToken}` } : {}),
+        },
+        body,
+      });
+      if (!response.ok) {
+        const payload = await response.json().catch(() => null) as { error?: string } | null;
+        throw new Error(payload?.error ?? response.statusText);
+      }
+      return;
+    } catch (error) {
+      lastError = error;
+      if (attempt < 4) await new Promise((resolve) => setTimeout(resolve, attempt * 1_000));
+    }
+  }
+  throw lastError;
+};
+
 export const tracksToRecipe = (
   tracks: Array<{
     stemId?: string;
@@ -390,6 +439,95 @@ export const api = {
         warnings: string[];
       };
     }>;
+  },
+
+  uploadAdminAssetResumable: async (input: {
+    file: File;
+    name: string;
+    category: StemCategory;
+    tags: string;
+    description: string;
+    defaultVolume: number;
+    sourcePlatform: string;
+    sourceUrl: string;
+    sourceCreator: string;
+    licenseName: string;
+    licenseUrl: string;
+    commercialUseAllowed: boolean;
+    derivativeUseAllowed: boolean;
+    attributionRequired: boolean;
+    rawRedistributionAllowed: boolean;
+  }, onProgress?: (progress: AdminResumableUploadProgress) => void) => {
+    const fingerprint = `${input.file.name}:${input.file.size}:${input.file.lastModified}`;
+    const storageKey = `snooze_admin_resumable_upload:${fingerprint}`;
+    const resumeSessionId = typeof localStorage === 'undefined' ? '' : localStorage.getItem(storageKey) ?? '';
+    const metadata = {
+      name: input.name,
+      category: input.category,
+      tags: input.tags,
+      description: input.description,
+      defaultVolume: input.defaultVolume,
+      sourcePlatform: input.sourcePlatform,
+      sourceUrl: input.sourceUrl,
+      sourceCreator: input.sourceCreator,
+      licenseName: input.licenseName,
+      licenseUrl: input.licenseUrl,
+      commercialUseAllowed: input.commercialUseAllowed,
+      derivativeUseAllowed: input.derivativeUseAllowed,
+      attributionRequired: input.attributionRequired,
+      rawRedistributionAllowed: input.rawRedistributionAllowed,
+    };
+    const created = await request<{ session: AdminResumableUploadSession }>('/api/admin/assets/resumable', {
+      method: 'POST',
+      body: JSON.stringify({
+        filename: input.file.name,
+        fileSize: input.file.size,
+        contentType: input.file.type,
+        lastModified: input.file.lastModified,
+        metadata,
+        resumeSessionId,
+      }),
+    });
+    let session = created.session;
+    const resumed = Boolean(resumeSessionId && session.id === resumeSessionId && session.uploadedParts.length > 0);
+    if (typeof localStorage !== 'undefined') localStorage.setItem(storageKey, session.id);
+    const uploadedParts = new Set(session.uploadedParts.map((part) => part.partNumber));
+    let uploadedBytes = session.uploadedBytes;
+    const reportProgress = () => onProgress?.({
+      uploadedBytes,
+      totalBytes: input.file.size,
+      uploadedParts: uploadedParts.size,
+      totalParts: session.totalParts,
+      percent: Math.min(100, Math.round((uploadedBytes / input.file.size) * 100)),
+      resumed,
+    });
+    reportProgress();
+    if (session.status === 'uploading') {
+      const missingParts = Array.from({ length: session.totalParts }, (_, index) => index + 1)
+        .filter((partNumber) => !uploadedParts.has(partNumber));
+      let cursor = 0;
+      const worker = async () => {
+        while (cursor < missingParts.length) {
+          const partNumber = missingParts[cursor++];
+          const start = (partNumber - 1) * session.partSize;
+          const end = Math.min(input.file.size, start + session.partSize);
+          await uploadBinaryPart(session.id, partNumber, input.file.slice(start, end));
+          uploadedParts.add(partNumber);
+          uploadedBytes += end - start;
+          reportProgress();
+        }
+      };
+      await Promise.all(Array.from({ length: Math.min(2, missingParts.length) }, () => worker()));
+    }
+    const completed = await request<{ session: AdminResumableUploadSession; asset: AudioStem; duplicate: boolean }>(
+      `/api/admin/assets/resumable/${encodeURIComponent(session.id)}/complete`,
+      { method: 'POST', body: JSON.stringify({}) },
+    );
+    session = completed.session;
+    uploadedBytes = input.file.size;
+    reportProgress();
+    if (typeof localStorage !== 'undefined') localStorage.removeItem(storageKey);
+    return completed;
   },
 
   uploadAdminAsset: async (input: {

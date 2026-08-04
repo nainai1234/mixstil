@@ -429,6 +429,15 @@ const requireAuthenticatedUser = async (req: express.Request, res: express.Respo
   }
   return user;
 };
+const requireAdminUser = async (req: express.Request, res: express.Response) => {
+  const user = await requireAuthenticatedUser(req, res);
+  if (!user) return null;
+  if (user.role !== 'admin') {
+    res.status(403).json({ error: 'Administrator access is required.', code: 'admin_required' });
+    return null;
+  }
+  return user;
+};
 const requireOwnedMix = async (req: express.Request, res: express.Response) => {
   const user = await requireAuthenticatedUser(req, res);
   if (!user) return null;
@@ -3217,6 +3226,298 @@ app.post('/api/admin/assets/import-inbox', async (req, res, next) => {
         skipped: skipped.length,
       },
     });
+  } catch (error) {
+    next(error);
+  }
+});
+
+const ADMIN_RESUMABLE_PART_BYTES = 8 * 1024 * 1024;
+const ADMIN_RESUMABLE_MAX_BYTES = 2 * 1024 * 1024 * 1024;
+
+const getOwnedUploadSession = async (sessionId: string, userId: string) => {
+  const result = await query<any>(
+    'select * from asset_upload_sessions where id = $1 and user_id = $2',
+    [sessionId, userId],
+  );
+  return result.rows[0] ?? null;
+};
+
+const mapUploadSession = async (session: any) => {
+  let parts: Array<{ partNumber: number; etag: string; bytes: number }> = [];
+  if (session.status === 'uploading') {
+    parts = await exportStorage.listMultipartParts(session.object_key, session.upload_id);
+  }
+  const fileSize = Number(session.file_size);
+  return {
+    id: session.id,
+    filename: session.original_filename,
+    fileSize,
+    contentType: session.content_type,
+    partSize: Number(session.part_size),
+    totalParts: Math.ceil(fileSize / Number(session.part_size)),
+    status: session.status,
+    uploadedParts: parts.map((part) => ({ partNumber: part.partNumber, bytes: part.bytes })),
+    uploadedBytes: session.status === 'completed' || session.status === 'finalizing'
+      ? fileSize
+      : parts.reduce((total, part) => total + part.bytes, 0),
+    audioUrl: session.status === 'completed' ? `/${session.object_key}` : '',
+    updatedAt: session.updated_at,
+  };
+};
+
+const hashPublicStorageObject = async (objectKey: string, expectedBytes: number) => {
+  const url = `${storageConfig.publicBaseUrl}/${objectKey}?finalize=${Date.now()}`;
+  let response: Response | null = null;
+  for (let attempt = 1; attempt <= 5; attempt += 1) {
+    try {
+      response = await fetch(`${url}-${attempt}`, { headers: { 'Cache-Control': 'no-cache' } });
+      if (response.ok && response.body) break;
+    } catch {
+      response = null;
+    }
+    if (attempt < 5) await new Promise((resolve) => setTimeout(resolve, attempt * 1_000));
+  }
+  if (!response?.ok || !response.body) throw new Error('Completed upload is not readable from object storage.');
+  const hash = createHash('sha256');
+  let bytes = 0;
+  for await (const chunk of Readable.fromWeb(response.body as any)) {
+    const buffer = Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk);
+    hash.update(buffer);
+    bytes += buffer.length;
+  }
+  if (bytes !== expectedBytes) throw new Error(`Completed upload size mismatch: expected ${expectedBytes}, received ${bytes}.`);
+  return hash.digest('hex');
+};
+
+app.post('/api/admin/assets/resumable', async (req, res, next) => {
+  try {
+    const user = await requireAdminUser(req, res);
+    if (!user) return;
+    const resumeSessionId = String(req.body?.resumeSessionId ?? '').trim();
+    if (resumeSessionId) {
+      const resumed = await getOwnedUploadSession(resumeSessionId, user.id);
+      if (resumed && ['uploading', 'finalizing', 'completed'].includes(resumed.status)) {
+        res.json({ session: await mapUploadSession(resumed) });
+        return;
+      }
+    }
+    if (storageConfig.driver !== 's3') {
+      res.status(503).json({ error: 'Resumable uploads require object storage.' });
+      return;
+    }
+    const originalName = path.basename(String(req.body?.filename ?? '')).slice(0, 240);
+    const ext = path.extname(originalName).toLowerCase();
+    const fileSize = Number(req.body?.fileSize);
+    if (!originalName || !allowedAudioUploadExtensions.has(ext)) {
+      res.status(400).json({ error: 'Unsupported audio type. Upload MP3, WAV, M4A, AAC, OGG, or FLAC.' });
+      return;
+    }
+    if (!Number.isSafeInteger(fileSize) || fileSize < 1 || fileSize > ADMIN_RESUMABLE_MAX_BYTES) {
+      res.status(400).json({ error: 'File size must be between 1 byte and 2 GB.' });
+      return;
+    }
+    const sessionId = uid('assetupload');
+    const dateKey = new Date().toISOString().slice(0, 10);
+    const title = String(req.body?.metadata?.name || originalName.replace(/\.[^.]+$/, '')).trim().slice(0, 140);
+    const filename = `${safeAssetSlug(title)}-${sessionId.slice(-8)}${ext}`;
+    const objectKey = `audio/uploads/admin/${dateKey}/${filename}`;
+    const contentType = contentTypeForAudioExt(ext);
+    const uploadId = await exportStorage.createMultipartUpload(objectKey, contentType);
+    const result = await query<any>(
+      `insert into asset_upload_sessions (
+         id, user_id, upload_id, object_key, original_filename, content_type,
+         file_size, part_size, status, metadata
+       ) values ($1, $2, $3, $4, $5, $6, $7, $8, 'uploading', $9::jsonb)
+       returning *`,
+      [
+        sessionId,
+        user.id,
+        uploadId,
+        objectKey,
+        originalName,
+        contentType,
+        fileSize,
+        ADMIN_RESUMABLE_PART_BYTES,
+        JSON.stringify({ ...(req.body?.metadata ?? {}), lastModified: Number(req.body?.lastModified) || 0 }),
+      ],
+    );
+    res.status(201).json({ session: await mapUploadSession(result.rows[0]) });
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.get('/api/admin/assets/resumable/:sessionId', async (req, res, next) => {
+  try {
+    const user = await requireAdminUser(req, res);
+    if (!user) return;
+    const session = await getOwnedUploadSession(String(req.params.sessionId), user.id);
+    if (!session) {
+      res.status(404).json({ error: 'Upload session not found.' });
+      return;
+    }
+    res.json({ session: await mapUploadSession(session) });
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.put('/api/admin/assets/resumable/:sessionId/parts/:partNumber', async (req, res, next) => {
+  try {
+    const user = await requireAdminUser(req, res);
+    if (!user) return;
+    const session = await getOwnedUploadSession(String(req.params.sessionId), user.id);
+    if (!session) {
+      res.status(404).json({ error: 'Upload session not found.' });
+      return;
+    }
+    if (session.status !== 'uploading') {
+      res.status(409).json({ error: `Upload session is ${session.status}.` });
+      return;
+    }
+    const partNumber = Number(req.params.partNumber);
+    const fileSize = Number(session.file_size);
+    const partSize = Number(session.part_size);
+    const totalParts = Math.ceil(fileSize / partSize);
+    if (!Number.isInteger(partNumber) || partNumber < 1 || partNumber > totalParts) {
+      res.status(400).json({ error: 'Invalid multipart part number.' });
+      return;
+    }
+    const expectedBytes = partNumber === totalParts ? fileSize - partSize * (totalParts - 1) : partSize;
+    const body = await collectRawRequestBody(req, expectedBytes + 1);
+    if (body.length !== expectedBytes) {
+      res.status(400).json({ error: `Part ${partNumber} must contain exactly ${expectedBytes} bytes.` });
+      return;
+    }
+    const part = await exportStorage.uploadMultipartPart(session.object_key, session.upload_id, partNumber, body);
+    await query('update asset_upload_sessions set updated_at = now() where id = $1', [session.id]);
+    res.json({ part: { partNumber: part.partNumber, bytes: part.bytes } });
+  } catch (error: any) {
+    if (error?.statusCode) {
+      res.status(error.statusCode).json({ error: error.message });
+      return;
+    }
+    next(error);
+  }
+});
+
+app.post('/api/admin/assets/resumable/:sessionId/complete', async (req, res, next) => {
+  try {
+    const user = await requireAdminUser(req, res);
+    if (!user) return;
+    let session = await getOwnedUploadSession(String(req.params.sessionId), user.id);
+    if (!session) {
+      res.status(404).json({ error: 'Upload session not found.' });
+      return;
+    }
+    if (session.status === 'completed') {
+      const duplicateStemId = String(session.metadata?.duplicateStemId ?? '');
+      const existing = duplicateStemId
+        ? await query<any>('select * from audio_stems where id = $1', [duplicateStemId])
+        : await query<any>('select * from audio_stems where audio_url = $1', [`/${session.object_key}`]);
+      res.json({ session: await mapUploadSession(session), asset: existing.rows[0] ? mapStem(existing.rows[0]) : null });
+      return;
+    }
+    if (session.status === 'uploading') {
+      const parts = await exportStorage.listMultipartParts(session.object_key, session.upload_id);
+      const fileSize = Number(session.file_size);
+      const expectedParts = Math.ceil(fileSize / Number(session.part_size));
+      if (parts.length !== expectedParts || parts.reduce((total, part) => total + part.bytes, 0) !== fileSize) {
+        res.status(409).json({ error: 'Upload is incomplete.', uploadedParts: parts.map((part) => part.partNumber) });
+        return;
+      }
+      await exportStorage.completeMultipartUpload(session.object_key, session.upload_id, parts);
+      const updated = await query<any>(
+        `update asset_upload_sessions set status = 'finalizing', updated_at = now() where id = $1 returning *`,
+        [session.id],
+      );
+      session = updated.rows[0];
+    }
+    if (session.status !== 'finalizing') {
+      res.status(409).json({ error: `Upload session is ${session.status}.` });
+      return;
+    }
+    const fileSha256 = await hashPublicStorageObject(session.object_key, Number(session.file_size));
+    const duplicate = await query<any>('select * from audio_stems where file_sha256 = $1 limit 1', [fileSha256]);
+    if (duplicate.rows[0]) {
+      await exportStorage.deleteUrl(`${storageConfig.publicBaseUrl}/${session.object_key}`);
+      const updated = await query<any>(
+        `update asset_upload_sessions
+         set status = 'completed', file_sha256 = $2,
+             metadata = metadata || $3::jsonb, completed_at = now(), updated_at = now()
+         where id = $1 returning *`,
+        [session.id, fileSha256, JSON.stringify({ duplicateStemId: duplicate.rows[0].id })],
+      );
+      res.json({ session: await mapUploadSession(updated.rows[0]), asset: mapStem(duplicate.rows[0]), duplicate: true });
+      return;
+    }
+    const metadata = session.metadata ?? {};
+    const originalName = String(session.original_filename);
+    const category = allowedUploadCategories.has(String(metadata.category)) ? String(metadata.category) : 'Nature';
+    const title = String(metadata.name || originalName.replace(/\.[^.]+$/, '')).trim().slice(0, 140);
+    const stemId = `stem_upload_${safeAssetSlug(category)}_${safeAssetSlug(title)}_${fileSha256.slice(0, 10)}`;
+    const audioUrl = `/${session.object_key}`;
+    const tags = String(metadata.tags || '').split(',').map((tag) => tag.trim()).filter(Boolean).slice(0, 12);
+    const inserted = await query<any>(
+      `insert into audio_stems (
+         id, name, category, audio_url, is_premium, tags, default_volume, description,
+         source_platform, source_url, source_item_id, source_creator,
+         license_name, license_url, commercial_use_allowed, derivative_use_allowed,
+         attribution_required, raw_redistribution_allowed, qa_status, qa_notes,
+         file_sha256, imported_at
+       ) values (
+         $1, $2, $3, $4, false, $5, $6, $7,
+         $8, $9, $10, $11,
+         $12, $13, $14, $15,
+         $16, $17, 'needs_review', $18,
+         $19, now()
+       ) returning *`,
+      [
+        stemId,
+        title,
+        category,
+        audioUrl,
+        tags,
+        Math.max(0, Math.min(100, Math.round(Number(metadata.defaultVolume) || 60))),
+        String(metadata.description || 'Resumable admin upload awaiting rights, machine QA, and listening QA.').trim().slice(0, 500),
+        String(metadata.sourcePlatform || 'Admin Upload').trim().slice(0, 120),
+        String(metadata.sourceUrl || '').trim().slice(0, 500),
+        String(metadata.sourceItemId || '').trim().slice(0, 120),
+        String(metadata.sourceCreator || '').trim().slice(0, 160),
+        String(metadata.licenseName || 'Needs rights review').trim().slice(0, 160),
+        String(metadata.licenseUrl || '').trim().slice(0, 500),
+        metadata.commercialUseAllowed === true,
+        metadata.derivativeUseAllowed === true,
+        metadata.attributionRequired !== false,
+        metadata.rawRedistributionAllowed === true,
+        `Resumable admin upload completed on ${new Date().toISOString()}. Must pass rights, machine QA, and listening QA before approval.`,
+        fileSha256,
+      ],
+    );
+    const updated = await query<any>(
+      `update asset_upload_sessions
+       set status = 'completed', file_sha256 = $2, completed_at = now(), updated_at = now()
+       where id = $1 returning *`,
+      [session.id, fileSha256],
+    );
+    res.status(201).json({ session: await mapUploadSession(updated.rows[0]), asset: mapStem(inserted.rows[0]), duplicate: false });
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.delete('/api/admin/assets/resumable/:sessionId', async (req, res, next) => {
+  try {
+    const user = await requireAdminUser(req, res);
+    if (!user) return;
+    const session = await getOwnedUploadSession(String(req.params.sessionId), user.id);
+    if (!session) {
+      res.status(404).json({ error: 'Upload session not found.' });
+      return;
+    }
+    if (session.status === 'uploading') await exportStorage.abortMultipartUpload(session.object_key, session.upload_id);
+    await query(`update asset_upload_sessions set status = 'aborted', updated_at = now() where id = $1`, [session.id]);
+    res.status(204).end();
   } catch (error) {
     next(error);
   }

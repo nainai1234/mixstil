@@ -79,6 +79,27 @@ export const createSchema = async () => {
     create unique index if not exists audio_assets_sha256_unique_idx on audio_assets(file_sha256) where file_sha256 <> '';
     create index if not exists audio_assets_release_idx on audio_assets(production_allowed, lifecycle_status);
 
+    create table if not exists asset_upload_sessions (
+      id text primary key,
+      user_id text not null references users(id) on delete cascade,
+      upload_id text not null,
+      object_key text not null,
+      original_filename text not null,
+      content_type text not null,
+      file_size bigint not null check (file_size > 0),
+      part_size integer not null check (part_size >= 5242880),
+      status text not null default 'uploading' check (status in ('uploading', 'finalizing', 'completed', 'aborted', 'failed')),
+      metadata jsonb not null default '{}'::jsonb,
+      file_sha256 text not null default '',
+      created_at timestamptz not null default now(),
+      updated_at timestamptz not null default now(),
+      completed_at timestamptz
+    );
+
+    create index if not exists asset_upload_sessions_user_idx on asset_upload_sessions(user_id, updated_at desc);
+    create unique index if not exists asset_upload_sessions_active_object_idx
+      on asset_upload_sessions(object_key) where status = 'uploading';
+
     create table if not exists audio_stems (
       id text primary key,
       name text not null,

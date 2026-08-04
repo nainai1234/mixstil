@@ -1,11 +1,16 @@
 import {
+  AbortMultipartUploadCommand,
+  CompleteMultipartUploadCommand,
+  CreateMultipartUploadCommand,
   DeleteObjectCommand,
   HeadObjectCommand,
+  ListPartsCommand,
   ListObjectsV2Command,
   PutObjectCommand,
   S3Client,
+  UploadPartCommand,
 } from '@aws-sdk/client-s3';
-import type { HeadObjectCommandOutput, ListObjectsV2CommandOutput } from '@aws-sdk/client-s3';
+import type { HeadObjectCommandOutput, ListObjectsV2CommandOutput, ListPartsCommandOutput } from '@aws-sdk/client-s3';
 import { createReadStream, existsSync } from 'node:fs';
 import { mkdir, readdir, rm, stat } from 'node:fs/promises';
 import path from 'node:path';
@@ -28,6 +33,7 @@ export type StorageConfig = {
 
 export type StoredObject = { key: string; url: string; bytes: number };
 export type PruneResult = { scanned: number; deleted: number; reclaimedBytes: number };
+export type StoredMultipartPart = { partNumber: number; etag: string; bytes: number };
 
 const normalizeBase = (value: string) => value.replace(/\/+$/, '');
 const encodeKey = (key: string) => key.split('/').map(encodeURIComponent).join('/');
@@ -144,6 +150,80 @@ export class ExportStorage {
       if (status === 404) return false;
       throw error;
     }
+  }
+
+  async createMultipartUpload(key: string, contentType: string) {
+    validateKey(key);
+    if (!this.s3) throw new Error('Multipart upload requires s3 storage.');
+    const result = await this.sendS3<{ UploadId?: string }>(new CreateMultipartUploadCommand({
+      Bucket: this.config.bucket,
+      Key: key,
+      ContentType: contentType,
+      CacheControl: 'public, max-age=31536000, immutable',
+    }));
+    if (!result.UploadId) throw new Error('Object storage did not return a multipart upload id.');
+    return result.UploadId;
+  }
+
+  async uploadMultipartPart(key: string, uploadId: string, partNumber: number, body: Buffer) {
+    validateKey(key);
+    if (!this.s3) throw new Error('Multipart upload requires s3 storage.');
+    const result = await this.sendS3<{ ETag?: string }>(new UploadPartCommand({
+      Bucket: this.config.bucket,
+      Key: key,
+      UploadId: uploadId,
+      PartNumber: partNumber,
+      Body: body,
+      ContentLength: body.length,
+    }));
+    if (!result.ETag) throw new Error('Object storage did not return a multipart part ETag.');
+    return { partNumber, etag: result.ETag, bytes: body.length } satisfies StoredMultipartPart;
+  }
+
+  async listMultipartParts(key: string, uploadId: string) {
+    validateKey(key);
+    if (!this.s3) throw new Error('Multipart upload requires s3 storage.');
+    const parts: StoredMultipartPart[] = [];
+    let marker: string | undefined;
+    do {
+      const page = await this.sendS3<ListPartsCommandOutput>(new ListPartsCommand({
+        Bucket: this.config.bucket,
+        Key: key,
+        UploadId: uploadId,
+        PartNumberMarker: marker,
+      }));
+      for (const part of page.Parts ?? []) {
+        if (!part.PartNumber || !part.ETag) continue;
+        parts.push({ partNumber: part.PartNumber, etag: part.ETag, bytes: part.Size ?? 0 });
+      }
+      marker = page.IsTruncated ? page.NextPartNumberMarker : undefined;
+    } while (marker);
+    return parts.sort((left, right) => left.partNumber - right.partNumber);
+  }
+
+  async completeMultipartUpload(key: string, uploadId: string, parts: StoredMultipartPart[]) {
+    validateKey(key);
+    if (!this.s3) throw new Error('Multipart upload requires s3 storage.');
+    if (parts.length === 0) throw new Error('Cannot complete an empty multipart upload.');
+    await this.sendS3(new CompleteMultipartUploadCommand({
+      Bucket: this.config.bucket,
+      Key: key,
+      UploadId: uploadId,
+      MultipartUpload: {
+        Parts: parts.map((part) => ({ PartNumber: part.partNumber, ETag: part.etag })),
+      },
+    }));
+    return `${this.config.publicBaseUrl}/${encodeKey(key)}`;
+  }
+
+  async abortMultipartUpload(key: string, uploadId: string) {
+    validateKey(key);
+    if (!this.s3) throw new Error('Multipart upload requires s3 storage.');
+    await this.sendS3(new AbortMultipartUploadCommand({
+      Bucket: this.config.bucket,
+      Key: key,
+      UploadId: uploadId,
+    }));
   }
 
   keyFromUrl(url: string) {

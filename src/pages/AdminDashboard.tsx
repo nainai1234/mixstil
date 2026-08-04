@@ -23,6 +23,7 @@ import {
   Users,
 } from 'lucide-react';
 import { api, resolveServiceUrl } from '../lib/api';
+import type { AdminResumableUploadProgress } from '../lib/api';
 import type { AdminDemandCoverage, AdminDemandProductionReview, AdminImportInbox, AdminKnowledgeCatalog, AdminOverview, AdminUnifiedContentModel, AudioStem, Mix, StemCategory } from '../lib/domain';
 
 type AdminSection = 'overview' | 'users' | 'products' | 'discover' | 'assets' | 'knowledge' | 'review' | 'analytics' | 'system';
@@ -953,6 +954,7 @@ const AdminDashboard: React.FC = () => {
   const [uploadInspection, setUploadInspection] = useState<UploadInspection | null>(null);
   const [inspectingUpload, setInspectingUpload] = useState(false);
   const [uploading, setUploading] = useState(false);
+  const [uploadProgress, setUploadProgress] = useState<AdminResumableUploadProgress | null>(null);
   const [reviewingId, setReviewingId] = useState('');
   const [assetMessage, setAssetMessage] = useState('');
   const [assetError, setAssetError] = useState('');
@@ -1260,8 +1262,13 @@ const AdminDashboard: React.FC = () => {
       setUploadDraft((current) => ({ ...current, file: null }));
       return;
     }
+    setUploadDraft({ ...emptyUploadDraft(), file, name: file.name.replace(/\.[^.]+$/, '') });
+    setUploadProgress(null);
+    if (file.size > 8 * 1024 * 1024) {
+      setAssetMessage('大文件已准备好，将使用 8 MB 分块断点续传；完成后自动计算 hash 并进入待审核状态。');
+      return;
+    }
     setInspectingUpload(true);
-    setUploadDraft((current) => ({ ...current, file, name: current.name || file.name.replace(/\.[^.]+$/, '') }));
     try {
       const { suggestion } = await api.inspectAdminAssetUpload(file);
       setUploadDraft((current) => ({
@@ -1307,8 +1314,9 @@ const AdminDashboard: React.FC = () => {
       return;
     }
     setUploading(true);
+    setUploadProgress(null);
     try {
-      const result = await api.uploadAdminAsset({
+      const result = await api.uploadAdminAssetResumable({
         file: uploadDraft.file,
         name: uploadDraft.name || uploadDraft.file.name.replace(/\.[^.]+$/, ''),
         category: uploadDraft.category,
@@ -1324,10 +1332,13 @@ const AdminDashboard: React.FC = () => {
         derivativeUseAllowed: uploadDraft.derivativeUseAllowed,
         attributionRequired: uploadDraft.attributionRequired,
         rawRedistributionAllowed: uploadDraft.rawRedistributionAllowed,
-      });
-      setAssetMessage(`已上传「${result.asset.name}」，当前状态为待审核`);
+      }, setUploadProgress);
+      setAssetMessage(result.duplicate
+        ? `检测到重复文件，已关联现有素材「${result.asset.name}」`
+        : `已上传「${result.asset.name}」，当前状态为待审核`);
       setUploadDraft(emptyUploadDraft());
       setUploadInspection(null);
+      setUploadProgress(null);
       await Promise.all([loadOverview(), loadAssets(0, false)]);
     } catch (requestError) {
       setAssetError(requestError instanceof Error ? requestError.message : '上传失败');
@@ -1808,6 +1819,15 @@ const AdminDashboard: React.FC = () => {
                           )}
                         </div>
                       )}
+                      {uploadProgress && (
+                        <div role="status" style={{ display: 'grid', gap: 6, fontSize: 12, color: 'var(--text-secondary)' }}>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12 }}>
+                            <strong style={{ color: 'var(--text-primary)' }}>{uploadProgress.resumed ? '正在继续上传' : '正在分块上传'}</strong>
+                            <span>{uploadProgress.percent}% · {uploadProgress.uploadedParts}/{uploadProgress.totalParts}</span>
+                          </div>
+                          <progress value={uploadProgress.uploadedBytes} max={uploadProgress.totalBytes} style={{ width: '100%', height: 8 }} />
+                        </div>
+                      )}
                       <label style={labelStyle}>素材名称<input value={uploadDraft.name} onChange={(event) => setUploadDraft((current) => ({ ...current, name: event.target.value }))} style={fieldStyle} /></label>
                       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
                         <label style={labelStyle}>分类<select value={uploadDraft.category} onChange={(event) => setUploadDraft((current) => ({ ...current, category: event.target.value as StemCategory }))} style={fieldStyle}>{stemCategories.map((category) => <option key={category} value={category}>{category}</option>)}</select></label>
@@ -1832,7 +1852,7 @@ const AdminDashboard: React.FC = () => {
                           <label key={key} style={{ display: 'flex', alignItems: 'center', gap: 8 }}><input type="checkbox" checked={Boolean(uploadDraft[key as keyof UploadDraft])} onChange={(event) => setUploadDraft((current) => ({ ...current, [key]: event.target.checked }))} /><span>{label}</span></label>
                         ))}
                       </div>
-                      <button type="submit" disabled={uploading || inspectingUpload} style={{ height: 40, borderRadius: 7, border: 0, background: 'var(--primary)', color: 'white', fontWeight: 800, cursor: uploading || inspectingUpload ? 'wait' : 'pointer' }}>{uploading ? '上传中...' : inspectingUpload ? '识别中...' : '上传为待审核素材'}</button>
+                      <button type="submit" disabled={uploading || inspectingUpload} style={{ height: 40, borderRadius: 7, border: 0, background: 'var(--primary)', color: 'white', fontWeight: 800, cursor: uploading || inspectingUpload ? 'wait' : 'pointer' }}>{uploading ? `上传中 ${uploadProgress?.percent ?? 0}%` : inspectingUpload ? '识别中...' : '上传为待审核素材'}</button>
                     </form>
                   </Panel>
                   </div>
