@@ -1367,6 +1367,7 @@ const scaleRecipeDuration = (recipe: CatalogRecipe, durationSeconds: number) => 
     musicKitId: track.musicKitId,
     musicKitVersion: track.musicKitVersion,
     musicPart: track.musicPart,
+    sourceGainDb: track.sourceGainDb,
     volumeAutomation: track.volumeAutomation?.map((point) => ({
       atSeconds: Math.round(point.atSeconds * scale),
       volume: point.volume,
@@ -1498,9 +1499,7 @@ const createDraftFromCatalogRecipe = async (input: {
     const intensityScale = (intensity / 50) * focusComfortScale;
     return {
       ...track,
-      // Dynamic Quick Create volumes already use measured LUFS and True Peak.
-      // A second source-level boost would make quietness requests inaccurate.
-      sourceGainDb: 0,
+      sourceGainDb: track.sourceGainDb ?? 0,
       volume: Math.max(0, Math.min(100, Math.round(track.volume * intensityScale))),
       volumeAutomation: track.volumeAutomation?.map((point) => ({
         ...point,

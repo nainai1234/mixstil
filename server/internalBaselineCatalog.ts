@@ -3,6 +3,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import type { CatalogRecipe, CatalogTrack, ProductGoal, ProductScene } from './contentCatalog';
 import type { PlannedAudioIntent } from './soundscapePlanner';
+import { finishedContentSourceGainDb } from './finishedContentLoudness';
 
 type PromotionItem = {
   id: string;
@@ -105,6 +106,7 @@ const trackForSeed = (seed: InternalBaselineSeed, durationSeconds: number): Cata
   stemId: seed.stemId,
   role: 'music',
   volume: seed.goal === 'focus' ? 64 : 54,
+  sourceGainDb: finishedContentSourceGainDb(seed.id, seed.goal, seed.goal === 'focus' ? 64 : 54),
   startTime: 0,
   duration: durationSeconds,
   trimStart: 0,

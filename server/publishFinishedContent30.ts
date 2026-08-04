@@ -5,6 +5,7 @@ import { syncDiscoverPlacements } from './contentModel';
 import { createSchema } from './schema';
 import { getInternalBaselineStems, internalBaselineSeeds } from './internalBaselineCatalog';
 import { upgradeRecipeToV2, validateRecipeV2 } from './recipeV2';
+import { finishedContentSourceGainDb } from './finishedContentLoudness';
 
 const root = process.cwd();
 const release = JSON.parse(fs.readFileSync(path.join(root, 'reports/content-baseline-30-longform-release.json'), 'utf8')) as {
@@ -89,6 +90,7 @@ const run = async () => {
           stemId: seed.stemId,
           role: 'music',
           volume: seed.goal === 'focus' ? 64 : 54,
+          sourceGainDb: finishedContentSourceGainDb(seed.id, seed.goal, seed.goal === 'focus' ? 64 : 54),
           startTime: 0,
           duration: durationSeconds,
           trimStart: 0,
