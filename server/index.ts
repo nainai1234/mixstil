@@ -101,7 +101,7 @@ app.use('/api/supply-gap-jobs', createRateLimiter({ windowMs: 60_000, limit: 10,
 app.use('/api/music-generation', createRateLimiter({ windowMs: 60_000, limit: 5, key: requestIdentityKey }));
 app.use('/audio', express.static(path.join(PUBLIC_DIR, 'audio')), async (req, res, next) => {
   if (storageConfig.driver !== 's3' || !['GET', 'HEAD'].includes(req.method)) return next();
-  const upstreamUrl = `${storageConfig.publicBaseUrl}${req.path}`;
+  const upstreamUrl = `${storageConfig.publicBaseUrl}/audio${req.url}`;
   try {
     const upstream = await fetch(upstreamUrl, {
       method: req.method,
