@@ -96,6 +96,8 @@
     "apply:finished-content-loudness": "tsx server/applyFinishedContentLoudness.ts",
     "publish:finished-content-30": "tsx server/publishFinishedContent30.ts",
     "upload:finished-content-masters": "tsx server/uploadFinishedContentMasters.ts",
+    "upload:approved-audio-assets": "tsx server/uploadApprovedAudioAssets.ts",
+    "audit:approved-audio-assets": "tsx server/auditApprovedAudioAssets.ts",
     "validate:generation-decision": "tsx server/validateGenerationDecision.ts",
     "validate:supply-gap-jobs": "tsx server/validateSupplyGapJobs.ts",
     "validate:sound-group-volumes": "tsx server/validateSoundGroupVolumes.ts",
@@ -386,6 +388,7 @@
     "react-router-dom": "^7.18.1"
   },
   "devDependencies": {
+    "@aws-sdk/s3-request-presigner": "3.1086.0",
     "@capacitor/assets": "^3.0.5",
     "@capacitor/cli": "^8.4.1",
     "@types/cors": "^2.8.19",

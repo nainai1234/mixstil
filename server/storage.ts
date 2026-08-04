@@ -1,4 +1,11 @@
-import { DeleteObjectCommand, HeadObjectCommand, ListObjectsV2Command, PutObjectCommand, S3Client } from '@aws-sdk/client-s3';
+import {
+  DeleteObjectCommand,
+  HeadObjectCommand,
+  ListObjectsV2Command,
+  PutObjectCommand,
+  S3Client,
+} from '@aws-sdk/client-s3';
+import type { HeadObjectCommandOutput, ListObjectsV2CommandOutput } from '@aws-sdk/client-s3';
 import { createReadStream, existsSync } from 'node:fs';
 import { mkdir, readdir, rm, stat } from 'node:fs/promises';
 import path from 'node:path';
@@ -16,6 +23,7 @@ export type StorageConfig = {
   maxObjectBytes: number;
   maxLocalBytes: number;
   retentionDays: number;
+  requestTimeoutMs: number;
 };
 
 export type StoredObject = { key: string; url: string; bytes: number };
@@ -38,6 +46,7 @@ export const getStorageConfig = (env: NodeJS.ProcessEnv, projectRoot: string): S
     maxObjectBytes: Number(env.EXPORT_MAX_OBJECT_BYTES ?? 300 * 1024 * 1024),
     maxLocalBytes: Number(env.EXPORT_MAX_LOCAL_BYTES ?? 10 * 1024 * 1024 * 1024),
     retentionDays: Number(env.EXPORT_RETENTION_DAYS ?? 30),
+    requestTimeoutMs: Number(env.STORAGE_REQUEST_TIMEOUT_MS ?? 60_000),
   };
 };
 
@@ -52,6 +61,7 @@ export const validateStorageConfig = (config: StorageConfig, production: boolean
   if (!Number.isFinite(config.maxObjectBytes) || config.maxObjectBytes < 1) errors.push('EXPORT_MAX_OBJECT_BYTES must be positive.');
   if (!Number.isFinite(config.maxLocalBytes) || config.maxLocalBytes < config.maxObjectBytes) errors.push('EXPORT_MAX_LOCAL_BYTES must be at least EXPORT_MAX_OBJECT_BYTES.');
   if (!Number.isFinite(config.retentionDays) || config.retentionDays < 1) errors.push('EXPORT_RETENTION_DAYS must be at least 1.');
+  if (!Number.isFinite(config.requestTimeoutMs) || config.requestTimeoutMs < 1_000) errors.push('STORAGE_REQUEST_TIMEOUT_MS must be at least 1000.');
   if (errors.length) throw new Error(`Invalid storage configuration:\n- ${errors.join('\n- ')}`);
 };
 
@@ -78,6 +88,16 @@ export class ExportStorage {
       : null;
   }
 
+  private async sendS3<T = unknown>(command: any): Promise<T> {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), this.config.requestTimeoutMs);
+    try {
+      return await this.s3!.send(command, { abortSignal: controller.signal }) as T;
+    } finally {
+      clearTimeout(timeout);
+    }
+  }
+
   async putFile(key: string, filePath: string, contentType: string): Promise<StoredObject> {
     validateKey(key);
     const startedAt = process.hrtime.bigint();
@@ -93,7 +113,7 @@ export class ExportStorage {
         await copyFile(filePath, destination);
         return { key, bytes: file.size, url: `${this.config.localPublicPath}/${encodeKey(key)}` };
       }
-      await this.s3!.send(new PutObjectCommand({
+      await this.sendS3(new PutObjectCommand({
         Bucket: this.config.bucket,
         Key: key,
         Body: createReadStream(filePath),
@@ -117,7 +137,7 @@ export class ExportStorage {
       return existsSync(target) && (await stat(target)).size === expectedBytes;
     }
     try {
-      const object = await this.s3!.send(new HeadObjectCommand({ Bucket: this.config.bucket, Key: key }));
+      const object = await this.sendS3<HeadObjectCommandOutput>(new HeadObjectCommand({ Bucket: this.config.bucket, Key: key }));
       return Number(object.ContentLength) === expectedBytes;
     } catch (error) {
       const status = (error as { $metadata?: { httpStatusCode?: number } }).$metadata?.httpStatusCode;
@@ -141,7 +161,7 @@ export class ExportStorage {
       if (this.config.driver === 'local') {
         await rm(path.join(this.config.localDirectory, key), { force: true });
       } else {
-        await this.s3!.send(new DeleteObjectCommand({ Bucket: this.config.bucket, Key: key }));
+        await this.sendS3(new DeleteObjectCommand({ Bucket: this.config.bucket, Key: key }));
       }
       return true;
     } catch (error) {
@@ -179,13 +199,13 @@ export class ExportStorage {
     }
     let continuationToken: string | undefined;
     do {
-      const page = await this.s3!.send(new ListObjectsV2Command({ Bucket: this.config.bucket, ContinuationToken: continuationToken }));
+      const page = await this.sendS3<ListObjectsV2CommandOutput>(new ListObjectsV2Command({ Bucket: this.config.bucket, ContinuationToken: continuationToken }));
       for (const object of page.Contents ?? []) {
         if (!object.Key) continue;
         scanned += 1;
         const url = `${this.config.publicBaseUrl}/${encodeKey(object.Key)}`;
         if (!activeUrls.has(url) && (object.LastModified?.getTime() ?? now) < cutoff) {
-          await this.s3!.send(new DeleteObjectCommand({ Bucket: this.config.bucket, Key: object.Key }));
+          await this.sendS3(new DeleteObjectCommand({ Bucket: this.config.bucket, Key: object.Key }));
           deleted += 1;
           reclaimedBytes += object.Size ?? 0;
         }

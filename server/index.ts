@@ -6,6 +6,7 @@ import { createReadStream, existsSync } from 'node:fs';
 import { copyFile, mkdir, mkdtemp, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
+import { Readable } from 'node:stream';
 import { fileURLToPath } from 'node:url';
 import { pool, query } from './db';
 import { classifyRecipeIntent, getAiRecipeStatus } from './aiRecipe';
@@ -98,7 +99,26 @@ app.use('/api/quick-create', createRateLimiter({ windowMs: 60_000, limit: 10, ke
 app.use('/api/ai/sessions', createRateLimiter({ windowMs: 60_000, limit: 10, key: requestIdentityKey }));
 app.use('/api/supply-gap-jobs', createRateLimiter({ windowMs: 60_000, limit: 10, key: requestIdentityKey }));
 app.use('/api/music-generation', createRateLimiter({ windowMs: 60_000, limit: 5, key: requestIdentityKey }));
-app.use('/audio', express.static(path.join(PUBLIC_DIR, 'audio')));
+app.use('/audio', express.static(path.join(PUBLIC_DIR, 'audio')), async (req, res, next) => {
+  if (storageConfig.driver !== 's3' || !['GET', 'HEAD'].includes(req.method)) return next();
+  const upstreamUrl = `${storageConfig.publicBaseUrl}${req.path}`;
+  try {
+    const upstream = await fetch(upstreamUrl, {
+      method: req.method,
+      headers: req.headers.range ? { range: req.headers.range } : undefined,
+    });
+    if (!upstream.ok && upstream.status !== 206) return next();
+    for (const header of ['content-type', 'content-length', 'content-range', 'accept-ranges', 'etag', 'cache-control']) {
+      const value = upstream.headers.get(header);
+      if (value) res.setHeader(header, value);
+    }
+    res.status(upstream.status);
+    if (req.method === 'HEAD' || !upstream.body) return res.end();
+    Readable.fromWeb(upstream.body as any).pipe(res);
+  } catch {
+    next();
+  }
+});
 if (storageConfig.driver === 'local') app.use(storageConfig.localPublicPath, express.static(storageConfig.localDirectory));
 
 app.get('/api/product-capabilities', (_req, res) => {
