@@ -15,6 +15,18 @@ export const createSchema = async () => {
 
     alter table users add column if not exists password_hash text not null default '';
 
+    create table if not exists auth_identities (
+      provider text not null check (provider in ('apple', 'google')),
+      provider_subject text not null,
+      user_id text not null references users(id) on delete cascade,
+      email text not null default '',
+      created_at timestamptz not null default now(),
+      updated_at timestamptz not null default now(),
+      primary key (provider, provider_subject)
+    );
+
+    create index if not exists auth_identities_user_idx on auth_identities(user_id);
+
     create table if not exists auth_sessions (
       id text primary key,
       token_hash text not null unique,

@@ -384,6 +384,7 @@
     "express": "^5.2.1",
     "google-auth-library": "^10.9.0",
     "https-proxy-agent": "^9.1.0",
+    "jose": "^6.2.8",
     "lucide-react": "^1.23.0",
     "pg": "^8.22.0",
     "react": "^19.2.7",

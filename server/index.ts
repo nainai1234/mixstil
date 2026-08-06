@@ -8,6 +8,8 @@ import os from 'node:os';
 import path from 'node:path';
 import { Readable } from 'node:stream';
 import { fileURLToPath } from 'node:url';
+import { OAuth2Client } from 'google-auth-library';
+import { createRemoteJWKSet, jwtVerify } from 'jose';
 import { pool, query } from './db';
 import { classifyRecipeIntent, getAiRecipeStatus } from './aiRecipe';
 import { defaultRecipes, goals, scenes, selectFoundationalElementRecipe, selectMusicKitCatalogRecipe, type CatalogRecipe, type ProductGoal, type ProductScene } from './contentCatalog';
@@ -73,6 +75,12 @@ const app = express();
 app.set('trust proxy', runtimeConfig.trustProxy);
 
 const supportedUiLanguages = new Set<ResolvedLanguage>(['zh', 'en', 'hi', 'es', 'ar', 'bn', 'pt', 'ru', 'ja', 'id', 'de', 'fr', 'ko', 'it', 'nl', 'zh-Hant', 'tr', 'pl', 'sv', 'th', 'vi', 'ms', 'he', 'da', 'no', 'fi']);
+const googleOAuthClientIds = String(process.env.GOOGLE_OAUTH_CLIENT_IDS ?? '')
+  .split(',').map((value) => value.trim()).filter(Boolean);
+const appleSignInClientIds = String(process.env.APPLE_SIGN_IN_CLIENT_IDS ?? 'com.mixstil.soundscapes')
+  .split(',').map((value) => value.trim()).filter(Boolean);
+const googleOAuthClient = new OAuth2Client();
+const appleJwks = createRemoteJWKSet(new URL('https://appleid.apple.com/auth/keys'));
 
 const normalizeLanguagePreference = (value: unknown): LanguagePreference => {
   if (value === 'system') return 'system';
@@ -420,6 +428,146 @@ const getAuthenticatedUser = async (req: express.Request) => {
     [hashToken(token)],
   );
   return result.rows[0] ?? null;
+};
+const isGuestUser = (user: any) => Boolean(
+  user
+  && !user.password_hash
+  && String(user.email ?? '').endsWith('@snooze.invalid'),
+);
+const mergeGuestIntoAccount = async (client: any, guestUserId: string, accountUserId: string) => {
+  if (guestUserId === accountUserId) return;
+  await client.query(
+    `insert into user_sound_profiles (
+       user_id, liked_sounds, excluded_sounds, default_goal, default_duration_seconds, sensitivity, updated_at
+     )
+     select $2, liked_sounds, excluded_sounds, default_goal, default_duration_seconds, sensitivity, updated_at
+     from user_sound_profiles where user_id = $1
+     on conflict (user_id) do update set
+       liked_sounds = array(select distinct unnest(user_sound_profiles.liked_sounds || excluded.liked_sounds)),
+       excluded_sounds = array(select distinct unnest(user_sound_profiles.excluded_sounds || excluded.excluded_sounds)),
+       sensitivity = excluded.sensitivity || user_sound_profiles.sensitivity,
+       updated_at = greatest(user_sound_profiles.updated_at, excluded.updated_at)`,
+    [guestUserId, accountUserId],
+  );
+  await client.query('delete from user_sound_profiles where user_id = $1', [guestUserId]);
+  await client.query(
+    `insert into device_playback_states (user_id, mix_id, position_seconds, duration_seconds, updated_at)
+     select $2, mix_id, position_seconds, duration_seconds, updated_at
+     from device_playback_states where user_id = $1
+     on conflict (user_id, mix_id) do update set
+       position_seconds = case when excluded.updated_at > device_playback_states.updated_at then excluded.position_seconds else device_playback_states.position_seconds end,
+       duration_seconds = greatest(device_playback_states.duration_seconds, excluded.duration_seconds),
+       updated_at = greatest(device_playback_states.updated_at, excluded.updated_at)`,
+    [guestUserId, accountUserId],
+  );
+  await client.query('delete from device_playback_states where user_id = $1', [guestUserId]);
+  for (const [table, column] of [
+    ['preference_evidence', 'user_id'],
+    ['asset_upload_sessions', 'user_id'],
+    ['mixes', 'creator_id'],
+    ['share_links', 'creator_id'],
+    ['supply_gap_jobs', 'requested_by_user_id'],
+    ['voice_qa_reviews', 'reviewer_id'],
+    ['user_history', 'user_id'],
+    ['playback_events', 'user_id'],
+    ['ai_sessions', 'user_id'],
+  ] as const) {
+    await client.query(`update ${table} set ${column} = $2 where ${column} = $1`, [guestUserId, accountUserId]);
+  }
+  await client.query('update share_links set recipient_user_id = $2 where recipient_user_id = $1', [guestUserId, accountUserId]);
+  await client.query('delete from users where id = $1', [guestUserId]);
+};
+
+type VerifiedSocialIdentity = {
+  provider: 'apple' | 'google';
+  subject: string;
+  email: string;
+  name: string;
+  avatarUrl: string;
+};
+
+const verifySocialIdentity = async (provider: 'apple' | 'google', idToken: string, suppliedName: string): Promise<VerifiedSocialIdentity> => {
+  if (!idToken) throw Object.assign(new Error('The identity provider did not return a valid sign-in token.'), { statusCode: 401 });
+  if (provider === 'google') {
+    if (googleOAuthClientIds.length === 0) throw Object.assign(new Error('Google sign-in is not configured on this server.'), { statusCode: 503 });
+    const ticket = await googleOAuthClient.verifyIdToken({ idToken, audience: googleOAuthClientIds });
+    const payload = ticket.getPayload();
+    if (!payload?.sub || !payload.email || payload.email_verified !== true) {
+      throw Object.assign(new Error('Google did not verify an email address for this account.'), { statusCode: 401 });
+    }
+    return {
+      provider,
+      subject: payload.sub,
+      email: normalizeEmail(payload.email),
+      name: String(payload.name ?? suppliedName ?? '').trim().slice(0, 60),
+      avatarUrl: String(payload.picture ?? '').slice(0, 1000),
+    };
+  }
+  const { payload } = await jwtVerify(idToken, appleJwks, {
+    issuer: 'https://appleid.apple.com',
+    audience: appleSignInClientIds,
+  });
+  if (!payload.sub) throw Object.assign(new Error('Apple did not return an account identifier.'), { statusCode: 401 });
+  const emailVerified = payload.email_verified === true || payload.email_verified === 'true';
+  const email = typeof payload.email === 'string' && emailVerified ? normalizeEmail(payload.email) : '';
+  return {
+    provider,
+    subject: payload.sub,
+    email,
+    name: suppliedName.trim().slice(0, 60),
+    avatarUrl: '',
+  };
+};
+
+const signInWithSocialIdentity = async (req: express.Request, identity: VerifiedSocialIdentity) => {
+  const currentUser = await getAuthenticatedUser(req);
+  const currentGuest = isGuestUser(currentUser) ? currentUser : null;
+  const client = await pool.connect();
+  try {
+    await client.query('begin');
+    const linked = await client.query<any>(
+      `select u.* from auth_identities i join users u on u.id = i.user_id
+       where i.provider = $1 and i.provider_subject = $2 for update`,
+      [identity.provider, identity.subject],
+    );
+    const emailAccount = !linked.rows[0] && identity.email
+      ? await client.query<any>('select * from users where lower(email) = $1 for update', [identity.email])
+      : { rows: [] };
+    let user = linked.rows[0] ?? emailAccount.rows[0] ?? currentGuest;
+    if (!user) {
+      const userId = uid('user');
+      const privateEmail = `${identity.provider}+${createHash('sha256').update(identity.subject).digest('hex').slice(0, 24)}@private.mixstil.invalid`;
+      const created = await client.query<any>(
+        `insert into users (id, username, email, avatar_url, role, subscription_tier, password_hash)
+         values ($1, $2, $3, $4, 'consumer', 'free', '') returning *`,
+        [userId, identity.name || (identity.provider === 'apple' ? 'Apple user' : 'Google user'), identity.email || privateEmail, identity.avatarUrl],
+      );
+      user = created.rows[0];
+    } else if (currentGuest && user.id !== currentGuest.id) {
+      await mergeGuestIntoAccount(client, currentGuest.id, user.id);
+    } else if (currentGuest && user.id === currentGuest.id) {
+      const privateEmail = `${identity.provider}+${createHash('sha256').update(identity.subject).digest('hex').slice(0, 24)}@private.mixstil.invalid`;
+      const upgraded = await client.query<any>(
+        `update users set username = $2, email = $3, avatar_url = $4, updated_at = now()
+         where id = $1 returning *`,
+        [user.id, identity.name || (identity.provider === 'apple' ? 'Apple user' : 'Google user'), identity.email || privateEmail, identity.avatarUrl],
+      );
+      user = upgraded.rows[0];
+    }
+    await client.query(
+      `insert into auth_identities (provider, provider_subject, user_id, email)
+       values ($1, $2, $3, $4)
+       on conflict (provider, provider_subject) do update set email = excluded.email, updated_at = now()`,
+      [identity.provider, identity.subject, user.id, identity.email],
+    );
+    await client.query('commit');
+    return user;
+  } catch (error) {
+    await client.query('rollback');
+    throw error;
+  } finally {
+    client.release();
+  }
 };
 const requireAuthenticatedUser = async (req: express.Request, res: express.Response) => {
   const user = await getAuthenticatedUser(req);
@@ -1921,6 +2069,35 @@ app.post('/api/auth/login', async (req, res, next) => {
       res.status(401).json({ error: 'Email or password is incorrect.' });
       return;
     }
+    const session = await createAuthSession(user.id);
+    res.json({ user: mapUser(user), ...session });
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.post('/api/auth/social', async (req, res, next) => {
+  try {
+    const provider = req.body.provider === 'apple' || req.body.provider === 'google'
+      ? req.body.provider as 'apple' | 'google'
+      : null;
+    if (!provider) {
+      res.status(400).json({ error: 'Choose Apple or Google to continue.' });
+      return;
+    }
+    let identity: VerifiedSocialIdentity;
+    try {
+      identity = await verifySocialIdentity(provider, String(req.body.idToken ?? ''), String(req.body.name ?? ''));
+    } catch (error) {
+      if (typeof (error as { statusCode?: unknown })?.statusCode !== 'number') {
+        throw Object.assign(new Error(`Could not verify the ${provider === 'apple' ? 'Apple' : 'Google'} sign-in token.`), {
+          statusCode: 401,
+          cause: error,
+        });
+      }
+      throw error;
+    }
+    const user = await signInWithSocialIdentity(req, identity);
     const session = await createAuthSession(user.id);
     res.json({ user: mapUser(user), ...session });
   } catch (error) {
@@ -6061,14 +6238,17 @@ app.get('/api/ai/status', (_req, res) => {
 
 app.use((error: unknown, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
   const requestId = String(res.locals.requestId ?? 'unknown');
+  const statusCode = typeof (error as { statusCode?: unknown })?.statusCode === 'number'
+    ? Math.min(599, Math.max(400, (error as { statusCode: number }).statusCode))
+    : 500;
   logEvent('error', 'request_error', {
     request_id: requestId,
     error_class: classifyError(error),
     error_name: error instanceof Error ? error.name : 'UnknownError',
   });
-  res.status(500).json({
-    error: runtimeConfig.production ? 'Internal server error' : error instanceof Error ? error.message : 'Internal server error',
-    code: 'internal_server_error',
+  res.status(statusCode).json({
+    error: runtimeConfig.production && statusCode >= 500 ? 'Internal server error' : error instanceof Error ? error.message : 'Internal server error',
+    code: statusCode >= 500 ? 'internal_server_error' : 'request_rejected',
     requestId,
   });
 });
