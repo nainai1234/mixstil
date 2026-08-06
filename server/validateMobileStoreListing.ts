@@ -100,7 +100,7 @@ const validatePng = (relativePath: string, width: number, height: number, label:
 };
 
 assert(listing.release === 'Voice-free Beta', 'Listing is scoped to Voice-free Beta');
-assert(listing.applicationId === 'com.snooze.soundscapes', 'Listing uses the canonical application ID');
+assert(listing.applicationId === 'com.mixstil.soundscapes', 'Listing uses the canonical application ID');
 assert(listing.apple.name.length > 0 && listing.apple.name.length <= 30, 'Apple app name fits the 30-character limit');
 assert(listing.apple.subtitle.length > 0 && listing.apple.subtitle.length <= 30, 'Apple subtitle fits the 30-character limit');
 assert(listing.apple.promotionalText.length <= 170, 'Apple promotional text fits the 170-character limit');

@@ -14,7 +14,7 @@ recovery evidence.
 
 ## Implemented
 
-- Capacitor iOS and Android projects with application ID `com.snooze.soundscapes`.
+- Capacitor iOS and Android projects with application ID `com.mixstil.soundscapes`.
 - Fail-closed store-candidate synchronization through `pnpm mobile:sync`; it rejects local/example API origins and missing release versions.
 - Separate iOS and Android release commands validate platform signing inputs before preparing or building a store artifact.
 - Mobile API origin supplied by `VITE_API_BASE_URL` in `.env.mobile`.
@@ -34,10 +34,10 @@ recovery evidence.
 - Structured App Store and Play listing metadata with character-limit,
   Voice-free claim, icon-dimension, screenshot-plan, and public-URL validation.
 - Functional first-run setup for goal, exclusions, and default duration.
-- Android debug APK verified with application ID `com.snooze.soundscapes`,
+- Android debug APK verified with application ID `com.mixstil.soundscapes`,
   version `1.0 (1)`, min SDK 24, target SDK 36, and a 13 MB package size.
 - iOS Simulator Debug build verified with application ID
-  `com.snooze.soundscapes` and Background Audio enabled.
+  `com.mixstil.soundscapes` and Background Audio enabled.
 - Android Media3 ExoPlayer owned by the foreground playback service, with a
   system Media Session, audio focus, wake lock, and media notification.
 - iOS playback audio session, Now Playing metadata, and remote-command bridge.

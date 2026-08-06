@@ -5,10 +5,10 @@ def releaseVersionName = System.getenv('SNOOZE_VERSION')
 def releaseKeystorePath = System.getenv('ANDROID_KEYSTORE_PATH')
 
 android {
-    namespace = "com.snooze.soundscapes"
+    namespace = "com.mixstil.soundscapes"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.snooze.soundscapes"
+        applicationId "com.mixstil.soundscapes"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode releaseBuildNumber ? releaseBuildNumber.toInteger() : 1

@@ -1,7 +1,7 @@
 import { execFileSync } from 'node:child_process';
 
 const DEFAULT_ADB = '/opt/homebrew/share/android-commandlinetools/platform-tools/adb';
-const PACKAGE_NAME = 'com.snooze.soundscapes';
+const PACKAGE_NAME = 'com.mixstil.soundscapes';
 
 const options = Object.fromEntries(process.argv.slice(2).map((argument) => {
   const [key, ...value] = argument.replace(/^--/, '').split('=');

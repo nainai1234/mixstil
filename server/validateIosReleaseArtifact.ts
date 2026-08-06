@@ -47,7 +47,7 @@ if (fs.existsSync(appPath)) {
 
   if (fs.existsSync(infoPath)) {
     const info = JSON.parse(execFileSync('plutil', ['-convert', 'json', '-o', '-', infoPath], { encoding: 'utf8' })) as InfoPlist;
-    assert(info.CFBundleIdentifier === 'com.snooze.soundscapes', 'Release artifact uses the canonical bundle identifier');
+    assert(info.CFBundleIdentifier === 'com.mixstil.soundscapes', 'Release artifact uses the canonical bundle identifier');
     assert(Boolean(info.CFBundleShortVersionString), 'Release artifact contains a marketing version');
     assert(Boolean(info.CFBundleVersion), 'Release artifact contains a build number');
     assert(info.UIBackgroundModes?.includes('audio') === true, 'Release artifact enables background audio');
@@ -57,7 +57,7 @@ if (fs.existsSync(appPath)) {
 
   if (fs.existsSync(capacitorPath)) {
     const capacitor = JSON.parse(fs.readFileSync(capacitorPath, 'utf8')) as CapacitorConfig;
-    assert(capacitor.appId === 'com.snooze.soundscapes', 'Bundled Capacitor config uses the canonical app identifier');
+    assert(capacitor.appId === 'com.mixstil.soundscapes', 'Bundled Capacitor config uses the canonical app identifier');
     assert(capacitor.server?.cleartext !== true, 'Bundled Capacitor config disables cleartext traffic');
     if (capacitor.server?.url) {
       assert(new URL(capacitor.server.url).protocol === 'https:', 'Bundled remote service URL uses HTTPS');

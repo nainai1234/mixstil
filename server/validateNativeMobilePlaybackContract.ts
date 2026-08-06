@@ -3,8 +3,8 @@ import path from 'node:path';
 
 const root = process.cwd();
 const player = fs.readFileSync(path.join(root, 'src/pages/PlayerPage.tsx'), 'utf8');
-const activity = fs.readFileSync(path.join(root, 'android/app/src/main/java/com/snooze/soundscapes/MainActivity.java'), 'utf8');
-const nativeService = fs.readFileSync(path.join(root, 'android/app/src/main/java/com/snooze/soundscapes/MediaPlaybackService.java'), 'utf8');
+const activity = fs.readFileSync(path.join(root, 'android/app/src/main/java/com/mixstil/soundscapes/MainActivity.java'), 'utf8');
+const nativeService = fs.readFileSync(path.join(root, 'android/app/src/main/java/com/mixstil/soundscapes/MediaPlaybackService.java'), 'utf8');
 const manifest = fs.readFileSync(path.join(root, 'android/app/src/main/AndroidManifest.xml'), 'utf8');
 const androidBuild = fs.readFileSync(path.join(root, 'android/app/build.gradle'), 'utf8');
 const iosPlugin = fs.readFileSync(path.join(root, 'ios/App/App/NativeMediaSessionPlugin.swift'), 'utf8');

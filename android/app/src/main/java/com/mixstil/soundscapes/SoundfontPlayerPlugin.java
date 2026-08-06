@@ -1,4 +1,4 @@
-package com.snooze.soundscapes;
+package com.mixstil.soundscapes;
 
 import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;

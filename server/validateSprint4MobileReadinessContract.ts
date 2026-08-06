@@ -20,7 +20,7 @@ const iosInfo = read('ios/App/App/Info.plist');
 const iosReleaseInfo = read('ios/App/App/Info-Release.plist');
 const iosProject = read('ios/App/App.xcodeproj/project.pbxproj');
 const androidManifest = read('android/app/src/main/AndroidManifest.xml');
-const androidMediaService = read('android/app/src/main/java/com/snooze/soundscapes/MediaPlaybackService.java');
+const androidMediaService = read('android/app/src/main/java/com/mixstil/soundscapes/MediaPlaybackService.java');
 const androidBuild = read('android/app/build.gradle');
 const iosMediaPlugin = read('ios/App/App/NativeMediaSessionPlugin.swift');
 const onboarding = read('src/pages/OnboardingPage.tsx');
@@ -34,7 +34,7 @@ const required = [
   [packageJson, 'pnpm mobile:build && pnpm validate:mobile-bundle-assets && cap sync', 'Native sync validates the isolated mobile bundle'],
   [packageJson, 'mobile:assets', 'Native brand assets are reproducible'],
   [packageJson, 'mobile:build:android', 'Android debug build command exists'],
-  [capacitor, "appId: 'com.snooze.soundscapes'", 'A stable mobile application ID exists'],
+  [capacitor, "appId: 'com.mixstil.soundscapes'", 'A stable mobile application ID exists'],
   [capacitor, "webDir: 'dist-mobile'", 'Capacitor packages the isolated mobile build'],
   [mobileBundleValidator, "path.join(root, 'dist-mobile')", 'Mobile bundle validation checks the same isolated directory'],
   [api, 'VITE_API_BASE_URL', 'Native builds can target a deployed API'],
@@ -59,7 +59,7 @@ const required = [
   [iosReleaseInfo, '<string>audio</string>', 'iOS Release declares the audio background mode'],
   [iosProject, 'INFOPLIST_FILE = "App/Info-Release.plist";', 'iOS Release uses its production Info.plist'],
   [iosReleaseInfo.includes('NSAllowsLocalNetworking') ? '' : 'release-network-hardened', 'release-network-hardened', 'iOS Release excludes local-network development permissions'],
-  [iosProject, 'PRODUCT_BUNDLE_IDENTIFIER = com.snooze.soundscapes;', 'iOS uses the canonical application ID'],
+  [iosProject, 'PRODUCT_BUNDLE_IDENTIFIER = com.mixstil.soundscapes;', 'iOS uses the canonical application ID'],
   [iosMediaPlugin, 'MPRemoteCommandCenter.shared()', 'iOS provides native lock-screen media controls'],
   [iosMediaPlugin, 'AVAudioSession.sharedInstance()', 'iOS activates a background playback audio session'],
   [androidManifest, 'android.permission.WAKE_LOCK', 'Android can keep an active listening session awake'],

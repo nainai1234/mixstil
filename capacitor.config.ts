@@ -3,7 +3,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 const localDeviceDebug = process.env.CAPACITOR_LOCAL_DEV === '1';
 
 const config: CapacitorConfig = {
-  appId: 'com.snooze.soundscapes',
+  appId: 'com.mixstil.soundscapes',
   appName: 'MixStil',
   webDir: 'dist-mobile',
   backgroundColor: '#09090d',

@@ -1,4 +1,4 @@
-package com.snooze.soundscapes;
+package com.mixstil.soundscapes;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -27,15 +27,15 @@ public class MediaPlaybackService extends Service {
     private static volatile double currentDurationSeconds = 0;
     private static volatile String currentAudioUrl = "";
 
-    public static final String ACTION_PREPARE = "com.snooze.soundscapes.action.PREPARE_MEDIA";
-    public static final String ACTION_UPDATE = "com.snooze.soundscapes.action.UPDATE_MEDIA_SESSION";
-    public static final String ACTION_PLAY = "com.snooze.soundscapes.action.PLAY";
-    public static final String ACTION_PAUSE = "com.snooze.soundscapes.action.PAUSE";
-    public static final String ACTION_STOP = "com.snooze.soundscapes.action.STOP";
-    public static final String ACTION_SEEK = "com.snooze.soundscapes.action.SEEK";
-    public static final String ACTION_SEEK_BACKWARD = "com.snooze.soundscapes.action.SEEK_BACKWARD";
-    public static final String ACTION_SEEK_FORWARD = "com.snooze.soundscapes.action.SEEK_FORWARD";
-    public static final String ACTION_MEDIA_EVENT = "com.snooze.soundscapes.MEDIA_ACTION";
+    public static final String ACTION_PREPARE = "com.mixstil.soundscapes.action.PREPARE_MEDIA";
+    public static final String ACTION_UPDATE = "com.mixstil.soundscapes.action.UPDATE_MEDIA_SESSION";
+    public static final String ACTION_PLAY = "com.mixstil.soundscapes.action.PLAY";
+    public static final String ACTION_PAUSE = "com.mixstil.soundscapes.action.PAUSE";
+    public static final String ACTION_STOP = "com.mixstil.soundscapes.action.STOP";
+    public static final String ACTION_SEEK = "com.mixstil.soundscapes.action.SEEK";
+    public static final String ACTION_SEEK_BACKWARD = "com.mixstil.soundscapes.action.SEEK_BACKWARD";
+    public static final String ACTION_SEEK_FORWARD = "com.mixstil.soundscapes.action.SEEK_FORWARD";
+    public static final String ACTION_MEDIA_EVENT = "com.mixstil.soundscapes.MEDIA_ACTION";
     public static final String EXTRA_MEDIA_ACTION = "mediaAction";
     public static final String EXTRA_AUDIO_URL = "audioUrl";
     public static final String EXTRA_TITLE = "title";

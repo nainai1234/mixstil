@@ -1,4 +1,4 @@
-package com.snooze.soundscapes;
+package com.mixstil.soundscapes;
 
 import android.os.Bundle;
 import com.getcapacitor.BridgeActivity;
